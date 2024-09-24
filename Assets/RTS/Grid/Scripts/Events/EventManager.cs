@@ -10,16 +10,22 @@ public class EventManager : MonoBehaviour
     private int _minorEventsCount = 0;
     public List<GameObject> tiles;
     private List<Tile> _tilesComponentTile;
-    private List<Food> _tilesComponentFood;
+    private List<NonMeatFood> _tilesComponentNonMeatFood;
+    private List<MeatFood> _tilesComponentMeatFood;
 
     public void GetTileComponentsInTiles()
     {
         for (int i = 0; i < tiles.Count; i++) { this._tilesComponentTile[i] = this.tiles[i].GetComponent<Tile>(); }
     }
 
-    public void GetFoodComponentsInTiles()
+    public void GetNonMeatFoodComponentsInTiles()
     {
-        for (int i = 0; i < tiles.Count; i++) { this._tilesComponentFood[i] = this.tiles[i].GetComponent<Food>(); }
+        for (int i = 0; i < tiles.Count; i++) { this._tilesComponentNonMeatFood[i] = this.tiles[i].GetComponent<NonMeatFood>(); }
+    }
+
+    public void GetMeatFoodComponentsInTiles()
+    {
+        for (int i = 0; i < tiles.Count; i++) { this._tilesComponentMeatFood[i] = this.tiles[i].GetComponent<MeatFood>(); }
     }
 
     //Migração - Aumento de 50% a quantidade de peças de TileHuntStatus na região e de diminuição de 50% de peças de Não-Carne.
@@ -27,8 +33,8 @@ public class EventManager : MonoBehaviour
     {
         for (int i = 0; i < tiles.Count; i++)
         {
-            this._tilesComponentFood[i].SetNewValueToAllMeatFoodAtributesByFactor(1.50f);
-            this._tilesComponentFood[i].SetNewValueToAllNonMeatFoodAtributesByFactor(0.50f);
+            this._tilesComponentMeatFood[i].SetNewFoodValueByFactor(1.50f);
+            this._tilesComponentNonMeatFood[i].SetNewFoodValueByFactor(0.50f);
         }
         MinorEventsRoutine();
     }
@@ -38,8 +44,8 @@ public class EventManager : MonoBehaviour
     {
         for (int i = 0; i < tiles.Count; i++)
         {
-            this._tilesComponentFood[i].SetNewValueToAllMeatFoodAtributesByFactor(0.50f);
-            this._tilesComponentFood[i].SetNewValueToAllNonMeatFoodAtributesByFactor(1.50f);
+            this._tilesComponentMeatFood[i].SetNewFoodValueByFactor(0.50f);
+            this._tilesComponentNonMeatFood[i].SetNewFoodValueByFactor(1.50f);
         }
         MinorEventsRoutine();
     }
@@ -138,7 +144,8 @@ public class EventManager : MonoBehaviour
     {
         tiles.Clear();
         _tilesComponentTile.Clear();
-        _tilesComponentFood.Clear();
+        _tilesComponentMeatFood.Clear();
+        _tilesComponentNonMeatFood.Clear();
     }
 
     private void DesastreFinalRoutine()
