@@ -4,11 +4,11 @@ using System.Collections;
 public class GridBuilder : MonoBehaviour
 {
     public GameObject hexTile;
-    private Vector3 _startPosition = new Vector3(0,-6,0);
+    private Vector3 _startPosition = new Vector3(0,0,0);
     private float _lado;
     private float _oddOffset;
     private float _evenOffset;
-    const int maxLevel = 6;
+    const int maxLevel = 8;
     public GameObject parentObject;
     GameObject newObject;
 
@@ -23,7 +23,7 @@ public class GridBuilder : MonoBehaviour
 
     private void Awake()
     {
-        _lado = 1 * 3;
+        _lado = 1;
         _oddOffset = _lado * 1.7f;
         _evenOffset = _lado * 3;
         StartCoroutine(GridBuild(maxLevel, hexTile));
@@ -51,7 +51,7 @@ public class GridBuilder : MonoBehaviour
                 {
                     newObject = Instantiate(hex, currentPos, Quaternion.identity);
                     newObject.transform.SetParent(parentObject.transform);
-                    yield return new WaitForSeconds(0.2f);
+                    //yield return new WaitForSeconds(0.2f);
                     currentPos += directions[dirIndex] * _oddOffset;
                 }
             }

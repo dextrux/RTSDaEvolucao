@@ -5,10 +5,10 @@ using UnityEngine;
 public class Tile : MonoBehaviour
 {
     // Atributos
-    private TileType _tileType;
-    private Biome _biome;
-    private Humidity _humidity = new Humidity();
-    private Temperature _temperature = new Temperature();
+    public TileType _tileType;
+    public Biome _biome;
+    public Humidity _humidity = new Humidity();
+    public Temperature _temperature = new Temperature();
 
     // Atributos de inspetor para assinalação
     public float idealHumidity;
@@ -20,7 +20,7 @@ public class Tile : MonoBehaviour
     public List<GameObject> tilesAdjacentes;
 
     // Inicialização dos valores
-    private void Awake()
+    public void Awake()
     {
         _humidity.CreateHumidity(idealHumidity, currentHumidity);
         _temperature.CreateTemperature(idealTemperature, currentTemperature);

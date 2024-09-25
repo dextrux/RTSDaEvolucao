@@ -3,5 +3,6 @@
     Vazio,
     Comida,
     Inimigo,
-    Próprio
+    Próprio,
+    Barreira
 }

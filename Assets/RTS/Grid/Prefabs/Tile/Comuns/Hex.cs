@@ -49,13 +49,23 @@ public class Hex : MonoBehaviour
 
     private Color RandomizeColor(Color color)
     {
-        System.Random random = new System.Random();
-        double r, g, b;
-        r = random.NextDouble();
-        g = random.NextDouble();
-        b = random.NextDouble();
-        color = new Color((float)r, (float)g, (float)b);
-        return color;
+        if(this.GetComponent<Tile>().GetBiome() == Biome.Araucaria_Atlantica && this.GetComponent<Tile>().GetTileType() == TileType.Vazio)
+        {
+            return Color.green;
+        }
+        if (this.GetComponent<Tile>().GetBiome() == Biome.Araucaria_Atlantica && this.GetComponent<Tile>().GetTileType() == TileType.Vazio)
+        {
+            return Color.blue;
+        }
+        if (this.GetComponent<Tile>().GetBiome() == Biome.Araucaria_Atlantica && this.GetComponent<Tile>().GetTileType() == TileType.Vazio)
+        {
+            return Color.gray;
+        }
+        if (this.GetComponent<Tile>().GetBiome() == Biome.Araucaria_Atlantica && this.GetComponent<Tile>().GetTileType() == TileType.Vazio)
+        {
+            return Color.yellow;
+        }
+        return Color.red;
     }
 
     private void Raycast(Vector3 direction, int i)
