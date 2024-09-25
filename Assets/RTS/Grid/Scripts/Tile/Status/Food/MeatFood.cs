@@ -1,96 +1,37 @@
 public class MeatFood
 {
     // Atribuição dos limites de valores para os atributos da classe
-    const float _maxHuntValue = 100f;
-    const float _minHuntValue = 0f;
+    const float _maxMeatValue = 100f;
+    const float _minMeatValue = 0f;
     // Atributos da classe
-    float _smallSizeHunt;
-    float _midSizeHunt;
-    float _largeSizeHunt;
-    float _corpsesHunt;
+    MeatFoodType _meatFoodType;
+    float _foodQuantity;
 
     // Boundary Check
     private float AdjustToClosestBoundary(float value)
     {
-        if (value > _maxHuntValue)
-        {
-            return _maxHuntValue;
-        }
-        else if (value < _minHuntValue)
-        {
-            return _minHuntValue;
-        }
+        if (value > _maxMeatValue) { return _maxMeatValue; }
+        else if (value < _minMeatValue) { return _minMeatValue; }
         return value;
     }
 
     // Get's
-    public float GetSmallSizeHuntValue() { return this._smallSizeHunt; }
-    public float GetMidSizeHuntValue() { return this._midSizeHunt; }
-    public float GetLargeSizeHuntValue() { return this._largeSizeHunt; }
-    public float GetCorpsesHuntValue() { return this._corpsesHunt; }
+    public float GetRemainingMeatValue() { return this._foodQuantity; }
+    public MeatFoodType GetMeatFoodType() { return this._meatFoodType; }
 
     // String Get's
-    public string GetSmallSizeHuntAsString() { return this._smallSizeHunt.ToString(); }
-    public string GetMidSizeHuntAsString() { return this._midSizeHunt.ToString(); }
-    public string GetLargeSizeHuntAsString() { return this._largeSizeHunt.ToString(); }
-    public string GetCorpsesHuntAsString() { return this._corpsesHunt.ToString(); }
+    public string GetRemainingMeatAsString() { return this._foodQuantity.ToString(); }
+    public string GetMeatFoodTypeAsString() { return this._meatFoodType.ToString(); }
 
     // Set's  
-    public void SetAllHuntValues(float smallSizeHunt, float midSizeHunt, float largeSizeHunt, float corpsesHunt)
+    public void SetAllMeatValues(MeatFoodType type, float quantity)
     {
-        SetSmallSizeHuntValue(smallSizeHunt);
-        SetMidSizeHuntValue(midSizeHunt);
-        SetLargeSizeHuntValue(largeSizeHunt);
-        SetCorpsesHuntValue(corpsesHunt);
+        SetMeatFoodType(type);
+        SetMeatFoodQuantity(quantity);
     }
-
-    public void SetSmallSizeHuntValue(float smallSizeHunt)
-    {
-        this._smallSizeHunt = AdjustToClosestBoundary(smallSizeHunt);
-    }
-
-    public void SetMidSizeHuntValue(float midSizeHunt)
-    {
-        this._midSizeHunt = AdjustToClosestBoundary(midSizeHunt);
-    }
-
-    public void SetLargeSizeHuntValue(float largeSizeHunt)
-    {
-        this._largeSizeHunt = AdjustToClosestBoundary(largeSizeHunt);
-    }
-
-    public void SetCorpsesHuntValue(float corpsesHunt)
-    {
-        this._corpsesHunt = AdjustToClosestBoundary(corpsesHunt);
-    }
+    public void SetMeatFoodType(MeatFoodType type) { this._meatFoodType = type; }
+    public void SetMeatFoodQuantity(float value) { this._foodQuantity = AdjustToClosestBoundary(value); }
 
     // Event's Set's
-
-    public void SetNewValueToAllMeatFoodAtributesByFactor(float factor)
-    {
-        SetNewSmallSizeHuntByFactor(factor);
-        SetNewMidSizeHuntByFactor(factor);
-        SetNewLargeSizeHuntByFactor(factor);
-        SetNewCorpsesHuntByFactor(factor);
-    }
-    public void SetNewSmallSizeHuntByFactor(float factor)
-    {
-        SetSmallSizeHuntValue(_smallSizeHunt * factor);
-    }
-
-    public void SetNewMidSizeHuntByFactor(float factor)
-    {
-        SetMidSizeHuntValue(_midSizeHunt * factor);
-    }
-
-    public void SetNewLargeSizeHuntByFactor(float factor)
-    {
-        SetLargeSizeHuntValue(_largeSizeHunt * factor);
-    }
-
-    public void SetNewCorpsesHuntByFactor(float factor)
-    {
-        SetCorpsesHuntValue(_corpsesHunt * factor);
-    }
+    public void SetNewFoodValueByFactor(float factor) { SetMeatFoodQuantity(AdjustToClosestBoundary(_foodQuantity * factor)); }
 }
-
