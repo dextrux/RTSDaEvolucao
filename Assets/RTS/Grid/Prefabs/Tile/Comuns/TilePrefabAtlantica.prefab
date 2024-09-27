@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 6192132488497580543}
   - component: {fileID: 1163214261610911524}
   - component: {fileID: 2255419767051762803}
-  - component: {fileID: -5087739979956332770}
   m_Layer: 0
   m_Name: TilePrefabAtlantica
   m_TagString: Untagged
@@ -65,7 +64,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 3dd945c1b84869a47820988ecde50c60, type: 2}
-  - {fileID: 2100000, guid: 3dd945c1b84869a47820988ecde50c60, type: 2}
+  - {fileID: 2100000, guid: 9c858940f2308fc4a834bfc52cb1964d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -122,28 +121,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _tileType: 0
-  _biome: 0
-  idealHumidity: 0
+  _biome: 1
   currentHumidity: 0
-  idealTemperature: 0
   currentTemperature: 0
-  firstTileType: 0
-  firstBiome: 1
   tilesAdjacentes: []
---- !u!114 &-5087739979956332770
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2540023626331687846}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad1a1e54b7459dc48849606ac9ff1bbe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  layerMask:
-    serializedVersion: 2
-    m_Bits: 0
-  rayCastBool: 0
-  duration: 3
+  foodTotens: []

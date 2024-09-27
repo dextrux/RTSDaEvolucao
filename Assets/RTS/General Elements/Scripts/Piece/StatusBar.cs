@@ -22,6 +22,7 @@
     }
 
     // Get's
+    public static StatusBar GetStatusBar(StatusBar bar) { return bar; }
     public float GetCurrentBarValue() { return _currentValue; }
     public float GetBarMaxValue() { return _maxBarValue; }
     public float GetBarMinValue() { return _minBarValue; }

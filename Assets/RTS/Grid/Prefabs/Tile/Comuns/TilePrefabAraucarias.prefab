@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 8287083812076453084}
   - component: {fileID: 6000774257888850882}
   - component: {fileID: 2030228847183765284}
-  - component: {fileID: -7565227874975422537}
   m_Layer: 0
   m_Name: TilePrefabAraucarias
   m_TagString: Untagged
@@ -65,7 +64,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 3dd945c1b84869a47820988ecde50c60, type: 2}
-  - {fileID: 2100000, guid: 3dd945c1b84869a47820988ecde50c60, type: 2}
+  - {fileID: 2100000, guid: 02bce3a136614274f9d249a7b2662b43, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -130,20 +129,3 @@ MonoBehaviour:
   firstTileType: 0
   firstBiome: 0
   tilesAdjacentes: []
---- !u!114 &-7565227874975422537
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9188413342742938219}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad1a1e54b7459dc48849606ac9ff1bbe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  layerMask:
-    serializedVersion: 2
-    m_Bits: 0
-  rayCastBool: 0
-  duration: 3
