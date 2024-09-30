@@ -1,8 +1,8 @@
 public class NonMeatFood
 {
     // Atribuição dos limites de valores para os atributos da classe
-    const float _maxVeggieValue = 100f;
-    const float _minVeggieValue = 0f;
+    static readonly float _maxVeggieValue = 100f;
+    static readonly float _minVeggieValue = 0f;
     // Atributos da classe
     NonMeatFoodType _nonMeatFoodType;
     float _foodQuantity;

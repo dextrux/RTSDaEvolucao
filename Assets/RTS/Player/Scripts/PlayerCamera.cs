@@ -4,38 +4,32 @@ using UnityEngine;
 public class PlayerCamera : MonoBehaviour
 {
     public Camera playerCamera;
-    public float rotationSpeed = 100f;
-    public float moveSpeed = 30f;
-    public float minY = 20f;
-    public float maxY = 90f;
+    public float moveSpeed = 5f;
+    public const float minY = -1;
+    public const float maxY = 10;
+    public const float minX = -10;
+    public const float maxX = 10;
+    public const float minZ = -20;
+    public const float maxZ = 10;
     private Coroutine moveCoroutine;
-    private bool _isRotating = false;
-    private Vector3 resetPosition = new Vector3(0, 90, 0);
+    private Vector3 resetPosition; 
 
     void Start()
     {
+        resetPosition = new Vector3(0, maxY, -10);
         ResetPlayerCameraPosition();
     }
 
     void Update()
     {
         HandleCameraMovement();
-        HandleCameraRotation();
-        if (Input.GetMouseButtonDown(1))
-        {
-            _isRotating = true;
-        }
-        if (Input.GetMouseButtonUp(1))
-        {
-            _isRotating = false;
-        }
         if (Input.GetAxis("Mouse ScrollWheel") > 0)
         {
-            ChangeCameraPosition(-20);
+            ChangeCameraPosition(20);
         }
         if (Input.GetAxis("Mouse ScrollWheel") < 0)
         {
-            ChangeCameraPosition(20);
+            ChangeCameraPosition(-20);
         }
     }
     private void ChangeCameraPosition(int factorDeepness)
@@ -54,35 +48,26 @@ public class PlayerCamera : MonoBehaviour
     }
     private void HandleCameraMovement()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(1))
         {
             float mouseX = Input.GetAxis("Mouse X");
             float mouseY = Input.GetAxis("Mouse Y");
-            float movementFactor = 5.0f; 
+            float movementFactor = 5.0f;
             Vector3 move = new Vector3(mouseX, 0, mouseY) * moveSpeed * movementFactor * Time.deltaTime;
             Vector3 newPosition = playerCamera.transform.position + move;
+
+            // Aplicando os limites de movimento
+            newPosition.x = Mathf.Clamp(newPosition.x, minX, maxX);
+            newPosition.z = Mathf.Clamp(newPosition.z, minZ, maxZ);
             newPosition.y = playerCamera.transform.position.y;
+
             playerCamera.transform.position = newPosition;
         }
     }
-
-
-
-    private void HandleCameraRotation()
-    {
-        if (_isRotating)
-        {
-            float mouseX = Input.GetAxis("Mouse X");
-            float mouseY = Input.GetAxis("Mouse Y");
-            transform.Rotate(Vector3.up, mouseX * rotationSpeed * Time.deltaTime, Space.World);
-            transform.Rotate(Vector3.left, mouseY * rotationSpeed * Time.deltaTime, Space.Self);
-        }
-    }
-
     private void ResetPlayerCameraPosition()
     {
         playerCamera.transform.position = resetPosition;
-        playerCamera.transform.rotation = Quaternion.Euler(90, 0, 0);
+        playerCamera.transform.rotation = Quaternion.Euler(60, 0, 0);
     }
 
     public void ChangeCameraPositionToFocusTile(GameObject tile)
@@ -104,17 +89,6 @@ public class PlayerCamera : MonoBehaviour
             yield return null;
         }
         playerCamera.transform.position = targetPosition;
-    }
-
-    private void RotateCamera()
-    {
-        if (_isRotating)
-        {
-            float mouseX = Input.GetAxis("Mouse X");
-            float mouseY = Input.GetAxis("Mouse Y");
-            transform.Rotate(Vector3.forward, mouseX * rotationSpeed * Time.deltaTime, Space.World);
-            transform.Rotate(Vector3.right, mouseY * rotationSpeed * Time.deltaTime, Space.World);
-        }
     }
     public void ResetRotation(){ playerCamera.transform.rotation = Quaternion.Euler(90, 0, 0); }
 }

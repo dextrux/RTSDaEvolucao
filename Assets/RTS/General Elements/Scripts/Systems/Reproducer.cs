@@ -9,10 +9,10 @@ public class Reproducer : MonoBehaviour
     {
         GameObject newPiece = Instantiate(prefabSon, this.transform.position, Quaternion.identity);
         Jubileuson son = newPiece.GetComponent<Jubileuson>();
-        Temperature sonTemperature = son.GetTemperature();
-        sonTemperature.SetAllTemperatureValues(2 * father.GetTemperature().GetIdealTemperatureValue() + 2 * mother.GetTemperature().GetIdealTemperatureValue() + currentTile.GetTemperature().GetCurrentTemperatureValue() / 5, currentTile.GetTemperature().GetCurrentTemperatureValue());
-        Humidity sonHumidity = son.GetHumidity();
-        sonHumidity.SetAllHumidityValues(2 * father.GetHumidity().GetIdealHumidityValue() + 2 * mother.GetHumidity().GetIdealHumidityValue() + currentTile.GetHumidity().GetCurrentHumidityValue() / 5, currentTile.GetHumidity().GetCurrentHumidityValue());
+        //Temperature sonTemperature = son.GetTemperature();
+       // sonTemperature.SetAllTemperatureValues(2 * father.GetTemperature().GetIdealTemperatureValue() + 2 * mother.GetTemperature().GetIdealTemperatureValue() + currentTile.GetTemperature().GetCurrentTemperatureValue() / 5, currentTile.GetTemperature().GetCurrentTemperatureValue());
+       // Humidity sonHumidity = son.GetHumidity();
+       // sonHumidity.SetAllHumidityValues(2 * father.GetHumidity().GetIdealHumidityValue() + 2 * mother.GetHumidity().GetIdealHumidityValue() + currentTile.GetHumidity().GetCurrentHumidityValue() / 5, currentTile.GetHumidity().GetCurrentHumidityValue());
         StatusBar sonFertilityBar = son.GetFertilityBar();
         sonFertilityBar.SetNewBarValue(0);
         StatusBar sonHealthBar = son.GetHealthBar();

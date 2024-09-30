@@ -1,8 +1,8 @@
 public class MeatFood
 {
     // Atribuição dos limites de valores para os atributos da classe
-    const float _maxMeatValue = 100f;
-    const float _minMeatValue = 0f;
+    static readonly float _maxMeatValue = 100f;
+    static readonly float _minMeatValue = 0f;
     // Atributos da classe
     MeatFoodType _meatFoodType;
     float _foodQuantity;

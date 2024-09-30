@@ -90,7 +90,7 @@ public class EventManager : MonoBehaviour
         MinorEventsRoutine();
     }
 
-    //Desertificação - Aumenta a Temperature em 75% e diminuição da Humidity em 75% dentro dos tiles de transição. Transforma a região afetada em uma área de Cerrado.
+    //Desertificação - Aumenta a Temperature em 75% e diminuição da Humidity em 75% dentro dos tiles de transição. Transforma a região afetada em uma área de Caatinga.
     private void DesastreDesertificação()
     {
         for (int i = 0; i < tiles.Count; i++)
