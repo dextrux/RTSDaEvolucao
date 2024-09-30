@@ -6585,6 +6585,9 @@ MonoBehaviour:
   _pieceDiet: 0
   _pieceLevel: 1
   _pieceRemainingActions: 0
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!65 &2057982012
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6986,7 +6989,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   UIManagerObject: {fileID: 1762588754}
-  gameManagerObject: {fileID: 23518524}
+  playerActionsobject: {fileID: 1116019983}
 --- !u!1 &2086494955
 GameObject:
   m_ObjectHideFlags: 0

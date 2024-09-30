@@ -14,6 +14,7 @@ public class Jubileuson : MonoBehaviour
     public PieceDiet _pieceDiet;
     public PieceLevel _pieceLevel;
     public int _pieceRemainingActions;
+    public LayerMask layerMask;
 
     // Métodos
     public void InitializePiece(Temperature temperature, Humidity humidity, StatusBar healthBar, StatusBar energyBar, StatusBar fertilityBar, StatusBar strengthBar, PieceDiet pieceDiet, PieceLevel pieceLevel)
@@ -44,6 +45,20 @@ public class Jubileuson : MonoBehaviour
         //_pieceRemainingActions = (int)_pieceLevel; // Reset to default actions
     }
 
+    public GameObject PieceRaycast() 
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(this.transform.position, Vector3.down, out hit, 2f, layerMask))
+        {
+            Debug.DrawRay(this.transform.position, Vector3.down * 2f, Color.red, 2f);
+            return hit.collider.gameObject;
+        }
+        else
+        {
+            Debug.DrawRay(this.transform.position, Vector3.down * 2f, Color.green, 2f);
+            return null;
+        }
+    }
     // Getters
     public PieceDiet GetDiet() => _pieceDiet;
     public PieceLevel GetLevel() => _pieceLevel;

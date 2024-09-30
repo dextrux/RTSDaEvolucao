@@ -8,19 +8,14 @@ public class PlayerRaycast : MonoBehaviour
     public LayerMask layerMask;
     public GameObject UIManagerObject;
     private UIManager uiManager;
-    public GameObject gameManagerObject;
-    private GameManager gameManager;
-    private PlayerActions playerActions; // Referência ao PlayerActions
-    private GameObject firstTile = null; // Armazena o primeiro tile
-    private GameObject secondTile = null; // Armazena o segundo tile
-    private Jubileuson selectedPiece = null; // Armazena a peça selecionada (Jubileuson)
+    public GameObject playerActionsobject;
+    private PlayerActions playerActions;
+    private GameObject firstSelectedObject = null; // Armazena o primeiro objeto selecionado (Tile)
 
-    // Métodos
-    private void Start()
+    void Start()
     {
         uiManager = UIManagerObject.GetComponent<UIManager>();
-        gameManager = gameManagerObject.GetComponent<GameManager>();
-        playerActions = GetComponent<PlayerActions>(); // Obter o componente PlayerActions
+        playerActions = playerActionsobject.GetComponent<PlayerActions>();
     }
 
     void Update()
@@ -43,7 +38,6 @@ public class PlayerRaycast : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, rayDistance, layerMask))
         {
-            Debug.Log("Hit: " + hit.collider.name); // Adicionando log para verificar o que foi clicado
             Debug.DrawRay(ray.origin, ray.direction * rayDistance, Color.red, 2f);
             HandleRaycastHit(hit);
         }
@@ -58,68 +52,62 @@ public class PlayerRaycast : MonoBehaviour
         // Se o menu não estiver ativado
         if (!uiManager.menuPanelIsActivated)
         {
-            if (hit.collider.CompareTag("Tile"))
+            if (hit.collider.CompareTag("Piece"))
             {
-                HandleTileSelection(hit.collider.gameObject);
+                HandleFirstSelection(hit.collider.gameObject);
             }
-            else if (hit.collider.CompareTag("Piece"))
+            else if (hit.collider.CompareTag("Tile"))
             {
-                HandlePieceSelection(hit.collider.gameObject.GetComponent<Jubileuson>());
+                HandleSecondSelection(hit.collider.gameObject);
             }
         }
     }
 
-    private void HandleTileSelection(GameObject tile)
+    private void HandleFirstSelection(GameObject firstObject)
     {
-        if (firstTile == null && selectedPiece == null)
+        if (firstSelectedObject == null)
         {
-            // Primeiro tile selecionado
-            Debug.Log("Primeiro tile selecionado: " + tile.name);
-            firstTile = tile;
-            gameManager.AddToObjetosTocados(firstTile);
+            // Primeiro objeto (com a tag "FirstTag") selecionado
+            Debug.Log("Primeiro objeto selecionado: " + firstObject.name);
+            firstSelectedObject = firstObject;
         }
-        else if (selectedPiece != null && secondTile == null)
-        {
-            // Segundo tile selecionado, mover a peça para o tile
-            Debug.Log("Segundo tile selecionado: " + tile.name);
-            secondTile = tile;
+    }
 
-            if (firstTile != null && selectedPiece != null)
-            {
-                Debug.Log("Movendo peça para o segundo tile.");
-                playerActions.MoveToTile(secondTile, firstTile, selectedPiece, TileType.Próprio);
-            }
-            ResetSelection(); // Resetar a seleção após a ação
-        }
-        else
+    private void HandleSecondSelection(GameObject secondObject)
+    {
+        if (firstSelectedObject != null)
         {
-            Debug.LogWarning("Seleção inválida. Resetando.");
+            // Segundo objeto (com a tag "SecondTag") selecionado
+            Debug.Log("Segundo objeto selecionado: " + secondObject.name);
+
+            // Ação a ser realizada após a seleção dos dois objetos
+            ExecuteAction(firstSelectedObject, secondObject);
+
+            // Resetar a seleção após a ação
             ResetSelection();
         }
     }
 
-    private void HandlePieceSelection(Jubileuson piece)
+    private void ExecuteAction(GameObject firstObject, GameObject secondObject)
     {
-        if (firstTile != null && selectedPiece == null)
+
+        if (secondObject.GetComponent<Tile>().GetTileType() == TileType.Vazio)
         {
-            // Se já houver um tile selecionado e selecionamos uma peça
-            Debug.Log("Peça selecionada: " + piece.name);
-            selectedPiece = piece;
-            gameManager.AddToObjetosTocados(piece.gameObject);
+            playerActions.MoveToTile(secondObject, firstObject.GetComponent<Jubileuson>().PieceRaycast(), firstObject.GetComponent<Jubileuson>(), TileType.Próprio);
         }
-        else
+        else if (secondObject.GetComponent<Tile>().GetTileType() == TileType.Comida) // Assuming TileType.Alimento is a food tile type
         {
-            Debug.LogWarning("Peça já selecionada ou tile não selecionado. Resetando.");
-            ResetSelection();
+            //playerActions.Eat(firstObject.GetComponent<Jubileuson>(), secondObject.GetComponent<Tile>().GetComponent(f), secondObject, firstObject.GetComponent<Jubileuson>().PieceRaycast());
+        }
+        else if (secondObject.GetComponent<Tile>().GetTileType() == TileType.Inimigo) // Assuming TileType.Oponente is an enemy tile type
+        {
+            playerActions.Fight(firstObject.GetComponent<Jubileuson>(), secondObject.GetComponent<Tile>().TileRaycast().GetComponent<Jubileuson>(), secondObject, firstObject.GetComponent<Jubileuson>().PieceRaycast());
         }
     }
 
     // Método para resetar a seleção
     private void ResetSelection()
     {
-        Debug.Log("Resetando seleção.");
-        firstTile = null;
-        secondTile = null;
-        selectedPiece = null;
+        firstSelectedObject = null;
     }
 }

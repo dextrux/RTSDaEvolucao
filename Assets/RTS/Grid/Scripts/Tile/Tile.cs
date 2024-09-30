@@ -17,6 +17,7 @@ public class Tile : MonoBehaviour
     public List<GameObject> tilesAdjacentes;
     public GameObject foodTotens;
     public List<GameObject> tileMesh;
+    public LayerMask layerMask;
 
     // Inicialização dos valores
     public void Start()
@@ -56,7 +57,20 @@ public class Tile : MonoBehaviour
         // Deactivate the GameObject when it's not visible
         gameObject.SetActive(false);
     }
-
+    public GameObject TileRaycast()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(this.transform.position, Vector3.up, out hit, 2f, layerMask))
+        {
+            Debug.DrawRay(this.transform.position, Vector3.up * 2f, Color.red, 2f);
+            return hit.collider.gameObject;
+        }
+        else
+        {
+            Debug.DrawRay(this.transform.position, Vector3.up * 2f, Color.green, 2f);
+            return null;
+        }
+    }
     private void Coloring()
     {
         if (this._biome == Biome.Caatinga)
