@@ -63,7 +63,7 @@ public class UIManager : MonoBehaviour
         //pieceTemperature.text = $"Temperatura: {piece.GetTemperature().GetCurrentTemperatureValue()} Umidade Ideal: {piece.GetTemperature().GetIdealTemperatureValue()}";
         actionsSlider.maxValue = 7f;
         actionsSlider.minValue = 4f;
-        actionsSlider.value = piece.GetRemainingActions();
+        //actionsSlider.value = piece.GetRemainingActions();
         fertilitySlider.maxValue = piece.GetFertilityBar().GetBarMaxValue();
         fertilitySlider.minValue = piece.GetFertilityBar().GetBarMinValue();
         fertilitySlider.value = piece.GetFertilityBar().GetCurrentBarValue();

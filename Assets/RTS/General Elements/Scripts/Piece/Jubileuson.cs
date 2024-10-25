@@ -36,8 +36,9 @@ public class Jubileuson : MonoBehaviour
         _energyBar = new StatusBar(50f);
         _fertilityBar = new StatusBar(50f);
         _strengthBar = new StatusBar(50f);
-       // _pieceHumidity.SetAllHumidityValues(50, 50);
-       // _pieceTemperature.SetAllTemperatureValues(50, 50);
+        // _pieceHumidity.SetAllHumidityValues(50, 50);
+        // _pieceTemperature.SetAllTemperatureValues(50, 50);
+        _pieceRemainingActions = 15;
     }
 
     public void ResetActions()
@@ -62,7 +63,7 @@ public class Jubileuson : MonoBehaviour
     // Getters
     public PieceDiet GetDiet() => _pieceDiet;
     public PieceLevel GetLevel() => _pieceLevel;
-    public int GetRemainingActions() => _pieceRemainingActions;
+    //public int GetRemainingActions() => _pieceRemainingActions;
 
     //public Temperature GetTemperature() => _pieceTemperature;
 

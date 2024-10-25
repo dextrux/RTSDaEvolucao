@@ -1,0 +1,52 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/StyleSheets/MenuStyle.uss?fileID=7433441132597879392&amp;guid=2fb1811cbb3f51d4bbd4759e5beb00b7&amp;type=3#MenuStyle" />
+    <ui:VisualElement name="container" style="flex-direction: row; min-width: auto; min-height: 100%; width: 100%; height: 100%; background-image: url(&apos;project://database/Assets/UI/Sprites/BG.png?fileID=2800000&amp;guid=9469ef656c74e6045a626ed60e2ea565&amp;type=3#BG&apos;);">
+        <ui:VisualElement name="left-container" style="flex-grow: 1; width: 35%; height: 100%; margin-top: 0; padding-top: 75px; padding-left: 61px;">
+            <ui:Label tabindex="-1" text="Seleção \nNatural" parse-escape-sequences="true" display-tooltip-when-elided="true" name="menu-title-txt" class="main-menu-title" />
+            <ui:VisualElement name="container-body" style="justify-content: space-around; align-items: flex-start;">
+                <ui:Button text="Jogar" parse-escape-sequences="true" display-tooltip-when-elided="true" name="play-btn" class="main-menu-button" />
+                <ui:Button text="Opções" parse-escape-sequences="true" display-tooltip-when-elided="true" name="option-btn" class="main-menu-button" />
+                <ui:Button text="Créditos" parse-escape-sequences="true" display-tooltip-when-elided="true" name="credit-btn" class="main-menu-button" />
+            </ui:VisualElement>
+            <ui:VisualElement name="containerFooter" style="flex-grow: 1; flex-direction: column-reverse; padding-bottom: 10px;">
+                <ui:Label tabindex="-1" text="Versão: 0.01" parse-escape-sequences="true" display-tooltip-when-elided="true" name="menu-version-txt" class="main-menu-title" style="font-size: 51px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="right-container" style="flex-grow: 1; width: 65%; height: 100%;" />
+        <ui:VisualElement name="options-container" class="option-closed">
+            <ui:VisualElement name="options-body" style="flex-grow: 1; background-image: none; width: 90%; height: 90%; margin-top: 65px; margin-right: 65px; margin-bottom: 65px; margin-left: 65px; background-color: rgb(250, 187, 120); border-top-left-radius: 17px; border-top-right-radius: 17px; border-bottom-right-radius: 17px; border-bottom-left-radius: 17px;">
+                <ui:Label tabindex="-1" text="Opções" parse-escape-sequences="true" display-tooltip-when-elided="true" name="option-title-txt" class="main-menu-title" style="margin-top: -100px; -unity-text-align: middle-center; font-size: 65px; margin-bottom: -13px;" />
+                <ui:Label tabindex="-1" text="Modificar Volume" parse-escape-sequences="true" display-tooltip-when-elided="true" name="option-subtitle-txt" class="option-menu-subtitle" style="margin-bottom: 26px;" />
+                <ui:VisualElement name="global-volume-container" style="flex-grow: 1;">
+                    <ui:Label tabindex="-1" text="Volume Geral" parse-escape-sequences="true" display-tooltip-when-elided="true" name="option-subtitle-txt" style="-unity-text-align: middle-center; font-size: 32px; -unity-font: url(&apos;project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.otf?fileID=12800000&amp;guid=81817e382e1f2ff4da7b7f2b05c32595&amp;type=3#Bodo Amat&apos;); -unity-font-definition: url(&apos;project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.asset?fileID=11400000&amp;guid=0756c78a4ec4a2644b846b666c90696f&amp;type=2#Bodo Amat&apos;); margin-left: 2px; color: rgb(56, 43, 33); width: 100%; margin-right: -35px;" />
+                    <ui:VisualElement name="slider-volume" style="flex-grow: 1; justify-content: center; align-items: flex-start; flex-direction: row;">
+                        <ui:Label tabindex="-1" text="0%" parse-escape-sequences="true" display-tooltip-when-elided="true" name="zero-txt" class="option-menu-subtitle" />
+                        <ui:SliderInt picking-mode="Ignore" value="50" high-value="100" name="SliderInt" style="width: 254px;" />
+                        <ui:Label tabindex="-1" text="100%" parse-escape-sequences="true" display-tooltip-when-elided="true" name="hundred-txt" class="option-menu-subtitle" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="music-volume-container" style="flex-grow: 1;">
+                    <ui:Label tabindex="-1" text="Volume da Música" parse-escape-sequences="true" display-tooltip-when-elided="true" name="option-subtitle-txt" style="-unity-text-align: middle-center; font-size: 32px; -unity-font: url(&apos;project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.otf?fileID=12800000&amp;guid=81817e382e1f2ff4da7b7f2b05c32595&amp;type=3#Bodo Amat&apos;); -unity-font-definition: url(&apos;project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.asset?fileID=11400000&amp;guid=0756c78a4ec4a2644b846b666c90696f&amp;type=2#Bodo Amat&apos;); margin-left: 2px; color: rgb(56, 43, 33); width: 100%; margin-right: -35px;" />
+                    <ui:VisualElement name="slider-volume" style="flex-grow: 1; justify-content: center; align-items: flex-start; flex-direction: row;">
+                        <ui:Label tabindex="-1" text="0%" parse-escape-sequences="true" display-tooltip-when-elided="true" name="zero-txt" class="option-menu-subtitle" />
+                        <ui:SliderInt picking-mode="Ignore" value="50" high-value="100" name="SliderInt" style="width: 254px;" />
+                        <ui:Label tabindex="-1" text="100%" parse-escape-sequences="true" display-tooltip-when-elided="true" name="hundred-txt" class="option-menu-subtitle" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="effects-volume-container" style="flex-grow: 1;">
+                    <ui:Label tabindex="-1" text="Volume dos Efeitos" parse-escape-sequences="true" display-tooltip-when-elided="true" name="option-subtitle-txt" style="-unity-text-align: middle-center; font-size: 32px; -unity-font: url(&apos;project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.otf?fileID=12800000&amp;guid=81817e382e1f2ff4da7b7f2b05c32595&amp;type=3#Bodo Amat&apos;); -unity-font-definition: url(&apos;project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.asset?fileID=11400000&amp;guid=0756c78a4ec4a2644b846b666c90696f&amp;type=2#Bodo Amat&apos;); margin-left: 2px; color: rgb(56, 43, 33); width: 100%; margin-right: -35px;" />
+                    <ui:VisualElement name="slider-volume" style="flex-grow: 1; justify-content: center; align-items: flex-start; flex-direction: row;">
+                        <ui:Label tabindex="-1" text="0%" parse-escape-sequences="true" display-tooltip-when-elided="true" name="zero-txt" class="option-menu-subtitle" />
+                        <ui:SliderInt picking-mode="Ignore" value="50" high-value="100" name="SliderInt" style="width: 254px;" />
+                        <ui:Label tabindex="-1" text="100%" parse-escape-sequences="true" display-tooltip-when-elided="true" name="hundred-txt" class="option-menu-subtitle" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="mute-volume-container" style="flex-grow: 1; flex-direction: row; align-items: flex-start; justify-content: center;">
+                    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="mute-effects-btn" style="background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-1061077494&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_39&apos;); background-color: rgba(188, 188, 188, 0); -unity-background-scale-mode: scale-to-fit; width: 60px; height: 60px; margin-right: 15px; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;" />
+                    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="mute-music-btn" style="background-color: rgba(188, 188, 188, 0); background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=2016887848&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_38&apos;); width: 60px; height: 60px; -unity-background-scale-mode: scale-to-fit; margin-left: 15px; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;" />
+                </ui:VisualElement>
+                <ui:Button text="OK" parse-escape-sequences="true" display-tooltip-when-elided="true" name="save-option-btn" class="main-menu-button" style="align-self: center; height: 91px; position: absolute; margin-top: 635px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

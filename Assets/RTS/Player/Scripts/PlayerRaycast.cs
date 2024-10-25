@@ -11,6 +11,7 @@ public class PlayerRaycast : MonoBehaviour
     public GameObject playerActionsobject;
     private PlayerActions playerActions;
     private GameObject firstSelectedObject = null; // Armazena o primeiro objeto selecionado (Tile)
+    public GameObject Jubileu;
 
     void Start()
     {
@@ -39,7 +40,27 @@ public class PlayerRaycast : MonoBehaviour
         if (Physics.Raycast(ray, out hit, rayDistance, layerMask))
         {
             Debug.DrawRay(ray.origin, ray.direction * rayDistance, Color.red, 2f);
-            HandleRaycastHit(hit);
+            if (hit.collider.CompareTag("Piece"))
+            {
+                Jubileuson jub = Jubileu.GetComponent<Jubileuson>();
+                jub._pieceRemainingActions--;
+                if (jub._pieceRemainingActions <= 0)
+                {
+                    Destroy(Jubileu);
+                }
+                Debug.Log("Primeiro objeto selecionado: " + hit.collider.gameObject.name);
+                HandleFirstSelection(hit.collider.gameObject);
+            }
+            else if (hit.collider.CompareTag("Tile"))
+            {
+                Jubileuson jub = Jubileu.GetComponent<Jubileuson>();
+                jub._pieceRemainingActions--;
+                if (jub._pieceRemainingActions <= 0)
+                {
+                    Destroy(Jubileu);
+                }
+                HandleSecondSelection(hit.collider.gameObject);
+            }
         }
         else
         {
@@ -54,23 +75,52 @@ public class PlayerRaycast : MonoBehaviour
         {
             if (hit.collider.CompareTag("Piece"))
             {
+                Jubileuson jub = Jubileu.GetComponent<Jubileuson>();
+                jub._pieceRemainingActions--;
+                if (jub._pieceRemainingActions <= 0)
+                {
+                    Destroy(Jubileu);
+                }
                 HandleFirstSelection(hit.collider.gameObject);
             }
             else if (hit.collider.CompareTag("Tile"))
             {
-                HandleSecondSelection(hit.collider.gameObject);
+                Jubileuson jub = Jubileu.GetComponent<Jubileuson>();
+                jub._pieceRemainingActions--;
+                if (jub._pieceRemainingActions <= 0)
+                {
+                    Destroy(Jubileu);
+                }
+                // Segundo objeto (com a tag "SecondTag") selecionado
+                Debug.Log("Segundo objeto selecionado: " + hit.collider.gameObject.name);
+
+                // Ação a ser realizada após a seleção dos dois objetos
+                ExecuteAction(firstSelectedObject, hit.collider.gameObject);
+
+                // Resetar a seleção após a ação
+                ResetSelection();
             }
         }
     }
 
     private void HandleFirstSelection(GameObject firstObject)
     {
-        if (firstSelectedObject == null)
+        // Primeiro objeto (com a tag "FirstTag") selecionado
+        Debug.Log("AB");
+        firstSelectedObject = firstObject;
+        Debug.Log("AC");
+        if (firstObject.name.Trim().Equals("Totem"))
         {
-            // Primeiro objeto (com a tag "FirstTag") selecionado
-            Debug.Log("Primeiro objeto selecionado: " + firstObject.name);
-            firstSelectedObject = firstObject;
+            Debug.Log("BB");
+            Alimentacao jubA = Jubileu.GetComponent<Alimentacao>();
+            jubA.Alimentar(firstObject.gameObject);
+            
         }
+        else
+        {
+            Debug.Log("Nao e Totem");
+        }
+
     }
 
     private void HandleSecondSelection(GameObject secondObject)
@@ -81,7 +131,20 @@ public class PlayerRaycast : MonoBehaviour
             Debug.Log("Segundo objeto selecionado: " + secondObject.name);
 
             // Ação a ser realizada após a seleção dos dois objetos
-            ExecuteAction(firstSelectedObject, secondObject);
+            if (secondObject.name.Equals("Totem"))
+            {
+                Debug.Log("BBB");
+                Alimentacao jubA = Jubileu.GetComponent<Alimentacao>();
+                jubA.Alimentar(secondObject.gameObject);
+                
+            }
+            else
+            {
+                Debug.Log("AAA");
+                ExecuteAction(firstSelectedObject, secondObject);
+                Jubileuson jub = Jubileu.GetComponent<Jubileuson>();
+                
+            }
 
             // Resetar a seleção após a ação
             ResetSelection();
@@ -97,6 +160,7 @@ public class PlayerRaycast : MonoBehaviour
         }
         else if (secondObject.GetComponent<Tile>().GetTileType() == TileType.Comida) // Assuming TileType.Alimento is a food tile type
         {
+            playerActions.MoveToTile(secondObject, firstObject.GetComponent<Jubileuson>().PieceRaycast(), firstObject.GetComponent<Jubileuson>(), TileType.Próprio);
             //playerActions.Eat(firstObject.GetComponent<Jubileuson>(), secondObject.GetComponent<Tile>().GetComponent(f), secondObject, firstObject.GetComponent<Jubileuson>().PieceRaycast());
         }
         else if (secondObject.GetComponent<Tile>().GetTileType() == TileType.Inimigo) // Assuming TileType.Oponente is an enemy tile type

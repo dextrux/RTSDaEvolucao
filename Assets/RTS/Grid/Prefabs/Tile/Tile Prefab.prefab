@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8275088996738858205}
   m_Layer: 0
   m_Name: Totem
-  m_TagString: Untagged
+  m_TagString: Piece
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104,7 +104,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8275088996738858205
 MonoBehaviour:
@@ -122,6 +122,7 @@ MonoBehaviour:
   totemMesh:
   - {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
   - {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
   totemType: 0
 --- !u!1 &5918133046433278143
 GameObject:
@@ -323,6 +324,9 @@ MonoBehaviour:
   foodTotens: {fileID: 1957672139441601978}
   tileMesh:
   - {fileID: 0}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!4 &4591758256675718408 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: cc90e153a9faf1241bbe1c9cdd21c0d9,

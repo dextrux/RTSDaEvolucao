@@ -93,6 +93,11 @@ PrefabInstance:
       propertyPath: tileMesh.Array.data[0]
       value: 
       objectReference: {fileID: 2344524944289160662}
+    - target: {fileID: 8873787485987636710, guid: 3fae04ed2f492fd45a31aba8380f07e0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Piece
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

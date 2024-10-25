@@ -29,7 +29,7 @@ public class EventManager : MonoBehaviour
     }
 
     //Migração - Aumento de 50% a quantidade de peças de TileHuntStatus na região e de diminuição de 50% de peças de Não-Carne.
-    private void DesastreMigração()
+    public void DesastreMigração()
     {
         for (int i = 0; i < tiles.Count; i++)
         {
@@ -40,7 +40,7 @@ public class EventManager : MonoBehaviour
     }
 
     //Infestação - Aumento de 50% a quantidade de peças de Não-Carne na região e de diminuição de 50% de peças de TileHuntStatus. 
-    private void DesastreInfestação()
+    public void DesastreInfestação()
     {
         for (int i = 0; i < tiles.Count; i++)
         {
@@ -51,7 +51,7 @@ public class EventManager : MonoBehaviour
     }
 
     //Onda de Calor - Aumenta em 20% a Temperature dos tiles afetados.
-    private void DesastreOndaDeCalor()
+    public void DesastreOndaDeCalor()
     {
         for (int i = 0; i < tiles.Count; i++)
         {
@@ -61,7 +61,7 @@ public class EventManager : MonoBehaviour
     }
 
     //Frente Fria - Diminui em 20% a Temperature dos tiles afetados.
-    private void DesastreFrenteFria()
+    public void DesastreFrenteFria()
     {
         for (int i = 0; i < tiles.Count; i++)
         {
@@ -71,7 +71,7 @@ public class EventManager : MonoBehaviour
     }
 
     //Chuvas - Aumenta em 20% a Humidity dos tiles afetados.
-    private void DeastreChuvas()
+    public void DeastreChuvas()
     {
         for (int i = 0; i < tiles.Count; i++)
         {
@@ -81,7 +81,7 @@ public class EventManager : MonoBehaviour
     }
 
     //Secas - Diminui em 20% a Humidity dos tiles afetados.
-    private void DesastreSecas()
+    public void DesastreSecas()
     {
         for (int i = 0; i < tiles.Count; i++)
         {
@@ -91,7 +91,7 @@ public class EventManager : MonoBehaviour
     }
 
     //Desertificação - Aumenta a Temperature em 75% e diminuição da Humidity em 75% dentro dos tiles de transição. Transforma a região afetada em uma área de Caatinga.
-    private void DesastreDesertificação()
+    public void DesastreDesertificação()
     {
         for (int i = 0; i < tiles.Count; i++)
         {
@@ -102,7 +102,7 @@ public class EventManager : MonoBehaviour
     }
 
     //Alagamentos - Aumenta a Temperature em 75% e aumento da Humidity em 75% dentro dos tiles de transição. Transforma a região afetada em uma área de Pantanal
-    private void DesastreAlagamento()
+    public void DesastreAlagamento()
     {
         for (int i = 0; i < tiles.Count; i++)
         {
@@ -113,7 +113,7 @@ public class EventManager : MonoBehaviour
     }
 
     //Geadas - Diminuição da Temperature em 75% e diminuição da Humidity em 75% dentro dos tiles de transição. Transforma a região afetada em uma área de Mata das Araucarias
-    private void DesastreGeada()
+    public void DesastreGeada()
     {
         for (int i = 0; i < tiles.Count; i++)
         {
@@ -124,7 +124,7 @@ public class EventManager : MonoBehaviour
     }
 
     // Tempestades - Diminuição da Temperature em 75% e aumento da Humidity em 75% dentro dos tiles de transição.Transforma a região afetada em uma área de Mata_Atlantica
-    private void DesastreTempestade()
+    public void DesastreTempestade()
     {
         for (int i = 0; i < tiles.Count; i++)
         {

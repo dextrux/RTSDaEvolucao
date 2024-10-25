@@ -8,6 +8,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1103524919847845854, guid: addbfa9653c57254eaec470185824be5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Piece
+      objectReference: {fileID: 0}
     - target: {fileID: 2835877050581242179, guid: addbfa9653c57254eaec470185824be5,
         type: 3}
       propertyPath: _biome
