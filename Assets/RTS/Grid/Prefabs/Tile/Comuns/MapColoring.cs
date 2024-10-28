@@ -15,11 +15,11 @@ public class MapColoring : MonoBehaviour
             Renderer renderer = this.GetComponent<Renderer>();
             renderer.material.color = Color.green;
         }
-        else if (this.GetComponent<Tile>().GetBiome() == Biome.Cerrado )
+        /*else if (this.GetComponent<Tile>().GetBiome() == Biome.Cerrado )
         {
             Renderer renderer = this.GetComponent<Renderer>();
             renderer.material.color = Color.yellow;
-        }
+        }*/
         else if (this.GetComponent<Tile>().GetBiome() == Biome.Mata_Atlantica )
         {
             Renderer renderer = this.GetComponent<Renderer>();
