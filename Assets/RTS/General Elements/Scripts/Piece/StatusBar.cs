@@ -1,12 +1,19 @@
-﻿public class StatusBar
-{
+﻿public class StatusBar { 
     // Constantes da classe
     float _maxBarValue = 100f;
     const float _minBarValue = 0f;
 
     // Atributo
     private float _currentValue;
+    private void Start()
+    {
+        _currentValue = 50f;
+    }
 
+    public StatusBar( float currentValue)
+    {
+        _currentValue = currentValue;
+    }
     // Boundary Check
     private float AdjustToClosestBoundary(float value)
     {
@@ -22,6 +29,7 @@
     }
 
     // Get's
+    public static StatusBar GetStatusBar(StatusBar bar) { return bar; }
     public float GetCurrentBarValue() { return _currentValue; }
     public float GetBarMaxValue() { return _maxBarValue; }
     public float GetBarMinValue() { return _minBarValue; }

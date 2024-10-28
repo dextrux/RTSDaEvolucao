@@ -11,65 +11,111 @@ public class Tile : MonoBehaviour
     public Temperature _temperature = new Temperature();
 
     // Atributos de inspetor para assinalação
-    public float idealHumidity;
     public float currentHumidity;
-    public float idealTemperature;
     public float currentTemperature;
-    public TileType firstTileType;
-    public Biome firstBiome;
+    public GameObject mesh;
     public List<GameObject> tilesAdjacentes;
+    public GameObject foodTotens;
+    public List<GameObject> tileMesh;
+    public LayerMask layerMask;
 
     // Inicialização dos valores
-    public void Awake()
+    public void Start()
     {
-        _humidity.CreateHumidity(idealHumidity, currentHumidity);
-        _temperature.CreateTemperature(idealTemperature, currentTemperature);
-        SetBiome(firstBiome);
-        SetTileType(firstTileType);
+        _humidity.CreateHumidity(0, currentHumidity);
+        _temperature.CreateTemperature(0, currentTemperature);
+        Coloring();
+        Round();
+    }
+
+    private void Round()
+    {
+        System.Random random = new System.Random();
+        int seed = random.Next(0, 100);
+        if (seed > 80 && seed % 2 == 0 && _tileType == TileType.Vazio || _tileType == TileType.Comida)
+        {
+            FoodTotem totem;
+            CurrentTotemType type;
+            type = (CurrentTotemType)random.Next(1, (int)CurrentTotemType.NonMeatFood + 1);
+            totem = foodTotens.GetComponent<FoodTotem>();
+            totem.SetCurrentTotemType(type);
+            totem.SetTotemAsActive(type);
+            _tileType = TileType.Comida;
+        }
+    }
+
+    // This method is called when the GameObject becomes visible to any camera
+    private void OnBecameVisible()
+    {
+        // Optional: Reactivate if it becomes visible again
+        gameObject.SetActive(true);
+    }
+
+    // This method is called when the GameObject is no longer visible by any camera
+    private void OnBecameInvisible()
+    {
+        // Deactivate the GameObject when it's not visible
+        gameObject.SetActive(false);
+    }
+    public GameObject TileRaycast()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(this.transform.position, Vector3.up, out hit, 2f, layerMask))
+        {
+            Debug.DrawRay(this.transform.position, Vector3.up * 2f, Color.red, 2f);
+            return hit.collider.gameObject;
+        }
+        else
+        {
+            Debug.DrawRay(this.transform.position, Vector3.up * 2f, Color.green, 2f);
+            return null;
+        }
+    }
+    private void Coloring()
+    {
+        if (this._biome == Biome.Caatinga)
+        {
+            mesh.GetComponent<Renderer>().material.color = Color.yellow;
+
+        }
+        if (this._biome == Biome.Mata_Atlantica)
+        {
+            mesh.GetComponent<Renderer>().material.color = Color.magenta;
+        }
+        if (this._biome == Biome.Mata_das_Araucarias)
+        {
+            mesh.GetComponent<Renderer>().material.color = Color.blue;
+        }
+        if (this._biome == Biome.Pantanal)
+        {
+            mesh.GetComponent<Renderer>().material.color = Color.black;
+        }
+        if (this._biome == Biome.Pampa)
+        {
+            mesh.GetComponent<Renderer>().material.color = Color.green;
+        }
+        if (this._tileType == TileType.Barreira)
+        {
+            mesh.GetComponent<Renderer>().material.color = Color.red;
+        }
+
+
     }
 
     // Getters
     public Biome GetBiome() { return _biome; }
     public TileType GetTileType() { return _tileType; }
-    public Humidity GetHumidity() { return _humidity; }
-    public float GetIdealHumidityValue() { return _humidity.GetIdealHumidityValue(); }
-    public float GetCurrentHumidityValue() { return _humidity.GetCurrentHumidityValue(); }
-    public float GetLastHumidityValue() { return _humidity.GetLastHumidityValue(); }
-    public Temperature GetTemperature() { return _temperature; }
-    public float GetIdealTemperatureValue() { return _temperature.GetIdealTemperatureValue(); }
-    public float GetCurrentTemperatureValue() { return _temperature.GetCurrentTemperatureValue(); }
-    public float GetLastTemperatureValue() { return _temperature.GetLastTemperatureValue(); }
     public List<GameObject> GetTilesAdjacentes() { return tilesAdjacentes; }
+    public GameObject GetFoodTotem() { return foodTotens; }
+    public Humidity GetHumidity() { return this._humidity; }
+
+    public Temperature GetTemperature() { return this._temperature; }
 
     // Getters as strings
-    public string GetBiomeAsString() { return _biome.ToString(); }
-    public string GetTileTypeAsString() { return _tileType.ToString(); }
-    public string GetIdealHumidityAsString() { return _humidity.GetIdealHumidityAsString(); }
-    public string GetCurrentHumidityAsString() { return _humidity.GetCurrentHumidityAsString(); }
-    public string GetLastHumidityAsString() { return _humidity.GetLastHumidityAsString(); }
-    public string GetIdealTemperatureAsString() { return _temperature.GetIdealTemperatureAsString(); }
-    public string GetCurrentTemperatureAsString() { return _temperature.GetCurrentTemperatureAsString(); }
-    public string GetLastTemperatureAsString() { return _temperature.GetLastTemperatureAsString(); }
 
     // Setters
-    public void SetBiome(Biome biome)
-    {
-        _biome = biome;
-    }
 
-    public void SetTileType(TileType tileType)
-    {
-        _tileType = tileType;
-    }
-
-    // Event's Set's
-    public void SetNewTemperatureValuesByFactor(float factor)
-    {
-        _temperature.SetNewValueToAllTemperatureAtributesByFactor(factor);
-    }
-
-    public void SetNewHumidityValuesByFactor(float factor)
-    {
-        _humidity.SetNewValueToAllHumidityAtributesByFactor(factor);
-    }
+    public void AddTilesAdjacentes(GameObject tile) { tilesAdjacentes.Add(tile); }
+    public void SetBiome(Biome biome) { _biome = biome; }
+    public void SetTileType(TileType tileType) { _tileType = tileType; }
 }

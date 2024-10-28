@@ -1,0 +1,161 @@
+.main-menu-button {
+    background-image: url('project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=356799659&guid=8fbda476e9f56fe40955a8472d8bd40c&type=3#AtlasUITemp_0');
+    background-color: rgba(188, 188, 188, 0);
+    width: 484px;
+    -unity-background-scale-mode: scale-to-fit;
+    height: 151px;
+    -unity-font: url('project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.ttf?fileID=12800000&guid=22aed22e579f47048b64da77dc6349e6&type=3#Bodo Amat');
+    font-size: 40px;
+    -unity-font-definition: url('project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.asset?fileID=11400000&guid=0756c78a4ec4a2644b846b666c90696f&type=2#Bodo Amat');
+    color: rgb(57, 39, 27);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+}
+
+.main-menu-button:hover {
+    background-image: url('project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-744482655&guid=8fbda476e9f56fe40955a8472d8bd40c&type=3#AtlasUITemp_1');
+    background-color: rgba(152, 176, 141, 0);
+    width: 484px;
+    -unity-background-scale-mode: scale-to-fit;
+    height: 151px;
+    -unity-font: url('project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.ttf?fileID=12800000&guid=22aed22e579f47048b64da77dc6349e6&type=3#Bodo Amat');
+    font-size: 40px;
+    -unity-font-definition: url('project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.asset?fileID=11400000&guid=0756c78a4ec4a2644b846b666c90696f&type=2#Bodo Amat');
+    color: rgb(57, 39, 27);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    scale: 1.1 1.1;
+    cursor: url('project://database/Assets/UI/Sprites/UICursorVarA.png?fileID=2800000&guid=56107ec3c1c15e44fb54038613e958b0&type=3#UICursorVarA');
+}
+
+.main-menu-button:active {
+    background-image: url('project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=356799659&guid=8fbda476e9f56fe40955a8472d8bd40c&type=3#AtlasUITemp_0');
+    background-color: rgba(188, 188, 188, 0);
+    width: 484px;
+    -unity-background-scale-mode: scale-to-fit;
+    height: 151px;
+    -unity-font: url('project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.ttf?fileID=12800000&guid=22aed22e579f47048b64da77dc6349e6&type=3#Bodo Amat');
+    font-size: 40px;
+    -unity-font-definition: url('project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.asset?fileID=11400000&guid=0756c78a4ec4a2644b846b666c90696f&type=2#Bodo Amat');
+    color: rgb(57, 39, 27);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    scale: 0.9 0.9;
+}
+
+.main-menu-title {
+    -unity-text-align: middle-left;
+    font-size: 132px;
+    -unity-font: url('project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.otf?fileID=12800000&guid=81817e382e1f2ff4da7b7f2b05c32595&type=3#Bodo Amat');
+    -unity-font-definition: initial;
+    color: rgb(254, 252, 253);
+    -unity-font-style: normal;
+    -unity-text-outline-color: rgb(57, 48, 36);
+    -unity-text-outline-width: 7px;
+    padding-left: 0;
+    height: 30%;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+.exit-option-menu-btn {
+    background-image: url('project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-900656874&guid=8fbda476e9f56fe40955a8472d8bd40c&type=3#AtlasUITemp_52');
+    -unity-background-scale-mode: scale-to-fit;
+    position: absolute;
+    margin-top: -115px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 575px;
+    width: 160px;
+    height: 120px;
+    background-color: rgba(188, 188, 188, 0);
+    font-size: 107%;
+    -unity-font: url('project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.otf?fileID=12800000&guid=81817e382e1f2ff4da7b7f2b05c32595&type=3#Bodo Amat');
+    -unity-font-definition: initial;
+    color: rgb(254, 252, 253);
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 19px;
+    padding-left: 0;
+    opacity: 1;
+    -unity-text-outline-color: rgb(57, 44, 33);
+    -unity-text-outline-width: 6px;
+}
+
+.option-menu-subtitle {
+    -unity-text-align: middle-left;
+    font-size: 29px;
+    -unity-font: url('project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.otf?fileID=12800000&guid=81817e382e1f2ff4da7b7f2b05c32595&type=3#Bodo Amat');
+    -unity-font-definition: url('project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.asset?fileID=11400000&guid=0756c78a4ec4a2644b846b666c90696f&type=2#Bodo Amat');
+    margin-left: 28px;
+    color: rgb(56, 43, 33);
+}
+
+.unity-base-slider__tracker {
+    background-image: url('project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=1684045049&guid=8fbda476e9f56fe40955a8472d8bd40c&type=3#AtlasUITemp_55');
+    -unity-background-scale-mode: scale-to-fit;
+    background-color: rgba(0, 0, 0, 0);
+    height: 30px;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+}
+
+.unity-base-slider__dragger {
+    background-image: url('project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=599019620&guid=8fbda476e9f56fe40955a8472d8bd40c&type=3#AtlasUITemp_70');
+    -unity-background-scale-mode: scale-to-fit;
+    background-color: rgba(0, 0, 0, 0);
+    height: 50px;
+    width: 30px;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+}
+
+.option-closed {
+    flex-grow: 1;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 760px;
+    margin-top: 130px;
+    margin-left: 580px;
+    background-color: rgb(236, 170, 104);
+    height: 770px;
+    border-top-width: 18px;
+    border-right-width: 18px;
+    border-bottom-width: 18px;
+    border-left-width: 18px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-left-color: rgb(57, 44, 33);
+    border-right-color: rgb(57, 44, 33);
+    border-top-color: rgb(57, 44, 33);
+    border-bottom-color: rgb(57, 44, 33);
+    opacity: 1;
+    translate: 0 140%;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-elastic;
+}
+
+.option-open {
+    translate: 0 0;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out-bounce;
+}

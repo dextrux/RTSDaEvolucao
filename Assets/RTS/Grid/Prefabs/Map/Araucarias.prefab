@@ -1,0 +1,3053 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4777301100184367634
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2833444952576200036}
+  m_Layer: 0
+  m_Name: Araucarias
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2833444952576200036
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4777301100184367634}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2988604533602578228}
+  - {fileID: 3419065194205605133}
+  - {fileID: 6110357266946033268}
+  - {fileID: 7787667527810699080}
+  - {fileID: 2855297577862991723}
+  - {fileID: 1052788306777947069}
+  - {fileID: 864387054608425341}
+  - {fileID: 2001571480821034289}
+  - {fileID: 6088001810654078364}
+  - {fileID: 6097483609652152507}
+  - {fileID: 945287302097839785}
+  - {fileID: 6319293992854506206}
+  - {fileID: 7098356056679481246}
+  - {fileID: 5947758045078951694}
+  - {fileID: 6774980185920019554}
+  - {fileID: 5247578742769662548}
+  - {fileID: 1142766386339706281}
+  - {fileID: 2729458286949654637}
+  - {fileID: 53034083096329463}
+  - {fileID: 1629926502737021693}
+  - {fileID: 4793838173119916875}
+  - {fileID: 4261240506727679137}
+  - {fileID: 8332472263346646858}
+  - {fileID: 8636770570666703309}
+  - {fileID: 8214789481610547391}
+  - {fileID: 4598266449070792160}
+  - {fileID: 8479694237838690397}
+  - {fileID: 6559585157751887070}
+  - {fileID: 9082209106993951484}
+  - {fileID: 1303060122940165099}
+  - {fileID: 8805053039332348580}
+  - {fileID: 1234686897757374036}
+  - {fileID: 7675429659381847662}
+  - {fileID: 3575580633652526554}
+  - {fileID: 8282491793333532863}
+  - {fileID: 8689027442664042124}
+  - {fileID: 2446372483743068426}
+  - {fileID: 8880595536922535189}
+  - {fileID: 7766830418076844065}
+  - {fileID: 8975655988903175633}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &375814905477177786
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2833444952576200036}
+    m_Modifications:
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.343959
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.357947
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605994629480029136, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Tile Araucarias Variant (18)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d179fb77247ff4f8b65f3d03c044e7, type: 3}
+--- !u!4 &53034083096329463 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 375814905477177786}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &618425087179684836
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2833444952576200036}
+    m_Modifications:
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.45604262
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.413461
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605994629480029136, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Tile Araucarias Variant (10)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d179fb77247ff4f8b65f3d03c044e7, type: 3}
+--- !u!4 &945287302097839785 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 618425087179684836}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &743279088696469732
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2833444952576200036}
+    m_Modifications:
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.39395705
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.8857045
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605994629480029136, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Tile Araucarias Variant (16)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d179fb77247ff4f8b65f3d03c044e7, type: 3}
+--- !u!4 &1142766386339706281 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 743279088696469732}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &799110753064675056
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2833444952576200036}
+    m_Modifications:
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.3060418
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.941218
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605994629480029136, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Tile Araucarias Variant (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d179fb77247ff4f8b65f3d03c044e7, type: 3}
+--- !u!4 &1052788306777947069 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 799110753064675056}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1041924636206693424
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2833444952576200036}
+    m_Modifications:
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.0060418
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.941218
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605994629480029136, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Tile Araucarias Variant (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d179fb77247ff4f8b65f3d03c044e7, type: 3}
+--- !u!4 &864387054608425341 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1041924636206693424}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1375262655804135344
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2833444952576200036}
+    m_Modifications:
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.306043
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.8857045
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605994629480029136, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Tile Araucarias Variant (19)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d179fb77247ff4f8b65f3d03c044e7, type: 3}
+--- !u!4 &1629926502737021693 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1375262655804135344}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1488790064440417049
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2833444952576200036}
+    m_Modifications:
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.4060426
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.8857036
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605994629480029136, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Tile Araucarias Variant (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7370757700836224483, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: _tileType
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d179fb77247ff4f8b65f3d03c044e7, type: 3}
+--- !u!4 &1234686897757374036 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1488790064440417049}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1701839330670089894
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2833444952576200036}
+    m_Modifications:
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.8560426
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.357947
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605994629480029136, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Tile Araucarias Variant (29)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d179fb77247ff4f8b65f3d03c044e7, type: 3}
+--- !u!4 &1303060122940165099 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1701839330670089894}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2183191618869375100
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2833444952576200036}
+    m_Modifications:
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.856042
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.4689745
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605994629480029136, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Tile Araucarias Variant (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7370757700836224483, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: _tileType
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d179fb77247ff4f8b65f3d03c044e7, type: 3}
+--- !u!4 &2001571480821034289 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 2183191618869375100}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2336163434511678752
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2833444952576200036}
+    m_Modifications:
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.256046
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.357947
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605994629480029136, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Tile Araucarias Variant (17)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d179fb77247ff4f8b65f3d03c044e7, type: 3}
+--- !u!4 &2729458286949654637 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 2336163434511678752}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2462146940901315110
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2833444952576200036}
+    m_Modifications:
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.39395824
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.941218
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605994629480029136, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Tile Araucarias Variant (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d179fb77247ff4f8b65f3d03c044e7, type: 3}
+--- !u!4 &2855297577862991723 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 2462146940901315110}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2627851816627989575
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2833444952576200036}
+    m_Modifications:
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.3060421
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.83019
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605994629480029136, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Tile Araucarias Variant (36)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d179fb77247ff4f8b65f3d03c044e7, type: 3}
+--- !u!4 &2446372483743068426 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 2627851816627989575}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3096706537028366400
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2833444952576200036}
+    m_Modifications:
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.1560411
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.4689742
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605994629480029136, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Tile Araucarias Variant (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7370757700836224483, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: _tileType
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d179fb77247ff4f8b65f3d03c044e7, type: 3}
+--- !u!4 &3419065194205605133 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 3096706537028366400}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3238902186393121401
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2833444952576200036}
+    m_Modifications:
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.2439588
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.4689747
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605994629480029136, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Tile Araucarias Variant (0)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d179fb77247ff4f8b65f3d03c044e7, type: 3}
+--- !u!4 &2988604533602578228 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 3238902186393121401}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3752695006204108951
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2833444952576200036}
+    m_Modifications:
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.7939582
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.83019
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605994629480029136, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Tile Araucarias Variant (33)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d179fb77247ff4f8b65f3d03c044e7, type: 3}
+--- !u!4 &3575580633652526554 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 3752695006204108951}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4204973802079404205
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2833444952576200036}
+    m_Modifications:
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.9439576
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.357947
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605994629480029136, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Tile Araucarias Variant (25)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d179fb77247ff4f8b65f3d03c044e7, type: 3}
+--- !u!4 &4598266449070792160 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 4204973802079404205}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4515338237244348908
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2833444952576200036}
+    m_Modifications:
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.706043
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.8857045
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605994629480029136, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Tile Araucarias Variant (21)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d179fb77247ff4f8b65f3d03c044e7, type: 3}
+--- !u!4 &4261240506727679137 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 4515338237244348908}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5119574587989259782
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2833444952576200036}
+    m_Modifications:
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.006043
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.8857045
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605994629480029136, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Tile Araucarias Variant (20)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d179fb77247ff4f8b65f3d03c044e7, type: 3}
+--- !u!4 &4793838173119916875 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 5119574587989259782}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5573317297468040985
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2833444952576200036}
+    m_Modifications:
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.0939572
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.8857045
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605994629480029136, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Tile Araucarias Variant (15)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d179fb77247ff4f8b65f3d03c044e7, type: 3}
+--- !u!4 &5247578742769662548 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 5573317297468040985}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5842820820508284406
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2833444952576200036}
+    m_Modifications:
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.2439574
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.413461
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605994629480029136, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Tile Araucarias Variant (9)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d179fb77247ff4f8b65f3d03c044e7, type: 3}
+--- !u!4 &6097483609652152507 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 5842820820508284406}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5856678507424897849
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2833444952576200036}
+    m_Modifications:
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.9439585
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.4689745
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605994629480029136, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Tile Araucarias Variant (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7370757700836224483, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: _tileType
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d179fb77247ff4f8b65f3d03c044e7, type: 3}
+--- !u!4 &6110357266946033268 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 5856678507424897849}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5906381824116586705
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2833444952576200036}
+    m_Modifications:
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.9439576
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.413461
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605994629480029136, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Tile Araucarias Variant (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d179fb77247ff4f8b65f3d03c044e7, type: 3}
+--- !u!4 &6088001810654078364 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 5906381824116586705}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5925021846497400723
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2833444952576200036}
+    m_Modifications:
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.1560426
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.413461
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605994629480029136, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Tile Araucarias Variant (11)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d179fb77247ff4f8b65f3d03c044e7, type: 3}
+--- !u!4 &6319293992854506206 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 5925021846497400723}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6269553771514513987
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2833444952576200036}
+    m_Modifications:
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.6439576
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.413461
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605994629480029136, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Tile Araucarias Variant (13)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d179fb77247ff4f8b65f3d03c044e7, type: 3}
+--- !u!4 &5947758045078951694 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 6269553771514513987}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6597442537800122671
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2833444952576200036}
+    m_Modifications:
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.7939572
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.8857045
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605994629480029136, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Tile Araucarias Variant (14)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d179fb77247ff4f8b65f3d03c044e7, type: 3}
+--- !u!4 &6774980185920019554 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 6597442537800122671}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6810305132657084819
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2833444952576200036}
+    m_Modifications:
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.45604262
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.357947
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605994629480029136, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Tile Araucarias Variant (27)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d179fb77247ff4f8b65f3d03c044e7, type: 3}
+--- !u!4 &6559585157751887070 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 6810305132657084819}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7424516744387830483
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2833444952576200036}
+    m_Modifications:
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.8560426
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.413461
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605994629480029136, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Tile Araucarias Variant (12)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d179fb77247ff4f8b65f3d03c044e7, type: 3}
+--- !u!4 &7098356056679481246 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 7424516744387830483}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7608859912758759941
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2833444952576200036}
+    m_Modifications:
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.0939584
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.941218
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605994629480029136, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Tile Araucarias Variant (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d179fb77247ff4f8b65f3d03c044e7, type: 3}
+--- !u!4 &7787667527810699080 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 7608859912758759941}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7944930836751129964
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2833444952576200036}
+    m_Modifications:
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.706042
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.83019
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605994629480029136, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Tile Araucarias Variant (38)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d179fb77247ff4f8b65f3d03c044e7, type: 3}
+--- !u!4 &7766830418076844065 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 7944930836751129964}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8002853682859313955
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2833444952576200036}
+    m_Modifications:
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.493958
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.83019
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605994629480029136, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Tile Araucarias Variant (32)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d179fb77247ff4f8b65f3d03c044e7, type: 3}
+--- !u!4 &7675429659381847662 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 8002853682859313955}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8081339436266099984
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2833444952576200036}
+    m_Modifications:
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.2439574
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.357947
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605994629480029136, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Tile Araucarias Variant (26)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d179fb77247ff4f8b65f3d03c044e7, type: 3}
+--- !u!4 &8479694237838690397 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 8081339436266099984}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8237288841444107392
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2833444952576200036}
+    m_Modifications:
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.493958
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.885704
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605994629480029136, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Tile Araucarias Variant (23)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d179fb77247ff4f8b65f3d03c044e7, type: 3}
+--- !u!4 &8636770570666703309 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 8237288841444107392}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8514513581828485639
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2833444952576200036}
+    m_Modifications:
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.5560427
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.413461
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605994629480029136, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Tile Araucarias Variant (22)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d179fb77247ff4f8b65f3d03c044e7, type: 3}
+--- !u!4 &8332472263346646858 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 8514513581828485639}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8609213405947618802
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2833444952576200036}
+    m_Modifications:
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.0939581
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.83019
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605994629480029136, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Tile Araucarias Variant (34)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d179fb77247ff4f8b65f3d03c044e7, type: 3}
+--- !u!4 &8282491793333532863 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 8609213405947618802}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8614128381580103154
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2833444952576200036}
+    m_Modifications:
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.6439576
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.357947
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605994629480029136, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Tile Araucarias Variant (24)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d179fb77247ff4f8b65f3d03c044e7, type: 3}
+--- !u!4 &8214789481610547391 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 8614128381580103154}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8720283950215084188
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2833444952576200036}
+    m_Modifications:
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.4060416
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.83019
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605994629480029136, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Tile Araucarias Variant (39)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d179fb77247ff4f8b65f3d03c044e7, type: 3}
+--- !u!4 &8975655988903175633 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 8720283950215084188}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8899463117386510257
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2833444952576200036}
+    m_Modifications:
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.1560426
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.357947
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605994629480029136, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Tile Araucarias Variant (28)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d179fb77247ff4f8b65f3d03c044e7, type: 3}
+--- !u!4 &9082209106993951484 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 8899463117386510257}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9015894131862287297
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2833444952576200036}
+    m_Modifications:
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.393958
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.83019
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605994629480029136, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Tile Araucarias Variant (35)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d179fb77247ff4f8b65f3d03c044e7, type: 3}
+--- !u!4 &8689027442664042124 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 9015894131862287297}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9130332509695752280
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2833444952576200036}
+    m_Modifications:
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.006042
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.83019
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605994629480029136, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Tile Araucarias Variant (37)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d179fb77247ff4f8b65f3d03c044e7, type: 3}
+--- !u!4 &8880595536922535189 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 9130332509695752280}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9203834313979891689
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2833444952576200036}
+    m_Modifications:
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.5560427
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.357947
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4605994629480029136, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Tile Araucarias Variant (30)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 24d179fb77247ff4f8b65f3d03c044e7, type: 3}
+--- !u!4 &8805053039332348580 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 399487337395019085, guid: 24d179fb77247ff4f8b65f3d03c044e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 9203834313979891689}
+  m_PrefabAsset: {fileID: 0}

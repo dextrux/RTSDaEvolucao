@@ -3,13 +3,13 @@ public enum Biome
     Mata_das_Araucarias,
     Mata_Atlantica,
     Pantanal,
-    Cerrado,
+    Caatinga,
     Pampa,
     Erro,
     Araucaria_Atlantica,
     Araucaria_Pantanal,
-    Araucaria_Cerrado,
+    Araucaria_Caatinga,
     Atlantica_Pantanal,
-    Atlantica_Cerrado,
-    Pantanal_Cerrado
+    Atlantica_Caatinga,
+    Pantanal_Caatinga
 }
