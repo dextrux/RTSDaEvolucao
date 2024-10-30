@@ -1,0 +1,94 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/StyleSheets/InGameStyle.uss?fileID=7433441132597879392&amp;guid=4fc706b323a4ef94ebe543e20e51da1b&amp;type=3#InGameStyle" />
+    <ui:VisualElement name="main-container" style="flex-grow: 1; background-image: none; -unity-background-image-tint-color: rgba(255, 255, 255, 0.7);">
+        <ui:VisualElement name="header-container" style="flex-grow: 1; width: 100%; height: 162px; flex-direction: row; padding-left: 30px;">
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="pause-button" class="pause-button">
+                <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=1027472694&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_18&apos;); height: 70%; width: 70%;" />
+            </ui:Button>
+            <ui:VisualElement style="flex-grow: 1; width: 401px;" />
+            <ui:VisualElement name="life-container" style="flex-grow: 1; width: 263px; padding-top: 32px; padding-right: 26px;">
+                <ui:VisualElement name="container-bar" style="flex-grow: 1; background-color: rgba(57, 78, 74, 0); background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=1199561758&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_54&apos;); overflow: hidden; padding-right: 0; padding-left: 14px; height: 118px; justify-content: center; width: 820px;">
+                    <ui:VisualElement style="flex-grow: 1; overflow: hidden; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-left-radius: 48px; border-top-right-radius: 48px; border-bottom-right-radius: 48px; border-bottom-left-radius: 48px; translate: -7px 0; height: 100px; width: 810px; padding-top: 3px; padding-right: 3px; padding-bottom: 3px; padding-left: 3px;">
+                        <ui:VisualElement name="life-bar-progress" style="flex-grow: 1; height: 69%; width: 100%; margin-top: -2px; margin-right: -2px; margin-bottom: -2px; margin-left: -2px; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-1623355270&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_47&apos;); overflow: hidden; translate: 0 0;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="life-container-footer" style="flex-grow: 1; top: -51px;">
+                    <ui:Label tabindex="-1" text="80/100" parse-escape-sequences="true" display-tooltip-when-elided="true" name="life-txt" class="text-hud-game" style="font-size: 83%; width: auto; height: 77px;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="body-container" style="flex-grow: 1; height: 702px;" />
+        <ui:VisualElement name="footer-container" style="flex-grow: 1; height: 216px; padding-left: 30px;">
+            <ui:VisualElement name="footer-top-container" style="flex-grow: 1; height: 230px; padding-top: 17px; padding-left: 0; flex-direction: row; justify-content: space-between;">
+                <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="next-turn-button" class="pause-button" style="width: 100px; top: -2px; margin-top: -3px; height: 110px;">
+                    <ui:VisualElement style="background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-167604869&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_20&apos;); top: auto; width: 100%; height: 100%; -unity-background-scale-mode: scale-to-fit;" />
+                </ui:Button>
+                <ui:VisualElement name="dna-container" style="flex-grow: 1; width: 275px; -unity-background-scale-mode: scale-to-fit; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-813222707&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_9&apos;); flex-direction: row; padding-top: 15px; padding-bottom: 15px; padding-right: 30px; padding-left: 30px; height: 100px;">
+                    <ui:VisualElement name="dna-figure" style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-417108044&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_56&apos;); -unity-background-scale-mode: scale-to-fit; height: 65px; padding-top: 5px; width: 30%;" />
+                    <ui:Label tabindex="-1" text="= 10" parse-escape-sequences="true" display-tooltip-when-elided="true" name="dna-count-txt" class="text-hud-game" style="font-size: 50%; -unity-text-align: lower-center; width: 60%;" />
+                </ui:VisualElement>
+                <ui:VisualElement style="flex-grow: 1; width: 1493px;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="footer-bottom-container" style="flex-grow: 1; height: 216px;">
+                <ui:VisualElement name="bar-background" style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-745324229&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_131&apos;); margin-top: 20px; margin-right: 0; margin-bottom: 20px; margin-left: 0; flex-direction: row; justify-content: space-around; padding-bottom: 16px; padding-top: -15px;">
+                    <ui:VisualElement name="bar-space_1" class="no-bar" />
+                    <ui:VisualElement name="bar-space_2" class="no-bar" />
+                    <ui:VisualElement name="bar-space_3" class="no-bar" />
+                    <ui:VisualElement name="bar-space_4" class="no-bar" style="flex-grow: 1;" />
+                    <ui:VisualElement name="bar-space_5" class="little-bar" />
+                    <ui:VisualElement name="bar-space_6" class="little-bar" />
+                    <ui:VisualElement name="bar-space_7" class="little-bar" />
+                    <ui:VisualElement name="bar-space_8" class="little-bar" />
+                    <ui:VisualElement name="bar-space_9" class="big-bar__orange" />
+                    <ui:VisualElement name="turn-mark" style="flex-grow: 1; position: absolute; left: 49%; top: -100%; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-856604301&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_51&apos;); width: 48px; height: 145px; -unity-background-scale-mode: scale-to-fit;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="options-container" class="option-closed">
+        <ui:VisualElement name="options-body" style="flex-grow: 1; background-image: none; width: 90%; height: 90%; margin-top: 65px; margin-right: 65px; margin-bottom: 65px; margin-left: 65px; background-color: rgb(250, 187, 120); border-top-left-radius: 17px; border-top-right-radius: 17px; border-bottom-right-radius: 17px; border-bottom-left-radius: 17px;">
+            <ui:Label tabindex="-1" text="Opções" parse-escape-sequences="true" display-tooltip-when-elided="true" name="option-title-txt" class="option-menu-title" style="margin-top: -100px; -unity-text-align: middle-center; font-size: 65px; margin-bottom: -13px;" />
+            <ui:Label tabindex="-1" text="Modificar Volume" parse-escape-sequences="true" display-tooltip-when-elided="true" name="option-subtitle-txt" class="option-menu-subtitle" style="margin-bottom: 26px;" />
+            <ui:VisualElement name="global-volume-container" style="flex-grow: 1;">
+                <ui:Label tabindex="-1" text="Volume Geral" parse-escape-sequences="true" display-tooltip-when-elided="true" name="option-subtitle-txt" style="-unity-text-align: middle-center; font-size: 32px; -unity-font: url(&apos;project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.otf?fileID=12800000&amp;guid=81817e382e1f2ff4da7b7f2b05c32595&amp;type=3#Bodo Amat&apos;); -unity-font-definition: url(&apos;project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.asset?fileID=11400000&amp;guid=0756c78a4ec4a2644b846b666c90696f&amp;type=2#Bodo Amat&apos;); margin-left: 2px; color: rgb(56, 43, 33); width: 100%; margin-right: -35px;" />
+                <ui:VisualElement name="slider-volume" style="flex-grow: 1; justify-content: center; align-items: flex-start; flex-direction: row;">
+                    <ui:Label tabindex="-1" text="0%" parse-escape-sequences="true" display-tooltip-when-elided="true" name="zero-txt" class="option-menu-subtitle" />
+                    <ui:SliderInt picking-mode="Ignore" value="50" high-value="100" name="SliderInt" style="width: 254px;" />
+                    <ui:Label tabindex="-1" text="100%" parse-escape-sequences="true" display-tooltip-when-elided="true" name="hundred-txt" class="option-menu-subtitle" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="music-volume-container" style="flex-grow: 1;">
+                <ui:Label tabindex="-1" text="Volume da Música" parse-escape-sequences="true" display-tooltip-when-elided="true" name="option-subtitle-txt" style="-unity-text-align: middle-center; font-size: 32px; -unity-font: url(&apos;project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.otf?fileID=12800000&amp;guid=81817e382e1f2ff4da7b7f2b05c32595&amp;type=3#Bodo Amat&apos;); -unity-font-definition: url(&apos;project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.asset?fileID=11400000&amp;guid=0756c78a4ec4a2644b846b666c90696f&amp;type=2#Bodo Amat&apos;); margin-left: 2px; color: rgb(56, 43, 33); width: 100%; margin-right: -35px;" />
+                <ui:VisualElement name="slider-volume" style="flex-grow: 1; justify-content: center; align-items: flex-start; flex-direction: row;">
+                    <ui:Label tabindex="-1" text="0%" parse-escape-sequences="true" display-tooltip-when-elided="true" name="zero-txt" class="option-menu-subtitle" />
+                    <ui:SliderInt picking-mode="Ignore" value="50" high-value="100" name="SliderInt" style="width: 254px;" />
+                    <ui:Label tabindex="-1" text="100%" parse-escape-sequences="true" display-tooltip-when-elided="true" name="hundred-txt" class="option-menu-subtitle" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="effects-volume-container" style="flex-grow: 1;">
+                <ui:Label tabindex="-1" text="Volume dos Efeitos" parse-escape-sequences="true" display-tooltip-when-elided="true" name="option-subtitle-txt" style="-unity-text-align: middle-center; font-size: 32px; -unity-font: url(&apos;project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.otf?fileID=12800000&amp;guid=81817e382e1f2ff4da7b7f2b05c32595&amp;type=3#Bodo Amat&apos;); -unity-font-definition: url(&apos;project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.asset?fileID=11400000&amp;guid=0756c78a4ec4a2644b846b666c90696f&amp;type=2#Bodo Amat&apos;); margin-left: 2px; color: rgb(56, 43, 33); width: 100%; margin-right: -35px;" />
+                <ui:VisualElement name="slider-volume" style="flex-grow: 1; justify-content: center; align-items: flex-start; flex-direction: row;">
+                    <ui:Label tabindex="-1" text="0%" parse-escape-sequences="true" display-tooltip-when-elided="true" name="zero-txt" class="option-menu-subtitle" />
+                    <ui:SliderInt picking-mode="Ignore" value="50" high-value="100" name="SliderInt" style="width: 254px;" />
+                    <ui:Label tabindex="-1" text="100%" parse-escape-sequences="true" display-tooltip-when-elided="true" name="hundred-txt" class="option-menu-subtitle" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="empty-container" style="flex-grow: 1; flex-direction: row; align-items: flex-start; justify-content: center;" />
+            <ui:Button text="OK" parse-escape-sequences="true" display-tooltip-when-elided="true" name="save-option-btn" class="option-menu-button" style="align-self: center; height: 91px; position: absolute; margin-top: 635px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="turn-change-container" class="turn-screen-closed" style="height: 530px; top: 15%; justify-content: center; align-items: center;">
+        <ui:VisualElement name="turn-change-body" style="flex-grow: 1; background-image: none; width: 90%; height: 90%; margin-top: 65px; margin-right: 65px; margin-bottom: 65px; margin-left: 65px; background-color: rgb(250, 187, 120); border-top-left-radius: 17px; border-top-right-radius: 17px; border-bottom-right-radius: 17px; border-bottom-left-radius: 17px; justify-content: center;">
+            <ui:Label tabindex="-1" text="Você passou\n o turno" parse-escape-sequences="true" display-tooltip-when-elided="true" name="option-title-txt" class="option-menu-title" style="-unity-text-align: middle-center; font-size: 40%;" />
+            <ui:Button text="OK" parse-escape-sequences="true" display-tooltip-when-elided="true" name="turn-change-confirmation-btn" class="option-menu-button" style="position: relative; align-self: center; height: 50%;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="pause-container" class="turn-screen-closed">
+        <ui:VisualElement name="pause-body" style="flex-grow: 1; background-image: none; width: 90%; height: 90%; margin-top: 65px; margin-right: 65px; margin-bottom: 65px; margin-left: 65px; background-color: rgb(250, 187, 120); border-top-left-radius: 17px; border-top-right-radius: 17px; border-bottom-right-radius: 17px; border-bottom-left-radius: 17px; justify-content: space-around; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+            <ui:Label tabindex="-1" text="Pause" parse-escape-sequences="true" display-tooltip-when-elided="true" name="option-title-txt" class="option-menu-title" style="-unity-text-align: middle-center; font-size: 40%; height: 10%;" />
+            <ui:Button text="Opções" parse-escape-sequences="true" display-tooltip-when-elided="true" name="option-pause-btn" class="option-menu-button" style="position: relative; align-self: center; height: 20%;" />
+            <ui:Button text="Menu" parse-escape-sequences="true" display-tooltip-when-elided="true" name="menu-pause-btn" class="option-menu-button" style="position: relative; align-self: center; height: 20%;" />
+            <ui:Button text="Voltar" parse-escape-sequences="true" display-tooltip-when-elided="true" name="back-pause-btn" class="option-menu-button" style="position: relative; align-self: center; height: 20%;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -181,10 +181,10 @@ TextureImporter:
       name: AtlasUITemp_2
       rect:
         serializedVersion: 2
-        x: 1041
-        y: 1995
-        width: 65
-        height: 77
+        x: 1024
+        y: 252
+        width: 218
+        height: 138
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,10 +202,10 @@ TextureImporter:
       name: AtlasUITemp_3
       rect:
         serializedVersion: 2
-        x: 1144
-        y: 2008
-        width: 47
-        height: 55
+        x: 1122
+        y: 1992
+        width: 90
+        height: 85
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,10 +223,10 @@ TextureImporter:
       name: AtlasUITemp_4
       rect:
         serializedVersion: 2
-        x: 1224
-        y: 1995
-        width: 62
-        height: 77
+        x: 1211
+        y: 1993
+        width: 90
+        height: 85
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,10 +244,10 @@ TextureImporter:
       name: AtlasUITemp_5
       rect:
         serializedVersion: 2
-        x: 1318
-        y: 2001
-        width: 77
-        height: 67
+        x: 1313
+        y: 1992
+        width: 90
+        height: 85
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,10 +265,10 @@ TextureImporter:
       name: AtlasUITemp_6
       rect:
         serializedVersion: 2
-        x: 1455
-        y: 1969
-        width: 152
-        height: 150
+        x: 3392
+        y: 808
+        width: 260
+        height: 250
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -286,10 +286,10 @@ TextureImporter:
       name: AtlasUITemp_7
       rect:
         serializedVersion: 2
-        x: 1616
-        y: 1815
-        width: 152
-        height: 304
+        x: 3398
+        y: 1341
+        width: 160
+        height: 180
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -307,10 +307,10 @@ TextureImporter:
       name: AtlasUITemp_8
       rect:
         serializedVersion: 2
-        x: 1778
-        y: 1969
-        width: 151
-        height: 150
+        x: 3173
+        y: 1579
+        width: 160
+        height: 180
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -370,10 +370,10 @@ TextureImporter:
       name: AtlasUITemp_11
       rect:
         serializedVersion: 2
-        x: 1041
-        y: 1884
-        width: 67
-        height: 66
+        x: 1030
+        y: 1877
+        width: 90
+        height: 85
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -391,10 +391,10 @@ TextureImporter:
       name: AtlasUITemp_12
       rect:
         serializedVersion: 2
-        x: 1131
-        y: 1884
-        width: 77
-        height: 72
+        x: 1123
+        y: 1877
+        width: 90
+        height: 85
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -412,10 +412,10 @@ TextureImporter:
       name: AtlasUITemp_13
       rect:
         serializedVersion: 2
-        x: 1224
-        y: 1886
-        width: 29
-        height: 70
+        x: 1217
+        y: 1878
+        width: 90
+        height: 85
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -433,10 +433,10 @@ TextureImporter:
       name: AtlasUITemp_14
       rect:
         serializedVersion: 2
-        x: 1249
-        y: 1884
-        width: 47
-        height: 47
+        x: 1287
+        y: 435
+        width: 218
+        height: 138
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -454,10 +454,10 @@ TextureImporter:
       name: AtlasUITemp_15
       rect:
         serializedVersion: 2
-        x: 1331
-        y: 1879
-        width: 51
-        height: 73
+        x: 1312
+        y: 1875
+        width: 90
+        height: 85
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -475,10 +475,10 @@ TextureImporter:
       name: AtlasUITemp_16
       rect:
         serializedVersion: 2
-        x: 1455
-        y: 1815
-        width: 152
-        height: 152
+        x: 2913
+        y: 582
+        width: 260
+        height: 250
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -496,10 +496,10 @@ TextureImporter:
       name: AtlasUITemp_17
       rect:
         serializedVersion: 2
-        x: 1778
-        y: 1815
-        width: 151
-        height: 152
+        x: 2950
+        y: 1342
+        width: 160
+        height: 180
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -518,8 +518,8 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 797
-        y: 1809
-        width: 26
+        y: 1810
+        width: 63
         height: 77
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -538,10 +538,10 @@ TextureImporter:
       name: AtlasUITemp_19
       rect:
         serializedVersion: 2
-        x: 834
-        y: 1809
-        width: 27
-        height: 77
+        x: 1034
+        y: 437
+        width: 218
+        height: 138
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -580,10 +580,10 @@ TextureImporter:
       name: AtlasUITemp_21
       rect:
         serializedVersion: 2
-        x: 1050
-        y: 1783
-        width: 49
-        height: 73
+        x: 1030
+        y: 1776
+        width: 90
+        height: 85
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -601,10 +601,10 @@ TextureImporter:
       name: AtlasUITemp_22
       rect:
         serializedVersion: 2
-        x: 1136
-        y: 1785
-        width: 57
-        height: 68
+        x: 1116
+        y: 1776
+        width: 90
+        height: 85
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -622,10 +622,10 @@ TextureImporter:
       name: AtlasUITemp_23
       rect:
         serializedVersion: 2
-        x: 1224
-        y: 1783
-        width: 55
-        height: 70
+        x: 1207
+        y: 1776
+        width: 90
+        height: 85
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -748,8 +748,8 @@ TextureImporter:
       name: AtlasUITemp_32
       rect:
         serializedVersion: 2
-        x: 1455
-        y: 1661
+        x: 1963
+        y: 813
         width: 152
         height: 152
       alignment: 0
@@ -769,8 +769,8 @@ TextureImporter:
       name: AtlasUITemp_33
       rect:
         serializedVersion: 2
-        x: 1616
-        y: 1661
+        x: 2156
+        y: 677
         width: 152
         height: 152
       alignment: 0
@@ -790,10 +790,10 @@ TextureImporter:
       name: AtlasUITemp_34
       rect:
         serializedVersion: 2
-        x: 1778
-        y: 1661
-        width: 151
-        height: 152
+        x: 2981
+        y: 830
+        width: 260
+        height: 250
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -811,10 +811,10 @@ TextureImporter:
       name: AtlasUITemp_35
       rect:
         serializedVersion: 2
-        x: 1487
-        y: 1584
-        width: 43
-        height: 47
+        x: 2226
+        y: 864
+        width: 260
+        height: 250
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1021,10 +1021,10 @@ TextureImporter:
       name: AtlasUITemp_45
       rect:
         serializedVersion: 2
-        x: 1487
-        y: 1534
-        width: 43
-        height: 32
+        x: 1673
+        y: 173
+        width: 260
+        height: 250
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1084,10 +1084,10 @@ TextureImporter:
       name: AtlasUITemp_48
       rect:
         serializedVersion: 2
-        x: 1487
-        y: 1466
-        width: 43
-        height: 47
+        x: 1661
+        y: 516
+        width: 260
+        height: 250
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1126,10 +1126,10 @@ TextureImporter:
       name: AtlasUITemp_50
       rect:
         serializedVersion: 2
-        x: 1493
-        y: 1427
-        width: 33
-        height: 30
+        x: 1300
+        y: 254
+        width: 218
+        height: 138
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1231,10 +1231,10 @@ TextureImporter:
       name: AtlasUITemp_55
       rect:
         serializedVersion: 2
-        x: 1279
-        y: 1310
-        width: 396
-        height: 48
+        x: 780
+        y: 436
+        width: 218
+        height: 138
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1273,10 +1273,10 @@ TextureImporter:
       name: AtlasUITemp_71
       rect:
         serializedVersion: 2
-        x: 73
+        x: 766
         y: 1175
-        width: 1803
-        height: 68
+        width: 11
+        height: 69
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1315,10 +1315,10 @@ TextureImporter:
       name: AtlasUITemp_73
       rect:
         serializedVersion: 2
-        x: 3403
-        y: 86
-        width: 341
-        height: 487
+        x: 2397
+        y: 317
+        width: 200
+        height: 260
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1488,7 +1488,7 @@ TextureImporter:
         width: 81
         height: 88
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1509,7 +1509,7 @@ TextureImporter:
         width: 81
         height: 88
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1530,7 +1530,7 @@ TextureImporter:
         width: 81
         height: 88
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1551,7 +1551,7 @@ TextureImporter:
         width: 96
         height: 103
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1572,7 +1572,7 @@ TextureImporter:
         width: 111
         height: 190
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1593,7 +1593,7 @@ TextureImporter:
         width: 109
         height: 190
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1614,7 +1614,7 @@ TextureImporter:
         width: 842
         height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1630,12 +1630,12 @@ TextureImporter:
       name: AtlasUITemp_60
       rect:
         serializedVersion: 2
-        x: 2615
-        y: 866
-        width: 250
-        height: 243
+        x: 2610
+        y: 863
+        width: 260
+        height: 250
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1643,6 +1643,195 @@ TextureImporter:
       bones: []
       spriteID: 9282b003d558bd047a3dcddd8d3f0d5e
       internalID: -1109962394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtlasUITemp_61
+      rect:
+        serializedVersion: 2
+        x: 3173
+        y: 1341
+        width: 160
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e15e12176e3768489ef4b9d63c13cb5
+      internalID: -1952634358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtlasUITemp_62
+      rect:
+        serializedVersion: 2
+        x: 3179
+        y: 1097
+        width: 160
+        height: 180
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f47794cdc0af71d4cba027b565b5deea
+      internalID: 1384364238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtlasUITemp_63
+      rect:
+        serializedVersion: 2
+        x: 2916
+        y: 1846
+        width: 330
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b28c29a3d36e78a47a3cd57dbebd2e82
+      internalID: -1126876337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtlasUITemp_64
+      rect:
+        serializedVersion: 2
+        x: 2917
+        y: 1981
+        width: 329
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a895a89c1ed91614a866d039efca07e5
+      internalID: 1165359724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtlasUITemp_65
+      rect:
+        serializedVersion: 2
+        x: 3725
+        y: 1506
+        width: 92
+        height: 642
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c69706ea5d6ad5b45abf151a0ab825ae
+      internalID: -1093850492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtlasUITemp_66
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 1289
+        width: 100
+        height: 435
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 580832da9d46f8e48b5c20e0e7e38d6d
+      internalID: -1468089833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtlasUITemp_67
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 76
+        width: 807
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 345d62de9562a864292b05b35c7df731
+      internalID: -220852083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtlasUITemp_68
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 1175
+        width: 11
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce47fcbf0d5ff224aba0b6a66281533c
+      internalID: -719416321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtlasUITemp_69
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 1175
+        width: 11
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8ae8eef6e7735349ae85a138fbf2b37
+      internalID: -2001958792
       vertices: []
       indices: 
       edges: []
