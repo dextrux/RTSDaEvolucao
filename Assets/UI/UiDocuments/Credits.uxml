@@ -1,0 +1,33 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/StyleSheets/CreditStyle.uss?fileID=7433441132597879392&amp;guid=ee15e03a2ac239c4e9b12a33385a9a60&amp;type=3#CreditStyle" />
+    <ui:VisualElement name="main-container" style="flex-direction: column; min-width: auto; min-height: 100%; width: 100%; height: 100%; background-image: none;">
+        <ui:VisualElement style="flex-grow: 1; height: 10%;" />
+        <ui:VisualElement style="width: 100%; height: 80%; align-items: center; justify-content: space-between;">
+            <ui:VisualElement name="credits-container" style="width: 50%; height: 100%; background-color: rgb(236, 170, 104); border-left-color: rgb(57, 44, 33); border-right-color: rgb(57, 44, 33); border-top-color: rgb(57, 44, 33); border-bottom-color: rgb(57, 44, 33); border-top-width: 16px; border-right-width: 16px; border-bottom-width: 16px; border-left-width: 16px; border-top-left-radius: 74px; border-top-right-radius: 74px; border-bottom-right-radius: 74px; border-bottom-left-radius: 74px; padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px;">
+                <ui:VisualElement name="credits-body-container" style="height: 100%; width: 100%; background-color: rgb(250, 187, 120); border-top-left-radius: 39px; border-top-right-radius: 39px; border-bottom-right-radius: 39px; border-bottom-left-radius: 39px; padding-right: 20px; padding-left: 20px; padding-bottom: 20px;">
+                    <ui:Label text="Créditos" class="credit-title" style="height: 15%;" />
+                    <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" style="height: 82%;">
+                        <ui:VisualElement style="flex-grow: 1; background-color: rgb(255, 0, 0); width: 100%; height: 60px;" />
+                        <ui:VisualElement style="flex-grow: 1; background-color: rgb(255, 0, 0); width: 100%; height: 60px;" />
+                        <ui:VisualElement style="flex-grow: 1; background-color: rgb(255, 0, 0); width: 100%; height: 60px;" />
+                        <ui:VisualElement style="flex-grow: 1; background-color: rgb(255, 0, 0); width: 100%; height: 60px;" />
+                        <ui:VisualElement style="flex-grow: 1; background-color: rgb(255, 0, 0); width: 100%; height: 60px;" />
+                        <ui:VisualElement style="flex-grow: 1; background-color: rgb(255, 0, 0); width: 100%; height: 60px;" />
+                        <ui:VisualElement style="flex-grow: 1; background-color: rgb(255, 0, 0); width: 100%; height: 60px;" />
+                        <ui:VisualElement style="flex-grow: 1; background-color: rgb(255, 0, 0); width: 100%; height: 60px;" />
+                        <ui:VisualElement style="flex-grow: 1; background-color: rgb(255, 0, 0); width: 100%; height: 60px;" />
+                        <ui:VisualElement style="flex-grow: 1; background-color: rgb(255, 0, 0); width: 100%; height: 60px;" />
+                        <ui:VisualElement style="flex-grow: 1; background-color: rgb(255, 0, 0); width: 100%; height: 60px;" />
+                        <ui:VisualElement style="flex-grow: 1; background-color: rgb(255, 0, 0); width: 100%; height: 60px;" />
+                        <ui:VisualElement style="flex-grow: 1; background-color: rgb(255, 0, 0); width: 100%; height: 60px;" />
+                        <ui:VisualElement style="flex-grow: 1; background-color: rgb(255, 0, 0); width: 100%; height: 60px;" />
+                        <ui:VisualElement style="flex-grow: 1; background-color: rgb(255, 0, 0); width: 100%; height: 60px;" />
+                        <ui:VisualElement style="flex-grow: 1; background-color: rgb(255, 0, 0); width: 100%; height: 60px;" />
+                    </ui:ScrollView>
+                    <ui:Button text="OK" parse-escape-sequences="true" display-tooltip-when-elided="true" name="exit-credits-btn" class="credit-button" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1; height: 10%;" />
+    </ui:VisualElement>
+</ui:UXML>

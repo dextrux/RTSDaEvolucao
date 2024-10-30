@@ -6,9 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/RTS/Scenes/MainMenu.unity
+    path: Assets/RTS/Scenes/Menu.unity
     guid: 8299f52f3b154324fbf72920c9816288
   - enabled: 1
     path: Assets/RTS/Scenes/GameScene.unity
     guid: 5704be575ba5dd441ace27fd8834a4a5
+  - enabled: 1
+    path: Assets/RTS/Scenes/ArthutScene.unity
+    guid: de06e3803f50e9f47ae8314e9e61bf41
+  - enabled: 1
+    path: Assets/RTS/Scenes/GustavoScene.unity
+    guid: be3db79f18fb8ee44a40bbc40cebe4cf
+  - enabled: 1
+    path: Assets/RTS/Scenes/VictorScene.unity
+    guid: 1ea5d4c5635b4aa49ad12c38b244cf1d
   m_configObjects: {}

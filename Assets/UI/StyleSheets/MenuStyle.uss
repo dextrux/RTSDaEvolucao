@@ -104,7 +104,7 @@
 }
 
 .unity-base-slider__tracker {
-    background-image: url('project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=1684045049&guid=8fbda476e9f56fe40955a8472d8bd40c&type=3#AtlasUITemp_55');
+    background-image: url('project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=1807323384&guid=8fbda476e9f56fe40955a8472d8bd40c&type=3#AtlasUITemp_59');
     -unity-background-scale-mode: scale-to-fit;
     background-color: rgba(0, 0, 0, 0);
     height: 30px;

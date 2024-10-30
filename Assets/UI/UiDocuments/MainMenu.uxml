@@ -9,7 +9,7 @@
                 <ui:Button text="Créditos" parse-escape-sequences="true" display-tooltip-when-elided="true" name="credit-btn" class="main-menu-button" />
             </ui:VisualElement>
             <ui:VisualElement name="containerFooter" style="flex-grow: 1; flex-direction: column-reverse; padding-bottom: 10px;">
-                <ui:Label tabindex="-1" text="Versão: 0.01" parse-escape-sequences="true" display-tooltip-when-elided="true" name="menu-version-txt" class="main-menu-title" style="font-size: 51px;" />
+                <ui:Label tabindex="-1" text="Versão: 0.7.0" parse-escape-sequences="true" display-tooltip-when-elided="true" name="menu-version-txt" class="main-menu-title" style="font-size: 51px;" />
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="right-container" style="flex-grow: 1; width: 65%; height: 100%;" />
@@ -40,10 +40,6 @@
                         <ui:SliderInt picking-mode="Ignore" value="50" high-value="100" name="SliderInt" style="width: 254px;" />
                         <ui:Label tabindex="-1" text="100%" parse-escape-sequences="true" display-tooltip-when-elided="true" name="hundred-txt" class="option-menu-subtitle" />
                     </ui:VisualElement>
-                </ui:VisualElement>
-                <ui:VisualElement name="mute-volume-container" style="flex-grow: 1; flex-direction: row; align-items: flex-start; justify-content: center;">
-                    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="mute-effects-btn" style="background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-1061077494&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_39&apos;); background-color: rgba(188, 188, 188, 0); -unity-background-scale-mode: scale-to-fit; width: 60px; height: 60px; margin-right: 15px; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;" />
-                    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="mute-music-btn" style="background-color: rgba(188, 188, 188, 0); background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=2016887848&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_38&apos;); width: 60px; height: 60px; -unity-background-scale-mode: scale-to-fit; margin-left: 15px; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;" />
                 </ui:VisualElement>
                 <ui:Button text="OK" parse-escape-sequences="true" display-tooltip-when-elided="true" name="save-option-btn" class="main-menu-button" style="align-self: center; height: 91px; position: absolute; margin-top: 635px;" />
             </ui:VisualElement>

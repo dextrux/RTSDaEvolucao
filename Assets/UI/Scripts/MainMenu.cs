@@ -9,6 +9,7 @@ public class MainMenu : MonoBehaviour
     private Button _configSaveBtn;
     private Button _creditsBtn;
     private VisualElement _optionsContainer;
+    [SerializeField] GameObject _creditsScreen;
 
     private void Start()
     {
@@ -26,8 +27,7 @@ public class MainMenu : MonoBehaviour
 
     private void OnClickPlay(ClickEvent evt)
     {
-        //Temporário
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("VictorScene");
     }
     private void OnClickConfig(ClickEvent evt)
     {
@@ -43,6 +43,6 @@ public class MainMenu : MonoBehaviour
     }
     private void OnClickCredits(ClickEvent evt)
     {
-
+        _creditsScreen.SetActive(true);
     }
 }
