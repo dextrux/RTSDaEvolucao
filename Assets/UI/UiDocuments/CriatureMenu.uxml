@@ -1,0 +1,87 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/StyleSheets/InfoCreatureStyle.uss?fileID=7433441132597879392&amp;guid=7535a421aefdd8e41a6ff4d519c06b58&amp;type=3#InfoCreatureStyle" />
+    <ui:VisualElement name="creature-container" style="flex-grow: 1; padding-top: 160px; padding-bottom: 160px; padding-right: 30px; padding-left: 30px; flex-direction: row; background-image: none; -unity-background-image-tint-color: rgb(255, 255, 255);">
+        <ui:VisualElement name="left-container" style="flex-grow: 1; width: 33%;">
+            <ui:VisualElement name="top-container" style="flex-grow: 1; height: 25%; flex-direction: row;">
+                <ui:VisualElement style="flex-grow: 1; width: 50%; height: 100%; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=1386124711&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_72&apos;); -unity-background-scale-mode: scale-to-fit;" />
+                <ui:VisualElement style="flex-grow: 1; width: 50%; height: 100%; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=1386124711&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_72&apos;); -unity-background-scale-mode: scale-to-fit; rotate: 90deg;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="empty-space" style="flex-grow: 1; width: auto; height: 50%;" />
+            <ui:VisualElement name="bottom-container" style="flex-grow: 1; height: 25%; flex-direction: row;">
+                <ui:VisualElement style="flex-grow: 1; width: 50%; height: 100%; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=1386124711&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_72&apos;); -unity-background-scale-mode: scale-to-fit; rotate: 270deg;" />
+                <ui:VisualElement style="flex-grow: 1; width: 50%; height: 100%; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=1386124711&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_72&apos;); -unity-background-scale-mode: scale-to-fit; rotate: 180deg;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="right-container" style="flex-grow: 1; width: 67%; padding-bottom: 40px; padding-top: 40px; border-left-color: rgb(61, 40, 24); border-right-color: rgb(61, 40, 24); border-top-color: rgb(61, 40, 24); border-bottom-color: rgb(61, 40, 24); border-top-left-radius: 79px; border-top-right-radius: 79px; border-bottom-right-radius: 79px; border-bottom-left-radius: 79px; border-top-width: 18px; border-right-width: 18px; border-bottom-width: 18px; border-left-width: 18px; background-color: rgb(253, 170, 97); padding-left: 20px; padding-right: 20px;">
+            <ui:VisualElement name="creature-info-container" style="flex-grow: 1; background-color: rgb(255, 195, 123); border-top-left-radius: 70px; border-top-right-radius: 70px; border-bottom-right-radius: 70px; border-bottom-left-radius: 70px; padding-left: 59px;">
+                <ui:Label tabindex="-1" text="Informações" parse-escape-sequences="true" display-tooltip-when-elided="true" class="info-title" style="width: auto; height: 20%; font-size: 76%; -unity-text-align: upper-left;" />
+                <ui:VisualElement name="VisualElement" class="info-title" style="flex-grow: 1; height: 80%; flex-direction: row; padding-right: 2%; padding-bottom: 2%; -unity-text-align: upper-center; font-size: 65%;">
+                    <ui:VisualElement name="creature-folder" style="flex-grow: 1; background-color: rgb(82, 56, 35); width: 60%; margin-right: 2%; border-top-left-radius: 40px; border-top-right-radius: 40px; border-bottom-right-radius: 40px; border-bottom-left-radius: 40px; padding-top: 22px; padding-right: 22px; padding-bottom: 22px; padding-left: 22px;">
+                        <ui:VisualElement name="top-creature-folder" style="flex-grow: 1; flex-direction: row;">
+                            <ui:VisualElement name="diet-container" style="flex-grow: 1; width: 30%; padding-top: 15px; padding-right: 15px; padding-bottom: 15px; padding-left: 15px;">
+                                <ui:Label tabindex="-1" text="Dieta" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" style="width: 100%; font-size: 30%; height: 15%;" />
+                                <ui:VisualElement name="creature-diet-img" style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=1956337614&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_35&apos;); -unity-background-scale-mode: scale-to-fit; height: 70%;" />
+                                <ui:Label tabindex="-1" text="Herbívoro" parse-escape-sequences="true" display-tooltip-when-elided="true" name="creature-diet-txt" style="width: 100%; font-size: 30%; height: 15%;" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="temperature-container" style="flex-grow: 1; width: 30%; padding-top: 15px; padding-right: 15px; padding-bottom: 15px; padding-left: 15px;">
+                                <ui:Label tabindex="-1" text="Temperatura&#x9;" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Temperature-title" style="width: 100%; font-size: 30%; height: 15%;" />
+                                <ui:VisualElement name="creature-temperature-img" style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=1554691680&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_45&apos;); -unity-background-scale-mode: scale-to-fit; height: 70%;" />
+                                <ui:Label tabindex="-1" text="30C" parse-escape-sequences="true" display-tooltip-when-elided="true" name="creature-temperature-txt" style="width: 100%; height: 15%; font-size: 30%;" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="reproduction-container" style="flex-grow: 1; width: 30%; padding-top: 15px; padding-right: 15px; padding-bottom: 15px; padding-left: 15px;">
+                                <ui:Label tabindex="-1" text="Reprodução" parse-escape-sequences="true" display-tooltip-when-elided="true" name="reproduction-title" style="width: 100%; font-size: 30%; height: 15%;" />
+                                <ui:VisualElement name="creature-reproduction-img" style="flex-grow: 1; -unity-background-scale-mode: scale-to-fit; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-778766889&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_73&apos;); height: 70%;" />
+                                <ui:Label tabindex="-1" text="30%" parse-escape-sequences="true" display-tooltip-when-elided="true" name="creature-reproduction-txt" style="width: 100%; height: 15%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="bottom-creature-folder" style="flex-grow: 1; flex-direction: row; -unity-text-align: lower-center;">
+                            <ui:VisualElement name="humidity-container" style="flex-grow: 1; padding-top: 15px; padding-right: 15px; padding-bottom: 15px; padding-left: 15px; -unity-text-align: lower-center;">
+                                <ui:Label tabindex="-1" text="Umidade" parse-escape-sequences="true" display-tooltip-when-elided="true" name="humidity-title" style="width: 100%; height: 15%; font-size: 30%;" />
+                                <ui:VisualElement name="creature-humidity-img" style="-unity-background-scale-mode: scale-to-fit; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-1068475111&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_57&apos;); width: 100%; height: 70%;" />
+                                <ui:Label tabindex="-1" text="35%" parse-escape-sequences="true" display-tooltip-when-elided="true" name="creature-humidity-txt" style="width: 100%; font-size: 30%; height: 15%; -unity-text-align: middle-center;" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="energy-container" style="flex-grow: 1; padding-top: 15px; padding-right: 15px; padding-bottom: 15px; padding-left: 15px;">
+                                <ui:Label tabindex="-1" text="Energia" parse-escape-sequences="true" display-tooltip-when-elided="true" name="energy-title" style="width: 100%; font-size: 30%; height: 15%;" />
+                                <ui:VisualElement name="creature-energy-img" style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; height: 70%;" />
+                                <ui:Label tabindex="-1" text="45%" parse-escape-sequences="true" display-tooltip-when-elided="true" name="creature-energy-txt" style="width: 100%; font-size: 30%; height: 15%; -unity-text-align: middle-center;" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="hunger-container" style="flex-grow: 1; padding-top: 15px; padding-right: 15px; padding-bottom: 15px; padding-left: 15px;">
+                                <ui:Label tabindex="-1" text="Fome" parse-escape-sequences="true" display-tooltip-when-elided="true" name="creature-hunger-txt" style="width: 100%; font-size: 30%; height: 15%;" />
+                                <ui:VisualElement name="creature-hunger-img" style="flex-grow: 1; -unity-background-scale-mode: scale-to-fit; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=1796888748&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_48&apos;); height: 70%;" />
+                                <ui:Label tabindex="-1" text="55%" parse-escape-sequences="true" display-tooltip-when-elided="true" name="creature-hunger-txt" style="width: 100%; height: 15%; font-size: 30%; -unity-text-align: middle-center;" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="tile-folder" style="flex-grow: 1; background-color: rgb(82, 56, 35); width: 40%; margin-left: 2%; border-top-left-radius: 40px; border-top-right-radius: 40px; border-bottom-right-radius: 40px; border-bottom-left-radius: 40px; flex-direction: row;">
+                        <ui:VisualElement name="left-tile-folder" style="flex-grow: 1;">
+                            <ui:VisualElement name="humidity-container" style="flex-grow: 1;">
+                                <ui:Label tabindex="-1" text="Umidade \n Atual" parse-escape-sequences="true" display-tooltip-when-elided="true" name="humidity-title-title" style="width: 100%; font-size: 30%;" />
+                                <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-1068475111&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_57&apos;); -unity-background-scale-mode: scale-to-fit;" />
+                                <ui:Label tabindex="-1" text="30%" parse-escape-sequences="true" display-tooltip-when-elided="true" name="humidity-tile-txt" style="width: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="biome-container" style="flex-grow: 1;">
+                                <ui:Label tabindex="-1" text="Bioma" parse-escape-sequences="true" display-tooltip-when-elided="true" name="biome-title" style="width: 100%; font-size: 30%;" />
+                                <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=354241011&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_14&apos;); -unity-background-scale-mode: scale-to-fit;" />
+                                <ui:Label tabindex="-1" text="Bioma" parse-escape-sequences="true" display-tooltip-when-elided="true" name="biome-txt" style="width: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="temperature-container" style="flex-grow: 1;">
+                            <ui:Label tabindex="-1" text="Temperatura \n Atual" parse-escape-sequences="true" display-tooltip-when-elided="true" name="temperature-tile-title" style="width: 100%; font-size: 30%;" />
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-1468089833&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_66&apos;); -unity-background-scale-mode: scale-to-fit;" />
+                            <ui:Label tabindex="-1" text="36ºC" parse-escape-sequences="true" display-tooltip-when-elided="true" name="temperature-tile-txt" style="width: 100%; font-size: 30%;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:Button name="floating-info-btn" class="floating-button" style="padding-top: 1%; padding-right: 3%; padding-bottom: 1%; padding-left: 3%;">
+                <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-799245945&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_27&apos;); -unity-background-scale-mode: scale-to-fit; width: auto; height: auto;" />
+            </ui:Button>
+            <ui:Button name="floating-mutation-btn" class="floating-button" style="top: 50%; padding-top: 1%; padding-right: 3%; padding-bottom: 1%; padding-left: 3%;">
+                <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-337229236&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_26&apos;); -unity-background-scale-mode: scale-to-fit;" />
+            </ui:Button>
+            <ui:Button name="floating-action-btn" class="floating-button" style="top: 70%; padding-top: 1%; padding-right: 3%; padding-bottom: 1%; padding-left: 3%;">
+                <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-959674533&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_28&apos;); -unity-background-scale-mode: scale-to-fit;" />
+            </ui:Button>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

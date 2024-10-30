@@ -1,0 +1,20 @@
+.info-title {
+    -unity-text-align: upper-right;
+    -unity-font: url('project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.ttf?fileID=12800000&guid=22aed22e579f47048b64da77dc6349e6&type=3#Bodo Amat');
+    -unity-font-definition: initial;
+    color: rgb(255, 255, 255);
+    -unity-text-outline-color: rgb(72, 57, 47);
+    -unity-text-outline-width: 10px;
+    -unity-slice-right: 0;
+}
+
+.floating-button {
+    position: absolute;
+    left: -8%;
+    top: 30%;
+    background-image: url('project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=1495532932&guid=8fbda476e9f56fe40955a8472d8bd40c&type=3#AtlasUITemp_29');
+    height: 16%;
+    -unity-background-scale-mode: scale-to-fit;
+    width: 14%;
+    background-color: rgba(188, 188, 188, 0);
+}
