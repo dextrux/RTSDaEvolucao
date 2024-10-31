@@ -27,7 +27,7 @@ public class MainMenu : MonoBehaviour
 
     private void OnClickPlay(ClickEvent evt)
     {
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("VictorScene 1");
     }
     private void OnClickConfig(ClickEvent evt)
     {

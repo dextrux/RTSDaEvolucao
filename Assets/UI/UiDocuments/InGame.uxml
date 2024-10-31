@@ -16,11 +16,12 @@
                     <ui:Label tabindex="-1" text="80/100" parse-escape-sequences="true" display-tooltip-when-elided="true" name="life-txt" class="text-hud-game" style="font-size: 83%; width: auto; height: 77px;" />
                 </ui:VisualElement>
             </ui:VisualElement>
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="temp-button" class="pause-button" style="position: absolute; top: 26px; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=1149925711&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_33&apos;); left: 140px;" />
         </ui:VisualElement>
         <ui:VisualElement name="body-container" style="flex-grow: 1; height: 702px;" />
         <ui:VisualElement name="footer-container" style="flex-grow: 1; height: 216px; padding-left: 30px;">
             <ui:VisualElement name="footer-top-container" style="flex-grow: 1; height: 230px; padding-top: 17px; padding-left: 0; flex-direction: row; justify-content: space-between;">
-                <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="next-turn-button" class="pause-button" style="width: 100px; top: -2px; margin-top: -3px; height: 110px;">
+                <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="next-turn-button" class="pause-button" style="top: -2px;">
                     <ui:VisualElement style="background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-167604869&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_20&apos;); top: auto; width: 100%; height: 100%; -unity-background-scale-mode: scale-to-fit;" />
                 </ui:Button>
                 <ui:VisualElement name="dna-container" style="flex-grow: 1; width: 275px; -unity-background-scale-mode: scale-to-fit; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-813222707&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_9&apos;); flex-direction: row; padding-top: 15px; padding-bottom: 15px; padding-right: 30px; padding-left: 30px; height: 100px;">

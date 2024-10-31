@@ -20,9 +20,10 @@ public class InGameUi : MonoBehaviour
     private VisualElement _nextTurnAdvice;
     private VisualElement[] _barPositions = new VisualElement[9];
     private VisualElement _lifeProgressBar;
+    private VisualElement _dnaContainer;
     private Label _lifeText;
 
-    private void Start()
+    private void OnEnable()
     {
         //Adição de todos botões e telas que se movem ou tem interação por código
         #region Capitacao De Elmentos
@@ -42,8 +43,10 @@ public class InGameUi : MonoBehaviour
             _barPositions[i - 1] = root.Q<VisualElement>("bar-space_" + i);
         }
         _lifeProgressBar = root.Q<VisualElement>("life-bar-progress");
+        _dnaContainer = root.Q<VisualElement>("dna-container");
         _lifeText = root.Q<Label>("life-txt");
         #endregion
+        AnimateLoadingBar();
         //Adição das funções no clique dos botões
         #region Adicao da Funcao Aos Botoes
         _pauseBtn.RegisterCallback<ClickEvent>(OnClickPause);
@@ -130,5 +133,17 @@ public class InGameUi : MonoBehaviour
         float endWidth = _lifeProgressBar.parent.worldBound.width - _progressBarMargin;
         _lifeText.text = $"{actualLife}/{totalLife}";
         DOTween.To(() => _lifeProgressBar.worldBound.width, x => _lifeProgressBar.style.width = x, (endWidth * (_actualValue/_maxValue)), 2F).SetEase(Ease.Linear);
+    }
+    public void CreatureInfoChange()
+    {
+        _pauseBtn.AddToClassList("pause-button-ocult");
+        _nextTurnBtn.AddToClassList("pause-button-ocult");
+        _dnaContainer.AddToClassList("pause-button-ocult");
+    }
+    public void CreatureInfoNormal()
+    {
+        _pauseBtn.RemoveFromClassList("pause-button-ocult");
+        _nextTurnBtn.RemoveFromClassList("pause-button-ocult");
+        _dnaContainer.RemoveFromClassList("pause-button-ocult");
     }
 }   

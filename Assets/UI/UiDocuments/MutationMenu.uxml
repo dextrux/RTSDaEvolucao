@@ -56,6 +56,9 @@
                 <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-959674533&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_28&apos;); -unity-background-scale-mode: scale-to-fit;" />
             </ui:Button>
             <ui:Button name="floating-buy-btn" text="+" class="floating-button" style="top: 103%; background-color: rgba(57, 44, 31, 0); left: 80%; font-size: 131%; -unity-font: url(&apos;project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.otf?fileID=12800000&amp;guid=81817e382e1f2ff4da7b7f2b05c32595&amp;type=3#Bodo Amat&apos;); -unity-font-definition: url(&apos;project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.asset?fileID=11400000&amp;guid=0756c78a4ec4a2644b846b666c90696f&amp;type=2#Bodo Amat&apos;); -unity-text-align: middle-center; border-left-color: rgba(149, 149, 149, 0); border-right-color: rgba(149, 149, 149, 0); border-top-color: rgba(149, 149, 149, 0); border-bottom-color: rgba(149, 149, 149, 0); color: rgb(57, 44, 31);" />
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="exit-info-btn" class="exit-mutation-btn" style="left: 94%; top: -7%; width: 10%; height: 16%;">
+                <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=955279675&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_46&apos;); height: 60%; width: 60%; -unity-background-scale-mode: scale-to-fit;" />
+            </ui:Button>
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
