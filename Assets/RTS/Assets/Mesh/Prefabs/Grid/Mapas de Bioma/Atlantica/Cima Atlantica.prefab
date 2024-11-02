@@ -1,0 +1,3033 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1639356663924846434
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7591540389099327478}
+  m_Layer: 0
+  m_Name: Cima Atlantica
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7591540389099327478
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639356663924846434}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2719397186435108624}
+  - {fileID: 8196318071870173133}
+  - {fileID: 7519956112163574283}
+  - {fileID: 7170660817276833419}
+  - {fileID: 2530118304084430608}
+  - {fileID: 1385810656200591804}
+  - {fileID: 209501789579895435}
+  - {fileID: 2962044569705629448}
+  - {fileID: 8725861141333968547}
+  - {fileID: 7560667784816196380}
+  - {fileID: 7231710137150405272}
+  - {fileID: 4461240629810414769}
+  - {fileID: 6579046204600389026}
+  - {fileID: 2377389607957206197}
+  - {fileID: 3873714921418267016}
+  - {fileID: 8863991398595238642}
+  - {fileID: 3779599002634375767}
+  - {fileID: 8501524040613020191}
+  - {fileID: 5772105814620535789}
+  - {fileID: 6305270737309687754}
+  - {fileID: 6070404639060611033}
+  - {fileID: 3529409382443709815}
+  - {fileID: 7688182357986507837}
+  - {fileID: 3040395210132018989}
+  - {fileID: 6010504867569590564}
+  - {fileID: 943675784367124319}
+  - {fileID: 6836309829730796806}
+  - {fileID: 7709302159613225051}
+  - {fileID: 8138603063359692818}
+  - {fileID: 7158580432466024684}
+  - {fileID: 8029708703064299000}
+  - {fileID: 8283628996231304148}
+  - {fileID: 7463854064681409153}
+  - {fileID: 9050570885158953814}
+  - {fileID: 4426460379765277325}
+  - {fileID: 4792807278286343013}
+  - {fileID: 4460804747202427056}
+  - {fileID: 4600658921293932441}
+  - {fileID: 1086732408092842666}
+  - {fileID: 5078564656207909949}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &59058715383163083
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7591540389099327478}
+    m_Modifications:
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.200001
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 26.500381
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217991209324080912, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Atlantica (26)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40f75ae32f5d9c54790f08232c6d280a, type: 3}
+--- !u!4 &6836309829730796806 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+    type: 3}
+  m_PrefabInstance: {fileID: 59058715383163083}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &379381733084553327
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7591540389099327478}
+    m_Modifications:
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.200001
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 17.666922
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217991209324080912, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Atlantica (12)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40f75ae32f5d9c54790f08232c6d280a, type: 3}
+--- !u!4 &6579046204600389026 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+    type: 3}
+  m_PrefabInstance: {fileID: 379381733084553327}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &688611296007041543
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7591540389099327478}
+    m_Modifications:
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 15.300001
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 17.666924
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217991209324080912, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Atlantica (19)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40f75ae32f5d9c54790f08232c6d280a, type: 3}
+--- !u!4 &6305270737309687754 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+    type: 3}
+  m_PrefabInstance: {fileID: 688611296007041543}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &734309786354917908
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7591540389099327478}
+    m_Modifications:
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -15.300011
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 17.666931
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217991209324080912, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Atlantica (20)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40f75ae32f5d9c54790f08232c6d280a, type: 3}
+--- !u!4 &6070404639060611033 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+    type: 3}
+  m_PrefabInstance: {fileID: 734309786354917908}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &965802571693133033
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7591540389099327478}
+    m_Modifications:
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 26.500381
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217991209324080912, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Atlantica (24)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40f75ae32f5d9c54790f08232c6d280a, type: 3}
+--- !u!4 &6010504867569590564 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+    type: 3}
+  m_PrefabInstance: {fileID: 965802571693133033}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1014437668919711264
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7591540389099327478}
+    m_Modifications:
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.750001
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 22.083652
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217991209324080912, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Atlantica (18)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40f75ae32f5d9c54790f08232c6d280a, type: 3}
+--- !u!4 &5772105814620535789 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1014437668919711264}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1762048347250637296
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7591540389099327478}
+    m_Modifications:
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -20.400013
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 26.500397
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217991209324080912, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Atlantica (39)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40f75ae32f5d9c54790f08232c6d280a, type: 3}
+--- !u!4 &5078564656207909949 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1762048347250637296}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2057541212805162664
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7591540389099327478}
+    m_Modifications:
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.6499996
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 30.917112
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217991209324080912, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Atlantica (35)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40f75ae32f5d9c54790f08232c6d280a, type: 3}
+--- !u!4 &4792807278286343013 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+    type: 3}
+  m_PrefabInstance: {fileID: 2057541212805162664}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2563872291103706779
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7591540389099327478}
+    m_Modifications:
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.5500011
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 30.917112
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217991209324080912, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Atlantica (33)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40f75ae32f5d9c54790f08232c6d280a, type: 3}
+--- !u!4 &9050570885158953814 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+    type: 3}
+  m_PrefabInstance: {fileID: 2563872291103706779}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2669960792173147967
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7591540389099327478}
+    m_Modifications:
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.5500002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 22.083652
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217991209324080912, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Atlantica (15)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40f75ae32f5d9c54790f08232c6d280a, type: 3}
+--- !u!4 &8863991398595238642 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+    type: 3}
+  m_PrefabInstance: {fileID: 2669960792173147967}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2816683252134767470
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7591540389099327478}
+    m_Modifications:
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10.200001
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 17.666922
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217991209324080912, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Atlantica (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40f75ae32f5d9c54790f08232c6d280a, type: 3}
+--- !u!4 &8725861141333968547 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+    type: 3}
+  m_PrefabInstance: {fileID: 2816683252134767470}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3167676597192798162
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7591540389099327478}
+    m_Modifications:
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.6500006
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 22.083652
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217991209324080912, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Atlantica (17)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40f75ae32f5d9c54790f08232c6d280a, type: 3}
+--- !u!4 &8501524040613020191 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+    type: 3}
+  m_PrefabInstance: {fileID: 3167676597192798162}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3241464361103818265
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7591540389099327478}
+    m_Modifications:
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12.750002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 30.917112
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217991209324080912, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Atlantica (31)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40f75ae32f5d9c54790f08232c6d280a, type: 3}
+--- !u!4 &8283628996231304148 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+    type: 3}
+  m_PrefabInstance: {fileID: 3241464361103818265}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3385724346283953631
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7591540389099327478}
+    m_Modifications:
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 17.850002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 22.083652
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217991209324080912, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Atlantica (28)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40f75ae32f5d9c54790f08232c6d280a, type: 3}
+--- !u!4 &8138603063359692818 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+    type: 3}
+  m_PrefabInstance: {fileID: 3385724346283953631}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3436679565076840960
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7591540389099327478}
+    m_Modifications:
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.1000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.833461
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217991209324080912, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Atlantica (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40f75ae32f5d9c54790f08232c6d280a, type: 3}
+--- !u!4 &8196318071870173133 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+    type: 3}
+  m_PrefabInstance: {fileID: 3436679565076840960}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3558375331722360885
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7591540389099327478}
+    m_Modifications:
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -17.850002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 30.917112
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217991209324080912, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Atlantica (30)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40f75ae32f5d9c54790f08232c6d280a, type: 3}
+--- !u!4 &8029708703064299000 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+    type: 3}
+  m_PrefabInstance: {fileID: 3558375331722360885}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3800839183835435504
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7591540389099327478}
+    m_Modifications:
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10.200001
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 26.500381
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217991209324080912, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Atlantica (22)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40f75ae32f5d9c54790f08232c6d280a, type: 3}
+--- !u!4 &7688182357986507837 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+    type: 3}
+  m_PrefabInstance: {fileID: 3800839183835435504}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3815203577408095638
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7591540389099327478}
+    m_Modifications:
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 15.300001
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 26.500381
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217991209324080912, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Atlantica (27)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40f75ae32f5d9c54790f08232c6d280a, type: 3}
+--- !u!4 &7709302159613225051 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+    type: 3}
+  m_PrefabInstance: {fileID: 3815203577408095638}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3914439767841439686
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7591540389099327478}
+    m_Modifications:
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.6500006
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 13.250191
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217991209324080912, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Atlantica (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40f75ae32f5d9c54790f08232c6d280a, type: 3}
+--- !u!4 &7519956112163574283 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+    type: 3}
+  m_PrefabInstance: {fileID: 3914439767841439686}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3954795224477538001
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7591540389099327478}
+    m_Modifications:
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.1000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 17.666922
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217991209324080912, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Atlantica (9)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40f75ae32f5d9c54790f08232c6d280a, type: 3}
+--- !u!4 &7560667784816196380 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+    type: 3}
+  m_PrefabInstance: {fileID: 3954795224477538001}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4150715482537768780
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7591540389099327478}
+    m_Modifications:
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.6500015
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 30.917112
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217991209324080912, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Atlantica (32)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40f75ae32f5d9c54790f08232c6d280a, type: 3}
+--- !u!4 &7463854064681409153 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+    type: 3}
+  m_PrefabInstance: {fileID: 4150715482537768780}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4202579777525159765
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7591540389099327478}
+    m_Modifications:
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 17.666922
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217991209324080912, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Atlantica (10)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40f75ae32f5d9c54790f08232c6d280a, type: 3}
+--- !u!4 &7231710137150405272 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+    type: 3}
+  m_PrefabInstance: {fileID: 4202579777525159765}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4419932285053400353
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7591540389099327478}
+    m_Modifications:
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -17.85001
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 22.083664
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217991209324080912, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Atlantica (29)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40f75ae32f5d9c54790f08232c6d280a, type: 3}
+--- !u!4 &7158580432466024684 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+    type: 3}
+  m_PrefabInstance: {fileID: 4419932285053400353}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4435460705294574406
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7591540389099327478}
+    m_Modifications:
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.5500002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 13.250191
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217991209324080912, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Atlantica (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40f75ae32f5d9c54790f08232c6d280a, type: 3}
+--- !u!4 &7170660817276833419 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+    type: 3}
+  m_PrefabInstance: {fileID: 4435460705294574406}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5563565620661445745
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7591540389099327478}
+    m_Modifications:
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.6500006
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 13.250191
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217991209324080912, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Atlantica (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40f75ae32f5d9c54790f08232c6d280a, type: 3}
+--- !u!4 &1385810656200591804 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+    type: 3}
+  m_PrefabInstance: {fileID: 5563565620661445745}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5844119090370131815
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7591540389099327478}
+    m_Modifications:
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 20.400002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 26.500381
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217991209324080912, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Atlantica (38)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40f75ae32f5d9c54790f08232c6d280a, type: 3}
+--- !u!4 &1086732408092842666 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+    type: 3}
+  m_PrefabInstance: {fileID: 5844119090370131815}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5987041092640916114
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7591540389099327478}
+    m_Modifications:
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.1000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 26.500381
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217991209324080912, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Atlantica (25)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40f75ae32f5d9c54790f08232c6d280a, type: 3}
+--- !u!4 &943675784367124319 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+    type: 3}
+  m_PrefabInstance: {fileID: 5987041092640916114}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6694300421368287046
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7591540389099327478}
+    m_Modifications:
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.200001
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.833461
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217991209324080912, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Atlantica (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40f75ae32f5d9c54790f08232c6d280a, type: 3}
+--- !u!4 &209501789579895435 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+    type: 3}
+  m_PrefabInstance: {fileID: 6694300421368287046}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7049946436492102228
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7591540389099327478}
+    m_Modifications:
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 17.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 30.917112
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217991209324080912, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Atlantica (37)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40f75ae32f5d9c54790f08232c6d280a, type: 3}
+--- !u!4 &4600658921293932441 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+    type: 3}
+  m_PrefabInstance: {fileID: 7049946436492102228}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7161656086453317440
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7591540389099327478}
+    m_Modifications:
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.5499992
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 30.917112
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217991209324080912, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Atlantica (34)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40f75ae32f5d9c54790f08232c6d280a, type: 3}
+--- !u!4 &4426460379765277325 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+    type: 3}
+  m_PrefabInstance: {fileID: 7161656086453317440}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7198758470696544636
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7591540389099327478}
+    m_Modifications:
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.1000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 17.666922
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217991209324080912, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Atlantica (11)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40f75ae32f5d9c54790f08232c6d280a, type: 3}
+--- !u!4 &4461240629810414769 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+    type: 3}
+  m_PrefabInstance: {fileID: 7198758470696544636}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7199378181528229245
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7591540389099327478}
+    m_Modifications:
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 30.917112
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217991209324080912, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Atlantica (36)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40f75ae32f5d9c54790f08232c6d280a, type: 3}
+--- !u!4 &4460804747202427056 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+    type: 3}
+  m_PrefabInstance: {fileID: 7199378181528229245}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7673420473541148570
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7591540389099327478}
+    m_Modifications:
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.5500002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 22.083652
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217991209324080912, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Atlantica (16)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40f75ae32f5d9c54790f08232c6d280a, type: 3}
+--- !u!4 &3779599002634375767 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+    type: 3}
+  m_PrefabInstance: {fileID: 7673420473541148570}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7767743114471830597
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7591540389099327478}
+    m_Modifications:
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.6500006
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 22.083652
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217991209324080912, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Atlantica (14)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40f75ae32f5d9c54790f08232c6d280a, type: 3}
+--- !u!4 &3873714921418267016 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+    type: 3}
+  m_PrefabInstance: {fileID: 7767743114471830597}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7995113255341955258
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7591540389099327478}
+    m_Modifications:
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -15.300001
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 26.500381
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217991209324080912, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Atlantica (21)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40f75ae32f5d9c54790f08232c6d280a, type: 3}
+--- !u!4 &3529409382443709815 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+    type: 3}
+  m_PrefabInstance: {fileID: 7995113255341955258}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8376419685241436896
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7591540389099327478}
+    m_Modifications:
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.1000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 26.500381
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217991209324080912, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Atlantica (23)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40f75ae32f5d9c54790f08232c6d280a, type: 3}
+--- !u!4 &3040395210132018989 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+    type: 3}
+  m_PrefabInstance: {fileID: 8376419685241436896}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8581021748260874949
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7591540389099327478}
+    m_Modifications:
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10.200006
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.833464
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217991209324080912, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Atlantica (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40f75ae32f5d9c54790f08232c6d280a, type: 3}
+--- !u!4 &2962044569705629448 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+    type: 3}
+  m_PrefabInstance: {fileID: 8581021748260874949}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8913643262778614493
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7591540389099327478}
+    m_Modifications:
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.1000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.833461
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217991209324080912, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Atlantica
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40f75ae32f5d9c54790f08232c6d280a, type: 3}
+--- !u!4 &2719397186435108624 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+    type: 3}
+  m_PrefabInstance: {fileID: 8913643262778614493}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9012383684706886365
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7591540389099327478}
+    m_Modifications:
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.5500002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 13.250191
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217991209324080912, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Atlantica (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40f75ae32f5d9c54790f08232c6d280a, type: 3}
+--- !u!4 &2530118304084430608 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+    type: 3}
+  m_PrefabInstance: {fileID: 9012383684706886365}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9146966182663747960
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7591540389099327478}
+    m_Modifications:
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12.750001
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 22.083652
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9217991209324080912, guid: 40f75ae32f5d9c54790f08232c6d280a,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Atlantica (13)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40f75ae32f5d9c54790f08232c6d280a, type: 3}
+--- !u!4 &2377389607957206197 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6777532641946136013, guid: 40f75ae32f5d9c54790f08232c6d280a,
+    type: 3}
+  m_PrefabInstance: {fileID: 9146966182663747960}
+  m_PrefabAsset: {fileID: 0}

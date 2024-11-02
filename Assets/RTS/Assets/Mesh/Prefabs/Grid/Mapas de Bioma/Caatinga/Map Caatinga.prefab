@@ -1,0 +1,408 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &92079713902587786
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7472697985701229785}
+  m_Layer: 0
+  m_Name: Map Caatinga
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7472697985701229785
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92079713902587786}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5741922763482728109}
+  - {fileID: 5097707680175431849}
+  - {fileID: 5447995128829899542}
+  - {fileID: 7570126116389620919}
+  - {fileID: 829576686938772456}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &489301047247249496
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7472697985701229785}
+    m_Modifications:
+    - target: {fileID: 957409835535070128, guid: 5bb5f4886ec13724a813c2f7e0df07a9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 957409835535070128, guid: 5bb5f4886ec13724a813c2f7e0df07a9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 957409835535070128, guid: 5bb5f4886ec13724a813c2f7e0df07a9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 957409835535070128, guid: 5bb5f4886ec13724a813c2f7e0df07a9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 957409835535070128, guid: 5bb5f4886ec13724a813c2f7e0df07a9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 957409835535070128, guid: 5bb5f4886ec13724a813c2f7e0df07a9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 957409835535070128, guid: 5bb5f4886ec13724a813c2f7e0df07a9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 957409835535070128, guid: 5bb5f4886ec13724a813c2f7e0df07a9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 957409835535070128, guid: 5bb5f4886ec13724a813c2f7e0df07a9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 957409835535070128, guid: 5bb5f4886ec13724a813c2f7e0df07a9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7142489618583488838, guid: 5bb5f4886ec13724a813c2f7e0df07a9,
+        type: 3}
+      propertyPath: m_Name
+      value: Baixo Caatinga
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5bb5f4886ec13724a813c2f7e0df07a9, type: 3}
+--- !u!4 &829576686938772456 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 957409835535070128, guid: 5bb5f4886ec13724a813c2f7e0df07a9,
+    type: 3}
+  m_PrefabInstance: {fileID: 489301047247249496}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4088439110641468845
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7472697985701229785}
+    m_Modifications:
+    - target: {fileID: 5887172478959536410, guid: 0edefa03e37654446b9ab80b30e0ad73,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5887172478959536410, guid: 0edefa03e37654446b9ab80b30e0ad73,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5887172478959536410, guid: 0edefa03e37654446b9ab80b30e0ad73,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5887172478959536410, guid: 0edefa03e37654446b9ab80b30e0ad73,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5887172478959536410, guid: 0edefa03e37654446b9ab80b30e0ad73,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5887172478959536410, guid: 0edefa03e37654446b9ab80b30e0ad73,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5887172478959536410, guid: 0edefa03e37654446b9ab80b30e0ad73,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5887172478959536410, guid: 0edefa03e37654446b9ab80b30e0ad73,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5887172478959536410, guid: 0edefa03e37654446b9ab80b30e0ad73,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5887172478959536410, guid: 0edefa03e37654446b9ab80b30e0ad73,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6816286344292733973, guid: 0edefa03e37654446b9ab80b30e0ad73,
+        type: 3}
+      propertyPath: m_Name
+      value: Cima Caatinga
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0edefa03e37654446b9ab80b30e0ad73, type: 3}
+--- !u!4 &7570126116389620919 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5887172478959536410, guid: 0edefa03e37654446b9ab80b30e0ad73,
+    type: 3}
+  m_PrefabInstance: {fileID: 4088439110641468845}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4838286740914454775
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7472697985701229785}
+    m_Modifications:
+    - target: {fileID: 404125534290927710, guid: 5be769e9ddf67dc41a614a537e794415,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 404125534290927710, guid: 5be769e9ddf67dc41a614a537e794415,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 404125534290927710, guid: 5be769e9ddf67dc41a614a537e794415,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 404125534290927710, guid: 5be769e9ddf67dc41a614a537e794415,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 404125534290927710, guid: 5be769e9ddf67dc41a614a537e794415,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 404125534290927710, guid: 5be769e9ddf67dc41a614a537e794415,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 404125534290927710, guid: 5be769e9ddf67dc41a614a537e794415,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 404125534290927710, guid: 5be769e9ddf67dc41a614a537e794415,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 404125534290927710, guid: 5be769e9ddf67dc41a614a537e794415,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 404125534290927710, guid: 5be769e9ddf67dc41a614a537e794415,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4202368066904848892, guid: 5be769e9ddf67dc41a614a537e794415,
+        type: 3}
+      propertyPath: m_Name
+      value: Direita Caatinga
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5be769e9ddf67dc41a614a537e794415, type: 3}
+--- !u!4 &5097707680175431849 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 404125534290927710, guid: 5be769e9ddf67dc41a614a537e794415,
+    type: 3}
+  m_PrefabInstance: {fileID: 4838286740914454775}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6453269167000919987
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7472697985701229785}
+    m_Modifications:
+    - target: {fileID: 1303146307902565541, guid: 98107d9426cf22c49bbe45a4b9d4f0df,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303146307902565541, guid: 98107d9426cf22c49bbe45a4b9d4f0df,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303146307902565541, guid: 98107d9426cf22c49bbe45a4b9d4f0df,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303146307902565541, guid: 98107d9426cf22c49bbe45a4b9d4f0df,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303146307902565541, guid: 98107d9426cf22c49bbe45a4b9d4f0df,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303146307902565541, guid: 98107d9426cf22c49bbe45a4b9d4f0df,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303146307902565541, guid: 98107d9426cf22c49bbe45a4b9d4f0df,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303146307902565541, guid: 98107d9426cf22c49bbe45a4b9d4f0df,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303146307902565541, guid: 98107d9426cf22c49bbe45a4b9d4f0df,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1303146307902565541, guid: 98107d9426cf22c49bbe45a4b9d4f0df,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6616475942769976983, guid: 98107d9426cf22c49bbe45a4b9d4f0df,
+        type: 3}
+      propertyPath: m_Name
+      value: Esquerda Caatinga
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 98107d9426cf22c49bbe45a4b9d4f0df, type: 3}
+--- !u!4 &5447995128829899542 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1303146307902565541, guid: 98107d9426cf22c49bbe45a4b9d4f0df,
+    type: 3}
+  m_PrefabInstance: {fileID: 6453269167000919987}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6964001493950563331
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7472697985701229785}
+    m_Modifications:
+    - target: {fileID: 3389647163849474734, guid: fe232430fb9fd17499713a5022f44932,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3389647163849474734, guid: fe232430fb9fd17499713a5022f44932,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3389647163849474734, guid: fe232430fb9fd17499713a5022f44932,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3389647163849474734, guid: fe232430fb9fd17499713a5022f44932,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3389647163849474734, guid: fe232430fb9fd17499713a5022f44932,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3389647163849474734, guid: fe232430fb9fd17499713a5022f44932,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3389647163849474734, guid: fe232430fb9fd17499713a5022f44932,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3389647163849474734, guid: fe232430fb9fd17499713a5022f44932,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3389647163849474734, guid: fe232430fb9fd17499713a5022f44932,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3389647163849474734, guid: fe232430fb9fd17499713a5022f44932,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6362812560467454543, guid: fe232430fb9fd17499713a5022f44932,
+        type: 3}
+      propertyPath: m_Name
+      value: Centro Caatinga
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fe232430fb9fd17499713a5022f44932, type: 3}
+--- !u!4 &5741922763482728109 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3389647163849474734, guid: fe232430fb9fd17499713a5022f44932,
+    type: 3}
+  m_PrefabInstance: {fileID: 6964001493950563331}
+  m_PrefabAsset: {fileID: 0}

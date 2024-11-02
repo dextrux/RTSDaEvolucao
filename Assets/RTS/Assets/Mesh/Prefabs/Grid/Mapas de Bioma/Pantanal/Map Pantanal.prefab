@@ -1,0 +1,408 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5288484257904020411
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7242176989998998310}
+  m_Layer: 0
+  m_Name: Map Pantanal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7242176989998998310
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5288484257904020411}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6641883091423506311}
+  - {fileID: 4096426982360283454}
+  - {fileID: 5533976346834687970}
+  - {fileID: 1698205018376470673}
+  - {fileID: 1172691014662690318}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1807409793991884095
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7242176989998998310}
+    m_Modifications:
+    - target: {fileID: 1045971831714954670, guid: 3a12b00f9a9b6c84a861752b81be073d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1045971831714954670, guid: 3a12b00f9a9b6c84a861752b81be073d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1045971831714954670, guid: 3a12b00f9a9b6c84a861752b81be073d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1045971831714954670, guid: 3a12b00f9a9b6c84a861752b81be073d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1045971831714954670, guid: 3a12b00f9a9b6c84a861752b81be073d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1045971831714954670, guid: 3a12b00f9a9b6c84a861752b81be073d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1045971831714954670, guid: 3a12b00f9a9b6c84a861752b81be073d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1045971831714954670, guid: 3a12b00f9a9b6c84a861752b81be073d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1045971831714954670, guid: 3a12b00f9a9b6c84a861752b81be073d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1045971831714954670, guid: 3a12b00f9a9b6c84a861752b81be073d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283882579679972509, guid: 3a12b00f9a9b6c84a861752b81be073d,
+        type: 3}
+      propertyPath: m_Name
+      value: Direita Pantanal
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3a12b00f9a9b6c84a861752b81be073d, type: 3}
+--- !u!4 &1698205018376470673 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1045971831714954670, guid: 3a12b00f9a9b6c84a861752b81be073d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1807409793991884095}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4663921218653922270
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7242176989998998310}
+    m_Modifications:
+    - target: {fileID: 1895844833624139538, guid: 99ba5e8b7c6081244a6fdaa91d6f94cc,
+        type: 3}
+      propertyPath: m_Name
+      value: Baixo Pantanal
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059595115722083417, guid: 99ba5e8b7c6081244a6fdaa91d6f94cc,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059595115722083417, guid: 99ba5e8b7c6081244a6fdaa91d6f94cc,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059595115722083417, guid: 99ba5e8b7c6081244a6fdaa91d6f94cc,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059595115722083417, guid: 99ba5e8b7c6081244a6fdaa91d6f94cc,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059595115722083417, guid: 99ba5e8b7c6081244a6fdaa91d6f94cc,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059595115722083417, guid: 99ba5e8b7c6081244a6fdaa91d6f94cc,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059595115722083417, guid: 99ba5e8b7c6081244a6fdaa91d6f94cc,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059595115722083417, guid: 99ba5e8b7c6081244a6fdaa91d6f94cc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059595115722083417, guid: 99ba5e8b7c6081244a6fdaa91d6f94cc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059595115722083417, guid: 99ba5e8b7c6081244a6fdaa91d6f94cc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 99ba5e8b7c6081244a6fdaa91d6f94cc, type: 3}
+--- !u!4 &6641883091423506311 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2059595115722083417, guid: 99ba5e8b7c6081244a6fdaa91d6f94cc,
+    type: 3}
+  m_PrefabInstance: {fileID: 4663921218653922270}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5792091838186694243
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7242176989998998310}
+    m_Modifications:
+    - target: {fileID: 1167110209763144753, guid: a59f0bd5a3fded74fac8b943d83103b2,
+        type: 3}
+      propertyPath: m_Name
+      value: Centro Pantanal
+      objectReference: {fileID: 0}
+    - target: {fileID: 4622831308401127533, guid: a59f0bd5a3fded74fac8b943d83103b2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4622831308401127533, guid: a59f0bd5a3fded74fac8b943d83103b2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4622831308401127533, guid: a59f0bd5a3fded74fac8b943d83103b2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4622831308401127533, guid: a59f0bd5a3fded74fac8b943d83103b2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4622831308401127533, guid: a59f0bd5a3fded74fac8b943d83103b2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4622831308401127533, guid: a59f0bd5a3fded74fac8b943d83103b2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4622831308401127533, guid: a59f0bd5a3fded74fac8b943d83103b2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4622831308401127533, guid: a59f0bd5a3fded74fac8b943d83103b2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4622831308401127533, guid: a59f0bd5a3fded74fac8b943d83103b2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4622831308401127533, guid: a59f0bd5a3fded74fac8b943d83103b2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a59f0bd5a3fded74fac8b943d83103b2, type: 3}
+--- !u!4 &1172691014662690318 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4622831308401127533, guid: a59f0bd5a3fded74fac8b943d83103b2,
+    type: 3}
+  m_PrefabInstance: {fileID: 5792091838186694243}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6945625701273847495
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7242176989998998310}
+    m_Modifications:
+    - target: {fileID: 3219919717506388261, guid: a86d0968779529e48ae6df0ccd2722d8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219919717506388261, guid: a86d0968779529e48ae6df0ccd2722d8,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219919717506388261, guid: a86d0968779529e48ae6df0ccd2722d8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219919717506388261, guid: a86d0968779529e48ae6df0ccd2722d8,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219919717506388261, guid: a86d0968779529e48ae6df0ccd2722d8,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219919717506388261, guid: a86d0968779529e48ae6df0ccd2722d8,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219919717506388261, guid: a86d0968779529e48ae6df0ccd2722d8,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219919717506388261, guid: a86d0968779529e48ae6df0ccd2722d8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219919717506388261, guid: a86d0968779529e48ae6df0ccd2722d8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219919717506388261, guid: a86d0968779529e48ae6df0ccd2722d8,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5741964484590390452, guid: a86d0968779529e48ae6df0ccd2722d8,
+        type: 3}
+      propertyPath: m_Name
+      value: Esquerda Pantanal
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a86d0968779529e48ae6df0ccd2722d8, type: 3}
+--- !u!4 &5533976346834687970 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3219919717506388261, guid: a86d0968779529e48ae6df0ccd2722d8,
+    type: 3}
+  m_PrefabInstance: {fileID: 6945625701273847495}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8479995770488714103
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7242176989998998310}
+    m_Modifications:
+    - target: {fileID: 5582090360590666313, guid: ad7b242923aa50945bcdeb374b76bd71,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5582090360590666313, guid: ad7b242923aa50945bcdeb374b76bd71,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5582090360590666313, guid: ad7b242923aa50945bcdeb374b76bd71,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5582090360590666313, guid: ad7b242923aa50945bcdeb374b76bd71,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5582090360590666313, guid: ad7b242923aa50945bcdeb374b76bd71,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5582090360590666313, guid: ad7b242923aa50945bcdeb374b76bd71,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5582090360590666313, guid: ad7b242923aa50945bcdeb374b76bd71,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5582090360590666313, guid: ad7b242923aa50945bcdeb374b76bd71,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5582090360590666313, guid: ad7b242923aa50945bcdeb374b76bd71,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5582090360590666313, guid: ad7b242923aa50945bcdeb374b76bd71,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8092965280988326807, guid: ad7b242923aa50945bcdeb374b76bd71,
+        type: 3}
+      propertyPath: m_Name
+      value: Cima Pantanal
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ad7b242923aa50945bcdeb374b76bd71, type: 3}
+--- !u!4 &4096426982360283454 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5582090360590666313, guid: ad7b242923aa50945bcdeb374b76bd71,
+    type: 3}
+  m_PrefabInstance: {fileID: 8479995770488714103}
+  m_PrefabAsset: {fileID: 0}
