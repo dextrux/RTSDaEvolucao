@@ -11,7 +11,7 @@ public class Piece : MonoBehaviour
     private PieceDiet _diet;
     private PieceOwner _owner;
     private PieceLevel _level;
-    private int _strength;
+    private StatusBar _strength;
     private Humidity _humidity;
     private Temperature _temperature;
     private bool _isResting;
@@ -27,8 +27,7 @@ public class Piece : MonoBehaviour
     public PieceDiet Diet { get { return _diet; } set { _diet = value; } }
     public PieceOwner Owner { get { return _owner; } set { _owner = value; } }
     public PieceLevel Level { get { return _level; } set { _level = value; } }
-
-    public int Strength { get { return _strength; } set { _strength = value; } }
+    public StatusBar Strength { get { return _strength; } }
     public Humidity Humidity { get { return _humidity; } }
     public Temperature Temperature { get { return _temperature; } }
     public bool Resting { get { return _isResting; } set { _isResting = value; } }
@@ -127,17 +126,17 @@ public class Piece : MonoBehaviour
             case 1: 
                 piece.HealthBar.MaxBarValue = 100;           
                 piece.EnergyBar.MaxBarValue = 100;
-                piece.Strength = 20;
+                piece.Strength.CurrentBarValue = 20;
                 break;
             case 2:
                 piece.HealthBar.MaxBarValue = 300;              
                 piece.EnergyBar.MaxBarValue = 200;
-                piece.Strength = 20;
+                piece.Strength.CurrentBarValue = 20;
                 break;
             case 3:
                 piece.HealthBar.MaxBarValue = 900;        
                 piece.EnergyBar.MaxBarValue = 400;
-                piece.Strength = 30;
+                piece.Strength.CurrentBarValue = 30;
                 break;
             default: Debug.Log("Exceção encontrada no nivelamento das peças");
                 break;
