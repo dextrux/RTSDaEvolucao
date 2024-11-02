@@ -1,0 +1,3033 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &463992420466370555
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4842720857209031507}
+  m_Layer: 0
+  m_Name: Baixo Araucarias
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4842720857209031507
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 463992420466370555}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6251395780510306297}
+  - {fileID: 6820662826363645838}
+  - {fileID: 6477640782911077303}
+  - {fileID: 7643449172090993354}
+  - {fileID: 3003111630646749934}
+  - {fileID: 109659486178190511}
+  - {fileID: 4333090703382704065}
+  - {fileID: 7823836375941926317}
+  - {fileID: 1891565592054558393}
+  - {fileID: 2823993295333486705}
+  - {fileID: 1548138798267707227}
+  - {fileID: 188909350549444999}
+  - {fileID: 2960662360871343718}
+  - {fileID: 1276516783255788890}
+  - {fileID: 4887127627032849095}
+  - {fileID: 6201337937081588076}
+  - {fileID: 5174475042872580179}
+  - {fileID: 1328438606782552776}
+  - {fileID: 2412595125170207510}
+  - {fileID: 2624051656598057836}
+  - {fileID: 5624820290176967596}
+  - {fileID: 822945024441607829}
+  - {fileID: 8749799475954128382}
+  - {fileID: 8334343077093162293}
+  - {fileID: 1972363361600049488}
+  - {fileID: 1445233271671592244}
+  - {fileID: 7360902470781367950}
+  - {fileID: 6320258259401946129}
+  - {fileID: 1219235605660398812}
+  - {fileID: 4090560195358476176}
+  - {fileID: 7334921041112040031}
+  - {fileID: 2449116483824335360}
+  - {fileID: 7871581984022448578}
+  - {fileID: 4724223023837286937}
+  - {fileID: 4946364856238406726}
+  - {fileID: 8913967785433236430}
+  - {fileID: 1430776452699355485}
+  - {fileID: 3753216389012177225}
+  - {fileID: 6316536185756348160}
+  - {fileID: 1336963438800097123}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &265717424605883804
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4842720857209031507}
+    m_Modifications:
+    - target: {fileID: 5907540070602330740, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Araucarias (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.199991
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -26.500374
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ce834a9d4664a04d9b59032da983d90, type: 3}
+--- !u!4 &8334343077093162293 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+    type: 3}
+  m_PrefabInstance: {fileID: 265717424605883804}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &681173892256580951
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4842720857209031507}
+    m_Modifications:
+    - target: {fileID: 5907540070602330740, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Araucarias (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 15.299992
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -26.500374
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ce834a9d4664a04d9b59032da983d90, type: 3}
+--- !u!4 &8749799475954128382 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+    type: 3}
+  m_PrefabInstance: {fileID: 681173892256580951}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &841410279368184679
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4842720857209031507}
+    m_Modifications:
+    - target: {fileID: 5907540070602330740, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Araucarias (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.5500107
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -30.917103
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ce834a9d4664a04d9b59032da983d90, type: 3}
+--- !u!4 &8913967785433236430 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+    type: 3}
+  m_PrefabInstance: {fileID: 841410279368184679}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1572692620958356214
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4842720857209031507}
+    m_Modifications:
+    - target: {fileID: 5907540070602330740, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Araucarias (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 20.399992
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -26.500374
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ce834a9d4664a04d9b59032da983d90, type: 3}
+--- !u!4 &7334921041112040031 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+    type: 3}
+  m_PrefabInstance: {fileID: 1572692620958356214}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1602896106623837735
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4842720857209031507}
+    m_Modifications:
+    - target: {fileID: 5907540070602330740, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Araucarias (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.10001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -26.500374
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ce834a9d4664a04d9b59032da983d90, type: 3}
+--- !u!4 &7360902470781367950 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+    type: 3}
+  m_PrefabInstance: {fileID: 1602896106623837735}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1876717701592836707
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4842720857209031507}
+    m_Modifications:
+    - target: {fileID: 5907540070602330740, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Araucarias (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.6499977
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -13.250189
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ce834a9d4664a04d9b59032da983d90, type: 3}
+--- !u!4 &7643449172090993354 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+    type: 3}
+  m_PrefabInstance: {fileID: 1876717701592836707}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2056550683402837252
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4842720857209031507}
+    m_Modifications:
+    - target: {fileID: 5907540070602330740, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Araucarias (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10.200004
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.833458
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ce834a9d4664a04d9b59032da983d90, type: 3}
+--- !u!4 &7823836375941926317 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+    type: 3}
+  m_PrefabInstance: {fileID: 2056550683402837252}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2100074166766639467
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4842720857209031507}
+    m_Modifications:
+    - target: {fileID: 5907540070602330740, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Araucarias (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.74999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -30.917103
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ce834a9d4664a04d9b59032da983d90, type: 3}
+--- !u!4 &7871581984022448578 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+    type: 3}
+  m_PrefabInstance: {fileID: 2100074166766639467}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2744415895747725765
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4842720857209031507}
+    m_Modifications:
+    - target: {fileID: 5907540070602330740, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Araucarias (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.649994
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -22.083645
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ce834a9d4664a04d9b59032da983d90, type: 3}
+--- !u!4 &6201337937081588076 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+    type: 3}
+  m_PrefabInstance: {fileID: 2744415895747725765}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2799241290312392528
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4842720857209031507}
+    m_Modifications:
+    - target: {fileID: 5907540070602330740, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Araucarias
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.0999985
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.833459
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ce834a9d4664a04d9b59032da983d90, type: 3}
+--- !u!4 &6251395780510306297 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+    type: 3}
+  m_PrefabInstance: {fileID: 2799241290312392528}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2859677111621117112
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4842720857209031507}
+    m_Modifications:
+    - target: {fileID: 5907540070602330740, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Araucarias (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10.20001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -26.500374
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ce834a9d4664a04d9b59032da983d90, type: 3}
+--- !u!4 &6320258259401946129 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+    type: 3}
+  m_PrefabInstance: {fileID: 2859677111621117112}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2860160120664637353
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4842720857209031507}
+    m_Modifications:
+    - target: {fileID: 5907540070602330740, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Araucarias (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -17.850012
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -30.917103
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ce834a9d4664a04d9b59032da983d90, type: 3}
+--- !u!4 &6316536185756348160 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+    type: 3}
+  m_PrefabInstance: {fileID: 2860160120664637353}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3025503815641279262
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4842720857209031507}
+    m_Modifications:
+    - target: {fileID: 5907540070602330740, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Araucarias (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.199999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.833459
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ce834a9d4664a04d9b59032da983d90, type: 3}
+--- !u!4 &6477640782911077303 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+    type: 3}
+  m_PrefabInstance: {fileID: 3025503815641279262}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3368218614850240295
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4842720857209031507}
+    m_Modifications:
+    - target: {fileID: 5907540070602330740, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Araucarias (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.1000023
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.833459
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ce834a9d4664a04d9b59032da983d90, type: 3}
+--- !u!4 &6820662826363645838 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+    type: 3}
+  m_PrefabInstance: {fileID: 3368218614850240295}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3573117603437560496
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4842720857209031507}
+    m_Modifications:
+    - target: {fileID: 5907540070602330740, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Araucarias (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.64999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -30.917103
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ce834a9d4664a04d9b59032da983d90, type: 3}
+--- !u!4 &4724223023837286937 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+    type: 3}
+  m_PrefabInstance: {fileID: 3573117603437560496}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3732108495061138030
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4842720857209031507}
+    m_Modifications:
+    - target: {fileID: 5907540070602330740, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Araucarias (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.749994
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -22.083645
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ce834a9d4664a04d9b59032da983d90, type: 3}
+--- !u!4 &4887127627032849095 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+    type: 3}
+  m_PrefabInstance: {fileID: 3732108495061138030}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3800062720633253103
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4842720857209031507}
+    m_Modifications:
+    - target: {fileID: 5907540070602330740, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Araucarias (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.5499897
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -30.917103
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ce834a9d4664a04d9b59032da983d90, type: 3}
+--- !u!4 &4946364856238406726 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+    type: 3}
+  m_PrefabInstance: {fileID: 3800062720633253103}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4023651715991931130
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4842720857209031507}
+    m_Modifications:
+    - target: {fileID: 5907540070602330740, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Araucarias (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.5499935
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -22.083645
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ce834a9d4664a04d9b59032da983d90, type: 3}
+--- !u!4 &5174475042872580179 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+    type: 3}
+  m_PrefabInstance: {fileID: 4023651715991931130}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4474022801282708229
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4842720857209031507}
+    m_Modifications:
+    - target: {fileID: 5907540070602330740, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Araucarias (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -15.300008
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -17.666914
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ce834a9d4664a04d9b59032da983d90, type: 3}
+--- !u!4 &5624820290176967596 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+    type: 3}
+  m_PrefabInstance: {fileID: 4474022801282708229}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4904303599286391264
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4842720857209031507}
+    m_Modifications:
+    - target: {fileID: 5907540070602330740, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Araucarias (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12.750011
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -30.917103
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ce834a9d4664a04d9b59032da983d90, type: 3}
+--- !u!4 &3753216389012177225 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+    type: 3}
+  m_PrefabInstance: {fileID: 4904303599286391264}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5250381994187921209
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4842720857209031507}
+    m_Modifications:
+    - target: {fileID: 5907540070602330740, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Araucarias (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -17.85001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -22.083643
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ce834a9d4664a04d9b59032da983d90, type: 3}
+--- !u!4 &4090560195358476176 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+    type: 3}
+  m_PrefabInstance: {fileID: 5250381994187921209}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5493185662065590120
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4842720857209031507}
+    m_Modifications:
+    - target: {fileID: 5907540070602330740, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Araucarias (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.6500034
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -13.250189
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ce834a9d4664a04d9b59032da983d90, type: 3}
+--- !u!4 &4333090703382704065 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+    type: 3}
+  m_PrefabInstance: {fileID: 5493185662065590120}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5864476386659904447
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4842720857209031507}
+    m_Modifications:
+    - target: {fileID: 5907540070602330740, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Araucarias (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.6500072
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -22.083645
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ce834a9d4664a04d9b59032da983d90, type: 3}
+--- !u!4 &2412595125170207510 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+    type: 3}
+  m_PrefabInstance: {fileID: 5864476386659904447}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5900997814573034153
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4842720857209031507}
+    m_Modifications:
+    - target: {fileID: 5907540070602330740, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Araucarias (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 17.84999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -30.917103
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ce834a9d4664a04d9b59032da983d90, type: 3}
+--- !u!4 &2449116483824335360 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+    type: 3}
+  m_PrefabInstance: {fileID: 5900997814573034153}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6085222211332940741
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4842720857209031507}
+    m_Modifications:
+    - target: {fileID: 5907540070602330740, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Araucarias (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12.750008
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -22.083645
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ce834a9d4664a04d9b59032da983d90, type: 3}
+--- !u!4 &2624051656598057836 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+    type: 3}
+  m_PrefabInstance: {fileID: 6085222211332940741}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6280650904659271896
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4842720857209031507}
+    m_Modifications:
+    - target: {fileID: 5907540070602330740, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Araucarias (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.0999966
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -17.666918
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ce834a9d4664a04d9b59032da983d90, type: 3}
+--- !u!4 &2823993295333486705 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+    type: 3}
+  m_PrefabInstance: {fileID: 6280650904659271896}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6417610721697679055
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4842720857209031507}
+    m_Modifications:
+    - target: {fileID: 5907540070602330740, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Araucarias (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10.200005
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -17.666918
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ce834a9d4664a04d9b59032da983d90, type: 3}
+--- !u!4 &2960662360871343718 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+    type: 3}
+  m_PrefabInstance: {fileID: 6417610721697679055}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6464000641753119303
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4842720857209031507}
+    m_Modifications:
+    - target: {fileID: 5907540070602330740, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Araucarias (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.5499973
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -13.250189
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ce834a9d4664a04d9b59032da983d90, type: 3}
+--- !u!4 &3003111630646749934 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+    type: 3}
+  m_PrefabInstance: {fileID: 6464000641753119303}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6985668077244982389
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4842720857209031507}
+    m_Modifications:
+    - target: {fileID: 5907540070602330740, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Araucarias (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -15.300011
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -26.500374
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ce834a9d4664a04d9b59032da983d90, type: 3}
+--- !u!4 &1219235605660398812 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+    type: 3}
+  m_PrefabInstance: {fileID: 6985668077244982389}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7038727130658983411
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4842720857209031507}
+    m_Modifications:
+    - target: {fileID: 5907540070602330740, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Araucarias (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 15.299995
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -17.666916
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ce834a9d4664a04d9b59032da983d90, type: 3}
+--- !u!4 &1276516783255788890 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+    type: 3}
+  m_PrefabInstance: {fileID: 7038727130658983411}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7094862213485955681
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4842720857209031507}
+    m_Modifications:
+    - target: {fileID: 5907540070602330740, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Araucarias (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.5500069
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -22.083645
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ce834a9d4664a04d9b59032da983d90, type: 3}
+--- !u!4 &1328438606782552776 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+    type: 3}
+  m_PrefabInstance: {fileID: 7094862213485955681}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7103396391350771658
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4842720857209031507}
+    m_Modifications:
+    - target: {fileID: 5907540070602330740, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Araucarias (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -20.400013
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -26.500372
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ce834a9d4664a04d9b59032da983d90, type: 3}
+--- !u!4 &1336963438800097123 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+    type: 3}
+  m_PrefabInstance: {fileID: 7103396391350771658}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7188501273765685748
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4842720857209031507}
+    m_Modifications:
+    - target: {fileID: 5907540070602330740, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Araucarias (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.650011
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -30.917103
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ce834a9d4664a04d9b59032da983d90, type: 3}
+--- !u!4 &1430776452699355485 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+    type: 3}
+  m_PrefabInstance: {fileID: 7188501273765685748}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7212246835083330973
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4842720857209031507}
+    m_Modifications:
+    - target: {fileID: 5907540070602330740, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Araucarias (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -26.500374
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ce834a9d4664a04d9b59032da983d90, type: 3}
+--- !u!4 &1445233271671592244 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+    type: 3}
+  m_PrefabInstance: {fileID: 7212246835083330973}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7306408976560914418
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4842720857209031507}
+    m_Modifications:
+    - target: {fileID: 5907540070602330740, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Araucarias (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -17.666918
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ce834a9d4664a04d9b59032da983d90, type: 3}
+--- !u!4 &1548138798267707227 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+    type: 3}
+  m_PrefabInstance: {fileID: 7306408976560914418}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7663363680852983312
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4842720857209031507}
+    m_Modifications:
+    - target: {fileID: 5907540070602330740, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Araucarias (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.199997
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -17.666918
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ce834a9d4664a04d9b59032da983d90, type: 3}
+--- !u!4 &1891565592054558393 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+    type: 3}
+  m_PrefabInstance: {fileID: 7663363680852983312}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7730061863105774073
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4842720857209031507}
+    m_Modifications:
+    - target: {fileID: 5907540070602330740, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Araucarias (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.099991
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -26.500374
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ce834a9d4664a04d9b59032da983d90, type: 3}
+--- !u!4 &1972363361600049488 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+    type: 3}
+  m_PrefabInstance: {fileID: 7730061863105774073}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8186447843666129926
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4842720857209031507}
+    m_Modifications:
+    - target: {fileID: 5907540070602330740, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Araucarias (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.550003
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -13.250189
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ce834a9d4664a04d9b59032da983d90, type: 3}
+--- !u!4 &109659486178190511 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+    type: 3}
+  m_PrefabInstance: {fileID: 8186447843666129926}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8252468384665667886
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4842720857209031507}
+    m_Modifications:
+    - target: {fileID: 5907540070602330740, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Araucarias (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.100004
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -17.666918
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ce834a9d4664a04d9b59032da983d90, type: 3}
+--- !u!4 &188909350549444999 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+    type: 3}
+  m_PrefabInstance: {fileID: 8252468384665667886}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8895238647114643004
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4842720857209031507}
+    m_Modifications:
+    - target: {fileID: 5907540070602330740, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_Name
+      value: Standard Araucarias (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 17.849993
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -22.083645
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1ce834a9d4664a04d9b59032da983d90, type: 3}
+--- !u!4 &822945024441607829 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8077641647835074729, guid: 1ce834a9d4664a04d9b59032da983d90,
+    type: 3}
+  m_PrefabInstance: {fileID: 8895238647114643004}
+  m_PrefabAsset: {fileID: 0}
