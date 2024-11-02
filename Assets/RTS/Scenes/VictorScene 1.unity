@@ -2743,7 +2743,6 @@ MonoBehaviour:
   _mutationScreen: {fileID: 1167561527}
   _buyMutationScreen: {fileID: 1360557124}
   _ingameUi: {fileID: 2098855495}
-  _mutation: 0
 --- !u!1 &801104215
 GameObject:
   m_ObjectHideFlags: 0
@@ -3733,7 +3732,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1167561528}
   - component: {fileID: 1167561529}
-  - component: {fileID: 1167561530}
   m_Layer: 0
   m_Name: MutationInfoUi
   m_TagString: Untagged
@@ -3773,23 +3771,6 @@ MonoBehaviour:
   sourceAsset: {fileID: 9197481963319205126, guid: d6a5a3322aedab74889da827ddea3272,
     type: 3}
   m_SortingOrder: 1
---- !u!114 &1167561530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1167561527}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e79b2c73e83cd3745a74626fc8be17c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _creatureScreen: {fileID: 734976100}
-  _mutationScreen: {fileID: 1167561527}
-  _buyMutationScreen: {fileID: 1360557124}
-  _ingameUi: {fileID: 0}
-  _mutation: 1
 --- !u!1 &1217499481
 GameObject:
   m_ObjectHideFlags: 0
@@ -7232,7 +7213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c194ac25ecf45a4eadee30c79168c20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pieceDiet: 0
+  _pieceDiet: 2
   _pieceLevel: 1
   _pieceRemainingActions: 0
   layerMask:
@@ -8004,6 +7985,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CreatureInfo: {fileID: 734976100}
   _ingameUi: {fileID: 2098855495}
+  _creatureInfo: {fileID: 734976103}
+  _jubileuson: {fileID: 2057982011}
 --- !u!1 &2119827411
 GameObject:
   m_ObjectHideFlags: 0

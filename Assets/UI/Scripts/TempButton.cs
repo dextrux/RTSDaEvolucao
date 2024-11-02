@@ -7,6 +7,8 @@ public class TempButton : MonoBehaviour
 {
     [SerializeField] private GameObject CreatureInfo;
     [SerializeField] private InGameUi _ingameUi;
+    [SerializeField] private CreatureInfo _creatureInfo;
+    [SerializeField] private Jubileuson _jubileuson;
     private Button tempButton;
     private void OnEnable()
     {
@@ -16,11 +18,13 @@ public class TempButton : MonoBehaviour
     }
     private void ClickTemp(ClickEvent evt)
     {
-        TryFixing();
-        CreatureInfo.SetActive(true);
-    }
-    private void TryFixing()
-    {
         _ingameUi.CreatureInfoChange();
+        CreatureInfo.SetActive(true);
+        _creatureInfo.SetCreatureStateUi(_jubileuson);
+        _creatureInfo.SetDisasterWarning(true);
+        _creatureInfo.SetDiscomfortWarning(false);
+        _creatureInfo.SetHumidityWarning(false);
+        _creatureInfo.SetTemperatureWarning(true);
+        _creatureInfo.SetillnessWarning(true);
     }
 }
