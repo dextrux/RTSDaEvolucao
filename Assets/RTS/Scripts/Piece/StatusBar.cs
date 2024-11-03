@@ -1,10 +1,15 @@
-﻿public class StatusBar
+﻿using UnityEngine;
+[System.Serializable]
+public class StatusBar
 {
     // Constantes da classe  
+    [SerializeField]
     readonly float _minBarValue = 0f;
 
     // Atributos
+    [SerializeField]
     float _maxBarValue = 100f;
+    [SerializeField]
     private float _currentValue;
 
     //Construtor

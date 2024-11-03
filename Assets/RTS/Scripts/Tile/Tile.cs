@@ -7,6 +7,7 @@ public class Tile : MonoBehaviour
     // Atributos
     private const float _rayDistanceTile = 3;
     private const float _rayDistanceTotem = 1;
+    private const float _rayDistancePiece = 5f;
     [SerializeField]
     private Humidity _humidity;
     [SerializeField]
@@ -16,6 +17,8 @@ public class Tile : MonoBehaviour
     [SerializeField]
     private GameObject _totem;
     private bool _isUnderDisastre;
+    [SerializeField]
+    private Owner _owner;
 
     // Atributos de inspetor para assinalação
     public Material[] materialOriginal = new Material[5];
@@ -25,6 +28,7 @@ public class Tile : MonoBehaviour
     public Biome biome;
     public LayerMask tileLayerMask;
     public LayerMask totemLayerMask;
+    public LayerMask pieceLayerMask;
 
 
     // Atributo para definir o ângulo dos raios no inspetor
@@ -38,6 +42,7 @@ public class Tile : MonoBehaviour
     };
 
     // Propriedades
+    public Owner Owner { get { return _owner; } set { _owner = value; } }
     public TileType TileType { get { return tileType; } set { tileType = value; } }
     public Biome Biome { get { return biome; } set { biome = value; } }
     public Humidity Humidity { get { return _humidity; } }
@@ -52,6 +57,16 @@ public class Tile : MonoBehaviour
         InicializarTile();
     }
 
+    public GameObject prefab;
+    private void Start()
+    {
+        if(Biome == Biome.Caatinga)
+        {
+            Vector3 instatiatePosition = new Vector3(this.transform.position.x, 5f, this.transform.position.z);
+            Instantiate(prefab, instatiatePosition, Quaternion.identity);
+        }
+    }
+
     private void InicializarTile()
     {
         _humidity = new Humidity(tileFirstHumidity);
@@ -60,41 +75,92 @@ public class Tile : MonoBehaviour
         BuscarTilesAdjacentes();
     }
     
-    public void ColorirTilesAdjacentes()
+    public void ColorirTilesDuranteSeleção()
     {
+        this.GetComponent<Renderer>().material.color = Color.green;
         for (int i = 0; i < _tilesAdjacentes.Count; i++)
         {
             TileType type = _tilesAdjacentes[i].GetComponent<Tile>().TileType;
-            switch (type)
+            Owner owner = _tilesAdjacentes[i].GetComponent<Tile>().Owner;
+            if (owner == Owner.None)
             {
-                case TileType.Vazio:
-                    _tilesAdjacentes[i].GetComponent<Renderer>().material.color = Color.blue;
-                    break;
-                case TileType.Comida:
-                    _tilesAdjacentes[i].GetComponent<Renderer>().material.color = Color.yellow;
-                    break;
-                case TileType.NPC:
-                    _tilesAdjacentes[i].GetComponent<Renderer>().material.color = Color.gray;
-                    break;
-                case TileType.P1:
-                    _tilesAdjacentes[i].GetComponent<Renderer>().material.color = Color.green;
-                    break;
-                case TileType.Barreira:
-                    _tilesAdjacentes[i].GetComponent<Renderer>().material.color = Color.red;
-                    break;
-                default: Debug.Log("Exceção encontrada");
-                    break;
-            }          
+                switch (type)
+                {
+                    case TileType.Posicionamento:
+                        _tilesAdjacentes[i].GetComponent<Renderer>().material.color = Color.blue;
+                        break;
+                    case TileType.Comida:
+                        FoodSize tileAdjacenteFoodSize = _tilesAdjacentes[i].GetComponent<Tile>().Totem.GetComponent<FoodTotem>().FoodSize;
+                        switch ((int)tileAdjacenteFoodSize)
+                        {
+                            case <=3:
+                                _tilesAdjacentes[i].GetComponent<Renderer>().material.color = new Color(145,35,35);
+                                break;
+                            case > 3:
+                                _tilesAdjacentes[i].GetComponent<Renderer>().material.color = Color.yellow;
+                                break;
+                            default: 
+                                Debug.Log("Exceção encontrada no colorimento dos tiles adjacentes do tipo comida");
+                                break;
+                        }
+                        break;
+                    case TileType.Barreira:
+                        _tilesAdjacentes[i].GetComponent<Renderer>().material.color = Color.black;
+                        break;
+                    default:
+                        Debug.Log("Exceção encontrada no colorimento dos tiles adjacentes");
+                        break;
+                }
+            }
+            else
+            {
+                switch (owner)
+                {
+                    case Owner.NPC:
+                        _tilesAdjacentes[i].GetComponent<Renderer>().material.color = Color.red;
+                        break;
+                    case Owner.P1:
+                        _tilesAdjacentes[i].GetComponent<Renderer>().material.color = new Color(0.8f, 1f, 0.898f); // Verde Água
+                        break;
+                    case Owner.P2:
+                        _tilesAdjacentes[i].GetComponent<Renderer>().material.color = new Color(0.4f, 0.4f, 1f); // Azul Claro
+                        break;
+                    case Owner.P3:
+                        _tilesAdjacentes[i].GetComponent<Renderer>().material.color = new Color(1f, 0.647f, 0f); // Laranja
+                        break;
+                    case Owner.P4:
+                        _tilesAdjacentes[i].GetComponent<Renderer>().material.color = new Color(0.294f, 0f, 0.51f); // Roxo
+                        break;
+                    default:
+                        Debug.Log("Exceção encontrada no colorimento dos tiles adjacentes com dono");
+                        break;
+
+                }
+            }
+
         }
     }
 
     public void RetornarTilesAdjacentesParaMaterialOriginal()
     {
+        // Verifica se o componente Tile está presente antes de acessá-lo
+        Tile currentTile = this.GetComponent<Tile>();
+        if (currentTile != null && currentTile.materialOriginal != null)
+        {
+            this.GetComponent<Renderer>().material = currentTile.materialOriginal[(int)currentTile.Biome];
+        }
+
+        // Aplica o material original aos tiles adjacentes
         for (int i = 0; i < _tilesAdjacentes.Count; i++)
-        {          
-            _tilesAdjacentes[i].GetComponent<Renderer>().material = _tilesAdjacentes[i].GetComponent<Tile>().materialOriginal[(int)Biome];
+        {
+            Tile adjacentTile = _tilesAdjacentes[i].GetComponent<Tile>();
+            if (adjacentTile != null && adjacentTile.materialOriginal != null)
+            {
+                _tilesAdjacentes[i].GetComponent<Renderer>().material = adjacentTile.materialOriginal[(int)adjacentTile.Biome];
+            }
         }
     }
+
     private void BuscarTilesAdjacentes()
     {
         Vector3 rayOriginTransform = new Vector3(this.transform.position.x, this.transform.position.y + 0.1f, this.transform.position.z);
@@ -136,6 +202,27 @@ public class Tile : MonoBehaviour
         else
         {
             Debug.DrawRay(rayOriginTransform, Vector3.down * _rayDistanceTotem, Color.red);
+        }
+    }
+    public Piece TileRaycastForPiece()
+    {
+        Vector3 rayOriginTransform = this.transform.position;
+        if (Physics.Raycast(rayOriginTransform, Vector3.up, out RaycastHit hit, _rayDistancePiece, pieceLayerMask))
+        {
+            Debug.DrawRay(rayOriginTransform, Vector3.up * _rayDistancePiece, Color.green);
+            if (hit.collider.gameObject.tag == "Piece")
+            {
+                return hit.collider.gameObject.GetComponent<Piece>();
+            }
+            else
+            {
+                return null;
+            }
+        }
+        else
+        {
+            Debug.DrawRay(rayOriginTransform, Vector3.up * _rayDistancePiece, Color.red);
+            return null;
         }
     }
 

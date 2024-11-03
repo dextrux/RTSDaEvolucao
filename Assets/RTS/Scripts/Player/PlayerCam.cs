@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class PlayerCamera : MonoBehaviour
+public class PlayerCam : MonoBehaviour
 {
     public Camera playerCamera;
     public float moveSpeed = 15f;
@@ -97,4 +97,4 @@ public class PlayerCamera : MonoBehaviour
         playerCamera.transform.position = targetPosition;
     }
     public void ResetRotation() { playerCamera.transform.rotation = Quaternion.Euler(90, 0, 0); }
-}       
+}
