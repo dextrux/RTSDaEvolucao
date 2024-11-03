@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Piece : MonoBehaviour
 {
-    // Atributos da peça
+    #region Atributos da peça
     [SerializeField]
     private StatusBar _healthBar = new StatusBar(100, 100);
     [SerializeField]
@@ -36,13 +36,14 @@ public class Piece : MonoBehaviour
     private bool _isDoente;
     [SerializeField]
     private bool _isDuringAction;
+    #endregion
 
     // Atributos Raycast
     private const float _rayDistanceTile = 10f;
     [SerializeField]
     public LayerMask TileLayerMask;
 
-    // Propriedades
+    #region Propriedades
     public StatusBar Energy { get { return _energyBar; } }
     public StatusBar Health { get { return _healthBar; } }
     public StatusBar Fertility { get { return _fertilityBar; } }
@@ -58,9 +59,15 @@ public class Piece : MonoBehaviour
     public bool IsDoente { get { return _isDoente; } set { _isDoente = value; } }
     public bool IsUnderDesastre { get { return _isUnderDisastre; } set { _isUnderDisastre = value; } }
     public bool IsDuringAction { get { return _isDuringAction; } set { _isDuringAction = value; } }
+    #endregion
+    //Atributos para mutação
+    private List<MutationBase> _mutations;
+    private float _huntMultiplier;
+    private float _plantMultiplier;
     private void Start()
     {
         PieceRaycastForTile().Owner = Owner;
+        SetMultiplier();
     }
     public Tile PieceRaycastForTile()
     {
@@ -83,7 +90,7 @@ public class Piece : MonoBehaviour
             return null;
         }
     }
-
+    //Verifica se a peça tem energia e se será necessário mever
     public void Eat(GameObject tile)
     {
         Piece pieceScript = this.GetComponent<Piece>();
@@ -97,43 +104,44 @@ public class Piece : MonoBehaviour
             EatRoutine(tile, pieceScript, false);
         }
     }
-
+    //Realiza a rotina de alimentação de acordo com o alimento
     private void EatRoutine(GameObject tile, Piece pieceScript, bool walk)
     {
         Tile tileScript = tile.GetComponent<Tile>();
         FoodTotem tileFoodTotemScript = tileScript.Totem.GetComponent<FoodTotem>();
-
+        //Verifica se o alimento é uma caça, se for menor ou igual a 3 é caça 
         if ((int)tileFoodTotemScript.FoodSize <= 3)
         {
             switch (pieceScript.Diet)
             {
                 case PieceDiet.Herbivore:
-                    pieceScript.Hunger.CurrentBarValue = pieceScript.Hunger.CurrentBarValue + 0.4f * ((tileFoodTotemScript.FoodQuantity));
+                    pieceScript.Hunger.CurrentBarValue = pieceScript.Hunger.CurrentBarValue + _huntMultiplier * ((tileFoodTotemScript.FoodQuantity));
                     break;
                 case PieceDiet.Carnivore:
-                    pieceScript.Hunger.CurrentBarValue = pieceScript.Hunger.CurrentBarValue + 1.4f * (tileFoodTotemScript.FoodQuantity);
+                    pieceScript.Hunger.CurrentBarValue = pieceScript.Hunger.CurrentBarValue + _huntMultiplier * (tileFoodTotemScript.FoodQuantity);
                     break;
                 case PieceDiet.Omnivore:
-                    pieceScript.Hunger.CurrentBarValue = pieceScript.Hunger.CurrentBarValue + 1.15f * (tileFoodTotemScript.FoodQuantity);
+                    pieceScript.Hunger.CurrentBarValue = pieceScript.Hunger.CurrentBarValue + _huntMultiplier * (tileFoodTotemScript.FoodQuantity);
                     break;
                 default:
                     Debug.Log("Exceção encontrada na dieta das peças");
                     break;
             }
         }
+        //Se falhar na verificação anterior o alimento é um tipo de planta e entra nesse else
         else if ((int)tileFoodTotemScript.FoodSize > 3)
         {
             //Vegetal
             switch (pieceScript.Diet)
             {
                 case PieceDiet.Carnivore:
-                    pieceScript.Hunger.CurrentBarValue = pieceScript.Hunger.CurrentBarValue + 0.4f * (tileFoodTotemScript.FoodQuantity);
+                    pieceScript.Hunger.CurrentBarValue = pieceScript.Hunger.CurrentBarValue + _plantMultiplier * (tileFoodTotemScript.FoodQuantity);
                     break;
                 case PieceDiet.Herbivore:
-                    pieceScript.Hunger.CurrentBarValue = pieceScript.Hunger.CurrentBarValue + 1.4f * (tileFoodTotemScript.FoodQuantity);
+                    pieceScript.Hunger.CurrentBarValue = pieceScript.Hunger.CurrentBarValue + _plantMultiplier * (tileFoodTotemScript.FoodQuantity);
                     break;
                 case PieceDiet.Omnivore:
-                    pieceScript.Hunger.CurrentBarValue = pieceScript.Hunger.CurrentBarValue + 1.15f * (tileFoodTotemScript.FoodQuantity);
+                    pieceScript.Hunger.CurrentBarValue = pieceScript.Hunger.CurrentBarValue + _plantMultiplier * (tileFoodTotemScript.FoodQuantity);
                     break;
                 default:
                     Debug.Log("Exceção encontrada na dieta das peças");
@@ -145,6 +153,31 @@ public class Piece : MonoBehaviour
         {
             StartCoroutine(Walk(tile, true));
         }
+    }
+    //Define os multiplicadores da dieta;
+    private void SetMultiplier()
+    {
+        if (_diet == PieceDiet.Herbivore)
+        {
+            _plantMultiplier = 1.4f;
+            _huntMultiplier = 0.4f;
+        }
+        else if (_diet == PieceDiet.Carnivore)
+        {
+            _plantMultiplier = 0.4f;
+            _huntMultiplier = 1.4f;
+        }
+        else
+        {
+            _plantMultiplier = 1;
+            _huntMultiplier = 1;
+        }
+    }
+    //Adiciona as mutações a peça
+    public void AddMutation(MutationBase mutationToAdd)
+    {
+        _mutations.Add(mutationToAdd);
+        mutationToAdd.SetMutation(gameObject.GetComponent<Piece>());
     }
     public void Rest(GameObject piece)
     {

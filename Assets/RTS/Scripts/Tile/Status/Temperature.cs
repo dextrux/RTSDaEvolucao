@@ -32,6 +32,14 @@ public class Temperature
     public float IncreaseTemperatureByValue { set { this._currentTemperature = Temperature.AdjustToClosestBoundary(this._currentTemperature + value); } }
     public float MultiplyTemperatureByValue { set { this._currentTemperature = Temperature.AdjustToClosestBoundary(this._currentTemperature * value); } }
 
+    public void IdealTemperatureAdjustSum(float portion)
+    {
+        _idealTemperature += portion;
+    }
+    public void IdealTemperatureAdjustMultiplyPercent(float percent)
+    {
+        _idealTemperature *= percent;
+    }
 
     // Boundaries Check
     private static float AdjustToClosestBoundary(float value)

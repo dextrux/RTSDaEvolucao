@@ -6,6 +6,8 @@ using UnityEngine.UIElements;
 public class BuyMutationUi : MonoBehaviour
 {
     private Button exitBuyMutation;
+
+    private int _selectedMutation;
     private void OnEnable()
     {
         var root = GetComponent<UIDocument>().rootVisualElement;

@@ -32,7 +32,14 @@ public class Humidity
     public float IncreaseHumidityByValue { set { this._currentHumidity = Humidity.AdjustToClosestBoundary(this._currentHumidity + value); } }
     public float MultiplyHumidityByValue { set { this._currentHumidity = Humidity.AdjustToClosestBoundary(this._currentHumidity * value); } }
 
-
+    public void IdealHumidityAdjustSum(float portion)
+    {
+        _idealHumidity += portion;
+    }
+    public void IdealHumidityAdjustMultiplyPercent(float percent)
+    {
+        _idealHumidity *= percent;
+    }
     // Boundaries Check
     private static float AdjustToClosestBoundary(float value)
     {

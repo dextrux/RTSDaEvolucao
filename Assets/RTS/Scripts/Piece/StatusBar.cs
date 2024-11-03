@@ -24,6 +24,16 @@ public class StatusBar
     public float MaxBarValue { get { return _maxBarValue; } set { _maxBarValue = value; } }
     public float MinBarValue { get { return _minBarValue; } }
 
+    public void StatusAdjustSum(float portion)
+    {
+        MaxBarValue += portion;
+        CurrentBarValue += portion;
+    }
+    public void StatusAdjustMultiplyPercent(float percent)
+    {
+        MaxBarValue *= percent;
+        CurrentBarValue *= percent;
+    }
     // Boundary Check
     private float AdjustToClosestBoundary(float value)
     {

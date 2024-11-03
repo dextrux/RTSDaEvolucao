@@ -167,3 +167,76 @@
     background-color: rgb(179, 77, 11);
     height: 100%;
 }
+
+.base-mutation-exposed {
+    flex-grow: 1;
+    background-color: rgb(82, 56, 35);
+    width: 98%;
+    margin-right: 2%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    padding-top: 22px;
+    padding-right: 22px;
+    padding-bottom: 22px;
+    padding-left: 22px;
+    flex-direction: row;
+    height: 30%;
+    white-space: normal;
+}
+
+.base-mutation-closed {
+    flex-grow: 1;
+    background-color: rgb(82, 56, 35);
+    width: 98%;
+    margin-right: 2%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    padding-top: 22px;
+    padding-right: 22px;
+    padding-bottom: 22px;
+    padding-left: 22px;
+    flex-direction: row;
+    height: 30%;
+    white-space: normal;
+    scale: 0 0;
+    position: absolute;
+}
+
+.purchased-button {
+    background-image: url('project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-1952634358&guid=8fbda476e9f56fe40955a8472d8bd40c&type=3#AtlasUITemp_61');
+    border-left-color: rgba(149, 149, 149, 0);
+    border-right-color: rgba(149, 149, 149, 0);
+    border-top-color: rgba(149, 149, 149, 0);
+    border-bottom-color: rgba(149, 149, 149, 0);
+    background-color: rgba(188, 188, 188, 0);
+    width: 25%;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.purchased-button:hover {
+    background-image: url('project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-1952634358&guid=8fbda476e9f56fe40955a8472d8bd40c&type=3#AtlasUITemp_61');
+    border-left-color: rgba(149, 149, 149, 0);
+    border-right-color: rgba(149, 149, 149, 0);
+    border-top-color: rgba(149, 149, 149, 0);
+    border-bottom-color: rgba(149, 149, 149, 0);
+    background-color: rgba(188, 188, 188, 0);
+    width: 25%;
+    -unity-background-scale-mode: scale-to-fit;
+    scale: 1.1 1.1;
+}
+
+.purchased-button:active {
+    background-image: url('project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-1952634358&guid=8fbda476e9f56fe40955a8472d8bd40c&type=3#AtlasUITemp_61');
+    border-left-color: rgba(149, 149, 149, 0);
+    border-right-color: rgba(149, 149, 149, 0);
+    border-top-color: rgba(149, 149, 149, 0);
+    border-bottom-color: rgba(149, 149, 149, 0);
+    background-color: rgba(188, 188, 188, 0);
+    width: 25%;
+    -unity-background-scale-mode: scale-to-fit;
+    scale: 0.9 0.9;
+}

@@ -119,12 +119,12 @@ public class CreatureInfo : MonoBehaviour
         SetDietUi(_actualPiece);
         AnimateBar(_actualPiece.Temperature.IdealTemperature, 40F, _creatureTemperature);
         _creatureTemperatureTxt.text = _actualPiece.Temperature.IdealTemperature.ToString() + " ºC";
-        AnimateBar(_actualPiece.FertilityBar.CurrentBarValue, 100, _creatureFertility);
-        _creatureFertilityTxt.text = _actualPiece.FertilityBar.CurrentBarValue.ToString() + " %";
+        AnimateBar(_actualPiece.Fertility.CurrentBarValue, 100, _creatureFertility);
+        _creatureFertilityTxt.text = _actualPiece.Fertility.CurrentBarValue.ToString() + " %";
         AnimateBar(_actualPiece.Humidity.CurrentHumidity, 100, _creatureHumidity);
         _creatureHumidityTxt.text = _actualPiece.Humidity.CurrentHumidity.ToString() + " %";
-        AnimateBar(_actualPiece.EnergyBar.CurrentBarValue, 100, _creatureEnergy);
-        _creatureEnergyTxt.text = _actualPiece.EnergyBar.CurrentBarValue.ToString() + " %";
+        AnimateBar(_actualPiece.Energy.CurrentBarValue, 100, _creatureEnergy);
+        _creatureEnergyTxt.text = _actualPiece.Energy.CurrentBarValue.ToString() + " %";
         //Falta informação dos tiles e a fome
     }
     private void SetDietUi(Piece piece)

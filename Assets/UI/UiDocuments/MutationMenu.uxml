@@ -16,28 +16,210 @@
             <ui:VisualElement name="creature-info-container" style="flex-grow: 1; background-color: rgb(255, 195, 123); border-top-left-radius: 70px; border-top-right-radius: 70px; border-bottom-right-radius: 70px; border-bottom-left-radius: 70px; padding-left: 59px; padding-right: 20px; padding-bottom: 25px;">
                 <ui:Label tabindex="-1" text="Mutações" parse-escape-sequences="true" display-tooltip-when-elided="true" class="info-title" style="width: auto; height: 20%; font-size: 76%; -unity-text-align: upper-left;" />
                 <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1">
-                    <ui:VisualElement name="mutation-one" style="flex-grow: 1; background-color: rgb(82, 56, 35); width: 98%; margin-right: 2%; border-top-left-radius: 40px; border-top-right-radius: 40px; border-bottom-right-radius: 40px; border-bottom-left-radius: 40px; padding-top: 22px; padding-right: 22px; padding-bottom: 22px; padding-left: 22px; flex-direction: row; height: 30%; white-space: normal;">
+                    <ui:VisualElement name="mutation-1" class="base-mutation-exposed">
                         <ui:VisualElement style="flex-grow: 1; width: 25%; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-964384399&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_5&apos;); -unity-background-scale-mode: scale-to-fit; height: 100%;" />
                         <ui:VisualElement style="flex-grow: 1; width: 75%;">
                             <ui:Label tabindex="-1" text="Dieta - Carnívoro" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 30%; -unity-text-align: upper-left;" />
                             <ui:Label tabindex="-1" text="Traço adquirido que torna a peça carnívora. " parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 70%; -unity-text-align: upper-left; white-space: normal;" />
                         </ui:VisualElement>
                     </ui:VisualElement>
-                    <ui:VisualElement name="mutation-two" style="flex-grow: 1; background-color: rgb(82, 56, 35); width: 98%; margin-right: 2%; border-top-left-radius: 40px; border-top-right-radius: 40px; border-bottom-right-radius: 40px; border-bottom-left-radius: 40px; padding-top: 22px; padding-right: 22px; padding-bottom: 22px; padding-left: 22px; flex-direction: row; height: 30%;">
+                    <ui:VisualElement name="mutation-2" class="base-mutation-closed base-mutation-exposed">
                         <ui:VisualElement style="flex-grow: 1; width: 25%; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-972736921&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_11&apos;); -unity-background-scale-mode: scale-to-fit; height: 100%;" />
                         <ui:VisualElement style="flex-grow: 1; width: 75%;">
                             <ui:Label tabindex="-1" text="Bico Tritura Grãos" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 30%; -unity-text-align: upper-left;" />
                             <ui:Label tabindex="-1" text="Melhora a alimentação quando ingerindo nozes,  porém reduz a de outras fontes" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 70%; -unity-text-align: upper-left; white-space: normal;" />
                         </ui:VisualElement>
                     </ui:VisualElement>
-                    <ui:VisualElement name="mutation-three" style="flex-grow: 1; background-color: rgb(82, 56, 35); width: 98%; margin-right: 2%; border-top-left-radius: 40px; border-top-right-radius: 40px; border-bottom-right-radius: 40px; border-bottom-left-radius: 40px; padding-top: 22px; padding-right: 22px; padding-bottom: 22px; padding-left: 22px; flex-direction: row; height: 30%;">
+                    <ui:VisualElement name="mutation-3" class="base-mutation-closed base-mutation-exposed">
                         <ui:VisualElement style="flex-grow: 1; width: 25%; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-1154589831&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_12&apos;); -unity-background-scale-mode: scale-to-fit; height: 100%;" />
                         <ui:VisualElement style="flex-grow: 1; width: 75%;">
                             <ui:Label tabindex="-1" text="Pele grossa" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 30%; -unity-text-align: upper-left; white-space: normal;" />
                             <ui:Label tabindex="-1" text="Melhora a resistência ao frio, porém deixa mais difícil em tempos de calor" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 70%; -unity-text-align: upper-left; white-space: normal;" />
                         </ui:VisualElement>
                     </ui:VisualElement>
-                    <ui:VisualElement name="mutation-four" style="flex-grow: 1; background-color: rgb(82, 56, 35); width: 98%; margin-right: 2%; border-top-left-radius: 40px; border-top-right-radius: 40px; border-bottom-right-radius: 40px; border-bottom-left-radius: 40px; padding-top: 22px; padding-right: 22px; padding-bottom: 22px; padding-left: 22px; flex-direction: row; height: 30%;">
+                    <ui:VisualElement name="mutation-4" class="base-mutation-closed base-mutation-exposed">
+                        <ui:VisualElement style="flex-grow: 1; width: 25%; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-2135571679&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_15&apos;); -unity-background-scale-mode: scale-to-fit; height: 100%;" />
+                        <ui:VisualElement style="flex-grow: 1; width: 75%;">
+                            <ui:Label tabindex="-1" text="Cobertura de cera" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 30%; -unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" text="Melhora a resistência a ambientes com alto índice de umidade" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 70%; -unity-text-align: upper-left; white-space: normal;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="mutation-5" class="base-mutation-closed base-mutation-exposed">
+                        <ui:VisualElement style="flex-grow: 1; width: 25%; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-2135571679&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_15&apos;); -unity-background-scale-mode: scale-to-fit; height: 100%;" />
+                        <ui:VisualElement style="flex-grow: 1; width: 75%;">
+                            <ui:Label tabindex="-1" text="Cobertura de cera" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 30%; -unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" text="Melhora a resistência a ambientes com alto índice de umidade" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 70%; -unity-text-align: upper-left; white-space: normal;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="mutation-6" class="base-mutation-closed base-mutation-exposed">
+                        <ui:VisualElement style="flex-grow: 1; width: 25%; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-2135571679&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_15&apos;); -unity-background-scale-mode: scale-to-fit; height: 100%;" />
+                        <ui:VisualElement style="flex-grow: 1; width: 75%;">
+                            <ui:Label tabindex="-1" text="Cobertura de cera" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 30%; -unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" text="Melhora a resistência a ambientes com alto índice de umidade" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 70%; -unity-text-align: upper-left; white-space: normal;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="mutation-7" class="base-mutation-closed base-mutation-exposed">
+                        <ui:VisualElement style="flex-grow: 1; width: 25%; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-2135571679&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_15&apos;); -unity-background-scale-mode: scale-to-fit; height: 100%;" />
+                        <ui:VisualElement style="flex-grow: 1; width: 75%;">
+                            <ui:Label tabindex="-1" text="Cobertura de cera" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 30%; -unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" text="Melhora a resistência a ambientes com alto índice de umidade" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 70%; -unity-text-align: upper-left; white-space: normal;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="mutation-8" class="base-mutation-closed base-mutation-exposed">
+                        <ui:VisualElement style="flex-grow: 1; width: 25%; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-2135571679&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_15&apos;); -unity-background-scale-mode: scale-to-fit; height: 100%;" />
+                        <ui:VisualElement style="flex-grow: 1; width: 75%;">
+                            <ui:Label tabindex="-1" text="Cobertura de cera" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 30%; -unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" text="Melhora a resistência a ambientes com alto índice de umidade" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 70%; -unity-text-align: upper-left; white-space: normal;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="mutation-9" class="base-mutation-closed base-mutation-exposed">
+                        <ui:VisualElement style="flex-grow: 1; width: 25%; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-2135571679&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_15&apos;); -unity-background-scale-mode: scale-to-fit; height: 100%;" />
+                        <ui:VisualElement style="flex-grow: 1; width: 75%;">
+                            <ui:Label tabindex="-1" text="Cobertura de cera" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 30%; -unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" text="Melhora a resistência a ambientes com alto índice de umidade" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 70%; -unity-text-align: upper-left; white-space: normal;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="mutation-10" class="base-mutation-closed base-mutation-exposed">
+                        <ui:VisualElement style="flex-grow: 1; width: 25%; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-2135571679&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_15&apos;); -unity-background-scale-mode: scale-to-fit; height: 100%;" />
+                        <ui:VisualElement style="flex-grow: 1; width: 75%;">
+                            <ui:Label tabindex="-1" text="Cobertura de cera" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 30%; -unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" text="Melhora a resistência a ambientes com alto índice de umidade" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 70%; -unity-text-align: upper-left; white-space: normal;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="mutation-11" class="base-mutation-closed base-mutation-exposed">
+                        <ui:VisualElement style="flex-grow: 1; width: 25%; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-2135571679&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_15&apos;); -unity-background-scale-mode: scale-to-fit; height: 100%;" />
+                        <ui:VisualElement style="flex-grow: 1; width: 75%;">
+                            <ui:Label tabindex="-1" text="Cobertura de cera" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 30%; -unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" text="Melhora a resistência a ambientes com alto índice de umidade" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 70%; -unity-text-align: upper-left; white-space: normal;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="mutation-12" class="base-mutation-closed base-mutation-exposed">
+                        <ui:VisualElement style="flex-grow: 1; width: 25%; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-2135571679&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_15&apos;); -unity-background-scale-mode: scale-to-fit; height: 100%;" />
+                        <ui:VisualElement style="flex-grow: 1; width: 75%;">
+                            <ui:Label tabindex="-1" text="Cobertura de cera" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 30%; -unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" text="Melhora a resistência a ambientes com alto índice de umidade" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 70%; -unity-text-align: upper-left; white-space: normal;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="mutation-13" class="base-mutation-closed base-mutation-exposed">
+                        <ui:VisualElement style="flex-grow: 1; width: 25%; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-2135571679&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_15&apos;); -unity-background-scale-mode: scale-to-fit; height: 100%;" />
+                        <ui:VisualElement style="flex-grow: 1; width: 75%;">
+                            <ui:Label tabindex="-1" text="Cobertura de cera" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 30%; -unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" text="Melhora a resistência a ambientes com alto índice de umidade" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 70%; -unity-text-align: upper-left; white-space: normal;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="mutation-14" class="base-mutation-closed base-mutation-exposed">
+                        <ui:VisualElement style="flex-grow: 1; width: 25%; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-2135571679&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_15&apos;); -unity-background-scale-mode: scale-to-fit; height: 100%;" />
+                        <ui:VisualElement style="flex-grow: 1; width: 75%;">
+                            <ui:Label tabindex="-1" text="Cobertura de cera" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 30%; -unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" text="Melhora a resistência a ambientes com alto índice de umidade" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 70%; -unity-text-align: upper-left; white-space: normal;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="mutation-15" class="base-mutation-closed base-mutation-exposed">
+                        <ui:VisualElement style="flex-grow: 1; width: 25%; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-2135571679&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_15&apos;); -unity-background-scale-mode: scale-to-fit; height: 100%;" />
+                        <ui:VisualElement style="flex-grow: 1; width: 75%;">
+                            <ui:Label tabindex="-1" text="Cobertura de cera" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 30%; -unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" text="Melhora a resistência a ambientes com alto índice de umidade" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 70%; -unity-text-align: upper-left; white-space: normal;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="mutation-16" class="base-mutation-closed base-mutation-exposed">
+                        <ui:VisualElement style="flex-grow: 1; width: 25%; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-2135571679&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_15&apos;); -unity-background-scale-mode: scale-to-fit; height: 100%;" />
+                        <ui:VisualElement style="flex-grow: 1; width: 75%;">
+                            <ui:Label tabindex="-1" text="Cobertura de cera" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 30%; -unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" text="Melhora a resistência a ambientes com alto índice de umidade" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 70%; -unity-text-align: upper-left; white-space: normal;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="mutation-17" class="base-mutation-closed base-mutation-exposed">
+                        <ui:VisualElement style="flex-grow: 1; width: 25%; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-2135571679&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_15&apos;); -unity-background-scale-mode: scale-to-fit; height: 100%;" />
+                        <ui:VisualElement style="flex-grow: 1; width: 75%;">
+                            <ui:Label tabindex="-1" text="Cobertura de cera" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 30%; -unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" text="Melhora a resistência a ambientes com alto índice de umidade" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 70%; -unity-text-align: upper-left; white-space: normal;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="mutation-18" class="base-mutation-closed base-mutation-exposed">
+                        <ui:VisualElement style="flex-grow: 1; width: 25%; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-2135571679&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_15&apos;); -unity-background-scale-mode: scale-to-fit; height: 100%;" />
+                        <ui:VisualElement style="flex-grow: 1; width: 75%;">
+                            <ui:Label tabindex="-1" text="Cobertura de cera" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 30%; -unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" text="Melhora a resistência a ambientes com alto índice de umidade" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 70%; -unity-text-align: upper-left; white-space: normal;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="mutation-19" class="base-mutation-closed base-mutation-exposed">
+                        <ui:VisualElement style="flex-grow: 1; width: 25%; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-2135571679&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_15&apos;); -unity-background-scale-mode: scale-to-fit; height: 100%;" />
+                        <ui:VisualElement style="flex-grow: 1; width: 75%;">
+                            <ui:Label tabindex="-1" text="Cobertura de cera" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 30%; -unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" text="Melhora a resistência a ambientes com alto índice de umidade" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 70%; -unity-text-align: upper-left; white-space: normal;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="mutation-20" class="base-mutation-closed base-mutation-exposed">
+                        <ui:VisualElement style="flex-grow: 1; width: 25%; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-2135571679&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_15&apos;); -unity-background-scale-mode: scale-to-fit; height: 100%;" />
+                        <ui:VisualElement style="flex-grow: 1; width: 75%;">
+                            <ui:Label tabindex="-1" text="Cobertura de cera" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 30%; -unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" text="Melhora a resistência a ambientes com alto índice de umidade" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 70%; -unity-text-align: upper-left; white-space: normal;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="mutation-21" class="base-mutation-closed base-mutation-exposed">
+                        <ui:VisualElement style="flex-grow: 1; width: 25%; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-2135571679&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_15&apos;); -unity-background-scale-mode: scale-to-fit; height: 100%;" />
+                        <ui:VisualElement style="flex-grow: 1; width: 75%;">
+                            <ui:Label tabindex="-1" text="Cobertura de cera" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 30%; -unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" text="Melhora a resistência a ambientes com alto índice de umidade" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 70%; -unity-text-align: upper-left; white-space: normal;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="mutation-22" class="base-mutation-closed base-mutation-exposed">
+                        <ui:VisualElement style="flex-grow: 1; width: 25%; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-2135571679&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_15&apos;); -unity-background-scale-mode: scale-to-fit; height: 100%;" />
+                        <ui:VisualElement style="flex-grow: 1; width: 75%;">
+                            <ui:Label tabindex="-1" text="Cobertura de cera" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 30%; -unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" text="Melhora a resistência a ambientes com alto índice de umidade" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 70%; -unity-text-align: upper-left; white-space: normal;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="mutation-23" class="base-mutation-closed base-mutation-exposed">
+                        <ui:VisualElement style="flex-grow: 1; width: 25%; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-2135571679&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_15&apos;); -unity-background-scale-mode: scale-to-fit; height: 100%;" />
+                        <ui:VisualElement style="flex-grow: 1; width: 75%;">
+                            <ui:Label tabindex="-1" text="Cobertura de cera" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 30%; -unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" text="Melhora a resistência a ambientes com alto índice de umidade" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 70%; -unity-text-align: upper-left; white-space: normal;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="mutation-24" class="base-mutation-closed base-mutation-exposed">
+                        <ui:VisualElement style="flex-grow: 1; width: 25%; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-2135571679&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_15&apos;); -unity-background-scale-mode: scale-to-fit; height: 100%;" />
+                        <ui:VisualElement style="flex-grow: 1; width: 75%;">
+                            <ui:Label tabindex="-1" text="Cobertura de cera" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 30%; -unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" text="Melhora a resistência a ambientes com alto índice de umidade" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 70%; -unity-text-align: upper-left; white-space: normal;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="mutation-25" class="base-mutation-closed base-mutation-exposed">
+                        <ui:VisualElement style="flex-grow: 1; width: 25%; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-2135571679&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_15&apos;); -unity-background-scale-mode: scale-to-fit; height: 100%;" />
+                        <ui:VisualElement style="flex-grow: 1; width: 75%;">
+                            <ui:Label tabindex="-1" text="Cobertura de cera" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 30%; -unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" text="Melhora a resistência a ambientes com alto índice de umidade" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 70%; -unity-text-align: upper-left; white-space: normal;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="mutation-26" class="base-mutation-closed base-mutation-exposed">
+                        <ui:VisualElement style="flex-grow: 1; width: 25%; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-2135571679&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_15&apos;); -unity-background-scale-mode: scale-to-fit; height: 100%;" />
+                        <ui:VisualElement style="flex-grow: 1; width: 75%;">
+                            <ui:Label tabindex="-1" text="Cobertura de cera" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 30%; -unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" text="Melhora a resistência a ambientes com alto índice de umidade" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 70%; -unity-text-align: upper-left; white-space: normal;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="mutation-27" class="base-mutation-closed base-mutation-exposed">
+                        <ui:VisualElement style="flex-grow: 1; width: 25%; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-2135571679&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_15&apos;); -unity-background-scale-mode: scale-to-fit; height: 100%;" />
+                        <ui:VisualElement style="flex-grow: 1; width: 75%;">
+                            <ui:Label tabindex="-1" text="Cobertura de cera" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 30%; -unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" text="Melhora a resistência a ambientes com alto índice de umidade" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 70%; -unity-text-align: upper-left; white-space: normal;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="mutation-28" class="base-mutation-closed base-mutation-exposed">
+                        <ui:VisualElement style="flex-grow: 1; width: 25%; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-2135571679&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_15&apos;); -unity-background-scale-mode: scale-to-fit; height: 100%;" />
+                        <ui:VisualElement style="flex-grow: 1; width: 75%;">
+                            <ui:Label tabindex="-1" text="Cobertura de cera" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 30%; -unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" text="Melhora a resistência a ambientes com alto índice de umidade" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 70%; -unity-text-align: upper-left; white-space: normal;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="mutation-29" class="base-mutation-closed base-mutation-exposed">
+                        <ui:VisualElement style="flex-grow: 1; width: 25%; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-2135571679&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_15&apos;); -unity-background-scale-mode: scale-to-fit; height: 100%;" />
+                        <ui:VisualElement style="flex-grow: 1; width: 75%;">
+                            <ui:Label tabindex="-1" text="Cobertura de cera" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 30%; -unity-text-align: upper-left;" />
+                            <ui:Label tabindex="-1" text="Melhora a resistência a ambientes com alto índice de umidade" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 70%; -unity-text-align: upper-left; white-space: normal;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="mutation-30" class="base-mutation-closed base-mutation-exposed">
                         <ui:VisualElement style="flex-grow: 1; width: 25%; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-2135571679&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_15&apos;); -unity-background-scale-mode: scale-to-fit; height: 100%;" />
                         <ui:VisualElement style="flex-grow: 1; width: 75%;">
                             <ui:Label tabindex="-1" text="Cobertura de cera" parse-escape-sequences="true" display-tooltip-when-elided="true" name="diet-title" class="info-title" style="width: 100%; font-size: 30%; height: 30%; -unity-text-align: upper-left;" />
