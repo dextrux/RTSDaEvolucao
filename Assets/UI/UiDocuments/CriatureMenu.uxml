@@ -43,7 +43,7 @@
                             <ui:VisualElement name="temperature-container" style="flex-grow: 1; width: 33%; padding-top: 15px; padding-right: 15px; padding-bottom: 15px; padding-left: 15px; height: 100%;">
                                 <ui:Label tabindex="-1" text="Temperatura&#x9;" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Temperature-title" style="width: 100%; font-size: 30%; height: 15%;" />
                                 <ui:VisualElement name="creature-temperature-img" style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/Vector/temperatura.svg?fileID=7388822144124034973&amp;guid=338f4a99d81579847a5af313500fb2d3&amp;type=3#temperatura&apos;); -unity-background-scale-mode: scale-to-fit; height: 200px; overflow: hidden; width: 100%;">
-                                    <ui:VisualElement name="creature-temperature-bar" style="flex-grow: 1; background-color: rgb(179, 77, 11); height: 100%;" />
+                                    <ui:VisualElement name="creature-temperature-bar" style="-unity-text-outline-color: rgb(228, 159, 0); height: 100%; background-color: rgb(228, 159, 0); rotate: 180deg;" />
                                     <ui:VisualElement style="flex-grow: 1; position: absolute; width: 107%; height: 121%; -unity-background-scale-mode: scale-to-fit; background-image: url(&apos;project://database/Assets/UI/Sprites/Contornos.png?fileID=615912699&amp;guid=4585370786603384f87183c6a5c71f19&amp;type=3#Contornos_1&apos;); top: -9%; left: -10%;" />
                                 </ui:VisualElement>
                                 <ui:Label tabindex="-1" text="30C" parse-escape-sequences="true" display-tooltip-when-elided="true" name="creature-temperature-txt" style="width: 100%; height: 15%; font-size: 30%;" />
@@ -52,7 +52,7 @@
                                 <ui:Label tabindex="-1" text="Fertilidade" parse-escape-sequences="true" display-tooltip-when-elided="true" name="reproduction-title" style="width: 100%; font-size: 30%; height: 15%;" />
                                 <ui:VisualElement name="creature-reproduction-img" style="flex-grow: 1; -unity-background-scale-mode: scale-to-fit; background-image: url(&apos;project://database/Assets/UI/Sprites/Vector/reproducao.svg?fileID=7388822144124034973&amp;guid=bef97b0b371d3994981b4bfb36ba4c42&amp;type=3#reproducao&apos;); height: 200px; overflow: hidden;">
                                     <ui:VisualElement style="flex-grow: 1; flex-direction: row-reverse;">
-                                        <ui:VisualElement name="reproduction-bar" style="flex-grow: 1;">
+                                        <ui:VisualElement name="reproduction-bar" style="flex-grow: 1; rotate: 180deg; flex-direction: column;">
                                             <ui:VisualElement style="flex-grow: 1; background-color: rgb(193, 123, 171);" />
                                             <ui:VisualElement style="flex-grow: 1; background-color: rgb(126, 175, 211);" />
                                         </ui:VisualElement>
@@ -66,7 +66,7 @@
                             <ui:VisualElement name="humidity-container" style="flex-grow: 1; padding-top: 15px; padding-right: 15px; padding-bottom: 15px; padding-left: 15px; -unity-text-align: lower-center; width: 33%; height: 100%;">
                                 <ui:Label tabindex="-1" text="Umidade" parse-escape-sequences="true" display-tooltip-when-elided="true" name="humidity-title" style="width: 100%; height: 15%; font-size: 30%;" />
                                 <ui:VisualElement name="creature-humidity-img" style="-unity-background-scale-mode: scale-to-fit; background-image: url(&apos;project://database/Assets/UI/Sprites/Vector/umidade.svg?fileID=7388822144124034973&amp;guid=63a4f5f3768fc814cb72ed292b268d26&amp;type=3#umidade&apos;); width: 100%; height: 70%; overflow: hidden;">
-                                    <ui:VisualElement name="creature-humidity-bar" style="flex-grow: 1; background-color: rgb(122, 161, 155);" />
+                                    <ui:VisualElement name="creature-humidity-bar" style="flex-grow: 1; background-color: rgb(122, 161, 155); rotate: 180deg;" />
                                     <ui:VisualElement style="flex-grow: 1; position: absolute; width: 102%; height: 102%; background-image: url(&apos;project://database/Assets/UI/Sprites/Contornos.png?fileID=-946934582&amp;guid=4585370786603384f87183c6a5c71f19&amp;type=3#Contornos_6&apos;); -unity-background-scale-mode: scale-to-fit; left: -1%; top: -1%;" />
                                 </ui:VisualElement>
                                 <ui:Label tabindex="-1" text="35%" parse-escape-sequences="true" display-tooltip-when-elided="true" name="creature-humidity-txt" style="width: 100%; font-size: 30%; height: 15%; -unity-text-align: middle-center;" />
@@ -82,7 +82,7 @@
                             <ui:VisualElement name="hunger-container" style="flex-grow: 1; padding-top: 15px; padding-right: 15px; padding-bottom: 15px; padding-left: 15px; width: 33%; height: 100%;">
                                 <ui:Label tabindex="-1" text="Satisfeito" parse-escape-sequences="true" display-tooltip-when-elided="true" name="creature-hunger-txt" style="width: 100%; font-size: 30%; height: 15%;" />
                                 <ui:VisualElement name="creature-hunger-img" style="flex-grow: 1; -unity-background-scale-mode: scale-to-fit; background-image: url(&apos;project://database/Assets/UI/Sprites/Vector/fome.svg?fileID=7388822144124034973&amp;guid=483c93139b7f35140a5480b3122a7385&amp;type=3#fome&apos;); height: 70%; overflow: hidden;">
-                                    <ui:VisualElement name="creature-hunger-bar" style="background-color: rgb(133, 24, 55); width: 100%; height: 100%;" />
+                                    <ui:VisualElement name="creature-hunger-bar" style="background-color: rgb(133, 24, 55); width: 100%; height: 100%; rotate: 180deg;" />
                                     <ui:VisualElement style="flex-grow: 1; width: 106%; height: 108%; background-image: url(&apos;project://database/Assets/UI/Sprites/Contornos.png?fileID=937777336&amp;guid=4585370786603384f87183c6a5c71f19&amp;type=3#Contornos_0&apos;); position: absolute; top: -4%; left: -2%; -unity-background-scale-mode: scale-to-fit;" />
                                 </ui:VisualElement>
                                 <ui:Label tabindex="-1" text="55%" parse-escape-sequences="true" display-tooltip-when-elided="true" name="creature-hunger-txt" style="width: 100%; height: 15%; font-size: 30%; -unity-text-align: middle-center;" />

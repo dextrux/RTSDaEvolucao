@@ -1,5 +1,4 @@
 using DG.Tweening;
-using Unity.Properties;
 using UnityEngine;
 using UnityEngine.UIElements;
 public class CreatureInfo : MonoBehaviour
@@ -8,7 +7,7 @@ public class CreatureInfo : MonoBehaviour
     [SerializeField] private GameObject _mutationScreen;
     [SerializeField] private GameObject _buyMutationScreen;
     [SerializeField] private InGameUi _ingameUi;
-    private Jubileuson _actualPiece;
+    private Piece _actualPiece;
     private Button _creatureInfoBtn;
     private Button _mutationInfoBtn;
     private Button _exitInfoBtn;
@@ -114,29 +113,29 @@ public class CreatureInfo : MonoBehaviour
             _discomfortWarning.AddToClassList("warning-close");
     }
     //Ajusta a dieta,as barras e o texto para a devida porcentagem da criatura
-    public void SetCreatureStateUi(Jubileuson piece)
+    public void SetCreatureStateUi(Piece piece)
     {
         SetPiece(piece);
-        SetDietUi(_actualPiece);        
-        AnimateBar(_actualPiece.GetTemperature().GetIdealTemperatureValue(), 40F, _creatureTemperature);
-        _creatureTemperatureTxt.text = _actualPiece.GetTemperature().GetIdealTemperatureAsString();
-        AnimateBar(_actualPiece.GetFertilityBar().GetCurrentBarValue(), 100, _creatureFertility);
-        _creatureFertilityTxt.text = _actualPiece.GetFertilityBar().GetCurrentBarValueAsString();
-        AnimateBar(_actualPiece.GetHumidity().GetIdealHumidityValue(), 100, _creatureHumidity);
-        _creatureHumidityTxt.text = _actualPiece.GetHumidity().GetIdealHumidityAsString();
-        AnimateBar(_actualPiece.GetEnergyBar().GetCurrentBarValue(), 100, _creatureEnergy);
-        _creatureEnergyTxt.text = _actualPiece.GetEnergyBar().GetCurrentBarValueAsString();
-        //Falta Dieta e informação dos tiles
+        SetDietUi(_actualPiece);
+        AnimateBar(_actualPiece.Temperature.IdealTemperature, 40F, _creatureTemperature);
+        _creatureTemperatureTxt.text = _actualPiece.Temperature.IdealTemperature.ToString() + " ºC";
+        AnimateBar(_actualPiece.FertilityBar.CurrentBarValue, 100, _creatureFertility);
+        _creatureFertilityTxt.text = _actualPiece.FertilityBar.CurrentBarValue.ToString() + " %";
+        AnimateBar(_actualPiece.Humidity.CurrentHumidity, 100, _creatureHumidity);
+        _creatureHumidityTxt.text = _actualPiece.Humidity.CurrentHumidity.ToString() + " %";
+        AnimateBar(_actualPiece.EnergyBar.CurrentBarValue, 100, _creatureEnergy);
+        _creatureEnergyTxt.text = _actualPiece.EnergyBar.CurrentBarValue.ToString() + " %";
+        //Falta informação dos tiles e a fome
     }
-    private void SetDietUi(Jubileuson piece)
+    private void SetDietUi(Piece piece)
     {
-        if (piece.GetDiet() == PieceDiet.Herbivore)
+        if (piece.Diet == PieceDiet.Herbivore)
         {
             _creatureDietImg.RemoveFromClassList("omnivorous-diet-img");
             _creatureDietImg.RemoveFromClassList("carnivore-diet-img");
             _creatureDietImg.AddToClassList("herbivore-diet-img");
             _creatureDietTxt.text = "Herbívoro";
-        } else if (piece.GetDiet() == PieceDiet.Carnivore)
+        } else if (piece.Diet == PieceDiet.Carnivore)
         {
             _creatureDietImg.RemoveFromClassList("herbivore-diet-img");
             _creatureDietImg.RemoveFromClassList("omnivorous-diet-img");
@@ -151,16 +150,16 @@ public class CreatureInfo : MonoBehaviour
             _creatureDietTxt.text = "Onívoro";
         }
     }
-    private void SetPiece(Jubileuson piece)
+    public void SetPiece(Piece piece)
     {
         _actualPiece = piece;
     }
     private void AnimateBar(float actualValue, float maxValue, VisualElement targetBar)
     {
-        //Pega o valor da barra para animar diminuindo a margem
-        float endHeight = targetBar.parent.worldBound.height;
-        Debug.Log("Valor atual: " + actualValue);
-        Debug.Log("Altura considerada: " + endHeight);
-        DOTween.To(() => targetBar.worldBound.height, x => targetBar.style.height = x, (endHeight * (actualValue / maxValue)), 0.5F).SetEase(Ease.Linear);
+        targetBar.RegisterCallback<GeometryChangedEvent>(evt =>
+        {
+            float endHeight = targetBar.parent.worldBound.height * (actualValue / maxValue);
+            DOTween.To(() => targetBar.resolvedStyle.top, x => targetBar.style.top = x, endHeight, 0.5F).SetEase(Ease.Linear);
+        });
     }
 }

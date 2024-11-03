@@ -161,3 +161,9 @@
     -unity-background-scale-mode: scale-to-fit;
     height: 70%;
 }
+
+.temperature-bar {
+    flex-grow: 1;
+    background-color: rgb(179, 77, 11);
+    height: 100%;
+}

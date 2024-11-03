@@ -19,15 +19,15 @@ public abstract class MutationBase : ScriptableObject
     [SerializeField] private int _meshLocation;
     [SerializeField] private Mesh _visual;
 
-    public virtual void SetMutation(Jubileuson targetPiece)
+    public virtual void SetMutation(Piece targetPiece)
     {
         if (_IsDietMutation) DietAdjust(targetPiece);
         if (_visual) AdjustVisual(targetPiece.GetComponent<MeshFilter>());
     }
-    protected abstract int StatusBarAdjust(Jubileuson targetPiece);
-    protected void DietAdjust(Jubileuson targetPiece)
+    protected abstract int StatusBarAdjust(Piece targetPiece);
+    protected void DietAdjust(Piece targetPiece)
     {
-        targetPiece.SetDiet(_dietAdjust);
+        targetPiece.Diet = _dietAdjust;
     }
     protected void AdjustVisual(MeshFilter target)
     {

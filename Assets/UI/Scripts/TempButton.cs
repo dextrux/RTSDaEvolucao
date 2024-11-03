@@ -8,7 +8,7 @@ public class TempButton : MonoBehaviour
     [SerializeField] private GameObject CreatureInfo;
     [SerializeField] private InGameUi _ingameUi;
     [SerializeField] private CreatureInfo _creatureInfo;
-    [SerializeField] private Jubileuson _jubileuson;
+    [SerializeField] private Piece _jubileuson;
     private Button tempButton;
     private void OnEnable()
     {
@@ -20,6 +20,7 @@ public class TempButton : MonoBehaviour
     {
         _ingameUi.CreatureInfoChange();
         CreatureInfo.SetActive(true);
+        _creatureInfo.SetPiece(_jubileuson);
         _creatureInfo.SetCreatureStateUi(_jubileuson);
         _creatureInfo.SetDisasterWarning(true);
         _creatureInfo.SetDiscomfortWarning(false);
