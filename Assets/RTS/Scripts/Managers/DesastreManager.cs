@@ -141,8 +141,8 @@ public class DesastreManager : MonoBehaviour
     {
         for (int i = 0; i < list.Count; i++)
         {
-            list[i].GetComponent<Tile>().Totem.GetComponent<FoodTotem>().MeatFood.MultiplyFoodQuantityByFactor = 1.5f;
-            list[i].GetComponent<Tile>().Totem.GetComponent<FoodTotem>().MeatFood.MultiplyFoodQuantityByFactor = 0.5f;
+            list[i].GetComponent<Tile>().Totem.GetComponent<FoodTotem>().MultiplyFoodQuantityByFactor = 1.5f;
+            list[i].GetComponent<Tile>().Totem.GetComponent<FoodTotem>().MultiplyFoodQuantityByFactor = 0.5f;
         }
     }
 
@@ -151,8 +151,8 @@ public class DesastreManager : MonoBehaviour
     {
         for (int i = 0; i < list.Count; i++)
         {
-            list[i].GetComponent<Tile>().Totem.GetComponent<FoodTotem>().MeatFood.MultiplyFoodQuantityByFactor = 0.5f;
-            list[i].GetComponent<Tile>().Totem.GetComponent<FoodTotem>().MeatFood.MultiplyFoodQuantityByFactor = 1.5f;
+            list[i].GetComponent<Tile>().Totem.GetComponent<FoodTotem>().MultiplyFoodQuantityByFactor = 0.5f;
+            list[i].GetComponent<Tile>().Totem.GetComponent<FoodTotem>().MultiplyFoodQuantityByFactor = 1.5f;
         }
     }
 

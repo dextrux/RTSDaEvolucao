@@ -1,8 +1,6 @@
 ﻿public enum TileType
 {
-    Vazio,
+    Posicionamento,
     Comida,
-    NPC,
-    P1,
     Barreira, 
 }

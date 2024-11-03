@@ -10,6 +10,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1046568777017266777, guid: 07a9440152eb5244fa5b19d16b82c679,
         type: 3}
+      propertyPath: biome
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046568777017266777, guid: 07a9440152eb5244fa5b19d16b82c679,
+        type: 3}
       propertyPath: _biome
       value: 1
       objectReference: {fileID: 0}
