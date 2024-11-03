@@ -510,10 +510,23 @@ public class Piece : MonoBehaviour
             Health.CurrentBarValue *= 1.15f;
         }
     }
+    private void CheckDisasterCondition()
+    {
+        IsUnderDesastre = PieceRaycastForTile().IsUnderDesastre;
+        if (IsUnderDesastre)
+        {
+            LoseLifeUnderDisastre(this.GetComponent<Piece>());
+        }
+    }
     public void PieceEndRoundRoutine()
     {
+        CheckDisasterCondition();
         IsDoenteStatusChecker();
         IsDoenteEffect();
         HungerBarChecker();
+        if (Health.CurrentBarValue <= 0)
+        {
+            Destroy(this);
+        }
     }
 }
