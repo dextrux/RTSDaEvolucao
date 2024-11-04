@@ -53,6 +53,7 @@ public class RoundManager : MonoBehaviour
     public Camera P2Cam;
     public Camera P3Cam;
     public Camera P4Cam;
+    public Camera NPCCam;
     public GameObject npcPrefabPiece; // Prefab alternativo para peças, caso necessário
     private Dictionary<Owner, List<Piece>> ownerPiecesDict;
 
@@ -74,7 +75,7 @@ public class RoundManager : MonoBehaviour
         { Owner.P2, P2Cam },
         { Owner.P3, P3Cam },
         { Owner.P4, P4Cam },
-        { Owner.NPC, null } // NPC não tem uma câmera associada
+        { Owner.NPC, NPCCam } // NPC não tem uma câmera associada
     };
 
         // Prefabs padrão e alternativo
@@ -87,12 +88,8 @@ public class RoundManager : MonoBehaviour
         { Owner.NPC, npcPrefabPiece } // Sempre usa o prefab alternativo para NPC
     };
     }
-
     private void Update()
     {
-        VerifyActionPlayerEnd(RoundOwner);
-
-
         if (VerifyRoundEnd())
         {
             RoundEndRoutine();

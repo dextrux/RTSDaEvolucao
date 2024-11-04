@@ -11,12 +11,32 @@ public class PlayerRaycast : MonoBehaviour
     public Owner playerCamOwner;
     public GameObject[] selectedObjects = new GameObject[2];
     public GameObject Manager;
-
+    //&& Manager.GetComponent<RoundManager>().RoundOwner == playerCamOwner
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && Manager.GetComponent<RoundManager>().RoundOwner == playerCamOwner)
+        if (Input.GetMouseButtonDown(0))
         {
             MouseRaycast();
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            playerCamOwner = Owner.P1;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            playerCamOwner = Owner.P2;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            playerCamOwner = Owner.P3;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            playerCamOwner = Owner.P4;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            playerCamOwner = Owner.NPC;
         }
     }
 
@@ -31,18 +51,17 @@ public class PlayerRaycast : MonoBehaviour
             Debug.DrawRay(ray.origin, ray.direction * rayDistance, Color.red, 2f);
 
             // Verifica se o objeto atingido tem a tag "Piece"
-            if (hit.collider.CompareTag("Piece") && playerCamOwner == hit.collider.gameObject.GetComponent<Piece>().Owner)
+            if (hit.collider.CompareTag("Piece"))
             {
                 GameObject hitPiece = hit.collider.gameObject;
 
                 // Se o primeiro objeto não estiver selecionado, selecione-o
                 if (selectedObjects[0] == null)
                 {
-                    if (!hit.collider.gameObject.GetComponent<Piece>().IsDuringAction)
+                    if (!hit.collider.gameObject.GetComponent<Piece>().IsDuringAction && hit.collider.gameObject.GetComponent<Piece>().Owner == playerCamOwner)
                     {
                         selectedObjects[0] = hitPiece;
                         hitPiece.GetComponent<Piece>().PieceRaycastForTile().ColorirTilesDuranteSeleção();
-
                     }
                 }
                 else
@@ -72,7 +91,7 @@ public class PlayerRaycast : MonoBehaviour
                 {
                     selectedObjects[1] = hitTile;
                     selectedObjects[0].GetComponent<Piece>().PieceRaycastForTile().GetComponent<Tile>().RetornarTilesAdjacentesParaMaterialOriginal();
-                    ExecuteAction(selectedObjects[0], selectedObjects[1]);               
+                    ExecuteAction(selectedObjects[0], selectedObjects[1]);
                 }
             }
         }
@@ -81,8 +100,8 @@ public class PlayerRaycast : MonoBehaviour
             // Caso o raycast não atinja nada, desenha o raio em verde
             Debug.DrawRay(ray.origin, ray.direction * rayDistance, Color.green, 2f);
         }
-
     }
+
 
     private void ExecuteAction(GameObject piece, GameObject tile)
     {
