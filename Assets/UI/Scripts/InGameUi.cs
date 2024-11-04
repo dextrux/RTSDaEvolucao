@@ -6,8 +6,6 @@ public class InGameUi : MonoBehaviour
 {
     public int ActualTurn = 1; // substituir todas pelo controle de turnos
     [SerializeField] private int _progressBarMargin;
-    [SerializeField] private float _actualValue; //remover, usado apenas para teste
-    [SerializeField] private float _maxValue; //remover, usado apenas para teste
     private Button _pauseBtn;
     private Button _nextTurnBtn;
     private Button _resumeNextTurnBtn; // Temporário para marcar a troca
@@ -46,7 +44,6 @@ public class InGameUi : MonoBehaviour
         _dnaContainer = root.Q<VisualElement>("dna-container");
         _lifeText = root.Q<Label>("life-txt");
         #endregion
-        AnimateLoadingBar();
         //Adição das funções no clique dos botões
         #region Adicao da Funcao Aos Botoes
         _pauseBtn.RegisterCallback<ClickEvent>(OnClickPause);
@@ -66,7 +63,7 @@ public class InGameUi : MonoBehaviour
     }
     private void OnClickTurnChange(ClickEvent evt)
     {
-        AnimateLoadingBar();
+        //AnimateLoadingBar();
         _nextTurnAdvice.AddToClassList("turn-screen-open");
         ActualTurn++;
         for (int i = 0; i < 9; i++)
@@ -124,15 +121,15 @@ public class InGameUi : MonoBehaviour
         _optionContainer.RemoveFromClassList("option-open");
     }
     #endregion
-    private void AnimateLoadingBar()
+    private void AnimateLoadingBar(float actualValue, float maxValue)
     {
         //valores que precisam ser substituídos no método
-        float actualLife = _actualValue;
-        float totalLife = _maxValue;
+        float actualLife = actualValue;
+        float totalLife = maxValue;
         //Pega o valor da barra para animar diminuindo a margem
         float endWidth = _lifeProgressBar.parent.worldBound.width - _progressBarMargin;
         _lifeText.text = $"{actualLife}/{totalLife}";
-        DOTween.To(() => _lifeProgressBar.worldBound.width, x => _lifeProgressBar.style.width = x, (endWidth * (_actualValue/_maxValue)), 2F).SetEase(Ease.Linear);
+        DOTween.To(() => _lifeProgressBar.worldBound.width, x => _lifeProgressBar.style.width = x, (endWidth * (actualValue/maxValue)), 2F).SetEase(Ease.Linear);
     }
     public void CreatureInfoChange()
     {
@@ -146,4 +143,4 @@ public class InGameUi : MonoBehaviour
         _nextTurnBtn.RemoveFromClassList("pause-button-ocult");
         _dnaContainer.RemoveFromClassList("pause-button-ocult");
     }
-}   
+}

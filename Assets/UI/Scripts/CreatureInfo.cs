@@ -40,27 +40,7 @@ public class CreatureInfo : MonoBehaviour
     #endregion
     private void OnEnable()
     {
-        var root = GetComponent<UIDocument>().rootVisualElement;
-        _creatureInfoBtn = root.Q<Button>("floating-info-btn");
-        _mutationInfoBtn = root.Q<Button>("floating-mutation-btn");
-        _exitInfoBtn = root.Q<Button>("exit-info-btn");
-        _discomfortWarning = root.Q<VisualElement>("discomfort-container");
-        _temperatureWarning = root.Q<VisualElement>("temperature-container");
-        _disasterWarning = root.Q<VisualElement>("disaster-container");
-        _humidityWarning = root.Q<VisualElement>("humidity-container");
-        _illnessWarning = root.Q<VisualElement>("illness-container");
-        _creatureDietImg = root.Q<VisualElement>("creature-diet-img");
-        _creatureDietTxt = root.Q<Label>("creature-diet-txt");
-        _creatureTemperature = root.Q<VisualElement>("creature-temperature-bar");
-        _creatureTemperatureTxt = root.Q<Label>("creature-temperature-txt");
-        _creatureFertility = root.Q<VisualElement>("reproduction-bar");
-        _creatureFertilityTxt = root.Q<Label>("creature-reproduction-txt");
-        _creatureHumidity = root.Q<VisualElement>("creature-humidity-bar");
-        _creatureHumidityTxt = root.Q<Label>("creature-humidity-txt");
-        _creatureEnergy = root.Q<VisualElement>("creature-energy-bar");
-        _creatureEnergyTxt = root.Q<Label>("creature-energy-txt");
-        _creatureHunger = root.Q<VisualElement>("creature-hunger-bar");
-        _creatureHungerTxt = root.Q<Label>("creature-hunger-txt");
+        SetReferences();
         _creatureInfoBtn.RegisterCallback<ClickEvent>(OnClickCreatureInfo);
         _mutationInfoBtn.RegisterCallback<ClickEvent>(OnClickMutationInfo);
         _exitInfoBtn.RegisterCallback<ClickEvent>(OnClickExitInfo);
@@ -161,5 +141,29 @@ public class CreatureInfo : MonoBehaviour
             float endHeight = targetBar.parent.worldBound.height * (actualValue / maxValue);
             DOTween.To(() => targetBar.resolvedStyle.top, x => targetBar.style.top = x, endHeight, 0.5F).SetEase(Ease.Linear);
         });
+    }
+    private void SetReferences()
+    {
+        var root = GetComponent<UIDocument>().rootVisualElement;
+        _creatureInfoBtn = root.Q<Button>("floating-info-btn");
+        _mutationInfoBtn = root.Q<Button>("floating-mutation-btn");
+        _exitInfoBtn = root.Q<Button>("exit-info-btn");
+        _discomfortWarning = root.Q<VisualElement>("discomfort-container");
+        _temperatureWarning = root.Q<VisualElement>("temperature-container");
+        _disasterWarning = root.Q<VisualElement>("disaster-container");
+        _humidityWarning = root.Q<VisualElement>("humidity-container");
+        _illnessWarning = root.Q<VisualElement>("illness-container");
+        _creatureDietImg = root.Q<VisualElement>("creature-diet-img");
+        _creatureDietTxt = root.Q<Label>("creature-diet-txt");
+        _creatureTemperature = root.Q<VisualElement>("creature-temperature-bar");
+        _creatureTemperatureTxt = root.Q<Label>("creature-temperature-txt");
+        _creatureFertility = root.Q<VisualElement>("reproduction-bar");
+        _creatureFertilityTxt = root.Q<Label>("creature-reproduction-txt");
+        _creatureHumidity = root.Q<VisualElement>("creature-humidity-bar");
+        _creatureHumidityTxt = root.Q<Label>("creature-humidity-txt");
+        _creatureEnergy = root.Q<VisualElement>("creature-energy-bar");
+        _creatureEnergyTxt = root.Q<Label>("creature-energy-txt");
+        _creatureHunger = root.Q<VisualElement>("creature-hunger-bar");
+        _creatureHungerTxt = root.Q<Label>("creature-hunger-txt");
     }
 }

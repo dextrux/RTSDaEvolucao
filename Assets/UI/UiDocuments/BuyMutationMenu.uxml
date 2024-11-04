@@ -10,22 +10,22 @@
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="herbivore-btn" class="purchased-button">
                             <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=1956337614&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_35&apos;); -unity-background-scale-mode: scale-to-fit;" />
                         </ui:Button>
-                        <ui:Button text="&#x9;" parse-escape-sequences="true" display-tooltip-when-elided="true" name="omnivorous-btn" class="purchased-button">
-                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=1448378831&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_34&apos;); -unity-background-scale-mode: scale-to-fit;" />
+                        <ui:Button text="&#x9;" parse-escape-sequences="true" display-tooltip-when-elided="true" name="omnivorous-btn" class="available-button">
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=1448378831&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_34&apos;); -unity-background-scale-mode: scale-to-fit; align-self: auto;" />
                         </ui:Button>
-                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="carnivore-btn" class="purchased-button">
-                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-1109962394&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_60&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%;" />
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="carnivore-btn" class="available-button">
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-1109962394&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_60&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                     </ui:VisualElement>
                     <ui:VisualElement style="flex-grow: 1; flex-direction: row; height: 300px; margin-top: -14%; margin-right: 0; margin-left: 11%;">
-                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="purchased-button">
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="herbivore-mutation-btn" class="purchased-button available-button">
                             <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=1956337614&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_35&apos;); -unity-background-scale-mode: scale-to-fit;" />
                         </ui:Button>
-                        <ui:Button text="&#x9;" parse-escape-sequences="true" display-tooltip-when-elided="true" style="background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=1384364238&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_62&apos;); width: 25%; background-color: rgba(188, 188, 188, 0); border-left-color: rgba(149, 149, 149, 0); border-right-color: rgba(149, 149, 149, 0); border-top-color: rgba(149, 149, 149, 0); border-bottom-color: rgba(149, 149, 149, 0); -unity-background-scale-mode: scale-to-fit;">
+                        <ui:Button text="&#x9;" parse-escape-sequences="true" display-tooltip-when-elided="true" name="omnivorous-mutation-btn" class="unavailable-button">
                             <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-2016670150&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_16&apos;); -unity-background-scale-mode: scale-to-fit;" />
                         </ui:Button>
-                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="Button" style="border-left-color: rgba(149, 149, 149, 0); border-right-color: rgba(149, 149, 149, 0); border-top-color: rgba(149, 149, 149, 0); border-bottom-color: rgba(149, 149, 149, 0); background-color: rgba(188, 188, 188, 0); background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=1041213933&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_8&apos;); width: 25%; -unity-background-scale-mode: scale-to-fit; align-items: center;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=1149925711&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_33&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%;" />
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="carnivore-mutation-btn" class="unavailable-button">
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=1149925711&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_33&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                     </ui:VisualElement>
                 </ui:ScrollView>

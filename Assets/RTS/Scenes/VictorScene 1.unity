@@ -167,6 +167,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5820d2f17283e914e86b586b241a378c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _healthBar:
+    _maxBarValue: 100
+    _currentValue: 100
+  _energyBar:
+    _maxBarValue: 100
+    _currentValue: 100
+  _fertilityBar:
+    _maxBarValue: 100
+    _currentValue: 100
+  _strength:
+    _maxBarValue: 100
+    _currentValue: 100
+  _hungerBar:
+    _maxBarValue: 100
+    _currentValue: 100
+  _humidity:
+    _idealHumidity: 0
+    _currentHumidity: 0
+  _temperature:
+    _idealTemperature: 0
+    _currentTemperature: 0
+  _diet: 0
+  _owner: 1
+  _level: 1
+  _alerta: 
+  _isResting: 0
+  _isUnderDisastre: 0
+  _isDoente: 0
+  _isDuringAction: 0
+  TileLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &734976100
 GameObject:
   m_ObjectHideFlags: 0
