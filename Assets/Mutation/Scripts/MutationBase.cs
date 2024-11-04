@@ -1,7 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Security;
-using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 [CreateAssetMenu(fileName = "New Mutation", menuName = "Mutation/NewMutation")]
 public class MutationBase : ScriptableObject

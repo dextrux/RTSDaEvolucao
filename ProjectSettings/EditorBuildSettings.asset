@@ -9,15 +9,6 @@ EditorBuildSettings:
     path: Assets/RTS/Scenes/MainMenu.unity
     guid: 8299f52f3b154324fbf72920c9816288
   - enabled: 1
-    path: Assets/RTS/Scenes/GameScene.unity
-    guid: 5704be575ba5dd441ace27fd8834a4a5
-  - enabled: 1
-    path: Assets/RTS/Scenes/ArthutScene.unity
-    guid: de06e3803f50e9f47ae8314e9e61bf41
-  - enabled: 1
-    path: Assets/RTS/Scenes/GustavoScene.unity
-    guid: be3db79f18fb8ee44a40bbc40cebe4cf
-  - enabled: 1
-    path: Assets/RTS/Scenes/VictorScene 1.unity
-    guid: 58a3b63f5e2189d4388dbaeab4503a9d
+    path: Assets/RTS/Scenes/Game.unity
+    guid: c84f79f2df66e054d82aed3243f5509b
   m_configObjects: {}

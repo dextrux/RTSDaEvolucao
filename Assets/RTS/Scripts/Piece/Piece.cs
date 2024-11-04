@@ -7,11 +7,13 @@ public class Piece : MonoBehaviour
 {
     #region Atributos da peça
     [SerializeField]
+    private int _pontosMutagenicos;
+    [SerializeField]
     private StatusBar _healthBar = new StatusBar(100, 100);
     [SerializeField]
     private StatusBar _energyBar = new StatusBar(100, 100);
     [SerializeField]
-    private StatusBar _fertilityBar = new StatusBar(100, 100);
+    private StatusBar _fertilityBar = new StatusBar(100, 0);
     [SerializeField]
     private StatusBar _strength = new StatusBar(100, 100);
     [SerializeField]
@@ -42,8 +44,10 @@ public class Piece : MonoBehaviour
     private const float _rayDistanceTile = 10f;
     [SerializeField]
     public LayerMask TileLayerMask;
+    int sickCounter;
 
     #region Propriedades
+    public int PontosMutagenicos { get { return _pontosMutagenicos; } set { _pontosMutagenicos = value; } }
     public StatusBar Energy { get { return _energyBar; } }
     public StatusBar Health { get { return _healthBar; } }
     public StatusBar Fertility { get { return _fertilityBar; } }
@@ -66,6 +70,7 @@ public class Piece : MonoBehaviour
     private float _plantMultiplier;
     private void Start()
     {
+        this.GetComponent<Renderer>().material.color = OwnerColors.GetColor(Owner);
         PieceRaycastForTile().Owner = Owner;
         SetMultiplier();
     }
@@ -116,12 +121,15 @@ public class Piece : MonoBehaviour
             {
                 case PieceDiet.Herbivore:
                     pieceScript.Hunger.CurrentBarValue = pieceScript.Hunger.CurrentBarValue + _huntMultiplier * ((tileFoodTotemScript.FoodQuantity));
+                    PontosMutagenicos++;
                     break;
                 case PieceDiet.Carnivore:
                     pieceScript.Hunger.CurrentBarValue = pieceScript.Hunger.CurrentBarValue + _huntMultiplier * (tileFoodTotemScript.FoodQuantity);
+                    PontosMutagenicos++;
                     break;
                 case PieceDiet.Omnivore:
                     pieceScript.Hunger.CurrentBarValue = pieceScript.Hunger.CurrentBarValue + _huntMultiplier * (tileFoodTotemScript.FoodQuantity);
+                    PontosMutagenicos++;
                     break;
                 default:
                     Debug.Log("Exceção encontrada na dieta das peças");
@@ -290,6 +298,8 @@ public class Piece : MonoBehaviour
         //Alterar para levar em conta as mutações
         Piece pieceScript = piece.GetComponent<Piece>();
         Tile tileScript = tile.GetComponent<Tile>();
+        GameObject Manager = GameObject.Find("Manager");
+        RoundManager roundManager = Manager.GetComponent<RoundManager>();
         if (!pieceScript.Resting)
         {
             if (pieceScript.Energy.CurrentBarValue > 0)
@@ -497,6 +507,12 @@ public class Piece : MonoBehaviour
                     }
                 }
             }
+            sickCounter++;
+            if (sickCounter == 4)
+            {
+                IsDoente = false;
+                sickCounter = 0;
+            }
         }
     }
     private void HungerBarChecker()
@@ -524,9 +540,16 @@ public class Piece : MonoBehaviour
         IsDoenteStatusChecker();
         IsDoenteEffect();
         HungerBarChecker();
+        AlertVerificationRoutineRoutine();
         if (Health.CurrentBarValue <= 0)
         {
             Destroy(this);
         }
+
+        //Faltou no Gdd a taxa de recupera??o e diminui??o dos atributos abaixo
+        Health.CurrentBarValue += Health.MaxBarValue / 4;
+        Energy.CurrentBarValue += Energy.MaxBarValue / 4;
+        Fertility.CurrentBarValue += Fertility.MaxBarValue / 5;
+        Hunger.CurrentBarValue -= Hunger.MaxBarValue / 5;
     }
 }

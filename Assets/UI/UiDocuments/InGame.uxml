@@ -17,6 +17,7 @@
                 </ui:VisualElement>
             </ui:VisualElement>
             <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="temp-button" class="pause-button" style="position: absolute; top: 26px; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=1149925711&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_33&apos;); left: 140px;" />
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="temp2-button" class="pause-button" style="position: absolute; top: 26px; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-390531820&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_32&apos;); left: 268px; visibility: hidden;" />
         </ui:VisualElement>
         <ui:VisualElement name="body-container" style="flex-grow: 1; height: 702px;" />
         <ui:VisualElement name="footer-container" style="flex-grow: 1; height: 216px; padding-left: 30px;">
