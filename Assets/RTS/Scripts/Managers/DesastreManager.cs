@@ -79,9 +79,8 @@ public class DesastreManager : MonoBehaviour
         }      
     }
 
-    public void SortearEventoMenor() 
+    public void SortearEventoMenor(List<GameObject> list) 
     {
-        List<GameObject> list = SortearBiomaParaDesastre();
         System.Random random = new System.Random();
         int decider = random.Next(0, 6);
         switch (decider)
@@ -109,9 +108,8 @@ public class DesastreManager : MonoBehaviour
                 break;
         }
     }
-    public void SortearEventoMaior() 
+    public int SortearEventoMaior(List<GameObject> list) 
     {
-        List<GameObject> list = SortearBiomaParaDesastre();
         System.Random random = new System.Random();
         int decider = random.Next(0, 4);
         switch (decider)
@@ -132,6 +130,7 @@ public class DesastreManager : MonoBehaviour
                 Debug.Log("Exceção encontrada no sorteio do desastre maior");
                 break;                           
         }
+        return decider;
     }
 
     //EVENTOS MENORES
@@ -202,10 +201,10 @@ public class DesastreManager : MonoBehaviour
             list[i].GetComponent<Tile>().Temperature.MultiplyTemperatureByValue = 1.75f;
             list[i].GetComponent<Tile>().Humidity.MultiplyHumidityByValue = 0.25f;
             list[i].GetComponent<Tile>().IsUnderDesastre = true;
-            //Transformação em Caatinga
-            list[i].GetComponent<Tile>().TransformarTile(Biome.Caatinga);
         }
     }
+
+
 
     //Alagamentos - Aumenta a temperatura em 75% e aumento da umidade em 75% dentro dos tiles de transição.Transforma a região afetada em uma área de Pantanal
     public void Alagamentos(List<GameObject> list) 
@@ -215,9 +214,6 @@ public class DesastreManager : MonoBehaviour
             list[i].GetComponent<Tile>().Temperature.MultiplyTemperatureByValue = 1.75f;
             list[i].GetComponent<Tile>().Humidity.MultiplyHumidityByValue = 1.75f;
             list[i].GetComponent<Tile>().IsUnderDesastre = true;
-            //Transformação em Pantanal
-            list[i].GetComponent<Tile>().TransformarTile(Biome.Pantanal);
-
         }
     }
 
@@ -229,9 +225,6 @@ public class DesastreManager : MonoBehaviour
             list[i].GetComponent<Tile>().Temperature.MultiplyTemperatureByValue = 0.25f;
             list[i].GetComponent<Tile>().Humidity.MultiplyHumidityByValue = 0.25f;
             list[i].GetComponent<Tile>().IsUnderDesastre = true;
-            //Transformação em Araucarias
-            list[i].GetComponent<Tile>().TransformarTile(Biome.Mata_das_Araucarias);
-
         }
     }
 
@@ -243,8 +236,6 @@ public class DesastreManager : MonoBehaviour
             list[i].GetComponent<Tile>().Temperature.MultiplyTemperatureByValue = 0.25f;
             list[i].GetComponent<Tile>().Humidity.MultiplyHumidityByValue = 1.75f;
             list[i].GetComponent<Tile>().IsUnderDesastre = true;
-            //Transformação em Atlantica
-            list[i].GetComponent<Tile>().TransformarTile(Biome.Mata_Atlantica);
         }
     }
 

@@ -57,16 +57,6 @@ public class Tile : MonoBehaviour
         InicializarTile();
     }
 
-    public GameObject prefab;
-    private void Start()
-    {
-        if(Biome == Biome.Caatinga)
-        {
-            Vector3 instatiatePosition = new Vector3(this.transform.position.x, 5f, this.transform.position.z);
-            Instantiate(prefab, instatiatePosition, Quaternion.identity);
-        }
-    }
-
     private void InicializarTile()
     {
         _humidity = new Humidity(tileFirstHumidity);
@@ -117,19 +107,19 @@ public class Tile : MonoBehaviour
                 switch (owner)
                 {
                     case Owner.NPC:
-                        _tilesAdjacentes[i].GetComponent<Renderer>().material.color = Color.red;
+                        _tilesAdjacentes[i].GetComponent<Renderer>().material.color = OwnerColors.GetColor(Owner.NPC);
                         break;
                     case Owner.P1:
-                        _tilesAdjacentes[i].GetComponent<Renderer>().material.color = new Color(0.8f, 1f, 0.898f); // Verde Água
+                        _tilesAdjacentes[i].GetComponent<Renderer>().material.color = OwnerColors.GetColor(Owner.P1); // Verde Água
                         break;
                     case Owner.P2:
-                        _tilesAdjacentes[i].GetComponent<Renderer>().material.color = new Color(0.4f, 0.4f, 1f); // Azul Claro
+                        _tilesAdjacentes[i].GetComponent<Renderer>().material.color = OwnerColors.GetColor(Owner.P2); // Azul Claro
                         break;
                     case Owner.P3:
-                        _tilesAdjacentes[i].GetComponent<Renderer>().material.color = new Color(1f, 0.647f, 0f); // Laranja
+                        _tilesAdjacentes[i].GetComponent<Renderer>().material.color = OwnerColors.GetColor(Owner.P3); // Laranja
                         break;
                     case Owner.P4:
-                        _tilesAdjacentes[i].GetComponent<Renderer>().material.color = new Color(0.294f, 0f, 0.51f); // Roxo
+                        _tilesAdjacentes[i].GetComponent<Renderer>().material.color = OwnerColors.GetColor(Owner.P4); // Roxo
                         break;
                     default:
                         Debug.Log("Exceção encontrada no colorimento dos tiles adjacentes com dono");
