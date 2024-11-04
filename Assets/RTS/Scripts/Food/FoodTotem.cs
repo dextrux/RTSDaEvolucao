@@ -29,12 +29,12 @@ public class FoodTotem : MonoBehaviour
         this.FoodSize = size;
         // Transformaação da forma e material do objeto
         meshFilter.mesh = totemMesh[(int)size];
-        this._renderer.material = totemMaterial[(int)size];
+        this.GetComponent<Renderer>().material = totemMaterial[(int)size];
         // Posicionamento do objeto
-        this.transform.position = new Vector3(this.transform.position.x, 5, this.transform.position.z);
         this.gameObject.SetActive(true);
+        this.transform.position = new Vector3(this.transform.position.x, 5, this.transform.position.z);
         TotemRaycastToTile().TileType = TileType.Comida;
-        FoodQuantity = 100; 
+        FoodQuantity = 10; 
     }
 
     private Tile TotemRaycastToTile()
@@ -62,14 +62,9 @@ public class FoodTotem : MonoBehaviour
     public void SetTotemAsInactive()
     {
         Debug.Log("Totem inativo");
+        TotemRaycastToTile().TileType = TileType.Posicionamento; 
         this.gameObject.SetActive(false);
         this.FoodSize = FoodSize.None;
         this.transform.position = new Vector3(this.transform.position.x, -1, this.transform.position.z);
-    }
-
-    private void Start()
-    {
-        this._renderer = this.GetComponent<Renderer>();
-        SetTotemAsInactive();
     }
 }

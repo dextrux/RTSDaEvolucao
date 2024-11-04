@@ -10,10 +10,11 @@ public class PlayerRaycast : MonoBehaviour
     public LayerMask layerMask;
     public Owner playerCamOwner;
     public GameObject[] selectedObjects = new GameObject[2];
+    public GameObject Manager;
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && Manager.GetComponent<RoundManager>().RoundOwner == playerCamOwner)
         {
             MouseRaycast();
         }

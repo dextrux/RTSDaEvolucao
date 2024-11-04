@@ -7,11 +7,13 @@ public class Piece : MonoBehaviour
 {
     // Atributos da peça
     [SerializeField]
+    private int _pontosMutagenicos;
+    [SerializeField]
     private StatusBar _healthBar = new StatusBar(100, 100);
     [SerializeField]
     private StatusBar _energyBar = new StatusBar(100, 100);
     [SerializeField]
-    private StatusBar _fertilityBar = new StatusBar(100, 100);
+    private StatusBar _fertilityBar = new StatusBar(0, 100);
     [SerializeField]
     private StatusBar _strength = new StatusBar(100, 100);
     [SerializeField]
@@ -41,8 +43,11 @@ public class Piece : MonoBehaviour
     private const float _rayDistanceTile = 10f;
     [SerializeField]
     public LayerMask TileLayerMask;
+    int sickCounter;
 
     // Propriedades
+
+    public int PontosMutagenicos { get { return _pontosMutagenicos; } set { _pontosMutagenicos = value; } }
     public StatusBar Energy { get { return _energyBar; } }
     public StatusBar Health { get { return _healthBar; } }
     public StatusBar Fertility { get { return _fertilityBar; } }
@@ -60,6 +65,7 @@ public class Piece : MonoBehaviour
     public bool IsDuringAction { get { return _isDuringAction; } set { _isDuringAction = value; } }
     private void Start()
     {
+        this.GetComponent<Renderer>().material.color = OwnerColors.GetColor(Owner);
         PieceRaycastForTile().Owner = Owner;
     }
     public Tile PieceRaycastForTile()
@@ -112,6 +118,7 @@ public class Piece : MonoBehaviour
                     break;
                 case PieceDiet.Carnivore:
                     pieceScript.Hunger.CurrentBarValue = pieceScript.Hunger.CurrentBarValue + 1.4f * (tileFoodTotemScript.FoodQuantity);
+                    PontosMutagenicos++;
                     break;
                 case PieceDiet.Omnivore:
                     pieceScript.Hunger.CurrentBarValue = pieceScript.Hunger.CurrentBarValue + 1.15f * (tileFoodTotemScript.FoodQuantity);
@@ -131,6 +138,7 @@ public class Piece : MonoBehaviour
                     break;
                 case PieceDiet.Herbivore:
                     pieceScript.Hunger.CurrentBarValue = pieceScript.Hunger.CurrentBarValue + 1.4f * (tileFoodTotemScript.FoodQuantity);
+                    PontosMutagenicos++;
                     break;
                 case PieceDiet.Omnivore:
                     pieceScript.Hunger.CurrentBarValue = pieceScript.Hunger.CurrentBarValue + 1.15f * (tileFoodTotemScript.FoodQuantity);
@@ -257,6 +265,9 @@ public class Piece : MonoBehaviour
         //Alterar para levar em conta as mutações
         Piece pieceScript = piece.GetComponent<Piece>();
         Tile tileScript = tile.GetComponent<Tile>();
+        GameObject Manager = GameObject.Find("Manager");
+        RoundManager roundManager = Manager.GetComponent<RoundManager>();
+        
         if (!pieceScript.Resting)
         {
             if (pieceScript.Energy.CurrentBarValue > 0)
@@ -464,6 +475,12 @@ public class Piece : MonoBehaviour
                     }
                 }
             }
+            sickCounter++;
+            if (sickCounter == 4)
+            {
+                IsDoente = false;
+                sickCounter = 0;
+            }
         }
     }
     private void HungerBarChecker()
@@ -477,10 +494,33 @@ public class Piece : MonoBehaviour
             Health.CurrentBarValue *= 1.15f;
         }
     }
+
+    private void CheckDisasterCondition()
+    {
+        IsUnderDesastre = PieceRaycastForTile().IsUnderDesastre;
+        if (IsUnderDesastre)
+        {
+            LoseLifeUnderDisastre(this.GetComponent<Piece>());
+        }
+    }
     public void PieceEndRoundRoutine()
     {
+
+        CheckDisasterCondition();
         IsDoenteStatusChecker();
         IsDoenteEffect();
         HungerBarChecker();
+        AlertVerificationRoutineRoutine();
+        if (Health.CurrentBarValue <= 0)
+        {
+            Destroy(this);
+        }
+
+        //Faltou no Gdd a taxa de recuperação e diminuição dos atributos abaixo
+        Health.CurrentBarValue += Health.MaxBarValue/4;
+        Energy.CurrentBarValue += Energy.MaxBarValue / 4;
+        Fertility.CurrentBarValue += Fertility.MaxBarValue / 5;
+        Hunger.CurrentBarValue -= Hunger.MaxBarValue / 5;
+
     }
 }
