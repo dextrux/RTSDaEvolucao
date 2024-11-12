@@ -12,6 +12,7 @@ public class PlayerRaycast : MonoBehaviour
     public GameObject[] selectedObjects = new GameObject[2];
     public GameObject Manager;
     //&& Manager.GetComponent<RoundManager>().RoundOwner == playerCamOwner
+    [SerializeField] private CreatureInfo _creatureInfo;
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -61,7 +62,8 @@ public class PlayerRaycast : MonoBehaviour
                     if (!hit.collider.gameObject.GetComponent<Piece>().IsDuringAction && hit.collider.gameObject.GetComponent<Piece>().Owner == playerCamOwner)
                     {
                         selectedObjects[0] = hitPiece;
-                        hitPiece.GetComponent<Piece>().PieceRaycastForTile().ColorirTilesDuranteSeleção();
+                        _creatureInfo.gameObject.SetActive(true);
+                        _creatureInfo.SetPiece(hitPiece.GetComponent<Piece>());
                     }
                 }
                 else
@@ -77,7 +79,8 @@ public class PlayerRaycast : MonoBehaviour
                         selectedObjects[0].GetComponent<Piece>().PieceRaycastForTile().RetornarTilesAdjacentesParaMaterialOriginal();
                         ResetSelection();
                         selectedObjects[0] = hitPiece;
-                        hitPiece.GetComponent<Piece>().PieceRaycastForTile().ColorirTilesDuranteSeleção();
+                        _creatureInfo.gameObject.SetActive(true);
+                        _creatureInfo.SetPiece(hitPiece.GetComponent<Piece>());
                     }
                 }
             }

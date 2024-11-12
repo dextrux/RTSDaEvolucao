@@ -134,7 +134,6 @@ GameObject:
   - component: {fileID: 9445388}
   - component: {fileID: 9445387}
   - component: {fileID: 9445385}
-  - component: {fileID: 9445386}
   m_Layer: 0
   m_Name: InGameUi
   m_TagString: Untagged
@@ -156,23 +155,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ActualTurn: 1
   _progressBarMargin: 26
-  _roundManager: {fileID: 42698649}
---- !u!114 &9445386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9445384}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9470ff790f1ea6145be9ba8b69fa375d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CreatureInfo: {fileID: 327856741}
-  _ingameUi: {fileID: 9445385}
-  _creatureInfo: {fileID: 327856743}
-  _jubileuson: {fileID: 0}
 --- !u!114 &9445387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -737,6 +719,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   Manager: {fileID: 42698646}
+  _creatureInfo: {fileID: 327856743}
 --- !u!114 &961739756
 MonoBehaviour:
   m_ObjectHideFlags: 0

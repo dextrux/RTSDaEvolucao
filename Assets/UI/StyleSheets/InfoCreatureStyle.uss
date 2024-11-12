@@ -310,3 +310,33 @@
     -unity-background-scale-mode: scale-to-fit;
     scale: 0.9 0.9;
 }
+
+.pampa-visual {
+    flex-grow: 1;
+    background-image: url('project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=1731896526&guid=8fbda476e9f56fe40955a8472d8bd40c&type=3#AtlasUITemp_2');
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.caatinga-visual {
+    flex-grow: 1;
+    background-image: url('project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=1684045049&guid=8fbda476e9f56fe40955a8472d8bd40c&type=3#AtlasUITemp_55');
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.pantanal-visual {
+    flex-grow: 1;
+    background-image: url('project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=354241011&guid=8fbda476e9f56fe40955a8472d8bd40c&type=3#AtlasUITemp_14');
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.mata-atlantica-visual {
+    flex-grow: 1;
+    background-image: url('project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-1502652852&guid=8fbda476e9f56fe40955a8472d8bd40c&type=3#AtlasUITemp_50');
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.mata-das-araucarias-visual {
+    flex-grow: 1;
+    background-image: url('project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=304074214&guid=8fbda476e9f56fe40955a8472d8bd40c&type=3#AtlasUITemp_19');
+    -unity-background-scale-mode: scale-to-fit;
+}

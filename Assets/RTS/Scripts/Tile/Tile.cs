@@ -89,9 +89,6 @@ public class Tile : MonoBehaviour
                             case > 3:
                                 _tilesAdjacentes[i].GetComponent<Renderer>().material.color = Color.yellow;
                                 break;
-                            default: 
-                                Debug.Log("Exceção encontrada no colorimento dos tiles adjacentes do tipo comida");
-                                break;
                         }
                         break;
                     case TileType.Barreira:

@@ -425,12 +425,12 @@ public class Piece : MonoBehaviour
             {
                 if (this.Humidity.IdealHumidity < tile.Humidity.CurrentHumidity)
                 {
-                    if (!Alerta.Contains(global::Alerta.Ressecação))
-                        Alerta.Add(global::Alerta.Ressecação);
+                    if (!Alerta.Contains(global::Alerta.Ressecacao))
+                        Alerta.Add(global::Alerta.Ressecacao);
                 }
                 else
                 {
-                    Alerta.Remove(global::Alerta.Ressecação);
+                    Alerta.Remove(global::Alerta.Ressecacao);
                 }
 
                 if (this.Humidity.IdealHumidity > tile.Humidity.CurrentHumidity)
@@ -446,7 +446,7 @@ public class Piece : MonoBehaviour
             else
             {
                 // Remover os alertas adjacentes se não há alerta de Umidade
-                Alerta.Remove(global::Alerta.Ressecação);
+                Alerta.Remove(global::Alerta.Ressecacao);
                 Alerta.Remove(global::Alerta.Desconforto);
             }
 
@@ -464,12 +464,12 @@ public class Piece : MonoBehaviour
             // Verificação de Cansaço (Barra de Energia abaixo de 25%)
             if (this.Energy.CurrentBarValue < 25f * this.Energy.MaxBarValue)
             {
-                if (!Alerta.Contains(global::Alerta.Cansaço))
-                    Alerta.Add(global::Alerta.Cansaço);
+                if (!Alerta.Contains(global::Alerta.Cansaco))
+                    Alerta.Add(global::Alerta.Cansaco);
             }
             else
             {
-                Alerta.Remove(global::Alerta.Cansaço);
+                Alerta.Remove(global::Alerta.Cansaco);
             }
         }
     }

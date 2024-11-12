@@ -54,6 +54,7 @@ public class InGameUi : MonoBehaviour
         _resumePauseBtn.RegisterCallback<ClickEvent>(OnClickResumePause);
         _optionResumeBtn.RegisterCallback<ClickEvent>(OnClickResumeOption);
         #endregion
+
     }
     // A unica função que precisa ser alterada é a de OnClickTurnChange para adicionar a chamada do evento e tirar a tela temporária
     #region Funcao Dos Botoes
@@ -97,7 +98,6 @@ public class InGameUi : MonoBehaviour
                 _barPositions[i].AddToClassList("little-bar");
             }
         }
-
     }
     private void OnResumeTurnChange(ClickEvent evt)
     {
@@ -106,7 +106,7 @@ public class InGameUi : MonoBehaviour
     private void OnClickOptionPause(ClickEvent evt)
     {
         _pauseContainer.RemoveFromClassList("turn-screen-open");
-        _optionContainer.AddToClassList("option-open");
+        _optionContainer.RemoveFromClassList("option-closed");
     }
     private void OnClickMenuPause(ClickEvent evt)
     {
@@ -118,17 +118,14 @@ public class InGameUi : MonoBehaviour
     }
     private void OnClickResumeOption(ClickEvent evt)
     {
-        _optionContainer.RemoveFromClassList("option-open");
+        _optionContainer.AddToClassList("option-closed");
     }
     #endregion
-    private void AnimateLoadingBar(float actualValue, float maxValue)
+    public void AnimateLifeBar(float actualValue, float maxValue)
     {
-        //valores que precisam ser substituídos no método
-        float actualLife = actualValue;
-        float totalLife = maxValue;
         //Pega o valor da barra para animar diminuindo a margem
         float endWidth = _lifeProgressBar.parent.worldBound.width - _progressBarMargin;
-        _lifeText.text = $"{actualLife}/{totalLife}";
+        _lifeText.text = $"{actualValue}/{maxValue}";
         DOTween.To(() => _lifeProgressBar.worldBound.width, x => _lifeProgressBar.style.width = x, (endWidth * (actualValue/maxValue)), 2F).SetEase(Ease.Linear);
     }
     public void CreatureInfoChange()

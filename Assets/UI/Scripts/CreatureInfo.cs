@@ -8,8 +8,10 @@ public class CreatureInfo : MonoBehaviour
     [SerializeField] private GameObject _buyMutationScreen;
     [SerializeField] private InGameUi _ingameUi;
     private Piece _actualPiece;
+    private Tile _actualTile;
     private Button _creatureInfoBtn;
     private Button _mutationInfoBtn;
+    private Button _actionBtn;
     private Button _exitInfoBtn;
     #region Avisos Sobre a peca
     private VisualElement _discomfortWarning;
@@ -41,8 +43,10 @@ public class CreatureInfo : MonoBehaviour
     private void OnEnable()
     {
         SetReferences();
+        _ingameUi.CreatureInfoChange();
         _creatureInfoBtn.RegisterCallback<ClickEvent>(OnClickCreatureInfo);
         _mutationInfoBtn.RegisterCallback<ClickEvent>(OnClickMutationInfo);
+        _actionBtn.RegisterCallback<ClickEvent>(OnClickAction);
         _exitInfoBtn.RegisterCallback<ClickEvent>(OnClickExitInfo);
     }
     private void OnClickCreatureInfo(ClickEvent evt)
@@ -52,8 +56,8 @@ public class CreatureInfo : MonoBehaviour
     }
     private void OnClickMutationInfo(ClickEvent evt)
     {
-        _creatureScreen.SetActive(false);
-        _mutationScreen.SetActive(true);
+        /*_creatureScreen.SetActive(false);
+        _mutationScreen.SetActive(true);*/
     }
     private void OnClickExitInfo(ClickEvent evt)
     {
@@ -61,61 +65,39 @@ public class CreatureInfo : MonoBehaviour
         _mutationScreen.SetActive(false);
         _ingameUi.CreatureInfoNormal();
     }
-    public void SetDiscomfortWarning(bool active)
+    private void OnClickAction(ClickEvent evt)
     {
-        if (active) _discomfortWarning.RemoveFromClassList("warning-close");
-        else _discomfortWarning.AddToClassList("warning-close");
+        _actualPiece.PieceRaycastForTile().ColorirTilesDuranteSeleção();
+        gameObject.SetActive(false);
     }
-    public void SetTemperatureWarning(bool active)
+    public void SetPiece(Piece piece)
     {
-        if (active) _discomfortWarning.RemoveFromClassList("warning-close");
-        else _discomfortWarning.AddToClassList("warning-close");
+        _actualPiece = piece;
+        _actualTile = _actualPiece.PieceRaycastForTile();
+        SetCreatureStateUi(piece);
     }
-    public void SetDisasterWarning(bool active)
+    private void SetCreatureStateUi(Piece piece)
     {
-        if (active)
-            _discomfortWarning.RemoveFromClassList("warning-close");
-        else
-            _discomfortWarning.AddToClassList("warning-close");
-    }
-    public void SetHumidityWarning(bool active)
-    {
-        if (active)
-            _discomfortWarning.RemoveFromClassList("warning-close");
-        else
-            _discomfortWarning.AddToClassList("warning-close");
-    }
-    public void SetillnessWarning(bool active)
-    {
-        if (active)
-            _discomfortWarning.RemoveFromClassList("warning-close");
-        else
-            _discomfortWarning.AddToClassList("warning-close");
-    }
-    //Ajusta a dieta,as barras e o texto para a devida porcentagem da criatura
-    public void SetCreatureStateUi(Piece piece)
-    {
-        SetPiece(piece);
-        SetDietUi(_actualPiece);
-        AnimateBar(_actualPiece.Temperature.IdealTemperature, 40F, _creatureTemperature);
+        SetDietUi();
+        _ingameUi.AnimateLifeBar(_actualPiece.Health.CurrentBarValue, _actualPiece.Health.MaxBarValue);
         _creatureTemperatureTxt.text = _actualPiece.Temperature.IdealTemperature.ToString() + " ºC";
-        AnimateBar(_actualPiece.Fertility.CurrentBarValue, 100, _creatureFertility);
-        _creatureFertilityTxt.text = _actualPiece.Fertility.CurrentBarValue.ToString() + " %";
-        AnimateBar(_actualPiece.Humidity.CurrentHumidity, 100, _creatureHumidity);
-        _creatureHumidityTxt.text = _actualPiece.Humidity.CurrentHumidity.ToString() + " %";
-        AnimateBar(_actualPiece.Energy.CurrentBarValue, 100, _creatureEnergy);
-        _creatureEnergyTxt.text = _actualPiece.Energy.CurrentBarValue.ToString() + " %";
-        //Falta informação dos tiles e a fome
+        _creatureFertilityTxt.text = _actualPiece.Fertility.CurrentBarValue.ToString() + "%";
+        _creatureHumidityTxt.text = _actualPiece.Humidity.CurrentHumidity.ToString() + "%";
+        _creatureEnergyTxt.text = _actualPiece.Energy.CurrentBarValue.ToString() + "%";
+        _creatureHungerTxt.text = _actualPiece.Hunger.CurrentBarValue.ToString() + "%";
+        SetTileRefs();
+        SetWarningUi();
     }
-    private void SetDietUi(Piece piece)
+    private void SetDietUi()
     {
-        if (piece.Diet == PieceDiet.Herbivore)
+        if (_actualPiece.Diet == PieceDiet.Herbivore)
         {
             _creatureDietImg.RemoveFromClassList("omnivorous-diet-img");
             _creatureDietImg.RemoveFromClassList("carnivore-diet-img");
             _creatureDietImg.AddToClassList("herbivore-diet-img");
             _creatureDietTxt.text = "Herbívoro";
-        } else if (piece.Diet == PieceDiet.Carnivore)
+        }
+        else if (_actualPiece.Diet == PieceDiet.Carnivore)
         {
             _creatureDietImg.RemoveFromClassList("herbivore-diet-img");
             _creatureDietImg.RemoveFromClassList("omnivorous-diet-img");
@@ -130,23 +112,109 @@ public class CreatureInfo : MonoBehaviour
             _creatureDietTxt.text = "Onívoro";
         }
     }
-    public void SetPiece(Piece piece)
+    private void SetTileRefs()
     {
-        _actualPiece = piece;
-    }
-    private void AnimateBar(float actualValue, float maxValue, VisualElement targetBar)
-    {
-        targetBar.RegisterCallback<GeometryChangedEvent>(evt =>
+        _tileHumidityTxt.text = _actualTile.Humidity.CurrentHumidity + "%";
+        _tileTemperatureTxt.text = _actualTile.Temperature.CurrentTemperature + "ºC";
+        if (_actualTile.Biome == Biome.Caatinga)
         {
-            float endHeight = targetBar.parent.worldBound.height * (actualValue / maxValue);
-            DOTween.To(() => targetBar.resolvedStyle.top, x => targetBar.style.top = x, endHeight, 0.5F).SetEase(Ease.Linear);
-        });
+            _tileBiome.AddToClassList("caatinga-visual");
+            _tileBiome.RemoveFromClassList("mata-atlantica-visual");
+            _tileBiome.RemoveFromClassList("mata-das-araucarias-visual");
+            _tileBiome.RemoveFromClassList("pampa-visual");
+            _tileBiome.RemoveFromClassList("pantanal-visual");
+            _tileBiomeTxt.text = "Caatinga" ;
+        }
+        else if (_actualTile.biome == Biome.Mata_Atlantica)
+        {
+            _tileBiome.RemoveFromClassList("caatinga-visual");
+            _tileBiome.AddToClassList("mata-atlantica-visual");
+            _tileBiome.RemoveFromClassList("mata-das-araucarias-visual");
+            _tileBiome.RemoveFromClassList("pampa-visual");
+            _tileBiome.RemoveFromClassList("pantanal-visual");
+            _tileBiomeTxt.text = "Mata Atlântica" ;
+        }
+        else if (_actualTile.biome == Biome.Pantanal)
+        {
+            _tileBiome.RemoveFromClassList("caatinga-visual");
+            _tileBiome.RemoveFromClassList("mata-atlantica-visual");
+            _tileBiome.RemoveFromClassList("mata-das-araucarias-visual");
+            _tileBiome.RemoveFromClassList("pampa-visual");
+            _tileBiome.AddToClassList("pantanal-visual");
+            _tileBiomeTxt.text = "Pantanal" ;
+        }
+        else if (_actualTile.biome == Biome.Pampa)
+        {
+            _tileBiome.RemoveFromClassList("caatinga-visual");
+            _tileBiome.RemoveFromClassList("mata-atlantica-visual");
+            _tileBiome.RemoveFromClassList("mata-das-araucarias-visual");
+            _tileBiome.AddToClassList("pampa-visual");
+            _tileBiome.RemoveFromClassList("pantanal-visual");
+            _tileBiomeTxt.text = "Pampa";
+        }
+        else
+        {
+            _tileBiome.RemoveFromClassList("caatinga-visual");
+            _tileBiome.RemoveFromClassList("mata-atlantica-visual");
+            _tileBiome.AddToClassList("mata-das-araucarias-visual");
+            _tileBiome.RemoveFromClassList("pampa-visual");
+            _tileBiome.RemoveFromClassList("pantanal-visual");
+            _tileBiomeTxt.text = "Mata das Araucarias";
+        }
+    }
+    private void SetWarningUi()
+    {
+        SetDiscomfortWarning(false);
+        SetTemperatureWarning(false);
+        SetHumidityWarning(false);
+        if (_actualPiece.IsUnderDesastre) SetDisasterWarning(true);
+        else SetDisasterWarning(false);
+        if (_actualPiece.IsDoente) SetillnessWarning(true);
+        else SetillnessWarning(false);
+        foreach (Alerta activeWarning in _actualPiece.Alerta)
+        {
+            if (activeWarning == Alerta.Fome || activeWarning == Alerta.Cansaco) SetDiscomfortWarning(true);
+            if (activeWarning == Alerta.Temperatura || activeWarning == Alerta.Calor || activeWarning == Alerta.Frio) SetTemperatureWarning(true);
+            if (activeWarning == Alerta.Umidade || activeWarning == Alerta.Ressecacao || activeWarning == Alerta.Desconforto) SetHumidityWarning(true);
+        }
+    }
+    private void SetDiscomfortWarning(bool active)
+    {
+        if (active) _discomfortWarning.RemoveFromClassList("warning-close");
+        else _discomfortWarning.AddToClassList("warning-close");
+    }
+    private void SetTemperatureWarning(bool active)
+    {
+        if (active) _temperatureWarning.RemoveFromClassList("warning-close");
+        else _temperatureWarning.AddToClassList("warning-close");
+    }
+    private void SetDisasterWarning(bool active)
+    {
+        if (active)
+            _disasterWarning.RemoveFromClassList("warning-close");
+        else
+            _disasterWarning.AddToClassList("warning-close");
+    }
+    private void SetHumidityWarning(bool active)
+    {
+        if (active)
+            _humidityWarning.RemoveFromClassList("warning-close");
+        else
+            _humidityWarning.AddToClassList("warning-close");
+    }
+    private void SetillnessWarning(bool active)
+    {
+        if (active)
+            _illnessWarning.RemoveFromClassList("warning-close");
+        else
+            _illnessWarning.AddToClassList("warning-close");
     }
     private void SetReferences()
     {
         var root = GetComponent<UIDocument>().rootVisualElement;
         _creatureInfoBtn = root.Q<Button>("floating-info-btn");
         _mutationInfoBtn = root.Q<Button>("floating-mutation-btn");
+        _actionBtn = root.Q<Button>("floating-action-btn");
         _exitInfoBtn = root.Q<Button>("exit-info-btn");
         _discomfortWarning = root.Q<VisualElement>("discomfort-container");
         _temperatureWarning = root.Q<VisualElement>("temperature-container");
@@ -165,5 +233,11 @@ public class CreatureInfo : MonoBehaviour
         _creatureEnergyTxt = root.Q<Label>("creature-energy-txt");
         _creatureHunger = root.Q<VisualElement>("creature-hunger-bar");
         _creatureHungerTxt = root.Q<Label>("creature-hunger-txt");
+        _tileBiome = root.Q<VisualElement>("biome-visual");
+        _tileBiomeTxt = root.Q<Label>("biome-txt");
+        _tileHumidity = root.Q<VisualElement>("tile-humidity-bar");
+        _tileHumidityTxt = root.Q<Label>("tile-humidity-txt");
+        _tileTemperature = root.Q<VisualElement>("tile-temperature-bar");
+        _tileTemperatureTxt = root.Q<Label>("tile-temperature-txt");
     }
 }

@@ -95,13 +95,20 @@
 }
 
 .option-closed {
-    flex-grow: 1;
-    position: absolute;
+    translate: 0 100%;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-elastic;
+}
+
+.option-open {
+    transition-timing-function: ease-in-out-elastic;
+    transition-duration: 0.5s;
+}
+
+.options-visual {
     align-items: center;
     justify-content: center;
     width: 760px;
-    margin-top: 130px;
-    margin-left: 580px;
     background-color: rgb(236, 170, 104);
     height: 770px;
     border-top-width: 18px;
@@ -117,15 +124,9 @@
     border-top-color: rgb(57, 44, 33);
     border-bottom-color: rgb(57, 44, 33);
     opacity: 1;
-    translate: 0 140%;
     transition-duration: 0.5s;
     transition-timing-function: ease-in-elastic;
-}
-
-.option-open {
-    translate: 0 0;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-out-bounce;
+    position: relative;
 }
 
 .unity-base-slider__dragger {
