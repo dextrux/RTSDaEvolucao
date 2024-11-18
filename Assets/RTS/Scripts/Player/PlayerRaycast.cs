@@ -15,7 +15,7 @@ public class PlayerRaycast : MonoBehaviour
     [SerializeField] private CreatureInfo _creatureInfo;
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonUp(0))
         {
             MouseRaycast();
         }

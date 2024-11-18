@@ -35,10 +35,7 @@ public class Temperature
     public void IdealTemperatureAdjustSum(float portion)
     {
         _idealTemperature += portion;
-    }
-    public void IdealTemperatureAdjustMultiplyPercent(float percent)
-    {
-        _idealTemperature *= percent;
+        AdjustToClosestBoundary(_currentTemperature);
     }
 
     // Boundaries Check

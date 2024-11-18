@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84181ecf718d0884f8e48fdcf60f4ecc, type: 3}
+  m_Name: Omnivore
+  m_EditorClassIdentifier: 
+  _id: 3
+  _name: "On\xEDvoros"
+  _description: "Os omn\xEDvoros ou on\xEDvoros s\xE3o os animais com capacidade
+    para metaboliza\xE7\xE3o de diferentes classes aliment\xEDcias, com uma dieta
+    alimentar menos restrita que a dos carn\xEDvoros ou herb\xEDvoros. Normalmente
+    s\xE3o predadores, mas t\xEAm o aparelho digestivo adaptado a metabolizar diferentes
+    tipos de alimentos."
+  _newDiet: 2

@@ -28,11 +28,7 @@ public class StatusBar
     {
         MaxBarValue += portion;
         CurrentBarValue += portion;
-    }
-    public void StatusAdjustMultiplyPercent(float percent)
-    {
-        MaxBarValue *= percent;
-        CurrentBarValue *= percent;
+        AdjustToClosestBoundary(_currentValue);
     }
     // Boundary Check
     private float AdjustToClosestBoundary(float value)

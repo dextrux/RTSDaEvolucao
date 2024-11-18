@@ -65,9 +65,12 @@ public class Piece : MonoBehaviour
     public bool IsDuringAction { get { return _isDuringAction; } set { _isDuringAction = value; } }
     #endregion
     //Atributos para mutação
-    private List<MutationBase> _mutations;
+    private List<MutationBase> _appliedMutations;
+    private List<MutationBase> _incompatibleMutations;
     private float _huntMultiplier;
     private float _plantMultiplier;
+    public List<MutationBase> IncompatibleMutations { get { return _incompatibleMutations; } }
+    public List<MutationBase> AppliedMutations { get { return _appliedMutations; } }
     private void Start()
     {
         this.GetComponent<Renderer>().material.color = OwnerColors.GetColor(Owner);
@@ -184,8 +187,16 @@ public class Piece : MonoBehaviour
     //Adiciona as mutações a peça
     public void AddMutation(MutationBase mutationToAdd)
     {
-        _mutations.Add(mutationToAdd);
-        mutationToAdd.SetMutation(gameObject.GetComponent<Piece>());
+        _appliedMutations.Add(mutationToAdd);
+        foreach (MutationBase incompatible in mutationToAdd.IncompatibleMutations)
+        {
+            _incompatibleMutations.Add(incompatible);
+        }
+        mutationToAdd.Mutate(gameObject.GetComponent<Piece>());
+    }
+    public void SetVisualPart(PieceParts newPart, Mesh newVisual)
+    {
+
     }
     public void Rest(GameObject piece)
     {

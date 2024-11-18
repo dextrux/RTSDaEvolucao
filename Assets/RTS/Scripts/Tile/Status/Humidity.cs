@@ -35,10 +35,7 @@ public class Humidity
     public void IdealHumidityAdjustSum(float portion)
     {
         _idealHumidity += portion;
-    }
-    public void IdealHumidityAdjustMultiplyPercent(float percent)
-    {
-        _idealHumidity *= percent;
+        AdjustToClosestBoundary(_currentHumidity);
     }
     // Boundaries Check
     private static float AdjustToClosestBoundary(float value)
