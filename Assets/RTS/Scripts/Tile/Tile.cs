@@ -70,7 +70,7 @@ public class Tile : MonoBehaviour
 
         foreach (var tile in _tilesAdjacentes)
         {
-            tile.GetComponent<Renderer>().material.color = tileTypeReferences.GetColor(tile);
+            tile.GetComponent<Renderer>().material = tileTypeReferences.GetGlowingColor(tile);
         }
     }
 

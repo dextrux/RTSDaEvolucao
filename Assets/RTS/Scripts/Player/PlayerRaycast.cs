@@ -11,7 +11,6 @@ public class PlayerRaycast : MonoBehaviour
     public Owner playerCamOwner;
     public GameObject[] selectedObjects = new GameObject[2];
     public GameObject Manager;
-    //&& Manager.GetComponent<RoundManager>().RoundOwner == playerCamOwner
     [SerializeField] private CreatureInfo _creatureInfo;
     void Update()
     {

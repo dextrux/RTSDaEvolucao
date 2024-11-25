@@ -23,4 +23,25 @@ public class OwnerReference : MonoBehaviour
         UnityEngine.Color color = referenceMaterial.color;
         ownerColor[(int)owner] = color;
     }
+
+    [SerializeField]
+    public Material[] ownerGlowingColor = new Material[System.Enum.GetValues(typeof(Owner)).Length];
+    public Material GetGlowingColor(Owner owner)
+    {
+        return owner switch
+        {
+            Owner.P1 => ownerGlowingColor[0],
+            Owner.P2 => ownerGlowingColor[1],
+            Owner.P3 => ownerGlowingColor[2],
+            Owner.P4 => ownerGlowingColor[3],
+            Owner.P5 => ownerGlowingColor[4],
+            _ =>
+            null
+        };
+    }
+
+    public void SetOwnerGlowingColors(Owner owner, Material referenceMaterial)
+    {
+        ownerGlowingColor[(int)owner] = referenceMaterial;
+    }
 }

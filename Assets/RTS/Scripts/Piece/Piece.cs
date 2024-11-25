@@ -251,11 +251,19 @@ public class Piece : MonoBehaviour
     #endregion
 
     #region Métodos de Mutação e Saúde
-    public void AddMutation(MutationBase mutation)
+    public void AddMutation(MutationBase mutationToAdd)
     {
-        _appliedMutations.Add(mutation);
-        _incompatibleMutations.AddRange(mutation.IncompatibleMutations);
-        mutation.Mutate(this);
+        _appliedMutations.Add(mutationToAdd);
+        foreach (MutationBase incompatible in mutationToAdd.IncompatibleMutations)
+        {
+            _incompatibleMutations.Add(incompatible);
+        }
+        mutationToAdd.Mutate(gameObject.GetComponent<Piece>());
+    }
+
+    public void SetVisualPart(PieceParts newPart, Mesh newVisual)
+    {
+
     }
 
     public void LoseLifeUnderDisastre()
@@ -273,15 +281,16 @@ public class Piece : MonoBehaviour
 
     private void CheckForIllness()
     {
-        if (Alerta.Count >= 3 && UnityEngine.Random.Range(1, 20) <= Alerta.Count)
+        if (Alerta.Count >= 3 )
         {
-            _isDoente = true;
-            sickCounter = 10;
+            if (UnityEngine.Random.Range(1, 24) <= Alerta.Count)
+            {
+                _isDoente = true;
+            }           
         }
-        else if (sickCounter <= 0)
+        else 
         {
             _isDoente = false;
-            sickCounter = 0;
         }
     }
     #endregion
