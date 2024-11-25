@@ -67,6 +67,7 @@ public class InGameUi : MonoBehaviour
         //AnimateLoadingBar();
         _nextTurnAdvice.AddToClassList("turn-screen-open");
         ActualTurn++;
+        //GameObject.Find("Manager").GetComponent<RoundManager>().Turnos = ActualTurn;
         for (int i = 0; i < 9; i++)
         {
             if ((ActualTurn - 4 + i) < 0)

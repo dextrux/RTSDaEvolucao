@@ -14,6 +14,6 @@ public class MutationStatusVisual : MutationStatusNonVisual
     }
     private void SetVisual(Piece targetPiece)
     {
-        targetPiece.SetVisualPart(_partToChange, _visual);
+        //targetPiece.SetVisualPart(_partToChange, _visual);
     }
 }

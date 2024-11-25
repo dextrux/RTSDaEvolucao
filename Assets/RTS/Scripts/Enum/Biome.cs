@@ -1,3 +1,5 @@
+using UnityEngine;
+
 public enum Biome
 {
     Mata_das_Araucarias = 0,

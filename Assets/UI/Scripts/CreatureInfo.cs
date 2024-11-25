@@ -67,7 +67,7 @@ public class CreatureInfo : MonoBehaviour
     }
     private void OnClickAction(ClickEvent evt)
     {
-        _actualPiece.PieceRaycastForTile().ColorirTilesDuranteSeleção();
+        //_actualPiece.PieceRaycastForTile().ColorirTilesDuranteSeleção();
         gameObject.SetActive(false);
     }
     public void SetPiece(Piece piece)
@@ -80,9 +80,9 @@ public class CreatureInfo : MonoBehaviour
     {
         SetDietUi();
         _ingameUi.AnimateLifeBar(_actualPiece.Health.CurrentBarValue, _actualPiece.Health.MaxBarValue);
-        _creatureTemperatureTxt.text = _actualPiece.Temperature.IdealTemperature.ToString() + " ºC";
+        _creatureTemperatureTxt.text = _actualPiece.Temperature.IdealValue.ToString() + " ºC";
         _creatureFertilityTxt.text = _actualPiece.Fertility.CurrentBarValue.ToString() + "%";
-        _creatureHumidityTxt.text = _actualPiece.Humidity.CurrentHumidity.ToString() + "%";
+        _creatureHumidityTxt.text = _actualPiece.Humidity.CurrentValue.ToString() + "%";
         _creatureEnergyTxt.text = _actualPiece.Energy.CurrentBarValue.ToString() + "%";
         _creatureHungerTxt.text = _actualPiece.Hunger.CurrentBarValue.ToString() + "%";
         SetTileRefs();
@@ -114,8 +114,8 @@ public class CreatureInfo : MonoBehaviour
     }
     private void SetTileRefs()
     {
-        _tileHumidityTxt.text = _actualTile.Humidity.CurrentHumidity + "%";
-        _tileTemperatureTxt.text = _actualTile.Temperature.CurrentTemperature + "ºC";
+        _tileHumidityTxt.text = _actualTile.Humidity.CurrentValue + "%";
+        _tileTemperatureTxt.text = _actualTile.Temperature.CurrentValue + "ºC";
         if (_actualTile.Biome == Biome.Caatinga)
         {
             _tileBiome.AddToClassList("caatinga-visual");
@@ -173,9 +173,9 @@ public class CreatureInfo : MonoBehaviour
         else SetillnessWarning(false);
         foreach (Alerta activeWarning in _actualPiece.Alerta)
         {
-            if (activeWarning == Alerta.Fome || activeWarning == Alerta.Cansaco) SetDiscomfortWarning(true);
+            if (activeWarning == Alerta.Fome || activeWarning == Alerta.Cansaço) SetDiscomfortWarning(true);
             if (activeWarning == Alerta.Temperatura || activeWarning == Alerta.Calor || activeWarning == Alerta.Frio) SetTemperatureWarning(true);
-            if (activeWarning == Alerta.Umidade || activeWarning == Alerta.Ressecacao || activeWarning == Alerta.Desconforto) SetHumidityWarning(true);
+            if (activeWarning == Alerta.Umidade || activeWarning == Alerta.Ressecaçao || activeWarning == Alerta.Desconforto) SetHumidityWarning(true);
         }
     }
     private void SetDiscomfortWarning(bool active)

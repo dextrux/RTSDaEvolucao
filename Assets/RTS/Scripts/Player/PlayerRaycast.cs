@@ -19,26 +19,6 @@ public class PlayerRaycast : MonoBehaviour
         {
             MouseRaycast();
         }
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            playerCamOwner = Owner.P1;
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            playerCamOwner = Owner.P2;
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            playerCamOwner = Owner.P3;
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha4))
-        {
-            playerCamOwner = Owner.P4;
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha5))
-        {
-            playerCamOwner = Owner.NPC;
-        }
     }
 
     private void MouseRaycast()
@@ -118,19 +98,19 @@ public class PlayerRaycast : MonoBehaviour
             if (tileScript.Owner == Owner.None && tileScript.TileType == TileType.Posicionamento)
             {
                 Debug.Log("Andar");
-                StartCoroutine(pieceScript.Walk(tile, false));
+                pieceScript.StartCoroutine(pieceScript.Walk(pieceScript,tile, false));
             }
             //Alimentação
             if (tileScript.Owner == Owner.None && tileScript.TileType == TileType.Comida)
             {
                 Debug.Log("Comer");
-                pieceScript.Eat(tile);
+                pieceScript.Eat(pieceScript.gameObject,tile);
             }
             //Inimigo
             if (tileScript.Owner != Owner.None && tileScript.Owner != pieceScript.Owner)
             {
                 Debug.Log("Lutar");
-                pieceScript.Fight(tile);
+                pieceScript.Fight(pieceScript.gameObject, tile);
             }
             //Reprodução
             if (tileScript.Owner != Owner.None && tileScript.Owner == pieceScript.Owner)

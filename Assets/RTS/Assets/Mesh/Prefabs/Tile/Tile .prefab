@@ -31,7 +31,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 1
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6813432885894861809}
   m_Father: {fileID: 0}
@@ -76,7 +76,6 @@ MonoBehaviour:
   pieceLayerMask:
     serializedVersion: 2
     m_Bits: 64
-  prefab: {fileID: 1145838325731785378, guid: 8749ec7b060cb2843b1411b9b0462a0d, type: 3}
 --- !u!33 &6203584833621323060
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -211,6 +210,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8974512277581426232, guid: 9efd05bb85de7ec4fb94388b2096f2a8,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -32,10 +32,10 @@ public class MutationStatusNonVisual : MutationBase
                     targetPiece.Hunger.StatusAdjustSum(_pieceValueToChange[i]);
                     break;
                 case Status.Humidity:
-                    targetPiece.Humidity.IdealHumidityAdjustSum(_pieceValueToChange[i]);
+                    targetPiece.Humidity.IdealValueAdjustSum(_pieceValueToChange[i]);
                     break;
                 case Status.Temperature:
-                    targetPiece.Temperature.IdealTemperatureAdjustSum(_pieceValueToChange[i]);
+                    targetPiece.Temperature.IdealValueAdjustSum(_pieceValueToChange[i]);
                     break;
             }
         }

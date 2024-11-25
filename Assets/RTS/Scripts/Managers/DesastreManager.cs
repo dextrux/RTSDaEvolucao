@@ -1,246 +1,170 @@
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
-using static UnityEngine.EventSystems.EventTrigger;
 
-
-public class DesastreManager : MonoBehaviour
+public class BiomeDisasterManager : MonoBehaviour
 {
-    //Atributos da classe
-    [SerializeField]
-    List<GameObject> _atlanticaTiles;
-    [SerializeField]
-    List<GameObject> _araucariasTiles;
-    [SerializeField]
-    List<GameObject> _caatingaTiles;
-    [SerializeField]
-    List<GameObject> _pampaTiles;
-    [SerializeField]
-    List<GameObject> _pantanalTiles;
-    // ReadOnly strings
-    private readonly string _atlanticaTileName = "Standard Atlantica";
-    private readonly string _araucariasTileName = "Standard Araucarias";
-    private readonly string _caatingaTileName = "Standard Caatinga";
-    private readonly string _pampaTileName = "Standard Pampa";
-    private readonly string _pantanalTileName = "Standard Pantanal";
-
-    private void BuscarTiles()
-    {
-        GameObject[] allObjects = FindObjectsOfType<GameObject>();
-        foreach (GameObject obj in allObjects)
-        {
-            if (obj.name.Contains(_atlanticaTileName))
-            {
-                _atlanticaTiles.Add(obj);
-            }
-            else if (obj.name.Contains(_araucariasTileName))
-            {
-                _araucariasTiles.Add(obj);
-            }
-            else if (obj.name.Contains(_caatingaTileName))
-            {
-                _caatingaTiles.Add(obj);
-            }
-            else if (obj.name.Contains(_pampaTileName))
-            {
-                _pampaTiles.Add(obj);
-            }
-            else if (obj.name.Contains(_pantanalTileName))
-            {
-                _pantanalTiles.Add(obj);
-            }
-            else
-            {
-                Debug.Log($"{obj.name} não pertence aos tiles especificados.");
-            }
-        }
-
-        // Para verificar a quantidade de objetos encontrados em cada lista (opcional)
-        Debug.Log($"Tiles Atlântica: {_atlanticaTiles.Count}");
-        Debug.Log($"Tiles Araucárias: {_araucariasTiles.Count}");
-        Debug.Log($"Tiles Caatinga: {_caatingaTiles.Count}");
-        Debug.Log($"Tiles Pampa: {_pampaTiles.Count}");
-        Debug.Log($"Tiles Pantanal: {_pantanalTiles.Count}");
-    }
-
-
-    public List<GameObject> SortearBiomaParaDesastre()
-    {
-        System.Random random = new System.Random();
-        int decider = random.Next(0, 5);
-        switch (decider)
-        { 
-            case 0: return _araucariasTiles;
-            case 1: return _atlanticaTiles;
-            case 2: return _caatingaTiles;
-            case 3: return _pantanalTiles;
-            default : Debug.Log("Exceção encontrada no sorteio do bioma");
-                return null;
-        }      
-    }
-
-    public void SortearEventoMenor(List<GameObject> list) 
+    public void SortearEventoMenor(List<GameObject>[] biomesArray)
     {
         System.Random random = new System.Random();
         int decider = random.Next(0, 6);
+
         switch (decider)
         {
             case 0:
-                Migração(list);
+                Debug.Log("Evento menor sorteado: Migração");
+                Migracao(biomesArray);
                 break;
             case 1:
-                Infestação(list);
+                Debug.Log("Evento menor sorteado: Infestação");
+                Infestacao(biomesArray);
                 break;
             case 2:
-                OndaDeCalor(list);
+                Debug.Log("Evento menor sorteado: Onda de Calor");
+                OndaDeCalor(biomesArray);
                 break;
             case 3:
-                FrenteFria(list);
+                Debug.Log("Evento menor sorteado: Frente Fria");
+                FrenteFria(biomesArray);
                 break;
             case 4:
-                Chuvas(list);
+                Debug.Log("Evento menor sorteado: Chuvas");
+                Chuvas(biomesArray);
                 break;
             case 5:
-                Secas(list);
+                Debug.Log("Evento menor sorteado: Secas");
+                Secas(biomesArray);
                 break;
             default:
-                Debug.Log("Exceção encontrada no sorteio do desastre maior");
+                Debug.LogError("Exceção encontrada no sorteio do desastre menor");
                 break;
         }
     }
-    public int SortearEventoMaior(List<GameObject> list) 
+
+    public void SortearEventoMaior(List<GameObject>[] biomesArray)
     {
         System.Random random = new System.Random();
         int decider = random.Next(0, 4);
+
         switch (decider)
         {
             case 0:
-                Desertificação(list);
+                Debug.Log("Evento maior sorteado: Desertificação");
+                Desertificacao(biomesArray);
                 break;
             case 1:
-                Alagamentos(list);
+                Debug.Log("Evento maior sorteado: Alagamentos");
+                Alagamentos(biomesArray);
                 break;
             case 2:
-                Geadas(list);
+                Debug.Log("Evento maior sorteado: Geadas");
+                Geadas(biomesArray);
                 break;
             case 3:
-                Tempestades(list);
+                Debug.Log("Evento maior sorteado: Tempestades");
+                Tempestades(biomesArray);
                 break;
             default:
-                Debug.Log("Exceção encontrada no sorteio do desastre maior");
-                break;                           
+                Debug.LogError("Exceção encontrada no sorteio do desastre maior");
+                break;
         }
-        return decider;
     }
-
-    //EVENTOS MENORES
-
-    //Migração - Aumento de 50% a quantidade de peças de caça na região e de diminuição de 50% de peças de Não-Carne.
-    public void Migração(List<GameObject> list) 
+    public void Migracao(List<GameObject>[] biomesArray)
     {
-        for (int i = 0; i < list.Count; i++)
+        foreach (var list in biomesArray)
         {
-            list[i].GetComponent<Tile>().Totem.GetComponent<FoodTotem>().MultiplyFoodQuantityByFactor = 1.5f;
-            list[i].GetComponent<Tile>().Totem.GetComponent<FoodTotem>().MultiplyFoodQuantityByFactor = 0.5f;
+            foreach (GameObject tile in list)
+            {
+            }
         }
     }
 
-    //Infestação - Aumento de 50% a quantidade de peças de Não-Carne na região e de diminuição de 50% de peças de caça.
-    public void Infestação(List<GameObject> list) 
+    public void Infestacao(List<GameObject>[] biomesArray)
     {
-        for (int i = 0; i < list.Count; i++)
+        foreach (var list in biomesArray)
         {
-            list[i].GetComponent<Tile>().Totem.GetComponent<FoodTotem>().MultiplyFoodQuantityByFactor = 0.5f;
-            list[i].GetComponent<Tile>().Totem.GetComponent<FoodTotem>().MultiplyFoodQuantityByFactor = 1.5f;
+            foreach (GameObject tile in list)
+            {
+            }
         }
     }
 
-    //Onda de Calor - Aumenta em 20% a temperatura dos tiles afetados.
-    public void OndaDeCalor(List<GameObject> list) 
+    public void OndaDeCalor(List<GameObject>[] biomesArray)
     {
-        for (int i = 0; i < list.Count; i++)
+        foreach (var list in biomesArray)
         {
-            list[i].GetComponent<Tile>().Temperature.MultiplyTemperatureByValue = 1.2f;
+            foreach (GameObject tile in list)
+            {
+            }
         }
     }
 
-    //Frente Fria - Diminui em 20% a temperatura dos tiles afetados.
-    public void FrenteFria(List<GameObject> list) 
+    public void FrenteFria(List<GameObject>[] biomesArray)
     {
-        for (int i = 0; i < list.Count; i++)
+        foreach (var list in biomesArray)
         {
-            list[i].GetComponent<Tile>().Temperature.MultiplyTemperatureByValue = 0.8f;
+            foreach (GameObject tile in list)
+            {
+            }
         }
     }
 
-    //Chuvas - Aumenta em 20% a umidade dos tiles afetados.
-    public void Chuvas(List<GameObject> list) 
+    public void Chuvas(List<GameObject>[] biomesArray)
     {
-        for (int i = 0; i < list.Count; i++)
+        foreach (var list in biomesArray)
         {
-            list[i].GetComponent<Tile>().Humidity.MultiplyHumidityByValue = 1.2f;
+            foreach (GameObject tile in list)
+            {
+            }
         }
     }
 
-    //Secas - Diminui em 20% a umidade dos tiles afetados.
-    public void Secas(List<GameObject> list) 
+    public void Secas(List<GameObject>[] biomesArray)
     {
-        for (int i = 0; i < list.Count; i++)
+        foreach (var list in biomesArray)
         {
-            list[i].GetComponent<Tile>().Humidity.MultiplyHumidityByValue = 0.8f;
+            foreach (GameObject tile in list)
+            {
+            }
         }
     }
 
-    //EVENTOS MAIORES
-
-    //Desertificação - Aumenta a temperatura em 75% e diminuição da umidade em 75% dentro dos tiles de transição.Transforma a região afetada em uma área de Caatinga.
-    public void Desertificação(List<GameObject> list) 
+    public void Desertificacao(List<GameObject>[] biomesArray)
     {
-        for (int i = 0; i < list.Count; i++)
+        foreach (var list in biomesArray)
         {
-            list[i].GetComponent<Tile>().Temperature.MultiplyTemperatureByValue = 1.75f;
-            list[i].GetComponent<Tile>().Humidity.MultiplyHumidityByValue = 0.25f;
-            list[i].GetComponent<Tile>().IsUnderDesastre = true;
+            foreach (GameObject tile in list)
+            {
+            }
         }
     }
 
-
-
-    //Alagamentos - Aumenta a temperatura em 75% e aumento da umidade em 75% dentro dos tiles de transição.Transforma a região afetada em uma área de Pantanal
-    public void Alagamentos(List<GameObject> list) 
+    public void Alagamentos(List<GameObject>[] biomesArray)
     {
-        for (int i = 0; i < list.Count; i++)
+        foreach (var list in biomesArray)
         {
-            list[i].GetComponent<Tile>().Temperature.MultiplyTemperatureByValue = 1.75f;
-            list[i].GetComponent<Tile>().Humidity.MultiplyHumidityByValue = 1.75f;
-            list[i].GetComponent<Tile>().IsUnderDesastre = true;
+            foreach (GameObject tile in list)
+            {
+            }
         }
     }
 
-    //Geadas - Diminuição da temperatura em 75% e diminuição da umidade em 75% dentro dos tiles de transição.Transforma a região afetada em uma área de Mata das Araucárias
-    public void Geadas(List<GameObject> list) 
+    public void Geadas(List<GameObject>[] biomesArray)
     {
-        for (int i = 0; i < list.Count; i++)
+        foreach (var list in biomesArray)
         {
-            list[i].GetComponent<Tile>().Temperature.MultiplyTemperatureByValue = 0.25f;
-            list[i].GetComponent<Tile>().Humidity.MultiplyHumidityByValue = 0.25f;
-            list[i].GetComponent<Tile>().IsUnderDesastre = true;
+            foreach (GameObject tile in list)
+            {
+            }
         }
     }
 
-    //Tempestades - Diminuição da temperatura em 75% e aumento da umidade em 75% dentro dos tiles de transição.Transforma a região afetada em uma área de Mata Atlântica
-    public void Tempestades(List<GameObject> list) 
+    public void Tempestades(List<GameObject>[] biomesArray)
     {
-        for (int i = 0; i < list.Count; i++)
+        foreach (var list in biomesArray)
         {
-            list[i].GetComponent<Tile>().Temperature.MultiplyTemperatureByValue = 0.25f;
-            list[i].GetComponent<Tile>().Humidity.MultiplyHumidityByValue = 1.75f;
-            list[i].GetComponent<Tile>().IsUnderDesastre = true;
+            foreach (GameObject tile in list)
+            {
+            }
         }
-    }
-
-    private void Awake()
-    {
-        BuscarTiles();
     }
 }
