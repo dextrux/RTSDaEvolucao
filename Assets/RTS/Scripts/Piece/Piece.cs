@@ -73,8 +73,8 @@ public class Piece : MonoBehaviour
     #region Actions
     public IEnumerator Walk(Piece piece, GameObject targetTile, bool useEnergy)
     {
-        if (!useEnergy && (!piece.Resting || !LoseEnergyToAct(piece.gameObject, 1)))
-            yield break;
+        //if (!useEnergy && (!piece.Resting || !LoseEnergyToAct(piece.gameObject, 1)))
+        //    yield break;
 
         Tile currentTile = piece.PieceRaycastForTile();
         currentTile.Owner = Owner.None;
@@ -91,6 +91,7 @@ public class Piece : MonoBehaviour
         }
         piece.transform.position = targetPos;
         piece.PieceRaycastForTile().Owner = piece.Owner;
+        piece.IsDuringAction = false;
     }
 
     public void Eat(GameObject piece, GameObject tile)
@@ -125,6 +126,10 @@ public class Piece : MonoBehaviour
         {
             pieceScript.StartCoroutine(Walk(pieceScript, tile, true));
         }
+        else
+        {
+            pieceScript.IsDuringAction = false;
+        }
     }
     public void Rest(GameObject piece)
     {
@@ -155,6 +160,7 @@ public class Piece : MonoBehaviour
             GameObject.Destroy(defender.gameObject);
             attacker.StartCoroutine(Walk(attacker,targetTile, true));
         }
+        attacker.IsDuringAction = false;
     }
 
     public void Reproduce(GameObject father, GameObject motherTile, List<GameObject> tilesAvailable)
@@ -163,8 +169,12 @@ public class Piece : MonoBehaviour
         Piece motherScript = motherTile.GetComponent<Tile>().TileRaycastForPiece();
         GameObject selectedTile = tilesAvailable[UnityEngine.Random.Range(0, tilesAvailable.Count)];
         GameObject offspring = GameObject.Instantiate(father, selectedTile.transform.position + Vector3.up * 5, Quaternion.identity);
-
-        Piece son = offspring.AddComponent<Piece>();
+        Piece offspringScript = offspring.GetComponent<Piece>();
+        Piece.InicializarPiece(offspring, offspringScript.PieceRaycastForTile().gameObject, fatherScript.Diet, fatherScript.Owner, 1);
+        fatherScript.Fertility.CurrentBarValue = 0;
+        motherScript.Fertility.CurrentBarValue = 0;
+        fatherScript.IsDuringAction = false;
+        Piece.SetParent(offspring, father.transform.parent.gameObject);
     }
 
     private static bool LoseEnergyToAct(GameObject piece, float actionFactor)
@@ -191,7 +201,7 @@ public class Piece : MonoBehaviour
     #endregion
 
     #region Métodos de Inicalização
-    private static void InicializarPiece(GameObject piece,GameObject tile, PieceDiet pieceDiet, Owner owner, int level)
+    public static void InicializarPiece(GameObject piece,GameObject tile, PieceDiet pieceDiet, Owner owner, int level)
     {
         Piece pieceScript = piece.GetComponent<Piece>();      
         pieceScript._biomeReferences = GameObject.FindFirstObjectByType<BiomeReferences>();
@@ -202,11 +212,17 @@ public class Piece : MonoBehaviour
         pieceScript.Diet = pieceDiet;
         pieceScript.Owner =  owner;
         PieceLevelHandler.SetPieceAttributes(pieceScript, level);
-        pieceScript._renderer.material.color = pieceScript._ownerReference.GetColor(pieceScript.Owner);
+        pieceScript._renderer.material = pieceScript._ownerReference.GetColor(pieceScript.Owner);
         pieceScript.Humidity = new EnviromentStatus(pieceScript.PieceRaycastForTile().Humidity);
         pieceScript.Temperature = new EnviromentStatus(pieceScript.PieceRaycastForTile().Temperature);
         pieceScript.SetDietMultipliers();
+        pieceScript.PieceRaycastForTile().Owner = pieceScript.Owner;
+        pieceScript.IsDuringAction = false;
+        GameObject.FindFirstObjectByType<RoundManager>().AdicionarPieceEmLista(pieceScript.Owner, piece);
+        
     }
+
+    public static void SetParent(GameObject parent, GameObject son) { parent.transform.SetParent(son.transform); }
     #endregion
 
     #region Métodos de Raycast

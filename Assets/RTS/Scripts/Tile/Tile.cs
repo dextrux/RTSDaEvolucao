@@ -67,7 +67,7 @@ public class Tile : MonoBehaviour
     {
         GetComponent<Renderer>().material.color = Color.green;
         TileTypeReferences tileTypeReferences = FindObjectOfType<TileTypeReferences>();
-
+        Debug.Log("Entrei");
         foreach (var tile in _tilesAdjacentes)
         {
             tile.GetComponent<Renderer>().material = tileTypeReferences.GetGlowingColor(tile);

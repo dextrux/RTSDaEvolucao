@@ -3,8 +3,8 @@
 public class OwnerReference : MonoBehaviour
 {
     [SerializeField]
-    public  UnityEngine.Color[] ownerColor = new UnityEngine.Color[System.Enum.GetValues(typeof(Owner)).Length];
-    public  UnityEngine.Color GetColor(Owner owner)
+    public Material[] ownerColor = new Material[System.Enum.GetValues(typeof(Owner)).Length];
+    public Material GetColor(Owner owner)
     {
         return owner switch
         {
@@ -14,14 +14,13 @@ public class OwnerReference : MonoBehaviour
             Owner.P4 => ownerColor[3],
             Owner.P5 => ownerColor[4],
             _ =>
-            UnityEngine.Color.black
+            null
         };
     }
 
-    public  void SetOwnerColors(Owner owner, Material referenceMaterial)
+    public void SetOwnerColors(Owner owner, Material referenceMaterial)
     {
-        UnityEngine.Color color = referenceMaterial.color;
-        ownerColor[(int)owner] = color;
+        ownerColor[(int)owner] = referenceMaterial;
     }
 
     [SerializeField]

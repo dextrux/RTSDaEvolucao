@@ -196,8 +196,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 42698648}
-  - component: {fileID: 42698647}
   - component: {fileID: 42698649}
+  - component: {fileID: 42698647}
   - component: {fileID: 42698650}
   - component: {fileID: 42698654}
   - component: {fileID: 42698653}
@@ -248,6 +248,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a62b9fecdb25654ba60d8be9751178f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _maxTurnos: 15
+  _periodicidadeDesastreMenor: 5
+  _periodicidadeDesastreMaior: 10
+  _quantidadeDeComidaSpawn: 0
+  _quantidadeDePontosMutagenicosSpawn: 0
+  _currentTurno: 0
+  _pieceHeight: {x: 0, y: 5, z: 0}
+  owners: 0000000000000000000000000000000000000000
+  MainCam: {fileID: 0}
+  _biomaOne: []
+  _biomaTwo: []
+  _biomaThree: []
+  _biomaFour: []
+  _biomaFive: []
+  _p1Pieces: []
+  _p2Pieces: []
+  _p3Pieces: []
+  _p4Pieces: []
+  _p5Pieces: []
+  _tilesUnderBigDissaster: []
+  _tilesUnderSmallDissaster: []
+  _indexDesastreMenor: 0
+  _indexDesastreMaior: 0
+  pcPrefab: {fileID: 2846273823484164244, guid: 38c3adbd388be794fbf3df61f5921c94,
+    type: 3}
+  npcPrefabPiece: {fileID: 0}
+  parentP1: {fileID: 927500307}
+  parentP2: {fileID: 1196961227}
+  parentP3: {fileID: 982122715}
+  parentP4: {fileID: 1707048701}
+  parentP5: {fileID: 219131374}
+  _totensAtivos: []
 --- !u!114 &42698650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -261,12 +293,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ownerColor:
-  - {r: 0, g: 0, b: 0, a: 0}
-  - {r: 0, g: 0, b: 0, a: 0}
-  - {r: 0, g: 0, b: 0, a: 0}
-  - {r: 0, g: 0, b: 0, a: 0}
-  - {r: 0, g: 0, b: 0, a: 0}
-  - {r: 0, g: 0, b: 0, a: 0}
+  - {fileID: 2100000, guid: b1e10173b76384641920d7f3271420ae, type: 2}
+  - {fileID: 2100000, guid: 0d8780e3a1555e4418ae5f568f91537e, type: 2}
+  - {fileID: 2100000, guid: 41287dd249f9b6a4fbeebf9db67f4824, type: 2}
+  - {fileID: 2100000, guid: 4b88f169108ac894abcdd8889e4c45ad, type: 2}
+  - {fileID: 2100000, guid: 37efca0d776f1044a9d39c1148647d49, type: 2}
+  - {fileID: 0}
   ownerGlowingColor:
   - {fileID: 2100000, guid: fdcccef68f78c194f82b35ecefe76d60, type: 2}
   - {fileID: 2100000, guid: c3f2c38fd88ead242b660d722299f196, type: 2}
@@ -287,22 +319,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totemTypeMaterials:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2100000, guid: d8272b4d0422058408711e2fc7c092f4, type: 2}
+  - {fileID: 2100000, guid: 8d861856ceb49634bbf25ed96361136b, type: 2}
+  - {fileID: 2100000, guid: 07e2291203db7e34486dd6ba035d78b3, type: 2}
+  - {fileID: 2100000, guid: cf8a8a40d76b1844bb33b0042065905c, type: 2}
+  - {fileID: 2100000, guid: ac32d4d4112507c4780063ee19740f4f, type: 2}
+  - {fileID: 2100000, guid: 520db9344ef7d034ab7983a1d76a73de, type: 2}
+  - {fileID: 2100000, guid: 935b09dc8eb0362418e18ea87147ffb4, type: 2}
   - {fileID: 0}
   totemTypeMesh:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
   - {fileID: 0}
 --- !u!114 &42698653
 MonoBehaviour:
@@ -317,15 +349,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileTypeColor:
-  - {r: 0, g: 0, b: 0, a: 0}
-  - {r: 0, g: 0, b: 0, a: 0}
-  - {r: 0, g: 0, b: 0, a: 0}
-  - {r: 0, g: 0, b: 0, a: 0}
+  - {fileID: 2100000, guid: be0907a5013a1e143bdbd2358628f280, type: 2}
+  - {fileID: 2100000, guid: 26986b0a7ddc5c14cbdbfae179bd88d0, type: 2}
+  - {fileID: 2100000, guid: 935b09dc8eb0362418e18ea87147ffb4, type: 2}
+  - {fileID: 2100000, guid: 8c91fc9029245814badfe0db0f9c747c, type: 2}
   tileTypeGlowingColor:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 7bdc748972f906445a80528b5bb8ce64, type: 2}
+  - {fileID: 2100000, guid: 4607455d8f19c6a41a00954070ae0750, type: 2}
+  - {fileID: 2100000, guid: 5ed4bb59312fb524bad6ad2f2d8387ff, type: 2}
+  - {fileID: 2100000, guid: 25844a7159c547342aca1ef40f14509b, type: 2}
 --- !u!114 &42698654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -472,7 +504,7 @@ GameObject:
   m_Component:
   - component: {fileID: 219131375}
   m_Layer: 0
-  m_Name: NPC
+  m_Name: P5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -625,79 +657,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1409623365}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &958902671
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 65281919206067021, guid: 38c3adbd388be794fbf3df61f5921c94,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 12.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 65281919206067021, guid: 38c3adbd388be794fbf3df61f5921c94,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 65281919206067021, guid: 38c3adbd388be794fbf3df61f5921c94,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 13.25019
-      objectReference: {fileID: 0}
-    - target: {fileID: 65281919206067021, guid: 38c3adbd388be794fbf3df61f5921c94,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 65281919206067021, guid: 38c3adbd388be794fbf3df61f5921c94,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 65281919206067021, guid: 38c3adbd388be794fbf3df61f5921c94,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 65281919206067021, guid: 38c3adbd388be794fbf3df61f5921c94,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 65281919206067021, guid: 38c3adbd388be794fbf3df61f5921c94,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 65281919206067021, guid: 38c3adbd388be794fbf3df61f5921c94,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 65281919206067021, guid: 38c3adbd388be794fbf3df61f5921c94,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1573071855113682017, guid: 38c3adbd388be794fbf3df61f5921c94,
-        type: 3}
-      propertyPath: _owner
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2846273823484164244, guid: 38c3adbd388be794fbf3df61f5921c94,
-        type: 3}
-      propertyPath: m_Name
-      value: Piece
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 38c3adbd388be794fbf3df61f5921c94, type: 3}
 --- !u!1 &961739749
 GameObject:
   m_ObjectHideFlags: 0
@@ -713,7 +672,7 @@ GameObject:
   - component: {fileID: 961739755}
   - component: {fileID: 961739756}
   m_Layer: 0
-  m_Name: P1 Cam
+  m_Name: Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1192,4 +1151,3 @@ SceneRoots:
   - {fileID: 42698648}
   - {fileID: 1409623365}
   - {fileID: 228831713}
-  - {fileID: 958902671}

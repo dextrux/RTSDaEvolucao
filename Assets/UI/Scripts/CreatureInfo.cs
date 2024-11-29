@@ -67,7 +67,6 @@ public class CreatureInfo : MonoBehaviour
     }
     private void OnClickAction(ClickEvent evt)
     {
-        //_actualPiece.PieceRaycastForTile().ColorirTilesDuranteSeleção();
         gameObject.SetActive(false);
     }
     public void SetPiece(Piece piece)

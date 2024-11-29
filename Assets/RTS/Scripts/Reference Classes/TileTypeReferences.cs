@@ -2,8 +2,8 @@
 public class TileTypeReferences : MonoBehaviour
 {
     [SerializeField]
-    public UnityEngine.Color[] tileTypeColor = new UnityEngine.Color[System.Enum.GetValues(typeof(TileType)).Length];
-    public UnityEngine.Color GetColor(GameObject tile)
+    public Material[] tileTypeColor = new Material[System.Enum.GetValues(typeof(TileType)).Length];
+    public Material GetColor(GameObject tile)
     {
         Tile tileScript = tile.GetComponent<Tile>();
         TileType tileType = tileScript.TileType;
@@ -16,14 +16,13 @@ public class TileTypeReferences : MonoBehaviour
             TileType.Mutagêncio => tileTypeColor[2],
             TileType.Barreira => tileTypeColor[3],
             _ =>
-            UnityEngine.Color.black,
+            null
         };
     }
 
-    public  void SetOwnerColors(TileType tileType, Material referenceColor)
+    public void SetOwnerColors(TileType tileType, Material referenceColor)
     {
-        UnityEngine.Color color = referenceColor.color;
-        tileTypeColor[(int)tileType] = color;
+        tileTypeColor[(int)tileType] = referenceColor;
     }
 
     [SerializeField]
