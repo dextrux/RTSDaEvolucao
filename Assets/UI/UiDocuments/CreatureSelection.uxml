@@ -1,0 +1,70 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/StyleSheets/CreatureSelectionStyle.uss?fileID=7433441132597879392&amp;guid=8daeb0be67d149543879e414eea17feb&amp;type=3#CreatureSelectionStyle" />
+    <ui:VisualElement name="mainContainer" style="flex-grow: 1; -unity-font: url(&apos;project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.ttf?fileID=12800000&amp;guid=22aed22e579f47048b64da77dc6349e6&amp;type=3#Bodo Amat&apos;); -unity-font-definition: initial; -unity-text-align: middle-center; -unity-text-outline-color: rgb(59, 50, 34); -unity-text-outline-width: 4px; color: rgb(243, 237, 237); font-size: 40%; flex-direction: column;">
+        <ui:VisualElement name="header" style="flex-grow: 1; height: 40%; padding-top: 2%; flex-direction: row;">
+            <ui:VisualElement name="topVisualSelect" class="external-player-container" style="flex-grow: 1; justify-content: space-between; flex-direction: row;">
+                <ui:VisualElement style="flex-grow: 1; width: 50%; padding-right: 2%;">
+                    <ui:Slider picking-mode="Ignore" value="50" high-value="100" name="p3RedSlider" label="Vermelho" style="height: 33%;" />
+                    <ui:Slider picking-mode="Ignore" value="50" high-value="100" name="p3GreenSlider" label="Verde" style="height: 33%;" />
+                    <ui:Slider picking-mode="Ignore" value="50" high-value="100" name="p3BlueSlider" label="Azul" style="height: 33%;" />
+                </ui:VisualElement>
+                <ui:VisualElement style="flex-grow: 1; flex-direction: row; height: auto; width: 70%; justify-content: space-around; align-self: auto; align-items: center; padding-left: 2%;">
+                    <ui:VisualElement style="flex-grow: 1; width: 50%; height: 80%;">
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="p3Skin1" style="height: 50%; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; background-image: url(&apos;project://database/Assets/RTS/Assets/Material/Texture/Creature/CreatureSkin_4.png?fileID=2800000&amp;guid=85c71facb77d94a48ac2270778cd004c&amp;type=3#CreatureSkin_4&apos;); -unity-background-scale-mode: scale-and-crop;" />
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="p3Skin2" style="height: 50%; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; background-image: url(&apos;project://database/Assets/RTS/Assets/Material/Texture/Creature/CreatureSkin_3.png?fileID=2800000&amp;guid=30500f2998ba7c5418977a668fd947e7&amp;type=3#CreatureSkin_3&apos;); -unity-background-scale-mode: scale-and-crop;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement style="flex-grow: 1; width: 50%; height: 80%;">
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="p3Skin3" style="height: 50%; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; background-image: url(&apos;project://database/Assets/RTS/Assets/Material/Texture/Creature/CreatureSkin.png?fileID=2800000&amp;guid=a066f4e2aa9d4bb428af5001547676ce&amp;type=3#CreatureSkin&apos;); -unity-background-scale-mode: scale-and-crop;" />
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="p3Skin4" style="height: 50%; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; background-image: url(&apos;project://database/Assets/RTS/Assets/Material/Texture/Creature/CreatureSkin_2.png?fileID=2800000&amp;guid=cd4a22e54e026ce4183c8d0850c76056&amp;type=3#CreatureSkin_2&apos;); -unity-background-scale-mode: scale-and-crop;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1;">
+                <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+                <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1; height: 60%; flex-direction: row;">
+            <ui:VisualElement name="player1Container" style="flex-grow: 1; margin-right: 1%; margin-left: 1%; width: 18%;">
+                <ui:VisualElement name="body" style="flex-grow: 1; height: 60%;" />
+                <ui:VisualElement name="footer" style="flex-grow: 1; height: 10%; width: 100%; margin-bottom: 10%; padding-top: 2%; padding-right: 2%; padding-bottom: 2%; padding-left: 2%;">
+                    <ui:VisualElement name="player1Container" class="external-player-container">
+                        <ui:Button text="Jogador\n1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="player1btn" class="internal-player-active-button" style="font-size: 30%;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="player2Container" style="flex-grow: 1; width: 18%; margin-right: 1%; margin-left: 1%;">
+                <ui:VisualElement name="body" style="flex-grow: 1; height: 60%;" />
+                <ui:VisualElement name="footer" style="flex-grow: 1; height: 10%; margin-bottom: 10%;">
+                    <ui:VisualElement name="player2Container" class="external-player-container">
+                        <ui:Button text="Jogador\n2" parse-escape-sequences="true" display-tooltip-when-elided="true" name="player2btn" class="internal-player-active-button" style="font-size: 30%;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="player3Container" style="flex-grow: 1; width: 18%; margin-right: 1%; margin-left: 1%;">
+                <ui:VisualElement name="body" style="flex-grow: 1; height: 60%;" />
+                <ui:VisualElement name="footer" style="flex-grow: 1; height: 10%; margin-bottom: 10%;">
+                    <ui:VisualElement name="player3Container" class="external-player-inactive-container">
+                        <ui:Button text="Inativo" parse-escape-sequences="true" display-tooltip-when-elided="true" name="player3btn" class="internal-player-active-button internal-player-inactive-button" style="font-size: 40%;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="player4Container" style="flex-grow: 1; width: 18%; margin-right: 1%; margin-left: 1%;">
+                <ui:VisualElement name="body" style="flex-grow: 1; height: 60%;" />
+                <ui:VisualElement name="footer" style="flex-grow: 1; height: 10%; margin-bottom: 10%;">
+                    <ui:VisualElement name="player4Container" class="external-player-inactive-container">
+                        <ui:Button text="Inativo" parse-escape-sequences="true" display-tooltip-when-elided="true" name="player4btn" class="internal-player-inactive-button" style="font-size: 40%;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="player5Container" style="flex-grow: 1; width: 18%; margin-right: 1%; margin-left: 1%;">
+                <ui:VisualElement name="body" style="flex-grow: 1; height: 60%;" />
+                <ui:VisualElement name="footer" style="flex-grow: 1; height: 10%; margin-bottom: 10%;">
+                    <ui:VisualElement name="player5Container" class="external-player-inactive-container">
+                        <ui:Button text="Inativo" parse-escape-sequences="true" display-tooltip-when-elided="true" name="player5btn" class="internal-player-inactive-button" style="font-size: 40%;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
