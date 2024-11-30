@@ -130,8 +130,8 @@ public class RoundManager : MonoBehaviour
     #region Rotinas Unity
     private void Awake()
     {
-        owners.Add(Owner.P1); 
-        owners.Add(Owner.P2); 
+        owners.Add(Owner.P1);
+        owners.Add(Owner.P2);
         //owners.Add(Owner.P3); 
         //owners.Add(Owner.P4); 
         //owners.Add(Owner.P5); 
@@ -183,7 +183,7 @@ public class RoundManager : MonoBehaviour
             case Owner.P3:
                 Piece.SetParent(newObject, parentP3);
                 break;
-            case Owner.P4: 
+            case Owner.P4:
                 Piece.SetParent(newObject, parentP4);
                 break;
             case Owner.P5:
@@ -199,7 +199,7 @@ public class RoundManager : MonoBehaviour
             PieceDiet.Herbivore,
             owner,
             1
-        );      
+        );
     }
 
     #endregion
@@ -425,7 +425,7 @@ public class RoundManager : MonoBehaviour
     #endregion
 
     #region Turnos
-    private void PrimeiroTurno() 
+    private void PrimeiroTurno()
     {
         //Blah
         InstanciarPeçasParaJogo(1, owners);
@@ -446,7 +446,7 @@ public class RoundManager : MonoBehaviour
         AtivarTotensPontosMutagenicos(SortearTilesRandom(_quantidadeDePontosMutagenicosSpawn));
     }
 
-    private void TurnosDez() 
+    private void TurnosDez()
     {
         DesativarTodosTotensAtivos(_TotensAtivos);
         AtivarTotensComida(SortearTilesRandom(_quantidadeDeComidaSpawn));
@@ -455,50 +455,49 @@ public class RoundManager : MonoBehaviour
     }
     public void PassarTurno()
     {
-        if (GameObject.FindAnyObjectByType<InGameUi>()._NextTurnAdvice.ClassListContains("turn-screen-open"))
+        RoundEndPiecesRoutine();
+        if ((currentIndexOwner + 1) > (owners.Count - 1))
         {
-            if ((currentIndexOwner + 1) > (owners.Count - 1))
+            currentIndexOwner = 0;
+            _currentTurno += 1;
+            //Desastres
+            if (_currentTurno % 5 == 0 && _currentTurno % 2 != 0)
             {
-                currentIndexOwner = 0;
-                _currentTurno += 1;
-                //Desastres
-                if (_currentTurno % 5 == 0 && _currentTurno % 2 != 0)
-                {
-                    TurnosCinco();
-                }
-                if (_currentTurno % 5 == 0 && _currentTurno % 2 == 0)
-                {
-                    TurnosDez();
-                }
-                if (_currentTurno % 7 == 0 && _isUnderSmallDisaster == true)
-                {
-                    AcabarDesastreMenor(GetNestedList(_tilesUnderSmallDissaster), _IndexDesastreMenor);
-                }
-                if (_currentTurno % 14 == 0 && _isUnderBigDisaster == true)
-                {
-                    AcabarDesastreMaior(GetNestedList(_tilesUnderBigDissaster), _IndexDesastreMaior);
-                }
-                if (_CurrentTurno >= _MaxTurnos)
-                {
-                    GameWin();
-                }
+                TurnosCinco();
             }
-            else
+            if (_currentTurno % 5 == 0 && _currentTurno % 2 == 0)
             {
-                currentIndexOwner += 1;
+                TurnosDez();
             }
-
-            _roundOwner = owners[currentIndexOwner];
-            Debug.Log(owners[currentIndexOwner]);
-            MainCam.GetComponent<PlayerRaycast>().playerCamOwner = _roundOwner;
+            if (_currentTurno % 7 == 0 && _isUnderSmallDisaster == true)
+            {
+                AcabarDesastreMenor(GetNestedList(_tilesUnderSmallDissaster), _IndexDesastreMenor);
+            }
+            if (_currentTurno % 14 == 0 && _isUnderBigDisaster == true)
+            {
+                AcabarDesastreMaior(GetNestedList(_tilesUnderBigDissaster), _IndexDesastreMaior);
+            }
+            if (_CurrentTurno >= _MaxTurnos)
+            {
+                GameWin();
+            }
         }
+        else
+        {
+            currentIndexOwner += 1;
+        }
+
+        _roundOwner = owners[currentIndexOwner];
+        Debug.Log(owners[currentIndexOwner]);
+        MainCam.GetComponent<PlayerRaycast>().playerCamOwner = _roundOwner;
+        
     }
-    private bool GameOver(Owner owner) 
+    private bool GameOver(Owner owner)
     {
         bool isGameOver = false;
         switch (owner)
         {
-            case Owner.P1: 
+            case Owner.P1:
                 bool isGameOver1 = _P1Pieces.Count == 0 ? true : false;
                 isGameOver = isGameOver1;
                 break;
@@ -524,8 +523,8 @@ public class RoundManager : MonoBehaviour
         }
         return isGameOver;
     }
-    private void GameWin() 
-    { 
+    private void GameWin()
+    {
         List<Owner> WinnerList = new List<Owner>();
         foreach (var owner in owners)
         {
@@ -537,11 +536,41 @@ public class RoundManager : MonoBehaviour
         }
     }
 
+    private void RoundEndPiecesRoutine()
+    {
+        List<GameObject> pieces = new List<GameObject>();
+        switch (owners[currentIndexOwner])
+        {
+            case Owner.P1:
+                pieces = _P1Pieces;
+                break;
+            case Owner.P2:
+                pieces = _P2Pieces;
+                break;
+            case Owner.P3:
+                pieces = _P3Pieces;
+                break;
+            case Owner.P4:
+                pieces = _P4Pieces;
+                break;
+            case Owner.P5:
+                pieces = _P5Pieces;
+                break;
+            default:
+                Debug.Log("Erro na rotina de final de turno (seleção por owner)");
+                break;
+        }
+
+        foreach (var piece in pieces)
+        {
+            piece.GetComponent<Piece>().EndTurnRoutine();
+        }
+    }
     #endregion
 
     #region Listas
     // Método para criar uma lista aninhada fictícia (apenas para teste)
-    public List<List<GameObject>> GetNestedList(List<GameObject> innerList )
+    public List<List<GameObject>> GetNestedList(List<GameObject> innerList)
     {
         List<List<GameObject>> nestedList = new List<List<GameObject>>();
 
@@ -575,13 +604,13 @@ public class RoundManager : MonoBehaviour
 
     public void AdicionarPieceEmLista(Owner owner, GameObject piece)
     {
-        switch (owner) 
+        switch (owner)
         {
             case Owner.P1:
                 if (!_p1Pieces.Contains(piece))
                 {
                     _p1Pieces.Add(piece);
-                }          
+                }
                 break;
             case Owner.P2:
                 if (!_p2Pieces.Contains(piece))
@@ -607,12 +636,51 @@ public class RoundManager : MonoBehaviour
                     _p5Pieces.Add(piece);
                 }
                 break;
-            default: Debug.Log("Exceção encontrada ao adicionar Piece em lista");
+            default:
+                Debug.Log("Exceção encontrada ao adicionar Piece em lista");
                 break;
         }
     }
 
-    
+    public void RemoverPieceEmLista(Owner owner, GameObject piece)
+    {
+        switch (owner)
+        {
+            case Owner.P1:
+                if (_p1Pieces.Contains(piece))
+                {
+                    _p1Pieces.Remove(piece);
+                }
+                break;
+            case Owner.P2:
+                if (_p2Pieces.Contains(piece))
+                {
+                    _p2Pieces.Remove(piece);
+                }
+                break;
+            case Owner.P3:
+                if (_p3Pieces.Contains(piece))
+                {
+                    _p3Pieces.Remove(piece);
+                }
+                break;
+            case Owner.P4:
+                if (_p4Pieces.Contains(piece))
+                {
+                    _p4Pieces.Remove(piece);
+                }
+                break;
+            case Owner.P5:
+                if (_p5Pieces.Contains(piece))
+                {
+                    _p5Pieces.Remove(piece);
+                }
+                break;
+            default:
+                Debug.Log("Exceção encontrada ao remover Piece em lista");
+                break;
+        }
+    }
 
     #endregion
 

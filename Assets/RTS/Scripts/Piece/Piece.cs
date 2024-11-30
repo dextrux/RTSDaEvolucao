@@ -73,8 +73,8 @@ public class Piece : MonoBehaviour
     #region Actions
     public IEnumerator Walk(Piece piece, GameObject targetTile, bool useEnergy)
     {
-        //if (!useEnergy && (!piece.Resting || !LoseEnergyToAct(piece.gameObject, 1)))
-        //    yield break;
+        if (!useEnergy && (piece.Resting || !LoseEnergyToAct(piece.gameObject, 1)))
+            yield break;
 
         Tile currentTile = piece.PieceRaycastForTile();
         currentTile.Owner = Owner.None;
@@ -99,7 +99,7 @@ public class Piece : MonoBehaviour
         Piece pieceScript = piece.GetComponent<Piece>();
         Tile targetTile = pieceScript.PieceRaycastForTile();
 
-        if (!pieceScript.Resting)
+        if (pieceScript.Resting)
         {
             bool hasEnergy = LoseEnergyToAct(piece, 2);
             pieceScript.Energy.CurrentBarValue = hasEnergy ? pieceScript.Energy.CurrentBarValue : 0;
@@ -139,7 +139,7 @@ public class Piece : MonoBehaviour
     public void Fight(GameObject attacker, GameObject targetTile)
     {
         Piece attackerScript = attacker.GetComponent<Piece>();
-        if (!attackerScript.Resting && LoseEnergyToAct(attacker, 1))
+        if (attackerScript.Resting && LoseEnergyToAct(attacker, 1))
         {
             Piece opponent = targetTile.GetComponent<Tile>().TileRaycastForPiece();
             if (opponent != null)
@@ -155,9 +155,12 @@ public class Piece : MonoBehaviour
     {
         if (attacker.Health.CurrentBarValue == attacker.Health.MinBarValue)
             GameObject.Destroy(attacker.gameObject);
+        GameObject.FindAnyObjectByType<RoundManager>().RemoverPieceEmLista(attacker.Owner, attacker.gameObject);
         if (defender.Health.CurrentBarValue == defender.Health.MinBarValue)
         {
             GameObject.Destroy(defender.gameObject);
+            GameObject.FindAnyObjectByType<RoundManager>().RemoverPieceEmLista(defender.Owner, defender.gameObject);
+
             attacker.StartCoroutine(Walk(attacker,targetTile, true));
         }
         attacker.IsDuringAction = false;
@@ -180,17 +183,11 @@ public class Piece : MonoBehaviour
     private static bool LoseEnergyToAct(GameObject piece, float actionFactor)
     {
         Piece pieceScript = piece.GetComponent<Piece>();
-        if (pieceScript.Energy.CurrentBarValue == pieceScript.Energy.MinBarValue || pieceScript.Resting)
-            return false;
 
-        Tile tile = pieceScript.PieceRaycastForTile();
-        if (tile == null)
-            return false;
-
-        float energyLoss = actionFactor * (Convert.ToInt32(pieceScript.IsDoente) + 1) *
-                           (Mathf.Abs(tile.Temperature.CurrentValue - pieceScript.Temperature.IdealValue) +
-                            0.4f * Mathf.Abs(tile.Humidity.CurrentValue - pieceScript.Humidity.IdealValue));
-
+        //float energyLoss = actionFactor * (Convert.ToInt32(pieceScript.IsDoente) + 1) *
+        //                   (Mathf.Abs(tile.Temperature.CurrentValue - pieceScript.Temperature.IdealValue) +
+        //                    0.4f * Mathf.Abs(tile.Humidity.CurrentValue - pieceScript.Humidity.IdealValue));
+        float energyLoss = 20;
         if (pieceScript.Energy.CurrentBarValue >= energyLoss)
         {
             pieceScript.Energy.CurrentBarValue -= energyLoss;
@@ -308,6 +305,19 @@ public class Piece : MonoBehaviour
         {
             _isDoente = false;
         }
+    }
+    #endregion
+
+    #region Métodos de turno
+
+    public void EndTurnRoutine()
+    {
+        this._energyBar.CurrentBarValue += 20;
+        this._fertilityBar.CurrentBarValue += 20;
+        this._hungerBar.CurrentBarValue -= 20;
+        this.CheckForIllness();
+        this.Humidity.CurrentValue = this.PieceRaycastForTile().Humidity.CurrentValue;
+        this.Temperature.CurrentValue = this.PieceRaycastForTile().Temperature.CurrentValue;
     }
     #endregion
 }
