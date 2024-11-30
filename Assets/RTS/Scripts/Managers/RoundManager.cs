@@ -5,6 +5,7 @@ using System.Drawing;
 using System.Linq;
 using UnityEditor.Rendering;
 using UnityEngine;
+using UnityEngine.UIElements;
 using static UnityEngine.UI.GridLayoutGroup;
 
 public class RoundManager : MonoBehaviour
@@ -26,7 +27,7 @@ public class RoundManager : MonoBehaviour
     [SerializeField]
     Vector3 _pieceHeight = new Vector3(0f, 5f, 0f);
     [SerializeField]
-    Owner[] owners = new Owner[5];
+    List<Owner> owners = new List<Owner>();
     public Camera MainCam;
     private Owner _roundOwner;
     private int currentIndexOwner;
@@ -75,6 +76,8 @@ public class RoundManager : MonoBehaviour
     int _indexDesastreMenor;
     [SerializeField]
     int _indexDesastreMaior;
+    private bool _isUnderBigDisaster;
+    private bool _isUnderSmallDisaster;
     #endregion
 
     #region Prefabs
@@ -127,22 +130,24 @@ public class RoundManager : MonoBehaviour
     #region Rotinas Unity
     private void Awake()
     {
-        owners[0] = Owner.P1;
-        owners[1] = Owner.P2;
-        owners[2] = Owner.P3;
-        owners[3] = Owner.P4;
-        owners[4] = Owner.P5;
+        owners.Add(Owner.P1); 
+        owners.Add(Owner.P2); 
+        //owners.Add(Owner.P3); 
+        //owners.Add(Owner.P4); 
+        //owners.Add(Owner.P5); 
         BuscarTiles();
     }
 
     private void Start()
     {
+        _quantidadeDePontosMutagenicosSpawn = owners.Count * 3;
+        _quantidadeDeComidaSpawn = owners.Count * 5;
         PrimeiroTurno();
     }
     #endregion
 
     #region Pieces
-    public void InstanciarPeçasParaJogo(int quantidade, Owner[] owners)
+    public void InstanciarPeçasParaJogo(int quantidade, List<Owner> owners)
     {
         for (int i = 0; i < quantidade; i++)
         {
@@ -360,21 +365,27 @@ public class RoundManager : MonoBehaviour
     void AplicarEfeitosDesastreMenor(List<List<GameObject>> bioma)
     {
         List<GameObject> flatList = GetNestedListFlattened(bioma);
-        // Agora flatList contém todos os GameObjects das listas internas
+        _isUnderSmallDisaster = true;
+        _TilesUnderSmallDissaster = flatList;
         _indexDesastreMenor = BiomeDisasterManager.SortearEventoMenor(flatList);
     }
     void AplicarEfeitosDesastreMaior(List<List<GameObject>> bioma)
     {
+        _isUnderBigDisaster = true;
         List<GameObject> flatList = GetNestedListFlattened(bioma);
+        _TilesUnderBigDissaster = flatList;
         _indexDesastreMaior = BiomeDisasterManager.SortearEventoMaior(flatList);
     }
     void AcabarDesastreMenor(List<List<GameObject>> bioma, int indexDesastreMenor)
     {
         List<GameObject> flatList = GetNestedListFlattened(bioma);
+        _isUnderSmallDisaster = false;
         BiomeDisasterManager.AcabarDesastre(flatList, false, _IndexDesastreMenor);
+
     }
     void AcabarDesastreMaior(List<List<GameObject>> bioma, int indexDesastreMaior)
     {
+        _isUnderBigDisaster = false;
         List<GameObject> flatList = GetNestedListFlattened(bioma);
         BiomeDisasterManager.AcabarDesastre(flatList, true, _indexDesastreMaior);
     }
@@ -392,6 +403,7 @@ public class RoundManager : MonoBehaviour
         {
             TotemType totemType = (TotemType)DefinirProporçãoComida();
             tiles.GetComponent<Tile>().Totem.GetComponent<Totem>().ActivateTotem(totemType);
+            _TotensAtivos.Add(tiles.GetComponent<Tile>().Totem);
         }
     }
     void AtivarTotensPontosMutagenicos(List<GameObject> list)
@@ -400,13 +412,14 @@ public class RoundManager : MonoBehaviour
         {
             TotemType totemType = TotemType.Ponto_Mutagênico;
             tiles.GetComponent<Tile>().Totem.GetComponent<Totem>().ActivateTotem(totemType);
+            _TotensAtivos.Add(tiles.GetComponent<Tile>().Totem);
         }
     }
     void DesativarTodosTotensAtivos(List<GameObject> list)
     {
         foreach (var tiles in list)
         {
-            tiles.GetComponent<Tile>().Totem.GetComponent<Totem>().DeactivateTotem();
+            tiles.GetComponent<Totem>().DeactivateTotem();
         }
     }
     #endregion
@@ -414,59 +427,127 @@ public class RoundManager : MonoBehaviour
     #region Turnos
     private void PrimeiroTurno() 
     {
+        //Blah
         InstanciarPeçasParaJogo(1, owners);
         MainCam.GetComponent<PlayerRaycast>().playerCamOwner = owners[0];
         currentIndexOwner = 0;
         _roundOwner = owners[currentIndexOwner];
+        AtivarTotensComida(SortearTilesRandom(15));
+        AtivarTotensPontosMutagenicos(SortearTilesRandom(15));
+        _CurrentTurno = 1;
 
     }
 
     private void TurnosCinco()
     {
         DesativarTodosTotensAtivos(_TotensAtivos);
-        AtivarTotensComida(SortearTilesRandom(15));
+        AtivarTotensComida(SortearTilesRandom(_quantidadeDeComidaSpawn));
         AplicarEfeitosDesastreMenor(SortearBiomas(1));
-        AtivarTotensPontosMutagenicos(SortearTilesRandom(15));
+        AtivarTotensPontosMutagenicos(SortearTilesRandom(_quantidadeDePontosMutagenicosSpawn));
     }
 
     private void TurnosDez() 
     {
         DesativarTodosTotensAtivos(_TotensAtivos);
-        AtivarTotensComida(SortearTilesRandom(15));
+        AtivarTotensComida(SortearTilesRandom(_quantidadeDeComidaSpawn));
         AplicarEfeitosDesastreMaior(SortearBiomas(1));
-        AtivarTotensPontosMutagenicos(SortearTilesRandom(15));
+        AtivarTotensPontosMutagenicos(SortearTilesRandom(_quantidadeDePontosMutagenicosSpawn));
     }
-    private void PassarTurno()
+    public void PassarTurno()
     {
-        if ((currentIndexOwner += 1) > (owners.Length-1))
+        if (GameObject.FindAnyObjectByType<InGameUi>()._NextTurnAdvice.ClassListContains("turn-screen-open"))
         {
-            currentIndexOwner = 0;
-            _currentTurno += 1;
+            if ((currentIndexOwner + 1) > (owners.Count - 1))
+            {
+                currentIndexOwner = 0;
+                _currentTurno += 1;
+                //Desastres
+                if (_currentTurno % 5 == 0 && _currentTurno % 2 != 0)
+                {
+                    TurnosCinco();
+                }
+                if (_currentTurno % 5 == 0 && _currentTurno % 2 == 0)
+                {
+                    TurnosDez();
+                }
+                if (_currentTurno % 7 == 0 && _isUnderSmallDisaster == true)
+                {
+                    AcabarDesastreMenor(GetNestedList(_tilesUnderSmallDissaster), _IndexDesastreMenor);
+                }
+                if (_currentTurno % 14 == 0 && _isUnderBigDisaster == true)
+                {
+                    AcabarDesastreMaior(GetNestedList(_tilesUnderBigDissaster), _IndexDesastreMaior);
+                }
+                if (_CurrentTurno >= _MaxTurnos)
+                {
+                    GameWin();
+                }
+            }
+            else
+            {
+                currentIndexOwner += 1;
+            }
+
+            _roundOwner = owners[currentIndexOwner];
+            Debug.Log(owners[currentIndexOwner]);
+            MainCam.GetComponent<PlayerRaycast>().playerCamOwner = _roundOwner;
         }
-        else
-        {
-            currentIndexOwner += 1;
-        }
-        
-        _roundOwner = owners[currentIndexOwner];
-        MainCam.GetComponent<PlayerRaycast>().playerCamOwner = _roundOwner;
     }
-    private void GameOver() { }
-    private void GameWin() { }
+    private bool GameOver(Owner owner) 
+    {
+        bool isGameOver = false;
+        switch (owner)
+        {
+            case Owner.P1: 
+                bool isGameOver1 = _P1Pieces.Count == 0 ? true : false;
+                isGameOver = isGameOver1;
+                break;
+            case Owner.P2:
+                bool isGameOver2 = _P1Pieces.Count == 0 ? true : false;
+                isGameOver = isGameOver2;
+                break;
+            case Owner.P3:
+                bool isGameOver3 = _P1Pieces.Count == 0 ? true : false;
+                isGameOver = isGameOver3;
+                break;
+            case Owner.P4:
+                bool isGameOver4 = _P1Pieces.Count == 0 ? true : false;
+                isGameOver = isGameOver4;
+                break;
+            case Owner.P5:
+                bool isGameOver5 = _P1Pieces.Count == 0 ? true : false;
+                isGameOver = isGameOver5;
+                break;
+            default:
+                Debug.Log("Exceção encontrada no owner de GameOver");
+                break;
+        }
+        return isGameOver;
+    }
+    private void GameWin() 
+    { 
+        List<Owner> WinnerList = new List<Owner>();
+        foreach (var owner in owners)
+        {
+            if (!GameOver(owner))
+            {
+                WinnerList.Add(owner);
+                Debug.Log($"{owner} Venceu");
+            }
+        }
+    }
 
     #endregion
 
     #region Listas
     // Método para criar uma lista aninhada fictícia (apenas para teste)
-    public List<List<GameObject>> GetNestedList()
+    public List<List<GameObject>> GetNestedList(List<GameObject> innerList )
     {
         List<List<GameObject>> nestedList = new List<List<GameObject>>();
 
         // Preenche com algumas listas internas fictícias
         for (int i = 0; i < 3; i++) // 3 listas internas
         {
-            List<GameObject> innerList = new List<GameObject>();
-
             for (int j = 0; j < 5; j++) // 5 objetos em cada lista
             {
                 GameObject obj = new GameObject($"Object_{i}_{j}");

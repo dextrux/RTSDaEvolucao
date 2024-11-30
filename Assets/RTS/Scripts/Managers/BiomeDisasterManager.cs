@@ -175,62 +175,270 @@ public class BiomeDisasterManager : MonoBehaviour
 
     public static void Migracao(List<GameObject> biomesArray)
     {
-        // TODO: Implementar lógica de migração
+        List<Totem> totensAtivosCarne = new List<Totem>();
+        List<Totem> totensAtivosVegano = new List<Totem>();
+        List<Totem> totensInativos = new List<Totem>();
+        System.Random r = new System.Random();
+        foreach (var biome in biomesArray)
+        {
+            Totem totem = biome.GetComponent<Tile>().Totem.GetComponent<Totem>();
+            if (totem.isActiveAndEnabled)
+            {
+                //Carne
+                if ((int)totem.TotemType < 3)
+                {
+                    totensAtivosCarne.Add(totem);
+                }
+                //Vegano
+                else if((int)totem.TotemType > 3 && (int)totem.TotemType < 6)
+                {
+                    totensAtivosVegano.Add(totem);
+                }            
+            }
+            else
+            {
+                totensInativos.Add(totem);
+            }         
+        }
+
+        if (totensInativos.Count >= totensAtivosCarne.Count * 1.5f)
+        {
+            for (int i = 0; i < (totensAtivosCarne.Count * 1.5f); i++)
+            {
+                TotemType totemType = (TotemType)r.Next(1, 3);
+                Totem newTotem = totensInativos[r.Next(0, totensInativos.Count)];
+                newTotem.ActivateTotem(totemType);
+                totensInativos.Remove(newTotem);
+            }
+        }
+
+        if (totensInativos.Count >= totensAtivosVegano.Count * 0.5f)
+        {
+            for (int i = 0; i < (totensAtivosVegano.Count * 0.5f); i++)
+            {
+                TotemType totemType = (TotemType)r.Next(3, 6);
+                Totem newTotem = totensInativos[r.Next(0, totensInativos.Count)];
+                newTotem.ActivateTotem(totemType);
+                totensInativos.Remove(newTotem);
+            }
+        }
     }
 
     public static void ReverterMigracao(List<GameObject> biomesArray)
     {
-        // TODO: Implementar lógica para reverter migração
+        List<Totem> totensAtivosCarne = new List<Totem>();
+        List<Totem> totensAtivosVegano = new List<Totem>();
+        List<Totem> totensInativos = new List<Totem>();
+        System.Random r = new System.Random();
+        foreach (var biome in biomesArray)
+        {
+            Totem totem = biome.GetComponent<Tile>().Totem.GetComponent<Totem>();
+            if (totem.isActiveAndEnabled)
+            {
+                //Carne
+                if ((int)totem.TotemType < 3)
+                {
+                    totensAtivosCarne.Add(totem);
+                }
+                //Vegano
+                else if ((int)totem.TotemType > 3 && (int)totem.TotemType < 6)
+                {
+                    totensAtivosVegano.Add(totem);
+                }
+            }
+            else
+            {
+                totensInativos.Add(totem);
+            }
+        }
+
+        if (totensInativos.Count >= totensAtivosCarne.Count * 0.5f)
+        {
+            for (int i = 0; i < (totensAtivosCarne.Count * 0.5f); i++)
+            {
+                TotemType totemType = (TotemType)r.Next(1, 3);
+                Totem newTotem = totensInativos[r.Next(0, totensInativos.Count)];
+                newTotem.ActivateTotem(totemType);
+                totensInativos.Remove(newTotem);
+            }
+        }
+
+        if (totensInativos.Count >= totensAtivosVegano.Count * 1.5f)
+        {
+            for (int i = 0; i < (totensAtivosVegano.Count * 1.5f); i++)
+            {
+                TotemType totemType = (TotemType)r.Next(3, 6);
+                Totem newTotem = totensInativos[r.Next(0, totensInativos.Count)];
+                newTotem.ActivateTotem(totemType);
+                totensInativos.Remove(newTotem);
+            }
+        }
     }
 
     public static void Infestacao(List<GameObject> biomesArray)
     {
-        // TODO: Implementar lógica de infestação
+        List<Totem> totensAtivosCarne = new List<Totem>();
+        List<Totem> totensAtivosVegano = new List<Totem>();
+        List<Totem> totensInativos = new List<Totem>();
+        System.Random r = new System.Random();
+        foreach (var biome in biomesArray)
+        {
+            Totem totem = biome.GetComponent<Tile>().Totem.GetComponent<Totem>();
+            if (totem.isActiveAndEnabled)
+            {
+                //Carne
+                if ((int)totem.TotemType < 3)
+                {
+                    totensAtivosCarne.Add(totem);
+                }
+                //Vegano
+                else if ((int)totem.TotemType > 3 && (int)totem.TotemType < 6)
+                {
+                    totensAtivosVegano.Add(totem);
+                }
+            }
+            else
+            {
+                totensInativos.Add(totem);
+            }
+        }
+
+        if (totensInativos.Count >= totensAtivosCarne.Count * 0.5f)
+        {
+            for (int i = 0; i < (totensAtivosCarne.Count * 0.5f); i++)
+            {
+                TotemType totemType = (TotemType)r.Next(1, 3);
+                Totem newTotem = totensInativos[r.Next(0, totensInativos.Count)];
+                newTotem.ActivateTotem(totemType);
+                totensInativos.Remove(newTotem);
+            }
+        }
+
+        if (totensInativos.Count >= totensAtivosVegano.Count * 1.5f)
+        {
+            for (int i = 0; i < (totensAtivosVegano.Count * 1.5f); i++)
+            {
+                TotemType totemType = (TotemType)r.Next(3, 6);
+                Totem newTotem = totensInativos[r.Next(0, totensInativos.Count)];
+                newTotem.ActivateTotem(totemType);
+                totensInativos.Remove(newTotem);
+            }
+        }
     }
 
     public static void ReverterInfestacao(List<GameObject> biomesArray)
     {
-        // TODO: Implementar lógica para reverter infestação
+        List<Totem> totensAtivosCarne = new List<Totem>();
+        List<Totem> totensAtivosVegano = new List<Totem>();
+        List<Totem> totensInativos = new List<Totem>();
+        System.Random r = new System.Random();
+        foreach (var biome in biomesArray)
+        {
+            Totem totem = biome.GetComponent<Tile>().Totem.GetComponent<Totem>();
+            if (totem.isActiveAndEnabled)
+            {
+                //Carne
+                if ((int)totem.TotemType < 3)
+                {
+                    totensAtivosCarne.Add(totem);
+                }
+                //Vegano
+                else if ((int)totem.TotemType > 3 && (int)totem.TotemType < 6)
+                {
+                    totensAtivosVegano.Add(totem);
+                }
+            }
+            else
+            {
+                totensInativos.Add(totem);
+            }
+        }
+
+        if (totensInativos.Count >= totensAtivosCarne.Count * 1.5f)
+        {
+            for (int i = 0; i < (totensAtivosCarne.Count * 1.5f); i++)
+            {
+                TotemType totemType = (TotemType)r.Next(1, 3);
+                Totem newTotem = totensInativos[r.Next(0, totensInativos.Count)];
+                newTotem.ActivateTotem(totemType);
+                totensInativos.Remove(newTotem);
+            }
+        }
+
+        if (totensInativos.Count >= totensAtivosVegano.Count * 0.5f)
+        {
+            for (int i = 0; i < (totensAtivosVegano.Count * 0.5f); i++)
+            {
+                TotemType totemType = (TotemType)r.Next(3, 6);
+                Totem newTotem = totensInativos[r.Next(0, totensInativos.Count)];
+                newTotem.ActivateTotem(totemType);
+                totensInativos.Remove(newTotem);
+            }
+        }
     }
 
     public static void OndaDeCalor(List<GameObject> biomesArray)
     {
-        // TODO: Implementar lógica de onda de calor
+        foreach (var biome in biomesArray)
+        {
+            biome.GetComponent<Tile>().Temperature.CurrentValue *= 1.20f;
+        }
     }
 
     public static void ReverterOndaDeCalor(List<GameObject> biomesArray)
     {
-        // TODO: Implementar lógica para reverter onda de calor
+        foreach (var biome in biomesArray)
+        {
+            biome.GetComponent<Tile>().Temperature.CurrentValue *= 0.80f;
+        }
     }
 
     public static void FrenteFria(List<GameObject> biomesArray)
     {
-        // TODO: Implementar lógica de frente fria
+        foreach (var biome in biomesArray)
+        {
+            biome.GetComponent<Tile>().Temperature.CurrentValue *= 0.8f;
+        }
     }
 
     public static void ReverterFrenteFria(List<GameObject> biomesArray)
     {
-        // TODO: Implementar lógica para reverter frente fria
+        foreach (var biome in biomesArray)
+        {
+            biome.GetComponent<Tile>().Temperature.CurrentValue *= 1.2f;
+        }
     }
 
     public static void Chuvas(List<GameObject> biomesArray)
     {
-        // TODO: Implementar lógica de chuvas
+        foreach (var biome in biomesArray)
+        {
+            biome.GetComponent<Tile>().Humidity.CurrentValue *= 1.20f;
+        }
     }
 
     public static void ReverterChuvas(List<GameObject> biomesArray)
     {
-        // TODO: Implementar lógica para reverter chuvas
+        foreach (var biome in biomesArray)
+        {
+            biome.GetComponent<Tile>().Humidity.CurrentValue *= 0.8f;
+        }
     }
 
     public static void Secas(List<GameObject> biomesArray)
     {
-        // TODO: Implementar lógica de secas
+        foreach (var biome in biomesArray)
+        {
+            biome.GetComponent<Tile>().Humidity.CurrentValue *= 0.8f;
+        }
     }
 
     public static void ReverterSecas(List<GameObject> biomesArray)
     {
-        // TODO: Implementar lógica para reverter secas
+        foreach (var biome in biomesArray)
+        {
+            biome.GetComponent<Tile>().Humidity.CurrentValue *= 1.2f;
+        }
     }
 
     #endregion
@@ -239,42 +447,70 @@ public class BiomeDisasterManager : MonoBehaviour
 
     public static void Desertificacao(List<GameObject> biomesArray)
     {
-        // TODO: Implementar lógica de desertificação
+        foreach (var biome in biomesArray)
+        {
+            biome.GetComponent<Tile>().Temperature.CurrentValue *= 1.75f;
+            biome.GetComponent<Tile>().Humidity.CurrentValue *= 0.25f;
+        }
     }
 
     public static void ReverterDesertificacao(List<GameObject> biomesArray)
     {
-        // TODO: Implementar lógica para reverter desertificação
+        foreach (var biome in biomesArray)
+        {
+            biome.GetComponent<Tile>().TransformarTile(Biome.Caatinga, biome);
+        }
     }
 
     public static void Alagamentos(List<GameObject> biomesArray)
     {
-        // TODO: Implementar lógica de alagamentos
+        foreach (var biome in biomesArray)
+        {
+            biome.GetComponent<Tile>().Temperature.CurrentValue *= 1.75f;
+            biome.GetComponent<Tile>().Humidity.CurrentValue *= 1.75f;
+        }
     }
 
     public static void ReverterAlagamentos(List<GameObject> biomesArray)
     {
-        // TODO: Implementar lógica para reverter alagamentos
+        foreach (var biome in biomesArray)
+        {
+            biome.GetComponent<Tile>().TransformarTile(Biome.Pantanal, biome);
+        }
     }
 
     public static void Geadas(List<GameObject> biomesArray)
     {
-        // TODO: Implementar lógica de geadas
+        foreach (var biome in biomesArray)
+        {
+            biome.GetComponent<Tile>().Temperature.CurrentValue *= 0.25f;
+            biome.GetComponent<Tile>().Humidity.CurrentValue *= 0.25f;
+        }
     }
 
     public static void ReverterGeadas(List<GameObject> biomesArray)
     {
-        // TODO: Implementar lógica para reverter geadas
+        foreach (var biome in biomesArray)
+        {
+            biome.GetComponent<Tile>().TransformarTile(Biome.Mata_das_Araucarias, biome);
+        }
     }
 
     public static void Tempestades(List<GameObject> biomesArray)
     {
-        // TODO: Implementar lógica de tempestades
+        foreach (var biome in biomesArray)
+        {
+            biome.GetComponent<Tile>().Temperature.CurrentValue *= 0.25f;
+            biome.GetComponent<Tile>().Humidity.CurrentValue *= 1.75f;
+        }
     }
 
     public static void ReverterTempestades(List<GameObject> biomesArray)
     {
-        // TODO: Implementar lógica para reverter tempestades
+        foreach (var biome in biomesArray)
+        {
+            biome.GetComponent<Tile>().TransformarTile(Biome.Mata_Atlantica, biome);
+        }
     }
 
     #endregion

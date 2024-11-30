@@ -255,8 +255,8 @@ MonoBehaviour:
   _quantidadeDePontosMutagenicosSpawn: 0
   _currentTurno: 0
   _pieceHeight: {x: 0, y: 5, z: 0}
-  owners: 0000000000000000000000000000000000000000
-  MainCam: {fileID: 0}
+  owners: 
+  MainCam: {fileID: 961739752}
   _biomaOne: []
   _biomaTwo: []
   _biomaThree: []

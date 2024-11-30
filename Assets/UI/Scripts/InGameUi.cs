@@ -16,6 +16,7 @@ public class InGameUi : MonoBehaviour
     private VisualElement _pauseContainer;
     private VisualElement _optionContainer;
     private VisualElement _nextTurnAdvice;
+    public VisualElement _NextTurnAdvice { get => _nextTurnAdvice; }
     private VisualElement[] _barPositions = new VisualElement[9];
     private VisualElement _lifeProgressBar;
     private VisualElement _dnaContainer;
@@ -67,7 +68,8 @@ public class InGameUi : MonoBehaviour
         //AnimateLoadingBar();
         _nextTurnAdvice.AddToClassList("turn-screen-open");
         ActualTurn++;
-        //GameObject.Find("Manager").GetComponent<RoundManager>().Turnos = ActualTurn;
+        GameObject.Find("Manager").GetComponent<RoundManager>().PassarTurno();
+        ActualTurn = GameObject.Find("Manager").GetComponent<RoundManager>()._CurrentTurno;
         for (int i = 0; i < 9; i++)
         {
             if ((ActualTurn - 4 + i) < 0)

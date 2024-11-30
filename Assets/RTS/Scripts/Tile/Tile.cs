@@ -142,7 +142,7 @@ public class Tile : MonoBehaviour
     #endregion
 
     #region Métodos Estáticos
-    public static void TransformarTile(Biome biome, GameObject tile)
+    public void TransformarTile(Biome biome, GameObject tile)
     {
         Tile tileScript = tile.GetComponent<Tile>();
         tileScript.Biome = biome;
@@ -157,7 +157,7 @@ public class Tile : MonoBehaviour
 
         if (desastreMaior)
         {
-            TransformarTile(biome, tile);
+            tileScript.TransformarTile(biome, tile);
         }
     }
     #endregion
