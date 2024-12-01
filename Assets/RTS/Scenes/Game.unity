@@ -203,6 +203,7 @@ GameObject:
   - component: {fileID: 42698654}
   - component: {fileID: 42698653}
   - component: {fileID: 42698651}
+  - component: {fileID: 42698655}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -377,6 +378,26 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 6e14fde57bf00814a949018dfba70722, type: 2}
   - {fileID: 2100000, guid: 5d1bcc7cee077574c98fb48e6de90ccc, type: 2}
   - {fileID: 2100000, guid: b6fd12cca1f8e9248be498f0930b16f1, type: 2}
+--- !u!114 &42698655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42698646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26f67beb13b9b9f4e96d560e037c2322, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skyboxMaterial: {fileID: 2100000, guid: eddf7c1c12f5d7b4a882f8e0170cf46b, type: 2}
+  cor1: {r: 0.47912958, g: 0.87878746, b: 0.9150943, a: 1}
+  cor2: {r: 0.9433962, g: 0.3565126, b: 0.06674972, a: 1}
+  cor3: {r: 0.23960043, g: 0.1533019, b: 0.6132076, a: 1}
+  transitionDuration: 5
+  nTurnosParaTrocarDia: 5
+  GameUi: {fileID: 9445384}
+  DayNight: 
 --- !u!1 &203844586
 GameObject:
   m_ObjectHideFlags: 0
