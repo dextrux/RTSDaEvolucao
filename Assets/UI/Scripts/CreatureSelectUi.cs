@@ -44,6 +44,11 @@ public class CreatureSelectUi : MonoBehaviour
 
         _playBtn.RegisterCallback<ClickEvent>(OnClickPlay);
         _backBtn.RegisterCallback<ClickEvent>(OnClickBack);
+        _player1EditBtn.RegisterCallback<ClickEvent>(OnClickp1Edit);
+        _player2EditBtn.RegisterCallback<ClickEvent> (OnClickp2Edit);
+        _player3EditBtn.RegisterCallback<ClickEvent>(OnClickp3Edit);
+        _player4EditBtn.RegisterCallback<ClickEvent>(OnClickp4Edit);
+        _player5EditBtn.RegisterCallback<ClickEvent>(OnClickp5Edit);
     }
     private void OnClickPlay(ClickEvent evt)
     {
@@ -56,10 +61,22 @@ public class CreatureSelectUi : MonoBehaviour
     }
     private void OnClickp1Edit(ClickEvent evt)
     {
-
+        selectionManager.ChangeSelection(0);
     }
     private void OnClickp2Edit(ClickEvent evt)
     {
-
+        selectionManager.ChangeSelection(1);
+    }
+    private void OnClickp3Edit(ClickEvent evt)
+    {
+        selectionManager.ChangeSelection(2);
+    }
+    private void OnClickp4Edit(ClickEvent evt)
+    {
+        selectionManager.ChangeSelection(3);
+    }
+    private void OnClickp5Edit(ClickEvent evt)
+    {
+        selectionManager.ChangeSelection(4);
     }
 }

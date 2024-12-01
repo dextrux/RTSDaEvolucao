@@ -6,6 +6,7 @@ public class InGameUi : MonoBehaviour
 {
     public int ActualTurn = 1; // substituir todas pelo controle de turnos
     [SerializeField] private int _progressBarMargin;
+    [SerializeField] private RoundManager _roundManager;
     private Button _pauseBtn;
     private Button _nextTurnBtn;
     private Button _resumeNextTurnBtn; // Temporário para marcar a troca
@@ -65,11 +66,11 @@ public class InGameUi : MonoBehaviour
     }
     private void OnClickTurnChange(ClickEvent evt)
     {
-        //AnimateLoadingBar();
+        //AnimateLifeBar();
         _nextTurnAdvice.AddToClassList("turn-screen-open");
         ActualTurn++;
-        GameObject.Find("Manager").GetComponent<RoundManager>().PassarTurno();
-        ActualTurn = GameObject.Find("Manager").GetComponent<RoundManager>()._CurrentTurno;
+        _roundManager.PassarTurno();
+        ActualTurn = _roundManager._CurrentTurno;
         for (int i = 0; i < 9; i++)
         {
             if ((ActualTurn - 4 + i) < 0)

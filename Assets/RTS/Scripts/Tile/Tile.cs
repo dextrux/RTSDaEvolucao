@@ -15,6 +15,7 @@ public class Tile : MonoBehaviour
     [SerializeField] private GameObject _totem;
     [SerializeField] private bool _isUnderDisastre;
     [SerializeField] private Owner _owner;
+    [SerializeField] private TileVisualSet _tileVisualSet;
 
     // Atributos de inspetor para assinalação
     public Material[] materialOriginal = new Material[5];
@@ -148,6 +149,7 @@ public class Tile : MonoBehaviour
         tileScript.Biome = biome;
         BiomeReferences biomeReferences = FindObjectOfType<BiomeReferences>();
         tileScript.GetComponent<Renderer>().material = biomeReferences.GetBiomeMaterial(biome);
+        _tileVisualSet.SpawnObjectsTile(this);
     }
 
     public static void AcabarDesastreEmTile(Biome biome, GameObject tile, bool desastreMaior)
