@@ -66,6 +66,19 @@ public class RoundManager : MonoBehaviour
     [SerializeField]
     private List<GameObject> _p5Pieces;
     #endregion
+    [SerializeField]
+    private int _p1MutationPoint;
+    [SerializeField]
+    private int _p2MutationPoint;
+    [SerializeField]
+    private int _p3MutationPoint;
+    [SerializeField]
+    private int _p4MutationPoint;
+    [SerializeField]
+    private int _p5MutationPoint;
+    #region Mutações
+
+    #endregion
 
     #region Referências Desastre
     [SerializeField]
@@ -124,6 +137,7 @@ public class RoundManager : MonoBehaviour
     public int _IndexDesastreMenor { get => _indexDesastreMenor; set => _indexDesastreMenor = value; }
     public int _IndexDesastreMaior { get => _indexDesastreMaior; set => _indexDesastreMaior = value; }
     public List<GameObject> _TotensAtivos { get => _totensAtivos; set => _totensAtivos = value; }
+    public Owner RoundOwner { get => _roundOwner; }
     #endregion
 
     //Métodos
