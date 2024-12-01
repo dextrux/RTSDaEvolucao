@@ -12,10 +12,12 @@ public class TileVisualSet : MonoBehaviour
     }
     public void SpawnObjectsTile(Tile tile)
     {
-        DespawnObjects();
-        for (int i = 0;  i < _spawnPoints.Length; i++)
+        if (_activeObjectTiles.Length > 0) DespawnObjects();
+        for (int i = 0; i < _spawnPoints.Length; i++)
         {
+            Debug.Log(TileVisualSingleton.Instance.ObjetoParaInstanciar(tile.biome));
             GameObject newObj = Instantiate(TileVisualSingleton.Instance.ObjetoParaInstanciar(tile.biome), _spawnPoints[i].position, transform.rotation);
+            _activeObjectTiles[i] = newObj;
         }
     }
     private void DespawnObjects()

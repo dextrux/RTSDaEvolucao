@@ -61,6 +61,10 @@ public class Tile : MonoBehaviour
         BuscarTotemCorresponente();
         BuscarTilesAdjacentes();
     }
+    private void Start()
+    {
+        _tileVisualSet.SpawnObjectsTile(gameObject.GetComponent<Tile>());
+    }
     #endregion
 
     #region Métodos de Seleção de Cor
@@ -149,7 +153,7 @@ public class Tile : MonoBehaviour
         tileScript.Biome = biome;
         BiomeReferences biomeReferences = FindObjectOfType<BiomeReferences>();
         tileScript.GetComponent<Renderer>().material = biomeReferences.GetBiomeMaterial(biome);
-        _tileVisualSet.SpawnObjectsTile(this);
+        _tileVisualSet.SpawnObjectsTile(gameObject.GetComponent<Tile>());
     }
 
     public static void AcabarDesastreEmTile(Biome biome, GameObject tile, bool desastreMaior)

@@ -590,11 +590,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ee81b5adf2f1074b9f1990e3f397a90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabsAraucaria: []
-  prefabsAtlantica: []
-  prefabsCaatinga: []
-  prefabsPampa: []
-  prefabsPantanal: []
+  prefabsAraucaria:
+  - {fileID: 919132149155446097, guid: a157d5ff60975b14d958efaf9c629312, type: 3}
+  prefabsAtlantica:
+  - {fileID: 919132149155446097, guid: cc1d8b01c00d52449a70b3b06f9f99c5, type: 3}
+  - {fileID: 919132149155446097, guid: 9f64a1c53c6a92a4abb131661b6b8852, type: 3}
+  prefabsCaatinga:
+  - {fileID: 919132149155446097, guid: af27f4c92d0e84f4a9fbda1c7d173a79, type: 3}
+  prefabsPampa:
+  - {fileID: 919132149155446097, guid: e8f38fc38a8edbd45ae6a7a30f5fbaf3, type: 3}
+  - {fileID: 919132149155446097, guid: 918ab003ced239947ba31aa0db595be8, type: 3}
+  prefabsPantanal:
+  - {fileID: 919132149155446097, guid: af27f4c92d0e84f4a9fbda1c7d173a79, type: 3}
 --- !u!4 &229197337
 Transform:
   m_ObjectHideFlags: 0

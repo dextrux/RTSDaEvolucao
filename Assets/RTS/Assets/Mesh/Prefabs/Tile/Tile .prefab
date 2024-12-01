@@ -189,7 +189,7 @@ MonoBehaviour:
   _totem: {fileID: 0}
   _isUnderDisastre: 0
   _owner: 6
-  _tileVisualSet: {fileID: 0}
+  _tileVisualSet: {fileID: 1846597888917427388}
   materialOriginal:
   - {fileID: 2100000, guid: 4a75d524cde57504194fc1804c8708bb, type: 2}
   - {fileID: 2100000, guid: 8aedb928e6b35a74caacba1a7cf84000, type: 2}
