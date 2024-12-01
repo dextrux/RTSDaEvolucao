@@ -1,0 +1,54 @@
+#GreenSlider Label {
+    display: none;
+}
+
+#GreenSlider #unity-drag-container {
+    background-color: rgba(224, 56, 56, 0);
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+#GreenSlider #unity-tracker {
+    flex-grow: 1;
+    background-color: rgb(99, 76, 54);
+    position: relative;
+    top: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#GreenSlider #unity-dragger {
+    background-color: rgba(248, 0, 0, 0);
+    width: 20px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+}
+
+.newDraggerGreen {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-image: url('project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=599019620&guid=8fbda476e9f56fe40955a8472d8bd40c&type=3#AtlasUITemp_70');
+    -unity-background-scale-mode: scale-to-fit;
+}

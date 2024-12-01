@@ -27,7 +27,7 @@ public class MainMenu : MonoBehaviour
 
     private void OnClickPlay(ClickEvent evt)
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("ColorPicker");
     }
     private void OnClickConfig(ClickEvent evt)
     {

@@ -14,6 +14,60 @@
     margin-left: 1%;
 }
 
+.menu-button {
+    background-image: url('project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=356799659&guid=8fbda476e9f56fe40955a8472d8bd40c&type=3#AtlasUITemp_0');
+    background-color: rgba(188, 188, 188, 0);
+    width: 100%;
+    -unity-background-scale-mode: scale-to-fit;
+    height: 40%;
+    -unity-font: url('project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.ttf?fileID=12800000&guid=22aed22e579f47048b64da77dc6349e6&type=3#Bodo Amat');
+    font-size: 40px;
+    -unity-font-definition: url('project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.asset?fileID=11400000&guid=0756c78a4ec4a2644b846b666c90696f&type=2#Bodo Amat');
+    color: rgb(57, 39, 27);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.menu-button:hover {
+    background-image: url('project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-744482655&guid=8fbda476e9f56fe40955a8472d8bd40c&type=3#AtlasUITemp_1');
+    background-color: rgba(152, 176, 141, 0);
+    width: 100%;
+    -unity-background-scale-mode: scale-to-fit;
+    height: 40%;
+    -unity-font: url('project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.ttf?fileID=12800000&guid=22aed22e579f47048b64da77dc6349e6&type=3#Bodo Amat');
+    font-size: 40px;
+    -unity-font-definition: url('project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.asset?fileID=11400000&guid=0756c78a4ec4a2644b846b666c90696f&type=2#Bodo Amat');
+    color: rgb(57, 39, 27);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    scale: 1.1 1.1;
+    cursor: url('project://database/Assets/UI/Sprites/UICursorVarA.png?fileID=2800000&guid=56107ec3c1c15e44fb54038613e958b0&type=3#UICursorVarA');
+}
+
+.menu-button:active {
+    background-image: url('project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=356799659&guid=8fbda476e9f56fe40955a8472d8bd40c&type=3#AtlasUITemp_0');
+    background-color: rgba(188, 188, 188, 0);
+    width: 100%;
+    -unity-background-scale-mode: scale-to-fit;
+    height: 40%;
+    -unity-font: url('project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.ttf?fileID=12800000&guid=22aed22e579f47048b64da77dc6349e6&type=3#Bodo Amat');
+    font-size: 40px;
+    -unity-font-definition: url('project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.asset?fileID=11400000&guid=0756c78a4ec4a2644b846b666c90696f&type=2#Bodo Amat');
+    color: rgb(57, 39, 27);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    scale: 0.9 0.9;
+}
+
 .internal-container {
     flex-grow: 1;
     background-color: rgb(255, 193, 125);

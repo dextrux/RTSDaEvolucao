@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using ArvoreAVL;
 
 public class Piece : MonoBehaviour
 {
@@ -44,8 +45,8 @@ public class Piece : MonoBehaviour
 
     #region Mutação e Multiplicadores
     private int sickCounter;
-    private List<MutationBase> _appliedMutations = new List<MutationBase>();
-    private List<MutationBase> _incompatibleMutations = new List<MutationBase>();
+    private ArvoreAVL<MutationBase> _appliedMutations = new ArvoreAVL<MutationBase>();
+    private ArvoreAVL<MutationBase> _incompatibleMutations = new ArvoreAVL<MutationBase>();
     private float _huntMultiplier;
     private float _plantMultiplier;
     #endregion
@@ -66,8 +67,8 @@ public class Piece : MonoBehaviour
     public bool IsDoente { get => _isDoente; set => _isDoente = value; }
     public bool IsUnderDesastre { get => _isUnderDisastre; set => _isUnderDisastre = value; }
     public bool IsDuringAction { get => _isDuringAction; set => _isDuringAction = value; }
-    public List<MutationBase> IncompatibleMutations => _incompatibleMutations;
-    public List<MutationBase> AppliedMutations => _appliedMutations;
+    public ArvoreAVL<MutationBase> IncompatibleMutations => _incompatibleMutations;
+    public ArvoreAVL<MutationBase> AppliedMutations => _appliedMutations;
     #endregion
 
     #region Actions
@@ -266,10 +267,10 @@ public class Piece : MonoBehaviour
     #region Métodos de Mutação e Saúde
     public void AddMutation(MutationBase mutationToAdd)
     {
-        _appliedMutations.Add(mutationToAdd);
+        _appliedMutations.Inserir(mutationToAdd);
         foreach (MutationBase incompatible in mutationToAdd.IncompatibleMutations)
         {
-            _incompatibleMutations.Add(incompatible);
+            _incompatibleMutations.Inserir(incompatible);
         }
         mutationToAdd.Mutate(gameObject.GetComponent<Piece>());
     }
