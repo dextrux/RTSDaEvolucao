@@ -295,6 +295,7 @@ public class Piece : MonoBehaviour
             _incompatibleMutations.Inserir(incompatible);
         }
         mutationToAdd.Mutate(gameObject.GetComponent<Piece>());
+        analytic.jogador.nTotalCompras += 1;
     }
 
     public void SetVisualPart(PieceParts newPart, Mesh newVisual)
@@ -312,6 +313,8 @@ public class Piece : MonoBehaviour
             float healthLoss = Mathf.Abs(tile.Temperature.CurrentValue - Temperature.IdealValue) +
                                0.4f * Mathf.Abs(tile.Humidity.CurrentValue - Humidity.IdealValue);
             Energy.CurrentBarValue -= healthLoss;
+            analytic.jogador.foiAtingidoCatastrofe = true;
+            analytic.jogador.foiAtingidoDesastreP = true;
         }
     }
 
