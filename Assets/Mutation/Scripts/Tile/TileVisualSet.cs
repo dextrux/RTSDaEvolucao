@@ -16,12 +16,8 @@ public class TileVisualSet : MonoBehaviour
         for (int i = 0; i < _spawnPoints.Length; i++)
         {
             Debug.Log(TileVisualSingleton.Instance.ObjetoParaInstanciar(tile.biome));
-            GameObject newObj = Instantiate(TileVisualSingleton.Instance.ObjetoParaInstanciar(tile.biome), _spawnPoints[i].position, Quaternion.Euler(transform.rotation.x, Random.Range(0, 360), transform.rotation.z));
+            GameObject newObj = Instantiate(TileVisualSingleton.Instance.ObjetoParaInstanciar(tile.biome), _spawnPoints[i].position, transform.rotation);
             _activeObjectTiles[i] = newObj;
-        }
-        foreach (GameObject obj in _activeObjectTiles)
-        {
-            obj.transform.localScale = new Vector3(Random.Range(0.4f, 0.8f), Random.Range(0.4f, 0.8f), Random.Range(0.4f, 0.8f));
         }
     }
     private void DespawnObjects()

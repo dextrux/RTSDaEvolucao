@@ -13,7 +13,6 @@ public class CreatureInfo : MonoBehaviour
     private Button _mutationInfoBtn;
     private Button _actionBtn;
     private Button _exitInfoBtn;
-    private Label _dnaCount;
     #region Avisos Sobre a peca
     private VisualElement _discomfortWarning;
     private VisualElement _temperatureWarning;
@@ -57,8 +56,8 @@ public class CreatureInfo : MonoBehaviour
     }
     private void OnClickMutationInfo(ClickEvent evt)
     {
-        _creatureScreen.SetActive(false);
-        _mutationScreen.SetActive(true);
+        /*_creatureScreen.SetActive(false);
+        _mutationScreen.SetActive(true);*/
     }
     private void OnClickExitInfo(ClickEvent evt)
     {
@@ -75,10 +74,6 @@ public class CreatureInfo : MonoBehaviour
         _actualPiece = piece;
         _actualTile = _actualPiece.PieceRaycastForTile();
         SetCreatureStateUi(piece);
-    }
-    public void UpdateDnaCount(int newValeu)
-    {
-        _dnaCount.text = "= " + newValeu.ToString("00");
     }
     private void SetCreatureStateUi(Piece piece)
     {
@@ -243,6 +238,5 @@ public class CreatureInfo : MonoBehaviour
         _tileHumidityTxt = root.Q<Label>("tile-humidity-txt");
         _tileTemperature = root.Q<VisualElement>("tile-temperature-bar");
         _tileTemperatureTxt = root.Q<Label>("tile-temperature-txt");
-        _dnaCount = root.Q<Label>("dna-count-txt");
     }
 }
