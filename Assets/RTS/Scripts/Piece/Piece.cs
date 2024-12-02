@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using ArvoreAVL;
+using System.Security.Cryptography;
 
 public class Piece : MonoBehaviour
 {
@@ -41,6 +42,7 @@ public class Piece : MonoBehaviour
     [SerializeField] private bool _isUnderDisastre;
     [SerializeField] private bool _isDoente;
     [SerializeField] private bool _isDuringAction;
+    private int _isDoenteTime = 0;
     #endregion
 
     #region Mutação e Multiplicadores
@@ -76,8 +78,12 @@ public class Piece : MonoBehaviour
     #region Actions
     public IEnumerator Walk(Piece piece, GameObject targetTile, bool useEnergy)
     {
+        Debug.Log("Entrei em walk");
         if (!useEnergy && (piece.Resting || !LoseEnergyToAct(piece.gameObject, 1)))
+        {
             yield break;
+        }
+            
 
         Tile currentTile = piece.PieceRaycastForTile();
         currentTile.Owner = Owner.None;
@@ -102,8 +108,9 @@ public class Piece : MonoBehaviour
         Piece pieceScript = piece.GetComponent<Piece>();
         Tile targetTile = pieceScript.PieceRaycastForTile();
 
-        if (pieceScript.Resting)
+        if (!pieceScript.Resting)
         {
+            Debug.Log("Comendo");
             bool hasEnergy = LoseEnergyToAct(piece, 2);
             pieceScript.Energy.CurrentBarValue = hasEnergy ? pieceScript.Energy.CurrentBarValue : 0;
             EatRoutine(tile, pieceScript, hasEnergy);
@@ -118,13 +125,12 @@ public class Piece : MonoBehaviour
         {
             float multiplier = pieceScript.GetDietMultiplier(totem.TotemType);
             pieceScript.Hunger.CurrentBarValue += multiplier * totem.FoodQuantity;
-            totem.DeactivateTotem();
         }
         else if(totem.TotemType == TotemType.Ponto_Mutagênico)
         {
             pieceScript.PontosMutagenicos++;
-            totem.DeactivateTotem();
         }
+        totem.DeactivateTotem();
         if (walk)
         {
             pieceScript.StartCoroutine(Walk(pieceScript, tile, true));
@@ -157,10 +163,15 @@ public class Piece : MonoBehaviour
     private void VerifyFightOutcome(Piece attacker, Piece defender, GameObject targetTile)
     {
         if (attacker.Health.CurrentBarValue == attacker.Health.MinBarValue)
+        {
+            attacker.PieceRaycastForTile().Totem.GetComponent<Totem>().ActivateTotem(TotemType.Corpo);
             GameObject.Destroy(attacker.gameObject);
-        GameObject.FindAnyObjectByType<RoundManager>().RemoverPieceEmLista(attacker.Owner, attacker.gameObject);
+            GameObject.FindAnyObjectByType<RoundManager>().RemoverPieceEmLista(attacker.Owner, attacker.gameObject);
+
+        }
         if (defender.Health.CurrentBarValue == defender.Health.MinBarValue)
         {
+            defender.PieceRaycastForTile().Totem.GetComponent<Totem>().ActivateTotem(TotemType.Corpo);
             GameObject.Destroy(defender.gameObject);
             GameObject.FindAnyObjectByType<RoundManager>().RemoverPieceEmLista(defender.Owner, defender.gameObject);
 
@@ -187,9 +198,9 @@ public class Piece : MonoBehaviour
     {
         Piece pieceScript = piece.GetComponent<Piece>();
 
-        //float energyLoss = actionFactor * (Convert.ToInt32(pieceScript.IsDoente) + 1) *
-        //                   (Mathf.Abs(tile.Temperature.CurrentValue - pieceScript.Temperature.IdealValue) +
-        //                    0.4f * Mathf.Abs(tile.Humidity.CurrentValue - pieceScript.Humidity.IdealValue));
+        ////float energyLoss = actionFactor * (Convert.ToInt32(pieceScript.IsDoente) + 1) *
+        ////                   (Mathf.Abs(tile.Temperature.CurrentValue - pieceScript.Temperature.IdealValue) +
+        ////                    0.4f * Mathf.Abs(tile.Humidity.CurrentValue - pieceScript.Humidity.IdealValue));
         float energyLoss = 20;
         if (pieceScript.Energy.CurrentBarValue >= energyLoss)
         {
@@ -217,6 +228,7 @@ public class Piece : MonoBehaviour
         pieceScript.SetDietMultipliers();
         pieceScript.PieceRaycastForTile().Owner = pieceScript.Owner;
         pieceScript.IsDuringAction = false;
+        pieceScript.Resting = false;    
         GameObject.FindFirstObjectByType<RoundManager>().AdicionarPieceEmLista(pieceScript.Owner, piece);
         pieceScript.AppliedMutations.Inserir(pieceScript.MutationBase);
     }
@@ -260,6 +272,7 @@ public class Piece : MonoBehaviour
             TotemType.Grãos => _huntMultiplier,
             TotemType.Plantas => _huntMultiplier,
             TotemType.Ponto_Mutagênico => 1,
+            TotemType.Corpo => _huntMultiplier,
             _ => 1f
         };
     }
@@ -303,9 +316,23 @@ public class Piece : MonoBehaviour
                 _isDoente = true;
             }           
         }
-        else 
+        else if(_isDoenteTime > 3 && _isDoente == true)
         {
             _isDoente = false;
+            _isDoenteTime = 0;
+        }
+        if (_isDoente == true)
+        {
+            _isDoenteTime++;
+            System.Random rand = new System.Random();
+            if (rand.Next(0,3) == 0)
+            {
+                List<GameObject> tilesAdjacentes = this.PieceRaycastForTile().TilesAdjacentes;
+                foreach (var tile in tilesAdjacentes)
+                {
+                    tile.GetComponent<Tile>().TileRaycastForPiece().IsDoente = true;
+                }
+            }
         }
     }
     #endregion
@@ -317,6 +344,7 @@ public class Piece : MonoBehaviour
         this._energyBar.CurrentBarValue += 20;
         this._fertilityBar.CurrentBarValue += 20;
         this._hungerBar.CurrentBarValue -= 20;
+        AlertHandler.AlertVerificationRoutine(this);
         this.CheckForIllness();
         this.Humidity.CurrentValue = this.PieceRaycastForTile().Humidity.CurrentValue;
         this.Temperature.CurrentValue = this.PieceRaycastForTile().Temperature.CurrentValue;

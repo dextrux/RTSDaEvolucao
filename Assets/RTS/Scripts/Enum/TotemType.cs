@@ -9,6 +9,7 @@ public enum TotemType
     Grãos = 4,
     Plantas = 5,
     Ponto_Mutagênico = 6,
+    Corpo = 7,
     None
 }
 

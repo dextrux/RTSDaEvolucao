@@ -284,7 +284,7 @@ public class RoundManager : MonoBehaviour
             GameObject chosenTile = chosenTileList[random.Next(0, chosenTileList.Count)];
 
             // Adiciona o tile apenas se ainda não estiver na lista
-            if (!tiles.Contains(chosenTile))
+            if (!tiles.Contains(chosenTile) && chosenTile.GetComponent<Tile>().TileType == TileType.Posicionamento && chosenTile.GetComponent<Tile>().Owner == Owner.None)
             {
                 tiles.Add(chosenTile);
             }

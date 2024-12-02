@@ -334,7 +334,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: ac32d4d4112507c4780063ee19740f4f, type: 2}
   - {fileID: 2100000, guid: 520db9344ef7d034ab7983a1d76a73de, type: 2}
   - {fileID: 2100000, guid: 935b09dc8eb0362418e18ea87147ffb4, type: 2}
-  - {fileID: 0}
+  - {fileID: 2100000, guid: ef7e0c4dee7bd5e4abf86c171971146d, type: 2}
   totemTypeMesh:
   - {fileID: -7276807288912308764, guid: e9a70797131311d49ad8f35988d003d4, type: 3}
   - {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
@@ -343,7 +343,7 @@ MonoBehaviour:
   - {fileID: -3794393067471512702, guid: 048f3287a73fff24cb8c4c3305cfda1a, type: 3}
   - {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
   - {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
-  - {fileID: 0}
+  - {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &42698653
 MonoBehaviour:
   m_ObjectHideFlags: 0

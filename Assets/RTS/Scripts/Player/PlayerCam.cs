@@ -23,13 +23,17 @@ public class PlayerCam : MonoBehaviour
     void Update()
     {
         HandleCameraMovement();
-        if (Input.GetAxis("Mouse ScrollWheel") > 0)
+        if (Input.GetAxis("Mouse ScrollWheel") < 0)
         {
             ChangeCameraPosition(20);
         }
-        if (Input.GetAxis("Mouse ScrollWheel") < 0)
+        if (Input.GetAxis("Mouse ScrollWheel") > 0)
         {
             ChangeCameraPosition(-20);
+        }
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            ResetPlayerCameraPosition();
         }
     }
     private void ChangeCameraPosition(int factorDeepness)
@@ -76,9 +80,9 @@ public class PlayerCam : MonoBehaviour
         playerCamera.transform.rotation = Quaternion.Euler(60, 0, 0);
     }
 
-    public void ChangeCameraPositionToFocusTile(GameObject tile)
+    public void ChangeCameraPositionToFocusPiece(GameObject piece)
     {
-        Vector3 targetPosition = new Vector3(tile.transform.position.x, Mathf.Clamp(tile.transform.position.y + 10, minY, maxY), tile.transform.position.z);
+        Vector3 targetPosition = new Vector3(piece.transform.position.x + 5.4f, Mathf.Clamp(piece.transform.position.y + 10, minY, maxY), piece.transform.position.z - 4.1f);
         StartCoroutine(MoveCameraToPosition(targetPosition));
     }
 

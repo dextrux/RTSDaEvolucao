@@ -56,7 +56,7 @@ public class PlayerRaycast : MonoBehaviour
         Piece pieceScript = hitPiece.GetComponent<Piece>();
 
         // Se nenhuma peça estiver selecionada
-        if (selectedObjects[0] == null)
+        if (selectedObjects[0] == null && pieceScript.Owner == playerCamOwner)
         {
             if (!pieceScript.IsDuringAction && pieceScript.Owner == playerCamOwner)
             {
@@ -93,6 +93,7 @@ public class PlayerRaycast : MonoBehaviour
 
     private void SelectPiece(GameObject piece)
     {
+        mainCamera.GetComponent<PlayerCam>().ChangeCameraPositionToFocusPiece(piece);
         selectedObjects[0] = piece;
         Piece pieceScript = piece.GetComponent<Piece>();
         _creatureInfo.gameObject.SetActive(true);

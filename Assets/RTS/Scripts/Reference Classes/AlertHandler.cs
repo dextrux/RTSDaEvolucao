@@ -10,7 +10,7 @@ public static class AlertHandler
         Tile tile = piece.PieceRaycastForTile();
 
         if (tile == null) return;
-
+        Debug.Log("Verificando os alertas");
         CheckTemperatureAlert(piece, tile);
         CheckHumidityAlert(piece, tile);
         CheckHungerAlert(piece);
