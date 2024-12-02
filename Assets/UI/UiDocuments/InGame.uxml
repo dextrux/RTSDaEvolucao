@@ -25,7 +25,7 @@
                 </ui:Button>
                 <ui:VisualElement name="dna-container" style="flex-grow: 1; width: 275px; -unity-background-scale-mode: scale-to-fit; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-813222707&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_9&apos;); flex-direction: row; padding-top: 15px; padding-bottom: 15px; padding-right: 30px; padding-left: 30px; height: 100px;">
                     <ui:VisualElement name="dna-figure" style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-417108044&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_56&apos;); -unity-background-scale-mode: scale-to-fit; height: 65px; padding-top: 5px; width: 30%;" />
-                    <ui:Label tabindex="-1" text="= 10" parse-escape-sequences="true" display-tooltip-when-elided="true" name="dna-count-txt" class="text-hud-game" style="font-size: 50%; -unity-text-align: lower-center; width: 60%;" />
+                    <ui:Label tabindex="-1" text="= 00" parse-escape-sequences="true" display-tooltip-when-elided="true" name="dna-count-txt" class="text-hud-game" style="font-size: 50%; -unity-text-align: lower-center; width: 60%;" />
                 </ui:VisualElement>
                 <ui:VisualElement style="flex-grow: 1; width: 1493px;" />
             </ui:VisualElement>

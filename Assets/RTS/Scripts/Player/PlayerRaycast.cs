@@ -95,7 +95,7 @@ public class PlayerRaycast : MonoBehaviour
     {
         selectedObjects[0] = piece;
         Piece pieceScript = piece.GetComponent<Piece>();
-        pieceScript.PieceRaycastForTile().ColorirTilesDuranteSeleção();
+        //pieceScript.PieceRaycastForTile().ColorirTilesDuranteSeleção();
         _creatureInfo.gameObject.SetActive(true);
         _creatureInfo.SetPiece(pieceScript);
     }
