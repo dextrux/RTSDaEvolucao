@@ -31,6 +31,7 @@ public class RoundManager : MonoBehaviour
     public Camera MainCam;
     private Owner _roundOwner;
     private int currentIndexOwner;
+    [SerializeField] private InGameUi _inGameUi;
     #endregion
 
     #region ReadOnly nomes Biomas
@@ -66,6 +67,8 @@ public class RoundManager : MonoBehaviour
     [SerializeField]
     private List<GameObject> _p5Pieces;
     #endregion
+
+    #region Mutações
     [SerializeField]
     private int _p1MutationPoint;
     [SerializeField]
@@ -76,8 +79,6 @@ public class RoundManager : MonoBehaviour
     private int _p4MutationPoint;
     [SerializeField]
     private int _p5MutationPoint;
-    #region Mutações
-
     #endregion
 
     #region Referências Desastre
@@ -111,10 +112,6 @@ public class RoundManager : MonoBehaviour
     List<GameObject> _totensAtivos;
     #endregion
 
-    #region
-    #endregion
-
-    //Propriedades
     #region Propriedades
     public int _MaxTurnos { get => _maxTurnos; set => _maxTurnos = value; }
     public int _PeriodicidadeDesastreMenor { get => _periodicidadeDesastreMenor; set => _periodicidadeDesastreMenor = value; }
@@ -140,7 +137,6 @@ public class RoundManager : MonoBehaviour
     public Owner RoundOwner { get => _roundOwner; }
     #endregion
 
-    //Métodos
     #region Rotinas Unity
     private void Awake()
     {
@@ -449,7 +445,7 @@ public class RoundManager : MonoBehaviour
         AtivarTotensComida(SortearTilesRandom(15));
         AtivarTotensPontosMutagenicos(SortearTilesRandom(15));
         _CurrentTurno = 1;
-
+        _inGameUi.UpdateLifeBarOwnerBase(this);
     }
 
     private void TurnosCinco()
@@ -502,9 +498,9 @@ public class RoundManager : MonoBehaviour
         }
 
         _roundOwner = owners[currentIndexOwner];
-        Debug.Log(owners[currentIndexOwner]);
         MainCam.GetComponent<PlayerRaycast>().playerCamOwner = _roundOwner;
-        
+        InGameUi.UpdateMutationPointText(this);
+        _inGameUi.UpdateLifeBarOwnerBase(this);
     }
     private bool GameOver(Owner owner)
     {

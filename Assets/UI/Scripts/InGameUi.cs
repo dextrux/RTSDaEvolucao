@@ -66,9 +66,7 @@ public class InGameUi : MonoBehaviour
     }
     private void OnClickTurnChange(ClickEvent evt)
     {
-        //AnimateLifeBar();
         _nextTurnAdvice.AddToClassList("turn-screen-open");
-        ActualTurn++;
         _roundManager.PassarTurno();
         ActualTurn = _roundManager._CurrentTurno;
         for (int i = 0; i < 9; i++)
@@ -130,7 +128,7 @@ public class InGameUi : MonoBehaviour
         //Pega o valor da barra para animar diminuindo a margem
         float endWidth = _lifeProgressBar.parent.worldBound.width - _progressBarMargin;
         _lifeText.text = $"{actualValue}/{maxValue}";
-        DOTween.To(() => _lifeProgressBar.worldBound.width, x => _lifeProgressBar.style.width = x, (endWidth * (actualValue/maxValue)), 2F).SetEase(Ease.Linear);
+        DOTween.To(() => _lifeProgressBar.worldBound.width, x => _lifeProgressBar.style.width = x, (endWidth * (actualValue / maxValue)), 2F).SetEase(Ease.Linear);
     }
     public void CreatureInfoChange()
     {
@@ -143,5 +141,86 @@ public class InGameUi : MonoBehaviour
         _pauseBtn.RemoveFromClassList("pause-button-ocult");
         _nextTurnBtn.RemoveFromClassList("pause-button-ocult");
         _dnaContainer.RemoveFromClassList("pause-button-ocult");
+    }
+    public void UpdateLifeBarOwnerBase(RoundManager roundManager)
+    {
+        float maxLife = 0;
+        float actualLife = 0;
+        switch (roundManager.RoundOwner)
+        {
+            case Owner.P1:
+                foreach (GameObject p in roundManager._P1Pieces)
+                {
+                    maxLife += p.GetComponent<Piece>().Health.MaxBarValue;
+                    actualLife += p.GetComponent<Piece>().Health.CurrentBarValue;
+                }
+                break;
+            case Owner.P2:
+                foreach (GameObject p in roundManager._P2Pieces)
+                {
+                    maxLife += p.GetComponent<Piece>().Health.MaxBarValue;
+                    actualLife += p.GetComponent<Piece>().Health.CurrentBarValue;
+                }
+                break;
+            case Owner.P3:
+                foreach (GameObject p in roundManager._P3Pieces)
+                {
+                    maxLife += p.GetComponent<Piece>().Health.MaxBarValue;
+                    actualLife += p.GetComponent<Piece>().Health.CurrentBarValue;
+                }
+                break;
+            case Owner.P4:
+                foreach (GameObject p in roundManager._P4Pieces)
+                {
+                    maxLife += p.GetComponent<Piece>().Health.MaxBarValue;
+                    actualLife += p.GetComponent<Piece>().Health.CurrentBarValue;
+                }
+                break;
+            case Owner.P5:
+                foreach (GameObject p in roundManager._P5Pieces)
+                {
+                    maxLife += p.GetComponent<Piece>().Health.MaxBarValue;
+                    actualLife += p.GetComponent<Piece>().Health.CurrentBarValue;
+                }
+                break;
+        }
+        AnimateLifeBar(actualLife, maxLife);
+    }
+    public static void UpdateMutationPointText(RoundManager roundManager)
+    {
+        int points = 0;
+        switch (roundManager.RoundOwner)
+        {
+            case Owner.P1:
+                foreach (GameObject p in roundManager._P1Pieces)
+                {
+                    points += p.GetComponent<Piece>().PontosMutagenicos;
+                }
+                break;
+            case Owner.P2:
+                foreach (GameObject p in roundManager._P2Pieces)
+                {
+                    points += p.GetComponent<Piece>().PontosMutagenicos;
+                }
+                break;
+            case Owner.P3:
+                foreach (GameObject p in roundManager._P3Pieces)
+                {
+                    points += p.GetComponent<Piece>().PontosMutagenicos;
+                }
+                break;
+            case Owner.P4:
+                foreach (GameObject p in roundManager._P4Pieces)
+                {
+                    points += p.GetComponent<Piece>().PontosMutagenicos;
+                }
+                break;
+            case Owner.P5:
+                foreach (GameObject p in roundManager._P5Pieces)
+                {
+                    points += p.GetComponent<Piece>().PontosMutagenicos;
+                }
+                break;
+        }
     }
 }

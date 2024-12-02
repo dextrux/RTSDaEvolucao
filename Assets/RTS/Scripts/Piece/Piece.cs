@@ -13,7 +13,7 @@ public class Piece : MonoBehaviour
     BiomeReferences _biomeReferences;
     OwnerReference _ownerReference;
     TileTypeReferences _tileTypeReferences;
-    Renderer _renderer;
+    [SerializeField] private Renderer _renderer;
     #endregion
 
     #region Atributos Gerais
@@ -49,6 +49,7 @@ public class Piece : MonoBehaviour
     private ArvoreAVL<MutationBase> _incompatibleMutations = new ArvoreAVL<MutationBase>();
     private float _huntMultiplier;
     private float _plantMultiplier;
+    [SerializeField] private MutationBase _baseMutation;
     #endregion
 
     #region Propriedades
@@ -67,8 +68,9 @@ public class Piece : MonoBehaviour
     public bool IsDoente { get => _isDoente; set => _isDoente = value; }
     public bool IsUnderDesastre { get => _isUnderDisastre; set => _isUnderDisastre = value; }
     public bool IsDuringAction { get => _isDuringAction; set => _isDuringAction = value; }
-    public ArvoreAVL<MutationBase> IncompatibleMutations => _incompatibleMutations;
-    public ArvoreAVL<MutationBase> AppliedMutations => _appliedMutations;
+    public ArvoreAVL<MutationBase> IncompatibleMutations { get => _incompatibleMutations; set => _incompatibleMutations = value; }
+    public ArvoreAVL<MutationBase> AppliedMutations { get => _appliedMutations; set => _appliedMutations = value; }
+    public MutationBase MutationBase { get => _baseMutation; }
     #endregion
 
     #region Actions
@@ -205,7 +207,6 @@ public class Piece : MonoBehaviour
         pieceScript._biomeReferences = GameObject.FindFirstObjectByType<BiomeReferences>();
         pieceScript._ownerReference = GameObject.FindFirstObjectByType<OwnerReference>();
         pieceScript._tileTypeReferences = GameObject.FindFirstObjectByType<TileTypeReferences>();
-        pieceScript._renderer = pieceScript.GetComponent<Renderer>();
         pieceScript.PontosMutagenicos = 0;
         pieceScript.Diet = pieceDiet;
         pieceScript.Owner =  owner;
@@ -217,7 +218,7 @@ public class Piece : MonoBehaviour
         pieceScript.PieceRaycastForTile().Owner = pieceScript.Owner;
         pieceScript.IsDuringAction = false;
         GameObject.FindFirstObjectByType<RoundManager>().AdicionarPieceEmLista(pieceScript.Owner, piece);
-        
+        pieceScript.AppliedMutations.Inserir(pieceScript.MutationBase);
     }
 
     public static void SetParent(GameObject parent, GameObject son) { parent.transform.SetParent(son.transform); }

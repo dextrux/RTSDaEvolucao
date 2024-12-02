@@ -7,6 +7,7 @@ public class CreatureInfo : MonoBehaviour
     [SerializeField] private GameObject _mutationScreen;
     [SerializeField] private GameObject _buyMutationScreen;
     [SerializeField] private InGameUi _ingameUi;
+    [SerializeField] private PlayerRaycast _playerRaycast;
     private Piece _actualPiece;
     private Tile _actualTile;
     private Button _creatureInfoBtn;
@@ -56,17 +57,23 @@ public class CreatureInfo : MonoBehaviour
     }
     private void OnClickMutationInfo(ClickEvent evt)
     {
-        /*_creatureScreen.SetActive(false);
-        _mutationScreen.SetActive(true);*/
+        _creatureScreen.SetActive(false);
+        _mutationScreen.SetActive(true);
+        _mutationScreen.GetComponent<MutationList>().SetPieceMutationScreen(_actualPiece);
     }
     private void OnClickExitInfo(ClickEvent evt)
     {
+        _playerRaycast.DeselectPiece();
+        _ingameUi.CreatureInfoNormal();
+        _ingameUi.UpdateLifeBarOwnerBase(GameObject.Find("Manager").GetComponent<RoundManager>());
         _creatureScreen.SetActive(false);
         _mutationScreen.SetActive(false);
-        _ingameUi.CreatureInfoNormal();
     }
     private void OnClickAction(ClickEvent evt)
     {
+        _ingameUi.CreatureInfoNormal();
+        _actualTile.ColorirTilesDuranteSeleção();
+        _ingameUi.UpdateLifeBarOwnerBase(GameObject.Find("Manager").GetComponent<RoundManager>());
         gameObject.SetActive(false);
     }
     public void SetPiece(Piece piece)

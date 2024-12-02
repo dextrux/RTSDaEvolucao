@@ -80,7 +80,7 @@
                                 <ui:Label tabindex="-1" text="45%" parse-escape-sequences="true" display-tooltip-when-elided="true" name="creature-energy-txt" style="width: 100%; font-size: 25%; height: 15%; -unity-text-align: middle-center;" />
                             </ui:VisualElement>
                             <ui:VisualElement name="hunger-container" style="flex-grow: 1; padding-top: 15px; padding-right: 15px; padding-bottom: 15px; padding-left: 15px; width: 33%; height: 100%;">
-                                <ui:Label tabindex="-1" text="Satisfeito" parse-escape-sequences="true" display-tooltip-when-elided="true" name="creature-hunger-txt" style="width: 100%; font-size: 25%; height: 15%;" />
+                                <ui:Label tabindex="-1" text="Satisfeito" parse-escape-sequences="true" display-tooltip-when-elided="true" name="creature-hunger-title" style="width: 100%; font-size: 25%; height: 15%;" />
                                 <ui:VisualElement name="creature-hunger-img" style="flex-grow: 1; -unity-background-scale-mode: scale-to-fit; background-image: url(&apos;project://database/Assets/UI/Sprites/Vector/fome.svg?fileID=7388822144124034973&amp;guid=483c93139b7f35140a5480b3122a7385&amp;type=3#fome&apos;); height: 70%; overflow: hidden;">
                                     <ui:VisualElement name="creature-hunger-bar" style="background-color: rgb(133, 24, 55); width: 100%; height: 100%; rotate: 180deg;" />
                                     <ui:VisualElement style="flex-grow: 1; width: 106%; height: 108%; background-image: url(&apos;project://database/Assets/UI/Sprites/Contornos.png?fileID=937777336&amp;guid=4585370786603384f87183c6a5c71f19&amp;type=3#Contornos_0&apos;); position: absolute; top: -4%; left: -2%; -unity-background-scale-mode: scale-to-fit;" />
@@ -126,7 +126,7 @@
                 <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=955279675&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_46&apos;); height: 60%; width: 60%; -unity-background-scale-mode: scale-to-fit;" />
             </ui:Button>
         </ui:VisualElement>
-        <ui:VisualElement name="mutationFolder" style="flex-grow: 1; position: absolute; top: 5%; left: 45%; background-color: rgb(100, 76, 54); width: 12%; height: 8%; border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; flex-direction: row; padding-left: 1%; padding-right: 1%; padding-top: 1%; padding-bottom: 1%;">
+        <ui:VisualElement name="mutationFolder" style="flex-grow: 1; position: absolute; top: 5%; left: 45%; background-color: rgb(100, 76, 54); width: 12%; height: 8%; border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px; flex-direction: row; padding-left: 1%; padding-right: 1%; padding-top: 1%; padding-bottom: 1%; display: none;">
             <ui:VisualElement style="flex-grow: 1; -unity-background-scale-mode: scale-to-fit; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-417108044&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_56&apos;);" />
             <ui:Label tabindex="-1" text="= 10" parse-escape-sequences="true" display-tooltip-when-elided="true" class="info-title" />
         </ui:VisualElement>

@@ -15,7 +15,6 @@ public class TileVisualSet : MonoBehaviour
         if (_activeObjectTiles.Length > 0) DespawnObjects();
         for (int i = 0; i < _spawnPoints.Length; i++)
         {
-            Debug.Log(TileVisualSingleton.Instance.ObjetoParaInstanciar(tile.biome));
             GameObject newObj = Instantiate(TileVisualSingleton.Instance.ObjetoParaInstanciar(tile.biome), _spawnPoints[i].position, Quaternion.Euler(transform.rotation.x, Random.Range(0, 360), transform.rotation.z));
             _activeObjectTiles[i] = newObj;
         }

@@ -259,6 +259,7 @@ MonoBehaviour:
   _pieceHeight: {x: 0, y: 5, z: 0}
   owners: 
   MainCam: {fileID: 961739752}
+  _inGameUi: {fileID: 9445385}
   _biomaOne: []
   _biomaTwo: []
   _biomaThree: []
@@ -337,9 +338,9 @@ MonoBehaviour:
   totemTypeMesh:
   - {fileID: -7276807288912308764, guid: e9a70797131311d49ad8f35988d003d4, type: 3}
   - {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
-  - {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
-  - {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
-  - {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 3193203228891694486, guid: 0a6ca21fc9bbad84185fd328873d572a, type: 3}
+  - {fileID: -185447317763182327, guid: c39ac9c1e584fde428479dcd6e78ac12, type: 3}
+  - {fileID: -3794393067471512702, guid: 048f3287a73fff24cb8c4c3305cfda1a, type: 3}
   - {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
   - {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
   - {fileID: 0}
@@ -396,11 +397,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skyboxMaterial: {fileID: 2100000, guid: eddf7c1c12f5d7b4a882f8e0170cf46b, type: 2}
-  cor1: {r: 0.47912958, g: 0.87878746, b: 0.9150943, a: 1}
-  cor2: {r: 0.9433962, g: 0.3565126, b: 0.06674972, a: 1}
-  cor3: {r: 0.23960043, g: 0.1533019, b: 0.6132076, a: 1}
-  transitionDuration: 5
-  nTurnosParaTrocarDia: 5
+  cor1: {r: 0.21057315, g: 0.46786395, b: 0.49056602, a: 1}
+  cor2: {r: 0.6415094, g: 0.2828488, b: 0.105909556, a: 1}
+  cor3: {r: 0.22216134, g: 0.16874333, b: 0.4528302, a: 1}
+  transitionDuration: 2
+  nTurnosParaTrocarDia: 2
   GameUi: {fileID: 9445384}
   DayNight: 
 --- !u!1 &203844586
@@ -644,7 +645,8 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: eefdcd32e06ce174fa41bfa90afa29c8, type: 3}
   - {fileID: 919132149155446097, guid: 1e4c41654a676b148b400e4b28e252d4, type: 3}
   - {fileID: 919132149155446097, guid: 64fbafdb9aab9d1459b2173b17f9c288, type: 3}
-  - {fileID: 919132149155446097, guid: 4af5f9db01340a444a1864fdf787a9bd, type: 3}
+  - {fileID: 919132149155446097, guid: fe4b1731879a1e4429feb5a862058bd8, type: 3}
+  - {fileID: 919132149155446097, guid: ccae0d73b8dc8024faddbdc6985fb5c8, type: 3}
 --- !u!4 &229197337
 Transform:
   m_ObjectHideFlags: 0
@@ -709,6 +711,7 @@ MonoBehaviour:
   _mutationScreen: {fileID: 1700827184}
   _buyMutationScreen: {fileID: 1968964554}
   _ingameUi: {fileID: 9445385}
+  _playerRaycast: {fileID: 961739755}
 --- !u!114 &327856744
 MonoBehaviour:
   m_ObjectHideFlags: 0
