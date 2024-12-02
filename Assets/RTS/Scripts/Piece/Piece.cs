@@ -6,6 +6,15 @@ using ArvoreAVL;
 
 public class Piece : MonoBehaviour
 {
+    #region Analytics
+    public GameObject manager;
+    Analytics analytic;
+    private void Start()
+    {
+        analytic = manager.GetComponent<Analytics>();
+    }
+    #endregion
+
     #region Constantes e Configurações
     private const float _rayDistanceTile = 10f;
     private const float RestDuration = 3f; // Duração do descanso
@@ -155,12 +164,22 @@ public class Piece : MonoBehaviour
     private void VerifyFightOutcome(Piece attacker, Piece defender, GameObject targetTile)
     {
         if (attacker.Health.CurrentBarValue == attacker.Health.MinBarValue)
+        {
             GameObject.Destroy(attacker.gameObject);
+            if (attacker.Owner == Owner)
+            {
+                analytic.jogador.nPecasEliminadas += 1;
+            }
+        }
         GameObject.FindAnyObjectByType<RoundManager>().RemoverPieceEmLista(attacker.Owner, attacker.gameObject);
         if (defender.Health.CurrentBarValue == defender.Health.MinBarValue)
         {
             GameObject.Destroy(defender.gameObject);
             GameObject.FindAnyObjectByType<RoundManager>().RemoverPieceEmLista(defender.Owner, defender.gameObject);
+            if (defender.Owner == Owner)
+            {
+                analytic.jogador.nPecasMortas += 1;
+            }
 
             attacker.StartCoroutine(Walk(attacker,targetTile, true));
         }
@@ -179,6 +198,9 @@ public class Piece : MonoBehaviour
         motherScript.Fertility.CurrentBarValue = 0;
         fatherScript.IsDuringAction = false;
         Piece.SetParent(offspring, father.transform.parent.gameObject);
+
+        //dados para analytics
+        analytic.jogador.nReproducoes += 1;
     }
 
     private static bool LoseEnergyToAct(GameObject piece, float actionFactor)
