@@ -1044,6 +1044,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1700827186}
   - component: {fileID: 1700827185}
+  - component: {fileID: 1700827187}
   m_Layer: 0
   m_Name: MutationInfoUi
   m_TagString: Untagged
@@ -1083,6 +1084,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 228831713}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1700827187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700827184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 757cdd28f223d254cb796fc3b13157f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _creatureScreen: {fileID: 327856741}
+  _mutationScreen: {fileID: 1700827184}
+  _buyMutationScreen: {fileID: 1968964554}
+  _ingameUi: {fileID: 9445385}
+  _playerRaycast: {fileID: 961739755}
 --- !u!1 &1707048701
 GameObject:
   m_ObjectHideFlags: 0

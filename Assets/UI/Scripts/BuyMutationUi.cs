@@ -12,8 +12,10 @@ public class BuyMutationUi : MonoBehaviour
     private Button _herbivoreMutationBtn;
     private Button _carnivoreMutationBtn;
     private Button _omnivoreMutationBtn;
+    private Piece _actualPiece;
     private MutationBase _selectedMutation;
     private int _mutationIndex;
+    public Piece Piece { get => _actualPiece; set => _actualPiece = value; }
     private void OnEnable()
     {
         var root = GetComponent<UIDocument>().rootVisualElement;
@@ -38,7 +40,15 @@ public class BuyMutationUi : MonoBehaviour
     }
     private void OnClickHerbivoreBtn(ClickEvent evt)
     {
-        _herbivoreBtn.RemoveFromClassList("purchased-button");
+        MutationBase herbivoro = Resources.Load<MutationBase>("Mutation/Herbivore");
+        if (_actualPiece.AppliedMutations.Pesquisar(herbivoro))
+        {
+
+        } else
+        {
+            _actualPiece.AppliedMutations.Inserir(herbivoro);
+        }
+        _herbivoreBtn.AddToClassList("purchased-button");
         _carnivoreBtn.RemoveFromClassList("purchased-button");
         _omnivoreBtn.RemoveFromClassList("purchased-button");
         _herbivoreMutationBtn.AddToClassList("unavailable-button");
@@ -47,8 +57,16 @@ public class BuyMutationUi : MonoBehaviour
     }
     private void OnClickCarnivoreBtn(ClickEvent evt)
     {
-        _herbivoreBtn.RemoveFromClassList("purchased-button");
-        _carnivoreBtn.RemoveFromClassList("purchased-button");
+        MutationBase carnivore = Resources.Load<MutationBase>("Mutation/Carnivore");
+        if (_actualPiece.AppliedMutations.Pesquisar(carnivore))
+        {
+
+        }
+        else
+        {
+            _actualPiece.AppliedMutations.Inserir(carnivore);
+        }
+        _carnivoreBtn.AddToClassList("purchased-button");
         _omnivoreBtn.RemoveFromClassList("purchased-button");
         _herbivoreMutationBtn.AddToClassList("unavailable-button");
         _carnivoreMutationBtn.AddToClassList("unavailable-button");
@@ -56,9 +74,16 @@ public class BuyMutationUi : MonoBehaviour
     }
     private void OnClickOmnivorousBtn(ClickEvent evt)
     {
-        _herbivoreBtn.RemoveFromClassList("purchased-button");
-        _carnivoreBtn.RemoveFromClassList("purchased-button");
-        _omnivoreBtn.RemoveFromClassList("purchased-button");
+        MutationBase Omnivorous = Resources.Load<MutationBase>("Mutation/Omnivorous");
+        if (_actualPiece.AppliedMutations.Pesquisar(Omnivorous))
+        {
+
+        }
+        else
+        {
+            _actualPiece.AppliedMutations.Inserir(Omnivorous);
+        }
+        _omnivoreBtn.AddToClassList("purchased-button");
         _herbivoreMutationBtn.AddToClassList("unavailable-button");
         _carnivoreMutationBtn.AddToClassList("unavailable-button");
         _omnivoreBtn.RemoveFromClassList("unavailable-button");

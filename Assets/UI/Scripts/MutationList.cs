@@ -42,8 +42,9 @@ public class MutationList : MonoBehaviour
     {
         _playerRaycast.DeselectPiece();
         _creatureScreen.SetActive(false);
-        _mutationScreen.SetActive(false);
         _buyMutationScreen.SetActive(true);
+        _buyMutationScreen.GetComponent<BuyMutationUi>().Piece = _actualPiece;
+        _mutationScreen.SetActive(false);
     }
     private void OnClickAction(ClickEvent evt)
     {
