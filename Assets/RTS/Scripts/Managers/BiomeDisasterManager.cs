@@ -190,15 +190,15 @@ public class BiomeDisasterManager : MonoBehaviour
                     totensAtivosCarne.Add(totem);
                 }
                 //Vegano
-                else if((int)totem.TotemType > 3 && (int)totem.TotemType < 6)
+                else if ((int)totem.TotemType > 3 && (int)totem.TotemType < 6)
                 {
                     totensAtivosVegano.Add(totem);
-                }            
+                }
             }
             else
             {
                 totensInativos.Add(totem);
-            }         
+            }
         }
 
         if (totensInativos.Count >= totensAtivosCarne.Count * 1.5f)
@@ -513,6 +513,24 @@ public class BiomeDisasterManager : MonoBehaviour
         }
     }
 
+    #endregion
+
+    #region Alteração de material durante desastre maior
+
+    /// <summary>
+    /// Faz lerp entre materiais de uma lista de tiles, aplicando um novo bioma.
+    /// </summary>
+    /// 
+
+    public static void ModificarTextura(List<GameObject> biomesArray, int passedTurnes)
+    {
+        foreach (var biome in biomesArray)
+        {
+            float factor = passedTurnes * 25; 
+
+        }
+
+    }
     #endregion
 
     #region Finalização de Desastres
