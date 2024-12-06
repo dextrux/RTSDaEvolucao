@@ -76,6 +76,10 @@ public class InGameUi : MonoBehaviour
     }
     private void OnClickTurnChange(ClickEvent evt)
     {
+        #region Controle Dia e Noite
+        dayNight.ChangeDayNight();
+        #endregion
+
         _nextTurnAdvice.AddToClassList("turn-screen-open");
         _roundManager.PassarTurno();
         ActualTurn = _roundManager._CurrentTurno;
@@ -110,10 +114,6 @@ public class InGameUi : MonoBehaviour
                 _barPositions[i].AddToClassList("little-bar");
             }
         }
-
-        #region Controle Dia e Noite
-        dayNight.ChangeDayNight();
-        #endregion
     }
     private void OnResumeTurnChange(ClickEvent evt)
     {

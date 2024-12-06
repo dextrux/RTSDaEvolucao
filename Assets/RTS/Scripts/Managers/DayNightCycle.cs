@@ -7,10 +7,10 @@ public class DayNightCycle : MonoBehaviour
     #region Constantes para mudar a cor da Skybox
     public Material skyboxMaterial; // Material do skybox
     public Color corDia; // Primeira cor
-    public Color corPdS; // Segunda cor
+    public Color corPorDoSol; // Segunda cor
     public Color corNoite; // Terceira cor
-    private Color startColor; // Cor inicial da transicao
-    private Color endColor; // Cor final da transicao
+    private Color startColor; // Cor inicial da transição
+    private Color endColor; // Cor final da transição
 
     private bool transitioning = false;
     public float transitionDuration = 2f; // Duração da transição em segundos
@@ -44,14 +44,13 @@ public class DayNightCycle : MonoBehaviour
             if (time >= transitionDuration)
             {
                 transitioning = false;
+                time = 0f;
             }
         }
     }
 
     public void ChangeDayNight()
     {
-        Debug.Log("Dia&Noite chamado");
-
         contadorTurno += 0.5f;
         if(contadorTurno == 4f && DayNight == "Noite")
         {
@@ -61,27 +60,24 @@ public class DayNightCycle : MonoBehaviour
             endColor = corDia;
 
             transitioning = true;
-            Debug.Log("Dia");
         }
         else if (contadorTurno == 5f && DayNight == "Dia")
         {
             //Por do Sol
             startColor = corDia;
-            endColor = corPdS;
+            endColor = corPorDoSol;
 
             transitioning = true;
-            Debug.Log("Por do sol");
         }
         else if (contadorTurno == 6f && DayNight == "Dia")
         {
             //Noite
             DayNight = "Noite";
-            startColor = corPdS;
+            startColor = corPorDoSol;
             endColor = corNoite;
 
             contadorTurno = 0f;
             transitioning = true;
-            Debug.Log("Noite");
         }
 
         Debug.Log($"counterTurno: {contadorTurno}\nDayNight: {DayNight}");

@@ -400,9 +400,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skyboxMaterial: {fileID: 2100000, guid: eddf7c1c12f5d7b4a882f8e0170cf46b, type: 2}
   corDia: {r: 0, g: 0.7607843, b: 0.9056604, a: 0}
-  corPdS: {r: 0.754717, g: 0.29411766, b: 0, a: 0}
+  corPorDoSol: {r: 0.8584906, g: 0.34051314, b: 0.03644534, a: 0}
   corNoite: {r: 0.08560368, g: 0.012237449, b: 0.5188679, a: 0}
-  transitionDuration: 5
+  transitionDuration: 3
   DayNight: 
 --- !u!114 &42698656
 MonoBehaviour:
