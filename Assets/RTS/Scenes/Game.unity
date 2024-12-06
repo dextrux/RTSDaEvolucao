@@ -153,6 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b89fded34be50414aa98e196f661ff2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 42698646}
   ActualTurn: 1
   _progressBarMargin: 26
   _roundManager: {fileID: 42698649}
@@ -398,12 +399,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skyboxMaterial: {fileID: 2100000, guid: eddf7c1c12f5d7b4a882f8e0170cf46b, type: 2}
-  cor1: {r: 0.21057315, g: 0.46786395, b: 0.49056602, a: 1}
-  cor2: {r: 0.6415094, g: 0.2828488, b: 0.105909556, a: 1}
-  cor3: {r: 0.22216134, g: 0.16874333, b: 0.4528302, a: 1}
-  transitionDuration: 2
-  nTurnosParaTrocarDia: 2
-  GameUi: {fileID: 9445384}
+  corDia: {r: 0, g: 0.7607843, b: 0.9056604, a: 0}
+  corPdS: {r: 0.754717, g: 0.29411766, b: 0, a: 0}
+  corNoite: {r: 0.08560368, g: 0.012237449, b: 0.5188679, a: 0}
+  transitionDuration: 5
   DayNight: 
 --- !u!114 &42698656
 MonoBehaviour:
@@ -418,6 +417,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tempoTotal: 0
+  tempoAtual: 0
+  tempoCompras: 0
+  timerAtivo: 0
 --- !u!1 &203844586
 GameObject:
   m_ObjectHideFlags: 0

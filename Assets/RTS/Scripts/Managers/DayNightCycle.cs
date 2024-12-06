@@ -6,87 +6,84 @@ public class DayNightCycle : MonoBehaviour
 {
     #region Constantes para mudar a cor da Skybox
     public Material skyboxMaterial; // Material do skybox
-    public Color cor1 = Color.blue; // Primeira cor
-    public Color cor2 = Color.red; // Segunda cor
-    public Color cor3 = Color.green; // Terceira cor
-    public float transitionDuration = 5f; // Duração da transição em segundos
-    public int nTurnosParaTrocarDia = 5; // Número de turnos para trocar de dia para noite
+    public Color corDia; // Primeira cor
+    public Color corPdS; // Segunda cor
+    public Color corNoite; // Terceira cor
+    private Color startColor; // Cor inicial da transicao
+    private Color endColor; // Cor final da transicao
 
-    private InGameUi inGameUi;
-    public GameObject GameUi;
-
-    private float transitionTime = 0f;
     private bool transitioning = false;
-    private int currentColorIndex = 0; // Índice da cor atual
-    private Color startColor; // Cor inicial da transição
-    private Color targetColor; // Cor final da transição
+    public float transitionDuration = 2f; // Duração da transição em segundos
+    private float time = 0f;
+    private float contadorTurno = 0;
     #endregion
 
     //Variavel que define se está de dia ou de noite
     public string DayNight;
 
-    void Start()
+    private void Start()
     {
         DayNight = "Dia";
-        inGameUi = GameUi.GetComponent<InGameUi>();
+        transitioning = false;
         if (skyboxMaterial != null)
         {
             RenderSettings.skybox = skyboxMaterial;
-            startColor = cor1; // Inicia com a primeira cor
-            targetColor = cor2; // Define a próxima cor
-            skyboxMaterial.SetColor("_Tint", startColor);
+            skyboxMaterial.SetColor("_Tint", corDia);
         }
     }
 
-    void Update()
+    private void Update()
     {
-        if ((inGameUi.ActualTurn != 0) && (inGameUi.ActualTurn % nTurnosParaTrocarDia == 0) && !transitioning) // troca o skybox de cor de 5 em 5 turnos
+        if (transitioning == true)
         {
-            StartTransition();
-        }
+            time += Time.deltaTime;
 
-        //transiociona a cor do skybox para a proxima cor e seta 
-        if (transitioning && skyboxMaterial != null)
-        {
-            transitionTime += Time.deltaTime / transitionDuration;
-            Color currentColor = Color.Lerp(startColor, targetColor, transitionTime);
+            Color currentColor = Color.Lerp(startColor, endColor, time);
             skyboxMaterial.SetColor("_Tint", currentColor);
 
-            if (transitionTime >= 1f)
+            if (time >= transitionDuration)
             {
                 transitioning = false;
-                transitionTime = 0f;
-                CycleColors(); // Avança para a próxima transição
             }
         }
     }
 
-    // Método para iniciar a transição
-    private void StartTransition()
+    public void ChangeDayNight()
     {
-        transitioning = true;
-        transitionTime = 0f;
-    }
+        Debug.Log("Dia&Noite chamado");
 
-    // Alterna entre as cores em sequência
-    private void CycleColors()
-    {
-        currentColorIndex = (currentColorIndex + 1) % 3;
-        startColor = targetColor;
-
-        switch (currentColorIndex)
+        contadorTurno += 0.5f;
+        if(contadorTurno == 4f && DayNight == "Noite")
         {
-            case 0:
-                DayNight = "Dia";
-                targetColor = cor1;
-                break;
-            case 1:
-                targetColor = cor2;
-                break;
-            case 2:
-                DayNight = "Noite";
-                targetColor = cor3;
-                break;
+            //Dia
+            DayNight = "Dia";
+            startColor = corNoite;
+            endColor = corDia;
+
+            transitioning = true;
+            Debug.Log("Dia");
         }
+        else if (contadorTurno == 5f && DayNight == "Dia")
+        {
+            //Por do Sol
+            startColor = corDia;
+            endColor = corPdS;
+
+            transitioning = true;
+            Debug.Log("Por do sol");
+        }
+        else if (contadorTurno == 6f && DayNight == "Dia")
+        {
+            //Noite
+            DayNight = "Noite";
+            startColor = corPdS;
+            endColor = corNoite;
+
+            contadorTurno = 0f;
+            transitioning = true;
+            Debug.Log("Noite");
+        }
+
+        Debug.Log($"counterTurno: {contadorTurno}\nDayNight: {DayNight}");
     }
 }
