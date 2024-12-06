@@ -1,0 +1,258 @@
+.info-title {
+    -unity-text-align: middle-center;
+    -unity-font: url('project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.ttf?fileID=12800000&guid=22aed22e579f47048b64da77dc6349e6&type=3#Bodo Amat');
+    -unity-font-definition: initial;
+    color: rgb(255, 255, 255);
+    -unity-text-outline-color: rgb(72, 57, 47);
+    -unity-text-outline-width: 10px;
+    -unity-slice-right: 0;
+    font-size: 318%;
+}
+
+.exit-mutation-btn {
+    position: absolute;
+    left: 97%;
+    top: -4%;
+    background-image: url('project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-900656874&guid=8fbda476e9f56fe40955a8472d8bd40c&type=3#AtlasUITemp_52');
+    background-color: rgba(188, 188, 188, 0);
+    border-left-color: rgba(149, 149, 149, 0);
+    border-right-color: rgba(149, 149, 149, 0);
+    border-top-color: rgba(149, 149, 149, 0);
+    border-bottom-color: rgba(149, 149, 149, 0);
+    -unity-background-scale-mode: scale-to-fit;
+    width: 8%;
+    height: 16%;
+    align-items: center;
+}
+
+.exit-mutation-btn:hover {
+    position: absolute;
+    left: 97%;
+    top: -4%;
+    background-image: url('project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-900656874&guid=8fbda476e9f56fe40955a8472d8bd40c&type=3#AtlasUITemp_52');
+    background-color: rgba(188, 188, 188, 0);
+    border-left-color: rgba(149, 149, 149, 0);
+    border-right-color: rgba(149, 149, 149, 0);
+    border-top-color: rgba(149, 149, 149, 0);
+    border-bottom-color: rgba(149, 149, 149, 0);
+    -unity-background-scale-mode: scale-to-fit;
+    width: 8%;
+    height: 16%;
+    align-items: center;
+    scale: 1.1 1.1;
+}
+
+.exit-mutation-btn:active {
+    position: absolute;
+    left: 97%;
+    top: -4%;
+    background-image: url('project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-900656874&guid=8fbda476e9f56fe40955a8472d8bd40c&type=3#AtlasUITemp_52');
+    background-color: rgba(188, 188, 188, 0);
+    border-left-color: rgba(149, 149, 149, 0);
+    border-right-color: rgba(149, 149, 149, 0);
+    border-top-color: rgba(149, 149, 149, 0);
+    border-bottom-color: rgba(149, 149, 149, 0);
+    -unity-background-scale-mode: scale-to-fit;
+    width: 8%;
+    height: 16%;
+    align-items: center;
+    scale: 0.9 0.9;
+}
+
+.buy-mutation-btn {
+    position: absolute;
+    left: 82%;
+    top: 100%;
+    background-image: url('project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=1165359724&guid=8fbda476e9f56fe40955a8472d8bd40c&type=3#AtlasUITemp_64');
+    background-color: rgba(188, 188, 188, 0);
+    border-left-color: rgba(149, 149, 149, 0);
+    border-right-color: rgba(149, 149, 149, 0);
+    border-top-color: rgba(149, 149, 149, 0);
+    border-bottom-color: rgba(149, 149, 149, 0);
+    -unity-background-scale-mode: scale-to-fit;
+    width: 16%;
+    height: 13%;
+    align-items: center;
+}
+
+.available-button {
+    background-image: url('project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=1384364238&guid=8fbda476e9f56fe40955a8472d8bd40c&type=3#AtlasUITemp_62');
+    border-left-color: rgba(149, 149, 149, 0);
+    border-right-color: rgba(149, 149, 149, 0);
+    border-top-color: rgba(149, 149, 149, 0);
+    border-bottom-color: rgba(149, 149, 149, 0);
+    background-color: rgba(188, 188, 188, 0);
+    width: 120px;
+    -unity-background-scale-mode: scale-to-fit;
+    height: 120px;
+    position: absolute;
+}
+
+.available-button:hover {
+    background-image: url('project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=1384364238&guid=8fbda476e9f56fe40955a8472d8bd40c&type=3#AtlasUITemp_62');
+    border-left-color: rgba(149, 149, 149, 0);
+    border-right-color: rgba(149, 149, 149, 0);
+    border-top-color: rgba(149, 149, 149, 0);
+    border-bottom-color: rgba(149, 149, 149, 0);
+    background-color: rgba(188, 188, 188, 0);
+    width: 120px;
+    -unity-background-scale-mode: scale-to-fit;
+    height: 120px;
+    position: absolute;
+    scale: 1.1 1.1;
+}
+
+.available-button:active {
+    background-image: url('project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=1384364238&guid=8fbda476e9f56fe40955a8472d8bd40c&type=3#AtlasUITemp_62');
+    border-left-color: rgba(149, 149, 149, 0);
+    border-right-color: rgba(149, 149, 149, 0);
+    border-top-color: rgba(149, 149, 149, 0);
+    border-bottom-color: rgba(149, 149, 149, 0);
+    background-color: rgba(188, 188, 188, 0);
+    width: 120px;
+    -unity-background-scale-mode: scale-to-fit;
+    height: 120px;
+    position: absolute;
+    scale: 0.9 0.9;
+}
+
+.purchased-button {
+    background-image: url('project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-1952634358&guid=8fbda476e9f56fe40955a8472d8bd40c&type=3#AtlasUITemp_61');
+    background-color: rgba(188, 188, 188, 0);
+    width: 120px;
+    -unity-background-scale-mode: scale-to-fit;
+    height: 120px;
+    position: absolute;
+    scale: 1 1;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+}
+
+.purchased-button:hover {
+    background-image: url('project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-1952634358&guid=8fbda476e9f56fe40955a8472d8bd40c&type=3#AtlasUITemp_61');
+    background-color: rgba(188, 188, 188, 0);
+    width: 120px;
+    -unity-background-scale-mode: scale-to-fit;
+    height: 120px;
+    position: absolute;
+    scale: 1.1 1.1;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+}
+
+.purchased-button:active {
+    background-image: url('project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-1952634358&guid=8fbda476e9f56fe40955a8472d8bd40c&type=3#AtlasUITemp_61');
+    background-color: rgba(188, 188, 188, 0);
+    width: 120px;
+    -unity-background-scale-mode: scale-to-fit;
+    height: 120px;
+    position: absolute;
+    scale: 0.9 0.9;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+}
+
+.selected-button {
+    background-image: url('project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=1455426703&guid=8fbda476e9f56fe40955a8472d8bd40c&type=3#AtlasUITemp_7');
+    background-color: rgba(188, 188, 188, 0);
+    width: 120px;
+    -unity-background-scale-mode: scale-to-fit;
+    height: 120px;
+    position: absolute;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+}
+
+.selected-button:hover {
+    background-image: url('project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=1455426703&guid=8fbda476e9f56fe40955a8472d8bd40c&type=3#AtlasUITemp_7');
+    background-color: rgba(188, 188, 188, 0);
+    width: 120px;
+    -unity-background-scale-mode: scale-to-fit;
+    height: 120px;
+    position: absolute;
+    scale: 1.1 1.1;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+}
+
+.selected-button:active {
+    background-image: url('project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=1455426703&guid=8fbda476e9f56fe40955a8472d8bd40c&type=3#AtlasUITemp_7');
+    background-color: rgba(188, 188, 188, 0);
+    width: 120px;
+    -unity-background-scale-mode: scale-to-fit;
+    height: 120px;
+    position: absolute;
+    scale: 0.9 0.9;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+}
+
+.unavailable-button {
+    background-image: url('project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-1952634358&guid=8fbda476e9f56fe40955a8472d8bd40c&type=3#AtlasUITemp_61');
+    background-color: rgba(188, 188, 188, 0);
+    width: 120px;
+    -unity-background-scale-mode: scale-to-fit;
+    height: 120px;
+    position: absolute;
+}
+
+.unavailable-button:hover {
+    background-image: url('project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-1952634358&guid=8fbda476e9f56fe40955a8472d8bd40c&type=3#AtlasUITemp_61');
+    background-color: rgba(188, 188, 188, 0);
+    width: 120px;
+    -unity-background-scale-mode: scale-to-fit;
+    height: 120px;
+    position: absolute;
+    scale: 1.1 1.1;
+}
+
+.unavailable-button:active {
+    background-image: url('project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-1952634358&guid=8fbda476e9f56fe40955a8472d8bd40c&type=3#AtlasUITemp_61');
+    background-color: rgba(188, 188, 188, 0);
+    width: 120px;
+    -unity-background-scale-mode: scale-to-fit;
+    height: 120px;
+    position: absolute;
+    scale: 0.9 0.9;
+}
+
+.incompatible-button {
+    background-image: url('project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-1952634358&guid=8fbda476e9f56fe40955a8472d8bd40c&type=3#AtlasUITemp_61');
+    background-color: rgba(188, 188, 188, 0);
+    width: 120px;
+    -unity-background-scale-mode: scale-to-fit;
+    height: 120px;
+    position: absolute;
+}
+
+.incompatible-button:hover {
+    background-image: url('project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-1952634358&guid=8fbda476e9f56fe40955a8472d8bd40c&type=3#AtlasUITemp_61');
+    background-color: rgba(188, 188, 188, 0);
+    width: 120px;
+    -unity-background-scale-mode: scale-to-fit;
+    height: 120px;
+    position: absolute;
+    scale: 0.9 0.9;
+}
+
+.incompatible-button:active {
+    background-image: url('project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-1952634358&guid=8fbda476e9f56fe40955a8472d8bd40c&type=3#AtlasUITemp_61');
+    background-color: rgba(188, 188, 188, 0);
+    width: 120px;
+    -unity-background-scale-mode: scale-to-fit;
+    height: 120px;
+    position: absolute;
+    scale: 0.9 0.9;
+}

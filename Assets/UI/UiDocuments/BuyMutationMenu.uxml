@@ -1,38 +1,569 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/UI/StyleSheets/InfoCreatureStyle.uss?fileID=7433441132597879392&amp;guid=7535a421aefdd8e41a6ff4d519c06b58&amp;type=3#InfoCreatureStyle" />
+    <Style src="project://database/Assets/UI/StyleSheets/BuyMutationStyle.uss?fileID=7433441132597879392&amp;guid=adf9dc1f98d323f47a774e437b4d7419&amp;type=3#BuyMutationStyle" />
     <ui:VisualElement name="buy-mutation-main-container" style="padding-top: 160px; padding-bottom: 160px; padding-right: 30px; padding-left: 30px; width: 100%; height: 100%;">
         <ui:VisualElement name="buy-mutation-container" style="flex-grow: 1; background-color: rgb(41, 29, 19); border-left-color: rgb(200, 201, 197); border-right-color: rgb(200, 201, 197); border-top-color: rgb(200, 201, 197); border-bottom-color: rgb(200, 201, 197); border-top-width: 6px; border-right-width: 6px; border-bottom-width: 6px; border-left-width: 6px; border-top-left-radius: 77px; border-top-right-radius: 77px; border-bottom-right-radius: 77px; border-bottom-left-radius: 77px; padding-top: 10px; padding-left: 40px; padding-bottom: 30px; padding-right: 40px;">
             <ui:Label tabindex="-1" text="Comprar mutações" parse-escape-sequences="true" display-tooltip-when-elided="true" name="buy-mutation-title" class="info-title" style="-unity-text-align: upper-left; font-size: 70%; height: 10%; -unity-font-definition: initial; -unity-font: url(&apos;project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.otf?fileID=12800000&amp;guid=81817e382e1f2ff4da7b7f2b05c32595&amp;type=3#Bodo Amat&apos;);" />
             <ui:Label tabindex="-1" text="Verde: Já adquirida / Amarelo: Selecionada / Cinza: Indisponível / Vermelha: Incompatível / Roxa: Disponíveis" parse-escape-sequences="true" display-tooltip-when-elided="true" name="buy-mutation-subtitle" class="info-title" style="-unity-text-align: upper-left; font-size: 30%; height: 10%; -unity-font-definition: initial; -unity-font: url(&apos;project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.otf?fileID=12800000&amp;guid=81817e382e1f2ff4da7b7f2b05c32595&amp;type=3#Bodo Amat&apos;); padding-left: 40px; padding-top: 10px; color: rgb(140, 140, 140); -unity-text-outline-color: rgba(72, 57, 47, 0);" />
             <ui:VisualElement style="flex-grow: 1; height: 80%; flex-direction: row; justify-content: space-between;">
-                <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" style="width: 49%;">
-                    <ui:VisualElement style="flex-grow: 1; flex-direction: row; height: 300px; margin-right: 12.25%;">
-                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="herbivore-btn" class="purchased-button">
-                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=1956337614&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_35&apos;); -unity-background-scale-mode: scale-to-fit;" />
+                <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" style="width: 55%;">
+                    <ui:VisualElement name="linha1" style="flex-grow: 1;">
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="herbivoro-btn" class="selected-button" style="left: 0;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Herbivoro" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
                         </ui:Button>
-                        <ui:Button text="&#x9;" parse-escape-sequences="true" display-tooltip-when-elided="true" name="omnivorous-btn" class="available-button">
-                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=1448378831&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_34&apos;); -unity-background-scale-mode: scale-to-fit; align-self: auto;" />
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="carnivoro-btn" class="available-button" style="left: 105px; visibility: visible;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Carnivoro" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
                         </ui:Button>
-                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="carnivore-btn" class="available-button">
-                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-1109962394&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_60&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="onivoro-btn" class="available-button" style="left: 210px;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Onivoro" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 315px; visibility: hidden; display: flex;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 420px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="agressivo-btn" class="available-button" style="left: 525px; visibility: visible;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Agres\nsivo" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 630px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="fugitivo-btn" class="available-button" style="left: 735px; visibility: visible;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="fugitivo" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
                         </ui:Button>
                     </ui:VisualElement>
-                    <ui:VisualElement style="flex-grow: 1; flex-direction: row; height: 300px; margin-top: -14%; margin-right: 0; margin-left: 11%;">
-                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="herbivore-mutation-btn" class="purchased-button available-button">
-                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=1956337614&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_35&apos;); -unity-background-scale-mode: scale-to-fit;" />
+                    <ui:VisualElement name="linha2" style="flex-grow: 1;">
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 53px; top: 90px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
                         </ui:Button>
-                        <ui:Button text="&#x9;" parse-escape-sequences="true" display-tooltip-when-elided="true" name="omnivorous-mutation-btn" class="unavailable-button">
-                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-2016670150&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_16&apos;); -unity-background-scale-mode: scale-to-fit;" />
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 158px; top: 90px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
                         </ui:Button>
-                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="carnivore-mutation-btn" class="unavailable-button">
-                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=1149925711&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_33&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 263px; top: 90px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="social-btn" class="available-button" style="left: 368px; top: 90px; visibility: visible;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="social" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 473px; top: 90px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 578px; top: 90px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 683px; top: 90px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="linha3" style="flex-grow: 1;">
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="necrofago-btn" class="available-button" style="left: 0; top: 180px;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Necrofago" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 105px; top: 180px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Médio\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="porte-grande-btn" class="available-button" style="left: 210px; top: 180px;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 315px; top: 180px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="familiar-btn" class="available-button" style="left: 420px; top: 180px;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="familiar" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 525px; top: 180px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="parasita-btn" class="available-button" style="left: 630px; top: 180px;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Parasita" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 735px; top: 180px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="linha4" style="flex-grow: 1;">
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 53px; top: 270px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="cavernoso-btn" class="available-button" style="left: 158px; top: 270px;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Caver\nnoso" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="escalador-btn" class="available-button" style="left: 263px; top: 270px;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Esca\nlador" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 368px; top: 270px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 473px; top: 270px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 578px; top: 270px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 683px; top: 270px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="linha5" style="flex-grow: 1;">
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="pe-galinha-btn" class="available-button" style="left: 0; top: 360px; visibility: visible;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="pé de\ngalinha" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 105px; top: 360px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Médio\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="medio-porte-btn" class="available-button" style="left: 210px; top: 360px;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Medio\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 315px; top: 360px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 420px; top: 360px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="olho-noturno-btn" class="available-button" style="left: 525px; top: 360px;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Olho\nnoturno" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 630px; top: 360px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="olho-diruno-btn" class="available-button" style="left: 735px; top: 360px;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Olho\nDiurno" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="linha6" style="flex-grow: 1;">
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 53px; top: 450px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="agil-btn" class="available-button" style="left: 158px; top: 450px;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Agil" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="silencioso-btn" class="available-button" style="left: 263px; top: 450px;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Silen\ncioso" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="emboscador-btn" class="available-button" style="left: 368px; top: 450px;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Embos\ncador" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 473px; top: 450px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 578px; top: 450px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 683px; top: 450px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="linha7" style="flex-grow: 1;">
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="pata-de-urso-btn" class="available-button" style="left: 0; top: 540px; visibility: visible;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Pata de\nurso" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 105px; top: 540px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Médio\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="pequeno-porte-btn" class="available-button" style="left: 210px; top: 540px;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Pequeno\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 315px; top: 540px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 420px; top: 540px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 525px; top: 540px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="bico-plantas-btn" class="available-button" style="left: 630px; top: 540px;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="bico\nde\nplanta" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="bico-graos-btn" class="available-button" style="left: 735px; top: 540px;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Bico\ntritura\ngrãos" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="linha8" style="flex-grow: 1;">
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 53px; top: 630px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="quelicera" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 158px; top: 630px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 263px; top: 630px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="serras-btn" class="available-button" style="left: 368px; top: 630px;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Serras" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="bico-de-caca-pequena-btn" class="available-button" style="left: 473px; top: 630px;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Bico caca\nPequena" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="bico-herbivoro-btn" class="available-button" style="left: 578px; top: 630px;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Bico\nHerbivoro" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="bico-fruta-btn" class="available-button" style="left: 683px; top: 630px;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Bico\nde\nfrutas" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="linha9" style="flex-grow: 1;">
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="pata-de-macaco-btn" class="available-button" style="left: 0; top: 720px; visibility: visible;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Pata De\nMacaco" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 105px; top: 720px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="peço\nnha" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="quelicera-btn" class="available-button" style="left: 210px; top: 720px; visibility: visible;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Quelicera" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 315px; top: 720px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="bico-de-caca-media-btn" class="available-button" style="left: 420px; top: 720px;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Bico caca\nmedia" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="bico-carnivoro-btn" class="available-button" style="left: 525px; top: 720px;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Bico\nCarnivoro" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="bico-btn" class="available-button" style="left: 630px; top: 720px;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Bico" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 735px; top: 720px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="linha10" style="flex-grow: 1;">
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 53px; top: 810px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="peconha-btn" class="available-button" style="left: 158px; top: 810px;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="peçonha" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 263px; top: 810px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="mandi\nbula" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 368px; top: 810px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="bico-caca-grande-btn" class="available-button" style="left: 473px; top: 810px;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Bico caca\nGrande" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 578px; top: 810px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 683px; top: 810px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="linha11" style="flex-grow: 1;">
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 0; top: 900px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Pequeno\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="mandibula-btn" class="available-button" style="left: 105px; top: 900px;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="mandibula" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 210px; top: 900px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="dentes-frutas" class="available-button" style="left: 315px; top: 900px; visibility: visible;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Dentes\nFrutas" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 420px; top: 900px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 525px; top: 900px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="cauda-largato-escamado-btn" class="available-button" style="left: 630px; top: 900px; visibility: visible;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Cauda\nLargato\nEscamado" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 735px; top: 900px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="linha12" style="flex-grow: 1;">
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 53px; top: 990px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="dentes" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="dentes-btn" class="available-button" style="left: 158px; top: 990px;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Dentes" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="dentes-quadrados-btn" class="available-button" style="left: 263px; top: 990px; visibility: visible;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="dentes\nquadrados" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="dentes-graos-btn" class="available-button" style="left: 368px; top: 990px; visibility: visible;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="dentes\ntritura\ngraos" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 473px; top: 990px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Bico caca\nGrande" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="cauda-largato-btn" class="available-button" style="left: 578px; top: 990px; visibility: visible;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Cauda\nLargato" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="cauda-felpuda-btn" class="available-button" style="left: 683px; top: 990px; visibility: visible;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Cauda\nFelpuda" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="linha13" style="flex-grow: 1;">
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="dente-caca-grande-btn" class="available-button" style="left: 0; top: 1080px;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Dente\ncaca\ngrande" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="dente-afiado-btn" class="available-button" style="left: 105px; top: 1080px;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Dentes\nAfiados" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="carreiras-dentarias-btn" class="available-button" style="left: 210px; top: 1080px;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Carreiras\nDentarias" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="dentes-plantas-btn" class="available-button" style="left: 315px; top: 1080px;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Dentes de\nPlantas" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 420px; top: 1080px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 525px; top: 1080px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="cauda-felpuda-pequena-btn" class="available-button" style="left: 630px; top: 1080px; visibility: visible;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Cauda\nFelpuda\nPequena" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 735px; top: 1080px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="linha14" style="flex-grow: 1;">
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="dente-caca-grande-btn" class="available-button" style="left: 53px; top: 1170px; visibility: visible;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Dente\ncaca\nmedia" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="dente-caca-pequena-btn" class="available-button" style="left: 158px; top: 1170px;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Dentes\ncaça\npequena" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 263px; top: 1170px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="dentes\nquadrados" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 368px; top: 1170px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="dentes\ntritura\ngraos" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 473px; top: 1170px; visibility: hidden;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Bico caca\nGrande" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="cauda-gato-selvagem-btn" class="available-button" style="left: 578px; top: 1170px; visibility: visible;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="Cauda de&#10;gato&#10;selvagem" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
+                        </ui:Button>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="plumagem-pavao-btn" class="available-button" style="left: 683px; top: 1170px; visibility: visible;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
+                                <ui:Label tabindex="-1" text="plumagem\nde Pavão" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
+                            </ui:VisualElement>
                         </ui:Button>
                     </ui:VisualElement>
                 </ui:ScrollView>
                 <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" style="width: 49%;">
                     <ui:VisualElement name="mutation-icon" style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=1956337614&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_35&apos;); height: 300px; -unity-background-scale-mode: scale-to-fit;" />
                     <ui:Label tabindex="-1" text="Dieta - Herbívoro" parse-escape-sequences="true" display-tooltip-when-elided="true" name="mutation-title" class="info-title" style="height: 55px; -unity-text-align: upper-center; font-size: 50px;" />
-                    <ui:Label tabindex="-1" text="Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, " parse-escape-sequences="true" display-tooltip-when-elided="true" name="mutation-descrition" class="info-title" style="white-space: normal; -unity-text-align: upper-left; font-size: 25px;" />
+                    <ui:Label tabindex="-1" text="Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, " parse-escape-sequences="true" display-tooltip-when-elided="true" name="mutation-descrition" class="info-title" style="white-space: normal; -unity-text-align: upper-left; font-size: 25px; margin-right: 2%; margin-left: 5%;" />
                 </ui:ScrollView>
             </ui:VisualElement>
             <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="exit-mutation-btn" class="exit-mutation-btn">
