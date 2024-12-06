@@ -78,6 +78,7 @@ public class CreatureInfo : MonoBehaviour
     }
     public void SetPiece(Piece piece)
     {
+        piece.AtivarIndicador();
         _actualPiece = piece;
         _actualTile = _actualPiece.PieceRaycastForTile();
         SetCreatureStateUi(piece);

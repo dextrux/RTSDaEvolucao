@@ -166,5 +166,43 @@ public class Tile : MonoBehaviour
             tileScript.TransformarTile(biome, tile);
         }
     }
+
+    public static void TransitionTileTextureBigDisaster(float progress, Biome antes, Biome depois, List<GameObject> tiles)
+    {
+        // Obtém as referências aos materiais
+        BiomeReferences biomeRefs = GameObject.FindAnyObjectByType<BiomeReferences>();
+        if (biomeRefs == null)
+        {
+            Debug.LogError("BiomeReferences não encontrado.");
+            return;
+        }
+
+        Material oldMat = biomeRefs.GetBiomeMaterial(antes);
+        Material newMat = biomeRefs.GetBiomeMaterial(depois);
+
+        if (oldMat == null || newMat == null)
+        {
+            Debug.LogError("Materiais não encontrados para os biomas fornecidos.");
+            return;
+        }
+
+        // Cria a transição manipulando as propriedades do material
+        foreach (GameObject tile in tiles)
+        {
+            Renderer renderer = tile.GetComponent<Renderer>();
+            if (renderer == null)
+            {
+                Debug.LogWarning($"Tile {tile.name} não possui um Renderer.");
+                continue;
+            }
+
+            // Cria uma instância única do material para este tile
+            Material mixedMat = new Material(renderer.sharedMaterial);
+            mixedMat.Lerp(oldMat, newMat, progress);
+
+            // Atribui o material ao tile
+            renderer.material = mixedMat;
+        }
+    }
     #endregion
 }

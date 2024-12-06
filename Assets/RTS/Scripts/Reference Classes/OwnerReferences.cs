@@ -34,6 +34,7 @@ public class OwnerReference : MonoBehaviour
             Owner.P3 => ownerGlowingColor[2],
             Owner.P4 => ownerGlowingColor[3],
             Owner.P5 => ownerGlowingColor[4],
+            Owner.None => ownerGlowingColor[5],
             _ =>
             null
         };

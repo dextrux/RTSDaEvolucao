@@ -1,4 +1,5 @@
 using DG.Tweening;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
@@ -92,6 +93,7 @@ public class RoundManager : MonoBehaviour
     int _indexDesastreMaior;
     private bool _isUnderBigDisaster;
     private bool _isUnderSmallDisaster;
+    private float _progressionBigDisaster = 0;
     #endregion
 
     #region Prefabs
@@ -396,6 +398,7 @@ public class RoundManager : MonoBehaviour
     void AcabarDesastreMaior(List<List<GameObject>> bioma, int indexDesastreMaior)
     {
         _isUnderBigDisaster = false;
+        _progressionBigDisaster = 0;
         List<GameObject> flatList = GetNestedListFlattened(bioma);
         BiomeDisasterManager.AcabarDesastre(flatList, true, _indexDesastreMaior);
     }
@@ -490,6 +493,31 @@ public class RoundManager : MonoBehaviour
             if (_CurrentTurno >= _MaxTurnos)
             {
                 GameWin();
+            }
+            if (_isUnderBigDisaster) 
+            {
+                _progressionBigDisaster += 0.125f;
+                Biome antes, depois;
+                switch (_IndexDesastreMaior)
+                {
+                    case 0:
+                        depois = Biome.Caatinga;
+                        break;
+                    case 1:
+                        depois = Biome.Pantanal;
+                        break;
+                    case 2:
+                        depois = Biome.Mata_das_Araucarias;
+                        break;
+                    case 3:
+                        depois = Biome.Mata_Atlantica;
+                        break;
+                    default:
+                        depois = Biome.Pampa;
+                        break;
+                }
+                antes = _tilesUnderBigDissaster[0].GetComponent<Tile>().Biome;
+                Tile.TransitionTileTextureBigDisaster(_progressionBigDisaster,antes,depois, _tilesUnderBigDissaster);
             }
         }
         else

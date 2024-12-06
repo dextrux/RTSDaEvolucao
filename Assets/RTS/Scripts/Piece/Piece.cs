@@ -15,6 +15,7 @@ public class Piece : MonoBehaviour
     OwnerReference _ownerReference;
     TileTypeReferences _tileTypeReferences;
     [SerializeField] private Renderer _renderer;
+    public GameObject indicador;
     #endregion
 
     #region Atributos Gerais
@@ -231,6 +232,7 @@ public class Piece : MonoBehaviour
         pieceScript.Resting = false;    
         GameObject.FindFirstObjectByType<RoundManager>().AdicionarPieceEmLista(pieceScript.Owner, piece);
         pieceScript.AppliedMutations.Inserir(pieceScript.MutationBase);
+        pieceScript.indicador.SetActive(false);
     }
 
     public static void SetParent(GameObject parent, GameObject son) { parent.transform.SetParent(son.transform); }
@@ -348,6 +350,10 @@ public class Piece : MonoBehaviour
         this.CheckForIllness();
         this.Humidity.CurrentValue = this.PieceRaycastForTile().Humidity.CurrentValue;
         this.Temperature.CurrentValue = this.PieceRaycastForTile().Temperature.CurrentValue;
+        LoseLifeUnderDisastre();
     }
+
+    public void AtivarIndicador() { indicador.SetActive(true); }
+    public void DesativarIndicador() { indicador.SetActive(false); }
     #endregion
-}
+    }

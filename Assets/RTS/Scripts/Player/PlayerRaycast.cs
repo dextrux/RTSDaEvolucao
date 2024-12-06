@@ -73,7 +73,10 @@ public class PlayerRaycast : MonoBehaviour
             else
             {
                 DeselectPiece();
-                SelectPiece(hitPiece);
+                if (!pieceScript.IsDuringAction && pieceScript.Owner == playerCamOwner)
+                {
+                    SelectPiece(hitPiece);
+                }
             }
         }
     }
@@ -106,6 +109,7 @@ public class PlayerRaycast : MonoBehaviour
         {
             Piece pieceScript = selectedObjects[0].GetComponent<Piece>();
             pieceScript.PieceRaycastForTile().RetornarTilesAdjacentesParaMaterialOriginal();
+            
         }
         ResetSelection();
     }
@@ -133,10 +137,14 @@ public class PlayerRaycast : MonoBehaviour
                     Debug.Log("Andar");
                     pieceScript.StartCoroutine(pieceScript.Walk(pieceScript, tile, false));
                 }
-                else if (tileScript.TileType == TileType.Comida)
+                else if (tileScript.TileType == TileType.Comida || tileScript.TileType == TileType.Mutagêncio)
                 {
                     Debug.Log("Comer");
                     pieceScript.Eat(pieceScript.gameObject, tile);
+                }
+                else if (tileScript.TileType == TileType.Barreira)
+                {
+                    pieceScript.IsDuringAction = false;
                 }
             }
             else if (tileScript.Owner != pieceScript.Owner)
@@ -148,7 +156,6 @@ public class PlayerRaycast : MonoBehaviour
             {
                 HandleReproduction(tileScript, pieceScript);
             }
-
             ResetSelection();
         }
     }
@@ -185,6 +192,7 @@ public class PlayerRaycast : MonoBehaviour
     #region Utilitários
     private void ResetSelection()
     {
+        selectedObjects[0].GetComponent<Piece>().DesativarIndicador();
         selectedObjects[0] = null;
         selectedObjects[1] = null;
     }

@@ -3,53 +3,54 @@ using UnityEngine;
 
 public class PlayerCam : MonoBehaviour
 {
+    #region Public Variables
     public Camera playerCamera;
     public float moveSpeed = 15f;
+    #endregion
+
+    #region Constants
     public const float minY = -20;
     public const float maxY = 46;
     public const float minX = -70;
     public const float maxX = 70;
     public const float minZ = -40;
     public const float maxZ = 40;
+    #endregion
+
+    #region Private Variables
     private Coroutine moveCoroutine;
     private Vector3 resetPosition;
+    #endregion
 
-    void Start()
+    #region Unity Callbacks
+    private void Start()
     {
         resetPosition = new Vector3(0, maxY, -35);
         ResetPlayerCameraPosition();
     }
 
-    void Update()
+    private void Update()
     {
         HandleCameraMovement();
+
         if (Input.GetAxis("Mouse ScrollWheel") < 0)
         {
             ChangeCameraPosition(20);
         }
+
         if (Input.GetAxis("Mouse ScrollWheel") > 0)
         {
             ChangeCameraPosition(-20);
         }
+
         if (Input.GetKeyDown(KeyCode.R))
         {
             ResetPlayerCameraPosition();
         }
     }
-    private void ChangeCameraPosition(int factorDeepness)
-    {
-        if (moveCoroutine != null)
-        {
-            StopCoroutine(moveCoroutine);
-        }
-        Vector3 targetPosition = new Vector3(
-            playerCamera.transform.position.x,
-            Mathf.Clamp(playerCamera.transform.position.y + factorDeepness, 20, resetPosition.y),
-            playerCamera.transform.position.z
-        );
+    #endregion
 
-        moveCoroutine = StartCoroutine(MoveCameraToPosition(targetPosition));
-    }
+    #region Camera Movement
     private void HandleCameraMovement()
     {
         if (Input.GetMouseButton(1))
@@ -57,10 +58,11 @@ public class PlayerCam : MonoBehaviour
             float mouseX = Input.GetAxis("Mouse X");
             float mouseY = Input.GetAxis("Mouse Y");
             float movementFactor = 5.0f;
+
             Vector3 move = new Vector3(mouseX, 0, mouseY) * moveSpeed * movementFactor * Time.deltaTime;
             Vector3 newPosition = playerCamera.transform.position + move;
 
-            // Aplicando os limites de movimento
+            // Apply movement limits
             newPosition.x = Mathf.Clamp(newPosition.x, minX, maxX);
             newPosition.z = Mathf.Clamp(newPosition.z, minZ, maxZ);
             newPosition.y = playerCamera.transform.position.y;
@@ -69,23 +71,47 @@ public class PlayerCam : MonoBehaviour
         }
     }
 
-    private void HandlerCameraMovementMobile()
+    private void ChangeCameraPosition(int factorDeepness)
     {
+        if (moveCoroutine != null)
+        {
+            StopCoroutine(moveCoroutine);
+        }
 
+        Vector3 targetPosition = new Vector3(
+            playerCamera.transform.position.x,
+            Mathf.Clamp(playerCamera.transform.position.y + factorDeepness, 20, resetPosition.y),
+            playerCamera.transform.position.z
+        );
+
+        moveCoroutine = StartCoroutine(MoveCameraToPosition(targetPosition));
     }
 
+    public void ChangeCameraPositionToFocusPiece(GameObject piece)
+    {
+        Vector3 targetPosition = new Vector3(
+            piece.transform.position.x + 5.4f,
+            Mathf.Clamp(piece.transform.position.y + 10, minY, maxY),
+            piece.transform.position.z - 4.1f
+        );
+        StartCoroutine(MoveCameraToPosition(targetPosition));
+    }
+    #endregion
+
+    #region Camera Reset
     private void ResetPlayerCameraPosition()
     {
         playerCamera.transform.position = resetPosition;
         playerCamera.transform.rotation = Quaternion.Euler(60, 0, 0);
     }
 
-    public void ChangeCameraPositionToFocusPiece(GameObject piece)
+    public void ResetRotation()
     {
-        Vector3 targetPosition = new Vector3(piece.transform.position.x + 5.4f, Mathf.Clamp(piece.transform.position.y + 10, minY, maxY), piece.transform.position.z - 4.1f);
-        StartCoroutine(MoveCameraToPosition(targetPosition));
+        playerCamera.transform.rotation = Quaternion.Euler(90, 0, 0);
     }
+    #endregion
 
+    #region Coroutines
     private IEnumerator MoveCameraToPosition(Vector3 targetPosition)
     {
         float duration = 1.0f;
@@ -98,7 +124,15 @@ public class PlayerCam : MonoBehaviour
             elapsedTime += Time.deltaTime;
             yield return null;
         }
+
         playerCamera.transform.position = targetPosition;
     }
-    public void ResetRotation() { playerCamera.transform.rotation = Quaternion.Euler(90, 0, 0); }
+    #endregion
+
+    #region Mobile Handling (Placeholder)
+    private void HandlerCameraMovementMobile()
+    {
+        // Implementation for mobile handling goes here.
+    }
+    #endregion
 }
