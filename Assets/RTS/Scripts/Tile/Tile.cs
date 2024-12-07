@@ -69,10 +69,6 @@ public class Tile : MonoBehaviour
     #endregion
 
     #region Métodos de Seleção de Cor
-    // Variável para alternar entre os métodos
-
-
-
     public static void ColorirTilesDuranteSeleção(Tile tile)
     {
         TileTypeReferences tileTypeReferences = FindObjectOfType<TileTypeReferences>();
@@ -209,13 +205,14 @@ public class Tile : MonoBehaviour
                 continue;
             }
 
-            // Cria uma instância única do material para este tile
-            Material mixedMat = new Material(renderer.sharedMaterial);
-            mixedMat.Lerp(oldMat, newMat, progress);
+            // Cria um novo material baseado na mistura dos materiais oldMat e newMat
+            Material blendedMaterial = new Material(renderer.sharedMaterial);
+            blendedMaterial.Lerp(oldMat, newMat, progress);
 
             // Atribui o material ao tile
-            renderer.material = mixedMat;
+            renderer.material = blendedMaterial;
         }
     }
+
     #endregion
 }

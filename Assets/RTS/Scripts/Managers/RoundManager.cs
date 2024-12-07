@@ -490,31 +490,31 @@ public class RoundManager : MonoBehaviour
             {
                 GameWin();
             }
-            if (_isUnderBigDisaster) 
-            {
-                _progressionBigDisaster += 0.125f;
-                Biome antes, depois;
-                switch (_IndexDesastreMaior)
-                {
-                    case 0:
-                        depois = Biome.Caatinga;
-                        break;
-                    case 1:
-                        depois = Biome.Pantanal;
-                        break;
-                    case 2:
-                        depois = Biome.Mata_das_Araucarias;
-                        break;
-                    case 3:
-                        depois = Biome.Mata_Atlantica;
-                        break;
-                    default:
-                        depois = Biome.Pampa;
-                        break;
-                }
-                antes = _tilesUnderBigDissaster[0].GetComponent<Tile>().Biome;
-                Tile.TransitionTileTextureBigDisaster(_progressionBigDisaster,antes,depois, _tilesUnderBigDissaster);
-            }
+            //if (_isUnderBigDisaster) 
+            //{
+            //    _progressionBigDisaster += 0.125f;
+            //    Biome antes, depois;
+            //    switch (_IndexDesastreMaior)
+            //    {
+            //        case 0:
+            //            depois = Biome.Caatinga;
+            //            break;
+            //        case 1:
+            //            depois = Biome.Pantanal;
+            //            break;
+            //        case 2:
+            //            depois = Biome.Mata_das_Araucarias;
+            //            break;
+            //        case 3:
+            //            depois = Biome.Mata_Atlantica;
+            //            break;
+            //        default:
+            //            depois = Biome.Pampa;
+            //            break;
+            //    }
+            //    antes = _tilesUnderBigDissaster[0].GetComponent<Tile>().Biome;
+            //    Tile.TransitionTileTextureBigDisaster(_progressionBigDisaster,antes,depois, _tilesUnderBigDissaster);
+            //}
         }
         else
         {
