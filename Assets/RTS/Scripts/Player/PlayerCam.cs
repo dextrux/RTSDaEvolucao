@@ -47,6 +47,15 @@ public class PlayerCam : MonoBehaviour
         {
             ResetPlayerCameraPosition();
         }
+
+        if(playerCamera.transform.position.x > 50f || playerCamera.transform.position.x < -50f)
+        {
+            ResetPlayerCameraPosition();
+        }
+        else if (playerCamera.transform.position.z > 40f || playerCamera.transform.position.z < -40f)
+        {
+            ResetPlayerCameraPosition();
+        }
     }
     #endregion
 
