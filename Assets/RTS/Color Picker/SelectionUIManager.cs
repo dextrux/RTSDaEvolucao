@@ -1,11 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
-using UnityEngine.UI;
-using UnityEditor;
 using UnityEngine.UIElements;
 using UnityEngine.SceneManagement;
-using static UnityEditor.Experimental.GraphView.GraphView;
 using System.Linq;
 
 public class SelectionUIManager : MonoBehaviour
