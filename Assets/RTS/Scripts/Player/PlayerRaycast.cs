@@ -11,6 +11,7 @@ public class PlayerRaycast : MonoBehaviour
     public GameObject[] selectedObjects = new GameObject[2];
     public GameObject Manager;
     [SerializeField] private CreatureInfo _creatureInfo;
+    private GameObject chosenTileUpdate;
     #endregion
 
     #region Métodos Unity
@@ -19,6 +20,29 @@ public class PlayerRaycast : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
         {
             MouseRaycast();
+        }
+        if (isBlinking)
+        {
+            colorTimer += Time.deltaTime;
+
+            if (colorTimer >= 0.7f)
+            {
+                // Alterna entre os métodos
+                if (Pintar)
+                {
+                    Tile.ColorirTilesDuranteSeleção(chosenTileUpdate.GetComponent<Tile>());
+                }
+                else
+                {
+                    Tile.RetornarTilesAdjacentesParaMaterialOriginal(chosenTileUpdate.GetComponent<Tile>());
+                }
+
+                // Alterna a condição
+                Pintar = !Pintar;
+
+                // Reinicia o temporizador
+                colorTimer = 0f;
+            }
         }
     }
     #endregion
@@ -61,6 +85,7 @@ public class PlayerRaycast : MonoBehaviour
             if (!pieceScript.IsDuringAction && pieceScript.Owner == playerCamOwner)
             {
                 SelectPiece(hitPiece);
+                chosenTileUpdate = pieceScript.PieceRaycastForTile().gameObject;
             }
         }
         else
@@ -76,6 +101,7 @@ public class PlayerRaycast : MonoBehaviour
                 if (!pieceScript.IsDuringAction && pieceScript.Owner == playerCamOwner)
                 {
                     SelectPiece(hitPiece);
+                    chosenTileUpdate = pieceScript.PieceRaycastForTile().gameObject;
                 }
             }
         }
@@ -89,7 +115,7 @@ public class PlayerRaycast : MonoBehaviour
             selectedObjects[0].GetComponent<Piece>().PieceRaycastForTile().TilesAdjacentes.Contains(hitTile) && !_creatureInfo.gameObject.activeSelf)
         {
             SelectTile(hitTile);
-            selectedObjects[0].GetComponent<Piece>().PieceRaycastForTile().RetornarTilesAdjacentesParaMaterialOriginal();
+            FimDoBlink(tileScript);
             ExecuteAction(selectedObjects[0], selectedObjects[1]);
         }
     }
@@ -108,7 +134,7 @@ public class PlayerRaycast : MonoBehaviour
         if (selectedObjects[0] != null)
         {
             Piece pieceScript = selectedObjects[0].GetComponent<Piece>();
-            pieceScript.PieceRaycastForTile().RetornarTilesAdjacentesParaMaterialOriginal();
+            FimDoBlink(pieceScript.PieceRaycastForTile());
             
         }
         ResetSelection();
@@ -195,6 +221,17 @@ public class PlayerRaycast : MonoBehaviour
         selectedObjects[0].GetComponent<Piece>().DesativarIndicador();
         selectedObjects[0] = null;
         selectedObjects[1] = null;
+    }
+    #endregion
+
+    #region Cores
+    float colorTimer = 0;
+    public bool isBlinking;
+    bool Pintar = true;
+    public void FimDoBlink(Tile tile)
+    {
+        isBlinking = false;
+        Tile.RetornarTilesAdjacentesParaMaterialOriginal(tile);
     }
     #endregion
 }

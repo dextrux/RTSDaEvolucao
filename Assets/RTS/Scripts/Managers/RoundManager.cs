@@ -142,11 +142,7 @@ public class RoundManager : MonoBehaviour
     #region Rotinas Unity
     private void Awake()
     {
-        owners.Add(Owner.P1);
-        owners.Add(Owner.P2);
-        //owners.Add(Owner.P3); 
-        //owners.Add(Owner.P4); 
-        //owners.Add(Owner.P5); 
+        this.owners = FindAnyObjectByType<Observer>().Owners;
         BuscarTiles();
     }
 

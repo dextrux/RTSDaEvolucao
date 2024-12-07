@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -68,28 +69,40 @@ public class Tile : MonoBehaviour
     #endregion
 
     #region Métodos de Seleção de Cor
-    public void ColorirTilesDuranteSeleção()
+    // Variável para alternar entre os métodos
+
+
+
+    public static void ColorirTilesDuranteSeleção(Tile tile)
     {
-        GetComponent<Renderer>().material.color = Color.green;
         TileTypeReferences tileTypeReferences = FindObjectOfType<TileTypeReferences>();
-        Debug.Log("Entrei");
+        tile.StartCoroutine(tile.ColorirTilesGradualmente(tileTypeReferences));
+    }
+
+    private IEnumerator ColorirTilesGradualmente(TileTypeReferences tileTypeReferences)
+    {
         foreach (var tile in _tilesAdjacentes)
         {
             tile.GetComponent<Renderer>().material = tileTypeReferences.GetGlowingColor(tile);
+            yield return new WaitForSeconds(0.1f); // Espera 0.1 segundo antes de continuar
         }
     }
-
-    public void RetornarTilesAdjacentesParaMaterialOriginal()
+    public static void RetornarTilesAdjacentesParaMaterialOriginal(Tile tile)
     {
         BiomeReferences biomeReferences = FindObjectOfType<BiomeReferences>();
-        GetComponent<Renderer>().material = biomeReferences.GetBiomeMaterial(Biome);
+        tile.StartCoroutine(tile.RetornarTilesGradualmente(biomeReferences));
+    }
 
+    private IEnumerator RetornarTilesGradualmente(BiomeReferences biomeReferences)
+    {
         foreach (var adjacentTile in _tilesAdjacentes)
         {
             Tile tileScript = adjacentTile.GetComponent<Tile>();
             adjacentTile.GetComponent<Renderer>().material = biomeReferences.GetBiomeMaterial(tileScript.Biome);
+            yield return new WaitForSeconds(0.1f); // Espera 0.1 segundo antes de continuar
         }
     }
+
     #endregion
 
     #region Métodos de Busca de Objetos

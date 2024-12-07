@@ -21,6 +21,8 @@ public class CreatureSelectUi : MonoBehaviour
     private Button _skin3Btn;
     private Button _skin4Btn;
     private Label _title;
+
+    public List<Button> activePlayers;
     [SerializeField] private List<Animator> _playerAnimatorList;
     [SerializeField] private SelectionUIManager selectionManager;
     private void OnEnable()
