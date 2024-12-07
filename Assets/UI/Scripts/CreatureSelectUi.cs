@@ -130,7 +130,7 @@ public class CreatureSelectUi : MonoBehaviour
         SoundManagerSO.PlaySoundFXClip(_buttonConfirmation, transform.position, 1);
         selectionManager.UpdateTexture(3);
     }
-    private void
+    //private void
 
 
 }
