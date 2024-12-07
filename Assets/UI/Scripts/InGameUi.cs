@@ -4,6 +4,11 @@ using UnityEngine.UIElements;
 using DG.Tweening;
 public class InGameUi : MonoBehaviour
 {
+    #region Variaveis Dia e Noite
+    public GameObject gameManager;
+    private DayNightCycle dayNight;
+    #endregion
+
     public int ActualTurn = 1; // substituir todas pelo controle de turnos
     [SerializeField] private int _progressBarMargin;
     [SerializeField] private RoundManager _roundManager;
@@ -57,6 +62,11 @@ public class InGameUi : MonoBehaviour
         _optionResumeBtn.RegisterCallback<ClickEvent>(OnClickResumeOption);
         #endregion
 
+        //Seta as variaveis para controlar o dia e a noite
+        #region Setando Variaveis para Dia e Noite
+        dayNight = gameManager.GetComponent<DayNightCycle>();
+        #endregion
+
     }
     // A unica função que precisa ser alterada é a de OnClickTurnChange para adicionar a chamada do evento e tirar a tela temporária
     #region Funcao Dos Botoes
@@ -66,6 +76,10 @@ public class InGameUi : MonoBehaviour
     }
     private void OnClickTurnChange(ClickEvent evt)
     {
+        #region Controle Dia e Noite
+        dayNight.ChangeDayNight();
+        #endregion
+
         _nextTurnAdvice.AddToClassList("turn-screen-open");
         _roundManager.PassarTurno();
         ActualTurn = _roundManager._CurrentTurno;
