@@ -5,7 +5,7 @@ public class PlayerRaycast : MonoBehaviour
 {
     #region Atributos da Classe
     public Camera mainCamera;
-    public float rayDistance = 100f;
+    public float rayDistance = Mathf.Infinity;
     public LayerMask layerMask;
     public Owner playerCamOwner;
     public GameObject[] selectedObjects = new GameObject[2];
@@ -90,12 +90,7 @@ public class PlayerRaycast : MonoBehaviour
         }
         else
         {
-            // Reseta a seleção se for a mesma peça ou seleciona outra peça
-            if (selectedObjects[0] == hitPiece)
-            {
-                DeselectPiece();
-            }
-            else
+            if (selectedObjects[0] != hitPiece) 
             {
                 DeselectPiece();
                 if (!pieceScript.IsDuringAction && pieceScript.Owner == playerCamOwner)
@@ -103,6 +98,11 @@ public class PlayerRaycast : MonoBehaviour
                     SelectPiece(hitPiece);
                     chosenTileUpdate = pieceScript.PieceRaycastForTile().gameObject;
                 }
+            }
+            else
+            {
+                DeselectPiece();
+                SelectPiece(hitPiece);
             }
         }
     }
@@ -151,7 +151,8 @@ public class PlayerRaycast : MonoBehaviour
     {
         Tile tileScript = tile.GetComponent<Tile>();
         Piece pieceScript = piece.GetComponent<Piece>();
-
+        isBlinking = false;
+        pieceScript.PieceRaycastForTile().RetornarTilesParaMaterialOriginal();
         if (!pieceScript.IsDuringAction)
         {
             pieceScript.IsDuringAction = true;
@@ -218,7 +219,6 @@ public class PlayerRaycast : MonoBehaviour
     #region Utilitários
     private void ResetSelection()
     {
-        selectedObjects[0].GetComponent<Piece>().DesativarIndicador();
         selectedObjects[0] = null;
         selectedObjects[1] = null;
     }

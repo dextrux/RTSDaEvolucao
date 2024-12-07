@@ -26,7 +26,7 @@ public class RoundManager : MonoBehaviour
     [SerializeField]
     public int _currentTurno;
     [SerializeField]
-    Vector3 _pieceHeight = new Vector3(0f, 5f, 0f);
+    Vector3 _pieceHeight = new Vector3(0f, 1f, 0f);
     [SerializeField]
     List<Owner> owners = new List<Owner>();
     public Camera MainCam;
@@ -151,10 +151,90 @@ public class RoundManager : MonoBehaviour
         _quantidadeDePontosMutagenicosSpawn = owners.Count * 3;
         _quantidadeDeComidaSpawn = owners.Count * 5;
         PrimeiroTurno();
+        HandlerIndicadores();       
     }
     #endregion
 
     #region Pieces
+
+    public void HandlerIndicadores()
+    {
+        // Lista de todos os possíveis Owners
+        Owner[] allOwners = { Owner.P1, Owner.P2, Owner.P3, Owner.P4, Owner.P5 };
+
+        // Itera sobre todos os Owners
+        foreach (var owner in allOwners)
+        {
+            if (owner == MainCam.GetComponent<PlayerRaycast>().playerCamOwner)
+            {
+                // Ativa indicadores para o Owner da vez
+                AtivarIndicadores(owner);
+            }
+            else
+            {
+                // Desativa indicadores para os outros Owners
+                DesativarIndicador(owner);
+            }
+        }
+    }
+
+    private void ProcessarIndicadores(List<GameObject> pieces, Action<Piece> action)
+    {
+        if (pieces.Count > 0)
+        {
+            foreach (var piece in pieces)
+            {
+                var pieceComponent = piece.GetComponent<Piece>();
+                action(pieceComponent);
+            }
+        }
+    }
+
+    private void AtivarIndicadores(Owner owner)
+    {
+        switch (owner) // Usar o parâmetro `owner`
+        {
+            case Owner.P1:
+                ProcessarIndicadores(_P1Pieces, piece => piece.AtivarIndicador());
+                break;
+            case Owner.P2:
+                ProcessarIndicadores(_P2Pieces, piece => piece.AtivarIndicador());
+                break;
+            case Owner.P3:
+                ProcessarIndicadores(_P3Pieces, piece => piece.AtivarIndicador());
+                break;
+            case Owner.P4:
+                ProcessarIndicadores(_P4Pieces, piece => piece.AtivarIndicador());
+                break;
+            case Owner.P5:
+                ProcessarIndicadores(_P5Pieces, piece => piece.AtivarIndicador());
+                break;
+        }
+    }
+
+    private void DesativarIndicador(Owner owner)
+    {
+        switch (owner) // Usar o parâmetro `owner`
+        {
+            case Owner.P1:
+                ProcessarIndicadores(_P1Pieces, piece => piece.DesativarIndicador());
+                break;
+            case Owner.P2:
+                ProcessarIndicadores(_P2Pieces, piece => piece.DesativarIndicador());
+                break;
+            case Owner.P3:
+                ProcessarIndicadores(_P3Pieces, piece => piece.DesativarIndicador());
+                break;
+            case Owner.P4:
+                ProcessarIndicadores(_P4Pieces, piece => piece.DesativarIndicador());
+                break;
+            case Owner.P5:
+                ProcessarIndicadores(_P5Pieces, piece => piece.DesativarIndicador());
+                break;
+        }
+    }
+
+
     public void InstanciarPeçasParaJogo(int quantidade, List<Owner> owners)
     {
         for (int i = 0; i < quantidade; i++)
@@ -525,6 +605,7 @@ public class RoundManager : MonoBehaviour
         MainCam.GetComponent<PlayerRaycast>().playerCamOwner = _roundOwner;
         InGameUi.UpdateMutationPointText(this);
         _inGameUi.UpdateLifeBarOwnerBase(this);
+        HandlerIndicadores();
     }
     private bool GameOver(Owner owner)
     {

@@ -78,7 +78,6 @@ public class CreatureInfo : MonoBehaviour
     }
     public void SetPiece(Piece piece)
     {
-        piece.AtivarIndicador();
         _actualPiece = piece;
         _actualTile = _actualPiece.PieceRaycastForTile();
         SetCreatureStateUi(piece);
@@ -86,12 +85,12 @@ public class CreatureInfo : MonoBehaviour
     private void SetCreatureStateUi(Piece piece)
     {
         SetDietUi();
-        _ingameUi.AnimateLifeBar(_actualPiece.Health.CurrentBarValue, _actualPiece.Health.MaxBarValue);
-        _creatureTemperatureTxt.text = _actualPiece.Temperature.IdealValue.ToString() + " ºC";
-        _creatureFertilityTxt.text = _actualPiece.Fertility.CurrentBarValue.ToString() + "%";
-        _creatureHumidityTxt.text = _actualPiece.Humidity.CurrentValue.ToString() + "%";
-        _creatureEnergyTxt.text = _actualPiece.Energy.CurrentBarValue.ToString() + "%";
-        _creatureHungerTxt.text = _actualPiece.Hunger.CurrentBarValue.ToString() + "%";
+        _ingameUi.AnimateLifeBar(Mathf.Round(_actualPiece.Health.CurrentBarValue), Mathf.Round(_actualPiece.Health.MaxBarValue));
+        _creatureTemperatureTxt.text = Mathf.Round(_actualPiece.Temperature.IdealValue).ToString() + " ºC";
+        _creatureFertilityTxt.text = Mathf.Round(_actualPiece.Fertility.CurrentBarValue).ToString() + "%";
+        _creatureHumidityTxt.text = Mathf.Round(_actualPiece.Humidity.CurrentValue).ToString() + "%";
+        _creatureEnergyTxt.text = Mathf.Round(_actualPiece.Energy.CurrentBarValue).ToString() + "%";
+        _creatureHungerTxt.text = Mathf.Round(_actualPiece.Hunger.CurrentBarValue).ToString() + "%";
         SetTileRefs();
         SetWarningUi();
     }

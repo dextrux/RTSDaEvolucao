@@ -88,14 +88,24 @@ public class Tile : MonoBehaviour
         BiomeReferences biomeReferences = FindObjectOfType<BiomeReferences>();
         tile.StartCoroutine(tile.RetornarTilesGradualmente(biomeReferences));
     }
+    public void RetornarTilesParaMaterialOriginal()
+    {
+        BiomeReferences biomeReferences = FindObjectOfType<BiomeReferences>();
+        foreach (var adjacentTile in _tilesAdjacentes)
+        {
+            Tile tileScript = adjacentTile.GetComponent<Tile>();
+            adjacentTile.GetComponent<Renderer>().material = biomeReferences.GetBiomeMaterial(tileScript.Biome);
 
+        }
+    }
     private IEnumerator RetornarTilesGradualmente(BiomeReferences biomeReferences)
     {
         foreach (var adjacentTile in _tilesAdjacentes)
         {
             Tile tileScript = adjacentTile.GetComponent<Tile>();
             adjacentTile.GetComponent<Renderer>().material = biomeReferences.GetBiomeMaterial(tileScript.Biome);
-            yield return new WaitForSeconds(0.1f); // Espera 0.1 segundo antes de continuar
+            //yield return new WaitForSeconds(0.1f); // Espera 0.1 segundo antes de continuar
+            yield return null;
         }
     }
 

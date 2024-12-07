@@ -67,7 +67,6 @@ public class Piece : MonoBehaviour
     public StatusBar Strength => _strength;
     public EnviromentStatus Humidity { get => _humidity; set => _humidity = value; }
     public EnviromentStatus Temperature { get => _temperature; set => _temperature = value; }
-    public bool Resting { get => _isResting; set => _isResting = value; }
     public bool IsDoente { get => _isDoente; set => _isDoente = value; }
     public bool IsUnderDesastre { get => _isUnderDisastre; set => _isUnderDisastre = value; }
     public bool IsDuringAction { get => _isDuringAction; set => _isDuringAction = value; }
@@ -80,7 +79,7 @@ public class Piece : MonoBehaviour
     public IEnumerator Walk(Piece piece, GameObject targetTile, bool useEnergy)
     {
         Debug.Log("Entrei em walk");
-        if (!useEnergy && (piece.Resting || !LoseEnergyToAct(piece.gameObject, 1)))
+        if (!useEnergy && (!LoseEnergyToAct(piece.gameObject, 1)))
         {
             yield break;
         }
@@ -108,14 +107,10 @@ public class Piece : MonoBehaviour
     {
         Piece pieceScript = piece.GetComponent<Piece>();
         Tile targetTile = pieceScript.PieceRaycastForTile();
-
-        if (!pieceScript.Resting)
-        {
             Debug.Log("Comendo");
             bool hasEnergy = LoseEnergyToAct(piece, 2);
             pieceScript.Energy.CurrentBarValue = hasEnergy ? pieceScript.Energy.CurrentBarValue : 0;
             EatRoutine(tile, pieceScript, hasEnergy);
-        }
     }
 
     private void EatRoutine(GameObject tile, Piece pieceScript, bool walk)
@@ -141,22 +136,24 @@ public class Piece : MonoBehaviour
             pieceScript.IsDuringAction = false;
         }
     }
-    public void Rest(GameObject piece)
-    {
-        piece.GetComponent<Piece>().Resting = true;
-    }
 
     public void Fight(GameObject attacker, GameObject targetTile)
     {
+        Debug.Log("A");
         Piece attackerScript = attacker.GetComponent<Piece>();
-        if (attackerScript.Resting && LoseEnergyToAct(attacker, 1))
+        if (LoseEnergyToAct(attacker, 1))
         {
+            Debug.Log("B");
             Piece opponent = targetTile.GetComponent<Tile>().TileRaycastForPiece();
             if (opponent != null)
             {
+                Debug.Log("C");
                 attackerScript.Health.CurrentBarValue -= opponent.Strength.CurrentBarValue;
                 opponent.Health.CurrentBarValue -= attackerScript.Strength.CurrentBarValue;
+                Debug.Log("Ataque saúde: " + attackerScript.Health.CurrentBarValue);
+                Debug.Log("Defesa saúde: " + opponent.Health.CurrentBarValue);
                 VerifyFightOutcome(attackerScript, opponent, targetTile);
+
             }
         }
         else
@@ -182,6 +179,7 @@ public class Piece : MonoBehaviour
 
             attacker.StartCoroutine(Walk(attacker,targetTile, true));
         }
+
         attacker.IsDuringAction = false;
     }
 
@@ -190,12 +188,13 @@ public class Piece : MonoBehaviour
         Piece fatherScript = father.GetComponent<Piece>();
         Piece motherScript = motherTile.GetComponent<Tile>().TileRaycastForPiece();
         GameObject selectedTile = tilesAvailable[UnityEngine.Random.Range(0, tilesAvailable.Count)];
-        GameObject offspring = GameObject.Instantiate(father, selectedTile.transform.position + Vector3.up * 5, Quaternion.identity);
+        GameObject offspring = GameObject.Instantiate(father, selectedTile.transform.position + Vector3.up * 1, Quaternion.identity);
         Piece offspringScript = offspring.GetComponent<Piece>();
         Piece.InicializarPiece(offspring, offspringScript.PieceRaycastForTile().gameObject, fatherScript.Diet, fatherScript.Owner, 1);
         fatherScript.Fertility.CurrentBarValue = 0;
         motherScript.Fertility.CurrentBarValue = 0;
         fatherScript.IsDuringAction = false;
+        offspringScript.indicador.SetActive(true);
         Piece.SetParent(offspring, father.transform.parent.gameObject);
     }
 
@@ -256,11 +255,9 @@ public class Piece : MonoBehaviour
         pieceScript.Temperature = new EnviromentStatus(pieceScript.PieceRaycastForTile().Temperature);
         pieceScript.SetDietMultipliers();
         pieceScript.PieceRaycastForTile().Owner = pieceScript.Owner;
-        pieceScript.IsDuringAction = false;
-        pieceScript.Resting = false;    
+        pieceScript.IsDuringAction = false;    
         GameObject.FindFirstObjectByType<RoundManager>().AdicionarPieceEmLista(pieceScript.Owner, piece);
         pieceScript.AppliedMutations.Inserir(pieceScript.MutationBase);
-        pieceScript.indicador.SetActive(false);
     }
 
     public static void SetParent(GameObject parent, GameObject son) { parent.transform.SetParent(son.transform); }
@@ -426,7 +423,14 @@ public class Piece : MonoBehaviour
         LoseLifeUnderDisastre();
     }
 
-    public void AtivarIndicador() { indicador.SetActive(true); indicador.transform.LookAt(FindAnyObjectByType<Camera>().transform); indicador.GetComponent<SpriteRenderer>().color = FindAnyObjectByType<OwnerReference>().GetColor(this.Owner).color; }
-    public void DesativarIndicador() { indicador.SetActive(false); }
+    public void AtivarIndicador() { Debug.Log("Indicador ativado");  
+        indicador.SetActive(true); 
+        // indicador.transform.LookAt(FindAnyObjectByType<Camera>().transform); 
+        indicador.GetComponent<SpriteRenderer>().color = FindAnyObjectByType<OwnerReference>().GetColor(this.Owner).color;
+    }
+    public void DesativarIndicador() 
+    {
+        Debug.Log("Indicador desativado");  
+        indicador.SetActive(false); }
     #endregion
     }
