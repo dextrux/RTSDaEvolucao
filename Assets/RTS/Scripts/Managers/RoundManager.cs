@@ -12,7 +12,7 @@ using static UnityEngine.UI.GridLayoutGroup;
 public class RoundManager : MonoBehaviour
 {
     //Atributos
-    #region Valores de Referência
+    #region Valores de Referï¿½ncia
     [SerializeField]
     public int _maxTurnos;
     [SerializeField]
@@ -26,7 +26,7 @@ public class RoundManager : MonoBehaviour
     [SerializeField]
     public int _currentTurno;
     [SerializeField]
-    Vector3 _pieceHeight = new Vector3(0f, 5f, 0f);
+    Vector3 _pieceHeight = new Vector3(0f, 1f, 0f);
     [SerializeField]
     List<Owner> owners = new List<Owner>();
     public Camera MainCam;
@@ -56,7 +56,7 @@ public class RoundManager : MonoBehaviour
     private List<GameObject> _biomaFive;
     #endregion
 
-    #region Lista de Peças
+    #region Lista de Peï¿½as
     [SerializeField]
     private List<GameObject> _p1Pieces;
     [SerializeField]
@@ -69,7 +69,7 @@ public class RoundManager : MonoBehaviour
     private List<GameObject> _p5Pieces;
     #endregion
 
-    #region Mutações
+    #region Mutaï¿½ï¿½es
     [SerializeField]
     private int _p1MutationPoint;
     [SerializeField]
@@ -82,7 +82,7 @@ public class RoundManager : MonoBehaviour
     private int _p5MutationPoint;
     #endregion
 
-    #region Referências Desastre
+    #region Referï¿½ncias Desastre
     [SerializeField]
     List<GameObject> _tilesUnderBigDissaster;
     [SerializeField]
@@ -151,24 +151,104 @@ public class RoundManager : MonoBehaviour
         _quantidadeDePontosMutagenicosSpawn = owners.Count * 3;
         _quantidadeDeComidaSpawn = owners.Count * 5;
         PrimeiroTurno();
+        HandlerIndicadores();       
     }
     #endregion
 
     #region Pieces
-    public void InstanciarPeçasParaJogo(int quantidade, List<Owner> owners)
+
+    public void HandlerIndicadores()
+    {
+        // Lista de todos os possï¿½veis Owners
+        Owner[] allOwners = { Owner.P1, Owner.P2, Owner.P3, Owner.P4, Owner.P5 };
+
+        // Itera sobre todos os Owners
+        foreach (var owner in allOwners)
+        {
+            if (owner == MainCam.GetComponent<PlayerRaycast>().playerCamOwner)
+            {
+                // Ativa indicadores para o Owner da vez
+                AtivarIndicadores(owner);
+            }
+            else
+            {
+                // Desativa indicadores para os outros Owners
+                DesativarIndicador(owner);
+            }
+        }
+    }
+
+    private void ProcessarIndicadores(List<GameObject> pieces, Action<Piece> action)
+    {
+        if (pieces.Count > 0)
+        {
+            foreach (var piece in pieces)
+            {
+                var pieceComponent = piece.GetComponent<Piece>();
+                action(pieceComponent);
+            }
+        }
+    }
+
+    private void AtivarIndicadores(Owner owner)
+    {
+        switch (owner) // Usar o parï¿½metro `owner`
+        {
+            case Owner.P1:
+                ProcessarIndicadores(_P1Pieces, piece => piece.AtivarIndicador());
+                break;
+            case Owner.P2:
+                ProcessarIndicadores(_P2Pieces, piece => piece.AtivarIndicador());
+                break;
+            case Owner.P3:
+                ProcessarIndicadores(_P3Pieces, piece => piece.AtivarIndicador());
+                break;
+            case Owner.P4:
+                ProcessarIndicadores(_P4Pieces, piece => piece.AtivarIndicador());
+                break;
+            case Owner.P5:
+                ProcessarIndicadores(_P5Pieces, piece => piece.AtivarIndicador());
+                break;
+        }
+    }
+
+    private void DesativarIndicador(Owner owner)
+    {
+        switch (owner) // Usar o parï¿½metro `owner`
+        {
+            case Owner.P1:
+                ProcessarIndicadores(_P1Pieces, piece => piece.DesativarIndicador());
+                break;
+            case Owner.P2:
+                ProcessarIndicadores(_P2Pieces, piece => piece.DesativarIndicador());
+                break;
+            case Owner.P3:
+                ProcessarIndicadores(_P3Pieces, piece => piece.DesativarIndicador());
+                break;
+            case Owner.P4:
+                ProcessarIndicadores(_P4Pieces, piece => piece.DesativarIndicador());
+                break;
+            case Owner.P5:
+                ProcessarIndicadores(_P5Pieces, piece => piece.DesativarIndicador());
+                break;
+        }
+    }
+
+
+    public void InstanciarPeï¿½asParaJogo(int quantidade, List<Owner> owners)
     {
         for (int i = 0; i < quantidade; i++)
         {
             foreach (var owner in owners)
             {
-                // Obtenha as posições necessárias
+                // Obtenha as posiï¿½ï¿½es necessï¿½rias
                 Vector3[] positions = new Vector3[4];
                 positions[0] = SortearTilesParaPieces(1, 2)[0].transform.position + _pieceHeight;
                 positions[1] = SortearTilesParaPieces(1, 3)[0].transform.position + _pieceHeight;
                 positions[2] = SortearTilesParaPieces(1, 4)[0].transform.position + _pieceHeight;
                 positions[3] = SortearTilesParaPieces(1, 5)[0].transform.position + _pieceHeight;
 
-                // Instancie e inicialize as peças
+                // Instancie e inicialize as peï¿½as
                 foreach (var position in positions)
                 {
                     InstanciarEInicializarPiece(position, owner);
@@ -240,7 +320,7 @@ public class RoundManager : MonoBehaviour
             }
             else
             {
-                Debug.Log($"{obj.name} não pertence aos tiles especificados.");
+                Debug.Log($"{obj.name} nï¿½o pertence aos tiles especificados.");
             }
         }
 
@@ -258,7 +338,7 @@ public class RoundManager : MonoBehaviour
         System.Random random = new System.Random();
         while (tiles.Count < quantidade)
         {
-            // Seleciona uma lista de tiles aleatória
+            // Seleciona uma lista de tiles aleatï¿½ria
             switch (random.Next(1, 5))
             {
                 case 1:
@@ -274,14 +354,14 @@ public class RoundManager : MonoBehaviour
                     chosenTileList = _BiomaFive;
                     break;
                 default:
-                    Debug.Log("Exceção ao selecionar bioma");
+                    Debug.Log("Exceï¿½ï¿½o ao selecionar bioma");
                     break;
             }
 
-            // Seleciona um tile aleatório dentro da lista
+            // Seleciona um tile aleatï¿½rio dentro da lista
             GameObject chosenTile = chosenTileList[random.Next(0, chosenTileList.Count)];
 
-            // Adiciona o tile apenas se ainda não estiver na lista
+            // Adiciona o tile apenas se ainda nï¿½o estiver na lista
             if (!tiles.Contains(chosenTile) && chosenTile.GetComponent<Tile>().TileType == TileType.Posicionamento && chosenTile.GetComponent<Tile>().Owner == Owner.None)
             {
                 tiles.Add(chosenTile);
@@ -316,14 +396,14 @@ public class RoundManager : MonoBehaviour
                     chosenTileList = _BiomaFive;
                     break;
                 default:
-                    Debug.Log("Exceção ao selecionar bioma");
+                    Debug.Log("Exceï¿½ï¿½o ao selecionar bioma");
                     break;
             }
 
-            // Seleciona um tile aleatório dentro da lista
+            // Seleciona um tile aleatï¿½rio dentro da lista
             GameObject chosenTile = chosenTileList[random.Next(0, chosenTileList.Count)];
 
-            // Adiciona o tile apenas se ainda não estiver na lista
+            // Adiciona o tile apenas se ainda nï¿½o estiver na lista
             if (!tiles.Contains(chosenTile) && chosenTile.GetComponent<Tile>().Owner == Owner.None && chosenTile.GetComponent<Tile>().TileType == TileType.Posicionamento)
             {
                 tiles.Add(chosenTile);
@@ -341,7 +421,7 @@ public class RoundManager : MonoBehaviour
         System.Random random = new System.Random();
         while (biomas.Count < quantidade)
         {
-            // Seleciona uma lista de tiles aleatória
+            // Seleciona uma lista de tiles aleatï¿½ria
             switch (random.Next(1, 5))
             {
                 case 1:
@@ -357,9 +437,9 @@ public class RoundManager : MonoBehaviour
                     chosenTileList = _BiomaFive;
                     break;
                 default:
-                    Debug.Log("Exceção ao selecionar bioma");
+                    Debug.Log("Exceï¿½ï¿½o ao selecionar bioma");
                     break;
-            }            // Adiciona o tile apenas se ainda não estiver na lista
+            }            // Adiciona o tile apenas se ainda nï¿½o estiver na lista
             if (!biomas.Contains(chosenTileList))
             {
                 biomas.Add(chosenTileList);
@@ -401,7 +481,7 @@ public class RoundManager : MonoBehaviour
     #endregion
 
     #region Totens
-    int DefinirProporçãoComida()
+    int DefinirProporï¿½ï¿½oComida()
     {
         System.Random random = new System.Random();
         return random.Next(1, 6);
@@ -410,7 +490,7 @@ public class RoundManager : MonoBehaviour
     {
         foreach (var tiles in list)
         {
-            TotemType totemType = (TotemType)DefinirProporçãoComida();
+            TotemType totemType = (TotemType)DefinirProporï¿½ï¿½oComida();
             tiles.GetComponent<Tile>().Totem.GetComponent<Totem>().ActivateTotem(totemType);
             _TotensAtivos.Add(tiles.GetComponent<Tile>().Totem);
         }
@@ -419,7 +499,7 @@ public class RoundManager : MonoBehaviour
     {
         foreach (var tiles in list)
         {
-            TotemType totemType = TotemType.Ponto_Mutagênico;
+            TotemType totemType = TotemType.Ponto_Mutagï¿½nico;
             tiles.GetComponent<Tile>().Totem.GetComponent<Totem>().ActivateTotem(totemType);
             _TotensAtivos.Add(tiles.GetComponent<Tile>().Totem);
         }
@@ -437,7 +517,7 @@ public class RoundManager : MonoBehaviour
     private void PrimeiroTurno()
     {
         //Blah
-        InstanciarPeçasParaJogo(1, owners);
+        InstanciarPeï¿½asParaJogo(1, owners);
         MainCam.GetComponent<PlayerRaycast>().playerCamOwner = owners[0];
         currentIndexOwner = 0;
         _roundOwner = owners[currentIndexOwner];
@@ -525,6 +605,7 @@ public class RoundManager : MonoBehaviour
         MainCam.GetComponent<PlayerRaycast>().playerCamOwner = _roundOwner;
         _inGameUi.UpdateMutationPointText();
         _inGameUi.UpdateLifeBarOwnerBase();
+        HandlerIndicadores();
     }
     private bool GameOver(Owner owner)
     {
@@ -552,7 +633,7 @@ public class RoundManager : MonoBehaviour
                 isGameOver = isGameOver5;
                 break;
             default:
-                Debug.Log("Exceção encontrada no owner de GameOver");
+                Debug.Log("Exceï¿½ï¿½o encontrada no owner de GameOver");
                 break;
         }
         return isGameOver;
@@ -591,7 +672,7 @@ public class RoundManager : MonoBehaviour
                 pieces = _P5Pieces;
                 break;
             default:
-                Debug.Log("Erro na rotina de final de turno (seleção por owner)");
+                Debug.Log("Erro na rotina de final de turno (seleï¿½ï¿½o por owner)");
                 break;
         }
 
@@ -603,12 +684,12 @@ public class RoundManager : MonoBehaviour
     #endregion
 
     #region Listas
-    // Método para criar uma lista aninhada fictícia (apenas para teste)
+    // Mï¿½todo para criar uma lista aninhada fictï¿½cia (apenas para teste)
     public List<List<GameObject>> GetNestedList(List<GameObject> innerList)
     {
         List<List<GameObject>> nestedList = new List<List<GameObject>>();
 
-        // Preenche com algumas listas internas fictícias
+        // Preenche com algumas listas internas fictï¿½cias
         for (int i = 0; i < 3; i++) // 3 listas internas
         {
             for (int j = 0; j < 5; j++) // 5 objetos em cada lista
@@ -623,7 +704,7 @@ public class RoundManager : MonoBehaviour
         return nestedList;
     }
 
-    // Método para descompactar List<List<GameObject>> em List<GameObject>
+    // Mï¿½todo para descompactar List<List<GameObject>> em List<GameObject>
     public List<GameObject> GetNestedListFlattened(List<List<GameObject>> nestedList)
     {
         List<GameObject> flatList = new List<GameObject>();
@@ -671,7 +752,7 @@ public class RoundManager : MonoBehaviour
                 }
                 break;
             default:
-                Debug.Log("Exceção encontrada ao adicionar Piece em lista");
+                Debug.Log("Exceï¿½ï¿½o encontrada ao adicionar Piece em lista");
                 break;
         }
     }
@@ -711,7 +792,7 @@ public class RoundManager : MonoBehaviour
                 }
                 break;
             default:
-                Debug.Log("Exceção encontrada ao remover Piece em lista");
+                Debug.Log("Exceï¿½ï¿½o encontrada ao remover Piece em lista");
                 break;
         }
     }
