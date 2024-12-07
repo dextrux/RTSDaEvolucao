@@ -176,43 +176,43 @@ public class Tile : MonoBehaviour
         }
     }
 
-    public static void TransitionTileTextureBigDisaster(float progress, Biome antes, Biome depois, List<GameObject> tiles)
-    {
-        // Obtém as referências aos materiais
-        BiomeReferences biomeRefs = GameObject.FindAnyObjectByType<BiomeReferences>();
-        if (biomeRefs == null)
-        {
-            Debug.LogError("BiomeReferences não encontrado.");
-            return;
-        }
+    //public static void TransitionTileTextureBigDisaster(float progress, Biome antes, Biome depois, List<GameObject> tiles)
+    //{
+    //    // Obtém as referências aos materiais
+    //    BiomeReferences biomeRefs = GameObject.FindAnyObjectByType<BiomeReferences>();
+    //    if (biomeRefs == null)
+    //    {
+    //        Debug.LogError("BiomeReferences não encontrado.");
+    //        return;
+    //    }
 
-        Material oldMat = biomeRefs.GetBiomeMaterial(antes);
-        Material newMat = biomeRefs.GetBiomeMaterial(depois);
+    //    Material oldMat = biomeRefs.GetBiomeMaterial(antes);
+    //    Material newMat = biomeRefs.GetBiomeMaterial(depois);
 
-        if (oldMat == null || newMat == null)
-        {
-            Debug.LogError("Materiais não encontrados para os biomas fornecidos.");
-            return;
-        }
+    //    if (oldMat == null || newMat == null)
+    //    {
+    //        Debug.LogError("Materiais não encontrados para os biomas fornecidos.");
+    //        return;
+    //    }
 
-        // Cria a transição manipulando as propriedades do material
-        foreach (GameObject tile in tiles)
-        {
-            Renderer renderer = tile.GetComponent<Renderer>();
-            if (renderer == null)
-            {
-                Debug.LogWarning($"Tile {tile.name} não possui um Renderer.");
-                continue;
-            }
+    //    // Cria a transição manipulando as propriedades do material
+    //    foreach (GameObject tile in tiles)
+    //    {
+    //        Renderer renderer = tile.GetComponent<Renderer>();
+    //        if (renderer == null)
+    //        {
+    //            Debug.LogWarning($"Tile {tile.name} não possui um Renderer.");
+    //            continue;
+    //        }
 
-            // Cria um novo material baseado na mistura dos materiais oldMat e newMat
-            Material blendedMaterial = new Material(renderer.sharedMaterial);
-            blendedMaterial.Lerp(oldMat, newMat, progress);
+    //        // Cria um novo material baseado na mistura dos materiais oldMat e newMat
+    //        Material blendedMaterial = new Material(renderer.sharedMaterial);
+    //        blendedMaterial.Lerp(oldMat, newMat, progress);
 
-            // Atribui o material ao tile
-            renderer.material = blendedMaterial;
-        }
-    }
+    //        // Atribui o material ao tile
+    //        renderer.material = blendedMaterial;
+    //    }
+    //}
 
     #endregion
 }
