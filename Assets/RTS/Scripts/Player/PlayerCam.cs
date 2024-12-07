@@ -48,11 +48,11 @@ public class PlayerCam : MonoBehaviour
             ResetPlayerCameraPosition();
         }
 
-        if(playerCamera.transform.position.x > 50f || playerCamera.transform.position.x < -50f)
+        if(playerCamera.transform.position.x > maxX || playerCamera.transform.position.x < minX)
         {
             ResetPlayerCameraPosition();
         }
-        else if (playerCamera.transform.position.z > 40f || playerCamera.transform.position.z < -40f)
+        else if (playerCamera.transform.position.z > maxZ || playerCamera.transform.position.z < minZ)
         {
             ResetPlayerCameraPosition();
         }
