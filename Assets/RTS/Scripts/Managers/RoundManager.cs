@@ -444,7 +444,7 @@ public class RoundManager : MonoBehaviour
         AtivarTotensComida(SortearTilesRandom(15));
         AtivarTotensPontosMutagenicos(SortearTilesRandom(15));
         _CurrentTurno = 1;
-        _inGameUi.UpdateLifeBarOwnerBase(this);
+        _inGameUi.UpdateLifeBarOwnerBase();
     }
 
     private void TurnosCinco()
@@ -523,8 +523,8 @@ public class RoundManager : MonoBehaviour
 
         _roundOwner = owners[currentIndexOwner];
         MainCam.GetComponent<PlayerRaycast>().playerCamOwner = _roundOwner;
-        InGameUi.UpdateMutationPointText(this);
-        _inGameUi.UpdateLifeBarOwnerBase(this);
+        _inGameUi.UpdateMutationPointText();
+        _inGameUi.UpdateLifeBarOwnerBase();
     }
     private bool GameOver(Owner owner)
     {

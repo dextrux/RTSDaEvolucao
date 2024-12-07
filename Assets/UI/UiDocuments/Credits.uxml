@@ -7,22 +7,7 @@
                 <ui:VisualElement name="credits-body-container" style="height: 100%; width: 100%; background-color: rgb(250, 187, 120); border-top-left-radius: 39px; border-top-right-radius: 39px; border-bottom-right-radius: 39px; border-bottom-left-radius: 39px; padding-right: 20px; padding-left: 20px; padding-bottom: 20px;">
                     <ui:Label text="Créditos" class="credit-title" style="height: 15%;" />
                     <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" style="height: 82%;">
-                        <ui:VisualElement style="flex-grow: 1; background-color: rgb(255, 0, 0); width: 100%; height: 60px;" />
-                        <ui:VisualElement style="flex-grow: 1; background-color: rgb(255, 0, 0); width: 100%; height: 60px;" />
-                        <ui:VisualElement style="flex-grow: 1; background-color: rgb(255, 0, 0); width: 100%; height: 60px;" />
-                        <ui:VisualElement style="flex-grow: 1; background-color: rgb(255, 0, 0); width: 100%; height: 60px;" />
-                        <ui:VisualElement style="flex-grow: 1; background-color: rgb(255, 0, 0); width: 100%; height: 60px;" />
-                        <ui:VisualElement style="flex-grow: 1; background-color: rgb(255, 0, 0); width: 100%; height: 60px;" />
-                        <ui:VisualElement style="flex-grow: 1; background-color: rgb(255, 0, 0); width: 100%; height: 60px;" />
-                        <ui:VisualElement style="flex-grow: 1; background-color: rgb(255, 0, 0); width: 100%; height: 60px;" />
-                        <ui:VisualElement style="flex-grow: 1; background-color: rgb(255, 0, 0); width: 100%; height: 60px;" />
-                        <ui:VisualElement style="flex-grow: 1; background-color: rgb(255, 0, 0); width: 100%; height: 60px;" />
-                        <ui:VisualElement style="flex-grow: 1; background-color: rgb(255, 0, 0); width: 100%; height: 60px;" />
-                        <ui:VisualElement style="flex-grow: 1; background-color: rgb(255, 0, 0); width: 100%; height: 60px;" />
-                        <ui:VisualElement style="flex-grow: 1; background-color: rgb(255, 0, 0); width: 100%; height: 60px;" />
-                        <ui:VisualElement style="flex-grow: 1; background-color: rgb(255, 0, 0); width: 100%; height: 60px;" />
-                        <ui:VisualElement style="flex-grow: 1; background-color: rgb(255, 0, 0); width: 100%; height: 60px;" />
-                        <ui:VisualElement style="flex-grow: 1; background-color: rgb(255, 0, 0); width: 100%; height: 60px;" />
+                        <ui:Label tabindex="-1" text="Ainda não há créditos, esse não precisa reportar" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 80%; height: 100%; font-size: 86px; white-space: normal;" />
                     </ui:ScrollView>
                     <ui:Button text="OK" parse-escape-sequences="true" display-tooltip-when-elided="true" name="exit-credits-btn" class="credit-button" />
                 </ui:VisualElement>

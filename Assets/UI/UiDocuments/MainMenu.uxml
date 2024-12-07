@@ -21,7 +21,7 @@
                     <ui:Label tabindex="-1" text="Volume Geral" parse-escape-sequences="true" display-tooltip-when-elided="true" name="option-subtitle-txt" style="-unity-text-align: middle-center; font-size: 32px; -unity-font: url(&apos;project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.otf?fileID=12800000&amp;guid=81817e382e1f2ff4da7b7f2b05c32595&amp;type=3#Bodo Amat&apos;); -unity-font-definition: url(&apos;project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.asset?fileID=11400000&amp;guid=0756c78a4ec4a2644b846b666c90696f&amp;type=2#Bodo Amat&apos;); margin-left: 2px; color: rgb(56, 43, 33); width: 100%; margin-right: -35px;" />
                     <ui:VisualElement name="slider-volume" style="flex-grow: 1; justify-content: center; align-items: flex-start; flex-direction: row;">
                         <ui:Label tabindex="-1" text="0%" parse-escape-sequences="true" display-tooltip-when-elided="true" name="zero-txt" class="option-menu-subtitle" />
-                        <ui:SliderInt picking-mode="Ignore" value="50" high-value="100" name="SliderInt" style="width: 254px;" />
+                        <ui:SliderInt picking-mode="Ignore" value="-5" high-value="0" name="global-volume-slider" low-value="-20" style="width: 254px;" />
                         <ui:Label tabindex="-1" text="100%" parse-escape-sequences="true" display-tooltip-when-elided="true" name="hundred-txt" class="option-menu-subtitle" />
                     </ui:VisualElement>
                 </ui:VisualElement>
@@ -29,7 +29,7 @@
                     <ui:Label tabindex="-1" text="Volume da Música" parse-escape-sequences="true" display-tooltip-when-elided="true" name="option-subtitle-txt" style="-unity-text-align: middle-center; font-size: 32px; -unity-font: url(&apos;project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.otf?fileID=12800000&amp;guid=81817e382e1f2ff4da7b7f2b05c32595&amp;type=3#Bodo Amat&apos;); -unity-font-definition: url(&apos;project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.asset?fileID=11400000&amp;guid=0756c78a4ec4a2644b846b666c90696f&amp;type=2#Bodo Amat&apos;); margin-left: 2px; color: rgb(56, 43, 33); width: 100%; margin-right: -35px;" />
                     <ui:VisualElement name="slider-volume" style="flex-grow: 1; justify-content: center; align-items: flex-start; flex-direction: row;">
                         <ui:Label tabindex="-1" text="0%" parse-escape-sequences="true" display-tooltip-when-elided="true" name="zero-txt" class="option-menu-subtitle" />
-                        <ui:SliderInt picking-mode="Ignore" value="50" high-value="100" name="SliderInt" style="width: 254px;" />
+                        <ui:SliderInt picking-mode="Ignore" value="-5" high-value="0" name="bgm-volume-slider" low-value="-20" style="width: 254px;" />
                         <ui:Label tabindex="-1" text="100%" parse-escape-sequences="true" display-tooltip-when-elided="true" name="hundred-txt" class="option-menu-subtitle" />
                     </ui:VisualElement>
                 </ui:VisualElement>
@@ -37,7 +37,7 @@
                     <ui:Label tabindex="-1" text="Volume dos Efeitos" parse-escape-sequences="true" display-tooltip-when-elided="true" name="option-subtitle-txt" style="-unity-text-align: middle-center; font-size: 32px; -unity-font: url(&apos;project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.otf?fileID=12800000&amp;guid=81817e382e1f2ff4da7b7f2b05c32595&amp;type=3#Bodo Amat&apos;); -unity-font-definition: url(&apos;project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.asset?fileID=11400000&amp;guid=0756c78a4ec4a2644b846b666c90696f&amp;type=2#Bodo Amat&apos;); margin-left: 2px; color: rgb(56, 43, 33); width: 100%; margin-right: -35px;" />
                     <ui:VisualElement name="slider-volume" style="flex-grow: 1; justify-content: center; align-items: flex-start; flex-direction: row;">
                         <ui:Label tabindex="-1" text="0%" parse-escape-sequences="true" display-tooltip-when-elided="true" name="zero-txt" class="option-menu-subtitle" />
-                        <ui:SliderInt picking-mode="Ignore" value="50" high-value="100" name="SliderInt" style="width: 254px;" />
+                        <ui:SliderInt picking-mode="Ignore" value="-5" high-value="0" name="sfx-volume-slider" low-value="-20" style="width: 254px;" />
                         <ui:Label tabindex="-1" text="100%" parse-escape-sequences="true" display-tooltip-when-elided="true" name="hundred-txt" class="option-menu-subtitle" />
                     </ui:VisualElement>
                 </ui:VisualElement>

@@ -65,7 +65,7 @@ public class CreatureInfo : MonoBehaviour
     {
         _playerRaycast.DeselectPiece();
         _ingameUi.CreatureInfoNormal();
-        _ingameUi.UpdateLifeBarOwnerBase(GameObject.Find("Manager").GetComponent<RoundManager>());
+        _ingameUi.UpdateLifeBarOwnerBase();
         _creatureScreen.SetActive(false);
         _mutationScreen.SetActive(false);
     }
@@ -73,7 +73,7 @@ public class CreatureInfo : MonoBehaviour
     {
         _ingameUi.CreatureInfoNormal();
         FindAnyObjectByType<PlayerRaycast>().isBlinking = true;
-        _ingameUi.UpdateLifeBarOwnerBase(GameObject.Find("Manager").GetComponent<RoundManager>());
+        _ingameUi.UpdateLifeBarOwnerBase();
         gameObject.SetActive(false);
     }
     public void SetPiece(Piece piece)

@@ -35,7 +35,7 @@ AudioMixerController:
   - guid: 98f75f6101e5ba846a3018b9a9d9843b
     name: GeneralVolume
   - guid: 9de5d0a4ccf724a45a2f43d348b0921e
-    name: SfxVolime
+    name: SfxVolume
   m_AudioMixerGroupViews:
   - guids:
     - 00ec05fe49b86684698dd05086f507c5

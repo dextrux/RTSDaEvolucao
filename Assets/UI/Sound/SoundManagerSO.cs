@@ -22,10 +22,15 @@ public class SoundManagerSO : ScriptableObject
     private static bool _isPlayingBGM = false;
     private static float _volumeChangeMultiplier = 0.15f;
     private static float _pitchChangeMultiplier = 0.1f;
+    private void OnDisable()
+    {
+        ChangeBGMusic();
+    }
     private static void ChangeBGMusic()
     {
-        _activeBGMusic.ReturnToPoolMusic();
         _isPlayingBGM = false;
+        if (_activeBGMusic == null) return;
+        _activeBGMusic.ReturnToPoolMusic();
     }
     public static void PlayBGMusicClip(AudioClip clip, Vector3 soundPos, float volume)
     {

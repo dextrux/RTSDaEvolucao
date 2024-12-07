@@ -27,6 +27,7 @@ public class InGameUi : MonoBehaviour
     private VisualElement _lifeProgressBar;
     private VisualElement _dnaContainer;
     private Label _lifeText;
+    private Label _dnaCountText;
 
     private void OnEnable()
     {
@@ -50,6 +51,7 @@ public class InGameUi : MonoBehaviour
         _lifeProgressBar = root.Q<VisualElement>("life-bar-progress");
         _dnaContainer = root.Q<VisualElement>("dna-container");
         _lifeText = root.Q<Label>("life-txt");
+        _dnaCountText = root.Q<Label>("dna-count-txt");
         #endregion
         //Adição das funções no clique dos botões
         #region Adicao da Funcao Aos Botoes
@@ -66,7 +68,8 @@ public class InGameUi : MonoBehaviour
         #region Setando Variaveis para Dia e Noite
         dayNight = gameManager.GetComponent<DayNightCycle>();
         #endregion
-
+        UpdateLifeBarOwnerBase();
+        UpdateMutationPointText();
     }
     // A unica função que precisa ser alterada é a de OnClickTurnChange para adicionar a chamada do evento e tirar a tela temporária
     #region Funcao Dos Botoes
@@ -156,42 +159,42 @@ public class InGameUi : MonoBehaviour
         _nextTurnBtn.RemoveFromClassList("pause-button-ocult");
         _dnaContainer.RemoveFromClassList("pause-button-ocult");
     }
-    public void UpdateLifeBarOwnerBase(RoundManager roundManager)
+    public void UpdateLifeBarOwnerBase()
     {
         float maxLife = 0;
         float actualLife = 0;
-        switch (roundManager.RoundOwner)
+        switch (_roundManager.RoundOwner)
         {
             case Owner.P1:
-                foreach (GameObject p in roundManager._P1Pieces)
+                foreach (GameObject p in _roundManager._P1Pieces)
                 {
                     maxLife += p.GetComponent<Piece>().Health.MaxBarValue;
                     actualLife += p.GetComponent<Piece>().Health.CurrentBarValue;
                 }
                 break;
             case Owner.P2:
-                foreach (GameObject p in roundManager._P2Pieces)
+                foreach (GameObject p in _roundManager._P2Pieces)
                 {
                     maxLife += p.GetComponent<Piece>().Health.MaxBarValue;
                     actualLife += p.GetComponent<Piece>().Health.CurrentBarValue;
                 }
                 break;
             case Owner.P3:
-                foreach (GameObject p in roundManager._P3Pieces)
+                foreach (GameObject p in _roundManager._P3Pieces)
                 {
                     maxLife += p.GetComponent<Piece>().Health.MaxBarValue;
                     actualLife += p.GetComponent<Piece>().Health.CurrentBarValue;
                 }
                 break;
             case Owner.P4:
-                foreach (GameObject p in roundManager._P4Pieces)
+                foreach (GameObject p in _roundManager._P4Pieces)
                 {
                     maxLife += p.GetComponent<Piece>().Health.MaxBarValue;
                     actualLife += p.GetComponent<Piece>().Health.CurrentBarValue;
                 }
                 break;
             case Owner.P5:
-                foreach (GameObject p in roundManager._P5Pieces)
+                foreach (GameObject p in _roundManager._P5Pieces)
                 {
                     maxLife += p.GetComponent<Piece>().Health.MaxBarValue;
                     actualLife += p.GetComponent<Piece>().Health.CurrentBarValue;
@@ -200,41 +203,42 @@ public class InGameUi : MonoBehaviour
         }
         AnimateLifeBar(actualLife, maxLife);
     }
-    public static void UpdateMutationPointText(RoundManager roundManager)
+    public void UpdateMutationPointText()
     {
         int points = 0;
-        switch (roundManager.RoundOwner)
+        switch (_roundManager.RoundOwner)
         {
             case Owner.P1:
-                foreach (GameObject p in roundManager._P1Pieces)
+                foreach (GameObject p in _roundManager._P1Pieces)
                 {
                     points += p.GetComponent<Piece>().PontosMutagenicos;
                 }
                 break;
             case Owner.P2:
-                foreach (GameObject p in roundManager._P2Pieces)
+                foreach (GameObject p in _roundManager._P2Pieces)
                 {
                     points += p.GetComponent<Piece>().PontosMutagenicos;
                 }
                 break;
             case Owner.P3:
-                foreach (GameObject p in roundManager._P3Pieces)
+                foreach (GameObject p in _roundManager._P3Pieces)
                 {
                     points += p.GetComponent<Piece>().PontosMutagenicos;
                 }
                 break;
             case Owner.P4:
-                foreach (GameObject p in roundManager._P4Pieces)
+                foreach (GameObject p in _roundManager._P4Pieces)
                 {
                     points += p.GetComponent<Piece>().PontosMutagenicos;
                 }
                 break;
             case Owner.P5:
-                foreach (GameObject p in roundManager._P5Pieces)
+                foreach (GameObject p in _roundManager._P5Pieces)
                 {
                     points += p.GetComponent<Piece>().PontosMutagenicos;
                 }
                 break;
         }
+        _dnaCountText.text = "= " + points.ToString();
     }
 }

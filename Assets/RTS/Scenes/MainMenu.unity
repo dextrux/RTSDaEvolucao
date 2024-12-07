@@ -5341,6 +5341,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _creditsScreen: {fileID: 791920633}
   _bgmusic: {fileID: 8300000, guid: 86528575d10a23b43b69cc19b3e21e44, type: 3}
+  _audioMixer: {fileID: 24100000, guid: 2be17c38e12c8fd43843cb5f4b62ae71, type: 2}
 --- !u!1 &675815224
 GameObject:
   m_ObjectHideFlags: 0

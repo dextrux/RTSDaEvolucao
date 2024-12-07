@@ -84,7 +84,6 @@ public class SelectionUIManager : MonoBehaviour
 
     private void UpdateSlidersFromObjectColor()
     {
-        Debug.Log(channelSliders);
         Color currentColor = materials[currentTarget].color;
         channelSliders[0].value = (int)(currentColor.r * 255f);
         channelSliders[1].value = (int)(currentColor.g * 255f);
