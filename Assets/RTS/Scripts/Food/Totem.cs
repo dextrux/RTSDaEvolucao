@@ -64,7 +64,14 @@ public class Totem : MonoBehaviour
         var tile = PerformRaycastToTile();
         if (tile != null)
         {
-            tile.TileType = TileType.Comida;
+            if (totemType == TotemType.Ponto_Mutagênico)
+            {
+                tile.TileType = TileType.Mutagêncio;
+            }
+            else if (totemType != TotemType.Ponto_Mutagênico)
+            {
+                tile.TileType = TileType.Comida;
+            }       
         }
 
         gameObject.SetActive(true);

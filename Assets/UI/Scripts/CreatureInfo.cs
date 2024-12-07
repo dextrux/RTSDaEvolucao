@@ -72,12 +72,13 @@ public class CreatureInfo : MonoBehaviour
     private void OnClickAction(ClickEvent evt)
     {
         _ingameUi.CreatureInfoNormal();
-        _actualTile.ColorirTilesDuranteSeleção();
+        FindAnyObjectByType<PlayerRaycast>().isBlinking = true;
         _ingameUi.UpdateLifeBarOwnerBase(GameObject.Find("Manager").GetComponent<RoundManager>());
         gameObject.SetActive(false);
     }
     public void SetPiece(Piece piece)
     {
+        piece.AtivarIndicador();
         _actualPiece = piece;
         _actualTile = _actualPiece.PieceRaycastForTile();
         SetCreatureStateUi(piece);

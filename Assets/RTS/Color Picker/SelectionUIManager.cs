@@ -4,6 +4,9 @@ using TMPro;
 using UnityEngine.UI;
 using UnityEditor;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
+using static UnityEditor.Experimental.GraphView.GraphView;
+using System.Linq;
 
 public class SelectionUIManager : MonoBehaviour
 {
@@ -15,13 +18,18 @@ public class SelectionUIManager : MonoBehaviour
 
     [Header("Material Settings")]
     public Material[] materials;
+    public Material[] glowingMaterials;
     public int currentTarget;
-
+    public GameObject observer;
+    private Observer observerScript;
     private bool _isUpdating;
+
+    public List<Owner> players;
 
     private void Start()
     {
-        
+        observerScript = observer.GetComponent<Observer>();
+        players.Clear();
         channelSliders = new SliderInt[] {redSlider.Slider, greenSlider.Slider, blueSlider.Slider};
         UpdateSlidersFromObjectColor();
         AddListeners();
@@ -51,9 +59,9 @@ public class SelectionUIManager : MonoBehaviour
 
     private Color GetCurrentColorFromSliders()
     {
-        float red = channelSliders[0].value / 255f;
-        float green = channelSliders[1].value / 255f;
-        float blue = channelSliders[2].value / 255f;
+        float red = Mathf.Clamp(channelSliders[0].value / 255f * 3f,0,1);
+        float green = Mathf.Clamp(channelSliders[1].value / 255f * 3f, 0, 1);
+        float blue = Mathf.Clamp(channelSliders[2].value / 255f * 3f, 0, 1);
         return new Color(red, green, blue, 1f);
     }
 
@@ -69,8 +77,6 @@ public class SelectionUIManager : MonoBehaviour
         if (currentTarget < materials.Length)
         {
             materials[currentTarget].color = newColor;
-            EditorUtility.SetDirty(materials[currentTarget]);
-            AssetDatabase.SaveAssets();
         }
     }
 
@@ -104,15 +110,38 @@ public class SelectionUIManager : MonoBehaviour
 
     public void ReadyButtonRoutine()
     {
-        ApplyColorToMaterial();
+        ApplyColorToMaterialGlowingMaterial();
+        AddOwnerOnList(Owner.P1);
+        AddOwnerOnList(Owner.P2);
+        DontDestroyOnLoad(observer);
+        players.OrderBy(p => (int)p);
+        observerScript.Owners = players;
+        SceneManager.LoadScene("Game");
     }
 
-    private void ApplyColorToMaterial()
+    private void ApplyColorToMaterialGlowingMaterial()
     {
-        foreach (Material material in materials)
+        for (int i = 0; i < materials.Length; i++)
         {
-            EditorUtility.SetDirty(material);
+            glowingMaterials[i].SetColor("_EmissionColor", materials[i].color);
         }
-        AssetDatabase.SaveAssets();
+
     }
+
+    public void AddOwnerOnList(Owner owner)
+    {
+        if (!players.Contains(owner))
+        {
+            players.Add(owner);
+        }
+    }
+    public void RemoveOwnerOnList(Owner owner)
+    {
+        if (players.Contains(owner))
+        {
+            players.Remove(owner);
+
+        }
+    }
+
 }

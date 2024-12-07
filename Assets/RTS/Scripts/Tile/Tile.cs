@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -68,28 +69,36 @@ public class Tile : MonoBehaviour
     #endregion
 
     #region Métodos de Seleção de Cor
-    public void ColorirTilesDuranteSeleção()
+    public static void ColorirTilesDuranteSeleção(Tile tile)
     {
-        GetComponent<Renderer>().material.color = Color.green;
         TileTypeReferences tileTypeReferences = FindObjectOfType<TileTypeReferences>();
-        Debug.Log("Entrei");
+        tile.StartCoroutine(tile.ColorirTilesGradualmente(tileTypeReferences));
+    }
+
+    private IEnumerator ColorirTilesGradualmente(TileTypeReferences tileTypeReferences)
+    {
         foreach (var tile in _tilesAdjacentes)
         {
             tile.GetComponent<Renderer>().material = tileTypeReferences.GetGlowingColor(tile);
+            yield return new WaitForSeconds(0.1f); // Espera 0.1 segundo antes de continuar
         }
     }
-
-    public void RetornarTilesAdjacentesParaMaterialOriginal()
+    public static void RetornarTilesAdjacentesParaMaterialOriginal(Tile tile)
     {
         BiomeReferences biomeReferences = FindObjectOfType<BiomeReferences>();
-        GetComponent<Renderer>().material = biomeReferences.GetBiomeMaterial(Biome);
+        tile.StartCoroutine(tile.RetornarTilesGradualmente(biomeReferences));
+    }
 
+    private IEnumerator RetornarTilesGradualmente(BiomeReferences biomeReferences)
+    {
         foreach (var adjacentTile in _tilesAdjacentes)
         {
             Tile tileScript = adjacentTile.GetComponent<Tile>();
             adjacentTile.GetComponent<Renderer>().material = biomeReferences.GetBiomeMaterial(tileScript.Biome);
+            yield return new WaitForSeconds(0.1f); // Espera 0.1 segundo antes de continuar
         }
     }
+
     #endregion
 
     #region Métodos de Busca de Objetos
@@ -166,5 +175,44 @@ public class Tile : MonoBehaviour
             tileScript.TransformarTile(biome, tile);
         }
     }
+
+    //public static void TransitionTileTextureBigDisaster(float progress, Biome antes, Biome depois, List<GameObject> tiles)
+    //{
+    //    // Obtém as referências aos materiais
+    //    BiomeReferences biomeRefs = GameObject.FindAnyObjectByType<BiomeReferences>();
+    //    if (biomeRefs == null)
+    //    {
+    //        Debug.LogError("BiomeReferences não encontrado.");
+    //        return;
+    //    }
+
+    //    Material oldMat = biomeRefs.GetBiomeMaterial(antes);
+    //    Material newMat = biomeRefs.GetBiomeMaterial(depois);
+
+    //    if (oldMat == null || newMat == null)
+    //    {
+    //        Debug.LogError("Materiais não encontrados para os biomas fornecidos.");
+    //        return;
+    //    }
+
+    //    // Cria a transição manipulando as propriedades do material
+    //    foreach (GameObject tile in tiles)
+    //    {
+    //        Renderer renderer = tile.GetComponent<Renderer>();
+    //        if (renderer == null)
+    //        {
+    //            Debug.LogWarning($"Tile {tile.name} não possui um Renderer.");
+    //            continue;
+    //        }
+
+    //        // Cria um novo material baseado na mistura dos materiais oldMat e newMat
+    //        Material blendedMaterial = new Material(renderer.sharedMaterial);
+    //        blendedMaterial.Lerp(oldMat, newMat, progress);
+
+    //        // Atribui o material ao tile
+    //        renderer.material = blendedMaterial;
+    //    }
+    //}
+
     #endregion
 }

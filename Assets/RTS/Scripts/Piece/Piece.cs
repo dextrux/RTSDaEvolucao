@@ -15,6 +15,7 @@ public class Piece : MonoBehaviour
     OwnerReference _ownerReference;
     TileTypeReferences _tileTypeReferences;
     [SerializeField] private Renderer _renderer;
+    public GameObject indicador;
     #endregion
 
     #region Atributos Gerais
@@ -158,6 +159,10 @@ public class Piece : MonoBehaviour
                 VerifyFightOutcome(attackerScript, opponent, targetTile);
             }
         }
+        else
+        {
+            attackerScript.IsDuringAction = false ;
+        }
     }
 
     private void VerifyFightOutcome(Piece attacker, Piece defender, GameObject targetTile)
@@ -197,16 +202,40 @@ public class Piece : MonoBehaviour
     private static bool LoseEnergyToAct(GameObject piece, float actionFactor)
     {
         Piece pieceScript = piece.GetComponent<Piece>();
+        Tile tile = pieceScript.PieceRaycastForTile();
+        float energyLoss;
+        float temperaturaFactor = Mathf.Abs(tile.Temperature.CurrentValue - pieceScript.Temperature.IdealValue);
+        float humidadeFactor = 0.4f * Mathf.Abs(tile.Humidity.CurrentValue - pieceScript.Humidity.IdealValue);
+        float isDoenteFactor = Convert.ToInt32(pieceScript.IsDoente) + 1f;
+        if (temperaturaFactor < 10 || temperaturaFactor > 10)
+        {
+            temperaturaFactor = 5;
+            energyLoss = actionFactor * isDoenteFactor * (temperaturaFactor + humidadeFactor);
 
-        ////float energyLoss = actionFactor * (Convert.ToInt32(pieceScript.IsDoente) + 1) *
-        ////                   (Mathf.Abs(tile.Temperature.CurrentValue - pieceScript.Temperature.IdealValue) +
-        ////                    0.4f * Mathf.Abs(tile.Humidity.CurrentValue - pieceScript.Humidity.IdealValue));
-        float energyLoss = 20;
+        }
+        else if (humidadeFactor < 10 || humidadeFactor > 10)
+        {
+            humidadeFactor = 5;
+            energyLoss = actionFactor * isDoenteFactor * (temperaturaFactor + humidadeFactor);
+        }
+        else
+        {
+            energyLoss = actionFactor * isDoenteFactor * (temperaturaFactor + humidadeFactor)/3;
+
+        }
+
+        Debug.Log(temperaturaFactor);
+        Debug.Log(humidadeFactor);
+        Debug.Log(isDoenteFactor);
+        Debug.Log(energyLoss);
+
         if (pieceScript.Energy.CurrentBarValue >= energyLoss)
         {
             pieceScript.Energy.CurrentBarValue -= energyLoss;
             return true;
         }
+        pieceScript._isDuringAction = false;
+        FindAnyObjectByType<PlayerRaycast>().FimDoBlink(pieceScript.PieceRaycastForTile());
         return false;
     }
     #endregion
@@ -231,6 +260,7 @@ public class Piece : MonoBehaviour
         pieceScript.Resting = false;    
         GameObject.FindFirstObjectByType<RoundManager>().AdicionarPieceEmLista(pieceScript.Owner, piece);
         pieceScript.AppliedMutations.Inserir(pieceScript.MutationBase);
+        pieceScript.indicador.SetActive(false);
     }
 
     public static void SetParent(GameObject parent, GameObject son) { parent.transform.SetParent(son.transform); }
@@ -300,10 +330,35 @@ public class Piece : MonoBehaviour
         {
             Tile tile = PieceRaycastForTile();
             if (tile == null) return;
+            float healthLoss;
+            float temperaturaFactor = Mathf.Abs(tile.Temperature.CurrentValue - this.Temperature.IdealValue);
+            float humidadeFactor = 0.4f * Mathf.Abs(tile.Humidity.CurrentValue - this.Humidity.IdealValue);
+            float isDoenteFactor = Convert.ToInt32(this.IsDoente) + 1f;
+            if (temperaturaFactor < 10 || temperaturaFactor > 10)
+            {
+                temperaturaFactor = 5;
+                healthLoss = isDoenteFactor * (temperaturaFactor + humidadeFactor);
 
-            float healthLoss = Mathf.Abs(tile.Temperature.CurrentValue - Temperature.IdealValue) +
-                               0.4f * Mathf.Abs(tile.Humidity.CurrentValue - Humidity.IdealValue);
-            Energy.CurrentBarValue -= healthLoss;
+            }
+            else if (humidadeFactor < 10 || humidadeFactor > 10)
+            {
+                humidadeFactor = 5;
+                healthLoss = isDoenteFactor * (temperaturaFactor + humidadeFactor);
+            }
+            else
+            {
+                healthLoss = isDoenteFactor * (temperaturaFactor + humidadeFactor) / 3;
+
+            }
+
+            if (this.Health.CurrentBarValue >= healthLoss)
+            {
+                this.Health.CurrentBarValue -= healthLoss;               
+            }
+            else
+            {
+                FindAnyObjectByType<RoundManager>().RemoverPieceEmLista(this.Owner, this.gameObject);
+            }
         }
     }
 
@@ -341,13 +396,37 @@ public class Piece : MonoBehaviour
 
     public void EndTurnRoutine()
     {
-        this._energyBar.CurrentBarValue += 20;
-        this._fertilityBar.CurrentBarValue += 20;
-        this._hungerBar.CurrentBarValue -= 20;
+        float energyGain;
+        float temperaturaFactor = Mathf.Abs(this.PieceRaycastForTile().Temperature.CurrentValue - this.Temperature.IdealValue);
+        float humidadeFactor = 0.4f * Mathf.Abs(this.PieceRaycastForTile().Humidity.CurrentValue - this.Humidity.IdealValue);
+        float isDoenteFactor = Convert.ToInt32(this.IsDoente) + 1f;
+        if (temperaturaFactor < 10 || temperaturaFactor > 10)
+        {
+            temperaturaFactor = 10;
+            energyGain = (temperaturaFactor + humidadeFactor) / isDoenteFactor;
+
+        }
+        else if (humidadeFactor < 10 || humidadeFactor > 10)
+        {
+            humidadeFactor = 10;
+            energyGain = (temperaturaFactor + humidadeFactor) / isDoenteFactor;
+        }
+        else
+        {
+            energyGain =  (temperaturaFactor + humidadeFactor) / isDoenteFactor * 2;
+
+        }
+        this._energyBar.CurrentBarValue += energyGain;
+        this._fertilityBar.CurrentBarValue += energyGain;
+        this._hungerBar.CurrentBarValue -= energyGain * -1;
         AlertHandler.AlertVerificationRoutine(this);
         this.CheckForIllness();
         this.Humidity.CurrentValue = this.PieceRaycastForTile().Humidity.CurrentValue;
         this.Temperature.CurrentValue = this.PieceRaycastForTile().Temperature.CurrentValue;
+        LoseLifeUnderDisastre();
     }
+
+    public void AtivarIndicador() { indicador.SetActive(true); indicador.transform.LookAt(FindAnyObjectByType<Camera>().transform); indicador.GetComponent<SpriteRenderer>().color = FindAnyObjectByType<OwnerReference>().GetColor(this.Owner).color; }
+    public void DesativarIndicador() { indicador.SetActive(false); }
     #endregion
-}
+    }
