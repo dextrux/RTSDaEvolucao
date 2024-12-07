@@ -6,6 +6,7 @@ using UnityEditor;
 using UnityEngine.UIElements;
 using UnityEngine.SceneManagement;
 using static UnityEditor.Experimental.GraphView.GraphView;
+using System.Linq;
 
 public class SelectionUIManager : MonoBehaviour
 {
@@ -113,6 +114,7 @@ public class SelectionUIManager : MonoBehaviour
         AddOwnerOnList(Owner.P1);
         AddOwnerOnList(Owner.P2);
         DontDestroyOnLoad(observer);
+        players.OrderBy(p => (int)p);
         observerScript.Owners = players;
         SceneManager.LoadScene("Game");
     }
