@@ -9,12 +9,12 @@ public class PlayerCam : MonoBehaviour
     #endregion
 
     #region Constants
-    public const float minY = -20;
-    public const float maxY = 46;
-    public const float minX = -70;
-    public const float maxX = 70;
-    public const float minZ = -40;
-    public const float maxZ = 40;
+    public const float minY = -20f;
+    public const float maxY = 46f;
+    public const float minX = -30f;
+    public const float maxX = 30f;
+    public const float minZ = -35f;
+    public const float maxZ = 24f;
     #endregion
 
     #region Private Variables
@@ -47,6 +47,17 @@ public class PlayerCam : MonoBehaviour
         {
             ResetPlayerCameraPosition();
         }
+
+        /*
+         if(playerCamera.transform.position.x > 50f || playerCamera.transform.position.x < -50f)
+        {
+            ResetPlayerCameraPosition();
+        }
+        else if (playerCamera.transform.position.z > 40f || playerCamera.transform.position.z < -40f)
+        {
+            ResetPlayerCameraPosition();
+        }
+         */
     }
     #endregion
 

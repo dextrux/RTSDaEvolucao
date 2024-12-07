@@ -17,8 +17,6 @@ public class Analytics : MonoBehaviour
         public int nPecasEliminadas = 0;
         public int nReproducoes = 0;
         public int nMudouDeBioma = 0;
-        public int nMaximoMutacoes1Peca = 0;
-        public int nMinimoMutacoes1Peca = 0;
         public bool foiAtingidoDesastreP = false;
         public bool foiAtingidoCatastrofe = false;
     }
@@ -31,9 +29,11 @@ public class Analytics : MonoBehaviour
     public float tempoCompras = 0f;
     public bool timerAtivo = false;
 
-    private void Start()
+    private int nMaximoMutacoes1Peca = 0;
+    private int nMinimoMutacoes1Peca = 0;
+
+private void Start()
     {
-        Send();
         timerAtivo = false;
     }
 
@@ -93,10 +93,10 @@ public class Analytics : MonoBehaviour
         form.AddField("entry.1825301084", $"{j.nMudouDeBioma}");
 
         //Número máximo de mutações em uma peça
-        form.AddField("entry.877871308", $"{j.nMaximoMutacoes1Peca}");
+        form.AddField("entry.877871308", $"{nMaximoMutacoes1Peca}");
 
         //Número mínimo de mutações em uma peça
-        form.AddField("entry.1781269691", $"{j.nMinimoMutacoes1Peca}");
+        form.AddField("entry.1781269691", $"{nMinimoMutacoes1Peca}");
 
         //Jogador foi atingido por um desastre pequeno?
         form.AddField("entry.105131229", $"{j.foiAtingidoDesastreP}");
