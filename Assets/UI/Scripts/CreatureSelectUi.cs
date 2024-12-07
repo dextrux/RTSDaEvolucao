@@ -25,6 +25,14 @@ public class CreatureSelectUi : MonoBehaviour
     public List<Button> activePlayers;
     [SerializeField] private List<Animator> _playerAnimatorList;
     [SerializeField] private SelectionUIManager selectionManager;
+    [SerializeField] private Material[] _playersMaterial;
+    private Material _selectedMaterial;
+    [SerializeField] private Texture _textureButton1;
+    [SerializeField] private Texture _textureButton2;
+    [SerializeField] private Texture _textureButton3;
+    [SerializeField] private Texture _textureButton4;
+    [SerializeField] private AudioClip _buttonConfirmation;
+    [SerializeField] private AudioClip _buttonDenial;
     private void OnEnable()
     {
         VisualElement root = GetComponent<UIDocument>().rootVisualElement;
@@ -38,6 +46,11 @@ public class CreatureSelectUi : MonoBehaviour
         _player3EditBtn = root.Q<Button>("p3SelectBtn");
         _player4EditBtn = root.Q<Button>("p4SelectBtn");
         _player5EditBtn = root.Q<Button>("p5SelectBtn");
+        _skin1Btn = root.Q<Button>("skin1-btn");
+        _skin2Btn = root.Q<Button>("skin2-btn");
+        _skin3Btn = root.Q<Button>("skin3-btn");
+        _skin4Btn = root.Q<Button>("skin4-btn");
+        _title = root.Q<Label>("customization-title");
         _playerAnimatorList[0].SetBool("Active", true);
         _playerAnimatorList[1].SetBool("Active", true);
         _playerAnimatorList[2].SetBool("Active", false);
@@ -51,34 +64,73 @@ public class CreatureSelectUi : MonoBehaviour
         _player3EditBtn.RegisterCallback<ClickEvent>(OnClickp3Edit);
         _player4EditBtn.RegisterCallback<ClickEvent>(OnClickp4Edit);
         _player5EditBtn.RegisterCallback<ClickEvent>(OnClickp5Edit);
+        _skin1Btn.RegisterCallback<ClickEvent>(OnClickSkin1);
+        _skin2Btn.RegisterCallback<ClickEvent>(OnClickSkin2);
+        _skin3Btn.RegisterCallback<ClickEvent>(OnClickSkin3);
+        _skin4Btn.RegisterCallback<ClickEvent>(OnClickSkin4);
     }
     private void OnClickPlay(ClickEvent evt)
     {
+        SoundManagerSO.PlaySoundFXClip(_buttonConfirmation, transform.position, 1);
         selectionManager.ReadyButtonRoutine();
         SceneManager.LoadScene("Game");
     }
     private void OnClickBack(ClickEvent evt)
     {
+        SoundManagerSO.PlaySoundFXClip(_buttonDenial, transform.position, 1);
         SceneManager.LoadScene("MainMenu");
     }
     private void OnClickp1Edit(ClickEvent evt)
     {
+        SoundManagerSO.PlaySoundFXClip(_buttonConfirmation, transform.position, 1);
         selectionManager.ChangeSelection(0);
+        _title.text = "Customizando Jogador 1";
     }
     private void OnClickp2Edit(ClickEvent evt)
     {
+        SoundManagerSO.PlaySoundFXClip(_buttonConfirmation, transform.position, 1);
         selectionManager.ChangeSelection(1);
+        _title.text = "Customizando Jogador 2";
     }
     private void OnClickp3Edit(ClickEvent evt)
     {
+        SoundManagerSO.PlaySoundFXClip(_buttonConfirmation, transform.position, 1);
         selectionManager.ChangeSelection(2);
+        _title.text = "Customizando Jogador 3";
     }
     private void OnClickp4Edit(ClickEvent evt)
     {
+        SoundManagerSO.PlaySoundFXClip(_buttonConfirmation, transform.position, 1);
         selectionManager.ChangeSelection(3);
+        _title.text = "Customizando Jogador 4";
     }
     private void OnClickp5Edit(ClickEvent evt)
     {
+        SoundManagerSO.PlaySoundFXClip(_buttonConfirmation, transform.position, 1);
         selectionManager.ChangeSelection(4);
+        _title.text = "Customizando Jogador 5";
     }
+    private void OnClickSkin1(ClickEvent evt)
+    {
+        SoundManagerSO.PlaySoundFXClip(_buttonConfirmation, transform.position, 1);
+        selectionManager.UpdateTexture(0);
+    }
+    private void OnClickSkin2(ClickEvent evt)
+    {
+        SoundManagerSO.PlaySoundFXClip(_buttonConfirmation, transform.position, 1);
+        selectionManager.UpdateTexture(1);
+    }
+    private void OnClickSkin3(ClickEvent evt)
+    {
+        SoundManagerSO.PlaySoundFXClip(_buttonConfirmation, transform.position, 1);
+        selectionManager.UpdateTexture(2);
+    }
+    private void OnClickSkin4(ClickEvent evt)
+    {
+        SoundManagerSO.PlaySoundFXClip(_buttonConfirmation, transform.position, 1);
+        selectionManager.UpdateTexture(3);
+    }
+    private void
+
+
 }

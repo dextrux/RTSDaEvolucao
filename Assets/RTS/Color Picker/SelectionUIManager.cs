@@ -10,6 +10,7 @@ public class SelectionUIManager : MonoBehaviour
     [SerializeField] private CustomRedSlider redSlider;
     [SerializeField] private CustomGreenSlider greenSlider;
     [SerializeField] private CustomBlueSlider blueSlider;
+    [SerializeField] private Texture[] _textures;
     private SliderInt[] channelSliders;
 
     [Header("Material Settings")]
@@ -122,7 +123,10 @@ public class SelectionUIManager : MonoBehaviour
         }
 
     }
-
+    public void UpdateTexture(int textureIndex)
+    {
+        materials[currentTarget].mainTexture = _textures[textureIndex];
+    }
     public void AddOwnerOnList(Owner owner)
     {
         if (!players.Contains(owner))

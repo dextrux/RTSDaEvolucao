@@ -12,6 +12,7 @@ public class MainMenu : MonoBehaviour
     private VisualElement _optionsContainer;
     [SerializeField] GameObject _creditsScreen;
     [SerializeField] private AudioClip _bgmusic;
+    [SerializeField] private AudioClip _buttonConfirmation;
     [SerializeField] private AudioMixer _audioMixer;
 
     //VolumeConfig
@@ -55,22 +56,22 @@ public class MainMenu : MonoBehaviour
 
     private void OnClickPlay(ClickEvent evt)
     {
+        SoundManagerSO.PlaySoundFXClip(_buttonConfirmation, transform.position, 1);
         SceneManager.LoadScene("ColorPicker");
     }
     private void OnClickConfig(ClickEvent evt)
     {
+        SoundManagerSO.PlaySoundFXClip(_buttonConfirmation, transform.position, 1);
         _optionsContainer.AddToClassList("option-open");
-    }
-    private void OnClickExitOption(ClickEvent evt)
-    {
-        _optionsContainer.RemoveFromClassList("option-open");
     }
     private void OnClickConfigSave(ClickEvent evt)
     {
+        SoundManagerSO.PlaySoundFXClip(_buttonConfirmation, transform.position, 1);
         _optionsContainer.RemoveFromClassList("option-open");
     }
     private void OnClickCredits(ClickEvent evt)
     {
+        SoundManagerSO.PlaySoundFXClip(_buttonConfirmation, transform.position, 1);
         _creditsScreen.SetActive(true);
     }
     private void GlobalVolumeSliderValueChange(ChangeEvent<int> value)

@@ -20,6 +20,9 @@ public class MainMenuBackground : MonoBehaviour
     {
         SetRandomAsset(_randomAssets, _assetsPositions);
         SetRandomAsset(_randomBarriers, _barriersPositions);
+        SetRandomAsset(_randomMouths, _mouth);
+        SetRandomAsset(_randomTails, _tails);
+        SetRandomAsset(_randomHand, _hand); 
     }
 
     private void SetRandomAsset(GameObject[] assetsToSpawn, Transform[] positionsToSpawn)

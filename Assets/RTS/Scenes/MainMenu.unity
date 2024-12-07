@@ -5341,6 +5341,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _creditsScreen: {fileID: 791920633}
   _bgmusic: {fileID: 8300000, guid: 86528575d10a23b43b69cc19b3e21e44, type: 3}
+  _buttonConfirmation: {fileID: 8300000, guid: d9003c2d80d24d24a8f43809be42b21a, type: 3}
   _audioMixer: {fileID: 24100000, guid: 2be17c38e12c8fd43843cb5f4b62ae71, type: 2}
 --- !u!1 &675815224
 GameObject:
@@ -5510,6 +5511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aae0ca036633ccb4382ccdd0f7429ca0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _buttonConfirmation: {fileID: 8300000, guid: 7944c35f712ee8341854a7b2ba96d8b4, type: 3}
 --- !u!1 &801584471
 GameObject:
   m_ObjectHideFlags: 0
@@ -5588,9 +5590,25 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 37188bd4dcbb3e646844a4f4e5a79ca5, type: 3}
   - {fileID: 919132149155446097, guid: d71ed501642812548a87c2695d84d8ad, type: 3}
   - {fileID: 919132149155446097, guid: b569c4ea23cf481468d320d563d96fde, type: 3}
-  _randomMouths: []
-  _randomTails: []
-  _randomHand: []
+  _randomMouths:
+  - {fileID: 919132149155446097, guid: 69d3f91d23e6b2f42a6f9e64fae1d0c8, type: 3}
+  - {fileID: 919132149155446097, guid: 8489a6dce1ac9a94b99dd5f1329fb296, type: 3}
+  - {fileID: 919132149155446097, guid: a6c8d470690eb924d9b778ef6d4f86c4, type: 3}
+  - {fileID: 919132149155446097, guid: c631909320c141240acd2cfe03868419, type: 3}
+  - {fileID: 919132149155446097, guid: 5401a38ea33239444bda316c41b06011, type: 3}
+  - {fileID: 919132149155446097, guid: e82cd6801cfc6fe4eb6991a36d929bc4, type: 3}
+  - {fileID: 919132149155446097, guid: f79302e31beb26149965c0901d29d629, type: 3}
+  - {fileID: 919132149155446097, guid: d4ca34d142a752942b6e769962e1d651, type: 3}
+  - {fileID: 919132149155446097, guid: 3a3eee969fefc6342a5936dd1ed69a14, type: 3}
+  - {fileID: 919132149155446097, guid: 4ced32c56b6173c47871b3d43b814c5a, type: 3}
+  _randomTails:
+  - {fileID: 919132149155446097, guid: d08fd753606400e45a8eafd6dc4e39e1, type: 3}
+  - {fileID: 919132149155446097, guid: 05e96377ebd6b3f47bf0b415d553a742, type: 3}
+  - {fileID: 919132149155446097, guid: 474c404b1b7af0941b81ed4c80e92f80, type: 3}
+  - {fileID: 919132149155446097, guid: 5d2246810baeb02459ee0e759ca51ab4, type: 3}
+  - {fileID: 919132149155446097, guid: 0be2d9aa81fee8744a3ab11b5f073e9f, type: 3}
+  _randomHand:
+  - {fileID: 919132149155446097, guid: a0f179c9bc1db5b4a9c1668a94d1eeed, type: 3}
   _assetsPositions:
   - {fileID: 591796699}
   - {fileID: 2022017869}
@@ -5608,9 +5626,9 @@ MonoBehaviour:
   - {fileID: 675815225}
   - {fileID: 1153950930}
   - {fileID: 129682770}
-  _mouth: {fileID: 0}
-  _tails: {fileID: 0}
-  _hand: {fileID: 0}
+  _mouth: {fileID: 1295508366}
+  _tails: {fileID: 1999636221}
+  _hand: {fileID: 1598215479}
 --- !u!1 &899351650
 GameObject:
   m_ObjectHideFlags: 0
@@ -5959,6 +5977,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 801584472}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1295508366 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -5414061504061434659, guid: c7b8769351b33d141b91ff6571191216,
+    type: 3}
+  m_PrefabInstance: {fileID: 1526275522}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1349045748
 GameObject:
   m_ObjectHideFlags: 0
@@ -6054,6 +6078,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ModeloMedio
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c7b8769351b33d141b91ff6571191216,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: c7b8769351b33d141b91ff6571191216,
         type: 3}
       propertyPath: m_Controller
@@ -6067,6 +6096,12 @@ PrefabInstance:
 --- !u!4 &1526275523 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c7b8769351b33d141b91ff6571191216,
+    type: 3}
+  m_PrefabInstance: {fileID: 1526275522}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1598215479 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8251713563384930993, guid: c7b8769351b33d141b91ff6571191216,
     type: 3}
   m_PrefabInstance: {fileID: 1526275522}
   m_PrefabAsset: {fileID: 0}
@@ -6132,6 +6167,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 801584472}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1999636221 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8319834793838048012, guid: c7b8769351b33d141b91ff6571191216,
+    type: 3}
+  m_PrefabInstance: {fileID: 1526275522}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2014644488
 GameObject:
   m_ObjectHideFlags: 0
