@@ -10,7 +10,7 @@ public class MainMenu : MonoBehaviour
     private Button _creditsBtn;
     private VisualElement _optionsContainer;
     [SerializeField] GameObject _creditsScreen;
-
+    [SerializeField] private AudioClip _bgmusic;
     private void Start()
     {
         var root = GetComponent<UIDocument>().rootVisualElement;
@@ -23,6 +23,7 @@ public class MainMenu : MonoBehaviour
         _configBtn.RegisterCallback<ClickEvent>(OnClickConfig);
         _configSaveBtn.RegisterCallback<ClickEvent>(OnClickConfigSave);
         _creditsBtn.RegisterCallback<ClickEvent>(OnClickCredits);
+        SoundManagerSO.PlayBGMusicClip(_bgmusic, transform.position, 1);
     }
 
     private void OnClickPlay(ClickEvent evt)

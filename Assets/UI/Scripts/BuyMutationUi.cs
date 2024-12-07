@@ -16,17 +16,25 @@ public class BuyMutationUi : MonoBehaviour
     private Button _herbivoreBtn;
     private Button _carnivoreBtn;
     private Button _omnivoreBtn;
+    
+
+
     private Piece _actualPiece;
     private MutationBase _selectedMutation;
     private int _mutationIndex;
     public Piece Piece { get => _actualPiece; set => _actualPiece = value; }
-    private void OnEnable()
+
+    private void SetComponents()
     {
-        var root = GetComponent<UIDocument>().rootVisualElement;
+        VisualElement root = GetComponent<UIDocument>().rootVisualElement;
         _exitBuyMutation = root.Q<Button>("exit-mutation-btn");
         _herbivoreBtn = root.Q<Button>("herbivore-btn");
         _carnivoreBtn = root.Q<Button>("carnivore-btn");
         _omnivoreBtn = root.Q<Button>("omnivorous-btn");
+    }
+    private void OnEnable()
+    {
+        SetComponents();
         _herbivoreBtn.RegisterCallback<ClickEvent>(OnClickHerbivoreBtn);
         _carnivoreBtn.RegisterCallback<ClickEvent>(OnClickCarnivoreBtn);
         _omnivoreBtn.RegisterCallback<ClickEvent>(OnClickOmnivorousBtn);

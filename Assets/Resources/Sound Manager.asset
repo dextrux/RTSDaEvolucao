@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7832995d13ede1242bdf7708ad894934, type: 3}
+  m_Name: Sound Manager
+  m_EditorClassIdentifier: 
+  SoundFXObject: {fileID: 249675723797135913, guid: 1adb358f45b25d546b9801429439d16a,
+    type: 3}
+  BGMusicObject: {fileID: 6825646072062115784, guid: 8978fd84784e4ff4b897d86082016323,
+    type: 3}
