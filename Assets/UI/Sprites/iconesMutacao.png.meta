@@ -1,0 +1,1270 @@
+fileFormatVersion: 2
+guid: eec1a1726a4e56041952953bcf23b6fe
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: iconesMutacao_0
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 916
+        width: 72
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccdb3506b98cf554bbc01cb8df527542
+      internalID: 673971037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_1
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 915
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3af8f5ec75476346ae3b6d93615a178
+      internalID: -2097595666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_3
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 916
+        width: 65
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c63eb387c55ac44da33dfa5c1ea78d2
+      internalID: 700210869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_4
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 929
+        width: 71
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 076273372b457374fad4056fda9cb88f
+      internalID: -1392464356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_5
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 921
+        width: 53
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2b4b2bb86554d14b8f28c55945bd9b9
+      internalID: -625450752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_6
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 917
+        width: 88
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1399f44fdc6cd604a92e57272b1a4e5e
+      internalID: -26768048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_7
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 925
+        width: 145
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63d6fa93457a36f49a9af4b98839e732
+      internalID: -1143937081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_10
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 921
+        width: 90
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9614c6f8cab560a479ad69c9f08cdff3
+      internalID: -992131451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_14
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 783
+        width: 71
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b6a5c06b4979e04088f9cd3923c931c
+      internalID: -1156483799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_16
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 803
+        width: 121
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 144bf70cae5f35b409d7e69e29787d3a
+      internalID: 2069902333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_19
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 798
+        width: 99
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 482969b484fff864d93543cd7e0127a8
+      internalID: -30222982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_20
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 797
+        width: 74
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22fe40530fba7464aae17c3c769e8510
+      internalID: -1543362513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_22
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 803
+        width: 64
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a580e085bd8d884986a3000c323eb3d
+      internalID: 616065320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_23
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 795
+        width: 50
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d169f3a8dc45c494d98d679070968916
+      internalID: -916265118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_24
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 793
+        width: 92
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16975657f2dbfa44a9504ed6729c8ee6
+      internalID: 467398631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_31
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 653
+        width: 85
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfb15d78d444dd54483d5287a814b29a
+      internalID: -141065217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_32
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 672
+        width: 112
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f99714bb2876cd54681dee07af3ac13a
+      internalID: 1512521061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_34
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 666
+        width: 129
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcf44bd6cede7b44db2b2941cc33a1ba
+      internalID: 444847230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_35
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 677
+        width: 112
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b291c8d3f81aa344e8c5084264d772b2
+      internalID: 691786512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_37
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 678
+        width: 130
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31523fef39518a343bf1b07923db2ccd
+      internalID: -602144183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_39
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 673
+        width: 133
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a638ea42d011291439f0c02f15d03a1c
+      internalID: 2132246689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_40
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 677
+        width: 93
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa4c58bd8f77e8f41a7e9d457f418abc
+      internalID: 570274833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_46
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 549
+        width: 77
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2afab43a389ada40b474d27ada648eb
+      internalID: 1341559356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_47
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 570
+        width: 109
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a80d90bdb82bb614cbb6479b64789061
+      internalID: -1218999821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_48
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 543
+        width: 96
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a887795d103d14447a8f01f545b47fc6
+      internalID: -1121850796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_49
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 538
+        width: 108
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1e48031a4e5e9b40a77f0b09904f9b2
+      internalID: -506967441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_50
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 550
+        width: 111
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc96cfa1c6f614b488478b88b2e4cb98
+      internalID: -1147199330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_51
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 552
+        width: 113
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d5b4dae3c85fb14b918efc0549f119a
+      internalID: 623215864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_52
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 450
+        width: 83
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f885d74974b7446931290ecd6481ea
+      internalID: 362001105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_58
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 444
+        width: 157
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 747735b024e402749b6ed7fe4fe2f9bc
+      internalID: -1626368904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_59
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 438
+        width: 163
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83a7cca585c3f7a4ba82febdcfdb2c73
+      internalID: -1341284013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_60
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 443
+        width: 143
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 129ec9fa513a2c146acddfe37953a9e2
+      internalID: 986873329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_61
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 439
+        width: 120
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2eac2bb202932748ba751eb3c400f93
+      internalID: -1332249659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_64
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 330
+        width: 101
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dd1cba7e2f7c9d4ca29e2c4cd9abdea
+      internalID: -408208598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_65
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 324
+        width: 116
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2320bb177c6941641897dc2d2f587b3e
+      internalID: -1614129862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_68
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 322
+        width: 131
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 347d94c07c4e60443aeee3c8b17a79c4
+      internalID: -1276037444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_69
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 315
+        width: 148
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 747996b00fe217d41bc70e4ce520b277
+      internalID: 1256695064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_70
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 305
+        width: 160
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 468ebb8fe76f10446afd4af918a0dd9e
+      internalID: 1442814837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_74
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 188
+        width: 98
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 398dfb49c909d92408bd386ecfe8cbbb
+      internalID: -1933508129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_75
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 190
+        width: 56
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d2f4267ac9c0c43b8c1821d4ac7397
+      internalID: -7965444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_76
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 191
+        width: 122
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 134ee7d7a99784f4b9945d2e0fcc03f1
+      internalID: 1678338384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_77
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 168
+        width: 122
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4128c525f003d64dae08c83ee46b968
+      internalID: -322264003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_79
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 28
+        width: 137
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65fd30634d95b3640bb32f27da7cd871
+      internalID: 22694823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_80
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 56
+        width: 96
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8da16fb09098044d87226cb6c60a039
+      internalID: -905509123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_81
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 22
+        width: 87
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11cbee5c990a0c742ad0c2aa94ff217e
+      internalID: 1179109911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_82
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 48
+        width: 146
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6beb3b1f4aaf2a44a0109b8bcea8692
+      internalID: -2057269018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_84
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 67
+        width: 151
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc326bda1d6c22e478bac8455f703e7e
+      internalID: -1739817864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_86
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 63
+        width: 146
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea0ad90ba1920a54d9be63539751fd32
+      internalID: 1318297396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iconesMutacao_2
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 796
+        width: 94
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8c508bc0c83bec4a9d9278d5479d59b
+      internalID: -1083963695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 21fa232985bbfb349b905986a6779e8e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      iconesMutacao_0: 673971037
+      iconesMutacao_1: -2097595666
+      iconesMutacao_10: -992131451
+      iconesMutacao_11: 611608137
+      iconesMutacao_12: -1481716936
+      iconesMutacao_13: 139338514
+      iconesMutacao_14: -1156483799
+      iconesMutacao_15: 1587831080
+      iconesMutacao_16: 2069902333
+      iconesMutacao_17: 490716049
+      iconesMutacao_18: 952195442
+      iconesMutacao_19: -30222982
+      iconesMutacao_2: -1083963695
+      iconesMutacao_20: -1543362513
+      iconesMutacao_21: -449609499
+      iconesMutacao_22: 616065320
+      iconesMutacao_23: -916265118
+      iconesMutacao_24: 467398631
+      iconesMutacao_25: 1999302502
+      iconesMutacao_26: -1858398155
+      iconesMutacao_27: 176069673
+      iconesMutacao_28: -2128988603
+      iconesMutacao_29: 1631239392
+      iconesMutacao_3: 700210869
+      iconesMutacao_30: -1658183820
+      iconesMutacao_31: -141065217
+      iconesMutacao_32: 1512521061
+      iconesMutacao_33: 282656341
+      iconesMutacao_34: 444847230
+      iconesMutacao_35: 691786512
+      iconesMutacao_36: -1459106982
+      iconesMutacao_37: -602144183
+      iconesMutacao_38: -362717694
+      iconesMutacao_39: 2132246689
+      iconesMutacao_4: -1392464356
+      iconesMutacao_40: 570274833
+      iconesMutacao_41: 877370908
+      iconesMutacao_42: -838929225
+      iconesMutacao_43: -800675929
+      iconesMutacao_44: -758156328
+      iconesMutacao_45: 839739015
+      iconesMutacao_46: 1341559356
+      iconesMutacao_47: -1218999821
+      iconesMutacao_48: -1121850796
+      iconesMutacao_49: -506967441
+      iconesMutacao_5: -625450752
+      iconesMutacao_50: -1147199330
+      iconesMutacao_51: 623215864
+      iconesMutacao_52: 362001105
+      iconesMutacao_53: -1375071737
+      iconesMutacao_54: -2059304125
+      iconesMutacao_55: -482035024
+      iconesMutacao_56: -2117042865
+      iconesMutacao_57: -926915447
+      iconesMutacao_58: -1626368904
+      iconesMutacao_59: -1341284013
+      iconesMutacao_6: -26768048
+      iconesMutacao_60: 986873329
+      iconesMutacao_61: -1332249659
+      iconesMutacao_62: 1239341626
+      iconesMutacao_63: 1977957542
+      iconesMutacao_64: -408208598
+      iconesMutacao_65: -1614129862
+      iconesMutacao_66: 1612477212
+      iconesMutacao_67: -138171509
+      iconesMutacao_68: -1276037444
+      iconesMutacao_69: 1256695064
+      iconesMutacao_7: -1143937081
+      iconesMutacao_70: 1442814837
+      iconesMutacao_71: -1194847789
+      iconesMutacao_72: -1467864469
+      iconesMutacao_73: -1823505266
+      iconesMutacao_74: -1933508129
+      iconesMutacao_75: -7965444
+      iconesMutacao_76: 1678338384
+      iconesMutacao_77: -322264003
+      iconesMutacao_78: -475577496
+      iconesMutacao_79: 22694823
+      iconesMutacao_8: -1623697179
+      iconesMutacao_80: -905509123
+      iconesMutacao_81: 1179109911
+      iconesMutacao_82: -2057269018
+      iconesMutacao_83: -486758683
+      iconesMutacao_84: -1739817864
+      iconesMutacao_85: -1817948913
+      iconesMutacao_86: 1318297396
+      iconesMutacao_87: -1257047519
+      iconesMutacao_9: -290437679
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
