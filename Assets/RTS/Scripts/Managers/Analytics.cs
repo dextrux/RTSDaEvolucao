@@ -1,5 +1,7 @@
+using ArvoreAVL;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
@@ -76,8 +78,11 @@ public class Analytics : MonoBehaviour
         }
     }
 
-    public void SetMaximoMutacoesCriatura(int nMutacoes)
+    public void SetMaximoMutacoesCriatura(ArvoreAVL<MutationBase> mutacoes)
     {
+        List<Nodo<MutationBase>> listaMutacoes = mutacoes.Nodos();
+        int nMutacoes = listaMutacoes.Count();
+
         if (nMutacoes > jogador.nMaximoMutacoes1Peca)
         {
             jogador.nMaximoMutacoes1Peca = nMutacoes;
