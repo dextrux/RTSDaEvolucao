@@ -6,7 +6,7 @@ public enum TotemType
     M = 1,
     G = 2,
     Frutas = 3,
-    Grãos = 4,
+    Graos = 4,
     Plantas = 5,
     Ponto_Mutagenico = 6,
     Corpo = 7,

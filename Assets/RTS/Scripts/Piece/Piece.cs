@@ -293,7 +293,7 @@ public class Piece : MonoBehaviour
             TotemType.M => _plantMultiplier,
             TotemType.G => _plantMultiplier,
             TotemType.Frutas => _huntMultiplier,
-            TotemType.Gr�os => _huntMultiplier,
+            TotemType.Graos => _huntMultiplier,
             TotemType.Plantas => _huntMultiplier,
             TotemType.Ponto_Mutagenico => 1,
             TotemType.Corpo => _huntMultiplier,
