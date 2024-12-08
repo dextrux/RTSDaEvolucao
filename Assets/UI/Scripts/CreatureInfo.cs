@@ -14,6 +14,9 @@ public class CreatureInfo : MonoBehaviour
     private Button _mutationInfoBtn;
     private Button _actionBtn;
     private Button _exitInfoBtn;
+    //som
+    [SerializeField] private AudioClip _buttonConfirmation;
+    [SerializeField] private AudioClip _buttonDenial;
     #region Avisos Sobre a peca
     private VisualElement _discomfortWarning;
     private VisualElement _temperatureWarning;
@@ -52,17 +55,20 @@ public class CreatureInfo : MonoBehaviour
     }
     private void OnClickCreatureInfo(ClickEvent evt)
     {
+        SoundManagerSO.PlaySoundFXClip(_buttonConfirmation, transform.position, 1);
         _mutationScreen.SetActive(false);
         _creatureScreen.SetActive(true);
     }
     private void OnClickMutationInfo(ClickEvent evt)
     {
+        SoundManagerSO.PlaySoundFXClip(_buttonConfirmation, transform.position, 1);
         _creatureScreen.SetActive(false);
         _mutationScreen.SetActive(true);
         _mutationScreen.GetComponent<MutationList>().SetPieceMutationScreen(_actualPiece);
     }
     private void OnClickExitInfo(ClickEvent evt)
     {
+        SoundManagerSO.PlaySoundFXClip(_buttonDenial, transform.position, 1);
         _playerRaycast.DeselectPiece();
         _ingameUi.CreatureInfoNormal();
         _ingameUi.UpdateLifeBarOwnerBase();
@@ -71,6 +77,7 @@ public class CreatureInfo : MonoBehaviour
     }
     private void OnClickAction(ClickEvent evt)
     {
+        SoundManagerSO.PlaySoundFXClip(_buttonConfirmation, transform.position, 1);
         _ingameUi.CreatureInfoNormal();
         FindAnyObjectByType<PlayerRaycast>().isBlinking = true;
         _ingameUi.UpdateLifeBarOwnerBase();

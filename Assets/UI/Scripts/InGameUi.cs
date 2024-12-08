@@ -2,19 +2,21 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 using DG.Tweening;
+using UnityEditor.Rendering;
+using UnityEngine.Audio;
 public class InGameUi : MonoBehaviour
 {
     #region Variaveis Dia e Noite
     public GameObject gameManager;
     private DayNightCycle dayNight;
     #endregion
-
-    public int ActualTurn = 1; // substituir todas pelo controle de turnos
+    public static InGameUi Instance;
+    public int ActualTurn = 1;
     [SerializeField] private int _progressBarMargin;
     [SerializeField] private RoundManager _roundManager;
     private Button _pauseBtn;
     private Button _nextTurnBtn;
-    private Button _resumeNextTurnBtn; // Temporário para marcar a troca
+    private Button _resumeNextTurnBtn;
     private Button _optionPauseBtn;
     private Button _menuPauseBtn;
     private Button _resumePauseBtn;
@@ -28,7 +30,24 @@ public class InGameUi : MonoBehaviour
     private VisualElement _dnaContainer;
     private Label _lifeText;
     private Label _dnaCountText;
-
+    //VolumeConfig
+    private SliderInt _globalVolumeSlider;
+    private SliderInt _sfxVolumeSlider;
+    private SliderInt _bgmVolumeSlider;
+    [SerializeField] private AudioMixer _audioMixer;
+    [SerializeField] private AudioClip _buttonConfirmation;
+    [SerializeField] private AudioClip _buttonDenial;
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(this);
+        }
+    }
     private void OnEnable()
     {
         //Adição de todos botões e telas que se movem ou tem interação por código
@@ -63,6 +82,27 @@ public class InGameUi : MonoBehaviour
         _resumePauseBtn.RegisterCallback<ClickEvent>(OnClickResumePause);
         _optionResumeBtn.RegisterCallback<ClickEvent>(OnClickResumeOption);
         #endregion
+
+        #region Som
+        _globalVolumeSlider = root.Q<SliderInt>("global-volume-slider");
+        _sfxVolumeSlider = root.Q<SliderInt>("sfx-volume-slider");
+        _bgmVolumeSlider = root.Q<SliderInt>("bgm-volume-slider");
+        _globalVolumeSlider.RegisterCallback<ChangeEvent<int>>(GlobalVolumeSliderValueChange);
+        _sfxVolumeSlider.RegisterCallback<ChangeEvent<int>>(SFXVolumeSliderValueChange);
+        _bgmVolumeSlider.RegisterCallback<ChangeEvent<int>>(BGMVolumeSliderValueChange);
+
+        if (PlayerPrefs.HasKey("globalVolume"))
+        {
+            LoadVolume();
+        }
+        else
+        {
+            PlayerPrefs.SetInt("globalVolume", (-5));
+            PlayerPrefs.SetInt("sfxVolume", (-5));
+            PlayerPrefs.SetInt("bgmVolume", (-5));
+        }
+        #endregion
+
 
         //Seta as variaveis para controlar o dia e a noite
         #region Setando Variaveis para Dia e Noite
@@ -120,23 +160,28 @@ public class InGameUi : MonoBehaviour
     }
     private void OnResumeTurnChange(ClickEvent evt)
     {
+        SoundManagerSO.PlaySoundFXClip(_buttonConfirmation, transform.position, 1);
         _nextTurnAdvice.RemoveFromClassList("turn-screen-open");
     }
     private void OnClickOptionPause(ClickEvent evt)
     {
+        SoundManagerSO.PlaySoundFXClip(_buttonConfirmation, transform.position, 1);
         _pauseContainer.RemoveFromClassList("turn-screen-open");
         _optionContainer.RemoveFromClassList("option-closed");
     }
     private void OnClickMenuPause(ClickEvent evt)
     {
+        SoundManagerSO.PlaySoundFXClip(_buttonConfirmation, transform.position, 1);
         SceneManager.LoadScene("MainMenu");
     }
     private void OnClickResumePause(ClickEvent evt)
     {
+        SoundManagerSO.PlaySoundFXClip(_buttonConfirmation, transform.position, 1);
         _pauseContainer.RemoveFromClassList("turn-screen-open");
     }
     private void OnClickResumeOption(ClickEvent evt)
     {
+        SoundManagerSO.PlaySoundFXClip(_buttonConfirmation, transform.position, 1);
         _optionContainer.AddToClassList("option-closed");
     }
     #endregion
@@ -240,5 +285,27 @@ public class InGameUi : MonoBehaviour
                 break;
         }
         _dnaCountText.text = "= " + points.ToString();
+    }
+    //Som
+    private void GlobalVolumeSliderValueChange(ChangeEvent<int> value)
+    {
+        _audioMixer.SetFloat("GeneralVolume", value.newValue);
+        PlayerPrefs.SetInt("globalVolume", value.newValue);
+    }
+    private void SFXVolumeSliderValueChange(ChangeEvent<int> value)
+    {
+        _audioMixer.SetFloat("SfxVolume", value.newValue);
+        PlayerPrefs.SetInt("sfxVolume", value.newValue);
+    }
+    private void BGMVolumeSliderValueChange(ChangeEvent<int> value)
+    {
+        _audioMixer.SetFloat("BgMusicVolume", value.newValue);
+        PlayerPrefs.SetInt("bgmVolume", value.newValue);
+    }
+    private void LoadVolume()
+    {
+        _globalVolumeSlider.value = PlayerPrefs.GetInt("globalVolume");
+        _sfxVolumeSlider.value = PlayerPrefs.GetInt("sfxVolume");
+        _bgmVolumeSlider.value = PlayerPrefs.GetInt("bgmVolume");
     }
 }

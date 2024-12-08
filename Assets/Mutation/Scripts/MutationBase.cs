@@ -4,6 +4,7 @@ public abstract class MutationBase : ScriptableObject, IComparable<MutationBase>
 {
     [SerializeField] private int _id;
     [SerializeField] private string _name;
+    [SerializeField] private Sprite _icon;
     [SerializeField] private string _description;
     [SerializeField] private MutationBase[] _incompatibleMutations;
     [SerializeField] private MutationBase[] _requiredMutations;

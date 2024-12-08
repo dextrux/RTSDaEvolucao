@@ -82,7 +82,7 @@ public class RoundManager : MonoBehaviour
     private int _p5MutationPoint;
     #endregion
 
-    #region Refer�ncias Desastre
+    #region Referências Desastre
     [SerializeField]
     List<GameObject> _tilesUnderBigDissaster;
     [SerializeField]
@@ -93,7 +93,6 @@ public class RoundManager : MonoBehaviour
     int _indexDesastreMaior;
     private bool _isUnderBigDisaster;
     private bool _isUnderSmallDisaster;
-    private float _progressionBigDisaster = 0;
     #endregion
 
     #region Prefabs
@@ -474,7 +473,6 @@ public class RoundManager : MonoBehaviour
     void AcabarDesastreMaior(List<List<GameObject>> bioma, int indexDesastreMaior)
     {
         _isUnderBigDisaster = false;
-        _progressionBigDisaster = 0;
         List<GameObject> flatList = GetNestedListFlattened(bioma);
         BiomeDisasterManager.AcabarDesastre(flatList, true, _indexDesastreMaior);
     }
@@ -603,7 +601,7 @@ public class RoundManager : MonoBehaviour
 
         _roundOwner = owners[currentIndexOwner];
         MainCam.GetComponent<PlayerRaycast>().playerCamOwner = _roundOwner;
-        _inGameUi.UpdateMutationPointText();
+        GameObject.FindAnyObjectByType<InGameUi>().UpdateMutationPointText();
         _inGameUi.UpdateLifeBarOwnerBase();
         HandlerIndicadores();
     }

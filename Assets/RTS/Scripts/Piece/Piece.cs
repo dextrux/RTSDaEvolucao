@@ -78,12 +78,11 @@ public class Piece : MonoBehaviour
     #region Actions
     public IEnumerator Walk(Piece piece, GameObject targetTile, bool useEnergy)
     {
-        Debug.Log("Entrei em walk");
         if (!useEnergy && (!LoseEnergyToAct(piece.gameObject, 1)))
         {
             yield break;
         }
-            
+
 
         Tile currentTile = piece.PieceRaycastForTile();
         currentTile.Owner = Owner.None;
@@ -107,10 +106,9 @@ public class Piece : MonoBehaviour
     {
         Piece pieceScript = piece.GetComponent<Piece>();
         Tile targetTile = pieceScript.PieceRaycastForTile();
-            Debug.Log("Comendo");
-            bool hasEnergy = LoseEnergyToAct(piece, 2);
-            pieceScript.Energy.CurrentBarValue = hasEnergy ? pieceScript.Energy.CurrentBarValue : 0;
-            EatRoutine(tile, pieceScript, hasEnergy);
+        bool hasEnergy = LoseEnergyToAct(piece, 2);
+        pieceScript.Energy.CurrentBarValue = hasEnergy ? pieceScript.Energy.CurrentBarValue : 0;
+        EatRoutine(tile, pieceScript, hasEnergy);
     }
 
     private void EatRoutine(GameObject tile, Piece pieceScript, bool walk)
@@ -122,9 +120,10 @@ public class Piece : MonoBehaviour
             float multiplier = pieceScript.GetDietMultiplier(totem.TotemType);
             pieceScript.Hunger.CurrentBarValue += multiplier * totem.FoodQuantity;
         }
-        else if(totem.TotemType == TotemType.Ponto_Mutagenico)
+        else if (totem.TotemType == TotemType.Ponto_Mutagenico)
         {
             pieceScript.PontosMutagenicos++;
+            GameObject.FindAnyObjectByType<InGameUi>().UpdateMutationPointText();
         }
         totem.DeactivateTotem();
         if (walk)
@@ -139,15 +138,12 @@ public class Piece : MonoBehaviour
 
     public void Fight(GameObject attacker, GameObject targetTile)
     {
-        Debug.Log("A");
         Piece attackerScript = attacker.GetComponent<Piece>();
         if (LoseEnergyToAct(attacker, 1))
         {
-            Debug.Log("B");
             Piece opponent = targetTile.GetComponent<Tile>().TileRaycastForPiece();
             if (opponent != null)
             {
-                Debug.Log("C");
                 attackerScript.Health.CurrentBarValue -= opponent.Strength.CurrentBarValue;
                 opponent.Health.CurrentBarValue -= attackerScript.Strength.CurrentBarValue;
                 Debug.Log("Ataque saúde: " + attackerScript.Health.CurrentBarValue);
@@ -158,7 +154,7 @@ public class Piece : MonoBehaviour
         }
         else
         {
-            attackerScript.IsDuringAction = false ;
+            attackerScript.IsDuringAction = false;
         }
     }
 
@@ -177,7 +173,7 @@ public class Piece : MonoBehaviour
             GameObject.Destroy(defender.gameObject);
             GameObject.FindAnyObjectByType<RoundManager>().RemoverPieceEmLista(defender.Owner, defender.gameObject);
 
-            attacker.StartCoroutine(Walk(attacker,targetTile, true));
+            attacker.StartCoroutine(Walk(attacker, targetTile, true));
         }
 
         attacker.IsDuringAction = false;
@@ -219,15 +215,9 @@ public class Piece : MonoBehaviour
         }
         else
         {
-            energyLoss = actionFactor * isDoenteFactor * (temperaturaFactor + humidadeFactor)/3;
+            energyLoss = actionFactor * isDoenteFactor * (temperaturaFactor + humidadeFactor) / 3;
 
         }
-
-        Debug.Log(temperaturaFactor);
-        Debug.Log(humidadeFactor);
-        Debug.Log(isDoenteFactor);
-        Debug.Log(energyLoss);
-
         if (pieceScript.Energy.CurrentBarValue >= energyLoss)
         {
             pieceScript.Energy.CurrentBarValue -= energyLoss;
@@ -240,22 +230,22 @@ public class Piece : MonoBehaviour
     #endregion
 
     #region Métodos de Inicalização
-    public static void InicializarPiece(GameObject piece,GameObject tile, PieceDiet pieceDiet, Owner owner, int level)
+    public static void InicializarPiece(GameObject piece, GameObject tile, PieceDiet pieceDiet, Owner owner, int level)
     {
-        Piece pieceScript = piece.GetComponent<Piece>();      
+        Piece pieceScript = piece.GetComponent<Piece>();
         pieceScript._biomeReferences = GameObject.FindFirstObjectByType<BiomeReferences>();
         pieceScript._ownerReference = GameObject.FindFirstObjectByType<OwnerReference>();
         pieceScript._tileTypeReferences = GameObject.FindFirstObjectByType<TileTypeReferences>();
         pieceScript.PontosMutagenicos = 0;
         pieceScript.Diet = pieceDiet;
-        pieceScript.Owner =  owner;
+        pieceScript.Owner = owner;
         PieceLevelHandler.SetPieceAttributes(pieceScript, level);
         pieceScript._renderer.material = pieceScript._ownerReference.GetColor(pieceScript.Owner);
         pieceScript.Humidity = new EnviromentStatus(pieceScript.PieceRaycastForTile().Humidity);
         pieceScript.Temperature = new EnviromentStatus(pieceScript.PieceRaycastForTile().Temperature);
         pieceScript.SetDietMultipliers();
         pieceScript.PieceRaycastForTile().Owner = pieceScript.Owner;
-        pieceScript.IsDuringAction = false;    
+        pieceScript.IsDuringAction = false;
         GameObject.FindFirstObjectByType<RoundManager>().AdicionarPieceEmLista(pieceScript.Owner, piece);
         pieceScript.AppliedMutations.Inserir(pieceScript.MutationBase);
     }
@@ -269,10 +259,8 @@ public class Piece : MonoBehaviour
         Vector3 rayOrigin = transform.position;
         if (Physics.Raycast(rayOrigin, Vector3.down, out RaycastHit hit, _rayDistanceTile, TileLayerMask))
         {
-            Debug.DrawRay(rayOrigin, Vector3.down * _rayDistanceTile, Color.green);
             return hit.collider.CompareTag("Tile") ? hit.collider.GetComponent<Tile>() : null;
         }
-        Debug.DrawRay(rayOrigin, Vector3.down * _rayDistanceTile, Color.red);
         return null;
     }
     #endregion
@@ -350,7 +338,7 @@ public class Piece : MonoBehaviour
 
             if (this.Health.CurrentBarValue >= healthLoss)
             {
-                this.Health.CurrentBarValue -= healthLoss;               
+                this.Health.CurrentBarValue -= healthLoss;
             }
             else
             {
@@ -361,14 +349,14 @@ public class Piece : MonoBehaviour
 
     private void CheckForIllness()
     {
-        if (Alerta.Count >= 3 )
+        if (Alerta.Count >= 3)
         {
             if (UnityEngine.Random.Range(1, 24) <= Alerta.Count)
             {
                 _isDoente = true;
-            }           
+            }
         }
-        else if(_isDoenteTime > 3 && _isDoente == true)
+        else if (_isDoenteTime > 3 && _isDoente == true)
         {
             _isDoente = false;
             _isDoenteTime = 0;
@@ -377,7 +365,7 @@ public class Piece : MonoBehaviour
         {
             _isDoenteTime++;
             System.Random rand = new System.Random();
-            if (rand.Next(0,3) == 0)
+            if (rand.Next(0, 3) == 0)
             {
                 List<GameObject> tilesAdjacentes = this.PieceRaycastForTile().TilesAdjacentes;
                 foreach (var tile in tilesAdjacentes)
@@ -410,7 +398,7 @@ public class Piece : MonoBehaviour
         }
         else
         {
-            energyGain =  (temperaturaFactor + humidadeFactor) / isDoenteFactor * 2;
+            energyGain = (temperaturaFactor + humidadeFactor) / isDoenteFactor * 2;
 
         }
         this._energyBar.CurrentBarValue += energyGain;
@@ -423,14 +411,15 @@ public class Piece : MonoBehaviour
         LoseLifeUnderDisastre();
     }
 
-    public void AtivarIndicador() { Debug.Log("Indicador ativado");  
-        indicador.SetActive(true); 
+    public void AtivarIndicador()
+    {
+        indicador.SetActive(true);
         // indicador.transform.LookAt(FindAnyObjectByType<Camera>().transform); 
         indicador.GetComponent<SpriteRenderer>().color = FindAnyObjectByType<OwnerReference>().GetColor(this.Owner).color;
     }
-    public void DesativarIndicador() 
+    public void DesativarIndicador()
     {
-        Debug.Log("Indicador desativado");  
-        indicador.SetActive(false); }
-    #endregion
+        indicador.SetActive(false);
     }
+    #endregion
+}

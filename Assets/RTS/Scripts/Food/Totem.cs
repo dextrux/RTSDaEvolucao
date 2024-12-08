@@ -53,8 +53,6 @@ public class Totem : MonoBehaviour
     #region Métodos de Ativação e Desativação do Totem
     public void ActivateTotem(TotemType totemType)
     {
-        Debug.Log("Totem ativado");
-
         TotemType = totemType;
         FoodQuantity = InitialFoodQuantity;
 
@@ -79,8 +77,6 @@ public class Totem : MonoBehaviour
 
     public void DeactivateTotem()
     {
-        Debug.Log("Totem desativado");
-
         var tile = PerformRaycastToTile();
         if (tile != null)
         {

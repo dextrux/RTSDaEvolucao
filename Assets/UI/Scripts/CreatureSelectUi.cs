@@ -138,6 +138,7 @@ public class CreatureSelectUi : MonoBehaviour
             SoundManagerSO.PlaySoundFXClip(_buttonDenial, transform.position, 1);
             _player3ActiveBtn.RemoveFromClassList("internal-player-active-button");
             _player3ActiveBtn.AddToClassList("internal-player-inactive-button");
+            _player3ActiveBtn.text = "Inativo";
             selectionManager.RemoveOwnerOnList(Owner.P3);
             _playerAnimatorList[2].SetBool("Active", false);
         }
@@ -146,6 +147,7 @@ public class CreatureSelectUi : MonoBehaviour
             SoundManagerSO.PlaySoundFXClip(_buttonConfirmation, transform.position, 1);
             _player3ActiveBtn.AddToClassList("internal-player-active-button");
             _player3ActiveBtn.RemoveFromClassList("internal-player-inactive-button");
+            _player3ActiveBtn.text = "Jogador\n3";
             selectionManager.AddOwnerOnList(Owner.P3);
             _playerAnimatorList[2].SetBool("Active", true);
         }
@@ -157,6 +159,7 @@ public class CreatureSelectUi : MonoBehaviour
             SoundManagerSO.PlaySoundFXClip(_buttonDenial, transform.position, 1);
             _player4ActiveBtn.RemoveFromClassList("internal-player-active-button");
             _player4ActiveBtn.AddToClassList("internal-player-inactive-button");
+            _player4ActiveBtn.text = "Inativo";
             selectionManager.RemoveOwnerOnList(Owner.P4);
             _playerAnimatorList[3].SetBool("Active", false);
         }
@@ -165,6 +168,7 @@ public class CreatureSelectUi : MonoBehaviour
             SoundManagerSO.PlaySoundFXClip(_buttonConfirmation, transform.position, 1);
             _player4ActiveBtn.AddToClassList("internal-player-active-button");
             _player4ActiveBtn.RemoveFromClassList("internal-player-inactive-button");
+            _player4ActiveBtn.text = "Jogador\n4";
             selectionManager.AddOwnerOnList(Owner.P4);
             _playerAnimatorList[3].SetBool("Active", true);
         }
@@ -176,6 +180,7 @@ public class CreatureSelectUi : MonoBehaviour
             SoundManagerSO.PlaySoundFXClip(_buttonDenial, transform.position, 1);
             _player5ActiveBtn.RemoveFromClassList("internal-player-active-button");
             _player5ActiveBtn.AddToClassList("internal-player-inactive-button");
+            _player5ActiveBtn.text = "Inativo";
             selectionManager.RemoveOwnerOnList(Owner.P5);
             _playerAnimatorList[4].SetBool("Active", false);
         }
@@ -184,6 +189,7 @@ public class CreatureSelectUi : MonoBehaviour
             SoundManagerSO.PlaySoundFXClip(_buttonConfirmation, transform.position, 1);
             _player5ActiveBtn.AddToClassList("internal-player-active-button");
             _player5ActiveBtn.RemoveFromClassList("internal-player-inactive-button");
+            _player5ActiveBtn.text = "Jogador\n5";
             selectionManager.AddOwnerOnList(Owner.P5);
             _playerAnimatorList[4].SetBool("Active", true);
         }
