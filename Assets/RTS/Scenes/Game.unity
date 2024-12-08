@@ -255,6 +255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a62b9fecdb25654ba60d8be9751178f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 0}
   _maxTurnos: 15
   _periodicidadeDesastreMenor: 5
   _periodicidadeDesastreMaior: 10
@@ -419,10 +420,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 525c5f03e9d55fc47ad2911128864940, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tempoTotal: 0
-  tempoAtual: 0
-  tempoCompras: 0
-  timerAtivo: 0
 --- !u!1 &203844586
 GameObject:
   m_ObjectHideFlags: 0
@@ -666,7 +663,7 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: 738a31321ff964740a56288184a186b9, type: 3}
   prefabsCaatinga:
   - {fileID: 919132149155446097, guid: f5cf8b47b9b459942897702a0df26a77, type: 3}
-  - {fileID: 919132149155446097, guid: b5822fb8563ef50408d3c9b007b848e6, type: 3}
+  - {fileID: 919132149155446097, guid: 10f286f0a986d074dac23ed386fa2925, type: 3}
   - {fileID: 919132149155446097, guid: 389f57d842c378d4eb04df25ff55a7b7, type: 3}
   - {fileID: 919132149155446097, guid: d4a362dbdca2eef499aafab9ff193f3b, type: 3}
   - {fileID: 919132149155446097, guid: dae09cdb954fee141819d060450af9a1, type: 3}
@@ -677,7 +674,6 @@ MonoBehaviour:
   - {fileID: 919132149155446097, guid: fc4d878b019f4c840a26b0a40a9ddc6c, type: 3}
   - {fileID: 919132149155446097, guid: 5183245b2761b844e8c52cee7ecc5b31, type: 3}
   prefabsPantanal:
-  - {fileID: 919132149155446097, guid: eefdcd32e06ce174fa41bfa90afa29c8, type: 3}
   - {fileID: 919132149155446097, guid: 1e4c41654a676b148b400e4b28e252d4, type: 3}
   - {fileID: 919132149155446097, guid: 64fbafdb9aab9d1459b2173b17f9c288, type: 3}
   - {fileID: 919132149155446097, guid: fe4b1731879a1e4429feb5a862058bd8, type: 3}
@@ -1244,6 +1240,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ed65cc3f2f80f74b92aa28a6a056db3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _mutations: []
+  _playerRaycast: {fileID: 961739755}
+  _ingameUi: {fileID: 9445385}
+  _buttonConfirmation: {fileID: 8300000, guid: 7944c35f712ee8341854a7b2ba96d8b4, type: 3}
+  _buttonDenial: {fileID: 8300000, guid: 6b8b07fb0027e8940b5ff36d8a85f755, type: 3}
 --- !u!114 &1968964556
 MonoBehaviour:
   m_ObjectHideFlags: 0

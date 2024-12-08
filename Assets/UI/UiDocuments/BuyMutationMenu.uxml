@@ -8,19 +8,13 @@
                 <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" style="width: 55%;">
                     <ui:VisualElement name="linha1" style="flex-grow: 1;">
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="herbivoro-btn" class="selected-button" style="left: 0;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="Herbivoro" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=1956337614&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_35&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="carnivoro-btn" class="available-button" style="left: 105px; visibility: visible;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="Carnivoro" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-1280163637&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_6&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="onivoro-btn" class="available-button" style="left: 210px;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="Onivoro" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=1448378831&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_34&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 315px; visibility: hidden; display: flex;">
                             <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
@@ -33,9 +27,7 @@
                             </ui:VisualElement>
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="agressivo-btn" class="available-button" style="left: 525px; visibility: visible;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="Agres\nsivo" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=-1276037444&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_68&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 630px; visibility: hidden;">
                             <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
@@ -43,9 +35,7 @@
                             </ui:VisualElement>
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="fugitivo-btn" class="available-button" style="left: 735px; visibility: visible;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="fugitivo" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=700210869&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_3&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                     </ui:VisualElement>
                     <ui:VisualElement name="linha2" style="flex-grow: 1;">
@@ -65,9 +55,7 @@
                             </ui:VisualElement>
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="social-btn" class="available-button" style="left: 368px; top: 90px; visibility: visible;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="social" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=-1143937081&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_7&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 473px; top: 90px; visibility: hidden;">
                             <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
@@ -86,20 +74,16 @@
                         </ui:Button>
                     </ui:VisualElement>
                     <ui:VisualElement name="linha3" style="flex-grow: 1;">
-                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="necrofago-btn" class="available-button" style="left: 0; top: 180px;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="Necrofago" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="necrofago-btn" class="available-button" style="left: 0; top: 180px; padding-top: 2%; padding-bottom: 3%;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=673971037&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_0&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 105px; top: 180px; visibility: hidden;">
                             <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
                                 <ui:Label tabindex="-1" text="Médio\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
                             </ui:VisualElement>
                         </ui:Button>
-                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="porte-grande-btn" class="available-button" style="left: 210px; top: 180px;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="porte-grande-btn" class="available-button" style="left: 210px; top: 180px; padding-bottom: 3%; padding-top: 2%;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=-26768048&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_6&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 315px; top: 180px; visibility: hidden;">
                             <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
@@ -107,9 +91,7 @@
                             </ui:VisualElement>
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="familiar-btn" class="available-button" style="left: 420px; top: 180px;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="familiar" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=-992131451&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_10&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 525px; top: 180px; visibility: hidden;">
                             <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
@@ -117,9 +99,7 @@
                             </ui:VisualElement>
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="parasita-btn" class="available-button" style="left: 630px; top: 180px;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="Parasita" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=-2097595666&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_1&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 735px; top: 180px; visibility: hidden;">
                             <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
@@ -134,14 +114,10 @@
                             </ui:VisualElement>
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="cavernoso-btn" class="available-button" style="left: 158px; top: 270px;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="Caver\nnoso" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=467398631&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_24&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
-                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="escalador-btn" class="available-button" style="left: 263px; top: 270px;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="Esca\nlador" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="escalador-btn" class="available-button" style="left: 263px; top: 270px; padding-top: 3%; padding-bottom: 3%;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=-1156483799&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_14&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 368px; top: 270px; visibility: hidden;">
                             <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
@@ -165,10 +141,8 @@
                         </ui:Button>
                     </ui:VisualElement>
                     <ui:VisualElement name="linha5" style="flex-grow: 1;">
-                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="pe-galinha-btn" class="available-button" style="left: 0; top: 360px; visibility: visible;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="pé de\ngalinha" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="pe-galinha-btn" class="available-button" style="left: 0; top: 360px; visibility: visible; padding-top: 3%; padding-bottom: 3%;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=1179109911&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_81&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 105px; top: 360px; visibility: hidden;">
                             <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
@@ -176,9 +150,7 @@
                             </ui:VisualElement>
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="medio-porte-btn" class="available-button" style="left: 210px; top: 360px;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="Medio\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=-1392464356&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_4&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 315px; top: 360px; visibility: hidden;">
                             <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
@@ -191,9 +163,7 @@
                             </ui:VisualElement>
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="olho-noturno-btn" class="available-button" style="left: 525px; top: 360px;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="Olho\nnoturno" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=570274833&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_40&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 630px; top: 360px; visibility: hidden;">
                             <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
@@ -201,9 +171,7 @@
                             </ui:VisualElement>
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="olho-diruno-btn" class="available-button" style="left: 735px; top: 360px;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="Olho\nDiurno" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=1512521061&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_32&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                     </ui:VisualElement>
                     <ui:VisualElement name="linha6" style="flex-grow: 1;">
@@ -213,19 +181,13 @@
                             </ui:VisualElement>
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="agil-btn" class="available-button" style="left: 158px; top: 450px;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="Agil" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=2069902333&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_16&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="silencioso-btn" class="available-button" style="left: 263px; top: 450px;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="Silen\ncioso" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=-1083963695&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_2&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="emboscador-btn" class="available-button" style="left: 368px; top: 450px;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="Embos\ncador" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=1341559356&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_46&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 473px; top: 450px; visibility: hidden;">
                             <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
@@ -245,19 +207,15 @@
                     </ui:VisualElement>
                     <ui:VisualElement name="linha7" style="flex-grow: 1;">
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="pata-de-urso-btn" class="available-button" style="left: 0; top: 540px; visibility: visible;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="Pata de\nurso" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=-408208598&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_64&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 105px; top: 540px; visibility: hidden;">
                             <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
                                 <ui:Label tabindex="-1" text="Médio\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
                             </ui:VisualElement>
                         </ui:Button>
-                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="pequeno-porte-btn" class="available-button" style="left: 210px; top: 540px;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="Pequeno\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="pequeno-porte-btn" class="available-button" style="left: 210px; top: 540px; padding-top: 3%; padding-bottom: 3%;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=-625450752&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_5&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 315px; top: 540px; visibility: hidden;">
                             <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
@@ -275,14 +233,10 @@
                             </ui:VisualElement>
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="bico-plantas-btn" class="available-button" style="left: 630px; top: 540px;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="bico\nde\nplanta" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=-1341284013&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_59&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="bico-graos-btn" class="available-button" style="left: 735px; top: 540px;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="Bico\ntritura\ngrãos" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=986873329&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_60&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                     </ui:VisualElement>
                     <ui:VisualElement name="linha8" style="flex-grow: 1;">
@@ -301,32 +255,22 @@
                                 <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
                             </ui:VisualElement>
                         </ui:Button>
-                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="serras-btn" class="available-button" style="left: 368px; top: 630px;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="Serras" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="serras-btn" class="available-button" style="left: 368px; top: 630px; padding-top: 3%; padding-bottom: 3%;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=-1543362513&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_20&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="bico-de-caca-pequena-btn" class="available-button" style="left: 473px; top: 630px;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="Bico caca\nPequena" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=1318297396&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_86&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="bico-herbivoro-btn" class="available-button" style="left: 578px; top: 630px;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="Bico\nHerbivoro" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=-1341284013&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_59&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="bico-fruta-btn" class="available-button" style="left: 683px; top: 630px;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="Bico\nde\nfrutas" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=-1626368904&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_58&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                     </ui:VisualElement>
                     <ui:VisualElement name="linha9" style="flex-grow: 1;">
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="pata-de-macaco-btn" class="available-button" style="left: 0; top: 720px; visibility: visible;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="Pata De\nMacaco" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=-1614129862&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_65&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 105px; top: 720px; visibility: hidden;">
                             <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
@@ -334,9 +278,7 @@
                             </ui:VisualElement>
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="quelicera-btn" class="available-button" style="left: 210px; top: 720px; visibility: visible;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="Quelicera" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=-1332249659&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_61&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 315px; top: 720px; visibility: hidden;">
                             <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
@@ -344,19 +286,13 @@
                             </ui:VisualElement>
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="bico-de-caca-media-btn" class="available-button" style="left: 420px; top: 720px;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="Bico caca\nmedia" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=-1739817864&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_84&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="bico-carnivoro-btn" class="available-button" style="left: 525px; top: 720px;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="Bico\nCarnivoro" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=-1739817864&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_84&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="bico-btn" class="available-button" style="left: 630px; top: 720px;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="Bico" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=-1218999821&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_47&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 735px; top: 720px; visibility: hidden;">
                             <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
@@ -371,9 +307,7 @@
                             </ui:VisualElement>
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="peconha-btn" class="available-button" style="left: 158px; top: 810px;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="peçonha" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=362001105&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_52&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 263px; top: 810px; visibility: hidden;">
                             <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
@@ -386,9 +320,7 @@
                             </ui:VisualElement>
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="bico-caca-grande-btn" class="available-button" style="left: 473px; top: 810px;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="Bico caca\nGrande" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=-2057269018&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_82&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 578px; top: 810px; visibility: hidden;">
                             <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
@@ -408,9 +340,7 @@
                             </ui:VisualElement>
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="mandibula-btn" class="available-button" style="left: 105px; top: 900px;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="mandibula" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=-905509123&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_80&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 210px; top: 900px; visibility: hidden;">
                             <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
@@ -418,9 +348,7 @@
                             </ui:VisualElement>
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="dentes-frutas" class="available-button" style="left: 315px; top: 900px; visibility: visible;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="Dentes\nFrutas" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=-602144183&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_37&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 420px; top: 900px; visibility: hidden;">
                             <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
@@ -433,9 +361,7 @@
                             </ui:VisualElement>
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="cauda-largato-escamado-btn" class="available-button" style="left: 630px; top: 900px; visibility: visible;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="Cauda\nLargato\nEscamado" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=1678338384&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_76&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 735px; top: 900px; visibility: hidden;">
                             <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
@@ -450,19 +376,13 @@
                             </ui:VisualElement>
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="dentes-btn" class="available-button" style="left: 158px; top: 990px;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="Dentes" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=-1121850796&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_48&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="dentes-quadrados-btn" class="available-button" style="left: 263px; top: 990px; visibility: visible;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="dentes\nquadrados" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=-1121850796&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_48&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="dentes-graos-btn" class="available-button" style="left: 368px; top: 990px; visibility: visible;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="dentes\ntritura\ngraos" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=691786512&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_35&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 473px; top: 990px; visibility: hidden;">
                             <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
@@ -470,36 +390,24 @@
                             </ui:VisualElement>
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="cauda-largato-btn" class="available-button" style="left: 578px; top: 990px; visibility: visible;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="Cauda\nLargato" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=-7965444&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_75&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="cauda-felpuda-btn" class="available-button" style="left: 683px; top: 990px; visibility: visible;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="Cauda\nFelpuda" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=-322264003&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_77&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                     </ui:VisualElement>
                     <ui:VisualElement name="linha13" style="flex-grow: 1;">
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="dente-caca-grande-btn" class="available-button" style="left: 0; top: 1080px;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="Dente\ncaca\ngrande" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=1442814837&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_70&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="dente-afiado-btn" class="available-button" style="left: 105px; top: 1080px;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="Dentes\nAfiados" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=-1147199330&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_50&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="carreiras-dentarias-btn" class="available-button" style="left: 210px; top: 1080px;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="Carreiras\nDentarias" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=-506967441&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_49&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="dentes-plantas-btn" class="available-button" style="left: 315px; top: 1080px;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="Dentes de\nPlantas" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=2132246689&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_39&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 420px; top: 1080px; visibility: hidden;">
                             <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
@@ -511,10 +419,8 @@
                                 <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
                             </ui:VisualElement>
                         </ui:Button>
-                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="cauda-felpuda-pequena-btn" class="available-button" style="left: 630px; top: 1080px; visibility: visible;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="Cauda\nFelpuda\nPequena" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="cauda-felpuda-pequena-btn" class="available-button" style="left: 630px; top: 1080px; visibility: visible; padding-top: 3%; padding-bottom: 3%;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=-322264003&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_77&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 735px; top: 1080px; visibility: hidden;">
                             <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
@@ -523,15 +429,11 @@
                         </ui:Button>
                     </ui:VisualElement>
                     <ui:VisualElement name="linha14" style="flex-grow: 1;">
-                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="dente-caca-grande-btn" class="available-button" style="left: 53px; top: 1170px; visibility: visible;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="Dente\ncaca\nmedia" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="dente-caca-media-btn" class="available-button" style="left: 53px; top: 1170px; visibility: visible;">
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=1442814837&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_70&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="dente-caca-pequena-btn" class="available-button" style="left: 158px; top: 1170px;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="Dentes\ncaça\npequena" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=-1276037444&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_68&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="available-button" style="left: 263px; top: 1170px; visibility: hidden;">
                             <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
@@ -549,21 +451,17 @@
                             </ui:VisualElement>
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="cauda-gato-selvagem-btn" class="available-button" style="left: 578px; top: 1170px; visibility: visible;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="Cauda de&#10;gato&#10;selvagem" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=-1933508129&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_74&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="plumagem-pavao-btn" class="available-button" style="left: 683px; top: 1170px; visibility: visible;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: none; -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;">
-                                <ui:Label tabindex="-1" text="plumagem\nde Pavão" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%;" />
-                            </ui:VisualElement>
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=22694823&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_79&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                     </ui:VisualElement>
                 </ui:ScrollView>
                 <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" style="width: 49%;">
                     <ui:VisualElement name="mutation-icon" style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=1956337614&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_35&apos;); height: 300px; -unity-background-scale-mode: scale-to-fit;" />
-                    <ui:Label tabindex="-1" text="Dieta - Herbívoro" parse-escape-sequences="true" display-tooltip-when-elided="true" name="mutation-title" class="info-title" style="height: 55px; -unity-text-align: upper-center; font-size: 50px;" />
-                    <ui:Label tabindex="-1" text="Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, Descrição, " parse-escape-sequences="true" display-tooltip-when-elided="true" name="mutation-descrition" class="info-title" style="white-space: normal; -unity-text-align: upper-left; font-size: 25px; margin-right: 2%; margin-left: 5%;" />
+                    <ui:Label tabindex="-1" text="Herbívoro" parse-escape-sequences="true" display-tooltip-when-elided="true" name="mutation-title" class="info-title" style="height: 55px; -unity-text-align: upper-center; font-size: 50px;" />
+                    <ui:Label tabindex="-1" text="Herbívoro é um animal anatomicamente e fisiologicamente adaptado para comer material vegetal, por exemplo, folhagem, como o principal componente de sua dieta." parse-escape-sequences="true" display-tooltip-when-elided="true" name="mutation-descrition" class="info-title" style="white-space: normal; -unity-text-align: upper-left; font-size: 25px; margin-right: 2%; margin-left: 5%;" />
                 </ui:ScrollView>
             </ui:VisualElement>
             <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="exit-mutation-btn" class="exit-mutation-btn">
