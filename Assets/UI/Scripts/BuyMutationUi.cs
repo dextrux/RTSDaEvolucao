@@ -13,15 +13,24 @@ public enum MutationStatus
 public class BuyMutationUi : MonoBehaviour
 {
     private Button _exitBuyMutation;
+
+    #region BotoesParaMutacoes
     private Button _herbivoreBtn;
     private Button _carnivoreBtn;
     private Button _omnivoreBtn;
-    
 
+
+    #endregion
 
     private Piece _actualPiece;
     private MutationBase _selectedMutation;
     private int _mutationIndex;
+
+    [SerializeField] private PlayerRaycast _playerRaycast;
+    [SerializeField] private InGameUi _ingameUi;
+    //som
+    [SerializeField] private AudioClip _buttonConfirmation;
+    [SerializeField] private AudioClip _buttonDenial;
     public Piece Piece { get => _actualPiece; set => _actualPiece = value; }
 
     private void SetComponents()
@@ -42,6 +51,10 @@ public class BuyMutationUi : MonoBehaviour
     }
     private void ExitBuyMutation(ClickEvent evt)
     {
+        SoundManagerSO.PlaySoundFXClip(_buttonDenial, transform.position, 1);
+        _playerRaycast.DeselectPiece();
+        _ingameUi.CreatureInfoNormal();
+        _ingameUi.UpdateLifeBarOwnerBase();
         gameObject.SetActive(false);
     }
     private void OnClickHerbivoreBtn(ClickEvent evt)
@@ -54,9 +67,6 @@ public class BuyMutationUi : MonoBehaviour
         {
             _actualPiece.AppliedMutations.Inserir(herbivoro);
         }
-        _herbivoreBtn.AddToClassList("purchased-button");
-        _carnivoreBtn.RemoveFromClassList("purchased-button");
-        _omnivoreBtn.RemoveFromClassList("purchased-button");
     }
     private void OnClickCarnivoreBtn(ClickEvent evt)
     {
@@ -69,8 +79,6 @@ public class BuyMutationUi : MonoBehaviour
         {
             _actualPiece.AppliedMutations.Inserir(carnivore);
         }
-        _carnivoreBtn.AddToClassList("purchased-button");
-        _omnivoreBtn.RemoveFromClassList("purchased-button");
     }
     private void OnClickOmnivorousBtn(ClickEvent evt)
     {
@@ -83,8 +91,6 @@ public class BuyMutationUi : MonoBehaviour
         {
             _actualPiece.AppliedMutations.Inserir(Omnivorous);
         }
-        _omnivoreBtn.AddToClassList("purchased-button");
-        _omnivoreBtn.RemoveFromClassList("unavailable-button");
     }
     private void OnClickHerbivoreMutationBtn(ClickEvent evt)
     {

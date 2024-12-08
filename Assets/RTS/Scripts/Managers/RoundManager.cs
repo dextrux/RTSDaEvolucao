@@ -300,7 +300,7 @@ public class RoundManager : MonoBehaviour
         switch (pieceOwner)
         {
             case Owner.P1:
-                _p1MutationPoint ++;
+                _p1MutationPoint++;
                 break;
             case Owner.P2:
                 _p2MutationPoint++;
@@ -314,6 +314,22 @@ public class RoundManager : MonoBehaviour
             case Owner.P5:
                 _p5MutationPoint++;
                 break;
+        }
+    }
+    public int GetMutationPointOwnerBased(Owner pieceOwner)
+    {
+        switch (pieceOwner)
+        {
+            case Owner.P1:
+                return _p1MutationPoint;
+            case Owner.P2:
+                return _p2MutationPoint;
+            case Owner.P3:
+                return _p3MutationPoint;
+            case Owner.P4:
+                return _p4MutationPoint;
+            default:
+                return _p5MutationPoint;
         }
     }
 

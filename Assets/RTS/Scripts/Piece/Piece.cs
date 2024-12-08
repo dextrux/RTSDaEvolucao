@@ -109,10 +109,10 @@ public class Piece : MonoBehaviour
         LastTile.RetornarTilesParaMaterialOriginal();
         Piece pieceScript = piece.GetComponent<Piece>();
         Tile targetTile = pieceScript.PieceRaycastForTile();
-            Debug.Log("Comendo");
-            bool hasEnergy = LoseEnergyToAct(piece, 2);
-            pieceScript.Energy.CurrentBarValue = hasEnergy ? pieceScript.Energy.CurrentBarValue : 0;
-            EatRoutine(tile, pieceScript, hasEnergy, LastTile);
+        Debug.Log("Comendo");
+        bool hasEnergy = LoseEnergyToAct(piece, 2);
+        pieceScript.Energy.CurrentBarValue = hasEnergy ? pieceScript.Energy.CurrentBarValue : 0;
+        EatRoutine(tile, pieceScript, hasEnergy, LastTile);
     }
 
     private void EatRoutine(GameObject tile, Piece pieceScript, bool walk, Tile LastTile)
@@ -179,7 +179,7 @@ public class Piece : MonoBehaviour
             GameObject.Destroy(defender.gameObject);
             GameObject.FindAnyObjectByType<RoundManager>().RemoverPieceEmLista(defender.Owner, defender.gameObject);
 
-            attacker.StartCoroutine(Walk(attacker,targetTile, true, attacker.PieceRaycastForTile()));
+            attacker.StartCoroutine(Walk(attacker, targetTile, true, attacker.PieceRaycastForTile()));
         }
 
         attacker.IsDuringAction = false;
@@ -300,14 +300,19 @@ public class Piece : MonoBehaviour
     #endregion
 
     #region M�todos de Muta��o e Sa�de
-    public void AddMutation(MutationBase mutationToAdd)
+    public bool AddMutation(MutationBase mutationToAdd)
     {
+        if (mutationToAdd.Cost > FindAnyObjectByType<RoundManager>().GetMutationPointOwnerBased(Owner) || _incompatibleMutations.Pesquisar(mutationToAdd))
+        {
+            return false;
+        }
         _appliedMutations.Inserir(mutationToAdd);
         foreach (MutationBase incompatible in mutationToAdd.IncompatibleMutations)
         {
             _incompatibleMutations.Inserir(incompatible);
         }
-        mutationToAdd.Mutate(gameObject.GetComponent<Piece>());
+        mutationToAdd.Mutate(this);
+        return true;
     }
 
     public void SetVisualPart(PieceParts newPart, Mesh newVisual)
