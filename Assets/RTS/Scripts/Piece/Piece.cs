@@ -345,16 +345,14 @@ public class Piece : MonoBehaviour
         }
         mutationToAdd.Mutate(gameObject.GetComponent<Piece>());
 
-        #region Analytics Numero de Mutacoes
-        if (_appliedMutations.Altura() < 0)
+        if (_appliedMutations.Altura() <= 0)
         {
             analytics.SetTempoPrimeiraCompra();
         }
         analytics.SetNumeroTotalCompras();
-        analytics.SetMaximoMutacoesCriatura(_appliedMutations.QuantidadeNodos());
-        analytics.SetMinimoMutacoesCriatura(_appliedMutations.QuantidadeNodos());
+        analytics.SetMaximoMutacoesCriatura(_appliedMutations);
+        analytics.SetMinimoMutacoesCriatura(_appliedMutations);
         analytics.SetTempoMaxCompras();
-        #endregion
     }
 
     public void SetVisualPart(PieceParts newPart, Mesh newVisual)

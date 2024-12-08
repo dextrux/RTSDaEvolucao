@@ -70,8 +70,11 @@ public class Analytics : MonoBehaviour
         jogador.nTotalCompras++;
     }
 
-    public void SetMinimoMutacoesCriatura(int nMutacoes)
+    public void SetMinimoMutacoesCriatura(ArvoreAVL<MutationBase> mutacoes)
     {
+        List<Nodo<MutationBase>> listaMutacoes = mutacoes.Nodos();
+        int nMutacoes = listaMutacoes.Count();
+
         if (nMutacoes < jogador.nMinimoMutacoes1Peca)
         {
             jogador.nMinimoMutacoes1Peca = nMutacoes;
