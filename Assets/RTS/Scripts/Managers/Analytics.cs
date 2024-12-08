@@ -70,8 +70,11 @@ public class Analytics : MonoBehaviour
         jogador.nTotalCompras++;
     }
 
-    public void SetMinimoMutacoesCriatura(int nMutacoes)
+    public void SetMinimoMutacoesCriatura(ArvoreAVL<MutationBase> mutacoes)
     {
+        List<Nodo<MutationBase>> listaMutacoes = mutacoes.Nodos();
+        int nMutacoes = listaMutacoes.Count();
+
         if (nMutacoes < jogador.nMinimoMutacoes1Peca)
         {
             jogador.nMinimoMutacoes1Peca = nMutacoes;
@@ -101,6 +104,9 @@ public class Analytics : MonoBehaviour
     public void ParaTimerTotal()
     {
         timerAtivoTotal = false;
+        timerAtivoCompras = false;
+        timerPriCompraAtivo = false;
+        tempoTotal = tempoAtual;
     }
 
     public void SetNumeroMudouBioma(Tile tileAtual)
@@ -146,6 +152,97 @@ public class Analytics : MonoBehaviour
         jogador.nReproducoes++;
     }
 
+    public void SetNumeroMutacoesHerbCarn(string nomeMutacao)
+    {
+        //switch carnivoras
+        switch (nomeMutacao)
+        {
+            case "Canibal":
+                jogador.nMutacoesCarn++;
+                break;
+            case "Necrófago":
+                jogador.nMutacoesCarn++;
+                break;
+            case "Parasita":
+                jogador.nMutacoesCarn++;
+                break;
+            case "Bico Carnívoro I":
+                jogador.nMutacoesCarn++;
+                break;
+            case "Bico Carnívoro II":
+                jogador.nMutacoesCarn++;
+                break;
+            case "Bico Carnívoro III":
+                jogador.nMutacoesCarn++;
+                break;
+            case "Dentes Afiados":
+                jogador.nMutacoesCarn++;
+                break;
+            case "Quelícera":
+                jogador.nMutacoesCarn++;
+                break;
+            case "Pata de Urso":
+                jogador.nMutacoesCarn++;
+                break;
+            case "Cauda de Gato Selvagem":
+                jogador.nMutacoesCarn++;
+                break;
+            case "Boca de Caça Pequena":
+                jogador.nMutacoesCarn++;
+                break;
+            case "Boca de Caça Média":
+                jogador.nMutacoesCarn++;
+                break;
+            case "Boca de Caça Grande":
+                jogador.nMutacoesCarn++;
+                break;
+            case "Bico de Caça Pequena":
+                jogador.nMutacoesCarn++;
+                break;
+            case "Bico de Caça Média":
+                jogador.nMutacoesCarn++;
+                break;
+            case "Bico de Caça Grande":
+                jogador.nMutacoesCarn++;
+                break;
+        }
+
+        //switch herbivoras
+        switch (nomeMutacao)
+        {
+            case "Bico Herbívoro I":
+                jogador.nMutacoesHerb++;
+                break;
+            case "Bico Herbívoro II":
+                jogador.nMutacoesHerb++;
+                break;
+            case "Bico Herbívoro III":
+                jogador.nMutacoesHerb++;
+                break;
+            case "Dentes Quadrados":
+                jogador.nMutacoesHerb++;
+                break;
+            case "Cauda Felpuda":
+                jogador.nMutacoesHerb++;
+                break;
+            case "Cauda Felpuda Pequena":
+                jogador.nMutacoesHerb++;
+                break;
+            case "Bico Tritura Nozes":
+                jogador.nMutacoesHerb++;
+                break;
+            case "Bico de Frutas":
+                jogador.nMutacoesHerb++;
+                break;
+            case "Dentes Tritura Nozes":
+                jogador.nMutacoesHerb++;
+                break;
+            case "Dentes de Frutas":
+                jogador.nMutacoesHerb++;
+                break;
+        }
+    }
+
     string URL = "https://docs.google.com/forms/u/0/d/e/1FAIpQLScn-iboINz7MOOKNJ63QUv87ef1BjUW1s-XNvPuLdqK05B9ww/formResponse";
     private void Send()
     {
@@ -157,7 +254,14 @@ public class Analytics : MonoBehaviour
         WWWForm form = new WWWForm();
 
         //Tempo ate primeira compra
-        form.AddField("entry.766786925", $"{j.tempoAtePrimeiraCompra}");
+        if(j.tempoAtePrimeiraCompra == 0)
+        {
+            form.AddField("entry.766786925", "Não houve compra");
+        }
+        else
+        {
+            form.AddField("entry.766786925", $"{j.tempoAtePrimeiraCompra}");
+        }
 
         //Tempo maximo entre compras
         form.AddField("entry.87471560", $"{j.tempoMaxEntreCompras}");
