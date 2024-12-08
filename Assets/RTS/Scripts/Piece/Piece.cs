@@ -7,9 +7,9 @@ using System.Security.Cryptography;
 
 public class Piece : MonoBehaviour
 {
-    #region Constantes e Configurações
+    #region Constantes e Configuraï¿½ï¿½es
     private const float _rayDistanceTile = 10f;
-    private const float RestDuration = 3f; // Duração do descanso
+    private const float RestDuration = 3f; // Duraï¿½ï¿½o do descanso
     [SerializeField] private LayerMask TileLayerMask;
     BiomeReferences _biomeReferences;
     OwnerReference _ownerReference;
@@ -46,7 +46,7 @@ public class Piece : MonoBehaviour
     private int _isDoenteTime = 0;
     #endregion
 
-    #region Mutação e Multiplicadores
+    #region Mutaï¿½ï¿½o e Multiplicadores
     private int sickCounter;
     private ArvoreAVL<MutationBase> _appliedMutations = new ArvoreAVL<MutationBase>();
     private ArvoreAVL<MutationBase> _incompatibleMutations = new ArvoreAVL<MutationBase>();
@@ -76,8 +76,10 @@ public class Piece : MonoBehaviour
     #endregion
 
     #region Actions
-    public IEnumerator Walk(Piece piece, GameObject targetTile, bool useEnergy)
+    public IEnumerator Walk(Piece piece, GameObject targetTile, bool useEnergy, Tile LastTile)
     {
+        LastTile.RetornarTilesParaMaterialOriginal();
+        Debug.Log("Entrei em walk");
         if (!useEnergy && (!LoseEnergyToAct(piece.gameObject, 1)))
         {
             yield break;
@@ -102,17 +104,20 @@ public class Piece : MonoBehaviour
         piece.IsDuringAction = false;
     }
 
-    public void Eat(GameObject piece, GameObject tile)
+    public void Eat(GameObject piece, GameObject tile, Tile LastTile)
     {
+        LastTile.RetornarTilesParaMaterialOriginal();
         Piece pieceScript = piece.GetComponent<Piece>();
         Tile targetTile = pieceScript.PieceRaycastForTile();
-        bool hasEnergy = LoseEnergyToAct(piece, 2);
-        pieceScript.Energy.CurrentBarValue = hasEnergy ? pieceScript.Energy.CurrentBarValue : 0;
-        EatRoutine(tile, pieceScript, hasEnergy);
+            Debug.Log("Comendo");
+            bool hasEnergy = LoseEnergyToAct(piece, 2);
+            pieceScript.Energy.CurrentBarValue = hasEnergy ? pieceScript.Energy.CurrentBarValue : 0;
+            EatRoutine(tile, pieceScript, hasEnergy, LastTile);
     }
 
-    private void EatRoutine(GameObject tile, Piece pieceScript, bool walk)
+    private void EatRoutine(GameObject tile, Piece pieceScript, bool walk, Tile LastTile)
     {
+        LastTile.RetornarTilesParaMaterialOriginal();
         Tile tileScript = tile.GetComponent<Tile>();
         Totem totem = tileScript.Totem.GetComponent<Totem>();
         if (totem.TotemType != TotemType.Ponto_Mutagenico)
@@ -124,11 +129,12 @@ public class Piece : MonoBehaviour
         {
             pieceScript.PontosMutagenicos++;
             GameObject.FindAnyObjectByType<InGameUi>().UpdateMutationPointText();
+
         }
         totem.DeactivateTotem();
         if (walk)
         {
-            pieceScript.StartCoroutine(Walk(pieceScript, tile, true));
+            pieceScript.StartCoroutine(Walk(pieceScript, tile, true, LastTile));
         }
         else
         {
@@ -136,8 +142,10 @@ public class Piece : MonoBehaviour
         }
     }
 
-    public void Fight(GameObject attacker, GameObject targetTile)
+    public void Fight(GameObject attacker, GameObject targetTile, Tile LastTile)
     {
+        LastTile.RetornarTilesParaMaterialOriginal();
+        Debug.Log("A");
         Piece attackerScript = attacker.GetComponent<Piece>();
         if (LoseEnergyToAct(attacker, 1))
         {
@@ -146,8 +154,8 @@ public class Piece : MonoBehaviour
             {
                 attackerScript.Health.CurrentBarValue -= opponent.Strength.CurrentBarValue;
                 opponent.Health.CurrentBarValue -= attackerScript.Strength.CurrentBarValue;
-                Debug.Log("Ataque saúde: " + attackerScript.Health.CurrentBarValue);
-                Debug.Log("Defesa saúde: " + opponent.Health.CurrentBarValue);
+                Debug.Log("Ataque saï¿½de: " + attackerScript.Health.CurrentBarValue);
+                Debug.Log("Defesa saï¿½de: " + opponent.Health.CurrentBarValue);
                 VerifyFightOutcome(attackerScript, opponent, targetTile);
 
             }
@@ -160,6 +168,7 @@ public class Piece : MonoBehaviour
 
     private void VerifyFightOutcome(Piece attacker, Piece defender, GameObject targetTile)
     {
+        attacker.PieceRaycastForTile().RetornarTilesParaMaterialOriginal();
         if (attacker.Health.CurrentBarValue == attacker.Health.MinBarValue)
         {
             attacker.PieceRaycastForTile().Totem.GetComponent<Totem>().ActivateTotem(TotemType.Corpo);
@@ -173,7 +182,7 @@ public class Piece : MonoBehaviour
             GameObject.Destroy(defender.gameObject);
             GameObject.FindAnyObjectByType<RoundManager>().RemoverPieceEmLista(defender.Owner, defender.gameObject);
 
-            attacker.StartCoroutine(Walk(attacker, targetTile, true));
+            attacker.StartCoroutine(Walk(attacker,targetTile, true, attacker.PieceRaycastForTile()));
         }
 
         attacker.IsDuringAction = false;
@@ -229,7 +238,7 @@ public class Piece : MonoBehaviour
     }
     #endregion
 
-    #region Métodos de Inicalização
+    #region Mï¿½todos de Inicalizaï¿½ï¿½o
     public static void InicializarPiece(GameObject piece, GameObject tile, PieceDiet pieceDiet, Owner owner, int level)
     {
         Piece pieceScript = piece.GetComponent<Piece>();
@@ -253,7 +262,7 @@ public class Piece : MonoBehaviour
     public static void SetParent(GameObject parent, GameObject son) { parent.transform.SetParent(son.transform); }
     #endregion
 
-    #region Métodos de Raycast
+    #region Mï¿½todos de Raycast
     public Tile PieceRaycastForTile()
     {
         Vector3 rayOrigin = transform.position;
@@ -265,7 +274,7 @@ public class Piece : MonoBehaviour
     }
     #endregion
 
-    #region Métodos de Multiplicadores
+    #region Mï¿½todos de Multiplicadores
     private void SetDietMultipliers()
     {
         (_huntMultiplier, _plantMultiplier) = _diet switch
@@ -284,7 +293,7 @@ public class Piece : MonoBehaviour
             TotemType.M => _plantMultiplier,
             TotemType.G => _plantMultiplier,
             TotemType.Frutas => _huntMultiplier,
-            TotemType.Grãos => _huntMultiplier,
+            TotemType.Grï¿½os => _huntMultiplier,
             TotemType.Plantas => _huntMultiplier,
             TotemType.Ponto_Mutagenico => 1,
             TotemType.Corpo => _huntMultiplier,
@@ -293,7 +302,7 @@ public class Piece : MonoBehaviour
     }
     #endregion
 
-    #region Métodos de Mutação e Saúde
+    #region Mï¿½todos de Mutaï¿½ï¿½o e Saï¿½de
     public void AddMutation(MutationBase mutationToAdd)
     {
         _appliedMutations.Inserir(mutationToAdd);
@@ -377,7 +386,7 @@ public class Piece : MonoBehaviour
     }
     #endregion
 
-    #region Métodos de turno
+    #region Mï¿½todos de turno
 
     public void EndTurnRoutine()
     {

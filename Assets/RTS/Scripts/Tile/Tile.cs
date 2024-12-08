@@ -77,17 +77,30 @@ public class Tile : MonoBehaviour
 
     private IEnumerator ColorirTilesGradualmente(TileTypeReferences tileTypeReferences)
     {
-        foreach (var tile in _tilesAdjacentes)
+        try
         {
-            tile.GetComponent<Renderer>().material = tileTypeReferences.GetGlowingColor(tile);
-            yield return new WaitForSeconds(0.1f); // Espera 0.1 segundo antes de continuar
+            foreach (var tile in _tilesAdjacentes)
+            {
+                tile.GetComponent<Renderer>().material = tileTypeReferences.GetGlowingColor(tile);
+                yield return new WaitForSeconds(0.1f); // Espera 0.1 segundo antes de continuar
+            }
+        }
+        finally
+        {
+            // Chama o método para retornar os materiais originais
+            RetornarTilesAdjacentesParaMaterialOriginal(this);
         }
     }
+
     public static void RetornarTilesAdjacentesParaMaterialOriginal(Tile tile)
     {
         BiomeReferences biomeReferences = FindObjectOfType<BiomeReferences>();
-        tile.StartCoroutine(tile.RetornarTilesGradualmente(biomeReferences));
+        foreach (var adjTile in tile._tilesAdjacentes)
+        {
+            adjTile.GetComponent<Renderer>().material = biomeReferences.GetBiomeMaterial(adjTile.GetComponent<Tile>().Biome);
+        }
     }
+
     public void RetornarTilesParaMaterialOriginal()
     {
         BiomeReferences biomeReferences = FindObjectOfType<BiomeReferences>();
