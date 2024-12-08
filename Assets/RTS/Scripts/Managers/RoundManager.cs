@@ -235,7 +235,7 @@ public class RoundManager : MonoBehaviour
     }
 
 
-    public void InstanciarPe�asParaJogo(int quantidade, List<Owner> owners)
+    public void InstanciarPecasParaJogo(int quantidade, List<Owner> owners)
     {
         for (int i = 0; i < quantidade; i++)
         {
@@ -481,7 +481,7 @@ public class RoundManager : MonoBehaviour
     #endregion
 
     #region Totens
-    int DefinirPropor��oComida()
+    int DefinirProporcaoComida()
     {
         System.Random random = new System.Random();
         return random.Next(1, 6);
@@ -490,7 +490,7 @@ public class RoundManager : MonoBehaviour
     {
         foreach (var tiles in list)
         {
-            TotemType totemType = (TotemType)DefinirPropor��oComida();
+            TotemType totemType = (TotemType)DefinirProporcaoComida();
             tiles.GetComponent<Tile>().Totem.GetComponent<Totem>().ActivateTotem(totemType);
             _TotensAtivos.Add(tiles.GetComponent<Tile>().Totem);
         }
@@ -499,7 +499,7 @@ public class RoundManager : MonoBehaviour
     {
         foreach (var tiles in list)
         {
-            TotemType totemType = TotemType.Ponto_Mutag�nico;
+            TotemType totemType = TotemType.Ponto_Mutagenico;
             tiles.GetComponent<Tile>().Totem.GetComponent<Totem>().ActivateTotem(totemType);
             _TotensAtivos.Add(tiles.GetComponent<Tile>().Totem);
         }
@@ -517,7 +517,7 @@ public class RoundManager : MonoBehaviour
     private void PrimeiroTurno()
     {
         //Blah
-        InstanciarPe�asParaJogo(1, owners);
+        InstanciarPecasParaJogo(1, owners);
         MainCam.GetComponent<PlayerRaycast>().playerCamOwner = owners[0];
         currentIndexOwner = 0;
         _roundOwner = owners[currentIndexOwner];

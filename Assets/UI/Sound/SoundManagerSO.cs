@@ -18,6 +18,7 @@ public class SoundManagerSO : ScriptableObject
     }
     public AudioSource SoundFXObject;
     public AudioSource BGMusicObject;
+    public AudioSource BGSoundsObject;
     private static MusicDestroyer _activeBGMusic;
     private static bool _isPlayingBGM = false;
     private static float _volumeChangeMultiplier = 0.15f;
@@ -31,6 +32,19 @@ public class SoundManagerSO : ScriptableObject
         _isPlayingBGM = false;
         if (_activeBGMusic == null) return;
         _activeBGMusic.ReturnToPoolMusic();
+    }
+    public static void PlayBGSoundClip(AudioClip clip, Vector3 soundPos, float volume)
+    {
+        float randVolume = Random.Range(1 - _volumeChangeMultiplier, _volumeChangeMultiplier + 1);
+        float randPitch = Random.Range(1 - _pitchChangeMultiplier, _pitchChangeMultiplier + 1);
+
+        GameObject gmObj = ObjectPoolManager.SpawnObject(Instance.BGSoundsObject.gameObject, soundPos, Quaternion.identity);
+        AudioSource a = gmObj.GetComponent<AudioSource>();
+
+        a.clip = clip;
+        a.volume = randVolume;
+        a.pitch = randPitch;
+        a.Play();
     }
     public static void PlayBGMusicClip(AudioClip clip, Vector3 soundPos, float volume)
     {

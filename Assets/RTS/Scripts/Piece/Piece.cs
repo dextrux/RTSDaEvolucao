@@ -117,12 +117,12 @@ public class Piece : MonoBehaviour
     {
         Tile tileScript = tile.GetComponent<Tile>();
         Totem totem = tileScript.Totem.GetComponent<Totem>();
-        if (totem.TotemType != TotemType.Ponto_Mutagênico)
+        if (totem.TotemType != TotemType.Ponto_Mutagenico)
         {
             float multiplier = pieceScript.GetDietMultiplier(totem.TotemType);
             pieceScript.Hunger.CurrentBarValue += multiplier * totem.FoodQuantity;
         }
-        else if(totem.TotemType == TotemType.Ponto_Mutagênico)
+        else if(totem.TotemType == TotemType.Ponto_Mutagenico)
         {
             pieceScript.PontosMutagenicos++;
         }
@@ -298,7 +298,7 @@ public class Piece : MonoBehaviour
             TotemType.Frutas => _huntMultiplier,
             TotemType.Grãos => _huntMultiplier,
             TotemType.Plantas => _huntMultiplier,
-            TotemType.Ponto_Mutagênico => 1,
+            TotemType.Ponto_Mutagenico => 1,
             TotemType.Corpo => _huntMultiplier,
             _ => 1f
         };

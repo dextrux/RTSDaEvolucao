@@ -14,7 +14,7 @@ public class TotemTypeReferences : MonoBehaviour
             TotemType.Frutas => totemTypeMaterials[3],
             TotemType.Grãos => totemTypeMaterials[4],
             TotemType.Plantas => totemTypeMaterials[5],
-            TotemType.Ponto_Mutagênico => totemTypeMaterials[6],
+            TotemType.Ponto_Mutagenico => totemTypeMaterials[6],
             TotemType.Corpo => totemTypeMaterials[7],
             _ =>
             null
@@ -38,7 +38,7 @@ public class TotemTypeReferences : MonoBehaviour
             TotemType.Frutas => totemTypeMesh[3],
             TotemType.Grãos => totemTypeMesh[4],
             TotemType.Plantas => totemTypeMesh[5],
-            TotemType.Ponto_Mutagênico => totemTypeMesh[6],
+            TotemType.Ponto_Mutagenico => totemTypeMesh[6],
             TotemType.Corpo => totemTypeMesh[7],
             _ =>
             null

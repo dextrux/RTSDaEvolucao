@@ -27,12 +27,9 @@ public class CreatureSelectUi : MonoBehaviour
     [SerializeField] private SelectionUIManager selectionManager;
     [SerializeField] private Material[] _playersMaterial;
     private Material _selectedMaterial;
-    [SerializeField] private Texture _textureButton1;
-    [SerializeField] private Texture _textureButton2;
-    [SerializeField] private Texture _textureButton3;
-    [SerializeField] private Texture _textureButton4;
     [SerializeField] private AudioClip _buttonConfirmation;
     [SerializeField] private AudioClip _buttonDenial;
+    [SerializeField] private AudioClip _bgmClip;
     private void OnEnable()
     {
         VisualElement root = GetComponent<UIDocument>().rootVisualElement;
@@ -59,6 +56,9 @@ public class CreatureSelectUi : MonoBehaviour
 
         _playBtn.RegisterCallback<ClickEvent>(OnClickPlay);
         _backBtn.RegisterCallback<ClickEvent>(OnClickBack);
+        _player3ActiveBtn.RegisterCallback<ClickEvent>(OnClickActivep3);
+        _player4ActiveBtn.RegisterCallback<ClickEvent>(OnClickActivep4);
+        _player5ActiveBtn.RegisterCallback<ClickEvent>(OnClickActivep5);
         _player1EditBtn.RegisterCallback<ClickEvent>(OnClickp1Edit);
         _player2EditBtn.RegisterCallback<ClickEvent> (OnClickp2Edit);
         _player3EditBtn.RegisterCallback<ClickEvent>(OnClickp3Edit);
@@ -68,6 +68,7 @@ public class CreatureSelectUi : MonoBehaviour
         _skin2Btn.RegisterCallback<ClickEvent>(OnClickSkin2);
         _skin3Btn.RegisterCallback<ClickEvent>(OnClickSkin3);
         _skin4Btn.RegisterCallback<ClickEvent>(OnClickSkin4);
+        SoundManagerSO.PlayBGMusicClip(_bgmClip, transform.position, 1);
     }
     private void OnClickPlay(ClickEvent evt)
     {
@@ -130,7 +131,63 @@ public class CreatureSelectUi : MonoBehaviour
         SoundManagerSO.PlaySoundFXClip(_buttonConfirmation, transform.position, 1);
         selectionManager.UpdateTexture(3);
     }
-    //private void
+    private void OnClickActivep3(ClickEvent evt)
+    {
+        if (selectionManager.players.Contains(Owner.P3))
+        {
+            SoundManagerSO.PlaySoundFXClip(_buttonDenial, transform.position, 1);
+            _player3ActiveBtn.RemoveFromClassList("internal-player-active-button");
+            _player3ActiveBtn.AddToClassList("internal-player-inactive-button");
+            selectionManager.RemoveOwnerOnList(Owner.P3);
+            _playerAnimatorList[2].SetBool("Active", false);
+        }
+        else
+        {
+            SoundManagerSO.PlaySoundFXClip(_buttonConfirmation, transform.position, 1);
+            _player3ActiveBtn.AddToClassList("internal-player-active-button");
+            _player3ActiveBtn.RemoveFromClassList("internal-player-inactive-button");
+            selectionManager.AddOwnerOnList(Owner.P3);
+            _playerAnimatorList[2].SetBool("Active", true);
+        }
+    }
+    private void OnClickActivep4(ClickEvent evt)
+    {
+        if (selectionManager.players.Contains(Owner.P4))
+        {
+            SoundManagerSO.PlaySoundFXClip(_buttonDenial, transform.position, 1);
+            _player4ActiveBtn.RemoveFromClassList("internal-player-active-button");
+            _player4ActiveBtn.AddToClassList("internal-player-inactive-button");
+            selectionManager.RemoveOwnerOnList(Owner.P4);
+            _playerAnimatorList[3].SetBool("Active", false);
+        }
+        else
+        {
+            SoundManagerSO.PlaySoundFXClip(_buttonConfirmation, transform.position, 1);
+            _player4ActiveBtn.AddToClassList("internal-player-active-button");
+            _player4ActiveBtn.RemoveFromClassList("internal-player-inactive-button");
+            selectionManager.AddOwnerOnList(Owner.P4);
+            _playerAnimatorList[3].SetBool("Active", true);
+        }
+    }
+    private void OnClickActivep5(ClickEvent evt)
+    {
+        if (selectionManager.players.Contains(Owner.P5))
+        {
+            SoundManagerSO.PlaySoundFXClip(_buttonDenial, transform.position, 1);
+            _player5ActiveBtn.RemoveFromClassList("internal-player-active-button");
+            _player5ActiveBtn.AddToClassList("internal-player-inactive-button");
+            selectionManager.RemoveOwnerOnList(Owner.P5);
+            _playerAnimatorList[4].SetBool("Active", false);
+        }
+        else
+        {
+            SoundManagerSO.PlaySoundFXClip(_buttonConfirmation, transform.position, 1);
+            _player5ActiveBtn.AddToClassList("internal-player-active-button");
+            _player5ActiveBtn.RemoveFromClassList("internal-player-inactive-button");
+            selectionManager.AddOwnerOnList(Owner.P5);
+            _playerAnimatorList[4].SetBool("Active", true);
+        }
+    }
 
 
 }
