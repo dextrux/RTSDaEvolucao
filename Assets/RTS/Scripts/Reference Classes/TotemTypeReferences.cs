@@ -27,8 +27,8 @@ public class TotemTypeReferences : MonoBehaviour
     }
     // Mesh
     [SerializeField]
-    private  Mesh[] totemTypeMesh = new Mesh[System.Enum.GetValues(typeof(TotemType)).Length];
-    public  Mesh GetTotemTypeMesh(TotemType totemType)
+    private  GameObject[] totemTypeMesh = new GameObject[System.Enum.GetValues(typeof(TotemType)).Length];
+    public GameObject GetTotemTypeMesh(TotemType totemType)
     {
         return totemType switch
         {
@@ -45,7 +45,7 @@ public class TotemTypeReferences : MonoBehaviour
         };
     }
 
-    public  void SetTotemTypeMesh(TotemType totemType, Mesh totemTypeMeshReference)
+    public  void SetTotemTypeMesh(TotemType totemType, GameObject totemTypeMeshReference)
     {
         totemTypeMesh[(int)totemType] = totemTypeMeshReference;
     }
