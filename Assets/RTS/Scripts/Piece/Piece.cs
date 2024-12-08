@@ -342,8 +342,8 @@ public class Piece : MonoBehaviour
             analytics.SetTempoPrimeiraCompra();
         }
         analytics.SetNumeroTotalCompras();
-        analytics.SetMaximoMutacoesCriatura(_appliedMutations.QuantidadeNodos());
-        analytics.SetMinimoMutacoesCriatura(_appliedMutations.QuantidadeNodos());
+        analytics.SetMaximoMutacoesCriatura(_appliedMutations);
+        //analytics.SetMinimoMutacoesCriatura(_appliedMutations);
         analytics.SetTempoMaxCompras();
 
         return true;

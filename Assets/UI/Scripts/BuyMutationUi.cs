@@ -59,6 +59,7 @@ public class BuyMutationUi : MonoBehaviour
     }
     private void OnClickHerbivoreBtn(ClickEvent evt)
     {
+        SoundManagerSO.PlaySoundFXClip(_buttonConfirmation, transform.position, 1);
         MutationBase herbivoro = Resources.Load<MutationBase>("Mutation/Herbivore");
         if (_actualPiece.AppliedMutations.Pesquisar(herbivoro))
         {
@@ -70,6 +71,7 @@ public class BuyMutationUi : MonoBehaviour
     }
     private void OnClickCarnivoreBtn(ClickEvent evt)
     {
+        SoundManagerSO.PlaySoundFXClip(_buttonConfirmation, transform.position, 1);
         MutationBase carnivore = Resources.Load<MutationBase>("Mutation/Carnivore");
         if (_actualPiece.AppliedMutations.Pesquisar(carnivore))
         {
@@ -82,6 +84,7 @@ public class BuyMutationUi : MonoBehaviour
     }
     private void OnClickOmnivorousBtn(ClickEvent evt)
     {
+        SoundManagerSO.PlaySoundFXClip(_buttonConfirmation, transform.position, 1);
         MutationBase Omnivorous = Resources.Load<MutationBase>("Mutation/Omnivorous");
         if (_actualPiece.AppliedMutations.Pesquisar(Omnivorous))
         {
