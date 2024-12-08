@@ -61,10 +61,10 @@ public class MutationList : MonoBehaviour
     }
     private void SetCreatureMutationUi(Piece piece)
     {
-        foreach(Nodo<MutationBase> n in _actualPiece.AppliedMutations.Nodos())
+        /*foreach(Nodo<MutationBase> n in _actualPiece.AppliedMutations.Nodos())
         {
             Debug.Log(n.valor.name);
-        }
+        }*/
     }
     private void SetReferences()
     {

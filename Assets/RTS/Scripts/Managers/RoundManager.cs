@@ -373,16 +373,16 @@ public class RoundManager : MonoBehaviour
             }
             else
             {
-                Debug.Log($"{obj.name} n�o pertence aos tiles especificados.");
+                //Debug.Log($"{obj.name} n�o pertence aos tiles especificados.");
             }
         }
 
         // Para verificar a quantidade de objetos encontrados em cada lista (opcional)
-        Debug.Log($"Tiles One: {_biomaOne.Count}");
+        /*Debug.Log($"Tiles One: {_biomaOne.Count}");
         Debug.Log($"Tiles Two: {_biomaTwo.Count}");
         Debug.Log($"Tiles Three: {_biomaThree.Count}");
         Debug.Log($"Tiles Four: {_biomaFour.Count}");
-        Debug.Log($"Tiles Five: {_biomaFive.Count}");
+        Debug.Log($"Tiles Five: {_biomaFive.Count}");*/
     }
     List<GameObject> SortearTilesRandom(int quantidade)
     {

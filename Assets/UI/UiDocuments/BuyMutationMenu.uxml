@@ -5,7 +5,7 @@
             <ui:Label tabindex="-1" text="Comprar mutações" parse-escape-sequences="true" display-tooltip-when-elided="true" name="buy-mutation-title" class="info-title" style="-unity-text-align: upper-left; font-size: 70%; height: 10%; -unity-font-definition: initial; -unity-font: url(&apos;project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.otf?fileID=12800000&amp;guid=81817e382e1f2ff4da7b7f2b05c32595&amp;type=3#Bodo Amat&apos;);" />
             <ui:Label tabindex="-1" text="Verde: Já adquirida / Amarelo: Selecionada / Cinza: Indisponível / Vermelha: Incompatível / Roxa: Disponíveis" parse-escape-sequences="true" display-tooltip-when-elided="true" name="buy-mutation-subtitle" class="info-title" style="-unity-text-align: upper-left; font-size: 30%; height: 10%; -unity-font-definition: initial; -unity-font: url(&apos;project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.otf?fileID=12800000&amp;guid=81817e382e1f2ff4da7b7f2b05c32595&amp;type=3#Bodo Amat&apos;); padding-left: 40px; padding-top: 10px; color: rgb(140, 140, 140); -unity-text-outline-color: rgba(72, 57, 47, 0);" />
             <ui:VisualElement style="flex-grow: 1; height: 80%; flex-direction: row; justify-content: space-between;">
-                <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" style="width: 55%;">
+                <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" name="testing-scroll" style="width: 55%;">
                     <ui:VisualElement name="linha1" style="flex-grow: 1;">
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="herbivoro-btn" class="selected-button" style="left: 0;">
                             <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=1956337614&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_35&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
@@ -468,6 +468,12 @@
                 <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=955279675&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_46&apos;); -unity-background-scale-mode: scale-to-fit; width: 60%; height: 60%;" />
             </ui:Button>
             <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="buy-mutation-btn" text="Comprar" class="buy-mutation-btn info-title" />
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="Button" class="exit-mutation-btn" style="margin-top: -122px;">
+                <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=955279675&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_46&apos;); -unity-background-scale-mode: scale-to-fit; width: 60%; height: 60%;" />
+            </ui:Button>
         </ui:VisualElement>
     </ui:VisualElement>
+    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" class="selected-button" style="left: 0;">
+        <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=1956337614&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_35&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
+    </ui:Button>
 </ui:UXML>
