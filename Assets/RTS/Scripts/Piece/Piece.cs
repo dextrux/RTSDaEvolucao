@@ -76,8 +76,9 @@ public class Piece : MonoBehaviour
     #endregion
 
     #region Actions
-    public IEnumerator Walk(Piece piece, GameObject targetTile, bool useEnergy)
+    public IEnumerator Walk(Piece piece, GameObject targetTile, bool useEnergy, Tile LastTile)
     {
+        LastTile.RetornarTilesParaMaterialOriginal();
         Debug.Log("Entrei em walk");
         if (!useEnergy && (!LoseEnergyToAct(piece.gameObject, 1)))
         {
@@ -103,18 +104,20 @@ public class Piece : MonoBehaviour
         piece.IsDuringAction = false;
     }
 
-    public void Eat(GameObject piece, GameObject tile)
+    public void Eat(GameObject piece, GameObject tile, Tile LastTile)
     {
+        LastTile.RetornarTilesParaMaterialOriginal();
         Piece pieceScript = piece.GetComponent<Piece>();
         Tile targetTile = pieceScript.PieceRaycastForTile();
             Debug.Log("Comendo");
             bool hasEnergy = LoseEnergyToAct(piece, 2);
             pieceScript.Energy.CurrentBarValue = hasEnergy ? pieceScript.Energy.CurrentBarValue : 0;
-            EatRoutine(tile, pieceScript, hasEnergy);
+            EatRoutine(tile, pieceScript, hasEnergy, LastTile);
     }
 
-    private void EatRoutine(GameObject tile, Piece pieceScript, bool walk)
+    private void EatRoutine(GameObject tile, Piece pieceScript, bool walk, Tile LastTile)
     {
+        LastTile.RetornarTilesParaMaterialOriginal();
         Tile tileScript = tile.GetComponent<Tile>();
         Totem totem = tileScript.Totem.GetComponent<Totem>();
         if (totem.TotemType != TotemType.Ponto_Mutagênico)
@@ -125,11 +128,13 @@ public class Piece : MonoBehaviour
         else if(totem.TotemType == TotemType.Ponto_Mutagênico)
         {
             pieceScript.PontosMutagenicos++;
+            Debug.Log("Pontos Mutagenicos " + pieceScript.PontosMutagenicos);
+
         }
         totem.DeactivateTotem();
         if (walk)
         {
-            pieceScript.StartCoroutine(Walk(pieceScript, tile, true));
+            pieceScript.StartCoroutine(Walk(pieceScript, tile, true, LastTile));
         }
         else
         {
@@ -137,8 +142,9 @@ public class Piece : MonoBehaviour
         }
     }
 
-    public void Fight(GameObject attacker, GameObject targetTile)
+    public void Fight(GameObject attacker, GameObject targetTile, Tile LastTile)
     {
+        LastTile.RetornarTilesParaMaterialOriginal();
         Debug.Log("A");
         Piece attackerScript = attacker.GetComponent<Piece>();
         if (LoseEnergyToAct(attacker, 1))
@@ -164,6 +170,7 @@ public class Piece : MonoBehaviour
 
     private void VerifyFightOutcome(Piece attacker, Piece defender, GameObject targetTile)
     {
+        attacker.PieceRaycastForTile().RetornarTilesParaMaterialOriginal();
         if (attacker.Health.CurrentBarValue == attacker.Health.MinBarValue)
         {
             attacker.PieceRaycastForTile().Totem.GetComponent<Totem>().ActivateTotem(TotemType.Corpo);
@@ -177,7 +184,7 @@ public class Piece : MonoBehaviour
             GameObject.Destroy(defender.gameObject);
             GameObject.FindAnyObjectByType<RoundManager>().RemoverPieceEmLista(defender.Owner, defender.gameObject);
 
-            attacker.StartCoroutine(Walk(attacker,targetTile, true));
+            attacker.StartCoroutine(Walk(attacker,targetTile, true, attacker.PieceRaycastForTile()));
         }
 
         attacker.IsDuringAction = false;

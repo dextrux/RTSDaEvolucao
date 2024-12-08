@@ -116,7 +116,7 @@ public class PlayerRaycast : MonoBehaviour
         {
             SelectTile(hitTile);
             FimDoBlink(tileScript);
-            ExecuteAction(selectedObjects[0], selectedObjects[1]);
+            ExecuteAction(selectedObjects[0], selectedObjects[1], selectedObjects[0].GetComponent<Piece>().PieceRaycastForTile());
         }
     }
 
@@ -147,7 +147,7 @@ public class PlayerRaycast : MonoBehaviour
     #endregion
 
     #region Execução de Ações
-    private void ExecuteAction(GameObject piece, GameObject tile)
+    private void ExecuteAction(GameObject piece, GameObject tile, Tile LatsTile)
     {
         Tile tileScript = tile.GetComponent<Tile>();
         Piece pieceScript = piece.GetComponent<Piece>();
@@ -162,25 +162,30 @@ public class PlayerRaycast : MonoBehaviour
                 if (tileScript.TileType == TileType.Posicionamento)
                 {
                     Debug.Log("Andar");
-                    pieceScript.StartCoroutine(pieceScript.Walk(pieceScript, tile, false));
+                    pieceScript.PieceRaycastForTile().RetornarTilesParaMaterialOriginal();
+                    pieceScript.StartCoroutine(pieceScript.Walk(pieceScript, tile, false, LatsTile));
                 }
                 else if (tileScript.TileType == TileType.Comida || tileScript.TileType == TileType.Mutagêncio)
                 {
                     Debug.Log("Comer");
-                    pieceScript.Eat(pieceScript.gameObject, tile);
+                    pieceScript.PieceRaycastForTile().RetornarTilesParaMaterialOriginal();
+                    pieceScript.Eat(pieceScript.gameObject, tile, LatsTile);
                 }
                 else if (tileScript.TileType == TileType.Barreira)
                 {
+                    pieceScript.PieceRaycastForTile().RetornarTilesParaMaterialOriginal();
                     pieceScript.IsDuringAction = false;
                 }
             }
             else if (tileScript.Owner != pieceScript.Owner)
             {
                 Debug.Log("Lutar");
-                pieceScript.Fight(pieceScript.gameObject, tile);
+                pieceScript.PieceRaycastForTile().RetornarTilesParaMaterialOriginal();
+                pieceScript.Fight(pieceScript.gameObject, tile, LatsTile);
             }
             else if (tileScript.Owner == pieceScript.Owner)
             {
+                pieceScript.PieceRaycastForTile().RetornarTilesParaMaterialOriginal();
                 HandleReproduction(tileScript, pieceScript);
             }
             ResetSelection();
