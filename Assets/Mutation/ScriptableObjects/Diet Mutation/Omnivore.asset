@@ -14,9 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: 3
   _name: "On\xEDvoros"
+  _icon: {fileID: 1448378831, guid: 8fbda476e9f56fe40955a8472d8bd40c, type: 3}
   _description: "Os omn\xEDvoros ou on\xEDvoros s\xE3o os animais com capacidade
     para metaboliza\xE7\xE3o de diferentes classes aliment\xEDcias, com uma dieta
     alimentar menos restrita que a dos carn\xEDvoros ou herb\xEDvoros. Normalmente
     s\xE3o predadores, mas t\xEAm o aparelho digestivo adaptado a metabolizar diferentes
     tipos de alimentos."
+  _incompatibleMutations: []
+  _requiredMutations: []
   _newDiet: 2

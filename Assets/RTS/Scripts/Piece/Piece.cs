@@ -127,7 +127,7 @@ public class Piece : MonoBehaviour
         }
         else if (totem.TotemType == TotemType.Ponto_Mutagenico)
         {
-            pieceScript.PontosMutagenicos++;
+            GameObject.FindAnyObjectByType<RoundManager>().AddMutationPoint(pieceScript.Owner);
             GameObject.FindAnyObjectByType<InGameUi>().UpdateMutationPointText();
 
         }
@@ -145,7 +145,6 @@ public class Piece : MonoBehaviour
     public void Fight(GameObject attacker, GameObject targetTile, Tile LastTile)
     {
         LastTile.RetornarTilesParaMaterialOriginal();
-        Debug.Log("A");
         Piece attackerScript = attacker.GetComponent<Piece>();
         if (LoseEnergyToAct(attacker, 1))
         {
@@ -154,8 +153,6 @@ public class Piece : MonoBehaviour
             {
                 attackerScript.Health.CurrentBarValue -= opponent.Strength.CurrentBarValue;
                 opponent.Health.CurrentBarValue -= attackerScript.Strength.CurrentBarValue;
-                Debug.Log("Ataque sa�de: " + attackerScript.Health.CurrentBarValue);
-                Debug.Log("Defesa sa�de: " + opponent.Health.CurrentBarValue);
                 VerifyFightOutcome(attackerScript, opponent, targetTile);
 
             }

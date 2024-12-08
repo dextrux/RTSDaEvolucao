@@ -69,7 +69,7 @@ public class RoundManager : MonoBehaviour
     private List<GameObject> _p5Pieces;
     #endregion
 
-    #region Muta��es
+    #region Mutacoes
     [SerializeField]
     private int _p1MutationPoint;
     [SerializeField]
@@ -136,6 +136,12 @@ public class RoundManager : MonoBehaviour
     public int _IndexDesastreMaior { get => _indexDesastreMaior; set => _indexDesastreMaior = value; }
     public List<GameObject> _TotensAtivos { get => _totensAtivos; set => _totensAtivos = value; }
     public Owner RoundOwner { get => _roundOwner; }
+    public int PontosP1Mutacoes { get => _p1MutationPoint; }
+    public int PontosP2Mutacoes { get => _p2MutationPoint; }
+    public int PontosP3Mutacoes { get => _p3MutationPoint; }
+    public int PontosP4Mutacoes { get => _p4MutationPoint; }
+    public int PontosP5Mutacoes { get => _p5MutationPoint; }
+
     #endregion
 
     #region Rotinas Unity
@@ -150,7 +156,7 @@ public class RoundManager : MonoBehaviour
         _quantidadeDePontosMutagenicosSpawn = owners.Count * 3;
         _quantidadeDeComidaSpawn = owners.Count * 5;
         PrimeiroTurno();
-        HandlerIndicadores();       
+        HandlerIndicadores();
     }
     #endregion
 
@@ -287,6 +293,28 @@ public class RoundManager : MonoBehaviour
             owner,
             1
         );
+    }
+
+    public void AddMutationPoint(Owner pieceOwner)
+    {
+        switch (pieceOwner)
+        {
+            case Owner.P1:
+                _p1MutationPoint ++;
+                break;
+            case Owner.P2:
+                _p2MutationPoint++;
+                break;
+            case Owner.P3:
+                _p3MutationPoint++;
+                break;
+            case Owner.P4:
+                _p4MutationPoint++;
+                break;
+            case Owner.P5:
+                _p5MutationPoint++;
+                break;
+        }
     }
 
     #endregion

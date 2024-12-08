@@ -14,6 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: 1
   _name: "Carn\xEDvoro"
+  _icon: {fileID: -1280163637, guid: 8fbda476e9f56fe40955a8472d8bd40c, type: 3}
   _description: "S\xE3o os animais que se alimentam predominantemente de carne, provindo
     de animais vivos ou mortos."
+  _incompatibleMutations: []
+  _requiredMutations: []
   _newDiet: 1

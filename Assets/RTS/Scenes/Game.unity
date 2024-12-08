@@ -157,6 +157,9 @@ MonoBehaviour:
   ActualTurn: 1
   _progressBarMargin: 26
   _roundManager: {fileID: 42698649}
+  _audioMixer: {fileID: 24100000, guid: 2be17c38e12c8fd43843cb5f4b62ae71, type: 2}
+  _buttonConfirmation: {fileID: 8300000, guid: 7944c35f712ee8341854a7b2ba96d8b4, type: 3}
+  _buttonDenial: {fileID: 8300000, guid: 6b8b07fb0027e8940b5ff36d8a85f755, type: 3}
 --- !u!114 &9445387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -720,8 +723,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 327856741}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -16.69804, y: -8.358617, z: -9.111237}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -744,6 +747,8 @@ MonoBehaviour:
   _buyMutationScreen: {fileID: 1968964554}
   _ingameUi: {fileID: 9445385}
   _playerRaycast: {fileID: 961739755}
+  _buttonConfirmation: {fileID: 8300000, guid: 7944c35f712ee8341854a7b2ba96d8b4, type: 3}
+  _buttonDenial: {fileID: 8300000, guid: 6b8b07fb0027e8940b5ff36d8a85f755, type: 3}
 --- !u!114 &327856744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1154,8 +1159,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1700827184}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -16.69804, y: -8.358617, z: -9.111237}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

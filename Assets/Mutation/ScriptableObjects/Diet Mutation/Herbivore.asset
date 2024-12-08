@@ -14,7 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: 2
   _name: "Herb\xEDvoro"
+  _icon: {fileID: 1956337614, guid: 8fbda476e9f56fe40955a8472d8bd40c, type: 3}
   _description: "Herb\xEDvoro \xE9 um animal anatomicamente e fisiologicamente adaptado
     para comer material vegetal, por exemplo, folhagem, como o principal componente
     de sua dieta."
+  _incompatibleMutations: []
+  _requiredMutations: []
   _newDiet: 0

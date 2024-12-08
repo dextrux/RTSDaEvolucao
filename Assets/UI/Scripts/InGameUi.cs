@@ -48,6 +48,19 @@ public class InGameUi : MonoBehaviour
             Destroy(this);
         }
     }
+    private void Start()
+    {
+        if (PlayerPrefs.HasKey("globalVolume"))
+        {
+            LoadVolume();
+        }
+        else
+        {
+            PlayerPrefs.SetInt("globalVolume", (-5));
+            PlayerPrefs.SetInt("sfxVolume", (-5));
+            PlayerPrefs.SetInt("bgmVolume", (-5));
+        }
+    }
     private void OnEnable()
     {
         //Adição de todos botões e telas que se movem ou tem interação por código
@@ -90,17 +103,6 @@ public class InGameUi : MonoBehaviour
         _globalVolumeSlider.RegisterCallback<ChangeEvent<int>>(GlobalVolumeSliderValueChange);
         _sfxVolumeSlider.RegisterCallback<ChangeEvent<int>>(SFXVolumeSliderValueChange);
         _bgmVolumeSlider.RegisterCallback<ChangeEvent<int>>(BGMVolumeSliderValueChange);
-
-        if (PlayerPrefs.HasKey("globalVolume"))
-        {
-            LoadVolume();
-        }
-        else
-        {
-            PlayerPrefs.SetInt("globalVolume", (-5));
-            PlayerPrefs.SetInt("sfxVolume", (-5));
-            PlayerPrefs.SetInt("bgmVolume", (-5));
-        }
         #endregion
 
 
@@ -254,34 +256,19 @@ public class InGameUi : MonoBehaviour
         switch (_roundManager.RoundOwner)
         {
             case Owner.P1:
-                foreach (GameObject p in _roundManager._P1Pieces)
-                {
-                    points += p.GetComponent<Piece>().PontosMutagenicos;
-                }
+                points += _roundManager.PontosP1Mutacoes;
                 break;
             case Owner.P2:
-                foreach (GameObject p in _roundManager._P2Pieces)
-                {
-                    points += p.GetComponent<Piece>().PontosMutagenicos;
-                }
+                points += _roundManager.PontosP2Mutacoes;
                 break;
             case Owner.P3:
-                foreach (GameObject p in _roundManager._P3Pieces)
-                {
-                    points += p.GetComponent<Piece>().PontosMutagenicos;
-                }
+                points += _roundManager.PontosP3Mutacoes;
                 break;
             case Owner.P4:
-                foreach (GameObject p in _roundManager._P4Pieces)
-                {
-                    points += p.GetComponent<Piece>().PontosMutagenicos;
-                }
+                points += _roundManager.PontosP4Mutacoes;
                 break;
             case Owner.P5:
-                foreach (GameObject p in _roundManager._P5Pieces)
-                {
-                    points += p.GetComponent<Piece>().PontosMutagenicos;
-                }
+                points += _roundManager.PontosP5Mutacoes;
                 break;
         }
         _dnaCountText.text = "= " + points.ToString();
