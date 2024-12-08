@@ -168,6 +168,14 @@ public class RoundManager : MonoBehaviour
         PrimeiroTurno();
         HandlerIndicadores();
     }
+
+    private void Update()
+    {
+        if (GameOver(Owner.P1) && GameOver(Owner.P2) && GameOver(Owner.P3) && GameOver(Owner.P4) && GameOver(Owner.P5))
+        {
+            Time.timeScale = 0;
+        }
+    }
     #endregion
 
     #region Pieces

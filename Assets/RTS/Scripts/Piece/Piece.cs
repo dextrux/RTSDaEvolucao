@@ -201,7 +201,7 @@ public class Piece : MonoBehaviour
             attacker.StartCoroutine(Walk(attacker, targetTile, true, attacker.PieceRaycastForTile()));
             analytics.SetPecasMortas();
         }
-
+        FindAnyObjectByType<InGameUi>().UpdateLifeBarOwnerBase();
         attacker.IsDuringAction = false;
     }
 

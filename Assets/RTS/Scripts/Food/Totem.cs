@@ -17,6 +17,15 @@ public class Totem : MonoBehaviour
     private MeshFilter _meshFilter;
     private float _foodQuantity;
     private TotemType _totemType;
+    //P = 0,
+    //M = 1,
+    //G = 2,
+    //Frutas = 3,
+    //Graos = 4,
+    //Plantas = 5,
+    //Ponto_Mutagenico = 6,
+    //Corpo = 7,
+    public List<GameObject> _totemModes = new List<GameObject>();
     #endregion
 
     #region Atributos de Inspetor
@@ -93,9 +102,18 @@ public class Totem : MonoBehaviour
     #region Métodos Auxiliares
     private void UpdateTotemAppearance(TotemType totemType)
     {
-        TotemTypeReferences totempTypeScript = GameObject.FindAnyObjectByType<TotemTypeReferences>();
-        this._renderer.material = totempTypeScript.GetTotemTypeMaterial(totemType);
-        this._meshFilter.mesh = totempTypeScript.GetTotemTypeMesh(totemType);
+        SetTotemPosition(new Vector3(0f,1f,0f));
+        for(int i = 0; i < _totemModes.Count; i++)
+        {
+            if (i != (int)totemType)
+            {
+                _totemModes[i].SetActive(false);
+            }
+            else
+            {
+                _totemModes[i].SetActive(true);
+            }
+        }
     }
 
     private void SetTotemPosition(Vector3 offset)
