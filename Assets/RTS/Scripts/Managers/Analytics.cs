@@ -8,8 +8,8 @@ public class Analytics : MonoBehaviour
 {
     public class Jogador
     {
-        public float tempoAtePrimeiraCompra = 0;
-        public float tempoMaxEntreCompras = 0;
+        public float tempoAtePrimeiraCompra = 0f;
+        public float tempoMaxEntreCompras = 0f;
         public int nTotalCompras = 0;
         public int nMutacoesHerb = 0;
         public int nMutacoesCarn = 0;
@@ -23,37 +23,126 @@ public class Analytics : MonoBehaviour
         public bool foiAtingidoCatastrofe = false;
     }
 
-    public Jogador jogador = new Jogador();
+    private Jogador jogador = new Jogador();
 
-    public float tempoTotal = 0f;
+    private float tempoTotal = 0f;
 
-    public float tempoAtual = 0f;
-    public float tempoCompras = 0f;
-    public bool timerAtivo = false;
+    private float tempoAtual = 0f;
+    private float tempoCompras = 0f;
+    private bool timerAtivoCompras;
+    private bool timerAtivoTotal;
+    private bool timerPriCompraAtivo;
+
+    private string biomaAtual;
 
     private void Start()
     {
-        Send();
-        timerAtivo = false;
+        timerAtivoCompras = false;
+        timerAtivoTotal = true;
+        tempoCompras = 0f;
+        tempoAtual = 0f;
+        timerPriCompraAtivo = true;
     }
 
     void Update()
     {
-        tempoAtual += Time.deltaTime;
+        if (timerAtivoCompras)
+        {
+            tempoCompras += Time.deltaTime;
+        }
+
+        if (timerAtivoTotal)
+        {
+            tempoAtual += Time.deltaTime;
+        }
+    }
+
+    public void AcabouJogo()
+    {
+        ParaTimerTotal();
+        Send();
+    }
+
+    public void SetNumeroTotalCompras()
+    {
+        jogador.nTotalCompras++;
+    }
+
+    public void SetMinimoMutacoesCriatura(int nMutacoes)
+    {
+        if (nMutacoes < jogador.nMinimoMutacoes1Peca)
+        {
+            jogador.nMinimoMutacoes1Peca = nMutacoes;
+        }
+    }
+
+    public void SetMaximoMutacoesCriatura(int nMutacoes)
+    {
+        if (nMutacoes > jogador.nMaximoMutacoes1Peca)
+        {
+            jogador.nMaximoMutacoes1Peca = nMutacoes;
+        }
     }
 
     public void SetTempoPrimeiraCompra()
     {
-        jogador.tempoAtePrimeiraCompra = tempoAtual;
+        if (timerPriCompraAtivo)
+        {
+            jogador.tempoAtePrimeiraCompra = tempoAtual;
+            timerPriCompraAtivo = false;
+        }
+    }
+
+    public void ParaTimerTotal()
+    {
+        timerAtivoTotal = false;
+    }
+
+    public void SetNumeroMudouBioma(Tile tileAtual)
+    {
+        if (biomaAtual == null)
+        {
+            biomaAtual = tileAtual.biome.ToString();
+        }
+        else if (biomaAtual != tileAtual.biome.ToString())
+        {
+            jogador.nMudouDeBioma++;
+        }
     }
 
     public void SetTempoMaxCompras()
     {
-        
+        if (timerAtivoCompras == false)
+        {
+            timerAtivoCompras = true;
+        }
+        else
+        {
+            timerAtivoCompras = false;
+            if (tempoCompras > jogador.tempoMaxEntreCompras)
+            {
+                jogador.tempoMaxEntreCompras = tempoCompras;
+            }
+        }
+    }
+
+    public void SetPecasMortas()
+    {
+        jogador.nPecasMortas++;
+    }
+
+    public void SetPecasEliminadas()
+    {
+        jogador.nPecasEliminadas++;
+    }
+
+    public void SetNumeroReproducoes()
+    {
+        jogador.nReproducoes++;
     }
 
     string URL = "https://docs.google.com/forms/u/0/d/e/1FAIpQLScn-iboINz7MOOKNJ63QUv87ef1BjUW1s-XNvPuLdqK05B9ww/formResponse";
-    public void Send()
+    private void Send()
     {
         StartCoroutine(Post(jogador));
     }
@@ -72,10 +161,10 @@ public class Analytics : MonoBehaviour
         form.AddField("entry.1958779428", $"{j.nTotalCompras}");
 
         //Quantidade de mutações herbívoras compradas
-        form.AddField("entry.2049751604", $"{j.nMutacoesHerb}");
+        form.AddField("entry.2049751604", $"{j.nMutacoesHerb}"); //falta
 
         //Quantidade de mutações carnívoras compradas
-        form.AddField("entry.1704193836", $"{j.nMutacoesCarn}");
+        form.AddField("entry.1704193836", $"{j.nMutacoesCarn}"); //falta
 
         //Número de peças mortas do jogador
         form.AddField("entry.345353297", $"{j.nPecasMortas}");
@@ -84,7 +173,7 @@ public class Analytics : MonoBehaviour
         form.AddField("entry.1966054838", $"{j.nPecasEliminadas}");
 
         //Quantidade de vezes que o jogador reproduziu
-        form.AddField("entry.712213778", $"{j}");
+        form.AddField("entry.712213778", $"{j.nReproducoes}");
 
         //Tempo total de jogo
         form.AddField("entry.1486274654", $"{tempoTotal}");
@@ -99,10 +188,24 @@ public class Analytics : MonoBehaviour
         form.AddField("entry.1781269691", $"{j.nMinimoMutacoes1Peca}");
 
         //Jogador foi atingido por um desastre pequeno?
-        form.AddField("entry.105131229", $"{j.foiAtingidoDesastreP}");
+        if (j.foiAtingidoDesastreP)
+        {
+            form.AddField("entry.105131229", "Sim");
+        }
+        else
+        {
+            form.AddField("entry.105131229", "Não");
+        }
 
         //Jogador foi atingido por uma catástrofe?
-        form.AddField("entry.1756648953", $"{j.foiAtingidoCatastrofe}");
+        if (j.foiAtingidoCatastrofe)
+        {
+            form.AddField("entry.1756648953", "Sim");
+        }
+        else
+        {
+            form.AddField("entry.1756648953", "Não");
+        }
 
 
 

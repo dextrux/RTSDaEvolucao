@@ -7,6 +7,17 @@ using System.Security.Cryptography;
 
 public class Piece : MonoBehaviour
 {
+    #region Analytics
+    public GameObject manager;
+    private Analytics analytics;
+
+    private void Start()
+    {
+        manager = GameObject.Find("Manager");
+        analytics = manager.GetComponent<Analytics>();
+    }
+    #endregion
+
     #region Constantes e Configurações
     private const float _rayDistanceTile = 10f;
     private const float RestDuration = 3f; // Duração do descanso
@@ -102,6 +113,10 @@ public class Piece : MonoBehaviour
         piece.transform.position = targetPos;
         piece.PieceRaycastForTile().Owner = piece.Owner;
         piece.IsDuringAction = false;
+
+        #region Analytics Mudou Quantas Vezes de Bioma
+        analytics.SetNumeroMudouBioma(currentTile);
+        #endregion
     }
 
     public void Eat(GameObject piece, GameObject tile)
@@ -173,6 +188,10 @@ public class Piece : MonoBehaviour
             GameObject.Destroy(attacker.gameObject);
             GameObject.FindAnyObjectByType<RoundManager>().RemoverPieceEmLista(attacker.Owner, attacker.gameObject);
 
+            #region Analytics Combate
+            analytics.SetPecasEliminadas();
+            #endregion
+
         }
         if (defender.Health.CurrentBarValue == defender.Health.MinBarValue)
         {
@@ -181,6 +200,10 @@ public class Piece : MonoBehaviour
             GameObject.FindAnyObjectByType<RoundManager>().RemoverPieceEmLista(defender.Owner, defender.gameObject);
 
             attacker.StartCoroutine(Walk(attacker,targetTile, true));
+
+            #region Analytics Combate
+            analytics.SetPecasMortas();
+            #endregion
         }
         attacker.IsDuringAction = false;
     }
@@ -197,6 +220,10 @@ public class Piece : MonoBehaviour
         motherScript.Fertility.CurrentBarValue = 0;
         fatherScript.IsDuringAction = false;
         Piece.SetParent(offspring, father.transform.parent.gameObject);
+
+        #region Analytics Numero de Reproducoes
+        analytics.SetNumeroReproducoes();
+        #endregion
     }
 
     private static bool LoseEnergyToAct(GameObject piece, float actionFactor)
@@ -317,6 +344,17 @@ public class Piece : MonoBehaviour
             _incompatibleMutations.Inserir(incompatible);
         }
         mutationToAdd.Mutate(gameObject.GetComponent<Piece>());
+
+        #region Analytics Numero de Mutacoes
+        if (_appliedMutations.Altura() < 0)
+        {
+            analytics.SetTempoPrimeiraCompra();
+        }
+        analytics.SetNumeroTotalCompras();
+        analytics.SetMaximoMutacoesCriatura(_appliedMutations.QuantidadeNodos());
+        analytics.SetMinimoMutacoesCriatura(_appliedMutations.QuantidadeNodos());
+        analytics.SetTempoMaxCompras();
+        #endregion
     }
 
     public void SetVisualPart(PieceParts newPart, Mesh newVisual)

@@ -195,6 +195,11 @@ namespace ArvoreAVL
             return y;
         }
 
+        public int QuantidadeNodos()
+        {
+            return QuantidadeNodos(raiz);
+        }
+
         private int QuantidadeNodos(Nodo<T> n)
         {
             if (n == null)

@@ -11,6 +11,11 @@ using static UnityEngine.UI.GridLayoutGroup;
 
 public class RoundManager : MonoBehaviour
 {
+    #region Analytics
+    public GameObject manager;
+    private Analytics analytics;
+    #endregion
+
     //Atributos
     #region Valores de Referência
     [SerializeField]
@@ -148,6 +153,11 @@ public class RoundManager : MonoBehaviour
 
     private void Start()
     {
+        #region Set Analytics
+        manager = GameObject.Find("Manager");
+        analytics = manager.GetComponent<Analytics>();
+        #endregion
+
         _quantidadeDePontosMutagenicosSpawn = owners.Count * 3;
         _quantidadeDeComidaSpawn = owners.Count * 5;
         PrimeiroTurno();
@@ -566,8 +576,11 @@ public class RoundManager : MonoBehaviour
             {
                 WinnerList.Add(owner);
                 Debug.Log($"{owner} Venceu");
+
+
             }
         }
+        analytics.AcabouJogo();
     }
 
     private void RoundEndPiecesRoutine()
