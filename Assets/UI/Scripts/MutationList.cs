@@ -1,6 +1,7 @@
 using UnityEngine.UIElements;
 using UnityEngine;
 using ArvoreAVL;
+using System.Collections.Generic;
 
 public class MutationList : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class MutationList : MonoBehaviour
     private Button _actionBtn;
     private Button _buyMutationBtn;
     private Button _exitInfoBtn;
+
     private void OnEnable()
     {
         SetReferences();
@@ -57,14 +59,41 @@ public class MutationList : MonoBehaviour
     {
         _actualPiece = piece;
         _actualTile = _actualPiece.PieceRaycastForTile();
-        SetCreatureMutationUi(piece);
+        SetCreatureMutationUi();
     }
-    private void SetCreatureMutationUi(Piece piece)
+    private void SetCreatureMutationUi()
     {
-        /*foreach(Nodo<MutationBase> n in _actualPiece.AppliedMutations.Nodos())
+        var root = GetComponent<UIDocument>().rootVisualElement;
+        VisualElement.Hierarchy mutationHierarchy = root.Q<VisualElement>("mutation-list").Q<VisualElement>("unity-content-container").hierarchy;
+        List<Nodo<MutationBase>> list = _actualPiece.AppliedMutations.Nodos();
+        Debug.Log(mutationHierarchy.childCount);
+        Debug.Log(list.Count);
+        for (int i = 0; i < mutationHierarchy.childCount; i++)
+        {
+            VisualElement.Hierarchy mutateHierarchy = mutationHierarchy.ElementAt(i).hierarchy;
+            mutationHierarchy.ElementAt(i).AddToClassList("base-mutation-closed");
+            mutationHierarchy.ElementAt(i).RemoveFromClassList("base-mutation-closed");
+            if (i < list.Count) {
+                VisualElement iconMutation = mutateHierarchy.ElementAt(0);
+                IStyle style = iconMutation.style;
+                StyleBackground newStyleBG = new StyleBackground(list[i].valor.Icon);
+                style.backgroundImage = newStyleBG;
+                VisualElement.Hierarchy textsMutation = mutateHierarchy.ElementAt(1).hierarchy;
+                Label newText = textsMutation.ElementAt(0) as Label;
+                newText.text = list[i].valor.Name;
+                newText = textsMutation.ElementAt(1) as Label;
+                newText.text = list[i].valor.Description;
+            }
+            else
+            {
+                mutationHierarchy.ElementAt(i).AddToClassList("base-mutation-closed");
+            }
+        }
+
+        foreach(Nodo<MutationBase> n in _actualPiece.AppliedMutations.Nodos())
         {
             Debug.Log(n.valor.name);
-        }*/
+        }
     }
     private void SetReferences()
     {

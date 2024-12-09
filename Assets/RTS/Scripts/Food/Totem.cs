@@ -95,7 +95,7 @@ public class Totem : MonoBehaviour
     {
         TotemTypeReferences totempTypeScript = GameObject.FindAnyObjectByType<TotemTypeReferences>();
         this._renderer.material = totempTypeScript.GetTotemTypeMaterial(totemType);
-        this._meshFilter.mesh = totempTypeScript.GetTotemTypeMesh(totemType);
+        //this._meshFilter.mesh = totempTypeScript.GetTotemTypeMesh(totemType);
     }
 
     private void SetTotemPosition(Vector3 offset)

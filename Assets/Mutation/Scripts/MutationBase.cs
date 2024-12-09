@@ -10,23 +10,19 @@ public abstract class MutationBase : ScriptableObject, IComparable<MutationBase>
     [SerializeField] private MutationBase[] _incompatibleMutations;
     [SerializeField] private MutationBase[] _requiredMutations;
     public MutationBase[] IncompatibleMutations { get { return _incompatibleMutations; } }
+    public int Id { get { return _id; } }
     public int Cost { get { return _cost; } }
+    public Sprite Icon { get { return _icon; } }
+    public string Name { get { return _name; } }
+    public string Description { get { return _description; } }
     public virtual void Mutate(Piece targetPiece)
     {
 
     }
     public int CompareTo(MutationBase comparable)
     {
-        if (comparable._id > _id)
-        {
-            return -1;
-        } else if (comparable._id == _id)
-        {
-            return 0;
-        } else
-        {
-            return 1;
-        }
+        Debug.Log("compatou");
+        return Id.CompareTo(comparable.Id);
     }
     public bool IsMutationUnlocked(Piece targetPiece)
     {
@@ -38,6 +34,10 @@ public abstract class MutationBase : ScriptableObject, IComparable<MutationBase>
         for (int i = 0; i < _incompatibleMutations.Length; ++i)
         {
             if (targetPiece.AppliedMutations.Pesquisar(_incompatibleMutations[i])) return false;
+        }
+        for (int i = 0; i < _requiredMutations.Length; i++)
+        {
+            if (targetPiece.AppliedMutations.Pesquisar(_requiredMutations[i])) return false;
         }
         return true;
     }

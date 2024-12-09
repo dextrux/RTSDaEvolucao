@@ -182,8 +182,9 @@
     padding-bottom: 22px;
     padding-left: 22px;
     flex-direction: row;
-    height: 30%;
+    height: auto;
     white-space: normal;
+    margin-bottom: 8px;
 }
 
 .base-mutation-closed {

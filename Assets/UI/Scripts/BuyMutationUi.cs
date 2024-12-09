@@ -16,11 +16,14 @@ public class BuyMutationUi : MonoBehaviour
     #region BotoesParaMutacoes
     private Button[] _buttons = new Button[51];
     [SerializeField] private MutationBase[] _mutations;
-    //private int _selectedButton = 0;
+    private int _selectedButton = 0;
     #endregion
 
     private Piece _actualPiece;
-    //private MutationBase _selectedMutation;
+    private MutationBase _selectedMutation;
+    private VisualElement _icon;
+    private Label _title;
+    private Label _description;
 
     [SerializeField] private PlayerRaycast _playerRaycast;
     [SerializeField] private InGameUi _ingameUi;
@@ -46,10 +49,7 @@ public class BuyMutationUi : MonoBehaviour
                 }
             }
         }
-        Debug.Log(counter);
         _exitBuyMutation = rootTest.Q<Button>("exit-mutation-btn");
-        Button testButton = rootTest.Q<Button>("test-button");
-        Debug.Log(testButton.name);
         _buttons[1] = rootTest.Q<Button>("carnivoro-btn");
         _buttons[2] = rootTest.Q<Button>("onivoro-btn");
         _buttons[3] = rootTest.Q<Button>("agressivo-btn");
@@ -103,14 +103,94 @@ public class BuyMutationUi : MonoBehaviour
     private void OnEnable()
     {
         SetComponents();
-        if (_buttons[0] != null)
-            _buttons[0].RegisterCallback<ClickEvent>(OnClickHerbivoreBtn);
-        else
-            Debug.LogError("Button herbivore-btn is null before registering callback.");
-        /*_buttons[0].RegisterCallback<ClickEvent>(OnClickHerbivoreBtn);
+        _buttons[0].RegisterCallback<ClickEvent>(OnClickHerbivoreBtn);
+        _buttons[0].RegisterCallback<ClickEvent>(OnClickHerbivoreBtn);
         _buttons[1].RegisterCallback<ClickEvent>(OnClickCarnivoreBtn);
-        _buttons[2].RegisterCallback<ClickEvent>(OnClickOmnivorousBtn);
-        _exitBuyMutation.RegisterCallback<ClickEvent>(ExitBuyMutation);*/
+        _buttons[2].RegisterCallback<ClickEvent>(OnClickOmnivorousBtn);/*
+        _buttons[3].RegisterCallback<ClickEvent>();
+        _buttons[4].RegisterCallback<ClickEvent>();
+        _buttons[5].RegisterCallback<ClickEvent>();
+        _buttons[6].RegisterCallback<ClickEvent>();
+        _buttons[7].RegisterCallback<ClickEvent>();
+        _buttons[8].RegisterCallback<ClickEvent>();
+        _buttons[9].RegisterCallback<ClickEvent>();
+        _buttons[10].RegisterCallback<ClickEvent>();
+        _buttons[11].RegisterCallback<ClickEvent>();
+        _buttons[12].RegisterCallback<ClickEvent>();
+        _buttons[13].RegisterCallback<ClickEvent>();
+        _buttons[14].RegisterCallback<ClickEvent>();
+        _buttons[15].RegisterCallback<ClickEvent>();
+        _buttons[16].RegisterCallback<ClickEvent>();
+        _buttons[17].RegisterCallback<ClickEvent>();
+        _buttons[18].RegisterCallback<ClickEvent>();
+        _buttons[19].RegisterCallback<ClickEvent>();
+        _buttons[20].RegisterCallback<ClickEvent>();
+        _buttons[21].RegisterCallback<ClickEvent>();
+        _buttons[22].RegisterCallback<ClickEvent>();
+        _buttons[23].RegisterCallback<ClickEvent>();
+        _buttons[24].RegisterCallback<ClickEvent>();
+        _buttons[25].RegisterCallback<ClickEvent>();
+        _buttons[26].RegisterCallback<ClickEvent>();
+        _buttons[27].RegisterCallback<ClickEvent>();
+        _buttons[28].RegisterCallback<ClickEvent>();
+        _buttons[29].RegisterCallback<ClickEvent>();
+        _buttons[30].RegisterCallback<ClickEvent>();
+        _buttons[31].RegisterCallback<ClickEvent>();
+        _buttons[32].RegisterCallback<ClickEvent>();
+        _buttons[33].RegisterCallback<ClickEvent>();
+        _buttons[34].RegisterCallback<ClickEvent>();
+        _buttons[35].RegisterCallback<ClickEvent>();
+        _buttons[36].RegisterCallback<ClickEvent>();
+        _buttons[37].RegisterCallback<ClickEvent>();
+        _buttons[38].RegisterCallback<ClickEvent>();
+        _buttons[38].RegisterCallback<ClickEvent>();
+        _buttons[39].RegisterCallback<ClickEvent>();
+        _buttons[40].RegisterCallback<ClickEvent>();
+        _buttons[41].RegisterCallback<ClickEvent>();
+        _buttons[42].RegisterCallback<ClickEvent>();
+        _buttons[43].RegisterCallback<ClickEvent>();
+        _buttons[44].RegisterCallback<ClickEvent>();
+        _buttons[45].RegisterCallback<ClickEvent>();
+        _buttons[46].RegisterCallback<ClickEvent>();
+        _buttons[47].RegisterCallback<ClickEvent>();
+        _buttons[48].RegisterCallback<ClickEvent>();
+        _buttons[49].RegisterCallback<ClickEvent>();*/
+        _exitBuyMutation.RegisterCallback<ClickEvent>(ExitBuyMutation);
+        SetButtonVisual(_buttons[_selectedButton], 2);
+    }
+
+    private void SetButtonVisual(VisualElement target, int stateIndex)
+    {
+        target.RemoveFromClassList("available-button");
+        target.RemoveFromClassList("purchased-button");
+        target.RemoveFromClassList("selected-button");
+        target.RemoveFromClassList("unavailable-button");
+        target.RemoveFromClassList("incompatible-button");
+        switch (stateIndex)
+        {
+            case 0:
+                target.AddToClassList("purchased-button");
+                break;
+            case 1:
+                target.AddToClassList("available-button");
+                break;
+            case 2:
+                target.AddToClassList("selected-button");
+                break;
+            case 3:
+                target.AddToClassList("incompatible-button");
+                break;
+            default:
+                target.AddToClassList("unavailable-button");
+                break;
+        }
+    }
+    private void VerifyButtonState(VisualElement target, MutationBase inspect)
+    {
+        if (_actualPiece.AppliedMutations.Pesquisar(inspect)) SetButtonVisual(target, 0);
+        else if (_actualPiece.IncompatibleMutations.Pesquisar(inspect)) SetButtonVisual(target, 4);
+        else if (inspect.IsMutationUnlockable(_actualPiece)) SetButtonVisual(target, 1);
+        else SetButtonVisual(target, 3);
     }
     private void ExitBuyMutation(ClickEvent evt)
     {
@@ -122,41 +202,15 @@ public class BuyMutationUi : MonoBehaviour
     }
     private void OnClickHerbivoreBtn(ClickEvent evt)
     {
-        /*SoundManagerSO.PlaySoundFXClip(_buttonConfirmation, transform.position, 1);
-        MutationBase herbivoro = Resources.Load<MutationBase>("Mutation/01Herbivore");
-        if (_actualPiece.AppliedMutations.Pesquisar(herbivoro))
-        {
-
-        } else
-        {
-            _actualPiece.AppliedMutations.Inserir(herbivoro);
-        }*/
+        ClickSelectButton(0, "Mutation/01Herbivore");
     }
     private void OnClickCarnivoreBtn(ClickEvent evt)
     {
-        SoundManagerSO.PlaySoundFXClip(_buttonConfirmation, transform.position, 1);
-        MutationBase carnivore = Resources.Load<MutationBase>("Mutation/02Carnivore");
-        if (_actualPiece.AppliedMutations.Pesquisar(carnivore))
-        {
-
-        }
-        else
-        {
-            _actualPiece.AppliedMutations.Inserir(carnivore);
-        }
+        ClickSelectButton(1, "Mutation/02Carnivore");
     }
     private void OnClickOmnivorousBtn(ClickEvent evt)
     {
-        SoundManagerSO.PlaySoundFXClip(_buttonConfirmation, transform.position, 1);
-        MutationBase Omnivorous = Resources.Load<MutationBase>("Mutation/03Omnivorous");
-        if (_actualPiece.AppliedMutations.Pesquisar(Omnivorous))
-        {
-
-        }
-        else
-        {
-            _actualPiece.AppliedMutations.Inserir(Omnivorous);
-        }
+        ClickSelectButton(2, "Mutation/03Omnivore");
     }
     private void OnClickHerbivoreMutationBtn(ClickEvent evt)
     {
@@ -169,5 +223,19 @@ public class BuyMutationUi : MonoBehaviour
     private void OnClickOmnivorousMutationBtn(ClickEvent evt)
     {
 
+    }
+    private void ClickSelectButton(int newSelect, string path)
+    {
+        SoundManagerSO.PlaySoundFXClip(_buttonConfirmation, transform.position, 1);
+        VerifyButtonState(_buttons[_selectedButton], _selectedMutation);
+        _selectedButton = newSelect;
+        SetButtonVisual(_buttons[_selectedButton], 2);
+        Resources.Load<MutationBase>(path);
+        _selectedMutation = Resources.Load<MutationBase>(path);
+        _title.text = _selectedMutation.Name;
+        _description.text = _selectedMutation.Description;
+        IStyle style = _icon.style;
+        StyleBackground newStyleBG = new StyleBackground(_selectedMutation.Icon);
+        style.backgroundImage = newStyleBG;
     }
 }
