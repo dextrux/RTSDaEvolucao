@@ -116,57 +116,54 @@ public class BuyMutationUi : MonoBehaviour
     {
         SetComponents();
         _buttons[0].RegisterCallback<ClickEvent>(OnClickHerbivoreBtn);
-        _buttons[0].RegisterCallback<ClickEvent>(OnClickHerbivoreBtn);
         _buttons[1].RegisterCallback<ClickEvent>(OnClickCarnivoreBtn);
-        _buttons[2].RegisterCallback<ClickEvent>(OnClickOmnivorousBtn);/*
-        _buttons[3].RegisterCallback<ClickEvent>();
-        _buttons[4].RegisterCallback<ClickEvent>();
-        _buttons[5].RegisterCallback<ClickEvent>();
-        _buttons[6].RegisterCallback<ClickEvent>();
-        _buttons[7].RegisterCallback<ClickEvent>();
-        _buttons[8].RegisterCallback<ClickEvent>();
-        _buttons[9].RegisterCallback<ClickEvent>();
-        _buttons[10].RegisterCallback<ClickEvent>();
-        _buttons[11].RegisterCallback<ClickEvent>();
-        _buttons[12].RegisterCallback<ClickEvent>();
-        _buttons[13].RegisterCallback<ClickEvent>();
-        _buttons[14].RegisterCallback<ClickEvent>();
-        _buttons[15].RegisterCallback<ClickEvent>();
-        _buttons[16].RegisterCallback<ClickEvent>();
-        _buttons[17].RegisterCallback<ClickEvent>();
-        _buttons[18].RegisterCallback<ClickEvent>();
-        _buttons[19].RegisterCallback<ClickEvent>();
-        _buttons[20].RegisterCallback<ClickEvent>();
-        _buttons[21].RegisterCallback<ClickEvent>();
-        _buttons[22].RegisterCallback<ClickEvent>();
-        _buttons[23].RegisterCallback<ClickEvent>();
-        _buttons[24].RegisterCallback<ClickEvent>();
-        _buttons[25].RegisterCallback<ClickEvent>();
-        _buttons[26].RegisterCallback<ClickEvent>();
-        _buttons[27].RegisterCallback<ClickEvent>();
-        _buttons[28].RegisterCallback<ClickEvent>();
-        _buttons[29].RegisterCallback<ClickEvent>();
-        _buttons[30].RegisterCallback<ClickEvent>();
-        _buttons[31].RegisterCallback<ClickEvent>();
-        _buttons[32].RegisterCallback<ClickEvent>();
-        _buttons[33].RegisterCallback<ClickEvent>();
-        _buttons[34].RegisterCallback<ClickEvent>();
-        _buttons[35].RegisterCallback<ClickEvent>();
-        _buttons[36].RegisterCallback<ClickEvent>();
-        _buttons[37].RegisterCallback<ClickEvent>();
-        _buttons[38].RegisterCallback<ClickEvent>();
-        _buttons[38].RegisterCallback<ClickEvent>();
-        _buttons[39].RegisterCallback<ClickEvent>();
-        _buttons[40].RegisterCallback<ClickEvent>();
-        _buttons[41].RegisterCallback<ClickEvent>();
-        _buttons[42].RegisterCallback<ClickEvent>();
-        _buttons[43].RegisterCallback<ClickEvent>();
-        _buttons[44].RegisterCallback<ClickEvent>();
-        _buttons[45].RegisterCallback<ClickEvent>();
-        _buttons[46].RegisterCallback<ClickEvent>();
-        _buttons[47].RegisterCallback<ClickEvent>();
-        _buttons[48].RegisterCallback<ClickEvent>();
-        _buttons[49].RegisterCallback<ClickEvent>();*/
+        _buttons[2].RegisterCallback<ClickEvent>(OnClickOmnivorousBtn);
+        _buttons[3].RegisterCallback<ClickEvent>(OnClickAggressiveBtn);
+        _buttons[4].RegisterCallback<ClickEvent>(OnClickFugitiveBtn);
+        _buttons[5].RegisterCallback<ClickEvent>(OnClickSocialBtn);
+        _buttons[6].RegisterCallback<ClickEvent>(OnClickNecrophageBtn);
+        _buttons[7].RegisterCallback<ClickEvent>(OnClickLargeSizeBtn);
+        _buttons[8].RegisterCallback<ClickEvent>(OnClickFamiliarBtn);
+        _buttons[9].RegisterCallback<ClickEvent>(OnClickParasiteBtn);
+        _buttons[10].RegisterCallback<ClickEvent>(OnClickCavernousBtn);
+        _buttons[11].RegisterCallback<ClickEvent>(OnClickClimberBtn);
+        _buttons[12].RegisterCallback<ClickEvent>(OnClickChickenFootBtn);
+        _buttons[13].RegisterCallback<ClickEvent>(OnClickMediumSizeBtn);
+        _buttons[14].RegisterCallback<ClickEvent>(OnClickNightVisionBtn);
+        _buttons[15].RegisterCallback<ClickEvent>(OnClickDayVisionBtn);
+        _buttons[16].RegisterCallback<ClickEvent>(OnClickAgileBtn);
+        _buttons[17].RegisterCallback<ClickEvent>(OnClickSilentBtn);
+        _buttons[18].RegisterCallback<ClickEvent>(OnClickAmbusherBtn);
+        _buttons[19].RegisterCallback<ClickEvent>(OnClickBearPawBtn);
+        _buttons[20].RegisterCallback<ClickEvent>(OnClickPlantBeakBtn);
+        _buttons[21].RegisterCallback<ClickEvent>(OnClickGrainBeakBtn);
+        _buttons[22].RegisterCallback<ClickEvent>(OnClickSawBtn);
+        _buttons[23].RegisterCallback<ClickEvent>(OnClickSmallHuntingBeakBtn);
+        _buttons[24].RegisterCallback<ClickEvent>(OnClickHerbivorousBeakBtn);
+        _buttons[25].RegisterCallback<ClickEvent>(OnClickFruitBeakBtn);
+        _buttons[26].RegisterCallback<ClickEvent>(OnClickMonkeyPawBtn);
+        _buttons[27].RegisterCallback<ClickEvent>(OnClickCheliceraBtn);
+        _buttons[28].RegisterCallback<ClickEvent>(OnClickMediumHuntingBeakBtn);
+        _buttons[29].RegisterCallback<ClickEvent>(OnClickCarnivorousBeakBtn);
+        _buttons[30].RegisterCallback<ClickEvent>(OnClickGenericBeakBtn);
+        _buttons[31].RegisterCallback<ClickEvent>(OnClickVenomBtn);
+        _buttons[32].RegisterCallback<ClickEvent>(OnClickLargeHuntingBeakBtn);
+        _buttons[33].RegisterCallback<ClickEvent>(OnClickMandibleBtn);
+        _buttons[34].RegisterCallback<ClickEvent>(OnClickFruitTeethBtn);
+        _buttons[35].RegisterCallback<ClickEvent>(OnClickLizardTailBtn);
+        _buttons[36].RegisterCallback<ClickEvent>(OnClickGenericTeethBtn);
+        _buttons[37].RegisterCallback<ClickEvent>(OnClickSquareTeethBtn);
+        _buttons[38].RegisterCallback<ClickEvent>(OnClickFurryTailBtn);
+        _buttons[39].RegisterCallback<ClickEvent>(OnClickMediumHuntingTeethBtn);
+        _buttons[40].RegisterCallback<ClickEvent>(OnClickSharpTeethBtn);
+        _buttons[41].RegisterCallback<ClickEvent>(OnClickDentalRowsBtn);
+        _buttons[42].RegisterCallback<ClickEvent>(OnClickPlantTeethBtn);
+        _buttons[43].RegisterCallback<ClickEvent>(OnClickSmallFurryTailBtn);
+        _buttons[44].RegisterCallback<ClickEvent>(OnClickLargeHuntingTeethBtn);
+        _buttons[45].RegisterCallback<ClickEvent>(OnClickSmallHuntingTeethBtn);
+        _buttons[46].RegisterCallback<ClickEvent>(OnClickWildcatTailBtn);
+        _buttons[47].RegisterCallback<ClickEvent>(OnClickPeacockFeathersBtn);
+
         _exitBuyMutation.RegisterCallback<ClickEvent>(ExitBuyMutation);
         _buyMutation.RegisterCallback<ClickEvent>(OnClickbuyMutationBtn);
         VerifyAll();
@@ -204,7 +201,7 @@ public class BuyMutationUi : MonoBehaviour
     }
     private void VerifyButtonState(VisualElement target, MutationBase inspect)
     {
-        foreach(MutationBase muta in _actualPiece.AppliedMutations)
+        foreach (MutationBase muta in _actualPiece.AppliedMutations)
         {
             _applied.Add(muta);
         }
@@ -225,18 +222,57 @@ public class BuyMutationUi : MonoBehaviour
         _ingameUi.UpdateLifeBarOwnerBase();
         gameObject.SetActive(false);
     }
-    private void OnClickHerbivoreBtn(ClickEvent evt)
-    {
-        ClickSelectButton(0);
-    }
-    private void OnClickCarnivoreBtn(ClickEvent evt)
-    {
-        ClickSelectButton(1);
-    }
-    private void OnClickOmnivorousBtn(ClickEvent evt)
-    {
-        ClickSelectButton(2);
-    }
+    #region Adicionar função aos botões
+    private void OnClickHerbivoreBtn(ClickEvent evt) { ClickSelectButton(0); }
+    private void OnClickCarnivoreBtn(ClickEvent evt) { ClickSelectButton(1); }
+    private void OnClickOmnivorousBtn(ClickEvent evt) { ClickSelectButton(2); }
+    private void OnClickAggressiveBtn(ClickEvent evt) { ClickSelectButton(3); }
+    private void OnClickFugitiveBtn(ClickEvent evt) { ClickSelectButton(4); }
+    private void OnClickSocialBtn(ClickEvent evt) { ClickSelectButton(5); }
+    private void OnClickNecrophageBtn(ClickEvent evt) { ClickSelectButton(6); }
+    private void OnClickLargeSizeBtn(ClickEvent evt) { ClickSelectButton(7); }
+    private void OnClickFamiliarBtn(ClickEvent evt) { ClickSelectButton(8); }
+    private void OnClickParasiteBtn(ClickEvent evt) { ClickSelectButton(9); }
+    private void OnClickCavernousBtn(ClickEvent evt) { ClickSelectButton(10); }
+    private void OnClickClimberBtn(ClickEvent evt) { ClickSelectButton(11); }
+    private void OnClickChickenFootBtn(ClickEvent evt) { ClickSelectButton(12); }
+    private void OnClickMediumSizeBtn(ClickEvent evt) { ClickSelectButton(13); }
+    private void OnClickNightVisionBtn(ClickEvent evt) { ClickSelectButton(14); }
+    private void OnClickDayVisionBtn(ClickEvent evt) { ClickSelectButton(15); }
+    private void OnClickAgileBtn(ClickEvent evt) { ClickSelectButton(16); }
+    private void OnClickSilentBtn(ClickEvent evt) { ClickSelectButton(17); }
+    private void OnClickAmbusherBtn(ClickEvent evt) { ClickSelectButton(18); }
+    private void OnClickBearPawBtn(ClickEvent evt) { ClickSelectButton(19); }
+    private void OnClickPlantBeakBtn(ClickEvent evt) { ClickSelectButton(20); }
+    private void OnClickGrainBeakBtn(ClickEvent evt) { ClickSelectButton(21); }
+    private void OnClickSawBtn(ClickEvent evt) { ClickSelectButton(22); }
+    private void OnClickSmallHuntingBeakBtn(ClickEvent evt) { ClickSelectButton(23); }
+    private void OnClickHerbivorousBeakBtn(ClickEvent evt) { ClickSelectButton(24); }
+    private void OnClickFruitBeakBtn(ClickEvent evt) { ClickSelectButton(25); }
+    private void OnClickMonkeyPawBtn(ClickEvent evt) { ClickSelectButton(26); }
+    private void OnClickCheliceraBtn(ClickEvent evt) { ClickSelectButton(27); }
+    private void OnClickMediumHuntingBeakBtn(ClickEvent evt) { ClickSelectButton(28); }
+    private void OnClickCarnivorousBeakBtn(ClickEvent evt) { ClickSelectButton(29); }
+    private void OnClickGenericBeakBtn(ClickEvent evt) { ClickSelectButton(30); }
+    private void OnClickVenomBtn(ClickEvent evt) { ClickSelectButton(31); }
+    private void OnClickLargeHuntingBeakBtn(ClickEvent evt) { ClickSelectButton(32); }
+    private void OnClickMandibleBtn(ClickEvent evt) { ClickSelectButton(33); }
+    private void OnClickFruitTeethBtn(ClickEvent evt) { ClickSelectButton(34); }
+    private void OnClickLizardTailBtn(ClickEvent evt) { ClickSelectButton(35); }
+    private void OnClickGenericTeethBtn(ClickEvent evt) { ClickSelectButton(36); }
+    private void OnClickSquareTeethBtn(ClickEvent evt) { ClickSelectButton(37); }
+    private void OnClickFurryTailBtn(ClickEvent evt) { ClickSelectButton(38); }
+    private void OnClickMediumHuntingTeethBtn(ClickEvent evt) { ClickSelectButton(39); }
+    private void OnClickSharpTeethBtn(ClickEvent evt) { ClickSelectButton(40); }
+    private void OnClickDentalRowsBtn(ClickEvent evt) { ClickSelectButton(41); }
+    private void OnClickPlantTeethBtn(ClickEvent evt) { ClickSelectButton(42); }
+    private void OnClickSmallFurryTailBtn(ClickEvent evt) { ClickSelectButton(43); }
+    private void OnClickLargeHuntingTeethBtn(ClickEvent evt) { ClickSelectButton(44); }
+    private void OnClickSmallHuntingTeethBtn(ClickEvent evt) { ClickSelectButton(45); }
+    private void OnClickWildcatTailBtn(ClickEvent evt) { ClickSelectButton(46); }
+    private void OnClickPeacockFeathersBtn(ClickEvent evt) { ClickSelectButton(47); }
+    #endregion
+
     private void OnClickbuyMutationBtn(ClickEvent evt)
     {
         if (_actualPiece.AddMutation(_selectedMutation))
@@ -245,7 +281,7 @@ public class BuyMutationUi : MonoBehaviour
             SetButtonVisual(_buttons[_selectedButton], MutationStatus.selected);
         }
     }
-    private void OnClickCarnivoreMutationBtn(ClickEvent evt)
+    private void OnClickAdressiveBtn(ClickEvent evt)
     {
 
     }

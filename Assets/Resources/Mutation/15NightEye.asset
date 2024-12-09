@@ -9,16 +9,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 282d1cd54e98b1445b4251f0cf0dee45, type: 3}
-  m_Name: 05Fugitive
+  m_Script: {fileID: 11500000, guid: abb0b490ec643e54a9d7778f9759bb52, type: 3}
+  m_Name: 15NightEye
   m_EditorClassIdentifier: 
-  _id: 5
-  _name: Fugitivo
-  _icon: {fileID: 700210869, guid: eec1a1726a4e56041952953bcf23b6fe, type: 3}
+  _id: 15
+  _name: Olho Noturno
+  _icon: {fileID: 570274833, guid: eec1a1726a4e56041952953bcf23b6fe, type: 3}
   _cost: 1
-  _description: "N\xE3o podem te matar se n\xE3o podem te ver\\n++++Energia\\n---For\xE7a\\n-Popula\xE7\xE3o"
+  _description: 
   _incompatibleMutations:
-  - {fileID: 11400000, guid: bcc10ca8cbc6a9d4888720d81e2c0daf, type: 2}
+  - {fileID: 11400000, guid: c303e90cb18f0244cb0c05f98186f587, type: 2}
   _requiredMutations: []
   _pieceStatusToChange: 
   _pieceValueToChange: 
+  _partToChange: 0
+  _visual: {fileID: 0}

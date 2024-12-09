@@ -10,15 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 282d1cd54e98b1445b4251f0cf0dee45, type: 3}
-  m_Name: 04Agressive
+  m_Name: 12Escalator
   m_EditorClassIdentifier: 
-  _id: 4
-  _name: Agressivo
-  _icon: {fileID: 1256695064, guid: eec1a1726a4e56041952953bcf23b6fe, type: 3}
+  _id: 12
+  _name: Escalador
+  _icon: {fileID: -1156483799, guid: eec1a1726a4e56041952953bcf23b6fe, type: 3}
   _cost: 1
-  _description: "N\xE3o tem motivo para ter um pavio curto, a n\xE3o ser que tenhazn++For\xE7a\\n+++Energia\\n---Popula\xE7\xE3o"
-  _incompatibleMutations:
-  - {fileID: 11400000, guid: bc78378080839494c8b1d8124a13803c, type: 2}
+  _description: "Espero que n\xE3o tenha medo de altura\\n+++++Energia\\n----Ataque\\n-Popula\xE7\xE3o"
+  _incompatibleMutations: []
   _requiredMutations: []
   _pieceStatusToChange: 
   _pieceValueToChange: 

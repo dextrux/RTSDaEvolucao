@@ -85,6 +85,7 @@ public class RoundManager : MonoBehaviour
     private int _p4MutationPoint;
     [SerializeField]
     private int _p5MutationPoint;
+    [SerializeField] private GameObject _gameOverUi;
     #endregion
 
     #region Referências Desastre
@@ -712,6 +713,7 @@ public class RoundManager : MonoBehaviour
             }
         }
         analytics.AcabouJogo();
+        _gameOverUi.SetActive(true);
     }
 
     private void RoundEndPiecesRoutine()

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abb0b490ec643e54a9d7778f9759bb52, type: 3}
+  m_Name: 13ChikenFeet
+  m_EditorClassIdentifier: 
+  _id: 13
+  _name: "P\xE9 de Galinha"
+  _icon: {fileID: 1179109911, guid: eec1a1726a4e56041952953bcf23b6fe, type: 3}
+  _cost: 1
+  _description: "Talvez, ser uma galinha n\xE3o seja t\xE3o ruim\\n++++Energia\\n++Recupera\xE7\xE3o
+    de fome\\n-----For\xE7a"
+  _incompatibleMutations: []
+  _requiredMutations: []
+  _pieceStatusToChange: 
+  _pieceValueToChange: 
+  _partToChange: 0
+  _visual: {fileID: 0}

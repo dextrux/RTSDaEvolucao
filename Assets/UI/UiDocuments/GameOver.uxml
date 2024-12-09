@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/StyleSheets/MenuStyle.uss?fileID=7433441132597879392&amp;guid=2fb1811cbb3f51d4bbd4759e5beb00b7&amp;type=3#MenuStyle" />
+    <ui:VisualElement style="flex-grow: 1; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.47); justify-content: center; align-items: center; padding-top: 10%; padding-bottom: 10%;">
+        <ui:VisualElement style="flex-grow: 1; justify-content: center; align-items: center; width: 40%; height: 40%; background-color: rgb(214, 157, 60); border-top-left-radius: 87px; border-top-right-radius: 87px; border-bottom-right-radius: 87px; border-bottom-left-radius: 87px;">
+            <ui:Label tabindex="-1" text="Final\ndo\njogo" parse-escape-sequences="true" display-tooltip-when-elided="true" class="main-menu-title" style="font-size: 74%; position: relative; margin-bottom: 9%;" />
+            <ui:Button text="Menu" parse-escape-sequences="true" display-tooltip-when-elided="true" name="menu-btn" class="main-menu-button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

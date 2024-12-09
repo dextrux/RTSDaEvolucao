@@ -9,7 +9,7 @@
                 <ui:Button text="Créditos" parse-escape-sequences="true" display-tooltip-when-elided="true" name="credit-btn" class="main-menu-button" />
             </ui:VisualElement>
             <ui:VisualElement name="containerFooter" style="flex-grow: 1; flex-direction: column-reverse; padding-bottom: 10px;">
-                <ui:Label tabindex="-1" text="Versão: 0.8.5" parse-escape-sequences="true" display-tooltip-when-elided="true" name="menu-version-txt" class="main-menu-title" style="font-size: 51px;" />
+                <ui:Label tabindex="-1" text="Versão: 0.8.6" parse-escape-sequences="true" display-tooltip-when-elided="true" name="menu-version-txt" class="main-menu-title" style="font-size: 51px;" />
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="right-container" style="flex-grow: 1; width: 65%; height: 100%;" />
