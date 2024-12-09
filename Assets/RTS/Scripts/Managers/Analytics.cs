@@ -159,7 +159,7 @@ public class Analytics : MonoBehaviour
             case "Canibal":
                 jogador.nMutacoesCarn++;
                 break;
-            case "Necrófago":
+            case "Necrofado":
                 jogador.nMutacoesCarn++;
                 break;
             case "Parasita":
