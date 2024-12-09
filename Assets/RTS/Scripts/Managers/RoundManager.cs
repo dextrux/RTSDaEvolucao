@@ -310,7 +310,7 @@ public class RoundManager : MonoBehaviour
             owner,
             1
         );
-        Piece.InicializarMutation(newObject.GetComponent<Piece>());
+        newObject.GetComponent<Piece>().AddMutation(Resources.Load<MutationBase>("Mutation/01Herbivore"), true);
     }
 
     public void AddMutationPoint(Owner pieceOwner)

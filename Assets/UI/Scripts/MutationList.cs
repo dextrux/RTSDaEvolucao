@@ -45,6 +45,7 @@ public class MutationList : MonoBehaviour
         _creatureScreen.SetActive(false);
         _buyMutationScreen.SetActive(true);
         _buyMutationScreen.GetComponent<BuyMutationUi>().Piece = _actualPiece;
+        _buyMutationScreen.GetComponent<BuyMutationUi>().OnEnableScreen();
         _mutationScreen.SetActive(false);
     }
     private void OnClickAction(ClickEvent evt)

@@ -187,7 +187,6 @@ MonoBehaviour:
   _isUnderDisastre: 0
   _isDoente: 0
   _isDuringAction: 0
-  _baseMutation: {fileID: 11400000, guid: be735fdb1567a574b92387dcb391b83e, type: 2}
 --- !u!1001 &5022382225903008758
 PrefabInstance:
   m_ObjectHideFlags: 0

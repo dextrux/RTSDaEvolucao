@@ -1209,7 +1209,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ed65cc3f2f80f74b92aa28a6a056db3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _mutations: []
+  _mutations:
+  - {fileID: 11400000, guid: be735fdb1567a574b92387dcb391b83e, type: 2}
+  - {fileID: 11400000, guid: 8c3289a69b4059c4f9199c340ab13573, type: 2}
+  - {fileID: 11400000, guid: 3bbf6d6c47a395346ae239f4205c8730, type: 2}
+  - {fileID: 11400000, guid: bcc10ca8cbc6a9d4888720d81e2c0daf, type: 2}
+  - {fileID: 11400000, guid: bc78378080839494c8b1d8124a13803c, type: 2}
   _playerRaycast: {fileID: 961739755}
   _ingameUi: {fileID: 9445385}
   _buttonConfirmation: {fileID: 8300000, guid: 7944c35f712ee8341854a7b2ba96d8b4, type: 3}

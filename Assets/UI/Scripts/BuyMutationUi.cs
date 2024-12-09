@@ -31,6 +31,8 @@ public class BuyMutationUi : MonoBehaviour
     //som
     [SerializeField] private AudioClip _buttonConfirmation;
     [SerializeField] private AudioClip _buttonDenial;
+    [SerializeField] private List<MutationBase> _applied;
+    [SerializeField] private List<MutationBase> _incompatible;
     public Piece Piece { get => _actualPiece; set => _actualPiece = value; }
 
     private void Awake()
@@ -110,7 +112,7 @@ public class BuyMutationUi : MonoBehaviour
         _buttons[48] = rootTest.Q<Button>("cauda-gato-selvagem-btn");
         _buttons[49] = rootTest.Q<Button>("plumagem-pavao-btn");
     }
-    private void OnEnable()
+    public void OnEnableScreen()
     {
         SetComponents();
         _buttons[0].RegisterCallback<ClickEvent>(OnClickHerbivoreBtn);
@@ -167,13 +169,25 @@ public class BuyMutationUi : MonoBehaviour
         _buttons[49].RegisterCallback<ClickEvent>();*/
         _exitBuyMutation.RegisterCallback<ClickEvent>(ExitBuyMutation);
         _buyMutation.RegisterCallback<ClickEvent>(OnClickbuyMutationBtn);
+        for (int i = 0; i < _buttons.Length; i++)
+        {
+            if (i >= _mutations.Length)
+            {
+                SetButtonVisual(_buttons[i], MutationStatus.unavailable);
+            }
+            else
+            {
+                VerifyButtonState(_buttons[i], _mutations[i]);
+            }
+
+        }
         _selectedButton = 0;
         _selectedMutation = Resources.Load<MutationBase>("Mutation/01Herbivore");
-        SetButtonVisual(_buttons[_selectedButton], 2);
+        SetButtonVisual(_buttons[_selectedButton], MutationStatus.selected);
 
     }
 
-    private void SetButtonVisual(VisualElement target, int stateIndex)
+    private void SetButtonVisual(VisualElement target, MutationStatus stateIndex)
     {
         target.RemoveFromClassList("available-button");
         target.RemoveFromClassList("purchased-button");
@@ -182,16 +196,16 @@ public class BuyMutationUi : MonoBehaviour
         target.RemoveFromClassList("incompatible-button");
         switch (stateIndex)
         {
-            case 0:
+            case MutationStatus.purchased:
                 target.AddToClassList("purchased-button");
                 break;
-            case 1:
+            case MutationStatus.available:
                 target.AddToClassList("available-button");
                 break;
-            case 2:
+            case MutationStatus.selected:
                 target.AddToClassList("selected-button");
                 break;
-            case 3:
+            case MutationStatus.incompatible:
                 target.AddToClassList("incompatible-button");
                 break;
             default:
@@ -201,10 +215,18 @@ public class BuyMutationUi : MonoBehaviour
     }
     private void VerifyButtonState(VisualElement target, MutationBase inspect)
     {
-        if (_actualPiece.AppliedMutations.Pesquisar(inspect)) SetButtonVisual(target, 0);
-        else if (_actualPiece.IncompatibleMutations.Pesquisar(inspect)) SetButtonVisual(target, 4);
-        else if (inspect.IsMutationUnlockable(_actualPiece)) SetButtonVisual(target, 1);
-        else SetButtonVisual(target, 3);
+        foreach(Nodo<MutationBase> muta in _actualPiece.AppliedMutations.Nodos())
+        {
+            _applied.Add(muta.valor);
+        }
+        foreach (Nodo<MutationBase> muta in _actualPiece.IncompatibleMutations.Nodos())
+        {
+            _incompatible.Add(muta.valor);
+        }
+        if (_actualPiece.AppliedMutations.Pesquisar(inspect)) SetButtonVisual(target, MutationStatus.purchased);
+        else if (_actualPiece.IncompatibleMutations.Pesquisar(inspect)) SetButtonVisual(target, MutationStatus.incompatible);
+        else if (inspect.IsMutationUnlockable(_actualPiece)) SetButtonVisual(target, MutationStatus.available);
+        else SetButtonVisual(target, MutationStatus.unavailable);
     }
     private void ExitBuyMutation(ClickEvent evt)
     {
@@ -216,15 +238,15 @@ public class BuyMutationUi : MonoBehaviour
     }
     private void OnClickHerbivoreBtn(ClickEvent evt)
     {
-        ClickSelectButton(0, "Mutation/01Herbivore");
+        ClickSelectButton(0);
     }
     private void OnClickCarnivoreBtn(ClickEvent evt)
     {
-        ClickSelectButton(1, "Mutation/02Carnivore");
+        ClickSelectButton(1);
     }
     private void OnClickOmnivorousBtn(ClickEvent evt)
     {
-        ClickSelectButton(2, "Mutation/03Omnivore");
+        ClickSelectButton(2);
     }
     private void OnClickbuyMutationBtn(ClickEvent evt)
     {
@@ -238,14 +260,13 @@ public class BuyMutationUi : MonoBehaviour
     {
 
     }
-    private void ClickSelectButton(int newSelect, string path)
+    private void ClickSelectButton(int newSelect)
     {
         SoundManagerSO.PlaySoundFXClip(_buttonConfirmation, transform.position, 1);
         VerifyButtonState(_buttons[_selectedButton], _selectedMutation);
         _selectedButton = newSelect;
-        SetButtonVisual(_buttons[_selectedButton], 2);
-        Resources.Load<MutationBase>(path);
-        _selectedMutation = Resources.Load<MutationBase>(path);
+        SetButtonVisual(_buttons[newSelect], MutationStatus.selected);
+        _selectedMutation = _mutations[newSelect];
         _title.text = _selectedMutation.Name;
         _description.text = _selectedMutation.Description;
         IStyle style = _icon.style;

@@ -11,6 +11,6 @@ public class MutationDiet : MutationBase
     }
     public virtual void SetMutation(Piece targetPiece)
     {
-        targetPiece.Diet = _newDiet;
+        targetPiece.ChangeDiet(_newDiet);
     }
 }
