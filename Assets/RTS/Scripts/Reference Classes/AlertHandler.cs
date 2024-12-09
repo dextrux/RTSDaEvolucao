@@ -80,6 +80,7 @@ public static class AlertHandler
     private static void CheckHungerAlert(Piece piece)
     {
         bool isHungry = piece.Hunger.CurrentBarValue < 0.25f * piece.Hunger.MaxBarValue;
+        if (isHungry) { piece.Health.CurrentBarValue -= 20; }
         UpdateAlert(piece.Alerta, Alerta.Fome, isHungry);
     }
 

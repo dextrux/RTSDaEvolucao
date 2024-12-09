@@ -144,8 +144,12 @@ public class Piece : MonoBehaviour
         }
         else if (totem.TotemType == TotemType.Ponto_Mutagenico)
         {
-            GameObject.FindAnyObjectByType<RoundManager>().AddMutationPoint(pieceScript.Owner);
-            GameObject.FindAnyObjectByType<InGameUi>().UpdateMutationPointText();
+            if (walk)
+            {
+                GameObject.FindAnyObjectByType<RoundManager>().AddMutationPoint(pieceScript.Owner);
+                GameObject.FindAnyObjectByType<InGameUi>().UpdateMutationPointText();
+            }
+
 
         }
         totem.DeactivateTotem();
