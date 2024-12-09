@@ -165,7 +165,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 94e742ee68ca68f40842a637eba196e5,
         type: 3}
       propertyPath: m_Name
-      value: ToTemAnimalMedio
+      value: TotemAnimalMedio
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -174,8 +174,30 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 235802024363656352}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 94e742ee68ca68f40842a637eba196e5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2469474382670660350}
   m_SourcePrefab: {fileID: 100100000, guid: 94e742ee68ca68f40842a637eba196e5, type: 3}
+--- !u!1 &6274284546892577091 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 94e742ee68ca68f40842a637eba196e5,
+    type: 3}
+  m_PrefabInstance: {fileID: 6616866870283469842}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2469474382670660350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6274284546892577091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66f23391f4738e04197d906316afb55e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &6654468813942252537 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 94e742ee68ca68f40842a637eba196e5,

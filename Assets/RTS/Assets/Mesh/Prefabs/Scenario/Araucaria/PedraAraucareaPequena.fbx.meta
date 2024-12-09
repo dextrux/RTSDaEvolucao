@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: cc1d8b01c00d52449a70b3b06f9f99c5
+guid: 54b0589c3fe62cc4190b5a2b18dbc841
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -8,13 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Mat_Static
-    second: {fileID: -3762895330137140695, guid: e79056f70ce7cb0469bf30adae9234a8,
-      type: 3}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Mat_Vegetation
-    second: {fileID: 2100000, guid: 7d54307f3d4f2cd45896571d17e9d280, type: 2}
+    second: {fileID: 2100000, guid: 2535efaae4dc8784593cc087b0d73975, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
