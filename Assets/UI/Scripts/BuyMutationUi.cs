@@ -13,6 +13,7 @@ public class BuyMutationUi : MonoBehaviour
 {
     private Button _exitBuyMutation;
     private Button _buyMutation;
+    private Label _dnaCount;
 
     #region BotoesParaMutacoes
     private Button[] _buttons = new Button[51];
@@ -170,7 +171,7 @@ public class BuyMutationUi : MonoBehaviour
         _selectedButton = 0;
         _selectedMutation = Resources.Load<MutationBase>("Mutation/01Herbivore");
         SetButtonVisual(_buttons[_selectedButton], MutationStatus.selected);
-
+        _dnaCount.text = GameObject.FindAnyObjectByType<RoundManager>().GetMutationPointOwnerBased(_actualPiece.Owner).ToString();
     }
 
     private void SetButtonVisual(VisualElement target, MutationStatus stateIndex)
@@ -279,15 +280,9 @@ public class BuyMutationUi : MonoBehaviour
         {
             VerifyAll();
             SetButtonVisual(_buttons[_selectedButton], MutationStatus.selected);
+            GameObject.FindAnyObjectByType<RoundManager>().AddMutationPoint(_actualPiece.Owner, _selectedMutation.Cost);
+            _dnaCount.text = GameObject.FindAnyObjectByType<RoundManager>().GetMutationPointOwnerBased(_actualPiece.Owner).ToString();
         }
-    }
-    private void OnClickAdressiveBtn(ClickEvent evt)
-    {
-
-    }
-    private void OnClickOmnivorousMutationBtn(ClickEvent evt)
-    {
-
     }
     private void ClickSelectButton(int newSelect)
     {

@@ -469,5 +469,9 @@
             </ui:Button>
             <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="buy-mutation-btn" text="Comprar" class="buy-mutation-btn info-title" />
         </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1; position: absolute; left: 40%; top: 5%; width: 20%; height: 8%; background-color: rgb(41, 29, 19); border-left-color: rgb(200, 201, 197); border-right-color: rgb(200, 201, 197); border-top-color: rgb(200, 201, 197); border-bottom-color: rgb(200, 201, 197); border-top-width: 6px; border-right-width: 6px; border-bottom-width: 6px; border-left-width: 6px; border-top-left-radius: 24px; border-top-right-radius: 24px; border-bottom-right-radius: 24px; border-bottom-left-radius: 24px; flex-direction: row; padding-right: 1.5%; padding-left: 1.5%; padding-top: 0.5%; padding-bottom: 0.5%;">
+            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-417108044&amp;guid=8fbda476e9f56fe40955a8472d8bd40c&amp;type=3#AtlasUITemp_56&apos;); -unity-background-scale-mode: scale-to-fit; width: 20%;" />
+            <ui:Label tabindex="-1" text="00" parse-escape-sequences="true" display-tooltip-when-elided="true" name="dna-count-txt" style="width: 80%; -unity-text-align: middle-center; -unity-font: url(&apos;project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.ttf?fileID=12800000&amp;guid=22aed22e579f47048b64da77dc6349e6&amp;type=3#Bodo Amat&apos;); -unity-font-definition: url(&apos;project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.asset?fileID=11400000&amp;guid=0756c78a4ec4a2644b846b666c90696f&amp;type=2#Bodo Amat&apos;); color: rgb(255, 255, 255); font-size: 45%;" />
+        </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

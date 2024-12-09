@@ -335,6 +335,27 @@ public class RoundManager : MonoBehaviour
                 break;
         }
     }
+    public void AddMutationPoint(Owner pieceOwner, int value)
+    {
+        switch (pieceOwner)
+        {
+            case Owner.P1:
+                _p1MutationPoint+= value;
+                break;
+            case Owner.P2:
+                _p2MutationPoint += value;
+                break;
+            case Owner.P3:
+                _p3MutationPoint += value;
+                break;
+            case Owner.P4:
+                _p4MutationPoint += value;
+                break;
+            case Owner.P5:
+                _p5MutationPoint += value;
+                break;
+        }
+    }
     public int GetMutationPointOwnerBased(Owner pieceOwner)
     {
         switch (pieceOwner)
