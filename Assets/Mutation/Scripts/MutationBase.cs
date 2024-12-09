@@ -19,11 +19,6 @@ public abstract class MutationBase : ScriptableObject, IComparable<MutationBase>
     {
 
     }
-    public int CompareTo(MutationBase comparable)
-    {
-        Debug.Log("compatou");
-        return Id.CompareTo(comparable.Id);
-    }
     public bool IsMutationUnlocked(Piece targetPiece)
     {
         if (targetPiece.AppliedMutations.Pesquisar(this)) return true;
@@ -40,5 +35,9 @@ public abstract class MutationBase : ScriptableObject, IComparable<MutationBase>
             if (targetPiece.AppliedMutations.Pesquisar(_requiredMutations[i])) return false;
         }
         return true;
+    }
+    public int CompareTo(MutationBase other)
+    {
+        return Id.CompareTo(other.Id);
     }
 }

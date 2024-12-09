@@ -206,7 +206,6 @@ GameObject:
   - component: {fileID: 42698650}
   - component: {fileID: 42698654}
   - component: {fileID: 42698653}
-  - component: {fileID: 42698651}
   - component: {fileID: 42698655}
   - component: {fileID: 42698656}
   m_Layer: 0
@@ -320,36 +319,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: a95d4f82571364b4ea9bf2f4691fa849, type: 2}
   - {fileID: 2100000, guid: 9dff0c732a40e6d46854c37b6fcb256b, type: 2}
   - {fileID: 0}
---- !u!114 &42698651
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 42698646}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6260ead34953df64d8b0bf21dc6ff752, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  totemTypeMaterials:
-  - {fileID: 2100000, guid: d8272b4d0422058408711e2fc7c092f4, type: 2}
-  - {fileID: 2100000, guid: 8d861856ceb49634bbf25ed96361136b, type: 2}
-  - {fileID: 2100000, guid: 07e2291203db7e34486dd6ba035d78b3, type: 2}
-  - {fileID: 2100000, guid: cf8a8a40d76b1844bb33b0042065905c, type: 2}
-  - {fileID: 2100000, guid: ac32d4d4112507c4780063ee19740f4f, type: 2}
-  - {fileID: 2100000, guid: 520db9344ef7d034ab7983a1d76a73de, type: 2}
-  - {fileID: 2100000, guid: 935b09dc8eb0362418e18ea87147ffb4, type: 2}
-  - {fileID: 2100000, guid: ef7e0c4dee7bd5e4abf86c171971146d, type: 2}
-  totemTypeMesh:
-  - {fileID: -7276807288912308764, guid: e9a70797131311d49ad8f35988d003d4, type: 3}
-  - {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
-  - {fileID: 3193203228891694486, guid: 0a6ca21fc9bbad84185fd328873d572a, type: 3}
-  - {fileID: -185447317763182327, guid: c39ac9c1e584fde428479dcd6e78ac12, type: 3}
-  - {fileID: -3794393067471512702, guid: 048f3287a73fff24cb8c4c3305cfda1a, type: 3}
-  - {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
-  - {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
-  - {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!114 &42698653
 MonoBehaviour:
   m_ObjectHideFlags: 0

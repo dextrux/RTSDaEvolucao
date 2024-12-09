@@ -165,7 +165,7 @@ public class PlayerRaycast : MonoBehaviour
                     pieceScript.PieceRaycastForTile().RetornarTilesParaMaterialOriginal();
                     pieceScript.StartCoroutine(pieceScript.Walk(pieceScript, tile, false, LatsTile));
                 }
-                else if (tileScript.TileType == TileType.Comida || tileScript.TileType == TileType.Mutagêncio)
+                else if (tileScript.TileType == TileType.Comida || tileScript.TileType == TileType.Mutagencio)
                 {
                     Debug.Log("Comer");
                     pieceScript.PieceRaycastForTile().RetornarTilesParaMaterialOriginal();

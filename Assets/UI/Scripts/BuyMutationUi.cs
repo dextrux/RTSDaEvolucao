@@ -12,6 +12,7 @@ public enum MutationStatus
 public class BuyMutationUi : MonoBehaviour
 {
     private Button _exitBuyMutation;
+    private Button _buyMutation;
 
     #region BotoesParaMutacoes
     private Button[] _buttons = new Button[51];
@@ -32,10 +33,19 @@ public class BuyMutationUi : MonoBehaviour
     [SerializeField] private AudioClip _buttonDenial;
     public Piece Piece { get => _actualPiece; set => _actualPiece = value; }
 
+    private void Awake()
+    {
+        _selectedButton = 0;
+        _selectedMutation = Resources.Load<MutationBase>("Mutation/01Herbivore");
+    }
     private void SetComponents()
     {
         int counter = 0;
         var rootTest = GetComponent<UIDocument>().rootVisualElement;
+        _icon = rootTest.Q<VisualElement>("mutation-icon");
+        _title = rootTest.Q<Label>("mutation-title");
+        _description = rootTest.Q<Label>("mutation-descrition");
+        _buyMutation = rootTest.Q<Button>("buy-mutation-btn");
         VisualElement.Hierarchy mutationHierarchy = rootTest.Q<VisualElement>("testing-scroll").Q<VisualElement>("unity-content-container").hierarchy;
         for (int i = 0; i < 14; i++)
         {
@@ -156,7 +166,11 @@ public class BuyMutationUi : MonoBehaviour
         _buttons[48].RegisterCallback<ClickEvent>();
         _buttons[49].RegisterCallback<ClickEvent>();*/
         _exitBuyMutation.RegisterCallback<ClickEvent>(ExitBuyMutation);
+        _buyMutation.RegisterCallback<ClickEvent>(OnClickbuyMutationBtn);
+        _selectedButton = 0;
+        _selectedMutation = Resources.Load<MutationBase>("Mutation/01Herbivore");
         SetButtonVisual(_buttons[_selectedButton], 2);
+
     }
 
     private void SetButtonVisual(VisualElement target, int stateIndex)
@@ -212,9 +226,9 @@ public class BuyMutationUi : MonoBehaviour
     {
         ClickSelectButton(2, "Mutation/03Omnivore");
     }
-    private void OnClickHerbivoreMutationBtn(ClickEvent evt)
+    private void OnClickbuyMutationBtn(ClickEvent evt)
     {
-
+        _actualPiece.AddMutation(_selectedMutation);
     }
     private void OnClickCarnivoreMutationBtn(ClickEvent evt)
     {

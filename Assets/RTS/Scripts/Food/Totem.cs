@@ -73,7 +73,7 @@ public class Totem : MonoBehaviour
         {
             if (totemType == TotemType.Ponto_Mutagenico)
             {
-                tile.TileType = TileType.Mutag�ncio;
+                tile.TileType = TileType.Mutagencio;
             }
             else if (totemType != TotemType.Ponto_Mutagenico)
             {

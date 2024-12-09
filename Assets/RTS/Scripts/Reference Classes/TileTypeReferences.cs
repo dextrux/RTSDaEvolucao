@@ -13,7 +13,7 @@ public class TileTypeReferences : MonoBehaviour
         {
             TileType.Posicionamento => ownerReference.GetColor(tileOwner),
             TileType.Comida => tileTypeColor[1],
-            TileType.Mutagêncio => tileTypeColor[2],
+            TileType.Mutagencio => tileTypeColor[2],
             TileType.Barreira => tileTypeColor[3],
             _ =>
             null
@@ -37,7 +37,7 @@ public class TileTypeReferences : MonoBehaviour
         {
             TileType.Posicionamento => ownerReference.GetGlowingColor(tileOwner),
             TileType.Comida => tileTypeGlowingColor[1],
-            TileType.Mutagêncio => tileTypeGlowingColor[2],
+            TileType.Mutagencio => tileTypeGlowingColor[2],
             TileType.Barreira => tileTypeGlowingColor[3],
             _ =>
             null
