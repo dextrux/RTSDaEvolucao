@@ -6,14 +6,17 @@ using System.Security.Cryptography;
 
 public class Piece : MonoBehaviour
 {
-    #region Analytics
+    #region Analytics & Cladograma
     public GameObject manager;
     private Analytics analytics;
+
+    private Cladograma clado;
 
     private void Start()
     {
         manager = GameObject.Find("Manager");
         analytics = manager.GetComponent<Analytics>();
+        clado = manager.GetComponent<Cladograma>();
     }
     #endregion
 
@@ -349,6 +352,8 @@ public class Piece : MonoBehaviour
         analytics.SetMinimoMutacoesCriatura(_appliedMutations);
         analytics.SetNumeroMutacoesHerbCarn(mutationToAdd.name);
         analytics.SetTempoMaxCompras();
+
+        clado.AddListaClado(this._owner, mutationToAdd.name);
 
         return true;
     }
