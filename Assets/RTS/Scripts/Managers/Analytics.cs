@@ -151,6 +151,9 @@ public class Analytics : MonoBehaviour
 
     public void SetNumeroMutacoesHerbCarn(string nomeMutacao)
     {
+
+        Debug.Log($"Mutacao: {nomeMutacao}");
+
         //switch carnivoras
         switch (nomeMutacao)
         {
