@@ -69,10 +69,9 @@ public class Analytics : MonoBehaviour
         jogador.nTotalCompras++;
     }
 
-    public void SetMinimoMutacoesCriatura(ArvoreAVL<MutationBase> mutacoes)
+    public void SetMinimoMutacoesCriatura(List<MutationBase> mutacoes)
     {
-        List<Nodo<MutationBase>> listaMutacoes = mutacoes.Nodos();
-        int nMutacoes = listaMutacoes.Count();
+        int nMutacoes = mutacoes.Count();
 
         if (nMutacoes < jogador.nMinimoMutacoes1Peca)
         {
@@ -80,14 +79,13 @@ public class Analytics : MonoBehaviour
         }
     }
 
-    public void SetMaximoMutacoesCriatura(ArvoreAVL<MutationBase> mutacoes)
+    public void SetMaximoMutacoesCriatura(List<MutationBase> mutacoes)
     {
-        List<Nodo<MutationBase>> listaMutacoes = mutacoes.Nodos();
-        int nMutacoes = listaMutacoes.Count();
+        int Mutacoes = mutacoes.Count();
 
-        if (nMutacoes > jogador.nMaximoMutacoes1Peca)
+        if (Mutacoes > jogador.nMaximoMutacoes1Peca)
         {
-            jogador.nMaximoMutacoes1Peca = nMutacoes;
+            jogador.nMaximoMutacoes1Peca = Mutacoes;
         }
     }
 

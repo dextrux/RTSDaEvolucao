@@ -61,8 +61,8 @@ public class Piece : MonoBehaviour
 
     #region Muta��o e Multiplicadores
     private int sickCounter;
-    private ArvoreAVL<MutationBase> _appliedMutations = new ArvoreAVL<MutationBase>();
-    private ArvoreAVL<MutationBase> _incompatibleMutations = new ArvoreAVL<MutationBase>();
+    [SerializeField] private List<MutationBase> _appliedMutations = new List<MutationBase>();
+    [SerializeField] private List<MutationBase> _incompatibleMutations = new List<MutationBase>();
     private float _huntMultiplier;
     private float _plantMultiplier;
     #endregion
@@ -82,8 +82,8 @@ public class Piece : MonoBehaviour
     public bool IsDoente { get => _isDoente; set => _isDoente = value; }
     public bool IsUnderDesastre { get => _isUnderDisastre; set => _isUnderDisastre = value; }
     public bool IsDuringAction { get => _isDuringAction; set => _isDuringAction = value; }
-    public ArvoreAVL<MutationBase> IncompatibleMutations { get => _incompatibleMutations; set => _incompatibleMutations = value; }
-    public ArvoreAVL<MutationBase> AppliedMutations { get => _appliedMutations; set => _appliedMutations = value; }
+    public List<MutationBase> IncompatibleMutations { get => _incompatibleMutations; set => _incompatibleMutations = value; }
+    public List<MutationBase> AppliedMutations { get => _appliedMutations; set => _appliedMutations = value; }
     #endregion
 
     #region Actions
@@ -325,20 +325,22 @@ public class Piece : MonoBehaviour
     #region M�todos de Muta��o e Sa�de
     public bool AddMutation(MutationBase mutationToAdd)
     {
-        if (mutationToAdd.Cost > FindAnyObjectByType<RoundManager>().GetMutationPointOwnerBased(Owner) || _incompatibleMutations.Pesquisar(mutationToAdd) || mutationToAdd.IsMutationUnlockable(this))
+        if (mutationToAdd.Cost > FindAnyObjectByType<RoundManager>().GetMutationPointOwnerBased(Owner) || _incompatibleMutations.Contains(mutationToAdd) || !(mutationToAdd.IsMutationUnlockable(this)))
         {
+            Debug.Log("Custo: " + (mutationToAdd.Cost > FindAnyObjectByType<RoundManager>().GetMutationPointOwnerBased(Owner)));
+            Debug.Log("Incompatibilidade: " + _incompatibleMutations.Contains(mutationToAdd));
+            Debug.Log("Falta Requerimento: " + !(mutationToAdd.IsMutationUnlockable(this)));
             Debug.Log("Incompatível");
             return false;
         }
         Debug.Log("Compatível");
-        _appliedMutations.Inserir(mutationToAdd);
         foreach (MutationBase incompatible in mutationToAdd.IncompatibleMutations)
         {
-            _incompatibleMutations.Inserir(incompatible);
+            _incompatibleMutations.Add(incompatible);
         }
         mutationToAdd.Mutate(this);
 
-        if (_appliedMutations.Altura() <= 0)
+        if (_appliedMutations.Count <= 0)
         {
             analytics.SetTempoPrimeiraCompra();
         }
@@ -354,10 +356,9 @@ public class Piece : MonoBehaviour
     }
     public bool AddMutation(MutationBase mutationToAdd, bool firstTurn)
     {
-        _appliedMutations.Inserir(mutationToAdd);
         foreach (MutationBase incompatible in mutationToAdd.IncompatibleMutations)
         {
-            _incompatibleMutations.Inserir(incompatible);
+            _incompatibleMutations.Add(incompatible);
         }
         mutationToAdd.Mutate(this);
         //clado.AddListaClado(this._owner, mutationToAdd.name);
@@ -369,16 +370,16 @@ public class Piece : MonoBehaviour
         if (newDiet == PieceDiet.Carnivore)
         {
             _diet = newDiet;
-            _appliedMutations.Remover(Resources.Load<MutationDiet>("Mutation/01Herbivore"));
-            _incompatibleMutations.Inserir(Resources.Load<MutationDiet>("Mutation/02Carnivore"));
-            _appliedMutations.Inserir(Resources.Load<MutationDiet>("Mutation/02Carnivore"));
+            _appliedMutations.Remove(Resources.Load<MutationDiet>("Mutation/01Herbivore"));
+            _incompatibleMutations.Add(Resources.Load<MutationDiet>("Mutation/02Carnivore"));
+            _appliedMutations.Add(Resources.Load<MutationDiet>("Mutation/02Carnivore"));
         }
         else if (newDiet == PieceDiet.Omnivore)
         {
             _diet = newDiet;
-            _appliedMutations.Remover(Resources.Load<MutationDiet>("Mutation/02Carnivore"));
-            _incompatibleMutations.Inserir(Resources.Load<MutationDiet>("Mutation/02Carnivore"));
-            _appliedMutations.Inserir(Resources.Load<MutationDiet>("Mutation/03Omnivore"));
+            _appliedMutations.Remove(Resources.Load<MutationDiet>("Mutation/02Carnivore"));
+            _incompatibleMutations.Add(Resources.Load<MutationDiet>("Mutation/02Carnivore"));
+            _appliedMutations.Add(Resources.Load<MutationDiet>("Mutation/03Omnivore"));
         }
     }
 

@@ -9,6 +9,7 @@ public class MutationStatusNonVisual : MutationBase
     public override void Mutate(Piece targetPiece)
     {
         ChangeStatus(targetPiece);
+        targetPiece.AddMutation(this);
     }
     private void ChangeStatus(Piece targetPiece)
     {

@@ -21,18 +21,18 @@ public abstract class MutationBase : ScriptableObject, IComparable<MutationBase>
     }
     public bool IsMutationUnlocked(Piece targetPiece)
     {
-        if (targetPiece.AppliedMutations.Pesquisar(this)) return true;
+        if (targetPiece.AppliedMutations.Contains(this)) return true;
         else return false;
     }
     public bool IsMutationUnlockable(Piece targetPiece)
     {
         for (int i = 0; i < _incompatibleMutations.Length; ++i)
         {
-            if (targetPiece.AppliedMutations.Pesquisar(_incompatibleMutations[i])) return false;
+            if (targetPiece.AppliedMutations.Contains(_incompatibleMutations[i])) return false;
         }
         for (int i = 0; i < _requiredMutations.Length; i++)
         {
-            if (targetPiece.AppliedMutations.Pesquisar(_requiredMutations[i])) return false;
+            if (!(targetPiece.AppliedMutations.Contains(_requiredMutations[i]))) return false;
         }
         return true;
     }

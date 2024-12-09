@@ -65,7 +65,7 @@ public class MutationList : MonoBehaviour
     {
         var root = GetComponent<UIDocument>().rootVisualElement;
         VisualElement.Hierarchy mutationHierarchy = root.Q<VisualElement>("mutation-list").Q<VisualElement>("unity-content-container").hierarchy;
-        List<Nodo<MutationBase>> list = _actualPiece.AppliedMutations.Nodos();
+        List<MutationBase> list = _actualPiece.AppliedMutations;
         Debug.Log(mutationHierarchy.childCount);
         Debug.Log(list.Count);
         for (int i = 0; i < mutationHierarchy.childCount; i++)
@@ -76,13 +76,13 @@ public class MutationList : MonoBehaviour
             if (i < list.Count) {
                 VisualElement iconMutation = mutateHierarchy.ElementAt(0);
                 IStyle style = iconMutation.style;
-                StyleBackground newStyleBG = new StyleBackground(list[i].valor.Icon);
+                StyleBackground newStyleBG = new StyleBackground(list[i].Icon);
                 style.backgroundImage = newStyleBG;
                 VisualElement.Hierarchy textsMutation = mutateHierarchy.ElementAt(1).hierarchy;
                 Label newText = textsMutation.ElementAt(0) as Label;
-                newText.text = list[i].valor.Name;
+                newText.text = list[i].Name;
                 newText = textsMutation.ElementAt(1) as Label;
-                newText.text = list[i].valor.Description;
+                newText.text = list[i].Description;
             }
             else
             {
@@ -90,9 +90,9 @@ public class MutationList : MonoBehaviour
             }
         }
 
-        foreach(Nodo<MutationBase> n in _actualPiece.AppliedMutations.Nodos())
+        foreach(MutationBase n in _actualPiece.AppliedMutations)
         {
-            Debug.Log(n.valor.name);
+            Debug.Log(n.name);
         }
     }
     private void SetReferences()
