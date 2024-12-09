@@ -19,6 +19,8 @@ MonoBehaviour:
   _description: "Resgue e despedace!\\n+++++Recupera\xE7\xE3o de fome por carne de
     ca\xE7as pequenas\\n---Recupera\xE7\xE3o de fome por outros alimentos"
   _incompatibleMutations: []
-  _requiredMutations: []
-  _pieceStatusToChange: 
-  _pieceValueToChange: 
+  _requiredMutations:
+  - {fileID: 11400000, guid: f655611aab5928d438452a967e73d82c, type: 2}
+  _isOr: 0
+  _pieceStatusToChange: 0b00000006000000
+  _pieceValueToChange: 28000000f1ffffff

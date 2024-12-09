@@ -19,5 +19,6 @@ MonoBehaviour:
   _description: "Aracnofobia\\n+For\xE7a\\n+Recupera\xE7\xE3o de fome por corpos\\n---Energia"
   _incompatibleMutations: []
   _requiredMutations: []
-  _pieceStatusToChange: 
-  _pieceValueToChange: 
+  _isOr: 0
+  _pieceStatusToChange: 030000000f00000001000000
+  _pieceValueToChange: 08000000050000000f000000

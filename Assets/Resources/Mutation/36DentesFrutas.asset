@@ -19,6 +19,8 @@ MonoBehaviour:
   _description: "Para todas as frutas. S\xF3lidas, liquidas ou gasosas\\n+++++Recupera\xE7\xE3o
     de fome por frutas\\n---Recupera\xE7\xE3o de fome por outros alimentos"
   _incompatibleMutations: []
-  _requiredMutations: []
-  _pieceStatusToChange: 
-  _pieceValueToChange: 
+  _requiredMutations:
+  - {fileID: 11400000, guid: 15b38d359dac85340be91a681df0bffe, type: 2}
+  _isOr: 0
+  _pieceStatusToChange: 060000000c000000
+  _pieceValueToChange: f1ffffff28000000

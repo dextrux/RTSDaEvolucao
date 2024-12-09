@@ -19,6 +19,8 @@ MonoBehaviour:
   _description: "Parecem dentes, mas \xE9 porque s\xE3o mesmo\\n+Recupera\xE7\xE3o
     de fome"
   _incompatibleMutations: []
-  _requiredMutations: []
-  _pieceStatusToChange: 
-  _pieceValueToChange: 
+  _requiredMutations:
+  - {fileID: 11400000, guid: 6261d63ff22ada44a8ca24d3a34baf54, type: 2}
+  _isOr: 0
+  _pieceStatusToChange: 06000000
+  _pieceValueToChange: 05000000

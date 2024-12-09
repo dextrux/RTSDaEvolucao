@@ -19,9 +19,15 @@ MonoBehaviour:
   _description: "Corra como um gato, pique como um gato\\n++++++Energia\\n++Recupera\xE7\xE3o
     de fome por carne\\n--Ataque (Aumenta vastamente a temperatura ideal)(Aumenta
     bastante a umidade ideal)"
-  _incompatibleMutations: []
+  _incompatibleMutations:
+  - {fileID: 11400000, guid: fc019893cc226e24d9e9a546ae02f64a, type: 2}
+  - {fileID: 11400000, guid: c04ceb6f4532b5a43a684d94ff8d2758, type: 2}
+  - {fileID: 11400000, guid: 4f84237d68056ff42a7e1bf4e72e5dd5, type: 2}
+  - {fileID: 11400000, guid: 87ba026451152e64eb37441d594f0e6e, type: 2}
+  - {fileID: 11400000, guid: 6d04dc9f4e85ade46b39f0eb570fc237, type: 2}
   _requiredMutations: []
-  _pieceStatusToChange: 
-  _pieceValueToChange: 
+  _isOr: 0
+  _pieceStatusToChange: 0100000007000000030000001100000010000000
+  _pieceValueToChange: e2ffffff0a000000f6ffffff1900000012000000
   _partToChange: 0
   _visual: {fileID: 0}

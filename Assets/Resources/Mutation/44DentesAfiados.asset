@@ -18,7 +18,10 @@ MonoBehaviour:
   _cost: 1
   _description: "Afiados como facas\\n++Recupera\xE7\xE3o de fome por carne\\n--Recupera\xE7\xE3o
     de fome por n\xE3o-carnes"
-  _incompatibleMutations: []
-  _requiredMutations: []
-  _pieceStatusToChange: 
-  _pieceValueToChange: 
+  _incompatibleMutations:
+  - {fileID: 11400000, guid: 15b38d359dac85340be91a681df0bffe, type: 2}
+  _requiredMutations:
+  - {fileID: 11400000, guid: 9f0d854bdfbcb61458de69daae77dedd, type: 2}
+  _isOr: 0
+  _pieceStatusToChange: 0700000008000000
+  _pieceValueToChange: 0c000000f4ffffff

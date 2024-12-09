@@ -18,9 +18,12 @@ MonoBehaviour:
   _cost: 1
   _description: "Arrancando peda\xE7os a bicadas\\n+Recupera\xE7\xE3o de fome por
     carne\\n-Recupera\xE7\xE3o de fome por n\xE3o-carne"
-  _incompatibleMutations: []
-  _requiredMutations: []
-  _pieceStatusToChange: 
-  _pieceValueToChange: 
+  _incompatibleMutations:
+  - {fileID: 11400000, guid: 30329bb91ba12e54fac2fd41c6a9d8e5, type: 2}
+  _requiredMutations:
+  - {fileID: 11400000, guid: a98f2ce3033477c4bb1b566f3531fc93, type: 2}
+  _isOr: 0
+  _pieceStatusToChange: 0600000007000000
+  _pieceValueToChange: fbffffff0a000000
   _partToChange: 0
   _visual: {fileID: 0}

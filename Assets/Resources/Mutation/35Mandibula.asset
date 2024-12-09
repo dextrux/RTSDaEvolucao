@@ -17,9 +17,11 @@ MonoBehaviour:
   _icon: {fileID: -905509123, guid: eec1a1726a4e56041952953bcf23b6fe, type: 3}
   _cost: 1
   _description: "Esse tem uma mordida forte!\\n+Recupera\xE7\xE3o de fome"
-  _incompatibleMutations: []
+  _incompatibleMutations:
+  - {fileID: 11400000, guid: a98f2ce3033477c4bb1b566f3531fc93, type: 2}
   _requiredMutations: []
-  _pieceStatusToChange: 
-  _pieceValueToChange: 
+  _isOr: 0
+  _pieceStatusToChange: 06000000
+  _pieceValueToChange: 05000000
   _partToChange: 0
   _visual: {fileID: 0}

@@ -19,6 +19,8 @@ MonoBehaviour:
   _description: "Para gr\xE3os e granulados diversos!\\n+++++Recupera\xE7\xE3o de
     fome por gr\xE3os\\n---Recupera\xE7\xE3o de fome por outros alimentos"
   _incompatibleMutations: []
-  _requiredMutations: []
-  _pieceStatusToChange: 
-  _pieceValueToChange: 
+  _requiredMutations:
+  - {fileID: 11400000, guid: 15b38d359dac85340be91a681df0bffe, type: 2}
+  _isOr: 0
+  _pieceStatusToChange: 0d00000006000000
+  _pieceValueToChange: 28000000f1ffffff

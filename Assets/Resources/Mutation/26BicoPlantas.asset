@@ -18,9 +18,13 @@ MonoBehaviour:
   _cost: 1
   _description: "\\nFique forte como um marinheiro! E n\xE3o s\xF3 com espinafre\\n+++++Recupera\xE7\xE3o
     de fome por plantas\\n---Recupera\xE7\xE3o de fome por outros alimentos"
-  _incompatibleMutations: []
-  _requiredMutations: []
-  _pieceStatusToChange: 
-  _pieceValueToChange: 
+  _incompatibleMutations:
+  - {fileID: 11400000, guid: 71735c4e7e798cc48b968222f019fbdf, type: 2}
+  - {fileID: 11400000, guid: 23c604487528816459b1a074fbec870d, type: 2}
+  _requiredMutations:
+  - {fileID: 11400000, guid: 30329bb91ba12e54fac2fd41c6a9d8e5, type: 2}
+  _isOr: 0
+  _pieceStatusToChange: 060000000e000000
+  _pieceValueToChange: f1ffffff28000000
   _partToChange: 0
   _visual: {fileID: 0}

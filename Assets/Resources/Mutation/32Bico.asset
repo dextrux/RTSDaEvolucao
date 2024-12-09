@@ -17,9 +17,11 @@ MonoBehaviour:
   _icon: {fileID: -1218999821, guid: eec1a1726a4e56041952953bcf23b6fe, type: 3}
   _cost: 1
   _description: "Piu piu\\n+Recupera\xE7\xE3o de fome"
-  _incompatibleMutations: []
+  _incompatibleMutations:
+  - {fileID: 11400000, guid: 6261d63ff22ada44a8ca24d3a34baf54, type: 2}
   _requiredMutations: []
-  _pieceStatusToChange: 
-  _pieceValueToChange: 
+  _isOr: 0
+  _pieceStatusToChange: 06000000
+  _pieceValueToChange: 05000000
   _partToChange: 0
   _visual: {fileID: 0}

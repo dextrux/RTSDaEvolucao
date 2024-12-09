@@ -18,9 +18,13 @@ MonoBehaviour:
   _cost: 1
   _description: "Resgue tudo e despedace tudo!\\n+++++Recupera\xE7\xE3o de fome por
     carne de ca\xE7as grandes\\n---Recupera\xE7\xE3o de fome por outros alimentos"
-  _incompatibleMutations: []
-  _requiredMutations: []
-  _pieceStatusToChange: 
-  _pieceValueToChange: 
+  _incompatibleMutations:
+  - {fileID: 11400000, guid: cd4651c4ded85854499b866e8fddb804, type: 2}
+  - {fileID: 11400000, guid: 9e3158a0be405704d9180e19be100553, type: 2}
+  _requiredMutations:
+  - {fileID: 11400000, guid: 2da845d38724a5b49acb7bbf41534246, type: 2}
+  _isOr: 0
+  _pieceStatusToChange: 0600000009000000
+  _pieceValueToChange: f1ffffff28000000
   _partToChange: 0
   _visual: {fileID: 0}
