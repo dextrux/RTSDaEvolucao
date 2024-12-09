@@ -51,7 +51,7 @@ public class Totem : MonoBehaviour
     }
     #endregion
 
-    #region Métodos de Inicialização
+    #region Mï¿½todos de Inicializaï¿½ï¿½o
     private void Awake()
     {
         _renderer = GetComponent<Renderer>();
@@ -59,7 +59,7 @@ public class Totem : MonoBehaviour
     }
     #endregion
 
-    #region Métodos de Ativação e Desativação do Totem
+    #region Mï¿½todos de Ativaï¿½ï¿½o e Desativaï¿½ï¿½o do Totem
     public void ActivateTotem(TotemType totemType)
     {
         TotemType = totemType;
@@ -73,7 +73,7 @@ public class Totem : MonoBehaviour
         {
             if (totemType == TotemType.Ponto_Mutagenico)
             {
-                tile.TileType = TileType.Mutagêncio;
+                tile.TileType = TileType.Mutagï¿½ncio;
             }
             else if (totemType != TotemType.Ponto_Mutagenico)
             {
@@ -99,7 +99,7 @@ public class Totem : MonoBehaviour
     }
     #endregion
 
-    #region Métodos Auxiliares
+    #region Mï¿½todos Auxiliares
     private void UpdateTotemAppearance(TotemType totemType)
     {
         SetTotemPosition(new Vector3(0f,1f,0f));

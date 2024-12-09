@@ -279,6 +279,10 @@ public class Piece : MonoBehaviour
         GameObject.FindFirstObjectByType<RoundManager>().AdicionarPieceEmLista(pieceScript.Owner, piece);
         pieceScript.AppliedMutations.Inserir(pieceScript.MutationBase);
     }
+    public static void InicializarMutation(Piece pieceScript)
+    {
+        Resources.Load<MutationBase>("Mutation/01Herbivore").Mutate(pieceScript);
+    }
 
     public static void SetParent(GameObject parent, GameObject son) { parent.transform.SetParent(son.transform); }
     #endregion
@@ -326,7 +330,7 @@ public class Piece : MonoBehaviour
     #region M�todos de Muta��o e Sa�de
     public bool AddMutation(MutationBase mutationToAdd)
     {
-        if (mutationToAdd.Cost > FindAnyObjectByType<RoundManager>().GetMutationPointOwnerBased(Owner) || _incompatibleMutations.Pesquisar(mutationToAdd))
+        if (mutationToAdd.Cost > FindAnyObjectByType<RoundManager>().GetMutationPointOwnerBased(Owner) || _incompatibleMutations.Pesquisar(mutationToAdd)|| mutationToAdd.IsMutationUnlockable(this))
         {
             return false;
         }

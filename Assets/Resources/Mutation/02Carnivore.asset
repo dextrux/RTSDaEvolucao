@@ -19,5 +19,6 @@ MonoBehaviour:
   _description: "S\xE3o os animais que se alimentam predominantemente de carne, provindo
     de animais vivos ou mortos."
   _incompatibleMutations: []
-  _requiredMutations: []
+  _requiredMutations:
+  - {fileID: 11400000, guid: be735fdb1567a574b92387dcb391b83e, type: 2}
   _newDiet: 1

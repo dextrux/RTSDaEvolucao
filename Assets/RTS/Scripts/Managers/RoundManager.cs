@@ -301,7 +301,6 @@ public class RoundManager : MonoBehaviour
                 Piece.SetParent(newObject, parentP5);
                 break;
             default:
-                Debug.Log("Erro no parenteamento de objeto");
                 break;
         }
         Piece.InicializarPiece(
@@ -311,6 +310,7 @@ public class RoundManager : MonoBehaviour
             owner,
             1
         );
+        Piece.InicializarMutation(newObject.GetComponent<Piece>());
     }
 
     public void AddMutationPoint(Owner pieceOwner)
