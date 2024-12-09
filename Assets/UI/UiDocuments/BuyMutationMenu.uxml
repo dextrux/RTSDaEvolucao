@@ -232,7 +232,7 @@
                                 <ui:Label tabindex="-1" text="Grande\nPorte" parse-escape-sequences="true" display-tooltip-when-elided="true" style="width: 100%; height: 100%; font-size: 30%;" />
                             </ui:VisualElement>
                         </ui:Button>
-                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="bico-plantas-btn" class="available-button" style="left: 630px; top: 540px;">
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="bico-herbivoro-btn" class="available-button" style="left: 630px; top: 540px;">
                             <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=-1341284013&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_59&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="bico-graos-btn" class="available-button" style="left: 735px; top: 540px;">
@@ -261,7 +261,7 @@
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="bico-de-caca-pequena-btn" class="available-button" style="left: 473px; top: 630px;">
                             <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=1318297396&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_86&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
-                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="bico-herbivoro-btn" class="available-button" style="left: 578px; top: 630px;">
+                        <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="bico-plantas-btn" class="available-button" style="left: 578px; top: 630px;">
                             <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=-1341284013&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_59&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="bico-fruta-btn" class="available-button" style="left: 683px; top: 630px;">
@@ -376,7 +376,7 @@
                             </ui:VisualElement>
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="dentes-btn" class="available-button" style="left: 158px; top: 990px;">
-                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=-1121850796&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_48&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
+                            <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=623215864&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_51&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />
                         </ui:Button>
                         <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="dentes-quadrados-btn" class="available-button" style="left: 263px; top: 990px; visibility: visible;">
                             <ui:VisualElement style="flex-grow: 1; background-image: url(&apos;project://database/Assets/UI/Sprites/iconesMutacao.png?fileID=-1121850796&amp;guid=eec1a1726a4e56041952953bcf23b6fe&amp;type=3#iconesMutacao_48&apos;); -unity-background-scale-mode: scale-to-fit; width: 80%; height: 80%; align-self: center;" />

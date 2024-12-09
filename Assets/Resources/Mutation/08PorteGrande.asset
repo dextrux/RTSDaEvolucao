@@ -17,9 +17,12 @@ MonoBehaviour:
   _icon: {fileID: -26768048, guid: eec1a1726a4e56041952953bcf23b6fe, type: 3}
   _cost: 1
   _description: "Os maiores pacotes t\xEAm as maiores surpresas\\n++For\xE7a\\n---Energia"
-  _incompatibleMutations: []
+  _incompatibleMutations:
+  - {fileID: 11400000, guid: dbb0f650127aae941ada7f791d7893ef, type: 2}
+  - {fileID: 11400000}
   _requiredMutations: []
-  _pieceStatusToChange: 
-  _pieceValueToChange: 
+  _isOr: 0
+  _pieceStatusToChange: 0300000001000000
+  _pieceValueToChange: 0a0000000f000000
   _partToChange: 0
   _visual: {fileID: 0}

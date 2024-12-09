@@ -21,5 +21,6 @@ MonoBehaviour:
     de fome por n\xE3o-carnes\\n--Popula\xE7\xE3o"
   _incompatibleMutations: []
   _requiredMutations: []
-  _pieceStatusToChange: 
-  _pieceValueToChange: 
+  _isOr: 0
+  _pieceStatusToChange: 0f000000070000000800000004000000
+  _pieceValueToChange: 0f0000000f000000ecfffffff6ffffff

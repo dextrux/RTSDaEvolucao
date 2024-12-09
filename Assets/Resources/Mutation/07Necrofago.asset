@@ -20,5 +20,6 @@ MonoBehaviour:
     de fome por corpos\\n---Energia"
   _incompatibleMutations: []
   _requiredMutations: []
-  _pieceStatusToChange: 
-  _pieceValueToChange: 
+  _isOr: 0
+  _pieceStatusToChange: 0f00000001000000
+  _pieceValueToChange: 0f00000014000000

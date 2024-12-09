@@ -281,6 +281,7 @@ MonoBehaviour:
   _p3MutationPoint: 0
   _p4MutationPoint: 0
   _p5MutationPoint: 0
+  _gameOverUi: {fileID: 0}
   _tilesUnderBigDissaster: []
   _tilesUnderSmallDissaster: []
   _indexDesastreMenor: 0
@@ -1306,6 +1307,38 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f0ccda98647c9194db7b8c45b23e5eeb, type: 2}
   - {fileID: 11400000, guid: fb7471fb0898e5941a2a99531549423d, type: 2}
   - {fileID: 11400000, guid: 883a0cd0a4fc3c54aafc0409f465a1ed, type: 2}
+  - {fileID: 11400000, guid: bb6cb2d12201d8f4fb3a8cd25861790c, type: 2}
+  - {fileID: 11400000, guid: dbb0f650127aae941ada7f791d7893ef, type: 2}
+  - {fileID: 11400000, guid: 30329bb91ba12e54fac2fd41c6a9d8e5, type: 2}
+  - {fileID: 11400000, guid: 23c604487528816459b1a074fbec870d, type: 2}
+  - {fileID: 11400000, guid: b617f27347ef7d049b5d6945abb9ceca, type: 2}
+  - {fileID: 11400000, guid: 9e3158a0be405704d9180e19be100553, type: 2}
+  - {fileID: 11400000, guid: 6577348c7161e6e47aa400a88706224d, type: 2}
+  - {fileID: 11400000, guid: 71735c4e7e798cc48b968222f019fbdf, type: 2}
+  - {fileID: 11400000, guid: e3eb10b94946057479861d1c9a612c0a, type: 2}
+  - {fileID: 11400000, guid: 32c6f8c98322bc147a236f94acb97a22, type: 2}
+  - {fileID: 11400000, guid: cd4651c4ded85854499b866e8fddb804, type: 2}
+  - {fileID: 11400000, guid: 2da845d38724a5b49acb7bbf41534246, type: 2}
+  - {fileID: 11400000, guid: a98f2ce3033477c4bb1b566f3531fc93, type: 2}
+  - {fileID: 11400000, guid: 859b0e90472e5194f93925abce252793, type: 2}
+  - {fileID: 11400000, guid: e848e0becad6b81428fca6f87c9d26f2, type: 2}
+  - {fileID: 11400000, guid: 6261d63ff22ada44a8ca24d3a34baf54, type: 2}
+  - {fileID: 11400000, guid: 5f6bd4516621747448003ced958dbcf1, type: 2}
+  - {fileID: 11400000, guid: fc019893cc226e24d9e9a546ae02f64a, type: 2}
+  - {fileID: 11400000, guid: 9f0d854bdfbcb61458de69daae77dedd, type: 2}
+  - {fileID: 11400000, guid: 15b38d359dac85340be91a681df0bffe, type: 2}
+  - {fileID: 11400000, guid: a6d34c2bdc93be3418b63aeeeb6eff5d, type: 2}
+  - {fileID: 11400000, guid: c04ceb6f4532b5a43a684d94ff8d2758, type: 2}
+  - {fileID: 11400000, guid: 4f84237d68056ff42a7e1bf4e72e5dd5, type: 2}
+  - {fileID: 11400000, guid: be4ef2dbc1c0f7442b427c962d556821, type: 2}
+  - {fileID: 11400000, guid: f655611aab5928d438452a967e73d82c, type: 2}
+  - {fileID: 11400000, guid: e991e7a1e8244074987a1db4033f30d3, type: 2}
+  - {fileID: 11400000, guid: 867e4a4c1ef16ce419e34e6e8356949a, type: 2}
+  - {fileID: 11400000, guid: 87ba026451152e64eb37441d594f0e6e, type: 2}
+  - {fileID: 11400000, guid: 301cc26893eb2374d8a60bef718340b8, type: 2}
+  - {fileID: 11400000, guid: 74e93a75d35f92f48b7e40c40c14fe04, type: 2}
+  - {fileID: 11400000, guid: 0ff730e548c878e4a9c8dce57a5eaac1, type: 2}
+  - {fileID: 11400000, guid: 6d04dc9f4e85ade46b39f0eb570fc237, type: 2}
   _playerRaycast: {fileID: 961739755}
   _ingameUi: {fileID: 9445385}
   _buttonConfirmation: {fileID: 8300000, guid: 7944c35f712ee8341854a7b2ba96d8b4, type: 3}

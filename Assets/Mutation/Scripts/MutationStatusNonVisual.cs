@@ -16,7 +16,7 @@ public class MutationStatusNonVisual : MutationBase
         for (int i = 0; i < _pieceStatusToChange.Length; i++)
         {
             switch (_pieceStatusToChange[i])
-            {
+            {/*
                 case Status.Health:
                     targetPiece.Health.StatusAdjustSum(_pieceValueToChange[i]);
                     break;
@@ -37,7 +37,7 @@ public class MutationStatusNonVisual : MutationBase
                     break;
                 case Status.Temperature:
                     targetPiece.Temperature.IncreaseByValue(_pieceValueToChange[i]);
-                    break;
+                    break;*/
             }
         }
     }

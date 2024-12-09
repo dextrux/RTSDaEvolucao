@@ -19,6 +19,9 @@ MonoBehaviour:
   _description: "N\xE3o podem te matar se n\xE3o podem te alcan\xE7ar\\n+++++Energia\\n---Popula\xE7\xE3o"
   _incompatibleMutations:
   - {fileID: 11400000, guid: f7b4321efcfed894ca63376259a550ec, type: 2}
-  _requiredMutations: []
-  _pieceStatusToChange: 
-  _pieceValueToChange: 
+  _requiredMutations:
+  - {fileID: 11400000, guid: dbb0f650127aae941ada7f791d7893ef, type: 2}
+  - {fileID: 11400000, guid: e0d5dbf5793be66418e5c503f072c639, type: 2}
+  _isOr: 1
+  _pieceStatusToChange: 0100000004000000
+  _pieceValueToChange: e7fffffff1ffffff

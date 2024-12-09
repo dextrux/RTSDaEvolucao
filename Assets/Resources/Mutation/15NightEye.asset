@@ -16,11 +16,14 @@ MonoBehaviour:
   _name: Olho Noturno
   _icon: {fileID: 570274833, guid: eec1a1726a4e56041952953bcf23b6fe, type: 3}
   _cost: 1
-  _description: 
+  _description: "Seja uma das criaturas da noite\\n+++For\xE7a\\n++++Energia (Efetivo
+    apenas durante a noite)\\n---For\xE7a\\n----Energia (Efetivo apenas durante o
+    dia"
   _incompatibleMutations:
   - {fileID: 11400000, guid: c303e90cb18f0244cb0c05f98186f587, type: 2}
   _requiredMutations: []
-  _pieceStatusToChange: 
-  _pieceValueToChange: 
+  _isOr: 0
+  _pieceStatusToChange: 0300000001000000
+  _pieceValueToChange: 0f00000005000000
   _partToChange: 0
   _visual: {fileID: 0}

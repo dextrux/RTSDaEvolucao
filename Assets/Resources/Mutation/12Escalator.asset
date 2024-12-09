@@ -18,6 +18,9 @@ MonoBehaviour:
   _cost: 1
   _description: "Espero que n\xE3o tenha medo de altura\\n+++++Energia\\n----Ataque\\n-Popula\xE7\xE3o"
   _incompatibleMutations: []
-  _requiredMutations: []
-  _pieceStatusToChange: 
-  _pieceValueToChange: 
+  _requiredMutations:
+  - {fileID: 11400000, guid: e0d5dbf5793be66418e5c503f072c639, type: 2}
+  - {fileID: 11400000, guid: f7b4321efcfed894ca63376259a550ec, type: 2}
+  _isOr: 1
+  _pieceStatusToChange: 010000000300000004000000
+  _pieceValueToChange: e7ffffffecfffffffbffffff

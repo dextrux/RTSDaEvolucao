@@ -1,10 +1,21 @@
 public enum Status
 {
-    Health,
-    Energy,
-    Fertility,
-    Strenght,
-    Hunger,
-    Humidity,
-    Temperature
+    Energia,
+    ReducaoEnergia,
+    Fertilidade,
+    Forca,
+    Populacao,
+    RecuperacaoPopulacao,
+    FomeGeral,
+    FomeCarne,
+    FomeHerb,
+    FomeCacaG,
+    FomeCacaM,
+    FomeCacaP,
+    FomeFruta,
+    FomeNoz,
+    FomePlanta,
+    FomeCorpo,
+    Humidade,
+    Temperatura
 }

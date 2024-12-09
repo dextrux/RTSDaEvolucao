@@ -20,5 +20,6 @@ MonoBehaviour:
     de fertilidade\\n+Popula\xE7\xE3o\\n---Ataque\\n--Energia"
   _incompatibleMutations: []
   _requiredMutations: []
-  _pieceStatusToChange: 
-  _pieceValueToChange: 
+  _isOr: 0
+  _pieceStatusToChange: 02000000040000000300000001000000
+  _pieceValueToChange: 0c00000005000000f1ffffff0a000000

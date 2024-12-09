@@ -20,5 +20,6 @@ MonoBehaviour:
   _incompatibleMutations:
   - {fileID: 11400000, guid: bcc10ca8cbc6a9d4888720d81e2c0daf, type: 2}
   _requiredMutations: []
-  _pieceStatusToChange: 
-  _pieceValueToChange: 
+  _isOr: 0
+  _pieceStatusToChange: 010000000300000000000000
+  _pieceValueToChange: ecfffffff1fffffffbffffff

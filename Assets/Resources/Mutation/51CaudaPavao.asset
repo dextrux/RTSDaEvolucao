@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abb0b490ec643e54a9d7778f9759bb52, type: 3}
+  m_Name: 51CaudaPavao
+  m_EditorClassIdentifier: 
+  _id: 51
+  _name: Cauda Pequena
+  _icon: {fileID: 22694823, guid: eec1a1726a4e56041952953bcf23b6fe, type: 3}
+  _cost: 1
+  _description: "\\nPara ter tudo que voc\xEA almeja, sempre \xE9 preciso um rabo
+    estiloso\\n+++++Recupera\xE7\xE3o de fertilidade\\n++Popula\xE7\xE3o\\n---Ataque\\n----Energia
+    (Diminui ridiculamente a temperatura ideal) (Diminui bastante a umidade ideal)"
+  _incompatibleMutations: []
+  _requiredMutations: []
+  _pieceStatusToChange: 
+  _pieceValueToChange: 
+  _partToChange: 0
+  _visual: {fileID: 0}

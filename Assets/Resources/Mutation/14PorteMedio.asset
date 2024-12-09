@@ -19,8 +19,10 @@ MonoBehaviour:
   _description: "Os m\xE9dios pacotes t\xEAm as maiores surpresas\\n++Energia\\n-For\xE7a"
   _incompatibleMutations:
   - {fileID: 11400000, guid: f7b4321efcfed894ca63376259a550ec, type: 2}
+  - {fileID: 11400000, guid: dbb0f650127aae941ada7f791d7893ef, type: 2}
   _requiredMutations: []
-  _pieceStatusToChange: 
-  _pieceValueToChange: 
+  _isOr: 0
+  _pieceStatusToChange: 0100000003000000
+  _pieceValueToChange: f6fffffffbffffff
   _partToChange: 0
   _visual: {fileID: 0}

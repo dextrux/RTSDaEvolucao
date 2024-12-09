@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 282d1cd54e98b1445b4251f0cf0dee45, type: 3}
+  m_Name: 36DentesFrutas
+  m_EditorClassIdentifier: 
+  _id: 36
+  _name: Dentes de Fruta
+  _icon: {fileID: -602144183, guid: eec1a1726a4e56041952953bcf23b6fe, type: 3}
+  _cost: 1
+  _description: "Para todas as frutas. S\xF3lidas, liquidas ou gasosas\\n+++++Recupera\xE7\xE3o
+    de fome por frutas\\n---Recupera\xE7\xE3o de fome por outros alimentos"
+  _incompatibleMutations: []
+  _requiredMutations: []
+  _pieceStatusToChange: 
+  _pieceValueToChange: 
