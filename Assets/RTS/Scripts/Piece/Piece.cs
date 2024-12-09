@@ -340,10 +340,9 @@ public class Piece : MonoBehaviour
         }
         mutationToAdd.Mutate(this);
 
-        if (_appliedMutations.Altura() <= 0)
-        {
-            analytics.SetTempoPrimeiraCompra();
-        }
+
+        analytics.SetTempoPrimeiraCompra();
+        analytics.SetTempoPrimeiraCompra();
         analytics.SetNumeroTotalCompras();
         analytics.SetMaximoMutacoesCriatura(_appliedMutations);
         analytics.SetMinimoMutacoesCriatura(_appliedMutations);
