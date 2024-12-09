@@ -751,6 +751,48 @@ public class RoundManager : MonoBehaviour
     #endregion
 
     #region Listas
+
+    public bool VerificarSeExisteAction()
+    {
+        bool flag = false;
+        foreach (var piece in _P1Pieces)
+        {
+            if (piece.GetComponent<Piece>().IsDuringAction)
+            {
+                flag = true;
+            }
+        }
+        foreach (var piece in _P2Pieces)
+        {
+            if (piece.GetComponent<Piece>().IsDuringAction)
+            {
+                flag = true;
+            }
+        }
+        foreach (var piece in _P3Pieces)
+        {
+            if (piece.GetComponent<Piece>().IsDuringAction)
+            {
+                flag = true;
+            }
+        }
+        foreach (var piece in _P4Pieces)
+        {
+            if (piece.GetComponent<Piece>().IsDuringAction)
+            {
+                flag = true;
+            }
+        }
+        foreach (var piece in _P5Pieces)
+        {
+            if (piece.GetComponent<Piece>().IsDuringAction)
+            {
+                flag = true;
+            }
+        }
+        return flag;
+    }
+
     // M�todo para criar uma lista aninhada fict�cia (apenas para teste)
     public List<List<GameObject>> GetNestedList(List<GameObject> innerList)
     {
