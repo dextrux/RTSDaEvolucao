@@ -33,4 +33,16 @@ public class Cladograma : MonoBehaviour
             Debug.Log(nome);
         }
     }
+
+    public List<string> PassaCladoPlayer(int jogador)
+    {
+        if(jogador == 1)
+        {
+            return cladogramaP1;
+        }
+        else
+        {
+            return cladogramaP2;
+        }
+    }
 }
