@@ -240,6 +240,12 @@ public class Analytics : MonoBehaviour
         }
     }
 
+    public void FoiAtingidoPorDesastre()
+    {
+        jogador.foiAtingidoCatastrofe = true;
+        jogador.foiAtingidoDesastreP = true;
+    }
+
     string URL = "https://docs.google.com/forms/u/0/d/e/1FAIpQLScn-iboINz7MOOKNJ63QUv87ef1BjUW1s-XNvPuLdqK05B9ww/formResponse";
     private void Send()
     {

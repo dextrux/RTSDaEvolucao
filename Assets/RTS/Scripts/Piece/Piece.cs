@@ -400,6 +400,8 @@ public class Piece : MonoBehaviour
     {
         if (IsUnderDesastre)
         {
+            analytics.FoiAtingidoPorDesastre();
+
             Tile tile = PieceRaycastForTile();
             if (tile == null) return;
             float healthLoss;
