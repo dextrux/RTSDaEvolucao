@@ -193,7 +193,7 @@ public class Piece : MonoBehaviour
         {
             attacker.PieceRaycastForTile().Totem.GetComponent<Totem>().ActivateTotem(TotemType.Corpo);
             GameObject.Destroy(attacker.gameObject);
-            GameObject.FindAnyObjectByType<RoundManager>().RemoverPieceEmLista(attacker.Owner, attacker.gameObject);
+            GameObject.FindAnyObjectByType<RoundManager>().PieceMorreu(attacker.Owner, attacker.gameObject);
 
             #region Analytics Combate
             analytics.SetPecasEliminadas();
@@ -204,7 +204,7 @@ public class Piece : MonoBehaviour
         {
             defender.PieceRaycastForTile().Totem.GetComponent<Totem>().ActivateTotem(TotemType.Corpo);
             GameObject.Destroy(defender.gameObject);
-            GameObject.FindAnyObjectByType<RoundManager>().RemoverPieceEmLista(defender.Owner, defender.gameObject);
+            GameObject.FindAnyObjectByType<RoundManager>().PieceMorreu(defender.Owner, defender.gameObject);
 
             attacker.StartCoroutine(Walk(attacker, targetTile, true, attacker.PieceRaycastForTile()));
             analytics.SetPecasMortas();
@@ -402,7 +402,7 @@ public class Piece : MonoBehaviour
             }
             else
             {
-                FindAnyObjectByType<RoundManager>().RemoverPieceEmLista(this.Owner, this.gameObject);
+                FindAnyObjectByType<RoundManager>().PieceMorreu(this.Owner, this.gameObject);
             }
         }
     }
