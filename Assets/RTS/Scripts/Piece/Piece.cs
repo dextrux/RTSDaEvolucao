@@ -106,9 +106,9 @@ public class Piece : MonoBehaviour
         Vector3 targetPos = new Vector3(targetTile.transform.position.x, 5, targetTile.transform.position.z);
 
         float elapsed = 0;
-        while (elapsed < 3f)
+        while (elapsed < 1f)
         {
-            piece.transform.position = Vector3.Lerp(startPos, targetPos, elapsed / 3f);
+            piece.transform.position = Vector3.Lerp(startPos, targetPos, elapsed / 1f);
             elapsed += Time.deltaTime;
             yield return null;
         }
