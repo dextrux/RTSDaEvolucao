@@ -545,7 +545,7 @@ public class RoundManager : MonoBehaviour
     int DefinirProporcaoComida()
     {
         System.Random random = new System.Random();
-        return random.Next(1, 6);
+        return random.Next(0, 6);
     }
     void AtivarTotensComida(List<GameObject> list)
     {

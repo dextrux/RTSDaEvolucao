@@ -139,14 +139,20 @@ public class Piece : MonoBehaviour
         {
             float multiplier = pieceScript.GetDietMultiplier(totem.TotemType);
             pieceScript.Hunger.CurrentBarValue += multiplier * totem.FoodQuantity;
+            totem.DeactivateTotem();
         }
         else if (totem.TotemType == TotemType.Ponto_Mutagenico)
         {
-            GameObject.FindAnyObjectByType<RoundManager>().AddMutationPoint(pieceScript.Owner);
-            GameObject.FindAnyObjectByType<InGameUi>().UpdateMutationPointText();
+            if (walk  == true)
+            {
+                GameObject.FindAnyObjectByType<RoundManager>().AddMutationPoint(pieceScript.Owner);
+                GameObject.FindAnyObjectByType<InGameUi>().UpdateMutationPointText();
+                totem.DeactivateTotem();
+            }
+
 
         }
-        totem.DeactivateTotem();
+        
         if (walk)
         {
             pieceScript.StartCoroutine(Walk(pieceScript, tile, true, LastTile));
