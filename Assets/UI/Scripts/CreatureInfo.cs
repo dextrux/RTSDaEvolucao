@@ -127,8 +127,8 @@ public class CreatureInfo : MonoBehaviour
     }
     private void SetTileRefs()
     {
-        _tileHumidityTxt.text = _actualTile.Humidity.CurrentValue + "%";
-        _tileTemperatureTxt.text = _actualTile.Temperature.CurrentValue + "ºC";
+        _tileHumidityTxt.text = Mathf.Round(_actualTile.Humidity.CurrentValue) + "%";
+        _tileTemperatureTxt.text = Mathf.Round(_actualTile.Temperature.CurrentValue) + "ºC";
         if (_actualTile.Biome == Biome.Caatinga)
         {
             _tileBiome.AddToClassList("caatinga-visual");
