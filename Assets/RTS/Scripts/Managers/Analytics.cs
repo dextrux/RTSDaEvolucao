@@ -1,3 +1,4 @@
+using ArvoreAVL;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -69,9 +70,10 @@ public class Analytics : MonoBehaviour
         jogador.nTotalCompras++;
     }
 
-    public void SetMinimoMutacoesCriatura(List<MutationBase> mutacoes)
+    public void SetMinimoMutacoesCriatura(ArvoreAVL<MutationBase> mutacoes)
     {
-        int nMutacoes = mutacoes.Count();
+        List<Nodo<MutationBase>> listaMutacoes = mutacoes.Nodos();
+        int nMutacoes = listaMutacoes.Count();
 
         if (nMutacoes < jogador.nMinimoMutacoes1Peca)
         {
@@ -79,13 +81,14 @@ public class Analytics : MonoBehaviour
         }
     }
 
-    public void SetMaximoMutacoesCriatura(List<MutationBase> mutacoes)
+    public void SetMaximoMutacoesCriatura(ArvoreAVL<MutationBase> mutacoes)
     {
-        int Mutacoes = mutacoes.Count();
+        List<Nodo<MutationBase>> listaMutacoes = mutacoes.Nodos();
+        int nMutacoes = listaMutacoes.Count();
 
-        if (Mutacoes > jogador.nMaximoMutacoes1Peca)
+        if (nMutacoes > jogador.nMaximoMutacoes1Peca)
         {
-            jogador.nMaximoMutacoes1Peca = Mutacoes;
+            jogador.nMaximoMutacoes1Peca = nMutacoes;
         }
     }
 
@@ -151,6 +154,9 @@ public class Analytics : MonoBehaviour
 
     public void SetNumeroMutacoesHerbCarn(string nomeMutacao)
     {
+
+        Debug.Log($"Mutacao: {nomeMutacao}");
+
         //switch carnivoras
         switch (nomeMutacao)
         {
@@ -251,7 +257,7 @@ public class Analytics : MonoBehaviour
         WWWForm form = new WWWForm();
 
         //Tempo ate primeira compra
-        if(j.tempoAtePrimeiraCompra == 0)
+        if (j.tempoAtePrimeiraCompra == 0)
         {
             form.AddField("entry.766786925", "Não houve compra");
         }

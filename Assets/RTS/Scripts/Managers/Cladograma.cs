@@ -9,7 +9,7 @@ public class Cladograma : MonoBehaviour
 
     public void AddListaClado(Owner owner, string nomeMutacao)
     {
-        if(owner == Owner.P1)
+        if (owner == Owner.P1)
         {
             cladogramaP1.Add(nomeMutacao);
         }
@@ -36,7 +36,7 @@ public class Cladograma : MonoBehaviour
 
     public List<string> PassaCladoPlayer(int jogador)
     {
-        if(jogador == 1)
+        if (jogador == 1)
         {
             return cladogramaP1;
         }
