@@ -104,9 +104,9 @@ public class Piece : MonoBehaviour
         Vector3 targetPos = new Vector3(targetTile.transform.position.x, 5, targetTile.transform.position.z);
 
         float elapsed = 0;
-        while (elapsed < 3f)
+        while (elapsed < 1f)
         {
-            piece.transform.position = Vector3.Lerp(startPos, targetPos, elapsed / 3f);
+            piece.transform.position = Vector3.Lerp(startPos, targetPos, elapsed / 1f);
             elapsed += Time.deltaTime;
             yield return null;
         }
@@ -191,7 +191,7 @@ public class Piece : MonoBehaviour
         {
             attacker.PieceRaycastForTile().Totem.GetComponent<Totem>().ActivateTotem(TotemType.Corpo);
             GameObject.Destroy(attacker.gameObject);
-            GameObject.FindAnyObjectByType<RoundManager>().RemoverPieceEmLista(attacker.Owner, attacker.gameObject);
+            GameObject.FindAnyObjectByType<RoundManager>().PieceMorreu(attacker.Owner, attacker.gameObject);
 
             #region Analytics Combate
             analytics.SetPecasEliminadas();
@@ -202,7 +202,7 @@ public class Piece : MonoBehaviour
         {
             defender.PieceRaycastForTile().Totem.GetComponent<Totem>().ActivateTotem(TotemType.Corpo);
             GameObject.Destroy(defender.gameObject);
-            GameObject.FindAnyObjectByType<RoundManager>().RemoverPieceEmLista(defender.Owner, defender.gameObject);
+            GameObject.FindAnyObjectByType<RoundManager>().PieceMorreu(defender.Owner, defender.gameObject);
 
             attacker.StartCoroutine(Walk(attacker, targetTile, true, attacker.PieceRaycastForTile()));
             analytics.SetPecasMortas();
@@ -432,7 +432,7 @@ public class Piece : MonoBehaviour
             }
             else
             {
-                FindAnyObjectByType<RoundManager>().RemoverPieceEmLista(this.Owner, this.gameObject);
+                FindAnyObjectByType<RoundManager>().PieceMorreu(this.Owner, this.gameObject);
             }
         }
     }

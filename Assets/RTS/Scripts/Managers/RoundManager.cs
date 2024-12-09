@@ -174,7 +174,7 @@ public class RoundManager : MonoBehaviour
     {
         if (GameOver(Owner.P1) && GameOver(Owner.P2) && GameOver(Owner.P3) && GameOver(Owner.P4) && GameOver(Owner.P5))
         {
-            Time.timeScale = 0;
+            AllPlayersDied();
         }
     }
     #endregion
@@ -720,6 +720,10 @@ public class RoundManager : MonoBehaviour
         }
         return isGameOver;
     }
+    private void AllPlayersDied()
+    {
+       Time.timeScale = 0;
+    }
     private void GameWin()
     {
         List<Owner> WinnerList = new List<Owner>();
@@ -770,6 +774,48 @@ public class RoundManager : MonoBehaviour
     #endregion
 
     #region Listas
+
+    public bool VerificarSeExisteAction()
+    {
+        bool flag = false;
+        foreach (var piece in _P1Pieces)
+        {
+            if (piece.GetComponent<Piece>().IsDuringAction)
+            {
+                flag = true;
+            }
+        }
+        foreach (var piece in _P2Pieces)
+        {
+            if (piece.GetComponent<Piece>().IsDuringAction)
+            {
+                flag = true;
+            }
+        }
+        foreach (var piece in _P3Pieces)
+        {
+            if (piece.GetComponent<Piece>().IsDuringAction)
+            {
+                flag = true;
+            }
+        }
+        foreach (var piece in _P4Pieces)
+        {
+            if (piece.GetComponent<Piece>().IsDuringAction)
+            {
+                flag = true;
+            }
+        }
+        foreach (var piece in _P5Pieces)
+        {
+            if (piece.GetComponent<Piece>().IsDuringAction)
+            {
+                flag = true;
+            }
+        }
+        return flag;
+    }
+
     // M�todo para criar uma lista aninhada fict�cia (apenas para teste)
     public List<List<GameObject>> GetNestedList(List<GameObject> innerList)
     {
@@ -843,7 +889,7 @@ public class RoundManager : MonoBehaviour
         }
     }
 
-    public void RemoverPieceEmLista(Owner owner, GameObject piece)
+    public void PieceMorreu(Owner owner, GameObject piece)
     {
         switch (owner)
         {
@@ -852,11 +898,19 @@ public class RoundManager : MonoBehaviour
                 {
                     _p1Pieces.Remove(piece);
                 }
+                if (_p1Pieces.Count == 0)
+                {
+
+                }
                 break;
             case Owner.P2:
                 if (_p2Pieces.Contains(piece))
                 {
                     _p2Pieces.Remove(piece);
+                }
+                if (_p2Pieces.Count == 0)
+                {
+
                 }
                 break;
             case Owner.P3:
@@ -864,17 +918,29 @@ public class RoundManager : MonoBehaviour
                 {
                     _p3Pieces.Remove(piece);
                 }
+                if (_p3Pieces.Count == 0)
+                {
+
+                }
                 break;
             case Owner.P4:
                 if (_p4Pieces.Contains(piece))
                 {
                     _p4Pieces.Remove(piece);
                 }
+                if (_p4Pieces.Count == 0)
+                {
+
+                }
                 break;
             case Owner.P5:
                 if (_p5Pieces.Contains(piece))
                 {
                     _p5Pieces.Remove(piece);
+                }
+                if (_p5Pieces.Count == 0)
+                {
+
                 }
                 break;
             default:

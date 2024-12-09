@@ -121,42 +121,46 @@ public class InGameUi : MonoBehaviour
     }
     private void OnClickTurnChange(ClickEvent evt)
     {
-        #region Controle Dia e Noite
-        dayNight.ChangeDayNight();
-        #endregion
-
-        _nextTurnAdvice.AddToClassList("turn-screen-open");
-        _roundManager.PassarTurno();
-        ActualTurn = _roundManager._CurrentTurno;
-        for (int i = 0; i < 9; i++)
+        
+        if (!GameObject.FindAnyObjectByType<RoundManager>().VerificarSeExisteAction())
         {
-            if ((ActualTurn - 4 + i) < 0)
+            #region Controle Dia e Noite
+            dayNight.ChangeDayNight();
+            #endregion
+
+            _nextTurnAdvice.AddToClassList("turn-screen-open");
+            _roundManager.PassarTurno();
+            ActualTurn = _roundManager._CurrentTurno;
+            for (int i = 0; i < 9; i++)
             {
-                _barPositions[i].RemoveFromClassList("big-bar__red");
-                _barPositions[i].RemoveFromClassList("big-bar__orange");
-                _barPositions[i].RemoveFromClassList("little-bar");
-                _barPositions[i].AddToClassList("no-bar");
-            }
-            else if ((ActualTurn - 4 + i) % 15 == 0)
-            {
-                _barPositions[i].RemoveFromClassList("big-bar__orange");
-                _barPositions[i].RemoveFromClassList("no-bar");
-                _barPositions[i].RemoveFromClassList("little-bar");
-                _barPositions[i].AddToClassList("big-bar__red");
-            }
-            else if ((ActualTurn - 4 + i) % 5 == 0)
-            {
-                _barPositions[i].RemoveFromClassList("big-bar__red");
-                _barPositions[i].RemoveFromClassList("no-bar");
-                _barPositions[i].RemoveFromClassList("little-bar");
-                _barPositions[i].AddToClassList("big-bar__orange");
-            }
-            else
-            {
-                _barPositions[i].RemoveFromClassList("big-bar__red");
-                _barPositions[i].RemoveFromClassList("big-bar__orange");
-                _barPositions[i].RemoveFromClassList("no-bar");
-                _barPositions[i].AddToClassList("little-bar");
+                if ((ActualTurn - 4 + i) < 0)
+                {
+                    _barPositions[i].RemoveFromClassList("big-bar__red");
+                    _barPositions[i].RemoveFromClassList("big-bar__orange");
+                    _barPositions[i].RemoveFromClassList("little-bar");
+                    _barPositions[i].AddToClassList("no-bar");
+                }
+                else if ((ActualTurn - 4 + i) % 15 == 0)
+                {
+                    _barPositions[i].RemoveFromClassList("big-bar__orange");
+                    _barPositions[i].RemoveFromClassList("no-bar");
+                    _barPositions[i].RemoveFromClassList("little-bar");
+                    _barPositions[i].AddToClassList("big-bar__red");
+                }
+                else if ((ActualTurn - 4 + i) % 5 == 0)
+                {
+                    _barPositions[i].RemoveFromClassList("big-bar__red");
+                    _barPositions[i].RemoveFromClassList("no-bar");
+                    _barPositions[i].RemoveFromClassList("little-bar");
+                    _barPositions[i].AddToClassList("big-bar__orange");
+                }
+                else
+                {
+                    _barPositions[i].RemoveFromClassList("big-bar__red");
+                    _barPositions[i].RemoveFromClassList("big-bar__orange");
+                    _barPositions[i].RemoveFromClassList("no-bar");
+                    _barPositions[i].AddToClassList("little-bar");
+                }
             }
         }
     }
