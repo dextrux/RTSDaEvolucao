@@ -350,7 +350,7 @@ public class Piece : MonoBehaviour
         analytics.SetNumeroMutacoesHerbCarn(mutationToAdd.name);
         analytics.SetTempoMaxCompras();
 
-        //clado.AddListaClado(this._owner, mutationToAdd.name);
+        //clado.AddListaClado(_owner, mutationToAdd.name);
 
         return true;
     }
@@ -361,7 +361,7 @@ public class Piece : MonoBehaviour
             _incompatibleMutations.Add(incompatible);
         }
         mutationToAdd.Mutate(this);
-        //clado.AddListaClado(this._owner, mutationToAdd.name);
+        //clado.AddListaClado(_owner, mutationToAdd.name);
 
         return true;
     }
@@ -371,7 +371,7 @@ public class Piece : MonoBehaviour
         {
             _diet = newDiet;
             _appliedMutations.Remove(Resources.Load<MutationDiet>("Mutation/01Herbivore"));
-            _incompatibleMutations.Add(Resources.Load<MutationDiet>("Mutation/02Carnivore"));
+            _incompatibleMutations.Add(Resources.Load<MutationDiet>("Mutation/01Herbivore"));
             _appliedMutations.Add(Resources.Load<MutationDiet>("Mutation/02Carnivore"));
         }
         else if (newDiet == PieceDiet.Omnivore)
@@ -380,6 +380,11 @@ public class Piece : MonoBehaviour
             _appliedMutations.Remove(Resources.Load<MutationDiet>("Mutation/02Carnivore"));
             _incompatibleMutations.Add(Resources.Load<MutationDiet>("Mutation/02Carnivore"));
             _appliedMutations.Add(Resources.Load<MutationDiet>("Mutation/03Omnivore"));
+        }
+        else
+        {
+            _diet = PieceDiet.Herbivore;
+            _appliedMutations.Add(Resources.Load<MutationDiet>("Mutation/01Herbivore"));
         }
     }
 

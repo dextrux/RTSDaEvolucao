@@ -208,6 +208,7 @@ GameObject:
   - component: {fileID: 42698653}
   - component: {fileID: 42698655}
   - component: {fileID: 42698656}
+  - component: {fileID: 42698657}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -387,6 +388,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 525c5f03e9d55fc47ad2911128864940, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &42698657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42698646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 368bef47d6d6e5c46a744dfda8254f27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &203844586
@@ -1219,6 +1232,8 @@ MonoBehaviour:
   _ingameUi: {fileID: 9445385}
   _buttonConfirmation: {fileID: 8300000, guid: 7944c35f712ee8341854a7b2ba96d8b4, type: 3}
   _buttonDenial: {fileID: 8300000, guid: 6b8b07fb0027e8940b5ff36d8a85f755, type: 3}
+  _applied: []
+  _incompatible: []
 --- !u!114 &1968964556
 MonoBehaviour:
   m_ObjectHideFlags: 0

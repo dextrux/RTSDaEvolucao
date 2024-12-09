@@ -9,7 +9,7 @@ public class MutationDiet : MutationBase
     {
         SetMutation(targetPiece);
     }
-    public virtual void SetMutation(Piece targetPiece)
+    public void SetMutation(Piece targetPiece)
     {
         targetPiece.ChangeDiet(_newDiet);
     }
