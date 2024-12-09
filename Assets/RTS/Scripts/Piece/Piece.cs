@@ -485,9 +485,13 @@ public class Piece : MonoBehaviour
             energyGain = (temperaturaFactor + humidadeFactor) / isDoenteFactor * 2;
 
         }
+        Debug.Log("Energy Gain:" + energyGain);
         this._energyBar.CurrentBarValue += energyGain;
+        Debug.Log("Energy:" + this._energyBar.CurrentBarValue);
         this._fertilityBar.CurrentBarValue += energyGain;
-        this._hungerBar.CurrentBarValue -= energyGain * -1;
+        Debug.Log("Fertility:" + this._fertilityBar.CurrentBarValue);
+        this._hungerBar.CurrentBarValue -= energyGain;
+        Debug.Log("Hunger:" + this._hungerBar.CurrentBarValue);
         AlertHandler.AlertVerificationRoutine(this);
         this.CheckForIllness();
         this.Humidity.CurrentValue = this.PieceRaycastForTile().Humidity.CurrentValue;
