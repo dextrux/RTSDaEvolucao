@@ -9,20 +9,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abb0b490ec643e54a9d7778f9759bb52, type: 3}
-  m_Name: 21PequenoPorte
+  m_Script: {fileID: 11500000, guid: 282d1cd54e98b1445b4251f0cf0dee45, type: 3}
+  m_Name: 21PortePequeno
   m_EditorClassIdentifier: 
-  _id: 21
-  _name: Pequeno Porte
+  _id: 19
+  _name: Pequeno porte
   _icon: {fileID: -625450752, guid: eec1a1726a4e56041952953bcf23b6fe, type: 3}
   _cost: 1
   _description: "\\nOs menores pacotes t\xEAm as maiores surpresas\\n+++Energia\\n--For\xE7a"
   _incompatibleMutations:
-  - {fileID: 11400000, guid: f7b4321efcfed894ca63376259a550ec, type: 2}
-  - {fileID: 11400000, guid: e0d5dbf5793be66418e5c503f072c639, type: 2}
+  - {fileID: 11400000, guid: 726ef873210e9a1448cc965f5c17766b, type: 2}
+  - {fileID: 11400000, guid: 28cca20bb18b6004189db46728f894fb, type: 2}
   _requiredMutations: []
-  _isOr: 0
-  _pieceStatusToChange: 0100000003000000
-  _pieceValueToChange: f1fffffff6ffffff
-  _partToChange: 0
-  _visual: {fileID: 0}
+  _pieceStatusToChange: 030000000100000004000000
+  _pieceValueToChange: f1fffffff6fffffff6ffffff

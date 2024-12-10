@@ -23,8 +23,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6577348c7161e6e47aa400a88706224d, type: 2}
   _requiredMutations:
   - {fileID: 11400000, guid: 30329bb91ba12e54fac2fd41c6a9d8e5, type: 2}
-  _isOr: 0
   _pieceStatusToChange: 0c00000006000000
   _pieceValueToChange: 28000000f1ffffff
   _partToChange: 0
-  _visual: {fileID: 0}
+  _visual: {fileID: -8299654689129407699, guid: 5401a38ea33239444bda316c41b06011,
+    type: 3}

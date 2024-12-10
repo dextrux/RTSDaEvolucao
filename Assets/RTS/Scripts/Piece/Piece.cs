@@ -65,7 +65,10 @@ public class Piece : MonoBehaviour
     [SerializeField] private Transform _caudaCustomizavel;
     [SerializeField] private Transform _bocaCustomizavel;
     [SerializeField] private Transform[] _patasCustomizavel;
-    [SerializeField] private GameObject[] _customizaveisAtivos;
+    [SerializeField] private GameObject _olhoCustomizavelAtivos;
+    [SerializeField] private GameObject _caudaCustomizavelAtivos;
+    [SerializeField] private GameObject _bocaCustomizavelAtivos;
+    [SerializeField] private GameObject[] _maosCustomizavelAtivos;
     [SerializeField] private List<MutationBase> _appliedMutations = new List<MutationBase>();
     [SerializeField] private List<MutationBase> _incompatibleMutations = new List<MutationBase>();
     private float _huntMultiplier;
@@ -403,13 +406,26 @@ public class Piece : MonoBehaviour
         switch (newPart)
         {
             case PieceParts.Olhos:
-
+                if (_olhoCustomizavelAtivos != null) Destroy(_olhoCustomizavelAtivos);
+                Instantiate(newVisual, _olhoCustomizavel.transform.position, _olhoCustomizavel.transform.rotation);
                 break;
             case PieceParts.Boca:
+                if (_bocaCustomizavelAtivos != null) Destroy(_bocaCustomizavelAtivos);
+                Instantiate(newVisual, _bocaCustomizavel.transform.position, _bocaCustomizavel.transform.rotation);
                 break;
             case PieceParts.Rabo:
+                if (_caudaCustomizavelAtivos != null) Destroy(_caudaCustomizavelAtivos);
+                Instantiate(newVisual, _caudaCustomizavel.transform.position, _caudaCustomizavel.transform.rotation);
                 break;
             case PieceParts.Mao:
+                foreach (GameObject g in _maosCustomizavelAtivos)
+                {
+                    if (g != null) Destroy(g);
+                }
+                foreach (Transform t in _patasCustomizavel)
+                {
+                    Instantiate(newVisual, t.transform.position, t.transform.rotation);
+                }
                 break;
         }
     }

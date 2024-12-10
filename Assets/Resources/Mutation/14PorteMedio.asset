@@ -9,20 +9,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abb0b490ec643e54a9d7778f9759bb52, type: 3}
+  m_Script: {fileID: 11500000, guid: 282d1cd54e98b1445b4251f0cf0dee45, type: 3}
   m_Name: 14PorteMedio
   m_EditorClassIdentifier: 
   _id: 14
-  _name: "Porte M\xE9dio"
+  _name: "M\xE9dio Porte"
   _icon: {fileID: -1392464356, guid: eec1a1726a4e56041952953bcf23b6fe, type: 3}
   _cost: 1
   _description: "Os m\xE9dios pacotes t\xEAm as maiores surpresas\\n++Energia\\n-For\xE7a"
   _incompatibleMutations:
-  - {fileID: 11400000, guid: f7b4321efcfed894ca63376259a550ec, type: 2}
+  - {fileID: 11400000, guid: 726ef873210e9a1448cc965f5c17766b, type: 2}
   - {fileID: 11400000, guid: dbb0f650127aae941ada7f791d7893ef, type: 2}
   _requiredMutations: []
-  _isOr: 0
-  _pieceStatusToChange: 0100000003000000
-  _pieceValueToChange: f6fffffffbffffff
-  _partToChange: 0
-  _visual: {fileID: 0}
+  _pieceStatusToChange: 0300000001000000
+  _pieceValueToChange: fbfffffff6ffffff

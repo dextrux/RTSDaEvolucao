@@ -9,20 +9,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abb0b490ec643e54a9d7778f9759bb52, type: 3}
-  m_Name: 08PorteGrande
+  m_Script: {fileID: 11500000, guid: 282d1cd54e98b1445b4251f0cf0dee45, type: 3}
+  m_Name: 08PorteGrange
   m_EditorClassIdentifier: 
   _id: 8
-  _name: Grande Porte
+  _name: Grande Prorte
   _icon: {fileID: -26768048, guid: eec1a1726a4e56041952953bcf23b6fe, type: 3}
   _cost: 1
   _description: "Os maiores pacotes t\xEAm as maiores surpresas\\n++For\xE7a\\n---Energia"
   _incompatibleMutations:
+  - {fileID: 11400000, guid: e0d5dbf5793be66418e5c503f072c639, type: 2}
   - {fileID: 11400000, guid: dbb0f650127aae941ada7f791d7893ef, type: 2}
-  - {fileID: 11400000}
   _requiredMutations: []
-  _isOr: 0
   _pieceStatusToChange: 0300000001000000
   _pieceValueToChange: 0a0000000f000000
-  _partToChange: 0
-  _visual: {fileID: 0}

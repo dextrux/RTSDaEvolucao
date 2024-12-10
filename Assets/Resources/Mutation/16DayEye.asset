@@ -23,5 +23,5 @@ MonoBehaviour:
   _requiredMutations: []
   _pieceStatusToChange: 0300000001000000
   _pieceValueToChange: 0a00000008000000
-  _partToChange: 0
-  _visual: {fileID: 0}
+  _partToChange: 3
+  _visual: {fileID: 2133942003866054844, guid: a10a03e3373fe674bb9757a108fc6d51, type: 3}
