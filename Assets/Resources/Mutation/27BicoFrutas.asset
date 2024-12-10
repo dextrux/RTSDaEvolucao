@@ -26,5 +26,4 @@ MonoBehaviour:
   _pieceStatusToChange: 0c00000006000000
   _pieceValueToChange: 28000000f1ffffff
   _partToChange: 0
-  _visual: {fileID: -8299654689129407699, guid: 5401a38ea33239444bda316c41b06011,
-    type: 3}
+  _visual: {fileID: -462981019419857548, guid: c631909320c141240acd2cfe03868419, type: 3}

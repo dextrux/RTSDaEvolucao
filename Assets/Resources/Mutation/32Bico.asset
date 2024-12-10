@@ -20,8 +20,7 @@ MonoBehaviour:
   _incompatibleMutations:
   - {fileID: 11400000, guid: 6261d63ff22ada44a8ca24d3a34baf54, type: 2}
   _requiredMutations: []
-  _isOr: 0
   _pieceStatusToChange: 06000000
   _pieceValueToChange: 05000000
   _partToChange: 0
-  _visual: {fileID: 0}
+  _visual: {fileID: -462981019419857548, guid: c631909320c141240acd2cfe03868419, type: 3}

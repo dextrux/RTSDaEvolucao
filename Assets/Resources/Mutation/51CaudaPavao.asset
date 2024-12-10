@@ -26,8 +26,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 87ba026451152e64eb37441d594f0e6e, type: 2}
   - {fileID: 11400000, guid: 0ff730e548c878e4a9c8dce57a5eaac1, type: 2}
   _requiredMutations: []
-  _isOr: 0
   _pieceStatusToChange: 020000000400000003000000010000001100000010000000
   _pieceValueToChange: 190000000c000000f1ffffff140000001e000000f1ffffff
   _partToChange: 0
-  _visual: {fileID: 0}
+  _visual: {fileID: -656164957397556796, guid: a706e989cfc7461489398d72b2d71b60, type: 3}

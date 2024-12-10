@@ -5,6 +5,10 @@ using UnityEngine.UIElements;
 
 public class MainMenu : MonoBehaviour
 {
+    VisualElement tutoras;
+    Button tutorasButton;
+
+
     private Button _playBtn;
     private Button _configBtn;
     private Button _configSaveBtn;
