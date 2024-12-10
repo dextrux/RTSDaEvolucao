@@ -353,7 +353,7 @@ public class Piece : MonoBehaviour
         analytics.SetNumeroMutacoesHerbCarn(mutationToAdd.Name);
         analytics.SetTempoMaxCompras();
 
-        //clado.AddListaClado(_owner, mutationToAdd.name);
+        clado.AddListaClado(_owner, mutationToAdd.Name);
 
         return true;
     }
