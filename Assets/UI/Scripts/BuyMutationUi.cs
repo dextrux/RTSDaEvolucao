@@ -118,6 +118,7 @@ public class BuyMutationUi : MonoBehaviour
     }
     public void OnEnableScreen()
     {
+        FindAnyObjectByType<PlayerRaycast>().rayPossible = false;
         SetComponents();
         _buttons[0].RegisterCallback<ClickEvent>(OnClickHerbivoreBtn);
         _buttons[1].RegisterCallback<ClickEvent>(OnClickCarnivoreBtn);
@@ -220,6 +221,7 @@ public class BuyMutationUi : MonoBehaviour
     }
     private void ExitBuyMutation(ClickEvent evt)
     {
+        FindAnyObjectByType<PlayerRaycast>().rayPossible = true;
         SoundManagerSO.PlaySoundFXClip(_buttonDenial, transform.position, 1);
         _playerRaycast.DeselectPiece();
         _ingameUi.CreatureInfoNormal();

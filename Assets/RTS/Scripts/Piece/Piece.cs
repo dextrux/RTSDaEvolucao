@@ -12,6 +12,15 @@ public class Piece : MonoBehaviour
 
     private Cladograma clado;
 
+    private void Update()
+    {
+        if (this.Health.CurrentBarValue <= 0)
+        {
+            GameObject.FindAnyObjectByType<RoundManager>().PieceMorreu(this.Owner, this.gameObject);
+            GameObject.Destroy(this.gameObject);           
+            analytics.SetPecasMortas();
+        }
+    }
     private void Start()
     {
         manager = GameObject.Find("Manager");
@@ -70,6 +79,13 @@ public class Piece : MonoBehaviour
     [SerializeField] private List<MutationBase> _incompatibleMutations = new List<MutationBase>();
     private float _huntMultiplier;
     private float _plantMultiplier;
+    private float _healthMultiplier;
+    private float _energyMultiplier;
+    private float _fertilityMultiplier;
+    private float _hungerMultiplier;
+    private float _strenghtMultiplier;
+    private float _humidityMultiplier;
+    private float _temperatureMultiplier;
     #endregion
 
     #region Propriedades
@@ -89,6 +105,15 @@ public class Piece : MonoBehaviour
     public bool IsDuringAction { get => _isDuringAction; set => _isDuringAction = value; }
     public List<MutationBase> IncompatibleMutations { get => _incompatibleMutations; set => _incompatibleMutations = value; }
     public List<MutationBase> AppliedMutations { get => _appliedMutations; set => _appliedMutations = value; }
+    public float HuntMultiplier { get => _huntMultiplier; set => _huntMultiplier = value; }
+    public float PlantMultiplier { get => _plantMultiplier; set => _plantMultiplier = value; }
+    public float HealthMultiplier { get => _healthMultiplier; set => _healthMultiplier = value; }
+    public float EnergyMultiplier { get => _energyMultiplier; set => _energyMultiplier = value; }
+    public float FertilityMultiplier { get => _fertilityMultiplier; set => _fertilityMultiplier = value; }
+    public float HungerMultiplier { get => _hungerMultiplier; set => _hungerMultiplier = value; }
+    public float StrengthMultiplier { get => _strenghtMultiplier; set => _strenghtMultiplier = value; }
+    public float HumidityMultiplier { get => _humidityMultiplier; set => _humidityMultiplier = value; }
+    public float TemperatureMultiplier { get => _temperatureMultiplier; set => _temperatureMultiplier = value; }
     #endregion
 
     #region Actions
@@ -195,8 +220,9 @@ public class Piece : MonoBehaviour
         if (attacker.Health.CurrentBarValue == attacker.Health.MinBarValue)
         {
             attacker.PieceRaycastForTile().Totem.GetComponent<Totem>().ActivateTotem(TotemType.Corpo);
-            GameObject.Destroy(attacker.gameObject);
             GameObject.FindAnyObjectByType<RoundManager>().PieceMorreu(attacker.Owner, attacker.gameObject);
+
+            GameObject.Destroy(attacker.gameObject);
 
             #region Analytics Combate
             analytics.SetPecasEliminadas();
@@ -206,10 +232,8 @@ public class Piece : MonoBehaviour
         if (defender.Health.CurrentBarValue == defender.Health.MinBarValue)
         {
             defender.PieceRaycastForTile().Totem.GetComponent<Totem>().ActivateTotem(TotemType.Corpo);
-            GameObject.Destroy(defender.gameObject);
             GameObject.FindAnyObjectByType<RoundManager>().PieceMorreu(defender.Owner, defender.gameObject);
-
-            attacker.StartCoroutine(Walk(attacker, targetTile, true, attacker.PieceRaycastForTile()));
+            GameObject.Destroy(defender.gameObject);
             analytics.SetPecasMortas();
         }
         FindAnyObjectByType<InGameUi>().UpdateLifeBarOwnerBase();
@@ -288,6 +312,15 @@ public class Piece : MonoBehaviour
         pieceScript.PieceRaycastForTile().Owner = pieceScript.Owner;
         pieceScript.IsDuringAction = false;
         GameObject.FindFirstObjectByType<RoundManager>().AdicionarPieceEmLista(pieceScript.Owner, piece);
+        pieceScript.HuntMultiplier = 100;
+        pieceScript.PlantMultiplier = 100;
+        pieceScript.HealthMultiplier = 100;
+        pieceScript.EnergyMultiplier = 100;
+        pieceScript.FertilityMultiplier = 100;
+        pieceScript.HungerMultiplier = 100;
+        pieceScript.StrengthMultiplier = 100;
+        pieceScript.HumidityMultiplier = 100;
+        pieceScript.TemperatureMultiplier = 100;
     }
 
     public static void SetParent(GameObject parent, GameObject son) { parent.transform.SetParent(son.transform); }
@@ -506,12 +539,13 @@ public class Piece : MonoBehaviour
             energyGain = (temperaturaFactor + humidadeFactor) / isDoenteFactor * 2;
 
         }
+        this.Health.CurrentBarValue += (energyGain) * _healthMultiplier / 100;
         Debug.Log("Energy Gain:" + energyGain);
-        this._energyBar.CurrentBarValue += energyGain;
+        this._energyBar.CurrentBarValue += (energyGain) * _energyMultiplier / 100;
         Debug.Log("Energy:" + this._energyBar.CurrentBarValue);
-        this._fertilityBar.CurrentBarValue += energyGain;
+        this._fertilityBar.CurrentBarValue += (energyGain) * _fertilityMultiplier / 100;
         Debug.Log("Fertility:" + this._fertilityBar.CurrentBarValue);
-        this._hungerBar.CurrentBarValue -= energyGain;
+        this._hungerBar.CurrentBarValue -= (energyGain) * _hungerMultiplier / 100;
         Debug.Log("Hunger:" + this._hungerBar.CurrentBarValue);
         AlertHandler.AlertVerificationRoutine(this);
         this.CheckForIllness();
