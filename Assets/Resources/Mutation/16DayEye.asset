@@ -16,13 +16,11 @@ MonoBehaviour:
   _name: OlhoDiurno
   _icon: {fileID: 1512521061, guid: eec1a1726a4e56041952953bcf23b6fe, type: 3}
   _cost: 1
-  _description: "\\nSeja uma das criaturas da noite\\n+++For\xE7a\\n++++Energia\\n(Efetivo
-    apenas durante a noite)\\n---For\xE7a\\n----Energia(Efetivo apenas durante o
-    dia)"
+  _description: "\\nViva o olhar sobre o sol\\n+++For\xE7a\\n++++Energia\\n(Efetivo
+    apenas durante o dia)\\n---For\xE7a\\n----Energia(Efetivo apenas durante a noite)"
   _incompatibleMutations:
   - {fileID: 11400000, guid: d249690d189183b47b6400f32716ae50, type: 2}
   _requiredMutations: []
-  _isOr: 0
   _pieceStatusToChange: 0300000001000000
   _pieceValueToChange: 0a00000008000000
   _partToChange: 0

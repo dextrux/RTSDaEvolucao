@@ -86,6 +86,7 @@ public class RoundManager : MonoBehaviour
     [SerializeField]
     private int _p5MutationPoint;
     [SerializeField] private GameObject _gameOverUi;
+    [SerializeField] private GameObject _gameOverUiDeath;
     #endregion
 
     #region Referências Desastre
@@ -340,7 +341,7 @@ public class RoundManager : MonoBehaviour
         switch (pieceOwner)
         {
             case Owner.P1:
-                _p1MutationPoint+= value;
+                _p1MutationPoint += value;
                 break;
             case Owner.P2:
                 _p2MutationPoint += value;
@@ -722,7 +723,8 @@ public class RoundManager : MonoBehaviour
     }
     private void AllPlayersDied()
     {
-       Time.timeScale = 0;
+        Time.timeScale = 0;
+        _gameOverUiDeath.SetActive(true);
     }
     private void GameWin()
     {

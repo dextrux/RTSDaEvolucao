@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 07Necrofago
   m_EditorClassIdentifier: 
   _id: 7
-  _name: Necrofado
+  _name: "Necr\xF3fado"
   _icon: {fileID: 673971037, guid: eec1a1726a4e56041952953bcf23b6fe, type: 3}
   _cost: 1
   _description: "Comida \xE9 um prato melhor servido frio\\n+++Recupera\xE7\xE3o

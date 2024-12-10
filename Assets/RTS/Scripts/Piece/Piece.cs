@@ -61,6 +61,11 @@ public class Piece : MonoBehaviour
 
     #region Muta��o e Multiplicadores
     private int sickCounter;
+    [SerializeField] private Transform _olhoCustomizavel;
+    [SerializeField] private Transform _caudaCustomizavel;
+    [SerializeField] private Transform _bocaCustomizavel;
+    [SerializeField] private Transform[] _patasCustomizavel;
+    [SerializeField] private GameObject[] _customizaveisAtivos;
     [SerializeField] private List<MutationBase> _appliedMutations = new List<MutationBase>();
     [SerializeField] private List<MutationBase> _incompatibleMutations = new List<MutationBase>();
     private float _huntMultiplier;
@@ -143,7 +148,7 @@ public class Piece : MonoBehaviour
         }
         else if (totem.TotemType == TotemType.Ponto_Mutagenico)
         {
-            if (walk  == true)
+            if (walk == true)
             {
                 GameObject.FindAnyObjectByType<RoundManager>().AddMutationPoint(pieceScript.Owner);
                 GameObject.FindAnyObjectByType<InGameUi>().UpdateMutationPointText();
@@ -152,7 +157,7 @@ public class Piece : MonoBehaviour
 
 
         }
-        
+
         if (walk)
         {
             pieceScript.StartCoroutine(Walk(pieceScript, tile, true, LastTile));
@@ -395,7 +400,18 @@ public class Piece : MonoBehaviour
 
     public void SetVisualPart(PieceParts newPart, Mesh newVisual)
     {
+        switch (newPart)
+        {
+            case PieceParts.Olhos:
 
+                break;
+            case PieceParts.Boca:
+                break;
+            case PieceParts.Rabo:
+                break;
+            case PieceParts.Mao:
+                break;
+        }
     }
 
     public void LoseLifeUnderDisastre()

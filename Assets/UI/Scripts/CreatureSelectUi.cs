@@ -23,7 +23,6 @@ public class CreatureSelectUi : MonoBehaviour
     private Label _title;
 
     public List<Button> activePlayers;
-    [SerializeField] private List<Animator> _playerAnimatorList;
     [SerializeField] private SelectionUIManager selectionManager;
     [SerializeField] private Material[] _playersMaterial;
     private Material _selectedMaterial;
@@ -48,11 +47,6 @@ public class CreatureSelectUi : MonoBehaviour
         _skin3Btn = root.Q<Button>("skin3-btn");
         _skin4Btn = root.Q<Button>("skin4-btn");
         _title = root.Q<Label>("customization-title");
-        _playerAnimatorList[0].SetBool("Active", true);
-        _playerAnimatorList[1].SetBool("Active", true);
-        _playerAnimatorList[2].SetBool("Active", false);
-        _playerAnimatorList[3].SetBool("Active", false);
-        _playerAnimatorList[4].SetBool("Active", false);
 
         _playBtn.RegisterCallback<ClickEvent>(OnClickPlay);
         _backBtn.RegisterCallback<ClickEvent>(OnClickBack);
@@ -140,7 +134,6 @@ public class CreatureSelectUi : MonoBehaviour
             _player3ActiveBtn.AddToClassList("internal-player-inactive-button");
             _player3ActiveBtn.text = "Inativo";
             selectionManager.RemoveOwnerOnList(Owner.P3);
-            _playerAnimatorList[2].SetBool("Active", false);
         }
         else
         {
@@ -149,7 +142,6 @@ public class CreatureSelectUi : MonoBehaviour
             _player3ActiveBtn.RemoveFromClassList("internal-player-inactive-button");
             _player3ActiveBtn.text = "Jogador\n3";
             selectionManager.AddOwnerOnList(Owner.P3);
-            _playerAnimatorList[2].SetBool("Active", true);
         }
     }
     private void OnClickActivep4(ClickEvent evt)
@@ -161,7 +153,6 @@ public class CreatureSelectUi : MonoBehaviour
             _player4ActiveBtn.AddToClassList("internal-player-inactive-button");
             _player4ActiveBtn.text = "Inativo";
             selectionManager.RemoveOwnerOnList(Owner.P4);
-            _playerAnimatorList[3].SetBool("Active", false);
         }
         else
         {
@@ -170,7 +161,6 @@ public class CreatureSelectUi : MonoBehaviour
             _player4ActiveBtn.RemoveFromClassList("internal-player-inactive-button");
             _player4ActiveBtn.text = "Jogador\n4";
             selectionManager.AddOwnerOnList(Owner.P4);
-            _playerAnimatorList[3].SetBool("Active", true);
         }
     }
     private void OnClickActivep5(ClickEvent evt)
@@ -182,7 +172,6 @@ public class CreatureSelectUi : MonoBehaviour
             _player5ActiveBtn.AddToClassList("internal-player-inactive-button");
             _player5ActiveBtn.text = "Inativo";
             selectionManager.RemoveOwnerOnList(Owner.P5);
-            _playerAnimatorList[4].SetBool("Active", false);
         }
         else
         {
@@ -191,7 +180,6 @@ public class CreatureSelectUi : MonoBehaviour
             _player5ActiveBtn.RemoveFromClassList("internal-player-inactive-button");
             _player5ActiveBtn.text = "Jogador\n5";
             selectionManager.AddOwnerOnList(Owner.P5);
-            _playerAnimatorList[4].SetBool("Active", true);
         }
     }
 

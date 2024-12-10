@@ -63,6 +63,8 @@ public class BuyMutationUi : MonoBehaviour
             }
         }
         _exitBuyMutation = rootTest.Q<Button>("exit-mutation-btn");
+        _dnaCount = rootTest.Q<Label>("dna-count-txt");
+        _buttons[0] = rootTest.Q<Button>("herbivoro-btn");
         _buttons[1] = rootTest.Q<Button>("carnivoro-btn");
         _buttons[2] = rootTest.Q<Button>("onivoro-btn");
         _buttons[3] = rootTest.Q<Button>("agressivo-btn");
@@ -82,12 +84,12 @@ public class BuyMutationUi : MonoBehaviour
         _buttons[17] = rootTest.Q<Button>("silencioso-btn");
         _buttons[18] = rootTest.Q<Button>("emboscador-btn");
         _buttons[19] = rootTest.Q<Button>("pata-de-urso-btn");
-        _buttons[20] = rootTest.Q<Button>("bico-plantas-btn");
-        _buttons[21] = rootTest.Q<Button>("bico-plantas-btn");
+        _buttons[20] = rootTest.Q<Button>("pequeno-porte-btn");
+        _buttons[21] = rootTest.Q<Button>("bico-herbivoro-btn");
         _buttons[22] = rootTest.Q<Button>("bico-graos-btn");
         _buttons[23] = rootTest.Q<Button>("serras-btn");
         _buttons[24] = rootTest.Q<Button>("bico-de-caca-pequena-btn");
-        _buttons[25] = rootTest.Q<Button>("bico-herbivoro-btn");
+        _buttons[25] = rootTest.Q<Button>("bico-plantas-btn");
         _buttons[26] = rootTest.Q<Button>("bico-fruta-btn");
         _buttons[27] = rootTest.Q<Button>("pata-de-macaco-btn");
         _buttons[28] = rootTest.Q<Button>("quelicera-btn");
@@ -101,17 +103,18 @@ public class BuyMutationUi : MonoBehaviour
         _buttons[36] = rootTest.Q<Button>("cauda-largato-escamado-btn");
         _buttons[37] = rootTest.Q<Button>("dentes-btn");
         _buttons[38] = rootTest.Q<Button>("dentes-quadrados-btn");
-        _buttons[39] = rootTest.Q<Button>("cauda-largato-btn");
-        _buttons[40] = rootTest.Q<Button>("cauda-felpuda-btn");
-        _buttons[41] = rootTest.Q<Button>("dente-caca-media-btn");
-        _buttons[42] = rootTest.Q<Button>("dente-afiado-btn");
-        _buttons[43] = rootTest.Q<Button>("carreiras-dentarias-btn");
-        _buttons[44] = rootTest.Q<Button>("dentes-plantas-btn");
-        _buttons[45] = rootTest.Q<Button>("cauda-felpuda-pequena-btn");
-        _buttons[46] = rootTest.Q<Button>("dente-caca-grande-btn");
-        _buttons[47] = rootTest.Q<Button>("dente-caca-pequena-btn");
-        _buttons[48] = rootTest.Q<Button>("cauda-gato-selvagem-btn");
-        _buttons[49] = rootTest.Q<Button>("plumagem-pavao-btn");
+        _buttons[39] = rootTest.Q<Button>("dentes-graos-btn");
+        _buttons[40] = rootTest.Q<Button>("cauda-largato-btn");
+        _buttons[41] = rootTest.Q<Button>("cauda-felpuda-btn");
+        _buttons[42] = rootTest.Q<Button>("dente-caca-grande-btn");
+        _buttons[43] = rootTest.Q<Button>("dente-afiado-btn");
+        _buttons[44] = rootTest.Q<Button>("carreiras-dentarias-btn");
+        _buttons[45] = rootTest.Q<Button>("dentes-plantas-btn");
+        _buttons[46] = rootTest.Q<Button>("cauda-felpuda-pequena-btn");
+        _buttons[47] = rootTest.Q<Button>("dente-caca-media-btn");
+        _buttons[48] = rootTest.Q<Button>("dente-caca-pequena-btn");
+        _buttons[49] = rootTest.Q<Button>("cauda-gato-selvagem-btn");
+        _buttons[50] = rootTest.Q<Button>("plumagem-pavao-btn");
     }
     public void OnEnableScreen()
     {
@@ -280,7 +283,7 @@ public class BuyMutationUi : MonoBehaviour
         {
             VerifyAll();
             SetButtonVisual(_buttons[_selectedButton], MutationStatus.selected);
-            GameObject.FindAnyObjectByType<RoundManager>().AddMutationPoint(_actualPiece.Owner, _selectedMutation.Cost);
+            GameObject.FindAnyObjectByType<RoundManager>().AddMutationPoint(_actualPiece.Owner, (_selectedMutation.Cost *-1));
             _dnaCount.text = GameObject.FindAnyObjectByType<RoundManager>().GetMutationPointOwnerBased(_actualPiece.Owner).ToString();
         }
     }

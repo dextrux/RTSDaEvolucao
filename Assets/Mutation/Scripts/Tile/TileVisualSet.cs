@@ -13,21 +13,28 @@ public class TileVisualSet : MonoBehaviour
     public void SpawnObjectsTile(Tile tile)
     {
         if (_activeObjectTiles.Length > 0) DespawnObjects();
-        for (int i = 0; i < _spawnPoints.Length; i++)
+        if (tile.tileType == TileType.Barreira)
         {
-            GameObject newObj = Instantiate(TileVisualSingleton.Instance.ObjetoParaInstanciar(tile.biome), _spawnPoints[i].position, Quaternion.Euler(transform.rotation.x, Random.Range(0, 360), transform.rotation.z));
-            _activeObjectTiles[i] = newObj;
+            GameObject newObj = Instantiate(TileVisualSingleton.Instance.ObjetoParaInstanciar(tile.biome, tile.tileType), _spawnPoints[0].position, Quaternion.Euler(0, 0, 0));
+            _activeObjectTiles[0] = newObj;
         }
-        foreach (GameObject obj in _activeObjectTiles)
+        else
         {
-            obj.transform.localScale = new Vector3(Random.Range(0.8f, 1.2f), Random.Range(0.8f, 1.2f), Random.Range(0.8f, 1.2f));
+            for (int i = 1; i < _spawnPoints.Length; i++)
+            {
+                GameObject newObj = Instantiate(TileVisualSingleton.Instance.ObjetoParaInstanciar(tile.biome, tile.tileType), _spawnPoints[i].position, Quaternion.Euler(transform.rotation.x, Random.Range(0, 360), transform.rotation.z));
+                _activeObjectTiles[i] = newObj;
+            }
+            for (int i = 1; i < _spawnPoints.Length; i++)
+            {
+                _activeObjectTiles[i].transform.localScale = new Vector3(Random.Range(0.8f, 1.2f), Random.Range(0.8f, 1.2f), Random.Range(0.8f, 1.2f));
+            }
         }
     }
     private void DespawnObjects()
     {
         for (int i = 0; i < _activeObjectTiles.Length; i++)
         {
-            _activeObjectTiles[i] = null;
             Destroy(_activeObjectTiles[i]);
         }
     }

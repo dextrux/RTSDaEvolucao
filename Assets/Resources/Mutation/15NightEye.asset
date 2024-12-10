@@ -22,7 +22,6 @@ MonoBehaviour:
   _incompatibleMutations:
   - {fileID: 11400000, guid: c303e90cb18f0244cb0c05f98186f587, type: 2}
   _requiredMutations: []
-  _isOr: 0
   _pieceStatusToChange: 0300000001000000
   _pieceValueToChange: 0f00000005000000
   _partToChange: 0

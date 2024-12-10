@@ -9,7 +9,6 @@ public abstract class MutationBase : ScriptableObject, IComparable<MutationBase>
     [SerializeField] private string _description;
     [SerializeField] private MutationBase[] _incompatibleMutations;
     [SerializeField] private MutationBase[] _requiredMutations;
-    [SerializeField] private bool _isOr; 
     public MutationBase[] IncompatibleMutations { get { return _incompatibleMutations; } }
     public int Id { get { return _id; } }
     public int Cost { get { return _cost; } }
@@ -27,22 +26,17 @@ public abstract class MutationBase : ScriptableObject, IComparable<MutationBase>
     }
     public bool IsMutationUnlockable(Piece targetPiece)
     {
-        bool unlock = false;
+        if (targetPiece.AppliedMutations.Contains(this)) return false;
         for (int i = 0; i < _incompatibleMutations.Length; ++i)
         {
             if (targetPiece.AppliedMutations.Contains(_incompatibleMutations[i])) return false;
         }
         for (int i = 0; i < _requiredMutations.Length; i++)
         {
-            if (_isOr)
-            {
-                if ((targetPiece.AppliedMutations.Contains(_requiredMutations[i]))) unlock = true;
-            } else
-            {
-                if (!(targetPiece.AppliedMutations.Contains(_requiredMutations[i]))) unlock = false;
-            }
+            
+                if (!(targetPiece.AppliedMutations.Contains(_requiredMutations[i])))  return false;
         }
-        return unlock;
+        return true;
     }
     public int CompareTo(MutationBase other)
     {

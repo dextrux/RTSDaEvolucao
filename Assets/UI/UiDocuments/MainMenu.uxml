@@ -7,9 +7,10 @@
                 <ui:Button text="Jogar" parse-escape-sequences="true" display-tooltip-when-elided="true" name="play-btn" class="main-menu-button" />
                 <ui:Button text="Opções" parse-escape-sequences="true" display-tooltip-when-elided="true" name="option-btn" class="main-menu-button" />
                 <ui:Button text="Créditos" parse-escape-sequences="true" display-tooltip-when-elided="true" name="credit-btn" class="main-menu-button" />
+                <ui:Button text="Como jogar" parse-escape-sequences="true" display-tooltip-when-elided="true" name="help-btn" class="main-menu-button" />
             </ui:VisualElement>
             <ui:VisualElement name="containerFooter" style="flex-grow: 1; flex-direction: column-reverse; padding-bottom: 10px;">
-                <ui:Label tabindex="-1" text="Versão: 0.8.7" parse-escape-sequences="true" display-tooltip-when-elided="true" name="menu-version-txt" class="main-menu-title" style="font-size: 51px;" />
+                <ui:Label tabindex="-1" text="Versão: 0.9.1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="menu-version-txt" class="main-menu-title" style="font-size: 51px;" />
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="right-container" style="flex-grow: 1; width: 65%; height: 100%;" />
@@ -43,6 +44,21 @@
                 </ui:VisualElement>
                 <ui:Button text="OK" parse-escape-sequences="true" display-tooltip-when-elided="true" name="save-option-btn" class="main-menu-button" style="align-self: center; height: 91px; position: absolute; margin-top: 635px;" />
             </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="howto-container" class="option-closed">
+            <ui:VisualElement name="tuto1" style="flex-grow: 1;" />
+            <ui:VisualElement name="tuto2" style="flex-grow: 1;" />
+            <ui:VisualElement name="tuto3" style="flex-grow: 1;" />
+            <ui:VisualElement name="tuto4" style="flex-grow: 1;" />
+            <ui:VisualElement name="tuto5" style="flex-grow: 1;" />
+            <ui:VisualElement name="tuto6" style="flex-grow: 1;" />
+            <ui:VisualElement name="tuto7" style="flex-grow: 1;" />
+            <ui:VisualElement name="tuto8" style="flex-grow: 1;" />
+            <ui:VisualElement name="tuto9" style="flex-grow: 1;" />
+            <ui:VisualElement name="tuto10" style="flex-grow: 1;" />
+            <ui:VisualElement name="tuto11" style="flex-grow: 1;" />
+            <ui:VisualElement name="tuto12" style="flex-grow: 1;" />
+            <ui:VisualElement name="tuto13" style="flex-grow: 1;" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
