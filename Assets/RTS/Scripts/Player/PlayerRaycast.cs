@@ -1,6 +1,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+using System.Collections.Generic;
+using UnityEngine;
+
 public class PlayerRaycast : MonoBehaviour
 {
     #region Atributos da Classe
@@ -12,6 +15,7 @@ public class PlayerRaycast : MonoBehaviour
     public GameObject Manager;
     [SerializeField] private CreatureInfo _creatureInfo;
     private GameObject chosenTileUpdate;
+    public bool rayPossible = true;
     #endregion
 
     #region Métodos Unity
@@ -50,26 +54,29 @@ public class PlayerRaycast : MonoBehaviour
     #region Métodos de Raycast
     private void MouseRaycast()
     {
-        Vector3 mousePos = Input.mousePosition;
-        Ray ray = mainCamera.ScreenPointToRay(mousePos);
-        RaycastHit hit;
-
-        if (Physics.Raycast(ray, out hit, rayDistance, layerMask))
+        if (rayPossible)
         {
-            Debug.DrawRay(ray.origin, ray.direction * rayDistance, Color.red, 2f);
+            Vector3 mousePos = Input.mousePosition;
+            Ray ray = mainCamera.ScreenPointToRay(mousePos);
+            RaycastHit hit;
 
-            if (hit.collider.CompareTag("Piece"))
+            if (Physics.Raycast(ray, out hit, rayDistance, layerMask))
             {
-                HandlePieceSelection(hit.collider.gameObject);
+                Debug.DrawRay(ray.origin, ray.direction * rayDistance, Color.red, 2f);
+
+                if (hit.collider.CompareTag("Piece"))
+                {
+                    HandlePieceSelection(hit.collider.gameObject);
+                }
+                else if (hit.collider.CompareTag("Tile"))
+                {
+                    HandleTileSelection(hit.collider.gameObject);
+                }
             }
-            else if (hit.collider.CompareTag("Tile"))
+            else
             {
-                HandleTileSelection(hit.collider.gameObject);
+                Debug.DrawRay(ray.origin, ray.direction * rayDistance, Color.green, 2f);
             }
-        }
-        else
-        {
-            Debug.DrawRay(ray.origin, ray.direction * rayDistance, Color.green, 2f);
         }
     }
     #endregion
@@ -90,7 +97,7 @@ public class PlayerRaycast : MonoBehaviour
         }
         else
         {
-            if (selectedObjects[0] != hitPiece) 
+            if (selectedObjects[0] != hitPiece)
             {
                 DeselectPiece();
                 if (!pieceScript.IsDuringAction && pieceScript.Owner == playerCamOwner)
@@ -135,7 +142,7 @@ public class PlayerRaycast : MonoBehaviour
         {
             Piece pieceScript = selectedObjects[0].GetComponent<Piece>();
             FimDoBlink(pieceScript.PieceRaycastForTile());
-            
+
         }
         ResetSelection();
     }
@@ -240,3 +247,4 @@ public class PlayerRaycast : MonoBehaviour
     }
     #endregion
 }
+
