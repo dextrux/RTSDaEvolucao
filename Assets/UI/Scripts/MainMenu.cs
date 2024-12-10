@@ -7,6 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     VisualElement tutoras;
     Button tutorasButton;
+    Button tutorasExit;
 
 
     private Button _playBtn;
@@ -39,6 +40,13 @@ public class MainMenu : MonoBehaviour
         _creditsBtn.RegisterCallback<ClickEvent>(OnClickCredits);
         SoundManagerSO.PlayBGMusicClip(_bgmusic, transform.position, 1);
 
+        tutoras = root.Q<VisualElement>("howto-container");
+        tutorasButton = root.Q<Button>("help-btn");
+        tutorasExit = root.Q<Button>("exit-credit-btn");
+
+        tutorasButton.RegisterCallback<ClickEvent>(OnClickHelp);
+        tutorasButton.RegisterCallback<ClickEvent>(OnClickExitHelp);
+
         _globalVolumeSlider = root.Q<SliderInt>("global-volume-slider");
         _sfxVolumeSlider = root.Q<SliderInt>("sfx-volume-slider");
         _bgmVolumeSlider = root.Q<SliderInt>("bgm-volume-slider");
@@ -57,7 +65,14 @@ public class MainMenu : MonoBehaviour
             PlayerPrefs.SetInt("bgmVolume", (-5));
         }
     }
-
+    private void OnClickExitHelp(ClickEvent evt)
+    {
+        tutoras.AddToClassList("option.closed");
+    }
+    private void OnClickHelp(ClickEvent evt)
+    {
+        tutoras.RemoveFromClassList("option.closed");
+    }
     private void OnClickPlay(ClickEvent evt)
     {
         SoundManagerSO.PlaySoundFXClip(_buttonConfirmation, transform.position, 1);
