@@ -5,9 +5,9 @@ using UnityEngine.UIElements;
 
 public class MainMenu : MonoBehaviour
 {
-    VisualElement tutoras;
-    Button tutorasButton;
-    Button tutorasExit;
+    private VisualElement _tutorialScreen;
+    private Button _tutorialButton;
+    private Button _tutorialExit;
 
 
     private Button _playBtn;
@@ -34,18 +34,16 @@ public class MainMenu : MonoBehaviour
         _configSaveBtn = root.Q<Button>("save-option-btn");
         _creditsBtn = root.Q<Button>("credit-btn");
         _optionsContainer = root.Q<VisualElement>("options-container");
+        _tutorialScreen = root.Q<VisualElement>("howto-container");
+        _tutorialButton = root.Q<Button>("help-btn");
+        _tutorialExit = root.Q<Button>("exit-credit-btn");
         _playBtn.RegisterCallback<ClickEvent>(OnClickPlay);
         _configBtn.RegisterCallback<ClickEvent>(OnClickConfig);
         _configSaveBtn.RegisterCallback<ClickEvent>(OnClickConfigSave);
         _creditsBtn.RegisterCallback<ClickEvent>(OnClickCredits);
+        _tutorialButton.RegisterCallback<ClickEvent>(OnClickHelp);
+        _tutorialExit.RegisterCallback<ClickEvent>(OnClickExitHelp);
         SoundManagerSO.PlayBGMusicClip(_bgmusic, transform.position, 1);
-
-        tutoras = root.Q<VisualElement>("howto-container");
-        tutorasButton = root.Q<Button>("help-btn");
-        tutorasExit = root.Q<Button>("exit-credit-btn");
-
-        tutorasButton.RegisterCallback<ClickEvent>(OnClickHelp);
-        tutorasButton.RegisterCallback<ClickEvent>(OnClickExitHelp);
 
         _globalVolumeSlider = root.Q<SliderInt>("global-volume-slider");
         _sfxVolumeSlider = root.Q<SliderInt>("sfx-volume-slider");
@@ -67,11 +65,13 @@ public class MainMenu : MonoBehaviour
     }
     private void OnClickExitHelp(ClickEvent evt)
     {
-        tutoras.AddToClassList("option.closed");
+        Debug.Log("Help Exit Click");
+        _tutorialScreen.AddToClassList("tutoras-closed");
     }
     private void OnClickHelp(ClickEvent evt)
     {
-        tutoras.RemoveFromClassList("option.closed");
+        Debug.Log("Help Click");
+        _tutorialScreen.RemoveFromClassList("tutoras-closed");
     }
     private void OnClickPlay(ClickEvent evt)
     {

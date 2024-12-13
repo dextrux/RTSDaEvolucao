@@ -69,3 +69,34 @@
     border-left-width: 0;
     scale: 0.9 0.9;
 }
+
+#credit-slider .unity-scroller__low-button {
+    background-color: rgb(57, 44, 33);
+    background-image: url('project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=-229375905&guid=8fbda476e9f56fe40955a8472d8bd40c&type=3#AtlasUITemp_78');
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+}
+
+#credit-slider .unity-base-slider__dragger {
+    background-color: rgb(218, 215, 213);
+    background-image: none;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+    border-bottom-left-radius: 13px;
+    width: 80%;
+    height: 100%;
+    border-left-color: rgb(57, 44, 33);
+    border-right-color: rgb(57, 44, 33);
+    border-top-color: rgb(57, 44, 33);
+    border-bottom-color: rgb(57, 44, 33);
+    border-top-width: 3px;
+    border-right-width: 3px;
+    border-bottom-width: 3px;
+    border-left-width: 3px;
+}
+
+#credit-slider .unity-scroller__high-button {
+    background-color: rgb(57, 44, 33);
+    background-image: url('project://database/Assets/UI/Sprites/AtlasUITemp.png?fileID=396882214&guid=8fbda476e9f56fe40955a8472d8bd40c&type=3#AtlasUITemp_79');
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+}

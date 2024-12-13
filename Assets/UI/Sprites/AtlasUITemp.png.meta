@@ -1845,7 +1845,7 @@ TextureImporter:
         width: 109
         height: 190
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1866,7 +1866,7 @@ TextureImporter:
         width: 111
         height: 190
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1874,6 +1874,48 @@ TextureImporter:
       bones: []
       spriteID: eee9a0e2ba34e9348988bb620ee2bd11
       internalID: -709545454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtlasUITemp_78
+      rect:
+        serializedVersion: 2
+        x: 2224
+        y: 1456
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b53e6207db0d3e34487e18b2859f134a
+      internalID: -229375905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AtlasUITemp_79
+      rect:
+        serializedVersion: 2
+        x: 2224
+        y: 1387
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fa834970825b92498d5e3561e0688a5
+      internalID: 396882214
       vertices: []
       indices: 
       edges: []
