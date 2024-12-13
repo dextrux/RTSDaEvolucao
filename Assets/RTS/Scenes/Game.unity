@@ -1009,6 +1009,7 @@ MonoBehaviour:
   - {fileID: 0}
   Manager: {fileID: 42698646}
   _creatureInfo: {fileID: 327856743}
+  rayPossible: 1
   isBlinking: 0
 --- !u!114 &961739756
 MonoBehaviour:
@@ -1024,6 +1025,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerCamera: {fileID: 961739752}
   moveSpeed: 15
+  inputHorizontalSensitivity: 1
+  inputVerticalSensitivity: 1
+  edgeMoveSpeed: 30
+  edgeSensitivity: 1
+  zoomSpeed: 10
+  minZoom: 20
+  maxZoom: 40
+  zoomSmoothing: 500
 --- !u!1 &982122715
 GameObject:
   m_ObjectHideFlags: 0
