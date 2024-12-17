@@ -1,9 +1,5 @@
 using System.Collections.Generic;
 using UnityEngine;
-
-using System.Collections.Generic;
-using UnityEngine;
-
 public class PlayerRaycast : MonoBehaviour
 {
     #region Atributos da Classe
