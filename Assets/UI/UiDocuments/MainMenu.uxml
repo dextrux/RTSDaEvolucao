@@ -10,41 +10,10 @@
                 <ui:Button text="Como jogar" parse-escape-sequences="true" display-tooltip-when-elided="true" name="help-btn" class="main-menu-button" />
             </ui:VisualElement>
             <ui:VisualElement name="containerFooter" style="flex-grow: 1; flex-direction: column-reverse; padding-bottom: 10px;">
-                <ui:Label tabindex="-1" text="Versão: 1.0.0" parse-escape-sequences="true" display-tooltip-when-elided="true" name="menu-version-txt" class="main-menu-title" style="font-size: 51px;" />
+                <ui:Label tabindex="-1" text="Versão: 1.0.1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="menu-version-txt" class="main-menu-title" style="font-size: 51px;" />
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="right-container" style="flex-grow: 1; width: 65%; height: 100%;" />
-        <ui:VisualElement name="options-container" class="option-closed">
-            <ui:VisualElement name="options-body" style="flex-grow: 1; background-image: none; width: 90%; height: 90%; margin-top: 65px; margin-right: 65px; margin-bottom: 65px; margin-left: 65px; background-color: rgb(250, 187, 120); border-top-left-radius: 17px; border-top-right-radius: 17px; border-bottom-right-radius: 17px; border-bottom-left-radius: 17px;">
-                <ui:Label tabindex="-1" text="Opções" parse-escape-sequences="true" display-tooltip-when-elided="true" name="option-title-txt" class="main-menu-title" style="margin-top: -100px; -unity-text-align: middle-center; font-size: 65px; margin-bottom: -13px;" />
-                <ui:Label tabindex="-1" text="Modificar Volume" parse-escape-sequences="true" display-tooltip-when-elided="true" name="option-subtitle-txt" class="option-menu-subtitle" style="margin-bottom: 26px;" />
-                <ui:VisualElement name="global-volume-container" style="flex-grow: 1;">
-                    <ui:Label tabindex="-1" text="Volume Geral" parse-escape-sequences="true" display-tooltip-when-elided="true" name="option-subtitle-txt" style="-unity-text-align: middle-center; font-size: 32px; -unity-font: url(&apos;project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.otf?fileID=12800000&amp;guid=81817e382e1f2ff4da7b7f2b05c32595&amp;type=3#Bodo Amat&apos;); -unity-font-definition: url(&apos;project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.asset?fileID=11400000&amp;guid=0756c78a4ec4a2644b846b666c90696f&amp;type=2#Bodo Amat&apos;); margin-left: 2px; color: rgb(56, 43, 33); width: 100%; margin-right: -35px;" />
-                    <ui:VisualElement name="slider-volume" style="flex-grow: 1; justify-content: center; align-items: flex-start; flex-direction: row;">
-                        <ui:Label tabindex="-1" text="0%" parse-escape-sequences="true" display-tooltip-when-elided="true" name="zero-txt" class="option-menu-subtitle" />
-                        <ui:SliderInt picking-mode="Ignore" value="-5" high-value="0" name="global-volume-slider" low-value="-20" style="width: 254px;" />
-                        <ui:Label tabindex="-1" text="100%" parse-escape-sequences="true" display-tooltip-when-elided="true" name="hundred-txt" class="option-menu-subtitle" />
-                    </ui:VisualElement>
-                </ui:VisualElement>
-                <ui:VisualElement name="music-volume-container" style="flex-grow: 1;">
-                    <ui:Label tabindex="-1" text="Volume da Música" parse-escape-sequences="true" display-tooltip-when-elided="true" name="option-subtitle-txt" style="-unity-text-align: middle-center; font-size: 32px; -unity-font: url(&apos;project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.otf?fileID=12800000&amp;guid=81817e382e1f2ff4da7b7f2b05c32595&amp;type=3#Bodo Amat&apos;); -unity-font-definition: url(&apos;project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.asset?fileID=11400000&amp;guid=0756c78a4ec4a2644b846b666c90696f&amp;type=2#Bodo Amat&apos;); margin-left: 2px; color: rgb(56, 43, 33); width: 100%; margin-right: -35px;" />
-                    <ui:VisualElement name="slider-volume" style="flex-grow: 1; justify-content: center; align-items: flex-start; flex-direction: row;">
-                        <ui:Label tabindex="-1" text="0%" parse-escape-sequences="true" display-tooltip-when-elided="true" name="zero-txt" class="option-menu-subtitle" />
-                        <ui:SliderInt picking-mode="Ignore" value="-5" high-value="0" name="bgm-volume-slider" low-value="-20" style="width: 254px;" />
-                        <ui:Label tabindex="-1" text="100%" parse-escape-sequences="true" display-tooltip-when-elided="true" name="hundred-txt" class="option-menu-subtitle" />
-                    </ui:VisualElement>
-                </ui:VisualElement>
-                <ui:VisualElement name="effects-volume-container" style="flex-grow: 1;">
-                    <ui:Label tabindex="-1" text="Volume dos Efeitos" parse-escape-sequences="true" display-tooltip-when-elided="true" name="option-subtitle-txt" style="-unity-text-align: middle-center; font-size: 32px; -unity-font: url(&apos;project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.otf?fileID=12800000&amp;guid=81817e382e1f2ff4da7b7f2b05c32595&amp;type=3#Bodo Amat&apos;); -unity-font-definition: url(&apos;project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.asset?fileID=11400000&amp;guid=0756c78a4ec4a2644b846b666c90696f&amp;type=2#Bodo Amat&apos;); margin-left: 2px; color: rgb(56, 43, 33); width: 100%; margin-right: -35px;" />
-                    <ui:VisualElement name="slider-volume" style="flex-grow: 1; justify-content: center; align-items: flex-start; flex-direction: row;">
-                        <ui:Label tabindex="-1" text="0%" parse-escape-sequences="true" display-tooltip-when-elided="true" name="zero-txt" class="option-menu-subtitle" />
-                        <ui:SliderInt picking-mode="Ignore" value="-5" high-value="0" name="sfx-volume-slider" low-value="-20" style="width: 254px;" />
-                        <ui:Label tabindex="-1" text="100%" parse-escape-sequences="true" display-tooltip-when-elided="true" name="hundred-txt" class="option-menu-subtitle" />
-                    </ui:VisualElement>
-                </ui:VisualElement>
-                <ui:Button text="OK" parse-escape-sequences="true" display-tooltip-when-elided="true" name="save-option-btn" class="main-menu-button" style="align-self: center; height: 91px; position: absolute; margin-top: 635px;" />
-            </ui:VisualElement>
-        </ui:VisualElement>
         <ui:VisualElement name="howto-container" class="tutoras-open tutoras-closed" style="transition-timing-function: ease-out-elastic;">
             <ui:VisualElement style="flex-grow: 1; background-color: rgb(250, 187, 120); border-left-color: rgb(57, 44, 33); border-right-color: rgb(57, 44, 33); border-top-color: rgb(57, 44, 33); border-bottom-color: rgb(57, 44, 33); border-top-width: 18px; border-right-width: 18px; border-bottom-width: 18px; border-left-width: 18px; border-top-left-radius: 67px; border-top-right-radius: 67px; border-bottom-right-radius: 67px; border-bottom-left-radius: 67px; width: 75%; height: 80%; align-items: center; padding-left: 2%; padding-right: 1%; padding-top: 1%; padding-bottom: 1%;">
                 <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" style="width: 100%; height: 90%;">
@@ -59,6 +28,37 @@
                     <ui:VisualElement style="flex-grow: 0; background-image: url(&apos;project://database/Assets/UI/Tutoras/Tutorial3.png?fileID=2800000&amp;guid=c79460ba75cf9af46b3ad35405ae59b1&amp;type=3#Tutorial3&apos;); width: 90%; height: 75%; -unity-background-scale-mode: scale-to-fit; flex-shrink: 0;" />
                 </ui:ScrollView>
                 <ui:Button text="Ok" parse-escape-sequences="true" display-tooltip-when-elided="true" name="exit-credit-btn" class="main-menu-button" style="width: 40%; height: 10%;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="options-container" class="option-closed">
+            <ui:VisualElement name="options-body" style="flex-grow: 1; background-image: none; width: 90%; height: 90%; margin-top: 65px; margin-right: 65px; margin-bottom: 65px; margin-left: 65px; background-color: rgb(250, 187, 120); border-top-left-radius: 17px; border-top-right-radius: 17px; border-bottom-right-radius: 17px; border-bottom-left-radius: 17px;">
+                <ui:Label tabindex="-1" text="Opções" parse-escape-sequences="true" display-tooltip-when-elided="true" name="option-title-txt" class="main-menu-title" style="margin-top: -100px; -unity-text-align: middle-center; font-size: 65px; margin-bottom: -13px;" />
+                <ui:Label tabindex="-1" text="Modificar Volume" parse-escape-sequences="true" display-tooltip-when-elided="true" name="option-subtitle-txt" class="option-menu-subtitle" style="margin-bottom: 26px;" />
+                <ui:VisualElement name="global-volume-container" style="flex-grow: 1;">
+                    <ui:Label tabindex="-1" text="Volume Geral" parse-escape-sequences="true" display-tooltip-when-elided="true" name="option-subtitle-txt" style="-unity-text-align: middle-center; font-size: 32px; -unity-font: url(&apos;project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.otf?fileID=12800000&amp;guid=81817e382e1f2ff4da7b7f2b05c32595&amp;type=3#Bodo Amat&apos;); -unity-font-definition: url(&apos;project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.asset?fileID=11400000&amp;guid=0756c78a4ec4a2644b846b666c90696f&amp;type=2#Bodo Amat&apos;); margin-left: 2px; color: rgb(56, 43, 33); width: 100%; margin-right: -35px;" />
+                    <ui:VisualElement name="slider-volume" style="flex-grow: 1; justify-content: center; align-items: flex-start; flex-direction: row;">
+                        <ui:Label tabindex="-1" text="0%" parse-escape-sequences="true" display-tooltip-when-elided="true" name="zero-txt" class="option-menu-subtitle" />
+                        <ui:SliderInt picking-mode="Ignore" value="-10" high-value="-10" name="global-volume-slider" low-value="-60" style="width: 254px;" />
+                        <ui:Label tabindex="-1" text="100%" parse-escape-sequences="true" display-tooltip-when-elided="true" name="hundred-txt" class="option-menu-subtitle" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="music-volume-container" style="flex-grow: 1;">
+                    <ui:Label tabindex="-1" text="Volume da Música" parse-escape-sequences="true" display-tooltip-when-elided="true" name="option-subtitle-txt" style="-unity-text-align: middle-center; font-size: 32px; -unity-font: url(&apos;project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.otf?fileID=12800000&amp;guid=81817e382e1f2ff4da7b7f2b05c32595&amp;type=3#Bodo Amat&apos;); -unity-font-definition: url(&apos;project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.asset?fileID=11400000&amp;guid=0756c78a4ec4a2644b846b666c90696f&amp;type=2#Bodo Amat&apos;); margin-left: 2px; color: rgb(56, 43, 33); width: 100%; margin-right: -35px;" />
+                    <ui:VisualElement name="slider-volume" style="flex-grow: 1; justify-content: center; align-items: flex-start; flex-direction: row;">
+                        <ui:Label tabindex="-1" text="0%" parse-escape-sequences="true" display-tooltip-when-elided="true" name="zero-txt" class="option-menu-subtitle" />
+                        <ui:SliderInt picking-mode="Ignore" value="-10" high-value="-10" name="bgm-volume-slider" low-value="-60" style="width: 254px;" />
+                        <ui:Label tabindex="-1" text="100%" parse-escape-sequences="true" display-tooltip-when-elided="true" name="hundred-txt" class="option-menu-subtitle" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="effects-volume-container" style="flex-grow: 1;">
+                    <ui:Label tabindex="-1" text="Volume dos Efeitos" parse-escape-sequences="true" display-tooltip-when-elided="true" name="option-subtitle-txt" style="-unity-text-align: middle-center; font-size: 32px; -unity-font: url(&apos;project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.otf?fileID=12800000&amp;guid=81817e382e1f2ff4da7b7f2b05c32595&amp;type=3#Bodo Amat&apos;); -unity-font-definition: url(&apos;project://database/Assets/UI/Fonts/bodo_amat/Bodo%20Amat.asset?fileID=11400000&amp;guid=0756c78a4ec4a2644b846b666c90696f&amp;type=2#Bodo Amat&apos;); margin-left: 2px; color: rgb(56, 43, 33); width: 100%; margin-right: -35px;" />
+                    <ui:VisualElement name="slider-volume" style="flex-grow: 1; justify-content: center; align-items: flex-start; flex-direction: row;">
+                        <ui:Label tabindex="-1" text="0%" parse-escape-sequences="true" display-tooltip-when-elided="true" name="zero-txt" class="option-menu-subtitle" />
+                        <ui:SliderInt picking-mode="Ignore" value="-5" high-value="-10" name="sfx-volume-slider" low-value="-60" style="width: 254px;" />
+                        <ui:Label tabindex="-1" text="100%" parse-escape-sequences="true" display-tooltip-when-elided="true" name="hundred-txt" class="option-menu-subtitle" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:Button text="OK" parse-escape-sequences="true" display-tooltip-when-elided="true" name="save-option-btn" class="main-menu-button" style="align-self: center; height: 91px; position: absolute; margin-top: 635px;" />
             </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>

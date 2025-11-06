@@ -21,6 +21,9 @@ public class CreatureSelectUi : MonoBehaviour
     private Button _skin3Btn;
     private Button _skin4Btn;
     private Label _title;
+    private VisualElement _p3Container;
+    private VisualElement _p4Container;
+    private VisualElement _p5Container;
 
     public List<Button> activePlayers;
     [SerializeField] private SelectionUIManager selectionManager;
@@ -47,6 +50,9 @@ public class CreatureSelectUi : MonoBehaviour
         _skin3Btn = root.Q<Button>("skin3-btn");
         _skin4Btn = root.Q<Button>("skin4-btn");
         _title = root.Q<Label>("customization-title");
+        _p3Container = root.Q<VisualElement>("player-3-container");
+        _p4Container = root.Q<VisualElement>("player-4-container");
+        _p5Container = root.Q<VisualElement>("player-5-container");
 
         _playBtn.RegisterCallback<ClickEvent>(OnClickPlay);
         _backBtn.RegisterCallback<ClickEvent>(OnClickBack);
@@ -132,6 +138,8 @@ public class CreatureSelectUi : MonoBehaviour
             SoundManagerSO.PlaySoundFXClip(_buttonDenial, transform.position, 1);
             _player3ActiveBtn.RemoveFromClassList("internal-player-active-button");
             _player3ActiveBtn.AddToClassList("internal-player-inactive-button");
+            _p3Container.RemoveFromClassList("external-player-active-container");
+            _p3Container.AddToClassList("external-player-inactive-container");
             _player3ActiveBtn.text = "Inativo";
             selectionManager.RemoveOwnerOnList(Owner.P3);
         }
@@ -140,6 +148,8 @@ public class CreatureSelectUi : MonoBehaviour
             SoundManagerSO.PlaySoundFXClip(_buttonConfirmation, transform.position, 1);
             _player3ActiveBtn.AddToClassList("internal-player-active-button");
             _player3ActiveBtn.RemoveFromClassList("internal-player-inactive-button");
+            _p3Container.AddToClassList("external-player-active-container");
+            _p3Container.RemoveFromClassList("external-player-inactive-container");
             _player3ActiveBtn.text = "Jogador\n3";
             selectionManager.AddOwnerOnList(Owner.P3);
         }
@@ -151,6 +161,8 @@ public class CreatureSelectUi : MonoBehaviour
             SoundManagerSO.PlaySoundFXClip(_buttonDenial, transform.position, 1);
             _player4ActiveBtn.RemoveFromClassList("internal-player-active-button");
             _player4ActiveBtn.AddToClassList("internal-player-inactive-button");
+            _p4Container.RemoveFromClassList("external-player-active-container");
+            _p4Container.AddToClassList("external-player-inactive-container");
             _player4ActiveBtn.text = "Inativo";
             selectionManager.RemoveOwnerOnList(Owner.P4);
         }
@@ -159,6 +171,8 @@ public class CreatureSelectUi : MonoBehaviour
             SoundManagerSO.PlaySoundFXClip(_buttonConfirmation, transform.position, 1);
             _player4ActiveBtn.AddToClassList("internal-player-active-button");
             _player4ActiveBtn.RemoveFromClassList("internal-player-inactive-button");
+            _p4Container.AddToClassList("external-player-active-container");
+            _p4Container.RemoveFromClassList("external-player-inactive-container");
             _player4ActiveBtn.text = "Jogador\n4";
             selectionManager.AddOwnerOnList(Owner.P4);
         }
@@ -170,6 +184,8 @@ public class CreatureSelectUi : MonoBehaviour
             SoundManagerSO.PlaySoundFXClip(_buttonDenial, transform.position, 1);
             _player5ActiveBtn.RemoveFromClassList("internal-player-active-button");
             _player5ActiveBtn.AddToClassList("internal-player-inactive-button");
+            _p5Container.RemoveFromClassList("external-player-active-container");
+            _p5Container.AddToClassList("external-player-inactive-container");
             _player5ActiveBtn.text = "Inativo";
             selectionManager.RemoveOwnerOnList(Owner.P5);
         }
@@ -178,6 +194,8 @@ public class CreatureSelectUi : MonoBehaviour
             SoundManagerSO.PlaySoundFXClip(_buttonConfirmation, transform.position, 1);
             _player5ActiveBtn.AddToClassList("internal-player-active-button");
             _player5ActiveBtn.RemoveFromClassList("internal-player-inactive-button");
+            _p5Container.AddToClassList("external-player-active-container");
+            _p5Container.RemoveFromClassList("external-player-inactive-container");
             _player5ActiveBtn.text = "Jogador\n5";
             selectionManager.AddOwnerOnList(Owner.P5);
         }

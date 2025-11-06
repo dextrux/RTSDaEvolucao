@@ -1,4 +1,4 @@
-.external-player-container {
+.external-player-active-container {
     flex-grow: 1;
     height: 100%;
     background-color: rgb(236, 166, 108);
@@ -100,7 +100,7 @@
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     justify-content: center;
-    scale: 1.1 1.1;
+    scale: 1.02 1.02;
     border-top-width: 0;
     border-right-width: 0;
     border-bottom-width: 0;
@@ -148,7 +148,7 @@
     border-right-width: 0;
     border-bottom-width: 0;
     border-left-width: 0;
-    scale: 1.1 1.1;
+    scale: 1.02 1.02;
 }
 
 .internal-player-inactive-button:active {
